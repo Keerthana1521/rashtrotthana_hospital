@@ -9,6 +9,9 @@ import { DropdownModule } from 'primeng/dropdown';
 import { CardModule } from 'primeng/card';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProgrammsComponent } from './programms/programms.component';
+import { TitleButtonComponent } from './components/title-button/title-button.component';
+import { ArrowBtnComponent } from './components/arrow-btn/arrow-btn.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { SpecalitiesComponent } from './specalities/specalities.component';
 
@@ -18,6 +21,9 @@ import { SpecalitiesComponent } from './specalities/specalities.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
+    ProgrammsComponent,
+    TitleButtonComponent,
+    ArrowBtnComponent,
     AboutUsComponent,
     SpecalitiesComponent
   ],
