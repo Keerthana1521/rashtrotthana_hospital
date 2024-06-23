@@ -1,11 +1,15 @@
 *{
     /* background: #FBFFF5; */
 }
+.about-us-container{
+    padding-top:25vh;
+}
 .about-us-container,.president-container{
     display: flex;
     width: 100%;
-    padding: 3rem 0;
+    padding: -1rem 0;
     background: #FBFFF5;
+    padding-bottom:6rem;
 }
 .about-img{
     width: 50%;

@@ -2,6 +2,7 @@
     width: 100%;
 height: 500px;
 flex-shrink: 0;
+padding-top: 18vh;
 }
 .specialities{
     background: #FBFFF5; 
