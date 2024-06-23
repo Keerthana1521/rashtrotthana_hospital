@@ -1,0 +1,189 @@
+*{
+    /* background: #FBFFF5; */
+}
+.about-us-container,.president-container{
+    display: flex;
+    width: 100%;
+    padding: 3rem 0;
+    background: #FBFFF5;
+}
+.about-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.about-content,.president-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    color: #008080;
+text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 3rem ;
+}
+.content{
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 525px; 
+}
+.president-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.president{
+    width: 263px;
+    height: 263px;
+}
+.president-content{
+    color: #000;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.28px;
+}
+.name{
+    color: #008080;
+text-align: center;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.desgination{
+    color: rgba(0, 128, 128, 0.89);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.president-content{
+    padding-left: 6rem;
+    overflow-x: hidden;
+}
+.mission-vision{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.about-hospital,.about-vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+.about-heading{
+    color: #0E3672;
+text-align: center;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.about-hospital-content{
+    color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.about-hospital{
+    background: #FFF;
+    padding-left: 6rem;
+}
+.about-vision{
+    padding-top: 2rem;
+    background: linear-gradient(157deg, #FBCA51 -58.23%, #008080 74.61%);
+    font-style: normal;
+font-weight: 700;
+line-height: normal;
+color: #FFF;
+text-align: center;
+font-family: Poppins;
+}
+.vision-heading{
+font-size: 36px;
+padding-top: 2rem;
+}
+.vision-sub-heading{
+    padding-top: 2rem;
+font-size: 24px;
+}
+.about-vision-content{
+    padding-top: 2rem;
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.last-content{
+    padding-bottom: 3rem;
+}
+.facilities-heading{
+    color: #008080;
+text-align: center;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.facilities-content{
+    color: #000;
+text-align: justify;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.facilities-1{
+    display: flex;
+    justify-content: center;
+}
+.facilities-content-1{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+.facilities-image{
+    width: 390px;
+height: 250px;
+flex-shrink: 0;
+}
+.facilities{
+    background: #FBFFF5;
+    padding: 6rem
+}
+.facilities-2{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem
+}
