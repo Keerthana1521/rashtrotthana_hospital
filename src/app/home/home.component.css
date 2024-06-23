@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    line-height: 39px;
+  }
+.home-bg{
+    width: 100%;
+    height: 100vh;
+}
+.second-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.second-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/bg-second.png') no-repeat center center/cover;
+    z-index: -2;
+    border-radius: 30px;
+}
+
+.second-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 61%); /* Change color and opacity as needed */
+    z-index: -1;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 90px;
+}
+
+.icon img {
+    width: 170px;
+    height: 190px;
+    margin-bottom: 10px;
+}
+
+.text-container {
+    margin-top: 20px;
+}
+
+.number-one {
+    font-size: 2em;
+    color: #1aaf5d;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #244C61;
+}
+.naturopathy,.ayurveda{
+    margin-bottom: 49px;
+}
+.modern-medicine{
+    margin-bottom: 255px;
+}
+.yoga,.homeopathy{
+    margin-top: 239px;
+}
+.sheild{
+    margin-top: -97px;
+}
+.form-container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+}
+
+form {
+    display: flex;
+    gap: 45px;
+}
+
+.form-input {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 14px;
+    width: 285px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: #1aaf5d;
+}
+
+.submit-button {
+    padding-top: 3px; padding-bottom: 4px; padding-left: 20px; padding-right: 3px; background: linear-gradient(90deg, #022B50 0%, #279797 100%); box-shadow: 3px 4px 15px rgba(63, 176, 206, 0.65); border-radius: 30px; justify-content: flex-end; align-items: center; gap: 16px; display: inline-flex
+}
+
+.submit-text{
+    color: white; font-size: 16px; font-family: Poppins; font-weight: 500; line-height: 16px; word-wrap: break-word
+}
+.submit-arrow{
+    width: 37px; height: 37px; background: rgba(255, 255, 255, 0.28); border-radius: 18.50px; justify-content: center; align-items: center; display: inline-flex
+}
+.arrow{
+    width: 10.20px; height: 37px; text-align: center; color: white; font-size: 16px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 37px; word-wrap: break-word
+}
+.third-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin: 0;
+}
+.fourth-container{
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 3rem ;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    height: 150px;
+    text-align: center;
+    border: 2px solid #008080;
+}
+.card-header{
+    color: #008080;
+    font-size: 20px;
+    font-weight: bold;
+}
+.m-0{
+    font-size: 14px;
+}
+.third-container,.fourth-container,.fifth-container,.sixth-container,.seventh-container,.department{
+    background-color: #FBFFF4;
+}
+.fifth-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-header{
+    margin:3rem;
+    color: #008080;
+    font-size: 36px;
+    font-weight: bold;
+}
+.service-container{
+    display: flex;
+    gap:90px;
+    margin:2rem;
+}
+.bg-service{
+    background: url("../../assets/Main.png") lightgray -1157.714px 0px / 861.654% 141.992% no-repeat;
+}
+.about-div{
+    padding-left: 10rem;
+    width: 100%; height: 100%; position: relative
+}
+.about-text{
+
+    width: 60px; height: 45px; left: 60px; top: 2px; position: absolute; opacity: 0.20; background: #008080
+}
+.about{
+   
+    left: 80px; top: 11px; position: absolute; color: #008080; font-size: 16px; font-family: Poppins; font-weight: 500; text-transform: uppercase; letter-spacing: 2px; word-wrap: break-word
+}
+.about-content-div{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding:4rem;
+}
+.about-image-container{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:4rem;
+}
+.sixth-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+}
+.about-image{
+    width: 401px;
+    height: 407px;
+}
+.about-us-heading{
+    padding-top: 2rem;
+    padding-left: 4rem;
+    color: #222222;
+font-size: 36px;
+font-family: Poppins;
+font-weight: 700;
+line-height: 55px;
+word-wrap: break-word;
+width: 534px;
+}
+.about-us-content{
+padding-top: 2rem;
+padding-left: 4rem;
+color: #222222;
+font-size: 18px;
+font-family: Poppins;
+font-weight: 400;
+width: 534px;
+word-wrap: break-word;
+text-align: justify;
+}
+.read-button{
+    padding-left: 4rem;
+    padding-top: 2rem;
+
+}
+.about-image-content{
+    padding-top: 2rem;
+    color: black;
+font-size: 12px;
+font-family: Poppins;
+font-weight: 500;
+line-height: 26px;
+word-wrap: break-word;
+width: 401px;
+}
+.seventh-container{
+    gap:10px;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.eight-container{
+    width: 100%;
+    display: flex;
+}
+.achieve-content,.achieve-image{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.achieve-image{
+    padding-top: 3rem;
+}
+.NABH{
+    width:382px;
+    height:375px;
+}
+.achieve-content{
+    background: linear-gradient(180deg, #FBCA51 -73.53%, #008080 100%);
+    color: white;
+}
+.achieve-heading{
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.8px;
+padding: 2rem;
+}
+li{
+    width:599px;
+    color: #FFF;
+text-align: justify;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0.28px;
+}
+.last-li{
+    padding-bottom: 5rem;
+}
+.ninth-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   padding: 4rem;
+}
+.specialities{
+display: flex;
+width: 50%;
+flex-direction: column;
+}
+.four{
+    display: flex;
+    width: 50%;
+}
+.department{
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 4rem;
+}
+.hospital{
+    display: flex;
+    flex-direction: column;
+}
+.dept,.care-image{
+    padding-left:2rem;
+}
+.dept-div{
+    padding-left: 10rem;
+    width: 100%; height: 100%; position: relative
+}
+.dept-text{
+
+    width: 100px; height: 45px; left: 130px; top: 2px; position: absolute; opacity: 0.20; background: #008080
+}
+.dept-1{
+   
+    left: 150px; top: 11px; position: absolute; color: #008080; font-size: 16px; font-family: Poppins; font-weight: 500; text-transform: uppercase; letter-spacing: 2px; word-wrap: break-word
+}

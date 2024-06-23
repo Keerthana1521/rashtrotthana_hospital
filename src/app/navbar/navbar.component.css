@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Poppins";
+  }
+  .logo{
+    width: 242px;
+    height: 67.94px;
+    line-height: 67.94px;
+    margin-top:1rem;
+   }
+    .navbar-container{
+    width: 100%;
+    overflow-x: hidden;
+    }
+    .nav-wrapper {
+        margin: auto;
+        text-align: center;
+        width: 90%;
+    
+        @media(max-width: 768px) {
+          width: 90%;
+        }
+    
+        @media(max-width: 638px) {
+          width: 100%;
+        }
+      }
+      .contact-nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        background: linear-gradient(90deg, #008080 0%, #07CCEC 100%);
+        padding: 1rem;
+        a{color: #FFFFFF;
+        text-decoration: none;}
+      }
+      #menu{
+        margin-top:-5rem;
+      }
+      #navbar{
+       width: 100%;
+       height: 173px;
+       background-color: #FFFFFF;
+       text-decoration: none;
+       list-style: none;
+       display: inline-block;
+       justify-content: center;
+   
+      }
+      #navbar ul{
+       float: right;
+      }
+      #navbar  ul li{
+       display: inline-block;
+       text-decoration: none;
+       margin-top: 2rem;
+      }
+      #navbar ul li a{
+       text-decoration: none;
+       margin:1.5rem;
+       font-weight: 500;
+       font-size: 14px;
+       letter-spacing: 1px;
+       text-transform: uppercase;
+       color: #000000;
+      }
+      #navbar ul li a:hover{
+       color:#E13131;
+       border-bottom: 2px solid #E13131;
+      }
+      .service-down:hover{
+       color:#E13131;
+       border-bottom: 2px solid #E13131;
+      }
+      
+      nav {
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        position: fixed;
+        top:0;
+        z-index: 1030;
+      } 
+      .submit-button {
+        padding-top: 3px; padding-bottom: 4px; padding-left: 20px; padding-right: 3px; background: linear-gradient(90deg, #022B50 0%, #279797 100%); box-shadow: 3px 4px 15px rgba(63, 176, 206, 0.65); border-radius: 30px; justify-content: flex-end; align-items: center; gap: 16px; display: inline-flex
+    }
+    
+    .submit-text{
+        color: white; font-size: 16px; font-family: Poppins; font-weight: 500; line-height: 16px; word-wrap: break-word
+    }
+    .submit-arrow{
+        width: 37px; height: 37px; background: rgba(255, 255, 255, 0.28); border-radius: 18.50px; justify-content: center; align-items: center; display: inline-flex
+    }
+    .arrow{
+        width: 10.20px; height: 37px; text-align: center; color: white; font-size: 16px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 37px; word-wrap: break-word
+    }
+    .icons{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .contact{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
