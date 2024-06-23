@@ -12,6 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ProgrammsComponent } from './programms/programms.component';
 import { TitleButtonComponent } from './components/title-button/title-button.component';
 import { ArrowBtnComponent } from './components/arrow-btn/arrow-btn.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { SpecalitiesComponent } from './specalities/specalities.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ArrowBtnComponent } from './components/arrow-btn/arrow-btn.component';
     FooterComponent,
     ProgrammsComponent,
     TitleButtonComponent,
-    ArrowBtnComponent
+    ArrowBtnComponent,
+    AboutUsComponent,
+    SpecalitiesComponent
   ],
   imports: [
     BrowserModule,
