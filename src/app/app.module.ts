@@ -9,13 +9,19 @@ import { DropdownModule } from 'primeng/dropdown';
 import { CardModule } from 'primeng/card';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProgrammsComponent } from './programms/programms.component';
+import { TitleButtonComponent } from './components/title-button/title-button.component';
+import { ArrowBtnComponent } from './components/arrow-btn/arrow-btn.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ProgrammsComponent,
+    TitleButtonComponent,
+    ArrowBtnComponent
   ],
   imports: [
     BrowserModule,
