@@ -5,28 +5,17 @@
 <div class="second-container">
     <div class="container">
         <div class="icons">
-            <div class="icon yoga">
-                <img src="../../assets/yoga.png" alt="Yoga">
-            </div>
-            <div class="icon naturopathy">
-                <img src="../../assets/naturopathy.png" alt="Naturopathy">
-            </div>
-            <div class="icon modern-medicine">
-                <img src="../../assets/modern medicine.png" alt="Modern Medicine">
-            </div>
-            <div class="icon ayurveda">
-                <img src="../../assets/ayurveda.png" alt="Ayurveda">
-            </div>
-            <div class="icon homeopathy">
-                <img src="../../assets/homeopathy.png" alt="Homeopathy">
-            </div>
+            <ng-container *ngFor="let feature of features">
+                <div [class]="'icon ' + feature.className">
+                    <img [src]="'../../assets/' + feature.icon" [alt]="feature.name" (mouseover)="onMouseOver(feature.key)" (mouseleave)="onMouseOut()">
+                </div>
+            </ng-container>
         </div>
         <div class="text-container">
             <div class="number-one">
                 <img class="sheild" src="../../assets/sheild_num.png">
             </div>
-            <p>India's First Integrated Multispecialty Hospital Blending Modern And<br> Traditional Medicine For
-                Holistic Healing</p>
+            <div class="content">{{ content[showContent] }}</div>
         </div>
     </div>
 </div>
