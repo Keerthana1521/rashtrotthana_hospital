@@ -231,6 +231,8 @@ form {
   margin: 2rem;
 }
 .bg-service {
+  width: 200px;
+  height: 240px;
   background: url("../../assets/Main.png") lightgray -1157.714px 0px / 861.654% 141.992%
     no-repeat;
 }
@@ -327,6 +329,10 @@ form {
   padding: 3rem;
   display: flex;
   justify-content: center;
+}
+.count{
+  width: 255px;
+  height: 190px;
 }
 .eight-container {
   width: 100%;
@@ -617,7 +623,7 @@ li {
 .tenth-container {
   width: 100%;
 
-  background: url("../../assets/service.png") no-repeat center center/cover;
+  background: url("../../assets/service.png") no-repeat;
 }
 .corporate {
   padding: 2rem;
@@ -657,14 +663,14 @@ li {
 .free-text {
   width: 100px;
   height: 45px;
-  left: 830px;
+  left: 625px;
   top: 2px;
   position: absolute;
   opacity: 0.2;
   background: #008080;
 }
 .free-1 {
-  left: 850px;
+  left: 650px;
   top: 11px;
   position: absolute;
   color: #008080;
@@ -679,11 +685,11 @@ li {
   padding-top: 10rem;
 }
 .empty-1 {
-  padding-bottom: 20rem;
+  padding-bottom: 3rem;
 }
 .button {
   position: relative;
-  left: 850px;
+  left: 636px;
 }
 .text-benefit {
   color: #1e0b9b;

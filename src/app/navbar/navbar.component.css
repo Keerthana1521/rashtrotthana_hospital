@@ -4,17 +4,18 @@
     font-family: "Poppins";
   }
   .logo{
-    width: 242px;
+    width: 200px;
     height: 67.94px;
     line-height: 67.94px;
-    margin-top:1rem;
+    margin-left: 2rem;
+    /* margin-top:1rem; */
    }
     .navbar-container{
     width: 100%;
     overflow-x: hidden;
     }
     .nav-wrapper {
-        margin: auto;
+        /* margin: auto; */
         text-align: center;
         width: 90%;
     
@@ -29,9 +30,10 @@
       .contact-nav{
         display: flex;
         width: 100%;
+        height: 53px;
         justify-content: space-around;
         background: linear-gradient(90deg, #008080 0%, #07CCEC 100%);
-        padding: 1rem;
+        padding: 10px 0;
         a{color: #FFFFFF;
         text-decoration: none;}
       }
@@ -40,7 +42,7 @@
       }
       #navbar{
        width: 100%;
-       height: 173px;
+       height: 153px;
        background-color: #FFFFFF;
        text-decoration: none;
        list-style: none;
@@ -50,6 +52,7 @@
       }
       #navbar ul{
        float: right;
+       margin-right: -115px;
       }
       #navbar  ul li{
        display: inline-block;
@@ -85,13 +88,13 @@
     }
     
     .submit-text{
-        color: white; font-size: 16px; font-family: Poppins; font-weight: 500; line-height: 16px; word-wrap: break-word
+        color: white; font-size: 14px; font-family: Poppins; font-weight: 500; line-height: 16px; word-wrap: break-word
     }
     .submit-arrow{
         width: 37px; height: 37px; background: rgba(255, 255, 255, 0.28); border-radius: 18.50px; justify-content: center; align-items: center; display: inline-flex
     }
     .arrow{
-        width: 10.20px; height: 37px; text-align: center; color: white; font-size: 16px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 37px; word-wrap: break-word
+        width: 10.20px; height: 37px; text-align: center; color: white; font-size: 14px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 37px; word-wrap: break-word
     }
     .icons{
         display: flex;
