@@ -230,12 +230,34 @@ form {
   gap: 90px;
   margin: 2rem;
 }
+
+
 .bg-service {
+  position: relative;
+  
+  max-width: 100%; 
+}
+.bg-service img {
   width: 200px;
   height: 240px;
-  background: url("../../assets/Main.png") lightgray -1157.714px 0px / 861.654% 141.992%
-    no-repeat;
+  display: block;
+  /* max-width: 100%;
+  height: auto; */
 }
+.bg-service .secondary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.bg-service:hover .secondary {
+  opacity: 1;
+}
+
 .about-div {
   padding-left: 10rem;
   width: 100%;
