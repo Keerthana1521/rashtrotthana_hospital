@@ -257,6 +257,30 @@ form {
 .bg-service:hover .secondary {
   opacity: 1;
 }
+.bg-care {
+  position: relative;
+  max-width: 100%; 
+}
+.bg-care img {
+  width: 476px;
+  height: 153px;
+  display: block;
+  /* max-width: 100%;
+  height: auto; */
+}
+.bg-care .secondary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .9s ease;
+}
+.bg-care:hover .secondary {
+  opacity: 1;
+}
 
 .about-div {
   padding-left: 10rem;
