@@ -82,6 +82,8 @@
   font-size: 2em;
   color: #1aaf5d;
   margin-bottom: 10px;
+  width: 100%;
+  height: 30px;
 }
 
 .text-container .content {
@@ -93,6 +95,19 @@
 .content { 
   height: 30px;
   width: 100%;
+  padding-top: 2rem;
+}
+.title{
+  height: 30px;
+  width: 100%;
+  color: #38A495;
+text-align: center;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
 }
 
 .naturopathy,
@@ -249,6 +264,7 @@ form {
   width: 200px;
   height: 240px;
   display: block;
+  cursor: pointer;
   /* max-width: 100%;
   height: auto; */
 }
@@ -273,6 +289,7 @@ form {
   width: 476px;
   height: 153px;
   display: block;
+  cursor: pointer;
   /* max-width: 100%;
   height: auto; */
 }
@@ -284,11 +301,41 @@ form {
   bottom: 0;
   object-fit: contain;
   opacity: 0;
-  transition: opacity .9s ease;
+  transition: opacity 1.5s ease;
 }
 .bg-care:hover .secondary {
   opacity: 1;
 }
+
+.bg-features {
+  position: relative;
+  max-width: 100%; 
+}
+.bg-features img {
+  width: 150px;
+  height: 180px;
+  display: block;
+  cursor: pointer;
+  /* max-width: 100%;
+  height: auto; */
+}
+.bg-features .secondary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.bg-features:hover .secondary {
+  opacity: 1;
+}
+.bg-features:hover .primary{
+  opacity: 0;
+}
+
 
 .about-div {
   padding-left: 10rem;

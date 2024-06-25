@@ -15,6 +15,7 @@ import { ArrowBtnComponent } from './components/arrow-btn/arrow-btn.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { SpecalitiesComponent } from './specalities/specalities.component';
 import { DonationComponent } from './donation/donation.component';
+import { BoxCardComponent } from './components/box-card/box-card.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DonationComponent } from './donation/donation.component';
     ArrowBtnComponent,
     AboutUsComponent,
     SpecalitiesComponent,
-    DonationComponent
+    DonationComponent,
+    BoxCardComponent
   ],
   imports: [
     BrowserModule,

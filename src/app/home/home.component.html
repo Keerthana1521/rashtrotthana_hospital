@@ -6,15 +6,17 @@
     <div class="container">
         <div class="icons">
             <ng-container *ngFor="let feature of features">
-                <div [class]="'icon ' + feature.className">
-                    <img [src]="'../../assets/' + feature.icon" [alt]="feature.name" (mouseover)="onMouseOver(feature.key)" (mouseleave)="onMouseOut()">
+                <div [class]="'icon ' + feature.className" class="bg-features">
+                    <img [src]="'../../assets/' + feature.icon" [alt]="feature.name" class="primary" (mouseover)="onMouseOver(feature.key)" (mouseleave)="onMouseOut()">
+                    <img [src]="'../../assets/' + feature.image" [alt]="feature.name" class="secondary"  (mouseover)="onMouseOver(feature.key)" (mouseleave)="onMouseOut()">
                 </div>
             </ng-container>
         </div>
         <div class="text-container">
             <div class="number-one">
-                <img class="sheild" src="../../assets/sheild_num.png">
+                <img class="sheild" [src]="image[showImage]">
             </div>
+            <div class="title">{{title[showTitle]}}</div>
             <div class="content">{{ content[showContent] }}</div>
         </div>
     </div>
