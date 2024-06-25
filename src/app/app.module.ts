@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
-import { DropdownModule } from 'primeng/dropdown';
 import { CardModule } from 'primeng/card';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,6 +15,15 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { SpecalitiesComponent } from './specalities/specalities.component';
 import { DonationComponent } from './donation/donation.component';
 import { BoxCardComponent } from './components/box-card/box-card.component';
+import { FacilitiesComponent } from './facilities/facilities.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+
+
+import { IconFieldModule } from 'primeng/iconfield';
+import { InputIconModule } from 'primeng/inputicon';
+import { InputTextModule } from 'primeng/inputtext';
+import { DropdownModule } from 'primeng/dropdown';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 
 @NgModule({
   declarations: [
@@ -29,13 +37,23 @@ import { BoxCardComponent } from './components/box-card/box-card.component';
     AboutUsComponent,
     SpecalitiesComponent,
     DonationComponent,
-    BoxCardComponent
+    BoxCardComponent,
+    FacilitiesComponent,
+    ContactFormComponent,
+    
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DropdownModule,
-    CardModule
+    CardModule,
+    IconFieldModule,
+    InputIconModule,
+    InputTextModule,
+    DropdownModule,
+    InputTextareaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

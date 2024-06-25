@@ -1,0 +1,37 @@
+.appointment{
+padding-left: 6rem;
+color: #008080;
+ font-size: 48px;
+ font-family: Poppins;
+ font-weight: 600;
+ word-wrap: break-word
+}
+.content{
+width: 400px;
+color: rgba(29, 29, 27, 0.80);
+ font-size: 20px;
+ font-family: Poppins;
+ font-weight: 600;
+ letter-spacing: 2px;
+ word-wrap: break-word;
+ padding-left:6rem;
+ padding-top: 3rem;
+}
+.contact-info{
+    width: 400px;
+    padding-left: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+color: black;
+ font-size: 16px;
+ font-family: Poppins;
+ font-weight: 400;
+ line-height: 24px;
+ word-wrap: break-word
+}
+.form{
+    width: 672px;
+    height: 827px;
+    background-color: #FFFFFF;
+}

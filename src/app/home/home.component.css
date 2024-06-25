@@ -250,7 +250,7 @@ form {
 }
 .service-container {
   display: flex;
-  gap: 90px;
+  gap: 40px;
   margin: 2rem;
 }
 
@@ -327,7 +327,7 @@ form {
   bottom: 0;
   object-fit: contain;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.8s ease;
 }
 .bg-features:hover .secondary {
   opacity: 1;
@@ -376,7 +376,7 @@ form {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 4rem;
+  /* padding: 4rem; */
 }
 .sixth-container {
   display: flex;
@@ -555,15 +555,15 @@ li {
   display: flex;
   width: 50%;
   flex-direction: column;
-  padding: 4rem;
+  padding: 4rem 4rem 4rem 9rem;
 }
 .about-image-container {
   display: flex;
   width: 50%;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
-  padding: 4rem;
+  /* padding: 4rem; */
 }
 .sixth-container {
   display: flex;

@@ -1,11 +1,13 @@
-<div class="box-card">
+
+<div class="box-card" (mouseover)="onMouseOver(key)">
     <div class="box-image">
-        <img src="../../assets/box-card.png" alt="box-card" class="box-card">
+        <img src="../../assets/facility-{{image}}.png" alt="box-card" class="">
     </div>
     <div class="box-title">
-        In-patient facility
+        {{title}}
     </div>
     <div class="box-button">
-        <button class="read-more-btn">Read More</button>
+        <button class="read-more-btn">{{button_text}}</button>
     </div>
 </div>
+
