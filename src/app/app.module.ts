@@ -14,6 +14,7 @@ import { TitleButtonComponent } from './components/title-button/title-button.com
 import { ArrowBtnComponent } from './components/arrow-btn/arrow-btn.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { SpecalitiesComponent } from './specalities/specalities.component';
+import { DonationComponent } from './donation/donation.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SpecalitiesComponent } from './specalities/specalities.component';
     TitleButtonComponent,
     ArrowBtnComponent,
     AboutUsComponent,
-    SpecalitiesComponent
+    SpecalitiesComponent,
+    DonationComponent
   ],
   imports: [
     BrowserModule,
