@@ -69,12 +69,12 @@
        color: #000000;
       }
       #navbar ul li a:hover{
-       color:#E13131;
-       border-bottom: 2px solid #E13131;
+       color:#0392CE;
+       border-bottom: 2px solid #0392CE;
       }
-      .service-down:hover{
-       color:#E13131;
-       border-bottom: 2px solid #E13131;
+      #navbar ul li a:active{
+       color:#0392CE;
+       border-bottom: 2px solid #0392CE;
       }
       
       nav {
