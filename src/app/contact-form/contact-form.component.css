@@ -1,10 +1,16 @@
 .appointment{
+    padding-top: 4rem;
 padding-left: 6rem;
 color: #008080;
  font-size: 48px;
  font-family: Poppins;
  font-weight: 600;
  word-wrap: break-word
+}
+.arrow-appoint{
+    position: relative;
+    top:60px;
+    left:4px;
 }
 .content{
 width: 400px;
@@ -18,7 +24,7 @@ color: rgba(29, 29, 27, 0.80);
  padding-top: 3rem;
 }
 .contact-info{
-    width: 400px;
+    width: 502px;
     padding-left: 6rem;
     padding-top: 3rem;
     padding-bottom: 3rem; 
@@ -30,8 +36,8 @@ color: black;
  word-wrap: break-word
 }
 .form{
-    width: 460px;
-    height: 711px;
+    width: 660px;
+    height: 852px;
     background-color: #FFFFFF;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
@@ -110,9 +116,19 @@ font-weight: 400;
 line-height: 24px; /* 150% */
 background: #FFF;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+cursor: pointer;
     }
 .field{
     top:6px;
     position: relative;
-    padding-right: 1rem;
+    padding-right: 4px;
+}
+.error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.appoint-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }

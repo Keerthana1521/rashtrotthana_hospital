@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +25,11 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { AccordionModule } from 'primeng/accordion';
 import { HealthCheckupComponent } from './health-checkup/health-checkup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Import BrowserAnimationsModule
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+import { HttpClientModule } from '@angular/common/http';
+
+import { ContactFormService } from './contact-form.service';
 
 
 @NgModule({
@@ -40,8 +46,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
     DonationComponent,
     BoxCardComponent,
     FacilitiesComponent,
-    ContactFormComponent,
-    HealthCheckupComponent
+    HealthCheckupComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
@@ -54,9 +60,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
     DropdownModule,
     InputTextareaModule,
     AccordionModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    ToastModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    MessageService,
+    ContactFormService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
