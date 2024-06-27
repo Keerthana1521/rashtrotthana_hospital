@@ -7,6 +7,7 @@ import { Component , Input} from '@angular/core';
 })
 export class BoxCardComponent {
   showImage:any;
+  closeBox:boolean = true;
 @Input() image: string ='1'; 
 @Input() title: string ='';
 @Input() button_text: string = '';
@@ -15,6 +16,7 @@ export class BoxCardComponent {
 onMouseOver(key: string) {
 
   this.showImage =  key;
+  this.closeBox = false;
 };
 
 hover_image:any ={
