@@ -5,6 +5,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { SpecalitiesComponent } from './specalities/specalities.component';
 import { FacilitiesComponent } from './facilities/facilities.component';
 import { HealthCheckupComponent } from './health-checkup/health-checkup.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'specialists', component: SpecalitiesComponent },
   { path: 'facility', component: FacilitiesComponent},
   { path: 'health-checkup', component: HealthCheckupComponent },
+  { path: 'contact', component: ContactFormComponent },
 ]; 
 
 @NgModule({
