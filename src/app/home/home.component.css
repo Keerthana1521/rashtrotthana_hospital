@@ -216,7 +216,7 @@ form {
   justify-content: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   width: 360px;
-  height: 150px;
+  height: 202px;
   text-align: center;
   border: 2px solid #008080;
 }
@@ -387,7 +387,7 @@ form {
 }
 .about-image {
   width: 401px;
-  height: 407px;
+  height: 471px;
 }
 .about-us-heading {
   padding-top: 2rem;
@@ -563,7 +563,7 @@ li {
   flex-direction: column;
   align-items: flex-start;
   text-align: center;
-  /* padding: 4rem; */
+  padding-left: 6rem;
 }
 .sixth-container {
   display: flex;
@@ -572,10 +572,7 @@ li {
   align-items: center;
   padding-top: 6rem;
 }
-.about-image {
-  width: 401px;
-  height: 407px;
-}
+
 .about-us-heading {
   padding-top: 2rem;
   padding-left: 4rem;
