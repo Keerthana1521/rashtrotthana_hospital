@@ -30,6 +30,8 @@ import { MessageService } from 'primeng/api';
 import { HttpClientModule } from '@angular/common/http';
 
 import { ContactFormService } from './contact-form.service';
+import { DoctorsComponent } from './doctors/doctors.component';
+import { DoctorLayoutComponent } from './doctor-layout/doctor-layout.component';
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import { ContactFormService } from './contact-form.service';
     BoxCardComponent,
     FacilitiesComponent,
     HealthCheckupComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    DoctorsComponent,
+    DoctorLayoutComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,66 @@
+.container{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-around;
+    padding: 4rem;
+    row-gap: 130px;
+    background-color: #FBFFF5;
+    padding-bottom: 10rem;
+}
+.form-container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .form-input {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 14px;
+    width: 285px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-input:focus {
+    border-color: #1aaf5d;
+  }
+  .doctor-container{
+    margin-top:7rem;
+    background-color: #FBFFF4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+  }
+  .doctor-about{
+    width:50%;
+    padding-right: 6rem;
+  }
+  .heading{
+    color: #000;
+text-align: center;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+width:542px;
+  }
+  .content{
+    color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 482px;
+  }
