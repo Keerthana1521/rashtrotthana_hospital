@@ -137,11 +137,17 @@
 
 .packages-container-title {
     color: #008080;
-    font-size: 30px;
+    color: #008080;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
 }
 
 .content-container {
     width: 90vw;
+    margin-top:2rem;
 }
 
 .text-container {

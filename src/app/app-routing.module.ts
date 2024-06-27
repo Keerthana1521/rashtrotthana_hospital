@@ -8,7 +8,7 @@ import { HealthCheckupComponent } from './health-checkup/health-checkup.componen
 import { ContactFormComponent } from './contact-form/contact-form.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'specialists', component: SpecalitiesComponent },
   { path: 'facility', component: FacilitiesComponent},
