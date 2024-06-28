@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-facilities',
@@ -6,91 +7,135 @@ import { Component } from '@angular/core';
   styleUrl: './facilities.component.css'
 })
 export class FacilitiesComponent {
+  constructor(private router: Router) {}
   box =[
     {
       name: 'card',
-      image: '1',
+      image: '../../assets/facility-1.png',
       title: 'In patient facility',
-      button_text: 'Read More'
+      button_text: 'Read More',
+      route: 'component1'
     },
     {
       name: 'card',
-      image: '2',
+      image: '../../assets/facility-2.png',
       title: 'Emergency & Trauma Care',
+      button_text: 'Read More',
+      route: 'emergency'
+    },
+    {
+      name: 'card',
+      image: '../../assets/facility-14.png',
+      title: 'Insurance',
       button_text: 'Read More'
     },
     {
       name: 'card',
-      image: '3',
-      title: 'Pharmacy',
-      button_text: 'Read More'
-    },
-    {
-      name: 'card',
-      image: '4',
-      title: 'Ambulance Services',
-      button_text: 'Read More'
-    },
-    {
-      name: 'card',
-      image: '5',
-      title: 'Physiotherapy',
-      button_text: 'Read More'
-    },
-    {
-      name: 'card',
-      image: '6',
-      title: 'Laboratory Services',
-      button_text: 'Read More'
-    },
-    {
-      name: 'card',
-      image: '7',
-      title: 'Radiology Services',
-      button_text: 'Read More'
-    },
-    {
-      name: 'card',
-      image: '8',
+      image: '../../assets/facility-8.png',
       title: 'Dialysis Unit',
       button_text: 'Read More'
     },
     {
       name: 'card',
-      image: '9',
+      image: '../../assets/facility-11.png',
+      title: 'Operation Theatre',
+      button_text: 'Read More',
+      route: 'operation-theatre'
+    },
+    {
+      name: 'card',
+      image: '../../assets/facility-12.png',
+      title: 'I.C.U',
+      button_text: 'Read More',
+      route: 'icu'
+
+    },
+    {
+      name: 'card',
+      image: '../../assets/facility-7.png',
+      title: 'Radiology Services',
+      button_text: 'Read More'
+    },
+    {
+      name: 'card',
+      image: '../../assets/facility-3.png',
+      title: 'Pharmacy',
+      button_text: 'Read More'
+    },
+    {
+      name: 'card',
+      image: '../../assets/facility-4.png',
+      title: 'Ambulance Services',
+      button_text: 'Read More',
+      route:'abulance'
+    },
+    {
+      name: 'card',
+      image: '../../assets/facility-13.png',
+      title: 'Dietary',
+      button_text: 'Read More',
+      route:'dietery'
+    },
+    {
+      name: 'card',
+      image: '../../assets/facility-5.png',
+      title: 'Physiotherapy',
+      button_text: 'Read More',
+      route:'physiotherapy'
+    },
+    {
+      name: 'card',
+      image: '../../assets/facility-6.png',
+      title: 'Laboratory Services',
+      button_text: 'Read More',
+      route:'laboratory'
+    },
+    {
+      name: 'card',
+      image: '../../assets/facility-9.png',
       title: 'Endoscopy',
       button_text: 'Read More'
     },
     {
       name: 'card',
-      image: '10',
+      image: '../../assets/facility-10.png',
       title: 'Nutrition & Dietetics',
       button_text: 'Read More'
     },
-    {
-      name: 'card',
-      image: '11',
-      title: 'Operation Theatre',
-      button_text: 'Read More'
-    },
-    {
-      name: 'card',
-      image: '12',
-      title: 'I.C.U',
-      button_text: 'Read More'
-    },
-    {
-      name: 'card',
-      image: '13',
-      title: 'Dietary',
-      button_text: 'Read More'
-    },
-    {
-      name: 'card',
-      image: '14',
-      title: 'insurance',
-      button_text: 'Read More'
-    }
+
     
   ]
+  hoverBoxes = [
+    { image: 'assets/facility-hover-1.png' },
+    { image: 'assets/facility-hover-2.png' },
+    { image: 'assets/facility-hover-13.png' },
+    { image: 'assets/facility-hover-7.png' },
+    { image: 'assets/facility-hover-10.png' },
+    { image: 'assets/facility-hover-11.png' },
+    { image: 'assets/facility-hover-6.png' },
+    { image: 'assets/facility-hover-3.png' },
+    { image: 'assets/facility-hover-14.png' },
+    { image: 'assets/facility-hover-12.png' },
+    { image: 'assets/facility-hover-4.png' },
+    { image: 'assets/facility-hover-5.png' },
+    { image: 'assets/facility-hover-8.png' },
+    { image: 'assets/facility-hover-9.png' },
+    
+  ];
+  activeHoverIndex: number | null = null;
+
+  onMouseOver(index: number) {
+    this.activeHoverIndex = index;
+  }
+
+  onMouseOut() {
+    this.activeHoverIndex = null;
+  }
+  onButtonClick(route?: string) {
+    if (route) {
+      this.router.navigate([route]);
+    } else {
+      console.error('No route provided');
+    }
+  }
 }

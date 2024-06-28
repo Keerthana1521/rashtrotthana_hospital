@@ -8,6 +8,13 @@ import { HealthCheckupComponent } from './health-checkup/health-checkup.componen
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { DoctorLayoutComponent } from './doctor-layout/doctor-layout.component';
 import { DonationComponent } from './donation/donation.component';
+import { AbulanceComponent } from './abulance/abulance.component';
+import { DieteryComponent } from './dietery/dietery.component';
+import { EmergencyFacilityComponent } from './emergency-facility/emergency-facility.component';
+import { IcuComponent } from './icu/icu.component';
+import { LaboratoryComponent } from './laboratory/laboratory.component';
+import { OperationTheatreComponent } from './operation-theatre/operation-theatre.component';
+import { PhysiotherapyComponent } from './physiotherapy/physiotherapy.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,7 +24,17 @@ const routes: Routes = [
   { path: 'health-checkup', component: HealthCheckupComponent },
   { path: 'contact', component: ContactFormComponent },
   {path: 'doctor', component:DoctorLayoutComponent},
-  {path:'donation', component:DonationComponent}
+  {path:'donation', component:DonationComponent},
+  {path:'abulance', component:AbulanceComponent},
+  {path:'dietery', component:DieteryComponent},
+  {path:'emergency', component:EmergencyFacilityComponent},
+  {path:'icu', component:IcuComponent},
+  {path:'laboratory', component:LaboratoryComponent},
+  {path:'operation-theatre', component:OperationTheatreComponent},
+  {path:'physiotherapy', component:PhysiotherapyComponent},
+  
+  
+
 ]; 
 
 @NgModule({

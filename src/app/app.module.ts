@@ -32,6 +32,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContactFormService } from './contact-form.service';
 import { DoctorsComponent } from './doctors/doctors.component';
 import { DoctorLayoutComponent } from './doctor-layout/doctor-layout.component';
+import { FeaturesContentComponent } from './features-content/features-content.component';
+import { EmergencyFacilityComponent } from './emergency-facility/emergency-facility.component';
+import { OperationTheatreComponent } from './operation-theatre/operation-theatre.component';
+import { IcuComponent } from './icu/icu.component';
+import { AbulanceComponent } from './abulance/abulance.component';
+import { DieteryComponent } from './dietery/dietery.component';
+import { PhysiotherapyComponent } from './physiotherapy/physiotherapy.component';
+import { LaboratoryComponent } from './laboratory/laboratory.component';
 
 
 @NgModule({
@@ -51,7 +59,15 @@ import { DoctorLayoutComponent } from './doctor-layout/doctor-layout.component';
     HealthCheckupComponent,
     ContactFormComponent,
     DoctorsComponent,
-    DoctorLayoutComponent
+    DoctorLayoutComponent,
+    FeaturesContentComponent,
+    EmergencyFacilityComponent,
+    OperationTheatreComponent,
+    IcuComponent,
+    AbulanceComponent,
+    DieteryComponent,
+    PhysiotherapyComponent,
+    LaboratoryComponent
   ],
   imports: [
     BrowserModule,

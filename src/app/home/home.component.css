@@ -208,7 +208,7 @@ form {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 3rem;
+  padding: 1rem;
 }
 .card {
   display: flex;
@@ -383,7 +383,7 @@ form {
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding-top: 6rem;
+  padding-top: 0rem;
 }
 .about-image {
   width: 401px;
@@ -565,13 +565,7 @@ li {
   text-align: center;
   padding-left: 6rem;
 }
-.sixth-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding-top: 6rem;
-}
+
 
 .about-us-heading {
   padding-top: 2rem;
@@ -582,7 +576,7 @@ li {
   font-weight: 700;
   line-height: 55px;
   word-wrap: break-word;
-  width: 534px;
+  width: 620px;
 }
 .about-us-content {
   padding-top: 2rem;

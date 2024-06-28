@@ -11,6 +11,18 @@ justify-content: space-around;
 align-items:center;
 flex-direction: column;
 }
+.box-card:hover{
+    background: linear-gradient(141deg, #FBCA51 -34.47%, #008080 81.83%);
+    .box-image{
+        position: relative;
+    left: 14px;
+    top: 32px;
+    }
+    .read-more-btn{
+        border: none;
+        background: #FBCA51;
+    }
+}
 .box-image{
     width: 153px;
 height: 158px;

@@ -1,4 +1,4 @@
-import { Component , Input} from '@angular/core';
+import { Component , Input,Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-box-card',
@@ -12,6 +12,11 @@ export class BoxCardComponent {
 @Input() title: string ='';
 @Input() button_text: string = '';
 @Input() key:string ='';
+@Output() buttonClick = new EventEmitter<void>();
+
+onButtonClick() {
+  this.buttonClick.emit();
+}
 
 onMouseOver(key: string) {
 
