@@ -9,7 +9,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { DoctorLayoutComponent } from './doctor-layout/doctor-layout.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'specialists', component: SpecalitiesComponent },
   { path: 'facility', component: FacilitiesComponent},
