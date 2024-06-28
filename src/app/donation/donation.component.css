@@ -21,7 +21,7 @@
 .con_1_lft .con_1_heading{
     color: #1E0B9B;
     text-align: center;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -102,7 +102,7 @@
 .con_2_head_txt{
     color: #1E0B9B;
     text-align: center;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -144,7 +144,7 @@
 .box .box_head .box_head_txt{
     color: #008080;
     text-align: center;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -154,7 +154,7 @@
 .box .box_paragraph .box_para_txt{
     color: #000;
     text-align: center;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -212,7 +212,7 @@
 .con_3_head .con_3_head_txt{
     color: #008080;
     text-align: justify;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -263,7 +263,7 @@
 
 .con_4_head .con_4_head_txt{
     color: #008080;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -277,7 +277,7 @@
 .content_1_box_4 .content_1_heading{
     color: #000;
     text-align: justify;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -345,7 +345,7 @@
 }
 .content_con_5 .numbers_con_5{
     color: #008080;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 65px;
     font-style: normal;
     font-weight: 300;
@@ -380,7 +380,7 @@
 }
 .container_5_milestone .con_5_milestone_txt{
     color: #008080;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 48px;
     font-style: normal;
     font-weight: 300;
@@ -399,7 +399,7 @@
 }
 .container_6_head .con_6_heading_txt{
     color: #008080;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -447,7 +447,7 @@
     background-color: #008080;
     text-align: center;
     color: #ffffff;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -470,7 +470,7 @@
 .con_7_heading{
     color: #008080;
     text-align: center;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -480,7 +480,7 @@
 }
 .con_7_contact_us{
     color: #FBCA51;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -495,7 +495,7 @@
 }
 .con_7_email{
     color: #000;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -505,7 +505,7 @@
 }
 .con_7_number{
     color: #000;
-    font-family: Poppins;
+    font-family: poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

@@ -47,7 +47,7 @@
 
 .container {
   text-align: center;
-  padding: 20px;
+  padding: 20px 97px;
   border-radius: 15px;
   width: 90%;
 }
@@ -112,14 +112,14 @@ text-transform: uppercase;
 
 .naturopathy,
 .ayurveda {
-  margin-bottom: 49px;
+  margin-bottom: 154px;
 }
 .modern-medicine {
   margin-bottom: 255px;
 }
 .yoga,
 .homeopathy {
-  margin-top: 239px;
+  margin-top: 69px;
 }
 .sheild {
   margin-top: -97px;
@@ -733,7 +733,7 @@ li {
   word-wrap: break-word;
 }
 .hope {
-  padding: 4rem;
+  padding: 1rem;
   text-align: center;
   color: #1e0b9b;
   text-shadow: 0px 0px 50px rgba(251, 202, 81, 0.4);
