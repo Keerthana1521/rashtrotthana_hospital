@@ -40,6 +40,12 @@ import { AbulanceComponent } from './abulance/abulance.component';
 import { DieteryComponent } from './dietery/dietery.component';
 import { PhysiotherapyComponent } from './physiotherapy/physiotherapy.component';
 import { LaboratoryComponent } from './laboratory/laboratory.component';
+import { InPatientComponent } from './in-patient/in-patient.component';
+import { FacilityContentComponent } from './facility-content/facility-content.component';
+import { RadiologyComponent } from './radiology/radiology.component';
+import { EndoscopyComponent } from './endoscopy/endoscopy.component';
+import { NutritionComponent } from './nutrition/nutrition.component';
+import { PharmacyComponent } from './pharmacy/pharmacy.component';
 
 
 @NgModule({
@@ -67,7 +73,13 @@ import { LaboratoryComponent } from './laboratory/laboratory.component';
     AbulanceComponent,
     DieteryComponent,
     PhysiotherapyComponent,
-    LaboratoryComponent
+    LaboratoryComponent,
+    InPatientComponent,
+    FacilityContentComponent,
+    RadiologyComponent,
+    EndoscopyComponent,
+    NutritionComponent,
+    PharmacyComponent
   ],
   imports: [
     BrowserModule,

@@ -15,6 +15,11 @@ import { IcuComponent } from './icu/icu.component';
 import { LaboratoryComponent } from './laboratory/laboratory.component';
 import { OperationTheatreComponent } from './operation-theatre/operation-theatre.component';
 import { PhysiotherapyComponent } from './physiotherapy/physiotherapy.component';
+import { InPatientComponent } from './in-patient/in-patient.component';
+import { RadiologyComponent } from './radiology/radiology.component';
+import { EndoscopyComponent } from './endoscopy/endoscopy.component';
+import { NutritionComponent } from './nutrition/nutrition.component';
+import { PharmacyComponent } from './pharmacy/pharmacy.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -32,6 +37,11 @@ const routes: Routes = [
   {path:'laboratory', component:LaboratoryComponent},
   {path:'operation-theatre', component:OperationTheatreComponent},
   {path:'physiotherapy', component:PhysiotherapyComponent},
+  {path:'inpatient',component:InPatientComponent},
+  {path:'raidology',component:RadiologyComponent},
+  {path:'endoscopy',component:EndoscopyComponent},
+  {path:'nutrition',component:NutritionComponent},
+  {path:'pharmacy',component:PharmacyComponent}
   
   
 

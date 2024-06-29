@@ -14,7 +14,7 @@ export class FacilitiesComponent {
       image: '../../assets/facility-1.png',
       title: 'In patient facility',
       button_text: 'Read More',
-      route: 'component1'
+      route: 'inpatient'
     },
     {
       name: 'card',
@@ -54,13 +54,15 @@ export class FacilitiesComponent {
       name: 'card',
       image: '../../assets/facility-7.png',
       title: 'Radiology Services',
-      button_text: 'Read More'
+      button_text: 'Read More',
+      route:'raidology'
     },
     {
       name: 'card',
       image: '../../assets/facility-3.png',
       title: 'Pharmacy',
-      button_text: 'Read More'
+      button_text: 'Read More',
+      route:'pharmacy'
     },
     {
       name: 'card',
@@ -94,13 +96,15 @@ export class FacilitiesComponent {
       name: 'card',
       image: '../../assets/facility-9.png',
       title: 'Endoscopy',
-      button_text: 'Read More'
+      button_text: 'Read More',
+      route:'endoscopy'
     },
     {
       name: 'card',
       image: '../../assets/facility-10.png',
       title: 'Nutrition & Dietetics',
-      button_text: 'Read More'
+      button_text: 'Read More',
+      route:'nutrition'
     },
 
     
