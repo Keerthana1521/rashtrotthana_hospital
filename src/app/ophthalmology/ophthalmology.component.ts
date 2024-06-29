@@ -1,0 +1,25 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-ophthalmology',
+  templateUrl: './ophthalmology.component.html',
+  styleUrl: './ophthalmology.component.css'
+})
+export class OphthalmologyComponent {
+  specialities=[
+    {
+      main_heading:'Ophthalmology',
+      content:'Ophthalmologists at JMRH offer a wide range of outpatient & surgical services for diseases related to the eye & surrounding tissues. Modern ophthalmology setup along with a qualified Optometrists are part of the well equipped team. Apart from General ophthalmology, eye surgeries like Cataract surgery & Refractive surgery are performed at affordable cost.',
+      heading:'Ophthalmology',
+      image:'Ophthalmology.png',
+      Doctors:[
+        {
+          doctor_image:'Dr. KRISHNASWAMY LAKSHMAN.png',
+          doctor_name:'Dr. KRISHNASWAMY LAKSHMAN'
+        },
+        {
+          doctor_image:'Dr. Atmaram D C.png',
+          doctor_name:'Dr. Atmaram D C'
+        }
+      ]}];
+}

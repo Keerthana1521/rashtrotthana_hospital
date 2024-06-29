@@ -46,6 +46,23 @@ import { RadiologyComponent } from './radiology/radiology.component';
 import { EndoscopyComponent } from './endoscopy/endoscopy.component';
 import { NutritionComponent } from './nutrition/nutrition.component';
 import { PharmacyComponent } from './pharmacy/pharmacy.component';
+import { SpecialityComponentComponent } from './speciality-component/speciality-component.component';
+import { GeneralMedicineComponent } from './general-medicine/general-medicine.component';
+import { GeneralSurgeryComponent } from './general-surgery/general-surgery.component';
+import { PaediatricsComponent } from './paediatrics/paediatrics.component';
+import { NephrologyComponent } from './nephrology/nephrology.component';
+import { UrologyComponent } from './urology/urology.component';
+import { OrthopedicsComponent } from './orthopedics/orthopedics.component';
+import { GastrosciencesComponent } from './gastrosciences/gastrosciences.component';
+import { CardiacComponent } from './cardiac/cardiac.component';
+import { PulmonologyComponent } from './pulmonology/pulmonology.component';
+import { OphthalmologyComponent } from './ophthalmology/ophthalmology.component';
+import { DentalComponent } from './dental/dental.component';
+import { ENTComponent } from './ent/ent.component';
+import { NeurosciencesComponent } from './neurosciences/neurosciences.component';
+import { PsychiatryComponent } from './psychiatry/psychiatry.component';
+import { OncologyComponent } from './oncology/oncology.component';
+import { EmergencyMedicineComponent } from './emergency-medicine/emergency-medicine.component';
 
 
 @NgModule({
@@ -79,7 +96,24 @@ import { PharmacyComponent } from './pharmacy/pharmacy.component';
     RadiologyComponent,
     EndoscopyComponent,
     NutritionComponent,
-    PharmacyComponent
+    PharmacyComponent,
+    SpecialityComponentComponent,
+    GeneralMedicineComponent,
+    GeneralSurgeryComponent,
+    PaediatricsComponent,
+    NephrologyComponent,
+    UrologyComponent,
+    OrthopedicsComponent,
+    GastrosciencesComponent,
+    CardiacComponent,
+    PulmonologyComponent,
+    OphthalmologyComponent,
+    DentalComponent,
+    ENTComponent,
+    NeurosciencesComponent,
+    PsychiatryComponent,
+    OncologyComponent,
+    EmergencyMedicineComponent
   ],
   imports: [
     BrowserModule,
