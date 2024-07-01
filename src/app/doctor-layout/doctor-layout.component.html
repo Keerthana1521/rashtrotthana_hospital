@@ -1,14 +1,14 @@
-<app-navbar></app-navbar>
 <div class="doctor-container">
-<div class="doctor-about">
-    <div class="heading">
-        Expert Care, Experienced Hands: Your Health, Our Priority!
+    <div class="doctor-about">
+        <div class="heading">
+            Expert Care, Experienced Hands: Your Health, Our Priority!
+        </div>
+        <div class="content">
+            Experience compassionate care and expertise tailored to your needs. Our dedicated team of doctors is
+            committed to preserving your health and restoring hope, every step of the way.
+        </div>
     </div>
-    <div class="content">
-        Experience compassionate care and expertise tailored to your needs. Our dedicated team of doctors is committed to preserving your health and restoring hope, every step of the way.
-    </div>
-</div>
-<div class="form-card">
+    <div class="form-card">
         <div class="form-container">
             <form>
                 <select class="form-input">
@@ -26,11 +26,11 @@
                 <app-arrow-btn [text]="'Search Now'"></app-arrow-btn>
             </form>
         </div>
-</div>
+    </div>
 </div>
 <div class="container">
-<ng-container *ngFor="let doctor of dcotors">
-    <app-doctors [image]="doctor.image" [name]="doctor.name" [desgination]="doctor.desgination" [about]="doctor.about"></app-doctors>
-</ng-container>
+    <ng-container *ngFor="let doctor of dcotors">
+        <app-doctors [image]="doctor.image" [name]="doctor.name" [desgination]="doctor.desgination"
+            [about]="doctor.about"></app-doctors>
+    </ng-container>
 </div>
-<app-footer></app-footer>
