@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {  
-
+export class HomeComponent implements OnInit {  
+  counter: number = 0;
+  endValue: number = 100;
+  duration: number = 3000;
   showContent: any = 'default';
   showTitle:any = 'default'
   showImage: any = 'default';
@@ -40,7 +42,15 @@ export class HomeComponent {
 //     key: 'homeopathy',
 //   }
 // ]
-
+startCounter() {
+  const interval = this.duration / this.endValue;
+  const timer = setInterval(() => {
+    this.counter++;
+    if (this.counter >= this.endValue) {
+      clearInterval(timer);
+    }
+  }, interval);
+}
   features = [
     {
       name: 'Yoga',
@@ -116,14 +126,42 @@ image:any ={
   'ayurveda': 'assets/ayurveda-outline.png',
   'homeopathy': 'assets/homeopathy-outline.png'
 }
-// normal_image:any ={
-
-//   'default': 'assets/sheild_num.png',
-//   'yoga': 'assets/yoga-outline.png',
-//   'naturopathy': 'assets/naturopathy-outline.png',
-//   'modern-medicine': 'assets/medicine-outline.png',
-//   'ayurveda': 'assets/ayurveda-outline.png',
-//   'homeopathy': 'assets/homeopathy-outline.png'
-
-// }
+// <div class="box">
+//         <img src="../../assets/doctor-icon.png">
+//         <div class="number">
+//             {{counter}}
+//         </div>
+//         <div class="statement">
+//             Doctors At Work
+//         </div>
+//     </div>
+box=[{
+  icon:'doctor-icon.png',
+  number:this.counter,
+  statement:'Doctors at work'
+},
+{
+  icon:'patient-icon.png',
+  number:'20000',
+  statement:'Happy Patients'
+},
+{
+  icon:'hospital-icon.png',
+  number:'2022',
+  statement:'Established'
+},
+{
+  icon:'bed-icon.png',
+  number:'150',
+  statement:'Medical Beds'
+},
+{
+  icon:'bed-icon.png',
+  number:'25',
+  statement:'Insurance Tie Up '
+}
+]
+ngOnInit(){
+  this.startCounter();
+}
 }
