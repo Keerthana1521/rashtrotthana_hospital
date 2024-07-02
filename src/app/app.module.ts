@@ -63,6 +63,7 @@ import { NeurosciencesComponent } from './neurosciences/neurosciences.component'
 import { PsychiatryComponent } from './psychiatry/psychiatry.component';
 import { OncologyComponent } from './oncology/oncology.component';
 import { EmergencyMedicineComponent } from './emergency-medicine/emergency-medicine.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -129,7 +130,8 @@ import { EmergencyMedicineComponent } from './emergency-medicine/emergency-medic
     BrowserAnimationsModule,
     ReactiveFormsModule,
     ToastModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [
     MessageService,

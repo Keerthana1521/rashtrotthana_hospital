@@ -1,61 +1,96 @@
-<div class="navbar-container">
-    <nav id="navbar">
-        <div class="contact-nav">
-            <div class="contact">
-                <div class="each-link">
-                    <a href="mailto:info@amazeinstitute.co.in"><img src="../../assets/mail-logo.png" alt="">
-                        info&#64;rashtrotthanahospital.com</a>
-                </div>
-                <div class="each-link">
-                    <a href="tel:+91-9742235296"><img src="../../assets/call-logo.png" alt="">
-                        080
-                        6923 9999</a>
-                </div>
+<div class="container-fluid" class="navbar-container">
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid"class="contact-nav">
+        <!-- Contact Section -->
+        <div class="d-flex flex-column flex-lg-row contact ">
+          <div class="d-flex flex-column flex-lg-row align-items-center">
+            <div class="each-link me-3">
+              <a href="mailto:info@amazeinstitute.co.in">
+                <img src="../../assets/mail-logo.png" alt="">
+                info&#64;rashtrotthanahospital.com
+              </a>
             </div>
-            <div class="button">
-                <div class="submit-button">
-                    <div class="submit-text">Emergency</div>
-                    <div class="submit-arrow">
-                        <div class="arrow"><img style="margin-top:3px;margin-left:-6px" src="../../assets/Ambulance.png"
-                                alt=""></div>
-                    </div>
-                </div>
-
-                <div style="margin-left: 2rem;" class="submit-button">
-                    <div class="submit-text">Enquiry/Appointment</div>
-                    <div class="submit-arrow">
-                        <div class="arrow">></div>
-                    </div>
-                </div>
-
+            <div class="each-link me-3">
+              <a href="tel:+91-9742235296">
+                <img src="../../assets/call-logo.png" alt="">
+                080 6923 9999
+              </a>
             </div>
-            <div class="icons">
-                <img onKeyPress src="../../assets/fb.png" alt="" (click)="openLink('facebook')" />
-                <img onKeyPress src="../../assets/youtube.png" alt="" (click)="openLink('youtube')" />
-                <img onKeyPress src="../../assets/x.png" alt="" (click)="openLink('twitter')" />
-                <img onKeyPress src="../../assets/fb.png" alt="" (click)="openLink('instagram')" />
+          </div>
+          </div>
+          <div class="button d-flex align-items-center ">
+            <div class="submit-button me-3 d-flex align-items-center">
+              <div class="submit-text">Emergency</div>
+              <div class="submit-arrow">
+                <div class="arrow">
+                  <img style="margin-top:3px;margin-left:-6px" src="../../assets/Ambulance.png" alt="">
+                </div>
+              </div>
             </div>
+            <div class="submit-button d-flex align-items-center">
+              <div class="submit-text">Enquiry/Appointment</div>
+              <div class="submit-arrow">
+                <div class="arrow">></div>
+              </div>
+            </div>
+          </div>
+        
+  
+        <!-- Social Media Icons -->
+        <div class="icons d-flex ">
+          <img src="../../assets/fb.png" alt="" (click)="openLink('facebook')" class="me-2" />
+          <img src="../../assets/youtube.png" alt="" (click)="openLink('youtube')" class="me-2" />
+          <img src="../../assets/x.png" alt="" (click)="openLink('twitter')" class="me-2" />
+          <img src="../../assets/ig.png" alt="" (click)="openLink('instagram')" />
         </div>
-        <div class="nav-wrapper">
+  
+        <!-- Toggler -->
+    </div>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse w-100" id="navbarNav" >
+          <div class="nav-wrapper d-flex justify-content-between align-items-center w-100">
             <div class="logo">
-                <img onKeyPress class="logo-image" src="../../assets/JMRH Logo.png" alt="" (click)="navigateToHome()">
+              <img class="logo-image" src="../../assets/JMRH Logo.png" alt="" (click)="navigateToHome()">
             </div>
             <div class="links">
-                <ul id="menu">
-                    <li><a routerLink=""routerLinkActive="active-link"[routerLinkActiveOptions]="{ exact: true }">Home</a></li>
-                    <li><a routerLink="/about-us"routerLinkActive="active-link">About Us</a></li>
-                    <li><a routerLink="/specialists"routerLinkActive="active-link">Specialities</a></li>
-                    <li><a routerLink="/doctor"routerLinkActive="active-link">Doctors</a></li>
-                    <li><a routerLink="/facility"routerLinkActive="active-link">Facilities </a></li>
-                    <li><a routerLink="/health-checkup"routerLinkActive="active-link">Health Check</a></li>
-                    <li><a routerLink="/contact"routerLinkActive="active-link">Contact Us</a></li>
-                    <li><a routerLink="/donation"routerLinkActive="active-link">Donation</a></li>
-                    <li><a routerLink="/blog"routerLinkActive="active-link">Blog</a></li>
-                </ul>
-            </div>
-
+            <ul class="navbar-nav ms-auto" id="menu">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/about-us" routerLinkActive="active-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/specialists" routerLinkActive="active-link">Specialities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/doctor" routerLinkActive="active-link">Doctors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/facility" routerLinkActive="active-link">Facilities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/health-checkup" routerLinkActive="active-link">Health Check</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/contact" routerLinkActive="active-link">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/donation" routerLinkActive="active-link">Donation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/blog" routerLinkActive="active-link">Blog</a>
+              </li>
+              
+            </ul>
         </div>
-
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
     </nav>
-
-</div>
+  </div>
+  

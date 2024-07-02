@@ -1,7 +1,8 @@
 .logo {
   width: 20%;
   display: flex;
-  justify-content: flex-end;
+
+  justify-content: center;
   height: 80%;
 }
 
@@ -50,6 +51,8 @@
   background-color: #ffffff;
   text-decoration: none;
   list-style: none;
+  padding: 0;
+
 }
 
 #navbar ul li {
@@ -78,6 +81,8 @@ nav {
   position: fixed;
   top: 0;
   z-index: 1030;
+  display: flex;
+  flex-direction: column;
 }
 .submit-button {
   padding-top: 3px;
@@ -132,9 +137,10 @@ nav {
 }
 
 .contact {
-  display: flex;
+  /* display: flex;
   gap: 15px;
   align-items: center;
+  justify-content: space-between; */
 }
 
 .each-link {

@@ -662,13 +662,13 @@ li {
 .last-li {
   padding-bottom: 5rem;
 }
-.ninth-container {
+/* .ninth-container {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   padding: 4rem;
-}
+} */
 .specialities {
   display: flex;
   width: 50%;
@@ -722,6 +722,7 @@ li {
   width: 100%;
 
   background: url("../../assets/service.png") no-repeat;
+  background-size: cover;
 }
 .corporate {
   padding: 2rem;
@@ -872,4 +873,124 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 28px; /* 175% */
+}
+.card-header{
+  border-bottom: none;
+  background-color: white;
+}
+@media  only screen and (max-width:430px){
+  .video{
+    height: fit-content;
+  }
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-input{
+    width: 260px;
+  }
+  .form-container{
+    height:80vh
+  }
+  .third-container{
+    height: 100vh;
+  }
+  .fourth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+  }
+  .card-header{
+ 
+    border-bottom: none;
+    color: #008080;
+    font-size: 20px;
+    font-weight: bold;
+    background: white;
+  }
+  .card{
+    margin-bottom:2rem;
+  }
+ 
+    .service-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+  }
+
+  .bg-service {
+      width: 100%; /* Adjust as needed */
+      padding: 10px;
+  }
+
+  .bg-service img {
+      width: 100%; /* Adjust as needed */
+      height: 100% ;/* Adjust as needed */
+      margin-bottom: 5px;
+  }
+
+  .bg-service p {
+      font-size: 12px; /* Adjust as needed */
+  }
+  
+  .eight-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .achieve-content{
+    width: 100%;
+    height: 100%;
+  }
+  .achieve-image{
+    width: 100%;
+    height: 100%;
+  }
+ .acheive-points{
+  padding-left: 2rem;
+  width: 100%;
+ 
+ }
+ .acheive-points ul li{
+  word-wrap: break-word;
+ }
+ .four{
+  display: none;
+ }
+ .ninth-container{
+ display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+ }
+ .about-us-heading{
+  font-size: 16px;
+  width: 328px;
+  line-height: 20px;
+  padding-left: 1rem;
+ }
+.bg-care img{
+  width: 230px;
+  height: 74px;
+}
+.bg-care .secondary{
+ opacity: 1;
+}
+.care-image{
+  /* padding-left: 5rem; */
+}
+.tenth-container{
+  
+    width: 100%;
+  
+    background: url("../../assets/dontaion-home-bg.png") no-repeat;
+    background-size: cover;
+    height: 725px;
+  }
+  .free-div,.benefit,.hope,.corporate{
+    display: none;
+  }
 }
