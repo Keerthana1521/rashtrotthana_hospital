@@ -65,13 +65,13 @@
 }
 
 #navbar ul li a:hover {
-  color: #e13131;
-  border-bottom: 2px solid #e13131;
+  color: #0392CE;;
+ 
 }
-.service-down:hover {
-  color: #e13131;
-  border-bottom: 2px solid #e13131;
+.active-link {
+  border-bottom: 2px solid #0392CE;
 }
+
 
 nav {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
