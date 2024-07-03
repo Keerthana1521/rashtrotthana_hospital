@@ -41,3 +41,9 @@
     line-height: 37px;
     word-wrap: break-word;
   }
+  @media only screen and (max-width: 600px){
+    /* .submit-button{
+      width: 139%;
+    } */
+  }
+ 
