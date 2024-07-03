@@ -102,6 +102,48 @@
   cursor: pointer;
 }
 
+#navbar ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+#navbar ul li a:hover {
+  color: #0392CE;;
+ 
+}
+
+#navbar {
+  width: 100%;
+  background-color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+
+}
+.active-link {
+  border-bottom: 2px solid #0392CE;
+}
+.menu-bar {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top:0;
+  z-index: 1030;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.logo-image {
+  cursor: pointer;
+}
+.nav-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 80px;
+} 
 @media screen and (max-width: 1200px) {
   .links ul {
     padding-right: 0px;
