@@ -173,6 +173,9 @@
   .links-container {
     display: none;
   }
+  .button{
+    float: left;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -183,5 +186,25 @@
   .links {
     background: #343A40;
     display: inline;
+  }
+  .contact-nav{
+    justify-content: space-between;
+    width:100%
+  }
+  .menu-bar{
+    width: 40%;
+  }
+  .submit-button{
+    padding:0;
+  }
+  .icons img{
+    width: 35px;
+    height:35px;
+  }
+  .submit-text{
+    display:none;
+  }
+  .button{
+    margin-right: 6rem
   }
 }
