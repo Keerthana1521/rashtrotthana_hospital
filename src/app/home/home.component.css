@@ -779,9 +779,10 @@ li {
   padding-top: 10rem;
 }
 .empty-1 {
-  padding-bottom: 3rem;
+  padding-bottom: 12rem;
 }
 .button {
+  cursor:pointer;
   position: relative;
   left: 636px;
 }

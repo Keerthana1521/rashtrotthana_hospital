@@ -108,7 +108,7 @@
             Medicine, Ayurveda, Homeopathy, Yoga & Naturopathy provide expert care with a holistic approach.
         </div>
         <div class="read-button">
-            <app-arrow-btn [text]="'Read More'"></app-arrow-btn>
+            <app-arrow-btn [text]="'Read More'" (onClick)="navigateToPage()"></app-arrow-btn>
         </div>
     </div>
     <div class="about-image-container">
@@ -225,7 +225,7 @@
         <p class="text-benefit">Beneficiaries</p>
     </div>
     <div class="button">
-        <div class="donate-button">
+        <div class="donate-button" (click)="donate()">
             <div class="donate-text">DOANTE HERE</div>
             <div class="donate-arrow">
                 <div class="arrow">></div>

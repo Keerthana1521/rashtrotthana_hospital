@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input,Output,EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-arrow-btn',
@@ -6,5 +7,9 @@ import { Component, Input } from '@angular/core';
   styleUrl: './arrow-btn.component.css'
 })
 export class ArrowBtnComponent {
+  @Output() onClick = new EventEmitter<void>();
   @Input() text: string = 'Read More';
+  handleClick() {
+    this.onClick.emit();
+  }
 }

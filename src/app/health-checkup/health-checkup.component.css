@@ -14,7 +14,9 @@
 ::ng-deep .checkup-accordion .p-accordion-header-link {
     cursor: unset;
 }
-
+::ng-deep .checkup-accordion .p-accordion-header-link {
+    text-decoration: none;
+}
 .accordion-header {
     width: 100%;
     display: flex;

@@ -52,7 +52,7 @@ export class HealthCheckupComponent {
           icon: 'cardiac'
         },
         {
-          title: 'C',
+          title:' SPECIALTY CONSULTATIONS',
           items: ['Physician', 'Ophthalmology', 'ENT', 'Life Style - Cognetive Fitness', 'Diet Counselling', 'Dental Check up'],
           icon: 'speciality'
         } 
@@ -130,7 +130,7 @@ export class HealthCheckupComponent {
           icon: 'cardiac'
         },
         {
-          title: 'C',
+          title:' SPECIALTY CONSULTATIONS',
           items: ['Physician', 'Ophthalmology', 'ENT', 'Life Style - Cognetive Fitness', 'Diet Counselling', 'Dental Check up'],
           icon: 'speciality'
         } 
@@ -156,7 +156,7 @@ export class HealthCheckupComponent {
           icon: 'cardiac'
         },
         {
-          title: 'C',
+          title:' SPECIALTY CONSULTATIONS',
           items: ['Physician', 'Ophthalmology', 'ENT', 'Life Style - Cognetive Fitness', 'Diet Counselling', 'Dental Check up'],
           icon: 'speciality'
         } 
@@ -182,7 +182,7 @@ export class HealthCheckupComponent {
           icon: 'cardiac'
         },
         {
-          title: 'C',
+          title:' SPECIALTY CONSULTATIONS',
           items: ['Physician', 'Ophthalmology', 'ENT', 'Life Style - Cognetive Fitness', 'Diet Counselling', 'Dental Check up'],
           icon: 'speciality'
         } 
@@ -208,7 +208,7 @@ export class HealthCheckupComponent {
           icon: 'cardiac'
         },
         {
-          title: 'C',
+          title:' SPECIALTY CONSULTATIONS',
           items: ['Physician', 'Gynecologist', 'ENT', 'Life Style - Cognetive Fitness', 'Diet Counselling', 'Dental Check up'],
           icon: 'speciality'
         } 
@@ -234,7 +234,7 @@ export class HealthCheckupComponent {
           icon: 'cardiac'
         },
         {
-          title: 'C',
+          title:' SPECIALTY CONSULTATIONS',
           items: ['Physician', 'Ophthalmology', 'ENT', 'Life Style - Cognetive Fitness', 'Diet Counselling', 'Dental Check up'],
           icon: 'speciality'
         } 

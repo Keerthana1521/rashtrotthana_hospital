@@ -1,4 +1,5 @@
 import { Component,OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,14 @@ import { Component,OnInit } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {  
+  constructor(private router: Router) {}
+  navigateToPage() {
+    this.router.navigate(['/about-us']);
+  }
+  donate(){
+    console.log('donate')
+    this.router.navigate(['/donation']);
+  }
   counter: number = 0;
   endValue: number = 100;
   duration: number = 3000;
