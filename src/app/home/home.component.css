@@ -11,9 +11,9 @@
 }
 .video{
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   object-fit: cover;
-
+  margin-top: 20vh;
 }
 .second-container {
   font-family: Arial, sans-serif;
@@ -432,7 +432,7 @@ form {
   width: 401px;
 }
 .seventh-container {
-  gap: 10px;
+  gap: 20px;
   padding: 3rem;
   display: flex;
   justify-content: center;
@@ -609,12 +609,7 @@ li {
   word-wrap: break-word;
   width: 401px;
 }
-.seventh-container {
-  gap: 10px;
-  padding: 3rem;
-  display: flex;
-  justify-content: center;
-}
+
 .eight-container {
   width: 100%;
   display: flex;
@@ -859,7 +854,7 @@ justify-content: center;
 .number{
   color: #1E0B9B;
 text-align: center;
-font-family: "Titillium Web";
+font-family: Poppins;
 font-size: 35px;
 font-style: normal;
 font-weight: 700;
@@ -868,7 +863,7 @@ padding: 5px 0;
 }
 .statement{color: #013243;
 text-align: center;
-font-family: Inter;
+font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;

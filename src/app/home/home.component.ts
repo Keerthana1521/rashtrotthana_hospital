@@ -137,12 +137,12 @@ image:any ={
 //     </div>
 box=[{
   icon:'doctor-icon.png',
-  number:this.counter,
+  number:'100+',
   statement:'Doctors at work'
 },
 {
   icon:'patient-icon.png',
-  number:'20000',
+  number:'20000+',
   statement:'Happy Patients'
 },
 {
@@ -152,12 +152,12 @@ box=[{
 },
 {
   icon:'bed-icon.png',
-  number:'150',
+  number:'150+',
   statement:'Medical Beds'
 },
 {
   icon:'bed-icon.png',
-  number:'25',
+  number:'25+',
   statement:'Insurance Tie Up '
 }
 ]

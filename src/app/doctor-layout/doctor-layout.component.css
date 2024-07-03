@@ -1,4 +1,4 @@
-.container{
+.container-doctors{
     gap: 10px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
