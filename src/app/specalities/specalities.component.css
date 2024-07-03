@@ -8,14 +8,7 @@ padding-top: 18vh;
 .specialities{
     background: #FBFFF5; 
 }
-.card{
-    border-radius: 20px;
-background: #FFF;
-display: flex;
-/* flex-direction: column; */
-width: 600px;
-height:300px
-}
+
 .special-heading{
     padding-top: 2rem;
     color: #000;
@@ -71,10 +64,19 @@ text-transform: capitalize;
     transition: opacity .2s;
   }
   .image:hover .secondary {
-    /* opacity: 1; */
+    opacity: 1;
   }
 .section-1{
     padding: 2rem 6rem;
     display: flex;
     justify-content: space-between;
+}
+.card-1{
+ 
+  border-radius: 20px;
+  background: #FFF;
+  display: flex;
+
+  width: 600px;
+  height:300px
 }
