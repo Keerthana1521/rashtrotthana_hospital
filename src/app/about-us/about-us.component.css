@@ -210,18 +210,20 @@ flex-shrink: 0;
     .about-us-container{
         padding-top:8vh;
         background: url('../../assets/about-us-res-bg.png')no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
    .about-us-container,.mission-vision{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 0;
    }
    .president-container{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     padding-bottom: 0;
+    padding-top: 1rem;
    }
    .president-img{
     display: flex;
@@ -305,15 +307,20 @@ flex-shrink: 0;
    }
    .heading{
     font-size: 16px;
-    margin-top: 35px;
+    margin-top: 1rem;
+    width: 112%;
+    padding: 0;
    }
    .content{
-    font-size: 12px;
+    padding-top: 1rem;
+    font-size: 10px;
     width: 300px;
+    padding-bottom: 3rem;
+    font-weight: 400;
    }
    .jayadev{
-    width: 231px;
-    height: 270px;
+    width: 139px;
+    height: 163px;
     flex-shrink: 0;
    }
    .facilities-heading{
