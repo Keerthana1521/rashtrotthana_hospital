@@ -892,9 +892,10 @@ line-height: 28px; /* 175% */
   font-size: 12px;
   font-weight: bold;
   line-height: 20px;
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 .text-container{
+
   margin-bottom: 30px;
 }
 .bg-features:hover .secondary {
