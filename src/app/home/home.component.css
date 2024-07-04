@@ -872,7 +872,7 @@ line-height: 28px; /* 175% */
 @media  only screen and (max-width:430px){
   .video{
     height: fit-content;
-    margin-top: 17vh;
+    margin-top: 18vh;
   }
   .second-container {
     height: 650px;
