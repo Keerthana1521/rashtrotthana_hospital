@@ -251,6 +251,7 @@ flex-shrink: 0;
    }
    .about-hospital{
     padding: 0;
+    padding-top: 1rem;
    }
    .about-hospital-content{
     padding-top: 1rem;

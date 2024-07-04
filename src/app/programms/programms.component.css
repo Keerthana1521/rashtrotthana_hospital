@@ -119,4 +119,30 @@
         gap: 10px;
         padding: 0 10px;
     }
+    .title-container{
+        padding-top: 2rem;
+    }
+    .sub-title{
+        height: 100px;
+    }
+    .date{
+        font-size: 12px;
+    }
+    .program-title{
+        font-size: 14px;
+    }
+    .program-subtitle{
+        font-size: 12px;
+        padding:5% 5%;
+        height: 25%;
+    }
+    .box-contents{
+        height: 35%;
+    }
+    .readmore-bth{
+        padding-top: 2rem;
+    }
+    .each-content{
+        height: 470px;
+    }
   }
