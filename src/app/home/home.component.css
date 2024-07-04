@@ -891,6 +891,8 @@ line-height: 28px; /* 175% */
  
   font-size: 12px;
   font-weight: bold;
+  line-height: 20px;
+  padding-top: 3rem;
 }
 .bg-features:hover .secondary {
   opacity: 0;
@@ -927,8 +929,8 @@ line-height: 28px; /* 175% */
   }
   .sheild{
     margin-top: 0;
-    width: 90px;
-    height: 70px;
+    width: 100px;
+    height: 90px;
   }
   .icon img {
     width: 90px;
