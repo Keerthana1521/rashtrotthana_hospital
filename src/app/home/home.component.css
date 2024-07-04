@@ -894,6 +894,9 @@ line-height: 28px; /* 175% */
   line-height: 20px;
   padding-top: 3rem;
 }
+.text-container{
+  margin-bottom: 30px;
+}
 .bg-features:hover .secondary {
   opacity: 0;
 }
@@ -946,7 +949,7 @@ form{
     width: 260px;
   }
   .form-container{
-    height:400px
+    height:400px;
   }
   .third-container{
     height: 450px;
@@ -1032,6 +1035,7 @@ form{
   width: 328px;
   line-height: 20px;
   padding-left: 1rem;
+ 
  }
 .bg-care img{
   width: 318px;
@@ -1052,7 +1056,6 @@ form{
 .tenth-container{
   
     width: 100%;
-  
     background: url("../../assets/dontaion-home-bg.png") no-repeat;
     background-size: cover;
     height: 725px;
@@ -1076,11 +1079,12 @@ form{
   padding:0;
   line-height: 20px;
   width: 333px;
+  padding-top: 1rem;
 }
 .about-us-heading{
   font-size: 14px;
   padding: 0;
-  padding-top:1rem
+  padding-top:2rem;
 }
 .about-content-div{
   padding: 0;
