@@ -168,6 +168,11 @@
   .navbar{
     padding:0
   }
+  .logo img {
+    width: 80%;
+    cursor: pointer;
+    padding-left: 1rem;
+  }
 }
 
 @media screen and (max-width: 992px) {

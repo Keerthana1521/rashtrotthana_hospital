@@ -1115,6 +1115,7 @@ form{
   display: grid;
   grid-template-columns: 50% 50%;
   gap:50px;
+  padding-top: 6rem;
 }
 .box:nth-child(5) {
   grid-column: span 2;
