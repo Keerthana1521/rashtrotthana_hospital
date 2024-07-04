@@ -162,7 +162,8 @@
     font-size: 14px;
   }
   #navbar{
-    position:static;
+    position:fixed;
+    top:-9px;
   }
   .navbar{
     padding:0
