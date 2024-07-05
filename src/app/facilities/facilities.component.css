@@ -40,7 +40,7 @@ color: #008080;
         display: grid;
         grid-template-columns: 50% 50%;
         gap: 10px;
-        padding: 0 30px;
+        padding: 20px 30px;
     }
     .facility{
         padding-left: 2rem;

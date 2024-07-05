@@ -109,6 +109,7 @@
 @media only screen and (max-width: 600px) {
   .cover-image {
     height: 400px;
+    padding-top: 15vh;
   }
   .section-1 {
     display: flex;
@@ -178,5 +179,8 @@ padding-top: 0;
   }
   .research-centre{
     margin-bottom: 1rem;
+  }
+  .image .secondary{
+    left: -194px;
   }
 }
