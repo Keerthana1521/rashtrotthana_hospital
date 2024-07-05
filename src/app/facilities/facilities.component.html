@@ -11,7 +11,7 @@
         offer a wide range of services designed to meet your unique healthcare needs.</div>
 </div>
 <div class="container-facility container-fluid">
-    <ng-container *ngFor="let box of box; let i = index">
+    <ng-container  *ngFor="let box of box; let i = index">
         <app-box-card [image]="activeHoverIndex === i ? hoverBoxes[i].image : box.image" [title]=" box.title"
             [button_text]="box.button_text" (mouseover)="onMouseOver(i)" (mouseout)="onMouseOut()"
             (buttonClick)="onButtonClick(box.route)">

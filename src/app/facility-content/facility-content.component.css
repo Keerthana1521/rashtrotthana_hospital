@@ -120,3 +120,101 @@ font-weight: 700;
 line-height: 36px; /* 225% */
 text-transform: capitalize;
 }
+@media only screen and (max-width: 600px){
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        right: 0;
+    }
+    .heading-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        right: 0;
+    }
+    .image-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        right: 0;
+    }
+    .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        right: 0;
+    }
+    .facility{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        right: 0;
+    }
+    .facility-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        right: 0;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        right: 0;
+    }
+    .o_menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        right: 0;
+    }
+    .menu_list_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        right: 0;
+    }
+    .more_specs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        right: 0;
+    }
+    .menu_contents{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        right: 0;
+    }
+    .menu_list_box .menu_list:hover{
+        display: flex;
+        justify-content: center;
+        align-items: center
+}}

@@ -35,3 +35,21 @@ color: #008080;
      line-height: 26px;
      word-wrap: break-word  
 }
+@media only screen and (max-width: 600px){
+    .container-facility{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+        padding: 0 30px;
+    }
+    .facility{
+        padding-left: 2rem;
+    }
+    .heading{
+        font-size: 24px;
+    }
+    .content{
+        width: 90%;
+        font-size: 14px;
+    }
+}

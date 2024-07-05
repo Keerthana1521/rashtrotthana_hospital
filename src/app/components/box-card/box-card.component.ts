@@ -1,4 +1,4 @@
-import { Component , Input,Output, EventEmitter} from '@angular/core';
+import { Component , Input,Output, EventEmitter,HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-box-card',
@@ -6,6 +6,7 @@ import { Component , Input,Output, EventEmitter} from '@angular/core';
   styleUrl: './box-card.component.css'
 })
 export class BoxCardComponent {
+  screenWidth: number=0;
   showImage:any;
   closeBox:boolean = true;
 @Input() image: string ='1'; 
@@ -14,15 +15,23 @@ export class BoxCardComponent {
 @Input() key:string ='';
 @Output() buttonClick = new EventEmitter<void>();
 
+constructor(){
+  this.screenWidth = window.innerWidth;
+}
+@HostListener('window:resize', ['$event'])
+onResize(event: any) {
+  this.screenWidth = window.innerWidth;
+}
 onButtonClick() {
   this.buttonClick.emit();
 }
 
-onMouseOver(key: string) {
-
-  this.showImage =  key;
-  this.closeBox = false;
-};
+// onMouseOver(key: string) {
+// if(this.screenWidth > 600)
+//   this.showImage =  key;
+//   this.closeBox = false;
+//   console.log('key',key)
+// };
 
 hover_image:any ={
   'default': 'assets/sheild_num.png',
