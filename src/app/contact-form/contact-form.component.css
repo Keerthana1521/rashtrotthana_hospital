@@ -132,3 +132,47 @@ cursor: pointer;
   opacity: 0.6;
   cursor: not-allowed;
 }
+.contact-details{
+    display: flex;
+}
+.map{
+    padding-left: 6rem;
+}
+.map-iframe{
+    width:500px;
+     height:450px;
+}
+@media screen and (max-width: 768px) {
+    .contact-form-page{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .form{
+        width: 100%;
+    }
+    .map{
+        padding-left:1rem ;
+    }
+    .contact-form-container{
+        padding: 1rem;
+    }
+    .map-iframe{
+        width: 350px;
+        height: 200px;
+    }
+    .content,.contact-info,.appointment{
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+    .address{
+        width: 298px;
+    }
+    .contact-info{
+        width: 100%;
+    }
+}
