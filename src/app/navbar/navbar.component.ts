@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+    private renderer: Renderer2) { }
 
   openLink(type: string) {
     if (type == 'youtube') {
@@ -27,5 +28,11 @@ export class NavbarComponent {
 
   navigateToHome() {
     this.router.navigate(['/']);
+  }
+  closeMenu() {
+    const navbarCollapse = document.getElementById('navbarText');
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+      this.renderer.removeClass(navbarCollapse, 'show');
+    }
   }
 }
