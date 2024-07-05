@@ -108,7 +108,7 @@
 }
 @media only screen and (max-width: 600px) {
   .cover-image {
-    height: 400px;
+    height:300px;
     padding-top: 15vh;
   }
   .section-1 {
