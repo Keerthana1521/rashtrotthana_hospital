@@ -204,6 +204,9 @@
     transition-duration: 0.5s;
 }
 @media only screen and (max-width:600px){
+    .o_container{
+        width: 100%;
+    }
     .o_menu{
         display: none;
     }
@@ -237,5 +240,8 @@
     .doc_common_box{
         display: flex;
         flex-direction: column;
+    }
+    .menu_n_content{
+        padding:40px 35px;
     }
 }
