@@ -61,7 +61,7 @@
   transition: opacity 0.2s;
 }
 .image:hover .secondary {
-  opacity: 1;
+  opacity: 0;
 }
 .section-1 {
   padding: 2rem 6rem;

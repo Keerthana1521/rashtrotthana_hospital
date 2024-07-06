@@ -64,6 +64,7 @@ import { PsychiatryComponent } from './psychiatry/psychiatry.component';
 import { OncologyComponent } from './oncology/oncology.component';
 import { EmergencyMedicineComponent } from './emergency-medicine/emergency-medicine.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ModernMedicineComponent } from './modern-medicine/modern-medicine.component';
 
 
 @NgModule({
@@ -114,7 +115,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NeurosciencesComponent,
     PsychiatryComponent,
     OncologyComponent,
-    EmergencyMedicineComponent
+    EmergencyMedicineComponent,
+    ModernMedicineComponent
   ],
   imports: [
     BrowserModule,
