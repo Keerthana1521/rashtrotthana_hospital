@@ -203,3 +203,39 @@
     color: #022B50;
     transition-duration: 0.5s;
 }
+@media only screen and (max-width:600px){
+    .o_menu{
+        display: none;
+    }
+    .con_n_img{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .o_heading{
+        padding:12rem 0rem 1rem 2rem;
+        font-size: 20px;
+    }
+    .o_info{
+        padding: 1rem 2rem;
+        font-size: 14px;
+
+    }
+    .o_h_heading{
+        font-size: 20px;
+    }
+    .gm_content{
+        width: 100%;
+        font-size: 14px;
+        padding-right: 1rem;
+    }
+    .Meet_Medical_Team{
+        display: flex;
+        align-items:flex-start;
+        width: 100%;
+    }
+    .doc_common_box{
+        display: flex;
+        flex-direction: column;
+    }
+}

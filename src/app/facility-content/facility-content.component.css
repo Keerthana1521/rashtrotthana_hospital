@@ -120,101 +120,38 @@ font-weight: 700;
 line-height: 36px; /* 225% */
 text-transform: capitalize;
 }
+.banner-image{
+    width: 100%;
+    height: 100%;
+}
 @media only screen and (max-width: 600px){
-    .content-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        position: relative;
-        right: 0;
+    .banner-image{
+        width: 100%;
+        height: 300px;
     }
-    .heading-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        position: relative;
-        right: 0;
+    .o_menu{
+        display: none;
+    }
+    .heading{
+        top: -76px;
+        font-size: 20px;
+        left: 26px;
+        width:213px;
     }
     .image-container{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        position: relative;
-        right: 0;
-    }
-    .heading{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        position: relative;
-        right: 0;
-    }
-    .facility{
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        position: relative;
-        right: 0;
-    }
-    .facility-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        position: relative;
-        right: 0;
+        padding: 2rem;
     }
     .image{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        position: relative;
-        right: 0;
+        width: 100%;
+        height: 100%;
     }
-    .o_menu{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        position: relative;
-        right: 0;
+    .facility-content{
+        width: 100%;
+
     }
-    .menu_list_box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        position: relative;
-        right: 0;
+    .heading-container,.content-container{
+        padding-left: 5rem;
     }
-    .more_specs{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        position: relative;
-        right: 0;
     }
-    .menu_contents{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        position: relative;
-        right: 0;
-    }
-    .menu_list_box .menu_list:hover{
-        display: flex;
-        justify-content: center;
-        align-items: center
-}}
