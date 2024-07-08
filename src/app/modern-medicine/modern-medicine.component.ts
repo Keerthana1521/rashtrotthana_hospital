@@ -27,7 +27,8 @@ export class ModernMedicineComponent {
       name: 'card',
       image: '../../assets/modern-3.png',
       title: 'Obstetrics & Gynecology',
-      button_text: 'Read More'
+      button_text: 'Read More',
+      route: 'Obstetrics & Gynaecology'
     },
     {
       name: 'card',
@@ -112,7 +113,7 @@ export class ModernMedicineComponent {
       image: '../../assets/modern-15.png',
       title: 'Endocrinology',
       button_text: 'Read More',
-      route:'nutrition'
+      route:'endocrinology'
     },
     {
       name: 'card',
@@ -133,7 +134,7 @@ export class ModernMedicineComponent {
       image: '../../assets/modern-18.png',
       title: 'Anesthesiology',
       button_text: 'Read More',
-      route:'nutrition'
+      route:'anesthesiology'
     },
     {
       name: 'card',

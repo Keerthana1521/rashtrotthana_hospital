@@ -65,6 +65,13 @@ import { OncologyComponent } from './oncology/oncology.component';
 import { EmergencyMedicineComponent } from './emergency-medicine/emergency-medicine.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModernMedicineComponent } from './modern-medicine/modern-medicine.component';
+import { FacilityBulletContentComponent } from './facility-bullet-content/facility-bullet-content.component';
+import { DialysisComponent } from './dialysis/dialysis.component';
+import { AnesthesiologyComponent } from './anesthesiology/anesthesiology.component';
+
+import { ObstetricsGynaecologyComponent } from './obstetrics-gynaecology/obstetrics-gynaecology.component';
+import { EndocrinologyComponent } from './endocrinology/endocrinology.component';
+import { InsurancePdfBoxComponent } from './insurance-pdf-box/insurance-pdf-box.component';
 
 
 @NgModule({
@@ -116,7 +123,13 @@ import { ModernMedicineComponent } from './modern-medicine/modern-medicine.compo
     PsychiatryComponent,
     OncologyComponent,
     EmergencyMedicineComponent,
-    ModernMedicineComponent
+    ModernMedicineComponent,
+    FacilityBulletContentComponent,
+    DialysisComponent,
+    AnesthesiologyComponent,
+    ObstetricsGynaecologyComponent,
+    EndocrinologyComponent,
+    InsurancePdfBoxComponent
   ],
   imports: [
     BrowserModule,

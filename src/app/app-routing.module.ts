@@ -37,6 +37,10 @@ import { NeurosciencesComponent } from './neurosciences/neurosciences.component'
 import { PsychiatryComponent } from './psychiatry/psychiatry.component';
 import { OncologyComponent } from './oncology/oncology.component';
 import { EmergencyMedicineComponent } from './emergency-medicine/emergency-medicine.component';
+import { DialysisComponent } from './dialysis/dialysis.component';
+import { AnesthesiologyComponent } from './anesthesiology/anesthesiology.component';
+import { ObstetricsGynaecologyComponent } from './obstetrics-gynaecology/obstetrics-gynaecology.component';
+import { EndocrinologyComponent } from './endocrinology/endocrinology.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -75,7 +79,12 @@ const routes: Routes = [
   {path:'neuroscience',component:NeurosciencesComponent},
   {path:'pshychiatry',component:PsychiatryComponent},
   {path:'oncology',component:OncologyComponent},
-  {path:'emergency-medicine',component:EmergencyMedicineComponent}
+  {path:'emergency-medicine',component:EmergencyMedicineComponent},
+  {path:'dialysis',component:DialysisComponent},
+  {path:'emergency-medicine',component:EmergencyMedicineComponent},
+  {path:'anesthesiology',component:AnesthesiologyComponent},
+  {path:'Obstetrics & Gynaecology',component:ObstetricsGynaecologyComponent},
+  {path:'endocrinology',component:EndocrinologyComponent}
   
   
 

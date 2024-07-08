@@ -33,7 +33,8 @@ export class FacilitiesComponent {
       name: 'card',
       image: '../../assets/facility-8.png',
       title: 'Dialysis Unit',
-      button_text: 'Read More'
+      button_text: 'Read More',
+      route:'dialysis'
     },
     {
       name: 'card',
