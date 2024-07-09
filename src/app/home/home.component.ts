@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['/about-us']);
   }
   donate(){
-    console.log('donate')
+
     this.router.navigate(['/donation']);
   }
   counter: number = 0;

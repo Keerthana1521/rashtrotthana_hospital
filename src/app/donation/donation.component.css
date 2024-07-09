@@ -121,6 +121,12 @@
     padding: 7px 10px;
 }
 
+.letter_disign{
+    font-weight: 700;
+    font-size: 45px;
+    font-family: Poppins;
+}
+
 /* container 2 */
 .con_2_heading {
     text-align: center;
