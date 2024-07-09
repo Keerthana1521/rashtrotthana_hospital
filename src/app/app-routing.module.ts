@@ -41,6 +41,7 @@ import { DialysisComponent } from './dialysis/dialysis.component';
 import { AnesthesiologyComponent } from './anesthesiology/anesthesiology.component';
 import { ObstetricsGynaecologyComponent } from './obstetrics-gynaecology/obstetrics-gynaecology.component';
 import { EndocrinologyComponent } from './endocrinology/endocrinology.component';
+import { InsuranceComponent } from './insurance/insurance.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -84,7 +85,8 @@ const routes: Routes = [
   {path:'emergency-medicine',component:EmergencyMedicineComponent},
   {path:'anesthesiology',component:AnesthesiologyComponent},
   {path:'Obstetrics & Gynaecology',component:ObstetricsGynaecologyComponent},
-  {path:'endocrinology',component:EndocrinologyComponent}
+  {path:'endocrinology',component:EndocrinologyComponent},
+  {path:'insurance',component:InsuranceComponent}
   
   
 

@@ -27,7 +27,8 @@ export class FacilitiesComponent {
       name: 'card',
       image: '../../assets/facility-14.png',
       title: 'Insurance',
-      button_text: 'Read More'
+      button_text: 'Read More',
+      route:'insurance'
     },
     {
       name: 'card',
