@@ -139,7 +139,7 @@ cursor: pointer;
     padding-left: 6rem;
 }
 .map-iframe{
-    width:500px;
+    width: 500px;
      height:450px;
 }
 @media screen and (max-width: 768px) {
@@ -162,7 +162,7 @@ cursor: pointer;
         padding: 1rem;
     }
     .map-iframe{
-        width: 350px;
+        width: 300px;
         height: 200px;
     }
     .content,.contact-info,.appointment{

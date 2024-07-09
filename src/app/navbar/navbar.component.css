@@ -105,7 +105,7 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   /* top:30px; */
   position: fixed;
-  top:1px;
+  top:0px;
   z-index: 1030;
 }
 

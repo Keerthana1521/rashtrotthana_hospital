@@ -1,13 +1,33 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+
 
 @Component({
   selector: 'app-facilities',
   templateUrl: './facilities.component.html',
   styleUrl: './facilities.component.css'
 })
-export class FacilitiesComponent {
-  constructor(private router: Router) {}
+export class FacilitiesComponent implements OnInit{
+  constructor(private router: Router,
+    private breakpointObserver: BreakpointObserver) {}
+    isMobile:boolean=false;
+    ngOnInit(): void {
+      this.observeLaptopSizeChanges();
+    }
+    observeLaptopSizeChanges(): void {
+      this.breakpointObserver.observe([Breakpoints.Large, Breakpoints.XLarge])
+        .subscribe(result => {
+          if (result.matches) {
+            this.isMobile=false;
+          } else {
+            this.isMobile=true;
+          }
+        });
+    }
+    
+  
+
   box =[
     {
       name: 'card',
@@ -131,7 +151,12 @@ export class FacilitiesComponent {
   activeHoverIndex: number | null = null;
 
   onMouseOver(index: number) {
+    console.log(this.isMobile)
+    
     this.activeHoverIndex = index;
+    
+    
+   
   }
 
   onMouseOut() {
