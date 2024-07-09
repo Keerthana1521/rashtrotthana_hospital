@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,6 +8,14 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {  
   constructor(private router: Router) {}
+  @ViewChild('counterSection', { static: true }) counterSection!: ElementRef;
+  stopcounters: any[] = [];
+  doctors: number = 0;
+  patients:number=0;
+  established:number=0;
+  bed:number=0;
+  insurance:number=0;
+  
   navigateToPage() {
     this.router.navigate(['/about-us']);
   }
@@ -15,51 +23,33 @@ export class HomeComponent implements OnInit {
 
     this.router.navigate(['/donation']);
   }
-  counter: number = 0;
-  endValue: number = 100;
-  duration: number = 3000;
+  emergency(){
+    this.router.navigate(['/emergency']);
+  }
+  lab(){
+    this.router.navigate(['/laboratory']);
+  }
+  radiology(){
+    this.router.navigate(['/raidology']);
+  }
+  pharmacy(){
+    this.router.navigate(['/pharmacy']);
+  }
+  dialysis(){
+    this.router.navigate(['/dialysis']);
+  }
+  
   showContent: any = 'default';
   showTitle:any = 'default'
   showImage: any = 'default';
-  // <div class="number-one">
-  //               <img class="sheild" src="../../assets/sheild_num.png">
-  //           </div>
-// numberOne =[
-//   {
-//     name:'Yoga',
-//     icon: 'yoga-outline.png',
-//     key: 'yoga',
-//   },
-//   {
-//     name:'Naturopathy',
-//     icon: 'naturo-outline.png',
-//     key: 'naturopathy',
-//   },
-//   {
-//     name:'Modern Medicine',
-//     icon: 'modern-outline.png',
-//     key: 'modern-medicine',
-//   },
-//   {
-//     name:'Ayurveda',
-//     icon: 'ayurveda-outline.png',
-//     key: 'ayurveda',
-//   },
-//   {
-//     name:'Homeopathy',
-//     icon: 'homeopathy-outline.png',
-//     key: 'homeopathy',
-//   }
-// ]
-startCounter() {
-  const interval = this.duration / this.endValue;
-  const timer = setInterval(() => {
-    this.counter++;
-    if (this.counter >= this.endValue) {
-      clearInterval(timer);
-    }
-  }, interval);
-}
+
+// counter:number= 0;
+// stopcounter:any=setInterval(()=>{
+// this.counter++;
+// if(this.counter==100){
+//   clearInterval(this.stopcounter);
+// }
+// },10);
   features = [
     {
       name: 'Yoga',
@@ -144,33 +134,77 @@ image:any ={
 //             Doctors At Work
 //         </div>
 //     </div>
+
+ngOnInit(){
+  const options = {
+    root: null, // Use the viewport as the root
+    threshold: 0.5 // Trigger when 50% of the section is visible
+  };
+
+  const observer = new IntersectionObserver(this.startCounter.bind(this), options);
+    observer.observe(this.counterSection.nativeElement);
+
+    console.log('Observer initialized');
+}
+startCounter(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
+  entries.forEach(entry => {
+    console.log('Intersection entry:', entry);
+    if (entry.isIntersecting) {
+      console.log('Section is intersecting, starting counter');
+
+      this.incrementCounter(0);
+      this.incrementCounter(1);
+      this.incrementCounter(2);
+      this.incrementCounter(3);
+      this.incrementCounter(4);
+
+      observer.unobserve(entry.target); // Stop observing once counter starts
+    }
+  });
+}
+
+incrementCounter(index: number) {
+  this.stopcounters[index] = setInterval(() => {
+    if (this.box[index].number < this.box[index].target) {
+      this.box[index].number=this.box[index].number+1;
+    } else {
+      clearInterval(this.stopcounters[index]);
+    }
+  }, 10);
+}
+
 box=[{
   icon:'doctor-icon.png',
-  number:'100+',
-  statement:'Doctors at work'
+  number:0,
+  target:100,
+  statement:'Doctors at work',
+  showPlus: true 
 },
 {
   icon:'patient-icon.png',
-  number:'20000+',
-  statement:'Happy Patients'
+  number:0,
+  target:20000,
+  statement:'Happy Patients',
+  showPlus: true 
 },
 {
   icon:'hospital-icon.png',
-  number:'2022',
+  number:0,
+  target:2022,
   statement:'Established'
 },
 {
   icon:'bed-icon.png',
-  number:'150+',
-  statement:'Medical Beds'
+  number:0,
+  target:150,
+  statement:'Medical Beds',
+  showPlus: true 
 },
 {
-  icon:'bed-icon.png',
-  number:'25+',
+  icon:'Staff.png',
+  number:0,
+  target:25,
   statement:'Insurance Tie Up '
 }
 ]
-ngOnInit(){
-  this.startCounter();
-}
 }

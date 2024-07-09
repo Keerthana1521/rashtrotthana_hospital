@@ -70,23 +70,23 @@
         We Provide 24/7 Services
     </div>
     <div class="service-container">
-        <div class="bg-service">
+        <div class="bg-service" (click)="emergency()">
             <img class="primary" src="../../assets/emergency.png">
             <img class="secondary" src="../../assets/Emergency-1.png">
         </div>
-        <div class="bg-service">
+        <div class="bg-service" (click)="lab()">
             <img class="primary" src="../../assets/laboratory.png">
             <img class="secondary" src="../../assets/Laboratory-1.png">
         </div>
-        <div class="bg-service">
+        <div class="bg-service" (click)="radiology()">
             <img class="primary" src="../../assets/Radiology.png">
             <img class="secondary" src="../../assets/Radiology-1.png">
         </div>
-        <div class="bg-service">
+        <div class="bg-service" (click)="pharmacy()">
             <img class="primary" src="../../assets/Pharmacy.png">
             <img class="secondary" src="../../assets/Pharmacy-1.png">
         </div>
-        <div class="bg-service">
+        <div class="bg-service" (click)="dialysis()">
             <img class="primary" src="../../assets/Dialysis.png">
             <img class="secondary" src="../../assets/Dialysis-1.png">
         </div>
@@ -124,7 +124,7 @@
     </div>
 </div>
 <div style="background-color: #fbfff4;">
-<div class="seventh-container">
+<div class="seventh-container" #counterSection>
     <!-- <img class="count" src="../../assets/100.png">
     <img class="count"src="../../assets/20000.png">
     <img class="count"src="../../assets/2022.png">
@@ -135,7 +135,7 @@
             <img [src]="'../../assets/'+ box.icon">
         </div>
         <div class="count-text">
-            <div class="number">{{box.number}}</div>
+            <div class="number">{{box.number}}<span *ngIf="box.showPlus">+</span></div>
             <div class="statement">{{box.statement}}</div>
         </div>
 </div>
@@ -179,16 +179,40 @@
             </div>
             <div class="care-image">
                 <div class="bg-care">
-                    <img class="primary" src="../../assets/Diabitics Care.png">
-                    <img class="secondary" src="../../assets/Diabetic-care.png">
-                </div>
-                <div class="bg-care">
-                    <img class="primary" src="../../assets/Menospace Care.png">
-                    <img class="secondary" src="../../assets/menuspause.png">
-                </div>
-                <div class="bg-care">
-                    <img class="primary" src="../../assets/Maternity.png">
-                    <img class="secondary" src="../../assets/Maternity-care.png">
+                    <div class="meno">
+                        <img class="meno-img" src="../../assets/meno.png">
+                        <div class="meno-content">Integrated Menopause Care</div>
+                            <div class="meno-arrow" >
+                                
+                            </div>
+                    </div>
+                    <div class="meno">
+                        <img class="meno-img" src="../../assets/diabetic.png">
+                        <div class="meno-content">Integrated Diabetic Care</div>
+                            <div class="meno-arrow" >
+                                
+                            </div>
+                    </div>
+                    <div class="meno">
+                        <img class="meno-img" src="../../assets/mater.png">
+                        <div class="meno-content">Integrated Maternity Care</div>
+                            <div class="meno-arrow" >
+                                
+                            </div>
+                    </div>
+                    <div class="meno">
+                        <img class="meno-img" src="../../assets/surgery.png">
+                        <div class="meno-content">Surgery Packages
+                            <ul>
+                                <li class="surgery">TKR</li>
+                                <li class="surgery proctology">Herino</li>
+                                <li class="surgery proctology">Proctology</li>
+                            </ul>
+                        </div>
+                            <div class="meno-arrow" >
+                                <!--  -->
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>

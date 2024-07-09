@@ -62,7 +62,7 @@ text-transform: capitalize;
 .insurance-facility{
     display: flex;
     width:100%;
-    padding-top: 18vh;
+    padding-top: 17vh;
     justify-content: center;
     background-color: #FBFFF5;
     /* padding-left: 4rem; */

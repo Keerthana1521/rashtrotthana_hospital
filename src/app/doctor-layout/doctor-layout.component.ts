@@ -24,12 +24,7 @@ export class DoctorLayoutComponent {
 //     </div>
 // </div>
   dcotors =[
-    {
-      name: 'Dr. KRISHNASWAMY LAKSHMAN',
-      image: 'assets/doctor-1.png',
-      desgination: 'GENERAL SURGERY',
-      about: 'Dr.K. Lakshman, MBBS, MRCS(UK), FRCS- General surgery is willing to be associated with JMRH & RC on a service basis. Dr. Lakshman is a  renowned surgeon having forty-five years...'
-    },
+   
     {
       name:'Dr. Latha Venkataram',
       image: 'assets/doctor-2.png',

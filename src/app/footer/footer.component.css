@@ -41,7 +41,7 @@
   font-size: 14px;
   font-weight: 400;
   word-wrap: break-word;
-  line-height: 40px;
+  line-height: 30px;
 }
 .contact {
   display: flex;
@@ -107,6 +107,11 @@ ul {
   .links {
     cursor: pointer;
   }
+}
+.footer-logo{
+  position: relative;
+    right: 75px;
+
 }
 @media (max-width: 1100px) {
   .footer-component {

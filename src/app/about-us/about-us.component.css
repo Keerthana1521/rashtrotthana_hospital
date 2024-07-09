@@ -170,6 +170,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+margin-bottom:2rem;
 }
 .facilities-1{
     display: flex;
@@ -189,7 +190,8 @@ flex-shrink: 0;
 }
 .facilities{
     background: #FBFFF5;
-    padding: 6rem
+    padding: 6rem;
+    padding-bottom:2rem;
 }
 .facilities-2{
    display: grid;

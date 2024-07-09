@@ -1,5 +1,9 @@
 .facility-container{
     background: url('../../assets/facilities-bg.png')  no-repeat;
+    background-size: cover;
+}
+.banner-image{
+    width: 100%;
 }
 .heading{
 position: relative;

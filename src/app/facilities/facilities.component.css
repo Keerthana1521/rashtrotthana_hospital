@@ -35,6 +35,9 @@ color: #008080;
      line-height: 26px;
      word-wrap: break-word  
 }
+.box-card{
+    width: 86%;
+}
 @media only screen and (max-width: 600px){
     .container-facility{
         display: grid;

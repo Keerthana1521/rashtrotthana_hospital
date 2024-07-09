@@ -13,6 +13,7 @@ flex-direction: column;
 }
 .box-card:hover{
     background: linear-gradient(141deg, #FBCA51 -34.47%, #008080 81.83%);
+    transition: 3s ease-in;
     .box-image{
         position: relative;
     left: 14px;
@@ -22,6 +23,7 @@ flex-direction: column;
         border: none;
         background: #FBCA51;
     }
+    cursor:pointer;
 }
 .modern{
 position: relative;

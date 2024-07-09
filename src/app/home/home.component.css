@@ -7,7 +7,7 @@
 .home-bg {
   width: 100%;
   height: 100vh;
-  padding-top: 18vh;
+  padding-top: 17vh;
 }
 .video{
   width: 100%;
@@ -47,7 +47,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 61%); /* Change color and opacity as needed */
+  background: rgba(255, 255, 255, 20%); /* Change color and opacity as needed */
   z-index: -1;
 }
 
@@ -289,16 +289,79 @@ form {
 }
 .bg-care {
   position: relative;
-  max-width: 100%; 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 20px;
+  /* background-color: #FFF; */
 }
-.bg-care img {
+.surgery{
+  display: inline;
+  color: black;
+  list-style-type: disc;
+  position: relative;
+  top: 3rem;
+}
+.proctology{
+  margin-left: 3rem;
+}
+.meno{
+  display: flex;
+  border-radius: 10px;
+background: #FFF;
+box-shadow: 3px 4px 15px 0px rgba(0, 0, 0, 0.15);
+width: 538px;
+height: 153px;
+flex-shrink: 0;
+cursor:pointer
+  
+}
+.meno:hover{
+  background: #008080;
+  transition: 1s ease-in-out;
+  .meno-arrow{
+    transition: 2s;
+    background-image: url('../../assets/care-arrow.png');
+  }
+}
+.meno-content{
+  width: 70%;
+  position: relative;
+  left: 1rem;
+  top:1rem;
+  color: #222;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 110% */
+}
+.meno-img{
+  width: 96px;
+height: 96px;
+flex-shrink: 0;
+position: relative;
+left:1rem;
+top:1rem;
+}
+.meno-arrow{
+  position: relative;
+left:1rem;
+top:10px;
+width: 40px;
+height: 40px;
+background-image: url('../../assets/Yellow\ Arrow.png');
+}
+
+/* .bg-care img {
   width: 476px;
   height: 153px;
   display: block;
   cursor: pointer;
   /* max-width: 100%;
   height: auto; */
-}
+/* }
 .bg-care .secondary {
   position: absolute;
   top: 0;
@@ -311,7 +374,7 @@ form {
 }
 .bg-care:hover .secondary {
   opacity: 1;
-}
+} */ 
 
 .bg-features {
   position: relative;
@@ -1038,18 +1101,39 @@ form{
   padding-left: 1rem;
  
  }
-.bg-care img{
-  width: 318px;
-  height: 94px;
+.meno{
+  width: 212%;
+  background-color: #008080;
+  height:74px;
 }
-.bg-care .secondary{
- opacity: 0;
+.meno-arrow{
+  width: 34px;
+  height: 34px;
+  background-image: url('../../assets/hover-arrow.png');
+  background-repeat: no-repeat;
 }
-/* .bg-care .primary{
-  opacity: 0;
-} */
-.bg-care:hover .secondary {
-  opacity: 0;
+.surgery{
+  color: #FBCA51;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.meno-arrow:hover{
+  transition: none;
+}
+.meno-content{
+  color: #FFF;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.meno-img{
+  width: 38px;
+  height: 38px;
 }
 .care-image{
   /* padding-left: 5rem; */
