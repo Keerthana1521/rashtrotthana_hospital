@@ -1182,6 +1182,8 @@ line-height: normal;
   width: 311px;
   height: 319px;
   padding-left: 2.5rem;
+  position: relative;
+  bottom: 62px;
 }
 .about-image-content{
   font-size: 12px;
@@ -1244,3 +1246,61 @@ li{
   top:351px;
 }
 }}
+@media only screen and (max-width:320px){
+  .video{
+    height: 250px;
+    margin-top: 13vh;
+  }
+  .second-container {
+    height: 650px;
+  }
+  .card{
+    width: 100%;
+    height:100%;
+  }
+  .form-container{
+    width: 300px;
+    padding: 10px ;
+  }
+  .about-us-content{
+    width: 280px;
+  }
+  .about-image{
+    padding-left: 0;
+    width: 250px;
+    height: 300px;
+  }
+  .about-image-content{
+    width: 280px;
+  }
+  li{
+    width: 264px;
+  }
+  .about-us-heading{
+    width:288px;
+  }
+  .achieve-heading{
+    padding-right: 0;
+    width: 300px;
+    font-size: 20px;
+  }
+  .read-button{
+    padding-left: 3rem;
+    padding-top: 2rem;
+    position: relative;
+    top: 679px;
+    width: 215%;}
+    .box{
+      width: 130px;
+      height:142px;
+    }
+    .statement{
+      font-size: 12px;
+    }
+    .number{
+      font-size: 14px;
+    }
+    .NABH{
+      width: 100%;
+    }
+}
