@@ -1233,7 +1233,13 @@ li{
   top: 638px;
   width: 170%;
 }
-
+.surgery{
+top:0;
+}
+.proctology{
+  margin-left: 1rem;
+}
+}
 @media only screen and (max-width:380px){
 .card{
   width: 326px;
@@ -1245,7 +1251,7 @@ li{
 .button{
   top:351px;
 }
-}}
+}
 @media only screen and (max-width:320px){
   .video{
     height: 250px;
@@ -1259,7 +1265,7 @@ li{
     height:100%;
   }
   .form-container{
-    width: 300px;
+    width: 280px;
     padding: 10px ;
   }
   .about-us-content{
@@ -1267,7 +1273,7 @@ li{
   }
   .about-image{
     padding-left: 0;
-    width: 250px;
+    width: 280px;
     height: 300px;
   }
   .about-image-content{
@@ -1281,7 +1287,7 @@ li{
   }
   .achieve-heading{
     padding-right: 0;
-    width: 300px;
+    width: 280px;
     font-size: 20px;
   }
   .read-button{
@@ -1302,5 +1308,20 @@ li{
     }
     .NABH{
       width: 100%;
+    }
+    .service-header{
+      margin: 1rem;
+      color: #008080;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .sixth-container{
+      padding: 1rem;
+    }
+    .meno{
+      width: 187%;
+    }
+    .care-image{
+      padding-left: 0rem;
     }
 }
