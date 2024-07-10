@@ -33,8 +33,93 @@
   flex-direction: column;
   width: 50%;
 }
-
-.image {
+.primary{
+  position: relative;
+  top:47px;
+  left: 20px;
+}
+.tertiary{
+  width: 185px;
+    height: 185px;
+    opacity: 1;
+}
+.image{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 43px;
+  left: 47px;
+}
+.image-1{
+  background-image: url('../../assets/medicine.png');
+}
+.image-2{
+  background-image: url('../../assets/specialities-2.png');
+}
+.image-3{
+  background-image: url('../../assets/specialities-3.png');
+}
+.image-4{
+  background-image: url('../../assets/specialities-4.png');
+}
+.image-5{
+  background-image: url('../../assets/specialities-5.png');
+}
+.image-6{
+  background-image: url('../../assets/specialities-6.png');
+}
+.card-1:hover{
+  background: linear-gradient(105deg, #fbca51 -40.25%, #008080 98.67%);
+  .show-more {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 166.667% */
+    text-transform: capitalize;
+    display: flex;
+    width: 132px;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #fbca51;
+  }
+  .special-heading,.special-para{
+    color: #fff;
+  }
+  .image-1{
+    background-image: url('../../assets/spec-med.png');
+  }
+  .image-2{
+    background-image: url('../../assets/spec-ayur.png');
+  }
+  .image-3{
+    background-image: url('../../assets/spec-naturo.png');
+  }
+  .image-4{
+    background-image: url('../../assets/spec-yoga.png');
+  }
+  .image-5{
+    background-image: url('../../assets/spec-homeo.png');
+  }
+  .image-6{
+    background-image: url('../../assets/spec-research.png');
+  }
+}
+/* .image {
   display: flex;
   width: 50%;
   justify-content: center;
@@ -45,11 +130,11 @@
 .image img {
   /* width: 200px;
     height: 240px; */
-  display: block;
-  cursor: pointer;
+  /* display: block;
+  cursor: pointer; */
   /* max-width: 100%;
     height: auto; */
-}
+/* }
 .image .secondary {
   position: absolute;
   top: 0;
@@ -62,7 +147,7 @@
 } 
  .image:hover .secondary {
   opacity: 1;
-} 
+}  */ 
 .section-1 {
   padding: 2rem 6rem;
   display: flex;
@@ -78,7 +163,8 @@
 }
 .button {
  padding-left: 3rem;
- padding-top:2rem
+ padding-top:2rem;
+ cursor:pointer
 }
 .button-1 {
   padding-left: 3rem;
@@ -125,18 +211,74 @@
     background: linear-gradient(105deg, #fbca51 -40.25%, #008080 98.67%);
     margin-top: 30px;
   }
-
-  .image:hover .secondary {
-    opacity: 0;
+  .image-1{
+    background-image: url('../../assets/specialities-modern-white.png');
   }
-  .primary {
-    width: 86px;
-    height: 86px;
-    opacity: 0;
+  .image-2{
+    background-image: url('../../assets/specialities-ayurveda-white.png');
   }
-  .tertiary{
-    position: relative;
-    right: 43px;
+  .image-3{
+    background-image: url('../../assets/specialities-naturopathy-white.png');
+  }
+  .image-4{
+    background-image: url('../../assets/specialities-yoga-white.png');
+  }
+  .image-5{
+    background-image: url('../../assets/specialities-homeopathy-white.png');
+  }
+  .image-6{
+    background-image: url('../../assets/specialities-medicine-white.png');
+  }
+  .card-1:hover{
+    .image-1{
+      background-image: url('../../assets/specialities-modern-white.png');
+    }
+    .image-2{
+      background-image: url('../../assets/specialities-ayurveda-white.png');
+    }
+    .image-3{
+      background-image: url('../../assets/specialities-naturopathy-white.png');
+    }
+    .image-4{
+      background-image: url('../../assets/specialities-yoga-white.png');
+    }
+    .image-5{
+      background-image: url('../../assets/specialities-homeopathy-white.png');
+    }
+    .image-6{
+      background-image: url('../../assets/specialities-medicine-white.png');
+    }
+    .show-more {
+      color: #fff;
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 166.667% */
+      text-transform: capitalize;
+      display: flex;
+      width: 108px;
+      height: 32px;
+      padding: 10px 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      border-radius: 30px;
+      background: #fbca51;
+    }
+    .special-heading {
+      font-size: 14px;
+      color: #fff;
+      padding: 1rem 0;
+    }
+    .special-para {
+      font-size: 10px;
+      color: #fff;
+      padding: 0;
+      padding-bottom: 1rem;
+      width: 178px;
+    }
   }
   .special-heading {
     font-size: 14px;
