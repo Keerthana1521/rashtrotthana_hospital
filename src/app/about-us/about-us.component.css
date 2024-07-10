@@ -154,7 +154,7 @@ line-height: normal;
 }
 .facilities-heading{
     color: #008080;
-text-align: center;
+/* text-align: center; */
 font-family: Poppins;
 font-size: 48px;
 font-style: normal;
@@ -171,6 +171,9 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 margin-bottom:2rem;
+}
+.content-1{
+    margin-bottom: 1rem;
 }
 .facilities-1{
     display: flex;
