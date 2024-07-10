@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px;
+    margin: 30px 50px;
     padding-top: 100px;
 }
 
@@ -68,10 +68,10 @@
 }
 
 .con_1_right_img .con_1_img_1 {
-    width: 386.818px;
-    height: 350px;
-    margin-top: -500px;
-    margin-right: 11.5%;
+    width: 536.818px;
+    height: 457px;
+    margin-top: -530px;
+    margin-right: 4.7%;
 }
 
 .con_1_right_img .con_1_img_2 {
@@ -149,7 +149,7 @@
 }
 
 .con_head {
-    width: 203px;
+    width: 211px;
     color: #008080;
     text-align: center;
     font-family: Poppins;
@@ -203,6 +203,7 @@
 .content {
     position: absolute;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .box:hover .animation {
@@ -213,6 +214,8 @@
     transition-duration: 1s;
 }
 
+
+
 .animation_2 {
     width: 70px;
     height: 70px;
@@ -221,13 +224,17 @@
     margin-right: 40px;
 }
 
-.box:hover .animation_2 {
+.box:hover{
+   .animation_2{
     width: 300px;
     height: 330px;
     border-radius: 10px;
     margin: 0;
     transition-duration: 1s;
-}
+    background-color: #9AFFC8;
+   }
+    }
+
 
 .animation_3 {
     width: 70px;
@@ -243,6 +250,7 @@
     border-radius: 10px;
     margin: 0;
     transition-duration: 1s;
+  
 }
 
 .row_2 {
@@ -629,6 +637,7 @@
     text-align: center;
     margin-top: 100px;
     padding: 150px 0;
+    height: 620px;
     /* margin-bottom: 50px; */
 }
 
@@ -1720,7 +1729,9 @@
         line-height: normal;
         width: 327px;
     }
-
+    .con_1_heading span{
+        font-size: 20px;
+    }
     .con_1_lft .con_1_btns {
         display: flex;
         flex-direction: column;
@@ -2054,7 +2065,7 @@
         flex-direction: column;
         align-items: start;
         padding: 5%;
-        height: 610px;
+        height: 630px;
         width: 400px;
     }
 
@@ -2156,6 +2167,7 @@
     .root_container .container_7 {
         background-image: url('../../assets/dontation-images/con_7_bg.png');
         background-size: cover;
+        height: 730px;
     }
 
     .container_7 .con_7_heading {
