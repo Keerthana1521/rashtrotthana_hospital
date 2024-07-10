@@ -2149,25 +2149,30 @@
         width: 100%;
         border: 2px solid transparent;
     }
+    .con_5_table .table_1 .table_1_property{
+        font-size: 14px;
+    }
+
+    .con_5_table .table_1 .table_1_value{
+        font-size: 14px;
+    }
 
     .table_1 .table_1_row {
         width: 100%;
         border: none;
     }
 
-    .table_1_row .table_1_property {
-
-        flex-shrink: 0;
+    .table_1_row .table_1_property{
         font-size: 14px;
-        font-weight: 400;
     }
-
+    
+    
     /* container 7 */
 
     .root_container .container_7 {
         background-image: url('../../assets/dontation-images/con_7_bg.png');
         background-size: cover;
-        height: 730px;
+        height: 893px;
     }
 
     .container_7 .con_7_heading {
