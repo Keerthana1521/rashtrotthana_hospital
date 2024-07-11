@@ -1324,4 +1324,9 @@ li{
     .care-image{
       padding-left: 0rem;
     }
+    .button{
+      width: 57%;
+      left: 84px;
+      top: 329px;
+    }
 }
