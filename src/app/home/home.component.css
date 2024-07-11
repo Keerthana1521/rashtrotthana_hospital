@@ -1252,7 +1252,7 @@ li{
   top:351px;
 }
 }
-@media only screen and (max-width:320px){
+@media only screen and (max-width:325px){
   .video{
     height: 250px;
     margin-top: 13vh;
