@@ -335,3 +335,44 @@ flex-shrink: 0;
     margin-bottom: 1rem;
    }
 }
+@media only screen and (max-width:330px){
+    .content{
+        padding-top: 1rem;
+        font-size: 8px;
+        width: 300px;
+        padding-bottom: 3rem;
+        font-weight: 400;
+       }
+       .jayadev{
+        width: 129px;
+        height: 144px;
+        flex-shrink: 0;
+       }
+       .heading{
+        font-size: 14px;
+        margin-top: 1rem;
+        width: 127%;
+        padding: 0;
+       }
+       .about-hospital-content{
+        text-align: justify;
+       }
+       .president {
+        width: 82px;
+        height: 75px;
+       }
+       .facilities-image{
+        width: 128px;
+        height: 82px;
+       }
+       .facilities-2[_ngcontent-ng-c1824665648] {
+        padding-left: 0.5rem;
+        
+    }
+    .president-content{
+        width: 285px;
+    }
+    .about-hospital-content{
+        width: 174%;
+    }
+}

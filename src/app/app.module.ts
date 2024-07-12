@@ -73,6 +73,7 @@ import { ObstetricsGynaecologyComponent } from './obstetrics-gynaecology/obstetr
 import { EndocrinologyComponent } from './endocrinology/endocrinology.component';
 import { InsurancePdfBoxComponent } from './insurance-pdf-box/insurance-pdf-box.component';
 import { InsuranceComponent } from './insurance/insurance.component';
+import { KneeReplacementComponent } from './knee-replacement/knee-replacement.component';
 
 
 @NgModule({
@@ -131,7 +132,8 @@ import { InsuranceComponent } from './insurance/insurance.component';
     ObstetricsGynaecologyComponent,
     EndocrinologyComponent,
     InsurancePdfBoxComponent,
-    InsuranceComponent
+    InsuranceComponent,
+    KneeReplacementComponent
   ],
   imports: [
     BrowserModule,

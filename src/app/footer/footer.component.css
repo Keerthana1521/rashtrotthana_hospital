@@ -116,10 +116,13 @@ ul {
 @media (max-width: 1100px) {
   .footer-component {
     flex-direction: column;
-    /* padding: 1rem; */
+    padding: 2rem;
     justify-content: center;
     align-items: center;
     /* overflow-x:hidden; */
+  }
+  .text{
+    text-align: justify;
   }
   .logo,
   .our-links,
@@ -160,5 +163,8 @@ ul {
     flex-direction: column;
     height: 150px;
     font-size: 14px;
+  }
+  .footer-logo{
+    right: 25px;
   }
 }
