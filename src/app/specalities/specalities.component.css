@@ -267,18 +267,15 @@
       border-radius: 30px;
       background: #fbca51;
     }
-    .special-heading {
+    /* .special-heading {
       font-size: 14px;
       color: #fff;
       padding: 1rem 0;
     }
     .special-para {
-      font-size: 10px;
       color: #fff;
-      padding: 0;
-      padding-bottom: 1rem;
-      width: 178px;
-    }
+
+    } */
   }
   .special-heading {
     font-size: 14px;
@@ -335,5 +332,17 @@ padding-top: 0;
   .para{
     width: 191px;
   }
+  .image{
+    width: 46%;
+  }
  
+}
+@media only screen and (max-width:375px){
+  .image{
+    width: 36%;
+    left: 11px;
+  }
+  .special-para{
+    width: 192px;
+  }
 }

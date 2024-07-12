@@ -262,7 +262,7 @@ flex-shrink: 0;
    .about-hospital-content{
     padding-top: 1rem;
     width: 150%;
-    font-size: 12px;
+    font-size: 12px;text-align: justify;
    }
    .about-heading{
     width: 170%;
@@ -365,7 +365,7 @@ flex-shrink: 0;
         width: 128px;
         height: 82px;
        }
-       .facilities-2[_ngcontent-ng-c1824665648] {
+       .facilities-2{
         padding-left: 0.5rem;
         
     }
