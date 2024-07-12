@@ -1252,6 +1252,47 @@ li{
   top:351px;
 }
 }
+@media only screen and (max-width:365px){
+  .about-us-content,.about-image-content{
+    width: 280px;
+  }
+  .read-button[_ngcontent-ng-c1390843692] {
+    padding-left: 3rem;
+    padding-top: 2rem;
+    position: relative;
+    top: 670px;
+    width: 198%;
+}
+.about-image{
+  padding-left: 0;
+  width: 273px;
+  height: 275px;
+}
+.box{
+  width: 130px;
+  height:142px;
+}
+.statement{
+  font-size: 12px;
+}
+.number{
+  font-size: 14px;
+}
+.NABH{
+  width: 100%;
+}
+li{
+  width: 280px;
+}
+.achieve-heading{
+  padding-right: 0;
+  width: 280px;
+  font-size: 20px;
+}
+.about-us-heading{
+  width:288px;
+}
+}
 @media only screen and (max-width:325px){
   .video{
     height: 250px;
