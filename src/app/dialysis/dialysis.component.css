@@ -154,4 +154,13 @@ text-transform: capitalize;
     .heading-container,.content-container{
         padding-left: 5rem;
     }
+}
+@media only screen and (max-width:365px){
+    .doc_details{
+        margin-right: 0;
     }
+    .gm_o_image{
+        width: 280px;
+        height: 280px;
+    }
+}
