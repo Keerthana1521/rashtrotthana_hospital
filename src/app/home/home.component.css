@@ -98,8 +98,8 @@
   color: #244c61;
 }
 
-.content { 
-  height: 30px;
+.content{
+  height: 180px;
   width: 100%;
   padding-top: 2rem;
 }
@@ -468,6 +468,7 @@ background-image: url('../../assets/Yellow\ Arrow.png');
   line-height: 55px;
   word-wrap: break-word;
   width: 534px;
+  padding-bottom: 1rem;
 }
 .about-us-content {
   padding-top: 2rem;
@@ -682,10 +683,10 @@ li {
 .achieve-image {
   padding-top: 3rem;
 }
-.NABH {
+/* .NABH {
   width: 382px;
   height: 375px;
-}
+} */
 .achieve-content {
   background: linear-gradient(180deg, #fbca51 -73.53%, #008080 100%);
   color: white;
@@ -938,7 +939,7 @@ line-height: 28px; /* 175% */
     margin-top: 13vh;
   }
   .second-container {
-    height: 650px;
+    height: 734px;
   }
 
 .container{
@@ -1107,8 +1108,8 @@ form{
   height:74px;
 }
 .meno-arrow{
-  width: 34px;
-  height: 34px;
+  width: 25px;
+  height: 25px;
   background-image: url('../../assets/hover-arrow.png');
   background-repeat: no-repeat;
 }
@@ -1120,9 +1121,14 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
-.meno-arrow:hover{
-  transition: none;
+.meno:hover{
+  .meno-arrow{
+    transition: none;
+    width: 25px;
+    height: 25px;background-image: url('../../assets/hover-arrow.png');
+  }
 }
+
 .meno-content{
   color: #FFF;
 font-family: Poppins;
@@ -1143,7 +1149,7 @@ line-height: normal;
     width: 100%;
     background: url("../../assets/dontaion-home-bg.png") no-repeat;
     background-size: cover;
-    height: 725px;
+    height: 880px;
   }
   .free-div,.benefit,.hope,.corporate{
     display: none;
@@ -1164,12 +1170,13 @@ line-height: normal;
   padding:0;
   line-height: 20px;
   width: 333px;
-  padding-top: 1rem;
+
 }
 .about-us-heading{
   font-size: 14px;
   padding: 0;
   padding-top:2rem;
+  padding-bottom: 2rem;
 }
 .about-content-div{
   padding: 0;
@@ -1256,18 +1263,21 @@ li{
   .about-us-content,.about-image-content{
     width: 280px;
   }
-  .read-button[_ngcontent-ng-c1390843692] {
+  .read-button{
     padding-left: 3rem;
     padding-top: 2rem;
     position: relative;
     top: 670px;
     width: 198%;
 }
-.about-image{
-  padding-left: 0;
-  width: 273px;
-  height: 275px;
-}
+.about-image {
+  padding-left: 25px;
+  width: 270px;
+  height: 310px;
+  }
+  .about-image-content{
+    padding-top: 0;
+  }
 .box{
   width: 130px;
   height:142px;
@@ -1292,6 +1302,13 @@ li{
 .about-us-heading{
   width:288px;
 }
+.button{
+  top: 335px;
+}
+.donate-text{
+  font-size: 14px;
+}
+
 }
 @media only screen and (max-width:325px){
   .video{
@@ -1299,7 +1316,7 @@ li{
     margin-top: 13vh;
   }
   .second-container {
-    height: 650px;
+   height: 734px;
   }
   .card{
     width: 100%;
@@ -1370,4 +1387,9 @@ li{
       left: 84px;
       top: 329px;
     }
+}
+@media only screen and (max-width:322px){
+  /* .second-container {
+    height: 734px;
+  } */
 }
