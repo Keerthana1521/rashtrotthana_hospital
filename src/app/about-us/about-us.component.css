@@ -219,7 +219,34 @@ flex-shrink: 0;
     height: 230px;
     }
 }
-
+@media only screen and (max-width:1030px){
+    .about-us-container{
+        background-size: contain;
+        padding-bottom: 0;
+    }
+    .heading{
+        padding-bottom: 2rem;
+        padding-left: 6rem;
+    }
+    .content{
+        /* font-size: 16px; */
+    }
+    .about-img{
+        width: 44%;
+    }
+    .jayadev{
+        width: 300px;
+        height: 330px;
+    }
+    .about-hospital{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .facilities-image{
+        width: 251px;
+        height: 179px;
+    }
+}
 @media  only screen and (max-width:430px)
 {
     .about-us-container{

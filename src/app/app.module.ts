@@ -74,6 +74,10 @@ import { EndocrinologyComponent } from './endocrinology/endocrinology.component'
 import { InsurancePdfBoxComponent } from './insurance-pdf-box/insurance-pdf-box.component';
 import { InsuranceComponent } from './insurance/insurance.component';
 import { KneeReplacementComponent } from './knee-replacement/knee-replacement.component';
+import { YogaComponent } from './yoga/yoga.component';
+import { AyurvedaComponent } from './ayurveda/ayurveda.component';
+import { HomeopathyComponent } from './homeopathy/homeopathy.component';
+import { NaturopathyComponent } from './naturopathy/naturopathy.component';
 
 
 @NgModule({
@@ -133,7 +137,11 @@ import { KneeReplacementComponent } from './knee-replacement/knee-replacement.co
     EndocrinologyComponent,
     InsurancePdfBoxComponent,
     InsuranceComponent,
-    KneeReplacementComponent
+    KneeReplacementComponent,
+    YogaComponent,
+    AyurvedaComponent,
+    HomeopathyComponent,
+    NaturopathyComponent
   ],
   imports: [
     BrowserModule,

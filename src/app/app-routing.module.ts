@@ -43,6 +43,10 @@ import { ObstetricsGynaecologyComponent } from './obstetrics-gynaecology/obstetr
 import { EndocrinologyComponent } from './endocrinology/endocrinology.component';
 import { InsuranceComponent } from './insurance/insurance.component';
 import { KneeReplacementComponent } from './knee-replacement/knee-replacement.component';
+import { YogaComponent } from './yoga/yoga.component';
+import { AyurvedaComponent } from './ayurveda/ayurveda.component';
+import { HomeopathyComponent } from './homeopathy/homeopathy.component';
+import { NaturopathyComponent } from './naturopathy/naturopathy.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -88,7 +92,11 @@ const routes: Routes = [
   {path:'Obstetrics & Gynaecology',component:ObstetricsGynaecologyComponent},
   {path:'endocrinology',component:EndocrinologyComponent},
   {path:'insurance',component:InsuranceComponent},
-  {path:'total-knee-replacement',component:KneeReplacementComponent}
+  {path:'total-knee-replacement',component:KneeReplacementComponent},
+  {path:'yoga',component:YogaComponent},
+  {path:'ayurveda',component:AyurvedaComponent},
+  {path:'homeopathy',component:HomeopathyComponent},
+  {path:'naturopathy',component:NaturopathyComponent},
   
   
 

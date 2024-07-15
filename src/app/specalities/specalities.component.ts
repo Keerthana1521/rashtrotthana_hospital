@@ -11,7 +11,18 @@ export class SpecalitiesComponent {
     
   
   modernMedicine(){
-    console.log('donate')
     this.router.navigate(['/modern-medicine']);
+  }
+  yoga(){
+    this.router.navigate(['/yoga']);
+  }
+  ayurveda(){
+    this.router.navigate(['/ayurveda']);
+  }
+  homeopathy(){
+    this.router.navigate(['/homeopathy']);
+  }
+  naturopathy(){
+    this.router.navigate(['/naturopathy']);
   }
 }
