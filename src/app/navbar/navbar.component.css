@@ -162,6 +162,7 @@
     font-size: 12px;
  }
 }
+
 @media screen and (max-width: 1200px) {
   .links ul {
     padding-right: 0px;
@@ -181,7 +182,34 @@
     padding-left: 1rem;
   }
 }
-
+@media screen and (max-width:1030px){
+  .logo-width{
+    width: 140px;
+  }
+  #navbar{
+    height: 64px;
+    top: 0;
+  }
+  .links{
+    width: 100%;
+  }
+  #navbar ul li a{
+    font-size: 12px;
+  }
+  .button{
+    margin-left: 0;
+  }
+  .logo{
+    margin-left: 0;
+  }
+  .logo img{
+    width: 110%;
+    padding-left: 1rem;
+  }
+  .links ul li{
+    margin-right: 0;
+  }
+}
 @media screen and (max-width: 992px) {
   .button{
     margin-left: 0;

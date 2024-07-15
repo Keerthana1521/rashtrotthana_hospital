@@ -956,6 +956,121 @@ line-height: 28px; /* 175% */
     width: 50%;
   }
 }
+@media only screen and (max-width:1030px){
+  .container{
+    padding: 20px 20px;
+    width: 100%;
+  }
+  .card{
+    width: 303px;
+    height: 201px;
+  }
+.card-header{
+  font-size: 18px;
+}
+  form{
+    gap: 10px;
+  }
+  .form-container{
+    padding: 20px 17px;
+  }
+  .form-input{
+    padding: 4px 13px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 14px;
+    width: 274px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .bg-service img{
+    width: 160px;
+    height: 200px;
+  }
+  .about-us-heading{
+    font-size: 28px;
+  }
+  .about-content-div{
+    padding: 2rem;
+  }
+  .box{
+    width: 179px;
+    height: 152px;
+  }
+  .number{
+    font-size: 26px;
+  }
+  .statement{
+    font-size: 14px;
+  }
+  .button{
+    width: 20%;
+  }
+  .bg-features{
+    width: 113px;
+    height: 96px;
+  }
+  .about-image{
+    width: 378px;
+  
+    height: 448px;
+}
+.about-us-content{
+  font-size: 16px;
+}
+li{
+  width: 428px;
+}
+.ninth-container{
+  padding: 2rem;
+}
+.meno{
+  width: 437px;
+    height: 125px;
+}
+.meno-content{
+  font-size: 18px;
+  width: 60%;
+}
+.four-image{
+  width: 88%;
+  height: 68%;
+  position: relative;
+  top: 150px;
+}
+.corporate{
+  font-size: 36px;
+}
+.hope{
+  font-size: 30px;
+}
+.free-1{
+  left: 482px;
+}
+.free-text{
+  width: 100px;
+  height: 45px;
+  left: 453px;
+  top: 2px;
+  position: absolute;
+  opacity: 0.2;
+  background: #008080;
+}
+.tenth-container{
+  background-size: contain;
+}
+.empty{
+  padding-top: 2rem;
+}
+.empty-1{
+  padding-bottom: 4rem;
+}
+.button{
+  left:430px;
+}
+}
+
+
 @media  only screen and (max-width:430px){
   .video{
     height: fit-content;

@@ -168,3 +168,8 @@ ul {
     right: 25px;
   }
 }
+@media only screen and (max-width:1030px){
+  .text{
+    width: 100%;
+  }
+}
