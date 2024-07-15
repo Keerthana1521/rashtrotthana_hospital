@@ -210,6 +210,15 @@ flex-shrink: 0;
     font-weight: 400;
     line-height: normal;
    }
+@media only screen and (max-width:1390px){
+    .about-heading{
+        padding-bottom: 1rem;
+    }
+    .facilities-image{
+        width: 357px;
+    height: 230px;
+    }
+}
 
 @media  only screen and (max-width:430px)
 {

@@ -933,6 +933,29 @@ line-height: 28px; /* 175% */
   border-bottom: none;
   background-color: white;
 }
+@media only screen and (max-width:1390px){
+  .container{
+    padding: 20px 35px;
+    width: 100%;
+  }
+  .bg-features{
+    width: 134px;
+    height: 165px;
+  }
+  .form-container{
+    height: 15vh;
+  }
+  .submit-button-form{
+    position: relative;
+    top: 8px;
+  }
+  .button {
+    cursor:pointer;
+    position: relative;
+    left: 600px;
+    width: 50%;
+  }
+}
 @media  only screen and (max-width:430px){
   .video{
     height: fit-content;
