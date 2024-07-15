@@ -176,7 +176,7 @@ label,
     height: 450px;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .contact-form-page {
         display: flex;
         flex-direction: column;
@@ -222,7 +222,7 @@ label,
 }
 
 
-@media (max-width : 440px) {
+@media only screen and (max-width : 440px) {
     .contact-details {
         width: 100%;
     }
@@ -230,12 +230,12 @@ label,
     .appointment {
         font-size: 24px;
         width: 100%;
-        text-align: center;
+        text-align: none;
     }
     
     .content{
-        width: 290px;
-        padding-left: 10%;
+        width:100%;
+        padding-left: 1rem;
     }
 
     .appointment .arrow-appoint {
@@ -257,7 +257,7 @@ label,
     }
 
     .contact_us_flex i{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .form_icon{
@@ -288,7 +288,7 @@ label,
     }
 }
 
-@media (max-width : 380px) {
+@media  only screen and (max-width : 380px) {
     .contact-details {
         width: 100%;
     }
@@ -296,12 +296,12 @@ label,
     .appointment {
         font-size: 24px;
         width: 100%;
-        text-align: center;
+        text-align: none;
     }
     
     .content{
         width: 290px;
-        padding-left: 10%;
+        padding-left: 1rem;
     }
 
     .appointment .arrow-appoint {
@@ -323,7 +323,7 @@ label,
     }
 
     .contact_us_flex i{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .form_icon{
@@ -354,7 +354,7 @@ label,
     }
 }
 
-@media (max-width : 320px) {
+@media only screen and (max-width : 330px) {
     .contact-details {
         width: 100%;
     }
@@ -362,12 +362,12 @@ label,
     .appointment {
         font-size: 24px;
         width: 100%;
-        text-align: center;
+        text-align: none;
     }
     
     .content{
         width: 290px;
-        padding-left: 10%;
+        padding-left: 1rem;
     }
 
     .appointment .arrow-appoint {
@@ -389,7 +389,7 @@ label,
     }
 
     .contact_us_flex i{
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .form_icon{
