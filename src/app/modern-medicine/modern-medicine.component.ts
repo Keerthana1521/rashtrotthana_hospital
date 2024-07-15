@@ -120,7 +120,7 @@ export class ModernMedicineComponent {
       image: '../../assets/modern-16.png',
       title: 'Psychiatry',
       button_text: 'Read More',
-      route:'psychiatry'
+      route:'pshychiatry'
     },
     {
       name: 'card',

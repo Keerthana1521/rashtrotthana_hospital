@@ -175,7 +175,26 @@ label,
     width: 500px;
     height: 450px;
 }
-
+@media only screen and (max-width:1030px){
+    .contact-details{
+        flex-direction: column;
+    }
+.appointment{
+    padding-right: 81px;
+    padding-left: 0;
+}
+    .contact-main-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .arrow-appoint{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 768px) {
     .contact-form-page {
         display: flex;
@@ -235,6 +254,7 @@ label,
         font-size: 24px;
         width: 100%;
         text-align: none;
+        padding-right: 0;
     }
     
     .content{

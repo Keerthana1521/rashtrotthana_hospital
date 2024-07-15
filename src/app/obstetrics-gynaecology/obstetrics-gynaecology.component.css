@@ -201,6 +201,11 @@
     color: #022B50;
     transition-duration: 0.5s;
 }
+@media only screen and (max-width:1030px){
+    .o_menu{
+        display: none;
+    }  
+}
 @media only screen and (max-width:600px){
     .o_container{
         width: 100%;

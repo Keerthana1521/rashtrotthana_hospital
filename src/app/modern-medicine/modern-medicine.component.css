@@ -41,6 +41,12 @@
     font-weight: 300;
     color: #FFFFFF;
 }
+@media only screen and (max-width:1030px){
+    .container-facility{
+        grid-template-columns: 33% 33% 33%;
+        padding: 2rem;
+    }
+}
 @media only screen and (max-width: 600px){
     .gm_poster{
         margin-top: 7rem;

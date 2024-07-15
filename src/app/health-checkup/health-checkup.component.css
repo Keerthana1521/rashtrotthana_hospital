@@ -158,6 +158,11 @@ line-height: normal;
     line-height: 1.7;
     margin: 10px 0;
 }
+@media screen and (max-width:1030px){
+    .total-count span{
+        font-size: 10px;
+    }
+}
 @media screen and (max-width: 768px) {
     .text-container{
         font-size: 14px;

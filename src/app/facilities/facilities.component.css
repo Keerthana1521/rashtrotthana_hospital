@@ -38,6 +38,18 @@ color: #008080;
 .box-card{
     width: 86%;
 }
+@media only screen and (max-width:1369px){
+.content{
+    width: 100%;
+    padding-right: 4rem;
+}
+}
+@media only screen and (max-width:1030px){
+    .container-facility{
+        grid-template-columns: 33% 33% 33%;
+        padding: 2rem;
+    }
+}
 @media only screen and (max-width: 600px){
     .container-facility{
         display: grid;
@@ -54,5 +66,6 @@ color: #008080;
     .content{
         width: 90%;
         font-size: 14px;
+        padding: 0;
     }
 }
