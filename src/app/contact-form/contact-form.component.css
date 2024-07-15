@@ -219,6 +219,10 @@ label,
     .contact-info {
         width: 100%;
     }
+    .icon{
+        position: relative;
+        top: 3px;
+    }
 }
 
 
@@ -417,5 +421,9 @@ label,
 
     .privacy-policy{
         width: 100%;
+    }
+    .icon{
+        position: relative;
+        top: 4px;
     }
 }

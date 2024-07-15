@@ -219,6 +219,9 @@
   .button{
     margin-right: 6rem
   }
+  .icons{
+    margin-right: 1rem;
+  }
 }
 @media screen and (max-width: 380px) {
   .button {
