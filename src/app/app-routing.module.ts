@@ -42,6 +42,7 @@ import { AnesthesiologyComponent } from './anesthesiology/anesthesiology.compone
 import { ObstetricsGynaecologyComponent } from './obstetrics-gynaecology/obstetrics-gynaecology.component';
 import { EndocrinologyComponent } from './endocrinology/endocrinology.component';
 import { InsuranceComponent } from './insurance/insurance.component';
+import { KneeReplacementComponent } from './knee-replacement/knee-replacement.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -86,7 +87,8 @@ const routes: Routes = [
   {path:'anesthesiology',component:AnesthesiologyComponent},
   {path:'Obstetrics & Gynaecology',component:ObstetricsGynaecologyComponent},
   {path:'endocrinology',component:EndocrinologyComponent},
-  {path:'insurance',component:InsuranceComponent}
+  {path:'insurance',component:InsuranceComponent},
+  {path:'total-knee-replacement',component:KneeReplacementComponent}
   
   
 
