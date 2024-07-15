@@ -1089,6 +1089,15 @@ li{
   display: none;
   font-size: 14px;
 }
+.form-input{
+  padding: 4px 13px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 14px;
+  width: 285px;
+  outline: none;
+  transition: border-color 0.3s;
+}
 .text-container .content{
  
   font-size: 12px;
@@ -1149,11 +1158,13 @@ form{
     flex-direction: column;
   }
   .form-input{
-    width: 260px;
+    width: 272px;
+        height: 50px;
   }
   .form-container{
-    height:400px;
+    height:270px;
   }
+
   .third-container{
     height: 450px;
   }
@@ -1174,6 +1185,8 @@ form{
   }
   .card{
     margin-bottom:2rem;
+    width: 360px;
+  height: 202px;
   }
  
     .service-container {

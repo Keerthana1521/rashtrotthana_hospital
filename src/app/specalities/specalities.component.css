@@ -57,6 +57,8 @@
 }
 .image-1{
   background-image: url('../../assets/medicine.png');
+  /* width: 20px;
+  height: 30px; */
 }
 .image-2{
   background-image: url('../../assets/specialities-2.png');
@@ -192,6 +194,24 @@
   gap: 10px;
   display: inline-flex;
 }
+@media only screen and (max-width:1030px){
+  .section-1{
+    padding: 2rem 2rem;
+  }
+  .image{
+    left: 25px;
+  }
+  .card-1{
+    margin-right: 1rem;
+  }
+  .heading{
+    font-size: 22px;
+  }
+  .res-button{
+    position: relative;
+    bottom: 24px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .cover-image {
     height:300px;
@@ -247,6 +267,10 @@
     }
     .image-6{
       background-image: url('../../assets/specialities-medicine-white.png');
+    }
+    .res-button{
+      position: relative;
+      bottom: 0px;
     }
     .show-more {
       color: #fff;
@@ -337,6 +361,12 @@ padding-top: 0;
   }
  
 }
+@media only screen and (max-width:430px){
+  .res-button{
+    position: relative;
+    bottom: 0px;
+  }
+}
 @media only screen and (max-width:375px){
   .image{
     width: 36%;
@@ -344,5 +374,9 @@ padding-top: 0;
   }
   .special-para{
     width: 192px;
+  }
+  .res-button{
+    position: relative;
+    bottom: 0px;
   }
 }
