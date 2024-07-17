@@ -283,11 +283,29 @@ text-transform: capitalize;
 li{
     font-family: Inter;
 }
-@media only screen and (max-width:1030px){
+/* @media only screen and (max-width:1030px){
     .o_menu{
         display: none;
     }   
-}
+    .insurance-pdf{
+        grid-template-columns: 33% 33% 33%;
+        padding-left: 4rem;
+    }
+    .facility-content{
+        width: 100%;
+        padding: 0 6rem;
+    }
+    .pdf{
+        padding-right: 4rem;
+    }
+    .banner-image{
+        width: 100%;
+        height: 93vh;
+    }
+    .heading{
+        width: 50%;
+    }
+} */
 @media only screen and (max-width: 600px){
     .banner-image{
         width: 100%;
@@ -313,6 +331,7 @@ li{
     }
     .facility-content{
         width: 100%;
+        padding: 0 2rem;
 
     }
     .heading-container,.content-container{

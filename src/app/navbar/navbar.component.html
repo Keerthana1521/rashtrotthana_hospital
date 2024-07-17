@@ -26,8 +26,94 @@
           </div>
         </div>
       </div>
-      <div class="submit-button d-flex align-items-center">
+      <div class="submit-button d-flex align-items-center" (click)="showDialog('top-right')">
         <div class="submit-text">Enquiry/Appointment</div>
+<p-dialog class="dialog" header="Book an Appointment" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
+    <span class="p-text-secondary block mb-9">Please fill out the form below to schedule your appointment.</span><br>
+    <!-- <div class="flex align-items-center gap-5">
+        <label for="username" class="font-semibold w-6rem">Name</label>
+        <input pInputText id="username" class="flex-auto" autocomplete="off" />
+    </div>
+    <div class="flex align-items-center gap-3 mb-5">
+        <label for="email" class="font-semibold w-6rem">Email</label>
+        <input pInputText id="email" class="flex-auto" autocomplete="off" />
+    </div> -->
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" style="margin-top: 2rem;">
+      <div class="flex flex-column align-items-center gap-4">
+        <!-- <div class="contact-form-field">
+          <i class="fa-solid fa-user form_icon"></i>
+          <label for="username">Name</label>
+        </div> -->
+        <input type="text" class="input" pInputText id="username" formControlName="name" placeholder="Name"
+          required /><br>
+        <div *ngIf="f['name'].touched && f['name'].invalid">
+          <small class="error" *ngIf="f['name'].errors?.['required']">Name is required</small>
+          <small class="error" *ngIf="f['name'].errors?.['minlength']">Name must be at least 2 characters
+            long</small>
+          <small class="error" *ngIf="f['name'].errors?.['pattern']">Name can only contain letters</small>
+        </div>
+        <br>
+        
+
+        <!-- <div>
+          <i class="fa-solid fa-envelope form_icon"></i>
+          <label for="email">Email</label>
+        </div> -->
+        <input type="email" class="input" pInputText id="email" formControlName="email" placeholder="Email"
+          required /><br>
+        <div *ngIf="f['email']?.touched && f['email'].invalid">
+          <small class="error" *ngIf="f['email'].errors?.['required']">Valid email is required</small>
+          <small class="error" *ngIf="f['email'].errors?.['email']">Invalid email format</small>
+        </div>
+        <br>
+        
+
+        <!-- <div>
+          <i class="fa-solid fa-phone form_icon"></i> 
+          <label for="contactNumber">Contact Number</label>
+        </div> -->
+        <input type="text" class="input" pInputText id="contactNumber" formControlName="contactNumber"
+          placeholder="Contact Number" required /><br>
+        <div *ngIf="f['contactNumber'].touched && f['contactNumber'].invalid">
+          <small class="error" *ngIf="f['contactNumber'].errors?.['required']">Contact Number is required</small>
+          <small class="error" *ngIf="f['contactNumber'].errors?.['pattern']">Contact Number must be digits
+            only</small>
+          <small class="error" *ngIf="f['contactNumber'].errors?.['minlength']">Contact Number must be at least 10
+            digits long</small>
+          <small class="error" *ngIf="f['contactNumber'].errors?.['maxlength']">Contact Number must be no more than
+            15 digits long</small>
+        </div>
+        <br>
+        
+
+        <!-- <div>
+          <i class="fa-solid fa-building-user form_icon"></i>
+          <label for="subject">Subject</label><br /><br />
+        </div> -->
+        <!-- <p-dropdown styleClass="dropdown" placeholder="Subject" [options]="subjects" optionLabel="name" formControlName="subject"
+          required></p-dropdown><br>
+        <div *ngIf="f['subject'].touched && f['subject'].invalid">
+          <small class="error">Subject is required</small>
+        </div>
+        <br /> -->
+
+        <textarea type="text" class="text-area" rows="2" cols="30" placeholder="Your Message..." pInputTextarea
+          formControlName="message" required></textarea><br>
+        <div *ngIf="f['message'].touched && f['message'].invalid">
+          <small class="error">Message is required</small>
+        </div>
+        <br />
+
+        
+      </div>
+      <p-toast />
+    </form>
+    <div class="">
+        <!-- <div label="Cancel"  class="button-appointment" severity="secondary" (click)="visible = false" >Cancel</div> -->
+        <!-- <div label="Book" (click)="visible = false" >Book</div> -->
+        <app-arrow-btn [text]="'Book'" (click)="visible = false"></app-arrow-btn>
+    </div>
+</p-dialog>
         <div class="submit-arrow">
           <div class="arrow"><img style="margin-top:3px;margin-left:-6px" src="../../assets/Appointment Scheduling.png" alt=""></div>
         </div>

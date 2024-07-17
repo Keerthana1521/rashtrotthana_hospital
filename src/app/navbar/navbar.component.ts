@@ -1,15 +1,81 @@
 import { Component,Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
+import { DialogModule } from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
+import { MessageService } from 'primeng/api';
+import { ContactFormService } from '../contact-form.service';
 
+interface City {
+  name: string;
+}
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
-export class NavbarComponent {
 
-  constructor(private router: Router,
-    private renderer: Renderer2) { }
+export class NavbarComponent {
+  position: string = 'top-right';
+  
+  visible: boolean = false;
+
+    showDialog(position: string) {
+      console.log('showDialog', position);
+        this.position = position;
+        this.visible = true;
+    }
+    contactForm:any = FormGroup;
+    subjects = [
+      { name: 'General Inquiry' },
+      { name: 'Support' },
+      { name: 'Feedback' },
+    ];
+    cities: City[] | undefined;
+  
+    selectedCity: City | undefined;
+    constructor(private router: Router,
+      private renderer: Renderer2,private fb: FormBuilder,
+      private messageService: MessageService,
+      private contactFormService: ContactFormService) { }
+    ngOnInit() {
+        this.cities = [
+            { name: 'General Medicine'},
+            { name: 'Rome' },
+            { name: 'London'},
+            { name: 'Istanbul' },
+            { name: 'Paris' }
+        ];
+        this.contactForm = this.fb.group({
+          name: ['', Validators.required],
+          email: ['', [Validators.required, Validators.email]],
+          contactNumber: ['', Validators.required],
+          subject: ['', Validators.required],
+          message: ['', Validators.required],
+        });
+  }
+  onSubmit(): void {
+    if (this.contactForm.valid) {
+      this.contactFormService.submitForm(this.contactForm.value).subscribe(
+        response => {
+          console.log('Server response:', response);
+      console.log('Form Submitted', this.contactForm.value);
+        },
+        error => {
+          console.error('Error submitting form:', error);
+          // Handle error if necessary
+        }
+        
+      );
+      this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Form Submitted Successfully ' });
+      this.contactForm.reset();
+      
+    }
+  }
+  get f(): { [key: string]: AbstractControl } {
+    return this.contactForm.controls;
+  }
 
   openLink(type: string) {
     if (type == 'youtube') {

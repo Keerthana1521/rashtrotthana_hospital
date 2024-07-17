@@ -21,6 +21,8 @@ import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { InputTextModule } from 'primeng/inputtext';
 import { DropdownModule } from 'primeng/dropdown';
+import { DialogModule } from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { AccordionModule } from 'primeng/accordion';
 import { HealthCheckupComponent } from './health-checkup/health-checkup.component';
@@ -158,7 +160,9 @@ import { NaturopathyComponent } from './naturopathy/naturopathy.component';
     ReactiveFormsModule,
     ToastModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    DialogModule,
+    ButtonModule
   ],
   providers: [
     MessageService,
