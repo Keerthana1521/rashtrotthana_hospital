@@ -17,15 +17,15 @@ interface City {
 })
 
 export class NavbarComponent {
-  position: string = 'top-right';
-  
   visible: boolean = false;
 
-    showDialog(position: string) {
-      console.log('showDialog', position);
-        this.position = position;
-        this.visible = true;
-    }
+  showDialog() {
+      this.visible = true;
+  }
+  close(){
+    this.visible= false;
+  }
+
     contactForm:any = FormGroup;
     subjects = [
       { name: 'General Inquiry' },

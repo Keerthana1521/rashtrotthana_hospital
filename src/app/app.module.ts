@@ -30,7 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { HttpClientModule } from '@angular/common/http';
-
+import { FormsModule } from '@angular/forms';
 import { ContactFormService } from './contact-form.service';
 import { DoctorsComponent } from './doctors/doctors.component';
 import { DoctorLayoutComponent } from './doctor-layout/doctor-layout.component';
@@ -70,6 +70,7 @@ import { ModernMedicineComponent } from './modern-medicine/modern-medicine.compo
 import { FacilityBulletContentComponent } from './facility-bullet-content/facility-bullet-content.component';
 import { DialysisComponent } from './dialysis/dialysis.component';
 import { AnesthesiologyComponent } from './anesthesiology/anesthesiology.component';
+
 
 import { ObstetricsGynaecologyComponent } from './obstetrics-gynaecology/obstetrics-gynaecology.component';
 import { EndocrinologyComponent } from './endocrinology/endocrinology.component';
@@ -162,7 +163,10 @@ import { NaturopathyComponent } from './naturopathy/naturopathy.component';
     HttpClientModule,
     NgbModule,
     DialogModule,
-    ButtonModule
+    ButtonModule,
+    FormsModule,
+
+
   ],
   providers: [
     MessageService,

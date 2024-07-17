@@ -8,29 +8,94 @@
             committed to preserving your health and restoring hope, every step of the way.
         </div>
     </div>
+    <div class="form-content">
     <div class="form-card">
         <div class="form-container">
-            <form>
-                <select class="form-input">
-                    <option value="" disabled selected>Select Doctor Name</option>
-                    <option value="specialty1">Specialty 1</option>
-                    <option value="specialty2">Specialty 2</option>
-                    <option value="specialty3">Specialty 3</option>
-                </select><br><br>
-                <select class="form-input">
-                    <option value="" disabled selected>Filter by Specialities</option>
-                    <option value="department1">Department 1</option>
-                    <option value="department2">Department 2</option>
-                    <option value="department3">Department 3</option>
-                </select><br><br>
-                <app-arrow-btn [text]="'Search Now'"></app-arrow-btn>
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                <p-dropdown styleClass="dropdown" placeholder="Select Specialities" [options]="subjects" optionLabel="name" formControlName="subject"
+                required></p-dropdown><br>
+              <br />
+                <app-arrow-btn [text]="'Search Now'" (click)="onSubmit()"></app-arrow-btn>
             </form>
         </div>
     </div>
+    <div class="doctor-filter">
+    <div class="form-container-1">
+        <form class="filter-doctor" > 
+            <input type="text" pInputText [(ngModel)]="value" name="doctor-name" placeholder="Enter Doctor Name to Filter" />
+            <i class="fa-solid fa-magnifying-glass form-icon"></i>
+            </form>
+
+    </div>
+</div>
+</div>
 </div>
 <div class="container-doctors container-fluid">
-    <ng-container *ngFor="let doctor of dcotors">
-        <app-doctors [image]="doctor.image" [name]="doctor.name" [desgination]="doctor.desgination"
-            [about]="doctor.about"></app-doctors>
-    </ng-container>
+    <ng-container *ngIf="(filteredBySpeciality.length > 0 || filteredDoctors.length > 0); else noFilteredDoctors">
+        <ng-container *ngIf="filteredBySpeciality.length > 0">
+          <ng-container *ngFor="let doctor of filteredBySpeciality">
+            <app-doctors [image]="doctor.image" [name]="doctor.name" [desgination]="doctor.desgination" [about]="doctor.about" (click)="showDoctor()"></app-doctors>
+          </ng-container>
+        </ng-container>
+        <ng-container *ngIf="filteredDoctors.length > 0">
+          <ng-container *ngFor="let doctor of filteredDoctors">
+            <app-doctors [image]="doctor.image" [name]="doctor.name" [desgination]="doctor.desgination" [about]="doctor.about" (click)="showDoctor()"></app-doctors>
+          </ng-container>
+        </ng-container>
+      </ng-container>
+      <ng-template  #noFilteredDoctors>
+       No doctor Found
+      </ng-template>
 </div>
+
+ <!-- < class="doctor-details">
+  <div class="section-1">
+    <div class="image">
+      <img src="../../assets/doctor-1.png">
+    </div>
+    <div class="doctor-name-desgination">
+      <div class="doctor-name">
+        Dr. KRISHNASWAMY LAKSHMAN MBBS,LRCP, MRCS(UK), FRCS
+      </div>
+      <div class="doctor-desgination">
+        Department: GENERAL SURGERY
+      </div>
+    </div>
+    </div>
+    <div class="section-2">
+      <div class="area-of-interest">
+        <img src="../../assets/benefit.png">
+        <div class="doctor-details-content">Areas of Expertise</div>
+      </div>
+      <div>
+        <div class="area-of-interest">
+          <img src="../../assets/list.png">
+          <div class="doctor-details-content">GI surgery</div>
+        </div>
+        <div class="area-of-interest">
+          <img src="../../assets/list.png">
+          <div class="doctor-details-content">Laproscopy</div>
+        </div>
+        <div class="area-of-interest">
+          <img src="../../assets/list.png">
+          <div class="doctor-details-content">Onco Surgery</div>
+        </div>
+        <div class="area-of-interest">
+          <img src="../../assets/list.png">
+          <div class="doctor-details-content">Lasers</div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="profile">
+      <div class="arrow">
+      </div> -->
+      <!-- <div class="breif-profile">
+        <div class="area-of-interest">
+          <img src="../../assets/interest.png">
+          <div class="doctor-details-content">Brief Profile</div>
+        </div>
+        <div class="about-doctor">
+          Dr.K. Lakshman, MBBS, MRCS(UK), FRCS- General surgery is willing to be associated with JMRH & RC on a service basis. Dr. Lakshman is a renowned surgeon having forty-five years of experience in the field of surgery.
+        </div>
+      </div>
+    </div> -->
