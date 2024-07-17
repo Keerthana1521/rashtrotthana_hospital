@@ -198,6 +198,11 @@ input [type=text],[type=email]{
  #navbar ul li a{
     font-size: 12px;
  }
+ ::ng-deep .p-dialog-mask{
+  padding-right: 0px;
+  padding-left: 0px;
+  justify-content: center;
+ }
 }
 
 @media screen and (max-width: 1200px) {
