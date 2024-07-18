@@ -196,3 +196,14 @@ top: 7px;
     width: 50%;
     background:url('../../assets/appoint-arrow.png')
   }
+  .clear{
+    border:2px solid #6b7280;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+    color: #6b7280;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -10,10 +10,10 @@ import { ContactFormService } from '../contact-form.service';
   styleUrl: './doctor-layout.component.css'
 })
 export class DoctorLayoutComponent {
-  selectedSpeciality:string=''
-  filteredBySpeciality: any[] = [];
-  filteredByName: any[] = [];
-constructor(private fb: FormBuilder){}
+  selectedSpeciality: string = '';
+  nameFilter: string = '';
+  filteredDoctors: any[] = [];
+
   value: string="";
 contactForm:any = FormGroup;
     subjects = [
@@ -60,34 +60,46 @@ contactForm:any = FormGroup;
     }
   
     ]
-  ngOnInit() {
-    this.contactForm = this.fb.group({
-      
-      subject: ['', Validators.required],
-    });
-  }
-  onSubmit(): void {
-    this.selectedSpeciality = this.contactForm.value.subject.name;
-    this.filteredBySpeciality = this.doctors.filter(doctor => doctor.speciality === this.selectedSpeciality);
-    this.filteredDoctors.length=0;
+    constructor(private fb: FormBuilder) {}
+
+    ngOnInit() {
+      this.contactForm = this.fb.group({
+        subject: ['', Validators.required],
+      });
+  
+      // Initialize the filteredDoctors list with all doctors
+      this.filteredDoctors = this.doctors;
+    }
+  
+    onSubmit(): void {
+      this.selectedSpeciality = this.contactForm.value.subject.name;
+      this.filterDoctors();
+    }
+  clear(): void {
+    this.contactForm.reset();
+    this.nameFilter = '';
+    this.selectedSpeciality = '';
+    this.filteredDoctors = this.doctors;
   }
   private normalizeName(name: string): string {
     return name.toLowerCase().replace(/^dr\.\s*/, '');
   }
-  get filteredDoctors() {
-    if (!this.value) {
-      return this.doctors;
-    }
-    const normalizedValue = this.value.toLowerCase();
-    return this.doctors.filter(doctor => this.normalizeName(doctor.name).startsWith(normalizedValue));
-    // console.log(this.filteredDoctors);
+  filterDoctors(): void {
+    const filteredBySpeciality = this.selectedSpeciality
+      ? this.doctors.filter(doctor => doctor.speciality === this.selectedSpeciality)
+      : this.doctors;
+
+    const normalizedValue = this.nameFilter.toLowerCase();
+    this.filteredDoctors = filteredBySpeciality.filter(doctor =>
+      this.normalizeName(doctor.name).startsWith(normalizedValue)
+    );
   }
+  
   visible:boolean = false;
   showDoctor(){
     this.visible = true;
     console.log('visible')
   }
-}
 
- 
+}
 

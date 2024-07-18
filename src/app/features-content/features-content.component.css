@@ -147,9 +147,10 @@ color: #008080;
     }
     .facility-content{
         width: 100%;
+        padding-left: 1rem;
 
     }
     .heading-container,.content-container{
-        padding-left: 5rem;
+        padding-left: 4rem;
     }
     }

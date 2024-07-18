@@ -9,44 +9,59 @@
         </div>
     </div>
     <div class="form-content">
-    <div class="form-card">
+      <div class="form-card">
         <div class="form-container">
-            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-                <p-dropdown styleClass="dropdown" placeholder="Select Specialities" [options]="subjects" optionLabel="name" formControlName="subject"
-                required></p-dropdown><br>
-              <br />
-                <app-arrow-btn [text]="'Search Now'" (click)="onSubmit()"></app-arrow-btn>
-            </form>
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <p-dropdown
+              styleClass="dropdown"
+              placeholder="Select Specialities"
+              [options]="subjects"
+              optionLabel="name"
+              formControlName="subject"
+              required
+            ></p-dropdown>
+            <br /><br />
+            <div style="display: flex;gap:30px">
+              <app-arrow-btn [text]="'Search'" (click)="onSubmit()"></app-arrow-btn>
+            <div class="clear" (click)="clear()">
+              Clear All
+            </div>
+            </div>
+          </form>
         </div>
-    </div>
-    <div class="doctor-filter">
-    <div class="form-container-1">
-        <form class="filter-doctor" > 
-            <input type="text" pInputText [(ngModel)]="value" name="doctor-name" placeholder="Enter Doctor Name to Filter" />
+      </div>
+      <div class="doctor-filter">
+        <div class="form-container-1">
+          <form class="filter-doctor">
+            <input
+              type="text"
+              pInputText
+              [(ngModel)]="nameFilter"
+              name="doctor-name"
+              placeholder="Enter Doctor Name to Filter"
+              (ngModelChange)="filterDoctors()"
+            />
             <i class="fa-solid fa-magnifying-glass form-icon"></i>
-            </form>
-
+          </form>
+        </div>
+      </div>
     </div>
 </div>
-</div>
-</div>
-<div class="container-doctors container-fluid">
-    <ng-container *ngIf="(filteredBySpeciality.length > 0 || filteredDoctors.length > 0); else noFilteredDoctors">
-        <ng-container *ngIf="filteredBySpeciality.length > 0">
-          <ng-container *ngFor="let doctor of filteredBySpeciality">
-            <app-doctors [image]="doctor.image" [name]="doctor.name" [desgination]="doctor.desgination" [about]="doctor.about" (click)="showDoctor()"></app-doctors>
-          </ng-container>
-        </ng-container>
-        <ng-container *ngIf="filteredDoctors.length > 0">
-          <ng-container *ngFor="let doctor of filteredDoctors">
-            <app-doctors [image]="doctor.image" [name]="doctor.name" [desgination]="doctor.desgination" [about]="doctor.about" (click)="showDoctor()"></app-doctors>
-          </ng-container>
+    <div class="container-doctors container-fluid">
+      <ng-container *ngIf="filteredDoctors.length > 0; else noFilteredDoctors">
+        <ng-container *ngFor="let doctor of filteredDoctors">
+          <app-doctors
+            [image]="doctor.image"
+            [name]="doctor.name"
+            [desgination]="doctor.desgination"
+            [about]="doctor.about"
+            (click)="showDoctor()"
+          ></app-doctors>
         </ng-container>
       </ng-container>
-      <ng-template  #noFilteredDoctors>
-       No doctor Found
-      </ng-template>
-</div>
+      <ng-template #noFilteredDoctors>No doctor Found</ng-template>
+    </div>
+    
 
  <!-- < class="doctor-details">
   <div class="section-1">
