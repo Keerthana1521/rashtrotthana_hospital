@@ -38,7 +38,7 @@
               pInputText
               [(ngModel)]="nameFilter"
               name="doctor-name"
-              placeholder="Enter Doctor Name to Filter"
+              placeholder="Enter Doctor Name..."
               (ngModelChange)="filterDoctors()"
             />
             <i class="fa-solid fa-magnifying-glass form-icon"></i>
@@ -50,67 +50,72 @@
     <div class="container-doctors container-fluid">
       <ng-container *ngIf="filteredDoctors.length > 0; else noFilteredDoctors">
         <ng-container *ngFor="let doctor of filteredDoctors">
+          <div class="doctor-card" (click)="selectDoctor(doctor)">
           <app-doctors
             [image]="doctor.image"
             [name]="doctor.name"
             [desgination]="doctor.desgination"
             [about]="doctor.about"
-            (click)="showDoctor()"
           ></app-doctors>
+        </div>
         </ng-container>
       </ng-container>
       <ng-template #noFilteredDoctors>No doctor Found</ng-template>
     </div>
     
-
- <!-- < class="doctor-details">
-  <div class="section-1">
-    <div class="image">
-      <img src="../../assets/doctor-1.png">
-    </div>
-    <div class="doctor-name-desgination">
-      <div class="doctor-name">
-        Dr. KRISHNASWAMY LAKSHMAN MBBS,LRCP, MRCS(UK), FRCS
-      </div>
-      <div class="doctor-desgination">
-        Department: GENERAL SURGERY
-      </div>
-    </div>
-    </div>
-    <div class="section-2">
-      <div class="area-of-interest">
-        <img src="../../assets/benefit.png">
-        <div class="doctor-details-content">Areas of Expertise</div>
-      </div>
-      <div>
-        <div class="area-of-interest">
-          <img src="../../assets/list.png">
-          <div class="doctor-details-content">GI surgery</div>
+    <div class="doctor-details-overlay" *ngIf="selectedDoctor">
+    <div  class="doctors-left" >
+      <div *ngFor="let doctor of doctors" (click)="selectDoctor(doctor)">
+        <div class="doctor-image">
+          <img  class="doctor-image" [src]="doctor.image" alt="">
         </div>
-        <div class="area-of-interest">
-          <img src="../../assets/list.png">
-          <div class="doctor-details-content">Laproscopy</div>
-        </div>
-        <div class="area-of-interest">
-          <img src="../../assets/list.png">
-          <div class="doctor-details-content">Onco Surgery</div>
-        </div>
-        <div class="area-of-interest">
-          <img src="../../assets/list.png">
-          <div class="doctor-details-content">Lasers</div>
+        <div class="doctor-name-left">
+          {{doctor.name}}
         </div>
       </div>
     </div>
-    <!-- <div class="profile">
-      <div class="arrow">
-      </div> -->
-      <!-- <div class="breif-profile">
-        <div class="area-of-interest">
-          <img src="../../assets/interest.png">
-          <div class="doctor-details-content">Brief Profile</div>
+    <div class="doctor-details">
+      <button class="close-btn" (click)="closeDoctorDetails()">×</button>
+      <div class="section-1">
+        <div class="image">
+          <img class="doctor-image-overlay" [src]=" selectedDoctor.image">
         </div>
-        <div class="about-doctor">
-          Dr.K. Lakshman, MBBS, MRCS(UK), FRCS- General surgery is willing to be associated with JMRH & RC on a service basis. Dr. Lakshman is a renowned surgeon having forty-five years of experience in the field of surgery.
+        <div class="doctor-name-desgination">
+          <div class="doctor-name">
+            {{ selectedDoctor.name }}
+          </div>
+          <div class="doctor-desgination">
+            Department: {{ selectedDoctor.desgination }}
+          </div>
         </div>
-      </div>
-    </div> -->
+        </div>
+        <div class="section-2">
+          <div class="area-of-interest">
+            <img src="../../assets/benefit.png">
+            <div class="doctor-details-content">Areas of Expertise</div>
+          </div>
+          <div>
+            <div class="area-of-interest" *ngFor="let expertise of selectedDoctor.areasOfExpertise"  >
+              <img src="../../assets/list.png">
+              <div class="doctor-details-content">{{ expertise }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="profile">
+          <div class="arrow">
+            <img src="../../assets/doctor-details-arrow.png">
+          </div>
+          <div class="breif-profile">
+            <div class="area-of-interest">
+              <img src="../../assets/interest.png">
+              <div class="doctor-details-content">Brief Profile</div>
+            </div>
+            <div class="about-doctor">
+                {{ selectedDoctor.about }}
+            </div>
+          </div>
+          </div>
+          </div>
+         
+          </div>
+          

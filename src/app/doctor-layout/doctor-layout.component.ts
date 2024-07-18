@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { DoctorDetailsComponent } from '../doctor-details/doctor-details.component';
 import { MessageService } from 'primeng/api';
 import { ContactFormService } from '../contact-form.service';
 
@@ -13,6 +15,7 @@ export class DoctorLayoutComponent {
   selectedSpeciality: string = '';
   nameFilter: string = '';
   filteredDoctors: any[] = [];
+  selectedDoctor: any = null;
 
   value: string="";
 contactForm:any = FormGroup;
@@ -30,12 +33,13 @@ contactForm:any = FormGroup;
         image: 'assets/doctor-2.png',
         desgination: 'OBSTETRICS & GYNECOLOGY',
         about: 'Maternity Unit at JMRH & RC is run by WMN team of OBGYNs headed by Dr. Latha Venkatraman. Dr. Latha Venkatraman is a renowned OBGYN with more than 30 years ...',
-        speciality: 'General Medicine'
+        speciality: 'General Medicine',
+        areasOfExpertise: ['GI surgery', 'Laproscopy','Onco Surgery','Lasers']
       },
       {
         name:'Dr. Atmaram D C',
         image:'assets/doctor-3.png',
-        desgination:'SURGERY/LAPROSCOPY/GASTROENTEROLOGY',
+        desgination:'GASTROENTEROLOGY',
         about:'Presently working as Assistant Professor Neurosurgery at Dayanand Sagar Medical College, Kanakpura Road.',
         speciality: 'Yoga'
       },
@@ -57,14 +61,16 @@ contactForm:any = FormGroup;
       desgination:'Orthopedic surgeon',
       about:'Dr. RAVISHANKAR. D is a Orthopedic surgeon and has an experience of 38 years in this field. He completed MBBS from Bangalore University, India in 1985 and DNB - Orthopedics ...',
       speciality:'Naturopathy'
-    }
+    },
+    
   
     ]
-    constructor(private fb: FormBuilder) {}
+    constructor(private fb: FormBuilder, public dialog: MatDialog) {}
 
     ngOnInit() {
       this.contactForm = this.fb.group({
         subject: ['', Validators.required],
+        
       });
   
       // Initialize the filteredDoctors list with all doctors
@@ -95,10 +101,11 @@ contactForm:any = FormGroup;
     );
   }
   
-  visible:boolean = false;
-  showDoctor(){
-    this.visible = true;
-    console.log('visible')
+  selectDoctor(doctor: any): void {
+    this.selectedDoctor = doctor;
+  }
+  closeDoctorDetails(): void {
+    this.selectedDoctor = null;
   }
 
 }

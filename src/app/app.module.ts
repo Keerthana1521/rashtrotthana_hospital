@@ -81,6 +81,8 @@ import { YogaComponent } from './yoga/yoga.component';
 import { AyurvedaComponent } from './ayurveda/ayurveda.component';
 import { HomeopathyComponent } from './homeopathy/homeopathy.component';
 import { NaturopathyComponent } from './naturopathy/naturopathy.component';
+import { DoctorDetailsComponent } from './doctor-details/doctor-details.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 
 @NgModule({
@@ -144,7 +146,8 @@ import { NaturopathyComponent } from './naturopathy/naturopathy.component';
     YogaComponent,
     AyurvedaComponent,
     HomeopathyComponent,
-    NaturopathyComponent
+    NaturopathyComponent,
+    DoctorDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -170,7 +173,8 @@ import { NaturopathyComponent } from './naturopathy/naturopathy.component';
   ],
   providers: [
     MessageService,
-    ContactFormService
+    ContactFormService,
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
