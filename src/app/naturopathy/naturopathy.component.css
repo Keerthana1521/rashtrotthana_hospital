@@ -12,7 +12,7 @@
 
 
 .container_1 {
-    background-image: url('../../assets/naturopathy/container_1_bg.png');
+    background-image: url('../../assets/naturopathy-bg.png');
     background-size: cover;
     padding: 300px 70px 50px 0;
     display: flex;
@@ -134,7 +134,6 @@
 
 .con_3_head .con_3_head_txt {
     color: #008080;
-    text-align: justify;
     font-family: Poppins;
     font-size: 32px;
     font-style: normal;
@@ -142,6 +141,7 @@
     line-height: normal;
     letter-spacing: 0.64px;
     text-transform: capitalize;
+    width: 100%;
 }
 
 .con_3_content .con_3_content_txt {
@@ -237,6 +237,122 @@
     margin-top: 100px;
     margin-bottom: 100px;
 }
+
+
+@media (max-width:1300px) {
+
+    /* container 1 */
+
+    .con_1_heading .con_1_head_txt{
+        width: 550px;
+    }
+    .con_1_content .con_1_ocntent_txt{
+        width: 600px;
+    }
+
+    /* container 3 */
+
+    .con_3_content .con_3_content_txt{
+        width: 580px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:800px) {
+    .container_1{
+        background-image: url('../../assets/naturopathy/Naturopathy_tab.jpeg');
+        background-size: cover;
+        padding: 150px 0 ;
+        height: 700px;
+    }
+
+    .con_1_content .con_1_ocntent_txt{
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    /* containetr 3 */
+
+    .container_3 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .con_3_lft_side {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .con_3_lft_side img {
+        width: 357px;
+        height: 600px;
+        border-radius: 10px;
+    }
+
+    .con_3_right_side {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(152deg, #FBCA51 -34.84%, #008080 99.04%);
+        padding: 20px 0;
+    }
+
+    .con_3_head .con_3_head_txt {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        color: #ffffff;
+    }
+
+    .con_3_content .con_3_content_txt {
+        width: 360px;
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    /* container 4 */
+
+    .container_4 {
+        margin-top: 30px;
+    }
+
+    .con_4_heading .con_4_head_txt {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .doc_1 {
+        width: 150px;
+        height: 250px;
+    }
+
+    .doc_1 img {
+        width: 150px;
+        height: 250px
+    }
+
+    .doc_1 .doc_name {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .doc_1 .bnys {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .doc_1 .medicine {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .view_all {
+        margin-top: 5px;
+    }   
+    
+}
+
 @media (max-width:480px) {
 
     /* container 1 */
@@ -267,7 +383,8 @@
 
     .con_1_content .con_1_ocntent_txt {
         font-size: 12px;
-        width: 359px
+        width: 359px;
+        padding: 5%
     }
 
     /* container 2 */
@@ -387,9 +504,6 @@
 
 }
 
-
-
-
 @media (max-width:380px) {
 
     /* container 1 */
@@ -420,7 +534,7 @@
 
     .con_1_content .con_1_ocntent_txt {
         font-size: 12px;
-        width: 280px;
+        width: 330px;
     }
 
     /* container 2 */
@@ -540,8 +654,6 @@
 
 }
 
-
-
 @media (max-width:320px) {
 
     /* container 1 */
@@ -596,6 +708,10 @@
         padding: 0;
         margin-top: -375px;
 
+    }
+
+    .container_2 .con_2_list{
+        width: 270px;
     }
 
     .con_2_list .con_2_list_items {

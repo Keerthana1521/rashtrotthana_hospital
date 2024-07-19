@@ -313,13 +313,22 @@
     text-align: center;
 }
 
+@media (max-width:1300px) {
+    .box_1_contents{
+        margin-left: 4%;
+    }
 
+    .content_col_2_res{
+        margin-left: 0;
+    }
+}
 
-@media (max-width:1035px){
+@media (max-width:1035px) {
 
     /* container 2 */
     .container_2 .con_2_para {
-        width: 920px;
+        width: 100%;
+        padding: 0 10%;
 
     }
 
@@ -356,10 +365,31 @@
     .lists_box{
         width: 100%
     }
+
+    .content_col_2_res{
+        margin-left: 0;
+    }
+
+    .box_1_head{
+        font-size: 24px;
+    }
+
+    .con_4_head .con_4_head_txt{
+        font-size: 24px;
+    }
     
+    .con_4_img img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .con_3_box_1_img img{
+        width: 250px;
+        height: 250px;
+    }
 }
 
-@media (max-width:780px) {
+@media (max-width:800px) {
 
     .root-container {
         margin: 0;
@@ -374,6 +404,13 @@
         background-image: url('../../assets/homeopathy/Con_1_responsive.png');
         /* background-size: cover; */
         align-items: start;
+        margin-top: 100px;
+
+    }
+
+    .container_1 .con_1_para{
+        width: 100%;
+        padding: 0 10%;
     }
 
     .container_1 .con_1_head {
@@ -387,17 +424,9 @@
         font-size: 24px;
     }
 
-    .container_1 .con_1_para {
-        font-size: 12px;
-        width: 440px;
-        line-height: 16px;
-        /* 160% */
-        display: flex;
-        justify-content: center;
-    }
+    
 
     /* conatiner 2 */
-
 
     .con_2_head .con_2_head_txt {
         font-size: 24px;
@@ -405,7 +434,8 @@
 
     .container_2 .con_2_para {
         font-size: 12px;
-        width: 584px;
+        width: 100%;
+        padding: 0 10%;
     }
 
     /* container 3 heading*/
@@ -432,7 +462,8 @@
 
 
     .box_1_head .box_1_head {
-        font-size: 16px;
+        font-size: 24px;
+        width: 100%;
     }
 
     .content_col_1 .col_1_list_item {
@@ -463,6 +494,10 @@
         width: 100%;
         margin-left: 15%;
 
+    }
+
+    .content_col_1 .col_1_list_item{
+        font-size: 14px;
     }
 
     .content_col_1 {
@@ -568,7 +603,6 @@
     }
 
 }
-
 
 @media (max-width:435px) {
 

@@ -265,6 +265,7 @@ top: 7px;
     grid-template-columns: 50% 50%;
     margin-top: 27vh;
     border-radius: 25px;
+    cursor: pointer;
   }
   .doctor-image{
     width: 200px;
