@@ -16,6 +16,14 @@ export class DoctorLayoutComponent {
   nameFilter: string = '';
   filteredDoctors: any[] = [];
   selectedDoctor: any = null;
+  visibleDoctors: any[] = [];
+  private currentIndex: number = 0;
+  private readonly batchSize: number = 8;
+  increment = 8;
+  startIndex = 0;
+
+  private itemsPerPage = 8; // Number of items to show per scroll
+  private currentPage = 0;
 
   value: string="";
 contactForm:any = FormGroup;
@@ -62,6 +70,40 @@ contactForm:any = FormGroup;
       about:'Dr. RAVISHANKAR. D is a Orthopedic surgeon and has an experience of 38 years in this field. He completed MBBS from Bangalore University, India in 1985 and DNB - Orthopedics ...',
       speciality:'Naturopathy'
     },
+    {
+      name:'Dr. Latha Venkataram',
+      image: 'assets/doctor-2.png',
+      desgination: 'OBSTETRICS & GYNECOLOGY',
+      about: 'Maternity Unit at JMRH & RC is run by WMN team of OBGYNs headed by Dr. Latha Venkatraman. Dr. Latha Venkatraman is a renowned OBGYN with more than 30 years ...',
+      speciality: 'General Medicine',
+      areasOfExpertise: ['GI surgery', 'Laproscopy','Onco Surgery','Lasers']
+    },
+    {
+      name:'Dr. Atmaram D C',
+      image:'assets/doctor-3.png',
+      desgination:'GASTROENTEROLOGY',
+      about:'Presently working as Assistant Professor Neurosurgery at Dayanand Sagar Medical College, Kanakpura Road.',
+      speciality: 'Yoga'
+    },
+    {name:'Dr. Rajeev Vijayakumar',
+    image:'assets/doctor-4.png',
+    desgination:'Medical Oncology',
+    about:'Dr Rajeev, the very senior consultant whose expertise in Medical Oncology, Hemato Oncology, and Bone Marrow Transplant ensures that your confidence in his ...',
+    speciality:'Ayurveda'
+  },
+    {
+      name:'Dr. Shashi Vadhanan',
+      image:'assets/doctor-5.png',
+      desgination:'GENERAL SURGERY',
+      about:'Neurosurgeon in practice since 10.5 years. Working in the hospital & state of care health care industry. Skilled in Neurospinal surgical procedures, Clinical Research&, Medical ...',
+      speciality:'Homeopathy'
+    },
+    {name:'Dr. RAVISHANKAR. D',
+    image:'assets/doctor-6.png',
+    desgination:'Orthopedic surgeon',
+    about:'Dr. RAVISHANKAR. D is a Orthopedic surgeon and has an experience of 38 years in this field. He completed MBBS from Bangalore University, India in 1985 and DNB - Orthopedics ...',
+    speciality:'Naturopathy'
+  },
     
   
     ]
@@ -69,14 +111,48 @@ contactForm:any = FormGroup;
 
     ngOnInit() {
       this.contactForm = this.fb.group({
-        subject: ['', Validators.required],
+        subject: ['', Validators.required]
         
       });
+      this.loadVisibleDoctors();
   
       // Initialize the filteredDoctors list with all doctors
       this.filteredDoctors = this.doctors;
     }
+    onScroll(event: any) {
+      const element = event.target;
+      if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+        this.loadMoreDoctors();
+      }
+      // if (this.currentIndex < this.doctors.length) {
+      //   this.loadMoreDoctors();
+      // }
+      // this.startIndex += this.increment;
+      // this.loadVisibleDoctors();
+    }
+    loadVisibleDoctors() {
+      // const nextBatch = this.doctors.slice(this.currentIndex, this.currentIndex + this.batchSize);
+      // this.visibleDoctors = [...this.visibleDoctors, ...nextBatch];
+      // this.currentIndex += this.batchSize;.
+      this.visibleDoctors = this.doctors.slice(this.startIndex, this.startIndex + this.increment);
+    }
+    loadMoreDoctors() {
+      const nextPage = this.currentPage + 1;
+      const startIndex = nextPage * this.itemsPerPage;
+      const endIndex = startIndex + this.itemsPerPage;
+      const newDoctors = this.doctors.slice(startIndex, endIndex);
   
+      this.visibleDoctors = [...this.visibleDoctors, ...newDoctors];
+      this.currentPage = nextPage;
+    }
+  
+    // onScroll() {
+      // if (this.currentIndex < this.doctors.length) {
+      //   this.loadMoreDoctors();
+      // }
+      // this.startIndex += this.increment;
+      // this.loadVisibleDoctors();
+    // }
     onSubmit(): void {
       this.selectedSpeciality = this.contactForm.value.subject.name;
       this.filterDoctors();
@@ -101,8 +177,30 @@ contactForm:any = FormGroup;
     );
   }
   
-  selectDoctor(doctor: any): void {
+  // selectDoctor(doctor: any): void {
+    // this.selectedDoctor = doctor;
+    // this.selectedDoctor = doctor;
+    // const doctorIndex = this.doctors.indexOf(doctor);
+    // if (doctorIndex !== -1) {
+    //   this.startIndex = doctorIndex;
+    //   this.loadVisibleDoctors();
+    // }
+  // }
+  selectDoctor(doctor:any) {
     this.selectedDoctor = doctor;
+    const doctorIndex = this.doctors.indexOf(doctor);
+    if (doctorIndex !== -1) {
+      this.startIndex = doctorIndex;
+      this.loadVisibleDoctors();
+    }
+    
+    // Scroll to the doctor-details div
+    setTimeout(() => {
+      const element = document.getElementById('doctor-details');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
   }
   closeDoctorDetails(): void {
     this.selectedDoctor = null;

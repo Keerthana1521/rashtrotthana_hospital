@@ -84,6 +84,8 @@ import { NaturopathyComponent } from './naturopathy/naturopathy.component';
 import { DoctorDetailsComponent } from './doctor-details/doctor-details.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+
 
 @NgModule({
   declarations: [
@@ -168,6 +170,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     DialogModule,
     ButtonModule,
     FormsModule,
+    InfiniteScrollModule
 
 
   ],
