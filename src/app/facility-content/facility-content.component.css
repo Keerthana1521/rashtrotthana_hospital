@@ -137,6 +137,25 @@ text-transform: capitalize;
     width: 50%;
     }
 }
+@media only screen and (max-width:900px){
+    .image{
+        width: 300px;
+        height: 300px;
+    }
+    .facility-content{
+        padding:0rem 4rem;
+    }
+    .content-container{
+        padding-left: 2rem;
+    }
+    .heading-container{
+        padding: 3rem;
+    }
+    .heading{
+        line-height: 41px;
+        font-size: 34px;
+    }
+}
 @media only screen and (max-width: 600px){
     .banner-image{
         width: 100%;
