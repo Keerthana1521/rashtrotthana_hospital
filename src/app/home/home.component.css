@@ -1124,7 +1124,126 @@ li{
   left:430px;
 }
 }
-
+@media only screen and (max-width:900px){
+  .bg-features img{
+    width:109px;
+    height:149px;
+  }
+  .icon{
+    margin-right: 34px;
+  }
+  .sheild{
+    width: 200px;
+  }
+  .title{
+    margin-top: 75px;
+    font-size: 36px;
+  }
+  .text-container .content{
+    font-size: 16px;
+  }
+  .form-input{
+    width: 174px;
+  }
+  .card{
+    width: 230px;
+  }
+  .card-header{
+    font-size: 12px;
+  }
+  .m-0{
+    font-size: 10px;
+  }
+  .service-header{
+    font-size: 32px;
+  }
+  .bg-service img{
+    width: 120px;
+    height: 150px;
+  }
+  .about-us-heading{
+    font-size: 16px;
+    padding-left: 0;
+    width: 459px;
+  }
+  .about-us-content{
+    font-size: 12px;
+    padding-left: 0;
+    padding-top: 0;
+    width: 300px;
+  }
+  .about-image {
+    width: 346px;
+    height: 307px;
+    padding-left: 3rem;
+  }
+  .about-image-container{
+    padding-left: 0;
+  }
+  .about-image-content{
+    width: 363px;
+    font-size: 12px;
+  }
+  .box{
+    width: 129px;
+    height: 136px;
+  }
+  .statement{
+   font-size: 12px;
+  }
+  .number{
+    font-size: 22px;
+  }
+  li{
+    width: 366px;
+    font-size: 12px;
+}
+.achieve-image{
+  padding-top: 9rem;
+}
+.care-image{
+  padding-left: 0;
+}
+.meno{
+  width: 314px;
+  height: 125px;
+}
+.meno-img{
+  width: 69px;
+  height: 69px;
+}
+.meno-content{
+  font-size: 14px;
+  
+}
+.corporate{
+  font-size: 26px;
+  padding: 1rem;
+}
+.hope{
+  font-size: 20px;
+  padding: 0;
+}
+.benefit{
+  font-size: 20px;
+  padding: 1rem;
+}
+.button{
+  left: 294px;
+  bottom: 30px;
+  width: 25%;
+}
+.free-div{
+  padding-top: 4rem;
+}
+.free-text{
+  left: 310px;
+}
+.free-1{
+  left: 343px;
+  font-size: 12px;
+}
+}
 
 @media  only screen and (max-width:430px){
   .video{
@@ -1138,7 +1257,7 @@ li{
 .container{
   display: flex;
   flex-direction: column;
-  padding: 20px 82px;
+  padding: 20px 51px;
 }
 .title{
   display: none;
@@ -1309,7 +1428,7 @@ form{
  
  }
 .meno{
-  width: 212%;
+  width: 160%;
   background-color: #008080;
   height:74px;
 }
@@ -1342,6 +1461,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+width: 228px;
 }
 .meno-img{
   width: 38px;
@@ -1354,7 +1474,7 @@ line-height: normal;
   
     width: 100%;
     background: url("../../assets/dontaion-home-bg.png") no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 880px;
   }
   .free-div,.benefit,.hope,.corporate{
@@ -1401,9 +1521,13 @@ line-height: normal;
 .about-image-content{
   font-size: 12px;
   width: 333px;
+  padding: 0;
 }
 .about-text{
   left:3px;
+}
+.achieve-image{
+  padding-top: 2rem;
 }
 .seventh-container {
 
@@ -1432,7 +1556,7 @@ line-height: normal;
 .button{
   width: 50%;
   left: 106px;
-  top: 380px;
+  top: 461px;
 }
 
 li{
@@ -1467,7 +1591,13 @@ li{
   padding: 20px 24px;
 }
 .button{
-  top:351px;
+  top:498px;
+}
+.card-header{
+  font-size: 18px;
+}
+.meno{
+  width: 181%;
 }
 }
 @media only screen and (max-width:365px){
@@ -1537,8 +1667,8 @@ li{
     height: 655px;
   }
   .video{
-    height: 250px;
-    margin-top: 13vh;
+    height: fit-content;
+    margin-top: 17vh;
   }
   .second-container {
    height: 734px;
@@ -1602,7 +1732,10 @@ li{
       padding: 1rem;
     }
     .meno{
-      width: 187%;
+      width: 204%;
+    }
+    .meno-content{
+      width: 211px;
     }
     .care-image{
       padding-left: 0rem;

@@ -203,6 +203,9 @@ input [type=text],[type=email]{
   padding-left: 0px;
   justify-content: center;
  }
+ .submit-button{
+  gap: 0;
+ }
 }
 
 @media screen and (max-width: 1200px) {

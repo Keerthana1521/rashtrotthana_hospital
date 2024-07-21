@@ -134,6 +134,25 @@
         line-height: 24px;
     }
 }
+@media only screen and (max-width:900px){
+    .content-container{
+        padding: 0 30px;
+    }
+    .program-img{
+        height: 34%;
+    }
+    .each-content{
+        height: 400px;
+    }
+    .box-contents{
+        height: 63%;
+    }
+    .program-title{
+        height: 23%;
+        line-height: 24px;
+    }
+
+}
 @media only screen and (max-width: 600px){
     .content-container{
         display: flex;
