@@ -85,8 +85,8 @@ import { DoctorDetailsComponent } from './doctor-details/doctor-details.componen
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
-import { HerniaComponent } from './hernia/hernia.component';
-import { ProctologyComponent } from './proctology/proctology.component';
+// import { HerniaComponent } from './hernia/hernia.component';
+// import { ProctologyComponent } from './proctology/proctology.component';
 
 
 @NgModule({
@@ -152,8 +152,8 @@ import { ProctologyComponent } from './proctology/proctology.component';
     HomeopathyComponent,
     NaturopathyComponent,
     DoctorDetailsComponent,
-    HerniaComponent,
-    ProctologyComponent
+    // HerniaComponent,
+    // ProctologyComponent
   ],
   imports: [
     BrowserModule,
@@ -175,7 +175,6 @@ import { ProctologyComponent } from './proctology/proctology.component';
     ButtonModule,
     FormsModule,
     InfiniteScrollModule
-
 
   ],
   providers: [
