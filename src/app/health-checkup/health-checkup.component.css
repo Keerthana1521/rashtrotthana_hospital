@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 128px;
+    margin-top: 115px;
     background: #FBFFF5;
 }
 
@@ -163,7 +163,57 @@ line-height: normal;
         font-size: 10px;
     }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width:900px){
+    .text-container{
+        font-size: 14px;
+    }
+    .packages-container-title{
+        font-size: 20px;
+    }
+    .expand-grid {
+        grid-template-columns: 1fr ;
+    }
+    .title-box-img{
+        width: 100%;
+        height: 100%;
+    }
+    .accordion-header {
+        width: 100%;
+        display: flex;
+       
+        align-items: center;
+        justify-content: space-between;
+        border-color: #e5e7eb;
+        color: #374151;
+        gap:5px;
+    }
+    .title-box h1{
+        font-size: 14px;
+        width:330%;
+    }
+    .total-count span{
+        font-size: 10px;
+       
+    }
+    .total-count{
+        width: 380%;
+    }
+    .price-container{
+        font-size: 14px;
+    }
+    .price-container .price span{
+        font-size:14px;
+    }
+    .view-all-btn{
+        width: 94px;
+        font-size: 12px;
+        padding:8px;
+    }
+    .view-btn-container{
+        margin-left:6rem;
+    }   
+}
+@media screen and (max-width: 600px) {
     .text-container{
         font-size: 14px;
     }
@@ -211,6 +261,12 @@ line-height: normal;
     }
     .view-btn-container{
         margin-left:6rem;
+    }
+    .items-heading h1{
+        font-size: 14px;
+    }
+    ::ng-deep .p-component{
+        font-size: 12px;
     }
 }
 @media only screen and (max-width:390px){

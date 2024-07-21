@@ -47,6 +47,18 @@
         padding: 2rem;
     }
 }
+@media only screen and (max-width:900px){
+    .container-facility{
+        grid-template-columns: 50% 50%;
+        padding-left: 4rem;
+    }
+    .o_heading{
+        padding:114px 0 0 100px;
+    }
+    .gm_poster{
+        height: 40%;
+    }
+}
 @media only screen and (max-width: 600px){
     .gm_poster{
         margin-top: 7rem;

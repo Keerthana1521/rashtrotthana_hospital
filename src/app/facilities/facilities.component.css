@@ -50,6 +50,22 @@ color: #008080;
         padding: 2rem;
     }
 }
+@media only screen and (max-width:900px){
+.container-facility{
+    grid-template-columns: 50% 50%;
+    padding-left: 4rem;
+}
+.heading{
+    font-size: 24px;
+}
+.content{
+    width: 90%;
+    font-size: 12px;
+    padding-top: 2rem;
+    text-align: justify;
+    padding-right: 0;
+}
+}
 @media only screen and (max-width: 600px){
     .container-facility{
         display: grid;
@@ -65,7 +81,9 @@ color: #008080;
     }
     .content{
         width: 90%;
-        font-size: 14px;
-        padding: 0;
+        font-size: 12px;
+        padding-top: 2rem;
+        text-align: justify;
+        padding-right: 0;
     }
 }

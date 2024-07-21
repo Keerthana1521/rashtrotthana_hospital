@@ -71,6 +71,12 @@ text-transform: uppercase;
 .box-card-none{
     display: none;
 }
+@media only screen and (max-width:900px){
+    .box-card{
+        width: 284px;
+        height: 289px;
+    }
+}
 @media only screen and (max-width:600px){
     .box-card{
         width: 160px;

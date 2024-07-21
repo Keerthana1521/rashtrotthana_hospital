@@ -287,6 +287,20 @@ input {
   background-color: #0e3672;
   color: #fff;
 }
+@media only screen and (max-width: 1030px){
+  .container-doctors {
+    grid-template-columns: 50% 50%;
+  }
+  .doctor-container{
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: space-around;
+    align-items: space-around;
+  }
+  .content{
+    padding: 2rem 1rem;
+  }
+}
 @media only screen and (max-width: 700px) {
   .container-doctors {
     grid-template-columns: 50% 50%;
