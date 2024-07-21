@@ -264,7 +264,31 @@
 
     </div>
 </div>
-<iframe src='https://df7fb27daa7a410fb10087d368063a73.elf.site' width='100%' height='1000' frameborder='0'></iframe>
+<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div *ngFor="let slide of slidearray; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
+        <div class="card_item">
+          <img src="{{ slide.img }}" alt="" class="testinomial_image" />
+          <p class="review">
+            {{ slide.review }}
+          </p>
+          <p class="name">{{ slide.name }}</p>
+          <p class="place">{{ slide.place }}</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
+<!-- <iframe src='https://df7fb27daa7a410fb10087d368063a73.elf.site' width='100%' height='1000' frameborder='0'></iframe> -->
 	
 
 
