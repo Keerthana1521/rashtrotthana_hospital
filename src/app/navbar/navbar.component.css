@@ -46,7 +46,7 @@
   border-radius: 30px;
   justify-content: flex-end;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   display: inline-flex;
   cursor: pointer;
 }
@@ -203,9 +203,7 @@ input [type=text],[type=email]{
   padding-left: 0px;
   justify-content: center;
  }
- .submit-button{
-  gap: 0;
- }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -294,13 +292,29 @@ input [type=text],[type=email]{
     width: 35px;
     height:35px;
   }
-  .submit-text{
-    display:none;
-  }
+
   .button{
     margin-right: 6rem
   }
   .icons{
+    margin-right: 3rem;
+  }
+  .submit-button{
+    gap: 0;
+   }
+   .submit-text{
+    padding: 12px;
+   }
+
+}
+@media only screen and (max-width: 600px) {
+  .submit-text{
+    display:none;
+  }
+  .submit-button{
+    gap: 0;
+   }
+   .icons{
     margin-right: 1rem;
   }
 }

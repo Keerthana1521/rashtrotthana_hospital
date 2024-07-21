@@ -247,6 +247,53 @@ flex-shrink: 0;
         height: 179px;
     }
 }
+@media only screen and (max-width:900px){
+    .jayadev{
+        width: 228px;
+        height: 258px;
+    }
+    .heading{
+        padding-left: 0;
+    }
+    .content{
+        width: 424px;
+    font-size: 11px;
+    }
+    .president-content{
+        padding-left: 3rem;
+        font-size: 11px;
+    }
+    .president{
+        width: 253px;
+        height: 255px;
+    }
+    .name{
+        font-size: 28px;
+    }
+    .desgination{
+        font-size: 18px;
+    }
+    .about-hospital-content{
+        font-size: 12px;
+        text-align: justify;
+    }
+    .about-heading{
+        font-size: 28px;
+    }
+    .facilities{
+        padding: 3rem;
+    }
+    .facilities-content{
+        font-size: 12px;
+    }
+    .facilities-image{
+        width: 197px;
+        height: 139px;
+    }
+    .facilities-content-image{
+        font-size: 12px;
+    }
+}
 @media  only screen and (max-width:430px)
 {
     .about-us-container{
