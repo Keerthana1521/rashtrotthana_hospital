@@ -983,6 +983,21 @@ line-height: 28px; /* 175% */
    border-radius: 50%;
 
 }
+.Google_review{
+  position: fixed;
+  height: 700px;
+  width: 400px;
+  left: 0;
+  bottom: 10px;
+  margin-top: 100px;
+  z-index: 1;
+  
+}
+
+.Youtube{
+  width: 100%;
+  height: 1000px;
+}
 
 @media only screen and (max-width:1390px){
   .container{

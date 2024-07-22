@@ -90,18 +90,29 @@
         </div>
         </div>
         <div class="section-2">
-          <div class="area-of-interest">
-            <img src="../../assets/benefit.png">
-            <div class="doctor-details-content">Areas of Expertise</div>
-          </div>
           <div>
-            <div class="area-of-interest" *ngFor="let expertise of selectedDoctor.areasOfExpertise"  >
-              <img src="../../assets/list.png">
-              <div class="doctor-details-content">{{ expertise }}</div>
+            <div class="area-of-interest">
+              <img src="../../assets/benefit.png">
+              <div class="doctor-details-content">Areas of Expertise</div>
+            </div>
+            <div>
+              <div class="area-of-interest expertise" *ngFor="let expertise of selectedDoctor.areasOfExpertise"  >
+                <img src="../../assets/list.png">
+                <div class="areas-expertise-content">{{ expertise }}</div>
+              </div>
+            </div>
+          </div>
+          <div class="breif-profile">
+            <div class="area-of-interest">
+              <img src="../../assets/interest.png">
+              <div class="doctor-details-content">Brief Profile</div>
+            </div>
+            <div class="about-doctor">
+                {{ selectedDoctor.about }}
             </div>
           </div>
         </div>
-        <div class="profile">
+        <!-- <div class="profile">
           <div class="arrow">
             <img src="../../assets/doctor-details-arrow.png">
           </div>
@@ -114,7 +125,7 @@
                 {{ selectedDoctor.about }}
             </div>
           </div>
-          </div>
+          </div> -->
           </div>
          
           </div>

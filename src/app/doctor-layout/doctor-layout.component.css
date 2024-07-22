@@ -153,17 +153,30 @@ input {
   width: 50%;
 }
 .image {
-  box-shadow: -34px 41px 3px rgba(34, 34, 34, 0.2);
-  border-radius: 25px;
+  box-shadow: -25px 14px rgba(34, 34, 34, 0.2);
+  border-radius: 11px;
 }
+
 .doctor-image-overlay {
-  width: 213px;
+  width: 194px;
   height: 233px;
 }
 .area-of-interest {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
+}
+.expertise{
+  padding-top: 24px;
+}
+.areas-expertise-content{
+  color: #FFF;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
 }
 .doctor-details-content {
   color: #e9eaf8;
@@ -187,13 +200,17 @@ input {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  padding-top: 40px;
 }
 .breif-profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
-  padding-right: 3rem;
+  width: 50%;
+  /* padding-right: 3rem; */
+  position: relative;
+  left: 23rem;
+
 }
 .profile {
   width: 100%;

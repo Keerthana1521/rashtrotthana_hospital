@@ -164,13 +164,18 @@ startCounter(entries: IntersectionObserverEntry[], observer: IntersectionObserve
 }
 
 incrementCounter(index: number) {
+  const target = this.box[index].target;
+  const duration = 2000; // Duration in milliseconds
+  const intervalTime = 10; // Interval time in milliseconds
+  const totalSteps = duration / intervalTime;
+  const incrementStep = Math.ceil(target / totalSteps);
   this.stopcounters[index] = setInterval(() => {
-    if (this.box[index].number < this.box[index].target) {
-      this.box[index].number=this.box[index].number+1;
+    if (this.box[index].number < target) {
+      this.box[index].number = Math.min(this.box[index].number + incrementStep, target);
     } else {
       clearInterval(this.stopcounters[index]);
     }
-  }, 10);
+  }, intervalTime);
 }
 
 box=[{
