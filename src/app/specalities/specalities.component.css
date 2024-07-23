@@ -223,16 +223,90 @@
     height: 60vh;
   }
   .special-heading{
-    font-size: 20px;
+    font-size: 16px;
   }
   .special-para{
-    font-size: 14px;
+    font-size: 12px;
   }
   .button,.button-1{
     padding-left: 0;
   }
   .res-button{
     bottom: 13px;
+  }
+  .card-1{
+    width: 336px;
+height: 100%;
+  }
+  .image-1{
+    background-image: url('../../assets/specialities-modern-black-tab.png');
+  }
+  .image-2{
+    background-image: url('../../assets/specialities-ayurveda-black-tab.png');
+  }
+  .image-3{
+    background-image: url('../../assets/specialities-naturopathy-black-tab.png');
+  }
+  .image-4{
+    background-image: url('../../assets/specialities-yoga-black-tab.png');
+  }
+  .image-5{
+    background-image: url('../../assets/specialities-homeopathy-black-tab.png');
+  }
+  .image-6{
+    background-image: url('../../assets/specialities-medicine-black-tab.png');
+  }
+  .card-1:hover{
+    .image-1{
+      background-image: url('../../assets/specialities-modern-white-tab.png');
+    }
+    .image-2{
+      background-image: url('../../assets/specialities-ayurveda-white-tab.png');
+    }
+    .image-3{
+      background-image: url('../../assets/specialities-naturopathy-white-tab.png');
+    }
+    .image-4{
+      background-image: url('../../assets/specialities-yoga-white-tab.png');
+    }
+    .image-5{
+      background-image: url('../../assets/specialities-homeopathy-white-tab.png');
+    }
+    .image-6{
+      background-image: url('../../assets/specialities-medicine-white-tab.png');
+    }
+    .res-button{
+      position: relative;
+      bottom: 0px;
+    }
+    .show-more {
+      color: #fff;
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 166.667% */
+      text-transform: capitalize;
+      display: flex;
+      width: 110px;
+      height: 32px;
+      padding: 10px 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      border-radius: 30px;
+      background: #fbca51;
+    }
+    /* .special-heading {
+      font-size: 14px;
+      color: #fff;
+      padding: 1rem 0;
+    }
+    .special-para {
+      color: #fff;
+
+    } */
   }
 }
 @media only screen and (max-width: 600px) {

@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.root_container{
+.root_container {
     overflow-x: hidden;
     background-color: #FBFFF5;
     padding: 0;
@@ -228,7 +228,7 @@
     box-shadow: 3px 4px 15px 0px rgba(63, 176, 206, 0.65);
     padding: 15px 30px;
     border: none;
-    color: white;
+    color: white;  
     font-size: 20px;
 }
 
@@ -243,30 +243,31 @@
 
     /* container 1 */
 
-    .con_1_heading .con_1_head_txt{
+    .con_1_heading .con_1_head_txt {
         width: 550px;
     }
-    .con_1_content .con_1_ocntent_txt{
+
+    .con_1_content .con_1_ocntent_txt {
         width: 600px;
     }
 
     /* container 3 */
 
-    .con_3_content .con_3_content_txt{
+    .con_3_content .con_3_content_txt {
         width: 580px;
         font-size: 16px;
     }
 }
 
 @media (max-width:800px) {
-    .container_1{
+    .container_1 {
         background-image: url('../../assets/naturopathy/Naturopathy_tab.jpeg');
         background-size: cover;
-        padding: 150px 0 ;
+        padding: 150px 0;
         height: 700px;
     }
 
-    .con_1_content .con_1_ocntent_txt{
+    .con_1_content .con_1_ocntent_txt {
         width: 100%;
         padding: 0 10%;
     }
@@ -323,12 +324,12 @@
     }
 
     .doc_1 {
-        width: 150px;
-        height: 250px;
+        width: 200px;
+        height: 290px;
     }
 
     .doc_1 img {
-        width: 150px;
+        width: 200px;
         height: 250px
     }
 
@@ -349,8 +350,8 @@
 
     .view_all {
         margin-top: 5px;
-    }   
-    
+    }
+
 }
 
 @media (max-width:480px) {
@@ -413,7 +414,7 @@
     .con_2_list .con_2_list_items {
         margin: 20px 30px;
         font-size: 12px;
-        width: 340px;  
+        width: 340px;
     }
 
 
@@ -469,19 +470,9 @@
 
     .con_4_doc_details {
         flex-direction: column;
-        margin-left: 15%;
+        margin-left: 10%;
     }
 
-    .doc_1 {
-        width: 150px;
-        height: 250px;
-        margin-top: 10px;
-    }
-
-    .doc_1 img {
-        width: 150px;
-        height: 250px
-    }
 
     .doc_1 .doc_name {
         font-size: 14px;
@@ -619,18 +610,6 @@
 
     .con_4_doc_details {
         flex-direction: column;
-        margin-left: 15%;
-    }
-
-    .doc_1 {
-        width: 150px;
-        height: 250px;
-        margin-top: 10px;
-    }
-
-    .doc_1 img {
-        width: 150px;
-        height: 250px
     }
 
     .doc_1 .doc_name {
@@ -710,7 +689,7 @@
 
     }
 
-    .container_2 .con_2_list{
+    .container_2 .con_2_list {
         width: 270px;
     }
 
@@ -773,19 +752,6 @@
 
     .con_4_doc_details {
         flex-direction: column;
-        margin-left: 15%;
-    }
-
-    .doc_1 {
-        width: 150px;
-        height: 250px;
-        margin-top: 20px;
-        margin-left: 15%;
-    }
-
-    .doc_1 img {
-        width: 150px;
-        height: 250px
     }
 
     .doc_1 .doc_name {
@@ -806,5 +772,7 @@
     .view_all {
         margin-top: 5px;
     }
+
+
 
 }
