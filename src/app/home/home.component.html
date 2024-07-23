@@ -10,9 +10,9 @@
             <ng-container *ngFor="let feature of features">
                 <div [class]="'icon ' + feature.className" class="bg-features">
                     <img [src]="'../../assets/' + feature.icon" [alt]="feature.name" class="primary"
-                        (mouseover)="onMouseOver(feature.key)" (mouseleave)="onMouseOut()">
+                        (mouseover)="onMouseOver(feature.key)" (mouseleave)="onMouseOut()" (click)="navigateTo(feature.url)">
                     <img [src]="'../../assets/' + feature.image" [alt]="feature.name" class="secondary"
-                        (mouseover)="onMouseOver(feature.key)" (mouseleave)="onMouseOut()">
+                        (mouseover)="onMouseOver(feature.key)" (mouseleave)="onMouseOut()" (click)="navigateTo(feature.url)">
                 </div>
             </ng-container>
         </div>
@@ -27,24 +27,36 @@
 </div>
 <div class="third-container">
     <div class="form-container">
-        <form>
-            <select class="form-input">
-                <option value="" disabled selected>Select Specialties</option>
-                <option value="specialty1">Specialty 1</option>
-                <option value="specialty2">Specialty 2</option>
-                <option value="specialty3">Specialty 3</option>
+        <form #filterForm="ngForm" (ngSubmit)="onSubmit(filterForm)">
+            <select
+              class="form-input custom-select"
+              name="specialty"
+              [(ngModel)]="selectedSpecialty"
+              (change)="onSpecialtyChange()"
+              required
+            >
+              <option value="" disabled selected>Select Specialties</option>
+              <option value="generalMedicine">General Medicine</option>
+              <option value="yoga">Yoga</option>
+              <option value="ayurveda">Ayurveda</option>
             </select>
-            <select class="form-input">
-                <option value="" disabled selected>Select Department</option>
-                <option value="department1">Department 1</option>
-                <option value="department2">Department 2</option>
-                <option value="department3">Department 3</option>
+          
+            <select
+              class="form-input custom-select"
+              name="department"
+              [(ngModel)]="selectedDepartment"
+              [disabled]="isDepartmentDisabled"
+              required
+            >
+              <option value="" disabled selected>Select Department</option>
+              <option value="generalSurgery" *ngIf="selectedSpecialty === 'generalMedicine'">General Surgery</option>
+              <option value="gynaecology" *ngIf="selectedSpecialty === 'generalMedicine'">Gynaecology</option>
             </select>
-            <input type="text" class="form-input" placeholder="Doctor Name">
-            <div class="submit-button-form">
+            <div type="submit" class="submit-button-form">
                 <app-arrow-btn [text]="'Submit'"></app-arrow-btn>
             </div>
-        </form>
+          </form>
+          
     </div>
 </div>
 <div class="fourth-container">
@@ -232,6 +244,10 @@
             </div>
         </div>
     </div>
+</div>
+<div class="free-div free">
+    <div class="free-text"></div>
+    <div class="free-1">Testinomial</div>
 </div>
 <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">

@@ -15,6 +15,10 @@ export class HomeComponent implements OnInit {
   established:number=0;
   bed:number=0;
   insurance:number=0;
+  selectedSpecialty: string = '';
+  selectedDepartment: string = '';
+  isDepartmentDisabled: boolean = true;
+
   
   navigateToPage() {
     this.router.navigate(['/about-us']);
@@ -56,37 +60,46 @@ export class HomeComponent implements OnInit {
       icon: 'yoga.png',
       className: 'yoga',
       key: 'yoga',
-      image: 'yoga-hover.png'
+      image: 'yoga-hover.png',
+      url: '/yoga'
     },
     {
       name: 'Naturopathy',
       icon: 'naturopathy.png',
       className: 'naturopathy',
       key: 'naturopathy',
-      image: 'naturopathy-hover.png'
+      image: 'naturopathy-hover.png',
+      url: '/naturopathy'
     },
     {
       name: 'Modern Medicine',
       icon: 'modern medicine.png',
       className: 'modern-medicine',
       key: 'modern-medicine',
-      image: 'modern-medicine-hover.png'
+      image: 'modern-medicine-hover.png',
+      url: '/modern-medicine'
     },
     {
       name: 'Ayurveda',
       icon: 'ayurveda.png',
       className: 'ayurveda',
       key: 'ayurveda',
-      image: 'ayurveda-hover.png'
+      image: 'ayurveda-hover.png',
+      url: '/ayurveda'
+
     },
     {
       name: 'Homeopathy',
       icon: 'homeopathy.png',
       className: 'homeopathy',
       key: 'homeopathy',
-      image: 'Homeopaathy-hover.png'
+      image: 'Homeopaathy-hover.png',
+      url: '/homeopathy'
     }
   ];
+  navigateTo(url: string) {
+    this.router.navigate([url]);
+  }
 
   onMouseOver(key: string) {
     this.showContent = key;
@@ -134,6 +147,27 @@ image:any ={
 //             Doctors At Work
 //         </div>
 //     </div>
+
+
+onSubmit(form: any) {
+  console.log("form")
+  if (form.valid) {
+    this.router.navigate(['/doctor'], {
+      queryParams: {
+        specialty: this.selectedSpecialty,
+        department: this.selectedDepartment
+      }
+    });
+  }
+}
+onSpecialtyChange() {
+  if (this.selectedSpecialty === 'generalMedicine') {
+    this.isDepartmentDisabled = false;
+  } else {
+    this.isDepartmentDisabled = true;
+    this.selectedDepartment = ''; // Reset department if it's disabled
+  }
+}
 
 ngOnInit(){
   const options = {

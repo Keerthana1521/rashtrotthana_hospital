@@ -157,7 +157,6 @@
 .box_1_contents{
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 85%;
     padding-left: 20%;
 }   
@@ -311,6 +310,7 @@
 }
 .view_all{
     text-align: center;
+    margin: 40px 0;
 }
 
 @media (max-width:1300px) {
@@ -443,6 +443,19 @@
     .box_1_head {
         font-size: 24px;
         margin: 5% 0 0 5%;
+    }
+
+    .con_3_head{
+        width: 250px;   
+    }
+
+    .con_3_head .con_3_head_txt{
+        font-size: 12px;
+    }
+
+    .con_3_head img {
+        height: 20px;
+        width: 20px;
     }
 
     .container_3{
@@ -606,6 +619,7 @@
 
 @media (max-width:435px) {
 
+
     .root-container {
         margin: 0;
         padding: 0;
@@ -639,6 +653,7 @@
         /* 160% */
         display: flex;
         justify-content: center;
+        padding: 3%;
     }
 
     /* conatiner 2 */
@@ -748,6 +763,11 @@
         grid-template-columns: 50% 50%;
         margin-left: 11%;
     }
+
+    .con_4_head .con_4_head_txt{
+        font-size: 16px;
+    }
+
 
     .lists_box {
         width: 100%;
