@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-general-medicine',
@@ -18,4 +19,13 @@ export class GeneralMedicineComponent {
           doctor_name:'Dr. Sindhu P Madanshetty'
         }
       ]}];
+      currentSpecialty = '';
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.queryParams.subscribe(params => {
+      this.currentSpecialty = params['specialty'] || '';
+    });
+  }
 }

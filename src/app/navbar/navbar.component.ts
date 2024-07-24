@@ -19,9 +19,9 @@ interface City {
 export class NavbarComponent {
   visible: boolean = false;
 
-  showDialog() {
-      this.visible = true;
-  }
+  // showDialog() {
+  //     this.visible = true;
+  // }
   close(){
     this.visible= false;
   }
@@ -91,7 +91,14 @@ export class NavbarComponent {
       window.open('https://www.instagram.com/rashtrotthanahospital/?fbclid=IwZXh0bgNhZW0CMTEAAR2QboDfEwBQxDe7jIHuAmE-Syn3Y6kRp1NQS6KX71uMpbFO7H-JVHbfYBw_aem_akYFom-c4Mism2XS8h6G-w', '_blank');
     }
   }
+  isIframeVisible: boolean = false;
 
+  showDialog() {
+    this.isIframeVisible = true;
+  }
+  closeIframe() {
+    this.isIframeVisible = false;
+  }
   navigateToHome() {
     this.router.navigate(['/']);
   }

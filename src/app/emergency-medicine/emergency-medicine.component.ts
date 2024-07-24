@@ -20,7 +20,7 @@ export class EmergencyMedicineComponent {
         },
         {
           doctor_image:'Dr.Geethanjali K G.png',
-          doctor_name:'Dr.Geethanjali K G<'
+          doctor_name:'Dr.Geethanjali K G'
         }
       ]}];
 }

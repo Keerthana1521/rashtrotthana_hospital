@@ -87,6 +87,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { AyurvedhaDoctorsCarouselComponent } from './ayurvedha-doctors-carousel/ayurvedha-doctors-carousel.component';
 import { AyurvedaCarouselComponent } from './ayurveda-carousel/ayurveda-carousel.component';
+import { AppointFormComponent } from './appoint-form/appoint-form.component';
+import { ReadMoreBtnComponent } from './read-more-btn/read-more-btn.component';
 // import { HerniaComponent } from './hernia/hernia.component';
 // import { ProctologyComponent } from './proctology/proctology.component';
 
@@ -156,6 +158,8 @@ import { AyurvedaCarouselComponent } from './ayurveda-carousel/ayurveda-carousel
     DoctorDetailsComponent,
     AyurvedhaDoctorsCarouselComponent,
     AyurvedaCarouselComponent,
+    AppointFormComponent,
+    ReadMoreBtnComponent,
     // HerniaComponent,
     // ProctologyComponent
   ],

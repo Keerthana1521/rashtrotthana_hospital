@@ -112,6 +112,7 @@ text-transform: uppercase;
     .box-title{
         font-size: 12px;
         color:#FFF;
+        text-align: center;
     }
     .read-more-btn{
         font-size: 10px;

@@ -1,4 +1,5 @@
 import { Component, Input,Output,EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -7,9 +8,10 @@ import { Component, Input,Output,EventEmitter } from '@angular/core';
   styleUrl: './arrow-btn.component.css'
 })
 export class ArrowBtnComponent {
+  constructor(private router: Router) {}
   @Output() onClick = new EventEmitter<void>();
-  @Input() text: string = 'Read More';
+  @Input() text: string = 'View All';
   handleClick() {
-    this.onClick.emit();
+    this.router.navigate(['/doctor']);
   }
 }

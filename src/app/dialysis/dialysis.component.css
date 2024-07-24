@@ -1,6 +1,9 @@
 .facility-container{
     background: url('../../assets/facilities-bg.png')  no-repeat;
 }
+.main-container{
+    background-color: #FBFFF5;
+}
 .heading{
 position: relative;
 top:-130px;
@@ -16,7 +19,7 @@ color: #008080;
     display: flex;
     width:100%;
     justify-content: space-evenly;
-    margin-bottom:3rem;
+    padding-bottom:3rem;
 }
 .facility-content{
 width: 50%;
@@ -67,11 +70,13 @@ color: #008080;
     text-transform: capitalize;
     margin-left: 50px;
     background-color: #ffffff;
-    box-shadow: 1px 1px 10px rgb(161, 160, 160);
+    /* box-shadow: 1px 1px 10px rgb(161, 160, 160); */
 }
 .menu_list_box{
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 28px;
    
 }
 .more_specs{
@@ -167,6 +172,7 @@ text-transform: capitalize;
     }
     .facility-content{
         width: 100%;
+        padding-left: 1rem;
 
     }
     .heading-container,.content-container{

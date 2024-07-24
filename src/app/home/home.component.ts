@@ -42,6 +42,15 @@ export class HomeComponent implements OnInit {
   dialysis(){
     this.router.navigate(['/dialysis']);
   }
+  tkr(){
+    this.router.navigate(['/total-knee-replacement']);
+  }
+  hernia(){
+    this.router.navigate(['/hernia']);
+  }
+  proctology(){
+    this.router.navigate(['/proctology']);
+  }
   
   showContent: any = 'default';
   showTitle:any = 'default'

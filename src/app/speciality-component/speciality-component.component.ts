@@ -11,5 +11,10 @@ export class SpecialityComponentComponent {
 @Input()content:string='';
 @Input()doctor?:Doctors[];
 @Input()image:string='';
+@Input() activeSpecialty: string = '';
+
+  isActive(specialty: string): boolean {
+    return this.activeSpecialty === specialty;
+  }
 
 }
