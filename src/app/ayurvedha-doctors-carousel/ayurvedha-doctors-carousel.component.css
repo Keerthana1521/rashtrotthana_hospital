@@ -1,0 +1,45 @@
+.doc_details {
+    display: flex;
+    justify-content: center;
+}
+
+.doc_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 40px 0;
+    box-shadow: -25px 25px 0 rgb(218, 218, 218);
+    width: 250px;
+}
+
+.doc_1 img {
+    width: 250px;
+    height: 250px;
+}
+
+.doc_name {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.section, .designation, .department {
+    color: #0392CE;
+    font-family: Inter, sans-serif;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgb(183, 182, 182);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 780px){
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        width: 25px;
+        height: 25px;
+    }
+}

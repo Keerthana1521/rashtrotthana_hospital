@@ -983,6 +983,14 @@ line-height: 28px; /* 175% */
    border-radius: 50%;
 
 }
+.book-appoint{
+  position: fixed;
+  right: 0;
+  bottom:10px;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000000000000000000;
+}
 .Google_review{
   position: fixed;
   height: 700px;

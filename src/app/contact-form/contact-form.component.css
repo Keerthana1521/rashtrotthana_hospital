@@ -105,7 +105,9 @@ label,
 }
 
 .contact-form-container {
-    padding: 4rem;
+    padding: 2rem;
+    width: 100%;
+    padding-top: 7rem;
 
 }
 
@@ -174,6 +176,10 @@ label,
 .map-iframe {
     width: 500px;
     height: 450px;
+}
+.contact-form-elsight{
+    width: 100%;
+    height: 100%;
 }
 @media only screen and (max-width:1030px){
     .contact-details{

@@ -47,6 +47,8 @@ import { YogaComponent } from './yoga/yoga.component';
 import { AyurvedaComponent } from './ayurveda/ayurveda.component';
 import { HomeopathyComponent } from './homeopathy/homeopathy.component';
 import { NaturopathyComponent } from './naturopathy/naturopathy.component';
+import { HerniaComponent } from './hernia/hernia.component';
+import { ProctologyComponent } from './proctology/proctology.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -97,6 +99,8 @@ const routes: Routes = [
   {path:'ayurveda',component:AyurvedaComponent},
   {path:'homeopathy',component:HomeopathyComponent},
   {path:'naturopathy',component:NaturopathyComponent},
+  {path:'hernia',component:HerniaComponent},
+  {path:'proctology',component:ProctologyComponent}
   
   
 

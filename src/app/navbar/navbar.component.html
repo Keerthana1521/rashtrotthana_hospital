@@ -26,6 +26,7 @@
           </div>
         </div>
       </div>
+     
       <div class="submit-button d-flex align-items-center" (click)="showDialog()">
         <div class="submit-text">Enquiry/Appointment</div>
         <div class="submit-arrow">
@@ -33,14 +34,6 @@
         </div>
         <p-dialog class="dialog" header="Book an Appointment" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
           <span class="p-text-secondary block mb-9">Please fill out the form below to schedule your appointment.</span><br>
-          <!-- <div class="flex align-items-center gap-5">
-              <label for="username" class="font-semibold w-6rem">Name</label>
-              <input pInputText id="username" class="flex-auto" autocomplete="off" />
-          </div>
-          <div class="flex align-items-center gap-3 mb-5">
-              <label for="email" class="font-semibold w-6rem">Email</label>
-              <input pInputText id="email" class="flex-auto" autocomplete="off" />
-          </div> -->
           <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" style="margin-top: 2rem;">
             <div class="flex flex-column align-items-center gap-4">
               <!-- <div class="contact-form-field">
