@@ -6,8 +6,9 @@
 /* container 1 */
 
 .container_1 {
-    /* background-image: url('../../assets/Hernia_container_1_bg.png'); */
-    background-size: cover;
+    background-image: url('../../assets/Proctology_Hernia_Assets/Hernia_poster.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
     height: 642px;
     margin-top: 90px;
@@ -419,6 +420,15 @@
 }
 
 @media only screen and (max-width : 1024px){
+
+    /* container 1 */
+
+    .container_1{
+        height: 500px;
+    }
+
+    /* container 2 */
+
     .container_2 .para_txt{
         width: 900px;
     }
@@ -530,18 +540,144 @@
     }
 
     .container_6_list .con_6_list_item{
-        width: 460px;
+        width: 100%;
+        margin: 20px;
+        font-weight: 400;
     }
 
 
 }
 
-@media only screen and (max-width : 440px){
+@media only screen and (max-width : 800px){
+
+    /* container 1*/
+
+    .container_1{
+        height: 400px;
+    }
+
+    /* conatiner 2 */
+
+    .container_2 .para_txt{
+        width: 100%;
+        padding: 3%;
+    }
+
+    /* container 3 */
+
+    .con_3_list .con_3_list_items{
+        width: 100%;
+    }
+
+    /* conatiner 4 */
+
+    .con_4_heading .con_4_para{
+        width: 100%;
+        padding: 3%;
+    }
+
+    .con_3_content .con_3_heading{
+        width: 100%;
+        padding: 3%;
+    }
+
+    .con_4_content_box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_4{
+        width: 100%;
+    }
+
+    /* container 5 */
+
+    .container_5{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_5_content{
+        padding: 5%;
+    }
+
+    .container_5_content .con_5_heading_1{
+        width: 100%;
+    }
+
+    .container_5_content .con_5_para_1{
+        width: 100%; 
+    }
+
+    .container_5_content .con_5_para_2{
+        width: 100%; 
+    }
+
+    .container_5_content .con_5_heading_2{
+        width: 100%; 
+    }
+
+    .container_5_content .con_5_para_3{
+        width: 100%; 
+    }
+
+    .container_5_content .con_5_heading_3{
+        width: 100%; 
+    }
+
+    .container_5_content .con_5_para_4{
+        width: 100%;
+    }
+
+    /* container 6 */
+
+    .container_6{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .container_6_content{
+        padding: 5%;
+    }
+
+    .container_6_content .con_6_heading_1{
+        width: 100%;
+    }
+
+    .container_6_content .con_6_para_1{
+        width: 100%;
+    }
+
+    .container_6_content .con_6_para_2{
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width : 440px) {
     /* container */
 
     .container_1{
-        /* background-image: url('../../assets/Hernia_responsive_img.png'); */
-        background-size: cover;
+        background-image: url('../../assets/Proctology_Hernia_Assets/Hernia_430px.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .container_1_btn{
+        margin-left: 10px ;
+        padding: 0 10px;
+        width: 250px;
     }
 
     /* container 2 */
@@ -705,7 +841,7 @@
 
 }
 
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 380px) {
     /* container */
 
     .container_1{
@@ -873,7 +1009,7 @@
 
 }
 
-@media only screen and (max-width: 340px){
+@media only screen and (max-width: 330px) {
     /* container 2 */
 
     .container_2{

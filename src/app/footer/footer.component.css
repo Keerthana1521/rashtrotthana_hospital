@@ -124,6 +124,7 @@ ul {
   }
   .text{
     text-align: justify;
+    padding-bottom: 20px;
   }
   .logo,
   .our-links,
@@ -136,11 +137,13 @@ ul {
     width: 100%;
     position: relative;
     left: 6px;
+    gap:20px;
   }
 
   .contact-us,
   .logo {
     width: 100%;
+    gap:20px;
   }
   .follow {
     padding: 1rem;
