@@ -142,6 +142,7 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 text-transform: capitalize;
+padding-top: 2rem;
 }
 .facility{
     display: flex;
@@ -173,6 +174,7 @@ font-style: normal;
 font-weight: 500;
 line-height: 180%; /* 25.2px */
 text-transform: capitalize;
+padding-top: 2rem;
 }
 .facility-content{
 width: 50%;
@@ -282,6 +284,10 @@ text-transform: capitalize;
 }
 li{
     font-family: Inter;
+    padding-bottom: 1rem;
+}
+ol{
+    padding-top: 1rem;
 }
 @media only screen and (max-width:1030px){
     .o_menu{

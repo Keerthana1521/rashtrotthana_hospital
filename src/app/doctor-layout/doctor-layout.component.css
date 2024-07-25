@@ -67,6 +67,7 @@
   font-weight: 400;
   line-height: normal;
   width: 482px;
+  padding-top: 2rem;
 }
 .form-content {
   display: flex;

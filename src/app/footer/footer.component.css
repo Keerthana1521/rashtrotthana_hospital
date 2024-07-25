@@ -5,6 +5,7 @@
   overflow-y: hidden;
   display: flex;
   justify-content: space-between;
+  font-family: "Poppins";
 }
 .logo,
 .our-links,

@@ -75,15 +75,15 @@
 .image-6{
   background-image: url('../../assets/specialities-6.png');
 }
-.card-1:hover{
-  background: linear-gradient(105deg, #fbca51 -40.25%, #008080 98.67%);
+ .card-1:hover{
+ background: linear-gradient(105deg, #fbca51 -40.25%, #008080 98.67%); ;
   .show-more {
     color: #fff;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px; /* 166.667% */
+    line-height: 20px; 
     text-transform: capitalize;
     display: flex;
     width: 132px;
@@ -120,7 +120,8 @@
   .image-6{
     background-image: url('../../assets/spec-research.png');
   }
-}
+ 
+} 
 /* .image {
   display: flex;
   width: 50%;
@@ -159,10 +160,10 @@
   border-radius: 20px;
   background: #fff;
   display: flex;
-
   width: 600px;
   height: 300px;
 }
+
 .button {
  padding-left: 3rem;
  padding-top:2rem;

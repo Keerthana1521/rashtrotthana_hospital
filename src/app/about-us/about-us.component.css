@@ -13,6 +13,9 @@
     padding-bottom:6rem;
     padding-top: 4rem;
 }
+.president-container{
+    background-color: #FBFFF5;;
+}
 .about-img{
     width: 50%;
     display: flex;
@@ -108,6 +111,7 @@ font-size: 32px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+padding-bottom: 35px;
 }
 .about-hospital-content{
     color: #000;
@@ -120,6 +124,7 @@ line-height: normal;
 .about-hospital{
     background: #FFF;
     padding-left: 6rem;
+    padding-right: 2rem;
 }
 .about-vision{
     padding-top: 2rem;
@@ -209,6 +214,7 @@ flex-shrink: 0;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-top: 20px;
    }
 @media only screen and (max-width:1390px){
     .about-heading{

@@ -128,7 +128,7 @@ text-transform: uppercase;
   margin-top: 69px;
 }
 .sheild {
-  margin-top: -97px;
+  margin-top: -157px;
 }
 .form-container {
   background-color: #fff;
@@ -173,7 +173,11 @@ form {
   gap: 16px;
   display: inline-flex;
 }
-
+.submit-button-form{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .submit-text {
   color: white;
   font-size: 16px;
@@ -731,6 +735,7 @@ li {
 .four {
   display: flex;
   width: 50%;
+  padding-top: 3rem;
 }
 .department {
   width: 100%;
@@ -1015,6 +1020,14 @@ line-height: 28px; /* 175% */
   padding: 10px 40px 10px 10px; /* Adjust padding to match the design */
   border: 1px solid #ccc;
   border-radius: 20px; /* Adjust border radius to match the design */
+}
+.whatsapp{
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
 }
 @media only screen and (max-width:1390px){
   .container{
