@@ -123,12 +123,12 @@ export class HomeComponent implements OnInit {
   }
 
   content: any = {
-    'default': 'India"s First Integrated Multispecialty Hospital Blending Modern And Traditional Medicine For Holistic Healing',
+    'default': 'India"s First Integrated Multi Speciality Hospital Blending Modern And Traditional Medicine For Holistic Healing',
     'yoga': 'Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India. Yoga is one of the six Āstika schools of Indian philosophical traditions.',
     'naturopathy': 'Naturopathy or naturopathic medicine is a form of alternative medicine that employs an array of pseudoscientific practices branded as "natural", "non-invasive", or promoting "self-healing".',
     'modern-medicine': 'Modern medicine, or medicine as we know it, started to emerge after the Industrial Revolution in the 18th century. At this time, there was rapid growth in economic activity in Western Europe and the Americas.',
     'ayurveda': 'Ayurveda is a system of medicine with historical roots in the Indian subcontinent. Globalized and modernized practices derived from Ayurveda traditions are a type of alternative medicine.',
-    'homeopathy': 'Homeopathy or homœopathy is a pseudoscientific system of alternative medicine. It was created in 1796 by Samuel Hahnemann. Its practitioners, called homeopaths, believe that a substance that causes symptoms of a disease in healthy people would cure similar symptoms in sick people.'
+    'homeopathy': 'Homeopathy or homeopathy is a pseudoscientific system of alternative medicine. It was created in 1796 by Samuel Hahnemann. Its practitioners, called homeopaths, believe that a substance that causes symptoms of a disease in healthy people would cure similar symptoms in sick people.'
   };
   
 title:any ={
@@ -258,7 +258,7 @@ box=[{
 slidearray = [
   { img: '../../assets/testinomials_female_icon.png', review: "Good establishment for medical care. Patients are more likely to place their trust in a physician like Dr. Manisha who demonstrates real concern for her patients. Having the atmosphere of one's own home. exceptional attention paid to the maintaining of cleanliness, as well as really helpful and kind staff members. The entirety of this is satisfactory; but, I do have one suggestion: would it be possible for you to please open all of the other super speciality departments? Because of this, there will be no need for us to locate for another hospital because all of the amenities would be located in the same location. RR Nagar Bengaluru", name: 'Tejaswini Gowda', place: 'Bengaluru' },
   { img: '../../assets/testinomials_male_icon.png', review: "Two weeks ago, I visited the hospital for my brother's admission. It was a very clean atmosphere. and courteous employees... Doctors as well as nurses are very respectful and qualified", name: 'Sathya Narayana', place: 'Bengaluru' },
-  { img: '../../assets/testinomials_male_icon.png', review: "I have admitted under Dr.nishanth pai ayurveda, they have treated me very well. Service is too good. I came from Telangana for the treatment.I felt I'm in safe hands. Thank you", name: 'Anil Pawar', place: 'Bengaluru' },
+  { img: '../../assets/testinomials_male_icon.png', review: "I have admitted under Dr.Nishanth pai ayurveda, they have treated me very well. Service is too good. I came from Telangana for the treatment.I felt I'm in safe hands. Thank you", name: 'Anil Pawar', place: 'Bengaluru' },
   { img: '../../assets/testinomials_female_icon.png', review: "I consulted Dr.Manisha (gastro general surgeon). Best in her field. And very helpful. Also consulted Dr.Anand Shankar, Very caring and motivating person. Thank you so much to both doctors and team.", name: 'Seema Katti', place: 'Bengaluru' },
   { img: '../../assets/testinomials_female_icon.png', review: "We went here for a radiographs and the process was very smooth. Charges were also very reasonable. The infrastructure looks very promising and this hospital has a great future if they get a team of exceptional doctors.", name: 'Hema Rudrappa', place: 'Bengaluru' },
   { img: '../../assets/testinomials_female_icon.png', review: "Excellent health care services with clean and hygienic conditions token of thanks to the doctors, and excellent housekeeping Vinod, Rajini, Snega and others are very cooperating. Good catering and patient wellness. Overall great recovery ", name: 'Sholenkee Mitra', place: 'Bengaluru' },

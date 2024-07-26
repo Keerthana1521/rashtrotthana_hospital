@@ -70,7 +70,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 90px;
+  margin-right: 33px;
   cursor: pointer;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .text-container .content {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   color: #244c61;
 }
@@ -102,6 +102,7 @@
   height: 180px;
   width: 100%;
   padding-top: 2rem;
+  line-height: 25px;
 }
 .title{
   height: 30px;
@@ -109,7 +110,7 @@
   color: #38A495;
 text-align: center;
 font-family: Poppins;
-font-size: 48px;
+font-size: 30px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -118,17 +119,17 @@ text-transform: uppercase;
 
 .naturopathy,
 .ayurveda {
-  margin-bottom: 154px;
+  margin-bottom: 100px;
 }
 .modern-medicine {
-  margin-bottom: 255px;
+  margin-bottom: 223px;
 }
 .yoga,
 .homeopathy {
-  margin-top: 69px;
+  margin-top: 190px;
 }
 .sheild {
-  margin-top: -157px;
+  margin-top: -203px;
 }
 .form-container {
   background-color: #fff;
@@ -385,8 +386,8 @@ background-image: url('../../assets/Yellow\ Arrow.png');
   max-width: 100%; 
 }
 .bg-features img {
-  width: 150px;
-  height: 180px;
+  width: 131px;
+  height: 147px;
   display: block;
   cursor: pointer;
   /* max-width: 100%;
@@ -1034,9 +1035,18 @@ line-height: 28px; /* 175% */
     padding: 20px 35px;
     width: 100%;
   }
-  .bg-features{
-    width: 134px;
-    height: 165px;
+  .bg-features img{
+    width: 104px;
+    height: 125px;
+  }
+  .yoga{
+    margin-top: 219px;
+  }
+  .naturopathy{
+    margin-bottom: 65px;
+  }
+  .modern-medicine{
+    margin-bottom: 184px;
   }
   .form-container{
     height: 15vh;

@@ -33,7 +33,7 @@
                     <div>
                         <img src="../../assets/Symbol.png" alt="" />
                     </div>
-                    <a (click)="speciality()">Specialists</a>
+                    <a (click)="speciality()">Specialities</a>
                 </div>
                 <div class="each-link">
                     <div>
@@ -139,10 +139,22 @@
             Follow Us:
         </div>
         <div class="links-container">
-            <img class="links" src="../../assets/fb-1.png" alt=""(click)="openLink('facebook')">
-            <img class="links" src="../../assets/yt.png" alt="" (click)="openLink('youtube')">
+            <!-- <img class="links" src="../../assets/fb-1.png" alt=""(click)="openLink('facebook')"> -->
+            <div class="footer-icons" (click)="openLink('facebook')">
+                <i class="fa-brands fa-facebook " style="color: #1877F2;"></i>
+            </div>
+            <!-- <img class="links" src="../../assets/yt.png" alt="" (click)="openLink('youtube')">
             <img class="links" src="../../assets/ig.png" alt="" (click)="openLink('instagram')">
-            <img class="links" src="../../assets/x-1.png" alt="" (click)="openLink('twitter')">
+            <img class="links" src="../../assets/x-1.png" alt="" (click)="openLink('twitter')"> -->
+            <div class="footer-icons" (click)="openLink('youtube')">
+                <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
+            </div>
+            <div class="footer-icons" (click)="openLink('instagram')">
+                <i class="fa-brands fa-instagram " style="background: linear-gradient(135deg, #5263C5 -0.73%, #F04C5D 100%); border-radius: 10px;"></i>
+            </div>
+            <div class="footer-icons" (click)="openLink('twitter')">
+                <i class="fa-brands fa-youtube " style="color: rgb(246, 51, 51);"></i>
+            </div>
         </div>
     </div>
     <div class="follow">
