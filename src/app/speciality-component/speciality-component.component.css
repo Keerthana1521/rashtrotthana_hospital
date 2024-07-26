@@ -71,6 +71,9 @@
     margin-top: 20px;
     margin-bottom: 28px;
 }
+.menu_list_box.active {
+    color:  #FBCA51; /* Highlight the active menu item */
+  }
 .more_specs{
     font-weight: 600;
     letter-spacing: 1px;

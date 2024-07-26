@@ -105,8 +105,11 @@ color: #008080;
 }
 .arrow{
     position: relative;
-    top: 15px;
+    top: 0px;
 }
+.menu_list_box.active {
+    color:  #FBCA51; /* Highlight the active menu item */
+  }
 .content{
     color: #000;
     font-family: Inter;

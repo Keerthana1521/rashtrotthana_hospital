@@ -93,6 +93,9 @@ color: #008080;
     color:  #FBCA51;
     cursor: pointer;
 }
+.menu_list_box.active {
+    color:  #FBCA51; /* Highlight the active menu item */
+  }
 .gm_m_heading{
     text-align: center;
     background-color: #008080;

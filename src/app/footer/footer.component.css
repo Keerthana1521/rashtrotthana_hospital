@@ -79,11 +79,12 @@ ul {
   height: 60px;
 }
 .follow {
-  padding: 1rem 3rem;
+  padding: 1rem;
   color: #ffffff;
   display: flex;
   width: 50%;
   align-items: center;
+  justify-content: center;
   gap: 15px;
 }
 
@@ -178,7 +179,7 @@ ul {
   .footer-1{
     display: flex;
     flex-direction: column;
-    height: 150px;
+    height: 172px;
     font-size: 14px;
   }
   .footer-logo{
@@ -188,5 +189,10 @@ ul {
 @media only screen and (max-width:1030px){
   .text{
     width: 100%;
+  }
+}
+@media only screen and (max-width:600px){
+  .footer-1{
+    height: 200px;
   }
 }
