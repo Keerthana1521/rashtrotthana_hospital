@@ -126,7 +126,7 @@ export class DoctorLayoutComponent {
     {
       name: 'Dr. Savinay S Kanchibail',
       image: 'assets/doctor-11.png',
-      desgination: 'NIOR CONSULTANT PAEDIATRICS & NEONATOLOGY',
+      desgination: 'SENIOR CONSULTANT',
       about: 'I am a senior consultant paediatrician & Neonatologist at Rashtrotthana Hospital. I have more than 20 years of experience in Paediatrician – having worked in various...',
       speciality: 'General Medicine',
       areasOfExpertise: ['ALLERGY', 'NUTRITION & NEWBORN CARE']

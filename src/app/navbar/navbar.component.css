@@ -72,12 +72,21 @@
 .arrow {
   width: 10.2px;
   height: 37px;
-  text-align: center;
   color: white;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 900;
   line-height: 37px;
   word-wrap: break-word;
+}
+
+.arrow .fa-truck-medical{
+  /* background: linear-gradient(to right, red, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  position: relative;
+  right: 4px;
+  top: 2px;
+
 }
 
 .icons {
