@@ -87,7 +87,7 @@ contactForm:any = FormGroup;
         name:'Dr. Pramod Cinder',
         image: 'assets/doctor-26.png',
         desgination: 'ORTHOPAEDIC ONCOSURGEON',
-        about: 'Dr. Shekar Patil is a Medical Oncologist Bangalore. He has been practising medicine for 39 years including over 25 years in medical oncology. He treats conventional and high ...',
+        about: '',
         speciality: 'General Medicine',
         areasOfExpertise: ['Limb salvage surgeries with Biological reconstruction',
 'CATS ( Computer Assisted Tumour Surgery )', 

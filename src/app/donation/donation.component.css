@@ -658,8 +658,8 @@
 }
 
 .con_7_info {
-    text-align: left;
-    margin: 0 576px;
+    text-align: center;
+    margin: 0 0;
     margin-top: 50px;
 }
 
@@ -670,7 +670,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    text-transform: capitalize;
+    
     margin-left: 50px;
 }
 
