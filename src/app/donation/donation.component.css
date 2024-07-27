@@ -626,10 +626,11 @@
 .container_7 {
     background-image: url('../../assets/dontation-images/container_7_bg.png');
     background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     margin-top: 100px;
     padding: 150px 0;
-    height: 620px;
+    height: 650px;
     /* margin-bottom: 50px; */
 }
 
@@ -779,6 +780,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height:450px
     }
     .con_7_info{
         margin: 0;
@@ -926,6 +930,10 @@
 
     .table_1_row .table_1_property{
         font-size: 14px;
+    }
+
+    .container_7{
+        height: 350px;
     }
 }
 
@@ -1176,10 +1184,14 @@
 
     .donate_here {
         margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .con_3_right_side {
         width: 100%;
+        margin-top: 50px;
     }
 
     .con_3_img img {
@@ -1197,6 +1209,15 @@
     .box_2_con_4{
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .content_1_box_4{
+        padding: 3%;
+    }
+
+    .con_4_head .con_4_head_txt {
+        font-size: 18px;
+        margin: 40px 0 20px 5%;
     }
 
     .content_1_box_4 .content_1_heading{
@@ -1323,13 +1344,17 @@
 
     .root_container .container_7 {
         background-image: url('../../assets/dontation-images/con_7_bg.png');
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
         height: 893px;
+        justify-content: start;
+
     }
 
     .container_7 .con_7_heading {
         margin-top: 15%;
         font-size: 28px;
+        margin-top: 47%;
     }
 
     .container_7 .con_7_contact_us {
@@ -1391,7 +1416,7 @@
         width: 50%;
         /* height: unset; */
         position: relative;
-        bottom: 24rem;
+        bottom: 25rem;
         border: none;
     }
 
