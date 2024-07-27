@@ -1043,10 +1043,7 @@ line-height: 28px; /* 175% */
   
 }
 
-.Youtube{
-  width: 100%;
-  height: 600px;
-}
+
 .custom-select {
   appearance: none;
   -webkit-appearance: none;
@@ -1058,12 +1055,42 @@ line-height: 28px; /* 175% */
   border-radius: 20px; /* Adjust border radius to match the design */
 }
 .whatsapp{
-  border-radius: 50%;
   position: fixed;
   bottom: 30px;
   right: 20px;
-  width: 65px;
-  height: 65px;
+  width: 100%;
+}
+
+.google_review_container{
+  margin-top: 50px;
+}
+
+.google_reviews{
+  width: 100%;
+  height: 500px;
+}
+
+.youtube_testimonials{
+  width: 100%;
+  height: 600px;
+}
+
+.news_and_events{
+  padding: 0 10%;
+}
+
+.instagram_feed{
+  width: 100%;
+  height: 600px;
+}
+
+.news_and_events_heading .heading-text{
+  font-family: poppins;
+  font-size: 24px;
+  text-align: center;
+}
+.youtube_patient_education{
+  /* padding: 0 10%; */
 }
 @media only screen and (max-width:1390px){
   .container{
