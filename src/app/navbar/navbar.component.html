@@ -11,7 +11,7 @@
         </div>
         <div class="each-link">
           <a href="tel:+91-08069239999">
-            <img src="../../assets/call-logo.png" alt="">
+            <img class="call-icon" src="../../assets/nav-call-icon.png" alt="">
             080 6923 9999
           </a>
         </div>
@@ -36,10 +36,24 @@
       <app-appoint-form [isVisible]="isIframeVisible"(close)="closeIframe()"></app-appoint-form>
     </div>
     <div class="icons d-flex">
-      <img src="../../assets/fb.png" alt="" (click)="openLink('facebook')" class="me-2" />
+      <!-- <img src="../../assets/fb.png" alt="" (click)="openLink('facebook')" class="me-2" />
       <img src="../../assets/youtube.png" alt="" (click)="openLink('youtube')" class="me-2" />
       <img src="../../assets/x.png" alt="" (click)="openLink('twitter')" class="me-2" />
-      <img src="../../assets/ig-menu.png" alt="" (click)="openLink('instagram')" />
+      <img src="../../assets/ig-menu.png" alt="" (click)="openLink('instagram')" /> -->
+
+      <div class="navbar_icon" (click)="openLink('facebook')">
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+      <div class="navbar_icon" (click)="openLink('youtube')">
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div class="navbar_icon" (click)="openLink('twitter')">
+        <i class="fa-brands fa-square-x-twitter"></i>
+      </div>
+      <div class="navbar_icon" (click)="openLink('instagram')">
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+
     </div>
   </div>
 </div>
