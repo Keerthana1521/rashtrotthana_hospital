@@ -28,6 +28,28 @@
     cursor: pointer;
     z-index: 2;
   }
+  @media only screen and (max-width:1390px){
+    .book-appoint {
+      width:100%; /* Adjust as needed */
+      height:100%; /* Adjust as needed */
+      border: none;
+     position: relative;
+     top: 20vh;
+     left: 0px;
+    }
+  
+    .close-btn {
+      position: absolute;
+      top: 26vh;
+      right: 33%;
+      background: transparent;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 2;
+    }
+  
+  }
 @media only screen and (max-width:1030px){
     .book-appoint {
         width:100%; /* Adjust as needed */

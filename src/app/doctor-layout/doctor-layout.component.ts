@@ -35,77 +35,63 @@ contactForm:any = FormGroup;
       { name: 'Naturopathy' },
     ];
     doctors =[
-   
       {
+        name:'Dr.(Col)Anand Shankar',
+        image: 'assets/doctor-7.png',
+        desgination: 'ER HEAD,ICU,ANAESTHESIA',
+        about: 'Col. Dr. Anand Shankar is an anesthesiologist and intensivist and has an overall experience of 29 years. He served the Indian armed forces for a duration of 27 years....',
+        speciality: 'General Medicine',
+        areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology']
+      },
+
+{
+        name:'Dr. H N Shyla',
+        image: 'assets/doctor-8.png',
+        desgination: 'DENTAL SCIENCE',
+        about: '',
+        speciality: 'General Medicine',
+        areasOfExpertise: ['Intensive Care','' ]
+      },
+
+{
         name:'Dr. Latha Venkataram',
         image: 'assets/doctor-2.png',
         desgination: 'OBSTETRICS & GYNECOLOGY',
-        about: 'Maternity Unit at JMRH & RC is run by WMN team of OBGYNs headed by Dr. Latha Venkatraman. Dr. Latha Venkatraman is a renowned OBGYN with more than 30 years ...',
+        about: 'Maternity Unit at JMRH & RC is run by WMN team of OBGYNs headed by Dr. Latha Venkatraman.Dr. Latha Venkatraman is a renowned OBGYN with more than 30 years of experience...',
         speciality: 'General Medicine',
-        areasOfExpertise: ['GI surgery', 'Laproscopy','Onco Surgery','Lasers']
+        areasOfExpertise: ['Vaginal Delivery',
+'High Risk Pregnancy',
+'Diabetes & Pregnancy',
+'Medical Disorders in Pregnancy',
+'Recurrent Pregnancy loss treatment',
+'Emergency Obstetric care',
+'Vaginal Surgeries, Management of menopause related issues',]
       },
       {
         name:'Dr. Atmaram D C',
-        image:'assets/doctor-3.png',
-        desgination:'GASTROENTEROLOGY',
-        about:'Presently working as Assistant Professor Neurosurgery at Dayanand Sagar Medical College, Kanakpura Road.',
-        speciality: 'Yoga'
+        image: 'assets/doctor-3.png',
+        desgination: 'SURGERY/LAPROSCOPY/GASTR OENTEROLOGY',
+        about: 'Presently working as Assistant Professor Neurosurgery at Dayanand Sagar Medical College, Kanakpura Road.',
+        speciality: 'General Medicine',
+        areasOfExpertise: ['GI surgery', 'Laproscopy', 'Onco Surgery', 'Lasers' ]
       },
-      {name:'Dr. Rajeev Vijayakumar',
-      image:'assets/doctor-4.png',
-      desgination:'Medical Oncology',
-      about:'Dr Rajeev, the very senior consultant whose expertise in Medical Oncology, Hemato Oncology, and Bone Marrow Transplant ensures that your confidence in his ...',
-      speciality:'Ayurveda'
-    },
-      {
+
+{
+        name:'Dr. Rajeev Vijayakumar',
+        image: 'assets/doctor-4.png',
+        desgination: 'Oncologist',
+        about: 'Dr Rajeev, the very senior consultant whose expertise in Medical Oncology, Hemato Oncology, and Bone Marrow Transplant ensures that your confidence in his ...',
+        speciality: 'General Medicine',
+        areasOfExpertise: ['Medical Oncology', 'Hemato- Oncology', 'Bone Marrow Transplant' ]
+      },
+
+{
         name:'Dr. Shashi Vadhanan',
-        image:'assets/doctor-5.png',
-        desgination:'GENERAL SURGERY',
-        about:'Neurosurgeon in practice since 10.5 years. Working in the hospital & state of care health care industry. Skilled in Neurospinal surgical procedures, Clinical Research&, Medical ...',
-        speciality:'Homeopathy'
-      },
-      {name:'Dr. RAVISHANKAR. D',
-      image:'assets/doctor-6.png',
-      desgination:'Orthopedic surgeon',
-      about:'Dr. RAVISHANKAR. D is a Orthopedic surgeon and has an experience of 38 years in this field. He completed MBBS from Bangalore University, India in 1985 and DNB - Orthopedics ...',
-      speciality:'Naturopathy'
-    },
-    {
-      name:'Dr. Latha Venkataram',
-      image: 'assets/doctor-2.png',
-      desgination: 'OBSTETRICS & GYNECOLOGY',
-      about: 'Maternity Unit at JMRH & RC is run by WMN team of OBGYNs headed by Dr. Latha Venkatraman. Dr. Latha Venkatraman is a renowned OBGYN with more than 30 years ...',
-      speciality: 'General Medicine',
-      areasOfExpertise: ['GI surgery', 'Laproscopy','Onco Surgery','Lasers']
-    },
-    {
-      name:'Dr. Atmaram D C',
-      image:'assets/doctor-3.png',
-      desgination:'GASTROENTEROLOGY',
-      about:'Presently working as Assistant Professor Neurosurgery at Dayanand Sagar Medical College, Kanakpura Road.',
-      speciality: 'Yoga'
-    },
-    {name:'Dr. Rajeev Vijayakumar',
-    image:'assets/doctor-4.png',
-    desgination:'Medical Oncology',
-    about:'Dr Rajeev, the very senior consultant whose expertise in Medical Oncology, Hemato Oncology, and Bone Marrow Transplant ensures that your confidence in his ...',
-    speciality:'Ayurveda'
-  },
-    {
-      name:'Dr. Shashi Vadhanan',
-      image:'assets/doctor-5.png',
-      desgination:'GENERAL SURGERY',
-      about:'Neurosurgeon in practice since 10.5 years. Working in the hospital & state of care health care industry. Skilled in Neurospinal surgical procedures, Clinical Research&, Medical ...',
-      speciality:'Homeopathy'
-    },
-    {name:'Dr. RAVISHANKAR. D',
-    image:'assets/doctor-6.png',
-    desgination:'Orthopedic surgeon',
-    about:'Dr. RAVISHANKAR. D is a Orthopedic surgeon and has an experience of 38 years in this field. He completed MBBS from Bangalore University, India in 1985 and DNB - Orthopedics ...',
-    speciality:'Naturopathy'
-  },
-    
-  
+        image: 'assets/doctor-5.png',
+        desgination: 'GENERAL SURGERY',
+        about: 'Neurosurgeon in practice since 10.5 years. Working in the hospital & state of care health care industry. Skilled in Neurospinal surgical procedures, Clinical Research&, Medical ...',
+        speciality: 'General Medicine',
+        areasOfExpertise: ['Minimally Invasive Spine Surgery', 'Spinal Deformity Correction', 'Spinal Cord Tumors', 'Cerebrovascular Surgery', 'Neurosurgery', 'Neuroendoscopy', 'Deep Brain Stimulation', 'Epilepsy Surgery', 'Paediatric Neurosurgery' ]}
     ]
     constructor(private fb: FormBuilder, public dialog: MatDialog) {}
 
