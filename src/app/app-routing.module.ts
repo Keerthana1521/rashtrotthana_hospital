@@ -91,7 +91,7 @@ const routes: Routes = [
   {path:'dialysis',component:DialysisComponent},
   {path:'emergency-medicine',component:EmergencyMedicineComponent},
   {path:'anesthesiology',component:AnesthesiologyComponent},
-  {path:'Obstetrics & Gynaecology',component:ObstetricsGynaecologyComponent},
+  {path:'Obstetrics-and-Gynaecology',component:ObstetricsGynaecologyComponent},
   {path:'endocrinology',component:EndocrinologyComponent},
   {path:'insurance',component:InsuranceComponent},
   {path:'total-knee-replacement',component:KneeReplacementComponent},
