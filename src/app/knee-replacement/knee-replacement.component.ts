@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';  
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-knee-replacement',
@@ -9,7 +10,8 @@ import { Title, Meta } from '@angular/platform-browser';
 export class KneeReplacementComponent implements OnInit {
   constructor(  
     private titleService: Title,  
-    private metaService: Meta  
+    private metaService: Meta,
+    private router: Router
   ) { } 
   ngOnInit() {  
     this.titleService.setTitle("Total Knee Replacement");  
@@ -21,4 +23,7 @@ export class KneeReplacementComponent implements OnInit {
   this.metaService.updateTag({ name: 'keywords', content: 'knee, knee pain, knee replacement' }); 
         
   }  
+  contactus(){
+    this.router.navigate(['/contact']);
+  }
 }

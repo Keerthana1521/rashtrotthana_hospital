@@ -11,18 +11,22 @@
     <div class="form-content">
       <div class="form-card">
         <div class="form-container">
-          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-            <p-dropdown
-              styleClass="dropdown"
-              placeholder="Select Specialities"
-              [options]="subjects"
-              optionLabel="name"
-              formControlName="subject"
-              required
-            ></p-dropdown>
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
+
+            <p-cascadeSelect 
+            [(ngModel)]="selectedSubject" 
+            (ngModelChange)="onSubjectChange($event)"
+            [options]="subjects" 
+            optionLabel="cname"
+            optionGroupLabel="name" 
+            formControlName="subject"
+            [optionGroupChildren]="['items']" 
+            [style]="{ minWidth: '14rem' }" 
+            placeholder="Select a Speciality" />
             <br /><br />
             <div style="display: flex;gap:30px">
-              <app-read-more-btn [text]="'Search'" (click)="onSubmit()"></app-read-more-btn>
+              <app-read-more-btn [text]="'Search'" [background]="'linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%)'"
+              [boxShadow]="'3px 4px 15px 0px rgba(63, 176, 206, 0.65)'"(click)="onSubmit($event)"></app-read-more-btn>
             <div class="clear" (click)="clear()">
               Clear All
             </div>
@@ -64,7 +68,7 @@
     </div>
     
     <!-- <div class="doctor-details-overlay" *ngIf="selectedDoctor">
-      <div class="doctors-left" (scroll)="onScroll($event)">
+      <div class="doctors-left">
       <div *ngFor="let doctor of visibleDoctors" (click)="selectDoctor(doctor)">
         <div class="doctor-image">
           <img  class="doctor-image" [src]="doctor.image" alt="">
@@ -90,7 +94,7 @@
         </div>
         </div>
         <div class="section-2">
-          <div>
+          <div class="expertise">
             <div class="area-of-interest">
               <img class="bene-img" src="../../assets/benefit.png">
               <div class="doctor-details-content">Areas of Expertise</div>
@@ -112,21 +116,7 @@
             </div>
           </div>
         </div>
-        <!-- <div class="profile">
-          <div class="arrow">
-            <img src="../../assets/doctor-details-arrow.png">
           </div>
-          <div class="breif-profile">
-            <div class="area-of-interest">
-              <img src="../../assets/interest.png">
-              <div class="doctor-details-content">Brief Profile</div>
-            </div>
-            <div class="about-doctor">
-                {{ selectedDoctor.about }}
-            </div>
-          </div>
-          </div> -->
-          <!-- </div>
          
           </div> -->
            

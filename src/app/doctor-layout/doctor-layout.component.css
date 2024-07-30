@@ -226,7 +226,7 @@ line-height: normal;
   bottom: 140px;
 }
 .clear {
-  border: 2px solid #6b7280;
+  /* border: 2px solid #6b7280; */
   border-radius: 25px;
   width: 200px;
   height: 50px;
@@ -234,6 +234,7 @@ line-height: normal;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .container-doctors {
   position: relative;
@@ -282,11 +283,11 @@ line-height: normal;
   border-radius: 25px;
   cursor: pointer;
   max-height: 130vh;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 .doctor-image {
-  width: 180px;
-  height: 200px;
+  width: 200px;
+  height: 204px;
   flex-shrink: 0;
   border: 1px solid #fff;
   background: lightgray;
@@ -299,11 +300,23 @@ line-height: normal;
   font-weight: 700;
   line-height: 35px;
   background-color: #fff;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
 }
 .active-doctor {
   background-color: #0e3672;
   color: #fff;
+}
+.expertise{
+  height: auto;
+}
+::ng-deep .p-cascadeselect{
+  border-color: #d1d5db;
+  width: 100%;
+  border-radius: 25px;
 }
 @media only screen and (max-width: 1030px){
   .container-doctors {
