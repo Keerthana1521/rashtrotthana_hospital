@@ -503,7 +503,7 @@ export class DoctorLayoutComponent {
             cname: 'GENERAL SURGERY', code: 'GM-ON'
           },
           {
-            cname: 'OBSTETRICS AND GYNECOLOGY', code: 'GM-ON'
+            cname: 'OBSTETRICS & GYNECOLOGY', code: 'GM-ON'
           },
           {
             cname: 'PAEDIATRICS AND NEONATOLOGY', code: 'GM-ON'

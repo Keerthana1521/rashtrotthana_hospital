@@ -3,6 +3,7 @@ import { Router, NavigationEnd, Event } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { AnalyticsService } from './analytics.service';
 
+declare let gtag: Function;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -23,11 +24,13 @@ export class AppComponent implements OnInit{
     ).subscribe(() => {
       window.scrollTo(0, 0);
     });
-    // this.router.events.pipe(
-    //   filter((event: Event) => event instanceof NavigationEnd)
-    // ).subscribe((event: NavigationEnd) => {
-    //   this.analyticsService.sendPageView(event.urlAfterRedirects);
-    // });
+    this.router.events.pipe(
+      filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      gtag('config', 'AW-16656770043', {
+        'page_path': event.urlAfterRedirects
+      });
+    });
   }
 } 
 
