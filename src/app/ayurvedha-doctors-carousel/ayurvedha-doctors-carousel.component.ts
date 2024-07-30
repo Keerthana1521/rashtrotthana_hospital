@@ -8,21 +8,6 @@ import { Component } from '@angular/core';
 export class AyurvedhaDoctorsCarouselComponent {
   doctors = [
     {
-      image : '../../assets/Ayurveda-doctors/Dr.SachinSinghBasera.png',
-      name : "Dr. Sachin Singh Basera",
-      section : "BAMS",
-      designation : "Resident Medical Officer ",
-      Department : "Agnivesha Institute Of Ayurveda"
-    }
-    ,
-    {
-      image : '../../assets/Ayurveda-doctors/DR.K.NISHANTHPAI.png',
-      name : "DR.K.NISHANTH PAI",
-      section : "MD Kayachikitsa",
-      designation : "Chief Medical Officer",
-      Department : "Agnivesha Institute Of Ayurveda"
-    },
-    {
       image : '../../assets/Ayurveda-doctors/Dr.RohithKR.png',
       name : "Dr. Rohith K R",
       section : "BAMS",
@@ -30,7 +15,7 @@ export class AyurvedhaDoctorsCarouselComponent {
       Department : "Agnivesha Institute Of Ayurveda"
     },
     {
-      image : '../../assets/Ayurveda-doctors/Dr.Alekhya.png',
+      image : '../../assets/Ayurveda-doctors/dummy.png',
       name : "Dr. Shamantha",
       section : "BAMS",
       designation : "Resident Medical Officer",

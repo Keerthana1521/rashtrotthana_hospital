@@ -31,7 +31,8 @@
       <div class="submit-button d-flex align-items-center" (click)="showDialog()">
         <div class="submit-text">Enquiry/Appointment</div>
         <div class="submit-arrow">
-          <div class="arrow"><img style="margin-top:3px;margin-left:-6px" src="../../assets/Appointment Scheduling.png" alt=""></div>
+          <!-- <div class="arrow"><img style="margin-top:3px;margin-left:-6px" src="../../assets/Appointment Scheduling.png" alt=""></div> -->
+          <i class="fa-solid fa-user"></i>
         </div>
       </div>
       <app-appoint-form [isVisible]="isIframeVisible"(close)="closeIframe()"></app-appoint-form>

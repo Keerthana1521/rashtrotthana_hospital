@@ -226,6 +226,10 @@ form {
   align-items: center;
   padding: 2rem;
 }
+.morning{
+  font-weight: 700;
+  color: #222;
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -561,12 +565,19 @@ background-image: url('../../assets/Yellow\ Arrow.png');
 .achieve-content,
 .achieve-image {
   display: flex;
-  flex-direction: column;
   width: 50%;
+  height: 100%;
   align-items: center;
+  background-color: #ffffff;
+
 }
 .achieve-image {
-  padding-top: 3rem;
+  display: flex;
+  width: 50%;
+  height: 600px;
+  align-items: center;
+  background-color: #ffffff;
+
 }
 .NABH {
   width: 382px;
@@ -893,7 +904,8 @@ li {
 .button {
   cursor:pointer;
   position: relative;
-  left: 668px;
+  display: flex;
+  justify-content: center;
 }
 .text-benefit {
   color: #1e0b9b;
@@ -1110,7 +1122,6 @@ line-height: 28px; /* 175% */
   align-items: center;
   width: 100%;
   font-family: Poppins;
-  margin-bottom: 50px;
 }
 
 .news_and_events_heading .heading-text{

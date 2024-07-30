@@ -208,7 +208,6 @@ flex-shrink: 0;
 .facilities-content-image{
     font-size: 14px;
     color: #000;
-    text-align: justify;
     font-family: Poppins;
     width: 75%;
     font-style: normal;
@@ -222,6 +221,7 @@ flex-shrink: 0;
     align-items: center;
     padding-top: 4rem;  
     width: 100%;
+    margin: 0;
     font-family: Poppins;
 }
   .instagram_feed{
