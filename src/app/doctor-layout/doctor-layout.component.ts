@@ -47,7 +47,7 @@ export class DoctorLayoutComponent {
     {
       name: 'Dr.(Col)Anand Shankar',
       image: 'assets/doctor-7.png',
-      desgination: 'ER HEAD,ICU,ANAESTHESIA',
+      desgination: 'ER HEAD, ICU, ANAESTHESIA',
       about: 'Col. Dr. Anand Shankar is an anesthesiologist and intensivist and has an overall experience of 29 years. He served the Indian armed forces for a duration of 27 years....',
       speciality: 'ANAESTHESIOLOGY',
       areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology']
@@ -85,7 +85,7 @@ export class DoctorLayoutComponent {
       areasOfExpertise: ['All adult cancers with special interest in precision oncolgy', 'immuno-oncology']
     },
     {
-      name: 'Dr. RAVISHANKAR. D',
+      name: 'Dr. Ravishankar. D',
       image: 'assets/doctor-6.png',
       desgination: 'Orthopedic surgeon',
       about: 'Dr. RAVISHANKAR. D is a Orthopedic surgeon and has an experience of 38 years in this field. He completed MBBS from Bangalore University, India in 1985 and DNB - Orthopedics ...',
@@ -141,7 +141,7 @@ export class DoctorLayoutComponent {
       areasOfExpertise: ['ALLERGY', 'NUTRITION & NEWBORN CARE']
     },
     {
-      name: 'Dr. SHREELAKSHMI G',
+      name: 'Dr. Shreelakshmi G',
       image: 'assets/doctor-10.png',
       desgination: 'OBSTETRICS & GYNECOLOGY',
       about: 'Dr. Shreelakshmi G is graduated from university from mysore. She also did post graduation in M.S .OBSTETRICS AND GYNAECOLOGY (2003)',
@@ -177,7 +177,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'DR. SUHAS RAJ S',
+      name: 'DR. Suhas Raj S',
       image: 'assets/doctor-37.png',
       desgination: 'CARDIOLOGY',
       about: 'Dr.Suhas Raj is graduate from Govt. Stanely Medical College and Hospital,Chennai in 2015. He did his post graduation (MD GENERAL MEDICINE) from KANYAKUMARI GOVT.',
@@ -322,7 +322,7 @@ export class DoctorLayoutComponent {
       image: 'assets/doctor-14.png',
       desgination: 'LIFESTYLE MEDICINE/ YOGA & NATUROPATHY',
       about: 'Her 15 years of experience includes teaching BNYS students and treating thousands of clients through yoga and Naturopathy.',
-      speciality: 'LIFESTYLE MEDICINE',
+      speciality: 'LIFE STYLE MEDICINE',
       areasOfExpertise: []
     },
     {
@@ -382,7 +382,7 @@ export class DoctorLayoutComponent {
       areasOfExpertise: ['See all patients in Homoeopathy we will not concentrate on 1 aspect']
     },
     {
-      name: 'DR. AJAY N',
+      name: 'DR. Ajay N',
       image: 'assets/doctor-28.png',
       desgination: 'GASTRO SCIENCES',
       speciality: 'GASTRO SCIENCES',
@@ -448,7 +448,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Shamanta',
+      name: 'Dr. Shamantha',
       image: 'assets/doctor-50.png',
       desgination: 'LIFE STYLE MEDICINE',
       about: ' ',
@@ -493,7 +493,7 @@ export class DoctorLayoutComponent {
   ngOnInit() {
     this.subjects = [
       {
-        name: 'GENERAL MEDICINE',
+        name: 'MODERN MEDICINE',
         code: 'AU',
         items: [
           {
@@ -560,7 +560,6 @@ export class DoctorLayoutComponent {
       { cname: 'LIFE STYLE MEDICINE', code: 'YG' },
       { cname: 'AYURVEDA', code: 'AY' },
       { cname: 'HOMEOPATHY', code: 'HO' },
-      { cname: 'NATUROPATHY', code: 'NA' }
 
     ];
 

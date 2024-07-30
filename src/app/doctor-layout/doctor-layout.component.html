@@ -94,20 +94,22 @@
         </div>
         </div>
         <div class="section-2">
-          <div class="expertise">
+          <div class="doctor-expertise">
             <div class="area-of-interest">
               <img class="bene-img" src="../../assets/benefit.png">
               <div class="doctor-details-content">Areas of Expertise</div>
             </div>
             <div>
               <div class="area-of-interest expertise" *ngFor="let expertise of selectedDoctor.areasOfExpertise"  >
-                <img src="../../assets/list.png">
+                <div>
+                  <img src="../../assets/list.png">
+                </div>
                 <div class="areas-expertise-content">{{ expertise }}</div>
               </div>
             </div>
           </div>
           <div class="breif-profile">
-            <div class="area-of-interest">
+            <div class="profile-details">
               <img class="bene-img" src="../../assets/interest.png">
               <div class="doctor-details-content">Brief Profile</div>
             </div>
@@ -115,6 +117,10 @@
                 {{ selectedDoctor.about }}
             </div>
           </div>
+        </div>
+        <div class="book-appoint">
+          <app-read-more-btn [text]="'Book an Appointment'" [background]="'linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%)'"
+          [boxShadow]="'3px 4px 15px 0px rgba(63, 176, 206, 0.65)'"></app-read-more-btn>
         </div>
           </div>
          

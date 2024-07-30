@@ -60,10 +60,11 @@
 
 .icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   margin-bottom: 20px;
+  gap: 80px;
 }
 
 .icon {
@@ -75,8 +76,8 @@
 }
 
 .icon img {
-  width: 170px;
-  height: 190px;
+  width: 210px;
+  height: 240px;
   margin-bottom: 10px;
 }
 
@@ -101,7 +102,7 @@
 .content{
   height: 180px;
   width: 100%;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   line-height: 25px;
 }
 .title{
@@ -115,21 +116,25 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 text-transform: uppercase;
+position: relative;
+bottom: 30px;
 }
 
 .naturopathy,
 .ayurveda {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 .modern-medicine {
   margin-bottom: 223px;
 }
 .yoga,
 .homeopathy {
-  margin-top: 190px;
+  /* margin-top: 190px; */
 }
 .sheild {
   margin-top: -203px;
+  /* width: 241px;
+    height: 209px; */
 }
 .form-container {
   background-color: #fff;
@@ -336,15 +341,19 @@ padding-top: 15px;
   row-gap: 20px;
   /* background-color: #FFF; */
 }
+ol{
+  margin-top: 1rem;
+}
 .surgery{
-  display: inline;
-  color: black;
-  list-style-type: disc;
+  color:#FBCA51;;
+  /* list-style-type: disc;
   position: relative;
-  top: 3rem;
+  top: 3rem; */
+  margin-left: 3rem;
+  text-decoration: underline;
 }
 .proctology{
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
 }
 .meno{
   display: flex;
@@ -421,8 +430,8 @@ background-image: url('../../assets/Yellow\ Arrow.png');
   max-width: 100%; 
 }
 .bg-features img {
-  width: 131px;
-  height: 147px;
+  width: 164px;
+  height: 191px;
   display: block;
   cursor: pointer;
   /* max-width: 100%;
@@ -1118,14 +1127,14 @@ line-height: 28px; /* 175% */
     width: 100%;
   }
   .bg-features img{
-    width: 104px;
-    height: 125px;
+    width: 150px;
+    height: 180px;
   }
   .yoga{
-    margin-top: 219px;
+    /* margin-top: 219px; */
   }
   .naturopathy{
-    margin-bottom: 65px;
+    margin-bottom: 90px;
   }
   .modern-medicine{
     margin-bottom: 184px;
@@ -1134,11 +1143,13 @@ line-height: 28px; /* 175% */
     height: 20px;
     font-size: 24px;
     position: relative;
-    bottom:23px ;
+    bottom:51px;
   }
   .text-container .content{
     font-size: 14px;
     padding-top: 0;
+    position: relative;
+    bottom: 30px;
   }
   .doctor-container{
     border-radius: 20px;
@@ -1175,6 +1186,13 @@ line-height: 28px; /* 175% */
   .box-animation{
     width:100%;
     height:400px;
+  }
+  .icons{
+    gap: 40px;
+  }
+  .text-container{
+    position: relative;
+    top: 90px;
   }
   .card{
     width: 303px;
@@ -1461,7 +1479,12 @@ padding: 5rem 0rem 3rem 1rem;
   .second-container {
     height: 734px;
   }
-
+.text-container{
+  top: 0;
+}
+.text-container .content{
+  padding-top: 6rem;
+}
 .container{
   display: flex;
   flex-direction: column;
@@ -1495,7 +1518,7 @@ padding: 5rem 0rem 3rem 1rem;
   font-size: 12px;
   font-weight: bold;
   line-height: 20px;
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
 }
 .text-container{
 
@@ -1509,7 +1532,7 @@ padding: 5rem 0rem 3rem 1rem;
 }
 .icons{
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 51% 25%;
   gap: 47px;
 }
 .homeopathy:nth-child(5){

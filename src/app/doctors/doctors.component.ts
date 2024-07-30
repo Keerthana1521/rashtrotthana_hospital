@@ -10,4 +10,5 @@ export class DoctorsComponent {
   @Input() name: any;
   @Input() desgination: any;
   @Input() about:any;
+  @Input() expertise: any;
 }
