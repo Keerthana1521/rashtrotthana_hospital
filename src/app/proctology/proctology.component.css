@@ -5,6 +5,27 @@
 
 /* container 1 */
 
+.container_1{
+    margin-top: 120px;
+}
+
+.Proctology_Poster_Desktop{
+    width: 100%;
+    height: 100%;
+}
+
+.Proctology_Poster_Tablet{
+    display: none;
+}
+
+.Proctology_Poster_Mobile{
+    display: none;
+}
+
+.Book_appointment_btn{
+    position: relative;
+    bottom: 30px;
+}
 
 .container_1_btn {
     display: inline-flex;
@@ -262,6 +283,16 @@
 
 @media only screen and (max-width: 1300px){
 
+    
+    .Proctology_Poster_Desktop{
+        display: none;
+    }
+    
+    .Proctology_Poster_Tablet{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
     /* container 2 */
 
 
