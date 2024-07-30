@@ -6,21 +6,28 @@
 /* container 1 */
 
 .container_1 {
-    background-image: url('../../assets/Proctology_Hernia_Assets/Hernia_poster.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+    margin-top: 120px;
+}
+
+.hernia_poster_desktop{
     width: 100%;
-    height: 642px;
-    margin-top: 90px;
+    height: 100%;
 }
 
-.container_1 {
-    display: flex;
-    align-items: end;
-    padding: 0 0 20px 0;
+.hernia_poster_tablet{
+    display: none;
 }
 
-.container_1_btn {
+.Hernia_Poster_Mobile{
+    display: none;
+}
+
+
+.container_1_btn{
+    position: relative;
+    bottom: 100px;
+}
+.Book_appointment_btn {
     display: inline-flex;
     height: 52px;
     padding: 10px 20px;
@@ -423,9 +430,7 @@
 
     /* container 1 */
 
-    .container_1{
-        height: 500px;
-    }
+
 
     /* container 2 */
 
@@ -552,8 +557,20 @@
 
     /* container 1*/
 
-    .container_1{
-        height: 400px;
+    .hernia_poster_desktop{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Book_appointment_btn{
+        font-size: 14px;
+        padding: 5px;
+        margin-left: 10px;
+    }
+
+    .container_1_btn{
+        bottom: 60px;
     }
 
     /* conatiner 2 */
@@ -666,18 +683,19 @@
 }
 
 @media only screen and (max-width : 440px) {
-    /* container */
+    /* container 1*/
 
-    .container_1{
-        background-image: url('../../assets/Proctology_Hernia_Assets/Hernia_430px.png');
-        background-size: contain;
-        background-repeat: no-repeat;
+    .Hernia_Poster_Mobile{
+        display: block;
+        width: 100%;
+        height: 100%;
     }
 
-    .container_1_btn{
-        margin-left: 10px ;
-        padding: 0 10px;
-        width: 250px;
+    .hernia_poster_desktop{
+        display: none;
+    }
+    .hernia_poster_tablet{
+        display: none;
     }
 
     /* container 2 */
@@ -825,17 +843,17 @@
     }
 
     .container_6_content .con_6_para_1, .con_6_para_2{
-        width: 390px;
         font-size: 14px;
+        width: 100%;
     }
 
     .container_6_list .con_6_list_item{
         font-size: 14px;
-        width: 390px;
+        width: 100%;
     }
 
     .container_6_content .con_6_heading_1{
-        width: 390px;
+        width: 100%;
     }
 
 
@@ -992,18 +1010,27 @@
         font-size: 16px;
     }
 
-    .container_6_content .con_6_para_1, .con_6_para_2{
-        width: 350px;
+    .container_6_content .con_6_para_1{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .con_6_para_2{
+        width: 100%;
         font-size: 14px;
     }
 
     .container_6_list .con_6_list_item{
         font-size: 14px;
-        width: 350px;
+        width: 100%;
     }
 
-    .container_6_content .con_6_heading_1{
-        width: 350px;
+    .container_6_conten .container_6_content .con_6_heading_1{
+        width: 100%;
+    }
+
+    .container_6_conten .container_6_list{
+        width: 100%;
     }
 
 
@@ -1110,20 +1137,6 @@
 
     .container_6_content .con_6_heading_1{
         font-size: 16px;
-    }
-
-    .container_6_content .con_6_para_1, .con_6_para_2{
-        width: 290px;
-        font-size: 14px;
-    }
-
-    .container_6_list .con_6_list_item{
-        font-size: 14px;
-        width: 290px;
-    }
-
-    .container_6_content .con_6_heading_1{
-        width: 290px;
     }
 
     
