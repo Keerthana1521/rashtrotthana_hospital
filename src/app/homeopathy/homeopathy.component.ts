@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomeopathyComponent {
 
+  doctors =[
+    {
+      image : '../../assets/doctor-39.png',
+      name : "Dr. Anusha Mutalik Desai",
+      section : "BHMS, MD(HOM)",
+      designation : "HOMEOPATHY",
+    }
+  ]
+
 }

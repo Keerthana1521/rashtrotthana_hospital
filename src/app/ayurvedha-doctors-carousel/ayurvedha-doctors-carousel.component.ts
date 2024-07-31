@@ -14,13 +14,7 @@ export class AyurvedhaDoctorsCarouselComponent {
       designation : "Resident Medical Officer ",
       Department : "Agnivesha Institute Of Ayurveda"
     },
-    {
-      image : '../../assets/Ayurveda-doctors/dummy.png',
-      name : "Dr. Shamantha",
-      section : "BAMS",
-      designation : "Resident Medical Officer",
-      Department : "Agnivesha Institute Of Ayurveda"
-    },
+
     {
       image : '../../assets/Ayurveda-doctors/Dr.Alekhya.png',
       name : "Dr. Alekhya R",

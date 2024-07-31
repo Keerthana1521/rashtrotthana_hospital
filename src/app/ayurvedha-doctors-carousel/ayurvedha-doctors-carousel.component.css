@@ -1,7 +1,21 @@
-.doc_details {
+.doctor_heading{
+    font-size: 30px;
+    font-family: poppins;
+    font-weight: 700;
+    text-align: center;
+    margin: 80px 0;
+}
+
+.doctors_flex{
+    display: flex;
+    gap: 100px;
+    justify-content: center ;
+}
+
+/* .doc_details {
     display: flex;
     justify-content: center;
-}
+} */
 
 .doc_1 {
     display: flex;
@@ -20,9 +34,6 @@
 
 .doc_name {
     font-size: 16px;
-    font-family: Poppins, sans-serif;
-    margin-top: 20px;
-    font-weight: 700;
 }
 
 .section, .designation, .department {
@@ -30,16 +41,33 @@
     font-family: Inter, sans-serif;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: rgb(183, 182, 182);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
+@media (max-width: 500px){
 
-@media (max-width: 780px){
-    .carousel-control-prev-icon, .carousel-control-next-icon{
-        width: 25px;
-        height: 25px;
+    .doctor_heading{
+        font-size: 20px;
+        font-family: poppins;
+        font-weight: 700;
+    }
+    .doctors_flex{
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+
+    .doc_1 {
+        width: 160px;
+    }
+
+    .doc_1 img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .doc_name {
+        font-size: 12px;
+    }
+
+    .section, .designation, .department {
+        font-size: 10px;
     }
 }
