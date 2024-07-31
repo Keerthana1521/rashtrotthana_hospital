@@ -127,10 +127,7 @@ bottom: 30px;
 .modern-medicine {
   margin-bottom: 223px;
 }
-.yoga,
-.homeopathy {
-  /* margin-top: 190px; */
-}
+
 .sheild {
   margin-top: -203px;
   /* width: 241px;
@@ -347,18 +344,18 @@ padding-top: 15px;
 }
 ol{
   margin-top: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 .surgery{
   color:#FBCA51;;
-  /* list-style-type: disc;
-  position: relative;
-  top: 3rem; */
-  margin-left: 3rem;
   text-decoration: underline;
+  width: 100%;
+  padding: 0 10px 0 0;
+
 }
-.proctology{
-  /* margin-left: 3rem; */
-}
+
 .meno{
   display: flex;
   border-radius: 10px;
@@ -1129,9 +1126,6 @@ line-height: 28px; /* 175% */
   font-size: 24px;
   text-align: center;
 }
-.youtube_patient_education{
-  /* padding: 0 10%; */
-}
 @media only screen and (max-width:1390px){
   .container{
     padding: 20px 35px;
@@ -1140,9 +1134,6 @@ line-height: 28px; /* 175% */
   .bg-features img{
     width: 150px;
     height: 180px;
-  }
-  .yoga{
-    /* margin-top: 219px; */
   }
   .naturopathy{
     margin-bottom: 90px;
@@ -1187,6 +1178,9 @@ line-height: 28px; /* 175% */
   }
   .tenth-container{
     background-size: contain;
+  }
+  .surgery-package{
+    height: 150px;
   }
 }
 @media only screen and (max-width:1030px){
@@ -1278,10 +1272,7 @@ flex-shrink: 0;
 }
 .about-us-content{
   font-size: 16px;
-}
-li{
-  width: 428px;
-}
+}}
 .ninth-container{
   padding: 2rem;
 }
@@ -1329,7 +1320,7 @@ li{
 .button{
   left:430px;
 }
-}
+
 @media only screen and (max-width:900px){
   .bg-features img{
     width:109px;
@@ -1420,7 +1411,6 @@ padding: 5rem 0rem 3rem 1rem;
     font-size: 22px;
   }
   li{
-    width: 366px;
     font-size: 12px;
 }
 .achieve-image{
@@ -1471,6 +1461,9 @@ padding: 5rem 0rem 3rem 1rem;
 .Youtube{
   width: 100%;
   height: 600px;
+}
+.surgery-package{
+  height: 150px;
 }
 }
 
@@ -1723,9 +1716,6 @@ width: 228px;
   width: 38px;
   height: 38px;
 }
-.care-image{
-  /* padding-left: 5rem; */
-}
 .tenth-container{
   
     width: 100%;
@@ -1829,12 +1819,13 @@ li{
 .surgery{
 top:0;
 }
-.proctology{
-  margin-left: 1rem;
-}
+
 .Youtube{
   width: 100%;
   height: 650px;
+}
+.surgery-package{
+  height: 150px;
 }
 }
 @media only screen and (max-width:380px){
@@ -1859,6 +1850,9 @@ li{
 }
 .meno{
   width: 205%;
+}
+.surgery-package{
+  height: 150px;
 }
 }
 @media only screen and (max-width:365px){
