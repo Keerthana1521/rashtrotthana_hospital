@@ -44,28 +44,25 @@
         </div>
     </div>
 
-    <!-- container_4 -->
-    <div class="container_4">
-        <div class="con_4_heading">
-            <p class="con_4_head_txt">Meet Our Medical Team</p>
-        </div>
-        <div class="con_4_doc_details">
-            <div class="doc_1">
-                <img src="../../assets/naturopathy/Dr.Suvarnini_Konale.png" alt="">
-                <p class="doc_name">Dr. Suvarnini Konale</p>
-                <p class="bnys">BNYS</p>
-                <p class="medicine">LIFESTYLE MEDICINE</p>
-            </div>
-            <div class="doc_1">
-                <img src="../../assets/naturopathy/Dr.Varsha_P.png" alt="">
-                <p class="doc_name">Dr. Varsha P</p>
-                <p class="bnys">BNYS</p>
-                <p class="medicine">LIFESTYLE MEDICINE</p>
-            </div>
-        </div>
+   <!-- doctor details -->
 
+   <div class="heading">
+    <p class="doctor_heading">MEET OUR MEDICAL TEAM</p>
+</div>
+
+<div class="doc_container">
+    <div class="doctors_flex">
+      <div class="doc_details" *ngFor="let slide of doctors; let i = index" [ngClass]="{ active: i === 0 }">
+        <div class="doc_1">
+          <img [src]="slide.image" alt="{{ slide.name }}" />
+          <p class="doc_name">{{ slide.name }}</p>
+          <p class="section">{{ slide.section }}</p>
+          <p class="designation">{{ slide.designation }}</p>
+          <p class="department">{{ slide.Department }}</p>
+        </div>
+      </div>
     </div>
-
+  </div>
     <!-- view all btn -->
 
     <div class="view_all">

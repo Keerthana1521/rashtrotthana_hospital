@@ -140,7 +140,7 @@
 
 
 
-/* container 5 */
+/* container 4 */
 
 .container_4 {
     margin-top: 70px;
@@ -161,73 +161,92 @@
     width: 1079px;
 }
 
-/* container 5 */
+/* doctors details */
 
-.con_5_head_txt {
-    color: #222;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 42px;
-    font-style: normal;
+.doctor_heading{
+    margin: 80px 0;
+    font-size: 30px;
+    font-family: poppins;
     font-weight: 700;
-    line-height: normal;
-    margin-top: 100px;
+    text-align: center;
 }
 
-.con_5_doc_details {
+
+.doctors_flex{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 100px;
+    justify-content: center ;
 }
+
+/* .doc_details {
+    display: flex;
+    justify-content: center;
+} */
 
 .doc_1 {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    margin: 50px;
-    box-shadow: -35px 35px 1px #e8e7e7;
+    align-items: center;
     border-radius: 20px;
+    margin: 40px 0;
+    box-shadow: -25px 25px 0 rgb(218, 218, 218);
+    width: 250px;
 }
 
-.doc_1 .doc_name {
-    color: #222;
-    font-family: Poppins;
-    font-size: 22px;
-    font-style: normal;
+.doc_1 img {
+    width: 250px;
+    height: 250px;
+}
+
+.doc_name {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    margin-top: 20px;
     font-weight: 700;
-    line-height: normal;
-    margin-top: 30px;
 }
 
-.bnys {
+.section, .designation, .department {
     color: #0392CE;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
-    /* 162.5% */
-    margin: 0;
-    padding: 0;
+    font-family: Inter, sans-serif;
 }
 
-.medicine {
-    color: #0392CE;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
-    /* 162.5% */
-    margin: 0;
-    padding: 10px 0 20px 0;
+@media (max-width: 500px){
+
+    .doc_name {
+        font-size: 16px;
+    }
+    .doctors_flex{
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+
+    .doc_1 {
+        width: 160px;
+    }
+
+    .doc_1 img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .doc_name {
+        font-size: 12px;
+    }
+
+    .section, .designation, .department {
+        font-size: 10px;
+    }
 }
+
+
 
 .view_all{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 60px;
+    margin-bottom: 50px;
 }
 
 @media (max-width : 2000px) {
@@ -452,52 +471,8 @@
         width: 380px;
     }
 
-    /* container 5 */
 
-    .con_5_head .con_5_head_txt {
-        font-size: 20px;
-    }
-
-    .container_5 {
-        margin-top: 30px;
-        flex-direction: column;
-    }
-
-
-
-    .doc_1 {
-        width: 180px;
-        height: 290px;
-        margin-top: 10px;
-    }
-
-    .doc_1 img {
-        width: 180px;
-        height: 280px
-    }
-
-    .doc_1 .doc_name {
-        font-size: 14px;
-        margin-top: 5px;
-    }
-
-    .doc_1 .bnys {
-        font-size: 12px;
-        margin-top: 5px;
-    }
-
-    .doc_1 .medicine {
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
-
-    .view_all {
-        margin-top: 5px;
-    }
-
-    .view_all .view_all_btn{
-        margin: 30px 0  ;
-    }
+    
 
     
 
@@ -639,56 +614,6 @@
         width: 380px;
     }
 
-    /* container 5 */
-
-    .con_5_head .con_5_head_txt {
-        font-size: 20px;
-    }
-
-    .container_5 {
-        margin-top: 30px;
-        flex-direction: column;
-    }
-
-    .con_5_doc_details {
-        flex-direction: column;
-    }
-
-    .doc_1 {
-        width: 180px;
-        height: 290px;
-        margin-top: 10px;
-    }
-
-    .doc_1 img {
-        width: 180px;
-        height: 280px;
-    }
-
-    .doc_1 .doc_name {
-        font-size: 14px;
-        margin-top: 5px;
-    }
-
-    .doc_1 .bnys {
-        font-size: 12px;
-        margin-top: 5px;
-    }
-
-    .doc_1 .medicine {
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
-
-    .view_all {
-        margin-top: 5px;
-    }
-
-    .view_all .view_all_btn{
-        margin: 30px 0  ;
-    }
-
-    
 
 }
 
