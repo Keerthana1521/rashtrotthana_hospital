@@ -12,8 +12,12 @@ export class DoctorsComponent {
   @Input() about:any;
   @Input() expertise: any;
   @Output() viewProfile = new EventEmitter<void>();
+  @Output() bookAppointment = new EventEmitter<void>();
 
   onViewProfile() {
     this.viewProfile.emit();
+  }
+  onBookAppointment() {
+    this.bookAppointment.emit();
   }
 }

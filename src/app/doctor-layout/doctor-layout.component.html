@@ -61,6 +61,7 @@
             [desgination]="doctor.desgination"
             [expertise]="doctor.expertise"
             (viewProfile)="selectDoctor(doctor)"
+            (bookAppointment)="selectDoctorAppoint(doctor)"
           ></app-doctors>
         </div>
         </ng-container>
@@ -127,10 +128,11 @@
            [text]="'Book an Appointment'" 
            [background]="'linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%)'"
            [boxShadow]="'3px 4px 15px 0px rgba(63, 176, 206, 0.65)'" 
-           [iconClass]="'fa-regular fa-calendar'">
+           [iconClass]="'fa-regular fa-calendar'"
+           (click)="handleBookAppointmentClick()">
           </app-read-more-btn>
         </div>
           </div>
          
           </div>
-           
+          <app-doctor-appointment class="doctor-details-overlay" (close)="closeAppointmentForm()" [selectedDoctor]="selectedDoctorAppoint" *ngIf="selectedDoctorAppoint"></app-doctor-appointment>

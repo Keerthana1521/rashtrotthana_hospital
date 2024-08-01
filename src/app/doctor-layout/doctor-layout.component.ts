@@ -13,9 +13,9 @@ import { ContactFormService } from '../contact-form.service';
 })
 export class DoctorLayoutComponent {
   countries: any[] | undefined;
-
+  selectedDoctorAppoint: any = null;
   selectedCity: any;
-
+  showAppointmentForm: boolean = false;
   selectedSpeciality: string = '';
   // selectedSubject: any;
   // selectedGeneralMedicineOption: any;
@@ -51,7 +51,9 @@ export class DoctorLayoutComponent {
       about: 'Col. Dr. Anand Shankar is an anesthesiologist and intensivist and has an overall experience of 29 years. He served the Indian armed forces for a duration of 27 years....',
       speciality: 'ANAESTHESIOLOGY',
       areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology'],
-      expertise: 'Years of Experience: 29'
+      expertise: 'Years of Experience: 29',
+      date:'Monday-Friday',
+      time:'10:00-17:00'
     },
 
     {
@@ -61,7 +63,9 @@ export class DoctorLayoutComponent {
       about: 'BDS, MDS - Oral & Maxillofacial Surgery Dentist, Oral And Maxillo-Facial Surgeon, Implantologist, Cosmetic/Aesthetic Dentist 22+ Years Experience Overall  (21 years as specialist)',
       speciality: 'DENTAL SCIENCES',
       areasOfExpertise: ["Dentist", 'Oral And MaxilloFacial Surgeon', 'Implantologist', 'Cosmetic/Aesthetic Dentist'],
-      expertise: 'Years of Experience: 20'
+      expertise: 'Years of Experience: 20',
+      time:'9:00-17:00',
+      date:'Friday'
     },
 
     {
@@ -77,7 +81,8 @@ export class DoctorLayoutComponent {
         'Recurrent Pregnancy loss treatment',
         'Emergency Obstetric care',
         'Vaginal Surgeries, Management of menopause related issues',],
-        expertise: 'Years of Experience: 32'
+        expertise: 'Years of Experience: 32',
+        time:'10:00-19:00'
     },
     {
       name: 'Dr. Shekar Patil',
@@ -86,7 +91,8 @@ export class DoctorLayoutComponent {
       about: 'Dr. Shekar Patil is a Medical Oncologist Bangalore. He has been practising medicine for 39 years including over 25 years in medical oncology. He treats conventional and high dose chemotherapy for both solid and haematological malignancies. Dr. Patil s knowledge and expertise spans a vast area including: Intraperitoneal Chemotherapy as consolidation in advanced Ovarian Cancers Concurrent radiation and chemotherapy (BIP) in Carcinoma Cervix Bone Marrow Transplantation Oral recombinant human lactoferrin with Carboplatin Chemotherapy in Gynaecological Malignancies Treatment of Lymphomas Treatment of Acute Myeloid Leukaemia.',
       speciality: 'ONCOLOGY',
       areasOfExpertise: ['All adult cancers with special interest in precision oncolgy', 'immuno-oncology'],
-      expertise: 'Years of Experience: 35'
+      expertise: 'Years of Experience: 35',
+      time:'9:00'
       
     },
     {
@@ -96,7 +102,8 @@ export class DoctorLayoutComponent {
       about: 'Dr. Ravishankar D, our esteemed orthopedic surgeon at Rashtrotthana Hospital. With 38 years of experience overall and 31 years as a specialist, Dr. Ravishankar is highly skilled in his field. He completed his MBBS from Bangalore University, India, in 1985 and his DNB in Orthopedics/Orthopedic Surgery from the DNB Board, New Delhi, in 1989.As a member of the Karnataka Medical Council, Dr. Ravishankar offers a range of services including Joint Replacement Surgery, Hip Replacement, Fracture Treatment, and Joint Dislocation Treatment.Trust Dr. Ravishankar D at Rashtrotthana Hospital for top-notch orthopedic care. With decades of experience and a dedication to patient well-being, you are in the best hands for all your orthopedic needs.',
       speciality: 'ORTHOPEDICS',
       areasOfExpertise: ['Joint Replacement Surgery', 'Hip Replacement', 'Fracture Treatment', 'Joint Dislocation Treatment'],
-      expertise: 'Years of Experience: 38'
+      expertise: 'Years of Experience: 38',
+      time:''
     },
     {
       name: 'Dr. Pramod Cinder',
@@ -114,7 +121,8 @@ export class DoctorLayoutComponent {
         'Robotic pelvic surgeries -Davinci',
         '3D Printing - Navigation in Oncology',
         'Stem cell and regenerative therapy'],
-      expertise: 'Years of Experience: 20'
+      expertise: 'Years of Experience: 20',
+      time:'9:00-11:00'
     },
     {
       name: 'Dr. Nagaraj Rao',
@@ -123,7 +131,8 @@ export class DoctorLayoutComponent {
       about: '',
       speciality: 'UROLOGY',
       areasOfExpertise: ['EndoUrology', 'Uro Oncology', 'Stone Disease'],
-      expertise: 'Years of Experience:25 '
+      expertise: 'Years of Experience:25 ',
+      time:'12:00-2:00'
     },
     {
       name: 'Dr. H M Krishnamurthy',
@@ -132,7 +141,8 @@ export class DoctorLayoutComponent {
       about: 'Dr. H.M.Krishnamurthy is a Doctor in Bangalore and has an experience of 40 years in this field. Dr. H.M.Krishnamurthy practices at Various hospitals in Bangalore and He completed MBBS from Bangalore University in 1984',
       speciality: 'GENERAL MEDICINE',
       areasOfExpertise: ['Metabolic Disorders', 'Infectious Diseases', 'Geriatrics', 'Non Interventional- Respiratory Diseses', 'Diabetes- Thyroid', 'All Adult Chronic Diseases'],
-        expertise: 'Years of Experience: 36'
+        expertise: 'Years of Experience: 36',
+        time:'6:00-20:00'
     },
     {
       name: 'Dr. Shashi Vadhanan',
@@ -141,7 +151,8 @@ export class DoctorLayoutComponent {
       speciality: 'GENERAL SURGERY',
       about:'Dr. Shashivadhanan specializes in a wide array of neurosurgical and spinal procedures. His areas of expertise include Minimally Invasive Spine Surgery, Spinal Deformity Correction, Spinal Cord Tumors, Cerebrovascular Surgery, Neuroendoscopy, Deep Brain Stimulation, Epilepsy Surgery and Paediatric Neurosurgery. He is also skilled in minimally invasive pain interventions for spinal pain, including Facetal and Transforaminal Blocks, Vertebroplasty and Kyphoplasty.',
       areasOfExpertise: ['Minimally Invasive Spine Surgery', 'Spinal Deformity Correction', 'Spinal Cord Tumors', 'Cerebrovascular Surgery', 'Neurosurgery', 'Neuroendoscopy', 'Deep Brain Stimulation', 'Epilepsy Surgery', 'Paediatric Neurosurgery'],
-      expertise: 'Years of Experience: 30+'
+      expertise: 'Years of Experience: 30+',
+      time:'12:00-02:00'
     },
     {
       name: 'Dr. Savinay S Kanchibail',
@@ -150,7 +161,8 @@ export class DoctorLayoutComponent {
       about: 'I am a senior consultant paediatrician & Neonatologist at Rashtrotthana Hospital. I have more than 20 years of experience in Paediatrician – having worked in various...',
       speciality: 'PAEDIATRICS AND NEONATOLOGY',
       areasOfExpertise: ['ALLERGY', 'NUTRITION & NEWBORN CARE'],
-      expertise: 'Years of Experience: 20'
+      expertise: 'Years of Experience: 20',
+      time:'10:00-16:00'
     },
     {
       name: 'Dr. Shreelakshmi G',
@@ -159,7 +171,8 @@ export class DoctorLayoutComponent {
       about: 'Dr. Shreelakshmi G is graduated from university from mysore. She also did post graduation in M.S .OBSTETRICS AND GYNAECOLOGY (2003)',
       speciality: 'OBSTETRICS & GYNECOLOGY',
       areasOfExpertise: ['High Risk Obstetrics', 'Vaginal Delivery', 'Adolescent Gynaecology', 'Women health education and empowerment', 'Management of Diabetes in pregnancy'],
-      expertise: 'Years of Experience: 20'
+      expertise: 'Years of Experience: 20',
+      time:'10:00-13:00'
     },
 
     {
@@ -169,7 +182,8 @@ export class DoctorLayoutComponent {
       about: 'Worked as full time comsultant at Sagar Hospitals, Banashankari - Bangalore.Worked as full time consultant at S.S. Hospital, SSNMC Hospital & SS Sparsh Hospital, Bangalore.',
       speciality: 'DENTAL SCIENCES',
       areasOfExpertise: ['General Dentistry', 'Endodontics'],
-      expertise: 'Years of Experience: 16'
+      expertise: 'Years of Experience: 16',
+      time:'10:00-16:00'
     },
 
     {
@@ -179,7 +193,8 @@ export class DoctorLayoutComponent {
       about: 'Dr.Santhosh S is graduated from AJIMS ,MANAGALORE in 2008.He finished his post graduation (MD Internal medicine) from KIMS HUBLI.',
       speciality: 'NEPHROLOGY',
       areasOfExpertise: ['General Dentistry', 'Endodontics'],
-      expertise: 'Years of Experience: 14'
+      expertise: 'Years of Experience: 14',
+      time:'10:00-23:30'
     },
 
     {
@@ -189,7 +204,8 @@ export class DoctorLayoutComponent {
       about: 'Dr. Sowmya S Bhat has completed her basic Medical Education from St. John’s Medical College, Bangalore.She has received post graduate training in ophthalmology from the prestigious..',
       speciality: 'OPTHALMOLOGY',
       areasOfExpertise: [''],
-      expertise: 'Years of Experience: 10'
+      expertise: 'Years of Experience: 10',
+      time:'10:00-13:00'
     },
 
     {
@@ -199,7 +215,8 @@ export class DoctorLayoutComponent {
       about: 'Dr.Suhas Raj is graduate from Govt. Stanely Medical College and Hospital,Chennai in 2015. He did his post graduation (MD GENERAL MEDICINE) from KANYAKUMARI GOVT.',
       speciality: 'CARDIAC SCIENCES',
       areasOfExpertise: ['Interventional cardiology', 'Heart failure', 'Preventive Cardiology'],
-      expertise: 'Years of Experience: 8'
+      expertise: 'Years of Experience: 8',
+      time:'18:00-19:00'
     },
 
     {
@@ -209,7 +226,8 @@ export class DoctorLayoutComponent {
       about: 'Presently working as Assistant Professor Neurosurgery at Dayanand Sagar Medical College, Kanakpura Road.',
       speciality: 'GENERAL SURGERY',
       areasOfExpertise: ['GI surgery', 'Laproscopy', 'Onco Surgery', 'Lasers'],
-      expertise: 'Years of Experience: 18'
+      expertise: 'Years of Experience: 18',
+      time:'16:00-17:00'
     },
 
 
@@ -220,7 +238,8 @@ export class DoctorLayoutComponent {
       about: 'Pulmonologist with special skills in bronchoscopy , thoracoscopy,sleep studies ,did specialization from narayana medical college, with expertise in critical care.',
       speciality: 'PULMONOLOGY',
       areasOfExpertise: ['BRONCHOSCOPY', 'THORACOSCOPY', 'SLEEP MEDICINE', 'COPD, ASTHAMA', 'PNEUMONIA', 'BRONCHIECTASIS', 'ALLERGIC BRONCHITIS', 'MALIGNANCYAND ALL TYPES OF LUNG DISORDERS'],
-      expertise: 'Years of Experience: 15'
+      expertise: 'Years of Experience: 15',
+      time:'16:30-18:30'
     },
 
     {
@@ -231,7 +250,8 @@ export class DoctorLayoutComponent {
       speciality: 'DERMATOLOGY',
       areasOfExpertise: ['Clinical dermatology and various procedures like skin tag removal', 'DPN removal, wart removal, corn and callosity',
         'chemical peels for acne', 'pigmentation and skin rejuvenation', 'laser for hair removal', 'acne scar and pigmentation', 'PRP for hair and face', 'Derma-roller', 'Nanopore for skin brightening', 'pigmentation and acne scar microdermabrasion'],
-        expertise: 'Years of Experience: 9'
+        expertise: 'Years of Experience: 9',
+        time:'18:00-19:00'
     },
 
     {
@@ -241,7 +261,8 @@ export class DoctorLayoutComponent {
       about: ' Dr Sindhu P Madanshetty is a graduate Karnataka Institute of Medical Science,Hubli having graduated in 2014.She finished her post graduation in 2018 from Bangalore Medical College and Research Institute.',
       speciality: 'GENERAL MEDICINE',
       areasOfExpertise: ['Diabetes, Diabetes Reversal', 'Thyroid related illness', 'Blood related disorders', 'critical illness', 'Hypertension', 'Infectious disease'],
-      expertise: 'Years of Experience: 9'
+      expertise: 'Years of Experience: 9',
+      time:'10:00-16:00'
     },
 
 
@@ -252,7 +273,8 @@ export class DoctorLayoutComponent {
       about: ' Dr.Sujayendra D.M did his MBBS and MS Orthopaedics from the prestigious Kasturba Medical College, Manipal. Being one of the few colleges with different units for Orthopaedic sub-specialities...',
       speciality: 'ORTHOPAEDICS',
       areasOfExpertise: ['Fracture care', 'Joint replacement surgeries and Arthroscopy (keyhole) surgeries'],
-      expertise: 'Years of Experience: 11'
+      expertise: 'Years of Experience: 11',
+      time:'10:00-15:30'
     },
 
 
@@ -263,7 +285,8 @@ export class DoctorLayoutComponent {
       about: 'Dr.Manasa N A is graduate from M.S.RAMAIAH MEDICAL COLLEGE AND HOSPITAL in 2011.She completed DIPLOMA IN ORTHINOLARYNGOLOGY in 2016.Also she did secondary DNB in 2021.',
       speciality: 'ENT SPECIALITY',
       areasOfExpertise: ['Micro ear surgery for hearing restoration', 'Septoplasty', 'Endoscopic sinus surgery', 'management of vocal cord and voice disorders', 'Diagnosis and treatment of Head and neck tumors', 'tracheotomy and airway surgeries', 'polytrauma management', 'snoring evaluation and management of obstructive sleep apnea', 'Tonsillectomy', 'Adenoidectomy', 'myringotomy'],
-      expertise: 'Years of Experience: 7'
+      expertise: 'Years of Experience: 7',
+      time:'ARA'
     },
 
 
@@ -274,7 +297,8 @@ export class DoctorLayoutComponent {
       speciality: 'UROLOGY',
       about: 'Worked as Assistant prof. in the department of urology at St. John’s Medical Collage hospital, a premier high volume territory care hospital in Bangalore.',
       areasOfExpertise: ['Urology', 'EndoUrology,Kidney Transplantation', 'Reconstructive urology', 'Laproscopic urology Uro Oncology', 'Stone Disease'],
-      expertise: 'Years of Experience: 14'
+      expertise: 'Years of Experience: 14',
+      time:'9:30-16:00'
     },
 
 
@@ -285,7 +309,8 @@ export class DoctorLayoutComponent {
       speciality: 'NEURO SCIENCES',
       about: 'Neurosurgeon with special skills in the management of emergency and elective cases with MCh degree from AIIMS, Bhubaneshwar and MS General surgery degree from King George Medical University, Lucknow.',
       areasOfExpertise: ['Spine surgery', 'Brain surgery', 'Treatment of Neck pain', 'Back pain', 'Stroke', 'Neuropathy'],
-      expertise: 'Years of Experience: 4'
+      expertise: 'Years of Experience: 4',
+      time:'17:00-18:00'
     },
 
     {
@@ -295,7 +320,8 @@ export class DoctorLayoutComponent {
       speciality: 'GENERAL SURGERY',
       about: 'Neurosurgeon with special skills in the management of emergency and elective cases with MCh degree from AIIMS, Bhubaneshwar and MS General surgery degree from King George Medical University, Lucknow.',
       areasOfExpertise: [' '],
-      expertise: 'Years of Experience: 5'
+      expertise: 'Years of Experience: 5',
+      time:'9:30-11:00'
     },
     {
       name: 'Dr.Sameer M Halageri',
@@ -309,7 +335,8 @@ export class DoctorLayoutComponent {
         'Cleft and craniofacial surgery',
         'Diabetic foot and complex wound management',
         'Cosmetic surgery', 'Burns and trauma reconstruction'],
-        expertise: 'Years of Experience: 7'
+        expertise: 'Years of Experience: 7',
+        time:'Appointment-Basis'
     },
     {
       name: 'Dr. Valli Kiran',
@@ -318,7 +345,8 @@ export class DoctorLayoutComponent {
       speciality: 'PSYCHIATRY',
       about: 'Dr.Valli Kiran M is graduate from MYSORE UNIVERSITY in 2001.He did DIPLOMA IN PSYCHIATRY in 20005',
       areasOfExpertise: ['Entire Spectrum of Psychological Disorders'],
-      expertise: 'Years of Experience: 20'
+      expertise: 'Years of Experience: 20',
+      time:'16:30-18:00'
     },
     {
       name: 'Dr.Vishnuvardhan V',
@@ -327,7 +355,8 @@ export class DoctorLayoutComponent {
       speciality: 'DENTAL SCIENCES',
       about: '',
       areasOfExpertise: [''],
-      expertise: 'Years of Experience: 6'
+      expertise: 'Years of Experience: 6',
+      time:'Oncall'
     },
     {
       name: 'Dr. Prakruthi',
@@ -336,7 +365,8 @@ export class DoctorLayoutComponent {
       speciality: 'OBSTETRICS & GYNECOLOGY',
       about: 'Dr.Prakruthi is graduated from JJMMC,DAVANGERE in 2004.She completed post graduation in DGO(2018).He did training in Laproscopy from ALTIUS HOSPITAL BLORE in 2022.He also completed DNB from BANGALORE BAPTIST HOSPITAL.',
       areasOfExpertise: ['Labour ward management', 'Development of protocols', 'High risk pregnancy management', 'Fetal Scans'],
-      expertise: 'Years of Experience: 16'
+      expertise: 'Years of Experience: 16',
+      time:'10:00-14:00'
     },
     {
       name: 'Dr. Ravi T',
@@ -345,7 +375,8 @@ export class DoctorLayoutComponent {
       speciality: 'ONCOLOGY',
       about: 'Dr. Ravi Thippeswamy Senior Medical Oncologist With 20 years of invaluable experience, Dr. Ravi Thippeswamy is a distinguished Medical Oncologist in Bangalore. He is committed to delivering comprehensive care to his patients and maintains affiliations with several hospitals throughout the city. He completed his MBBS from Jagadguru Jayadeva Murugarajendra Medical College (JJMMC) in 2004, his DNB in Medical Oncology from the National Board of Examination in 2012 and his MD in Pediatrics from the University of Mumbai in 2008.As a member of the Karnataka Medical Council, Dr. Thippeswamy specializes in various aspects of Medical Oncology, including Hemato Oncology and Pediatric Oncology. With 11 years of specialization, he brings a wealth of knowledge and expertise to his practice, ensuring the best possible outcomes for his patients.',
       areasOfExpertise: ['All adult cancers with special interest in precision oncolgy ,immuno-oncology'],
-      expertise: 'Years of Experience: 14'
+      expertise: 'Years of Experience: 14',
+      time:'9:00-11:00'
     },
 
     {
@@ -355,7 +386,8 @@ export class DoctorLayoutComponent {
       about: 'Her 15 years of experience includes teaching BNYS students and treating thousands of clients through yoga and Naturopathy.',
       speciality: 'LIFE STYLE MEDICINE',
       areasOfExpertise: [''],
-      expertise: 'Years of Experience: 15'
+      expertise: 'Years of Experience: 15',
+      time:'10:00-16:00'
     },
     {
       name: 'Dr. Vishwanth Sanagoudar',
@@ -364,7 +396,8 @@ export class DoctorLayoutComponent {
       about: 'Has experience of about 8 years. Experienced in treating general paediatric patients & paediatric ICU patients. Sub specialised in Paediatric ICU care.',
       speciality: 'PAEDIATRICS & NEONATOLOGY',
       areasOfExpertise: ['GENERAL PAEDIATRICS', 'NEWBORN CARE', 'PAEDIATRIC EMERGENCIES & PAEDIATRIC CRITICAL CARE'],
-      expertise: 'Years of Experience: 8'
+      expertise: 'Years of Experience: 8',
+      time:'10:00-19:00'
     },
     {
       name: 'Dr.Niveditha C',
@@ -373,7 +406,8 @@ export class DoctorLayoutComponent {
       about: 'Consultation Paediatrician and Neonatologist with expertise in management of Paediatric and Neonates including extreme preterm, birth asphyxia, advanced ventilation and critical interventional procedures.',
       speciality: 'PAEDIATRICS & NEONATOLOGY',
       areasOfExpertise: ['General paediatrics', 'Critical Newborn and Paediatric care', 'Paediatric Nutrition'],
-      expertise: 'Years of Experience: 7'
+      expertise: 'Years of Experience: 7',
+      time:'10:00-19:00'
     },
     {
       name: 'Dr. Nikhil Hegde',
@@ -382,7 +416,8 @@ export class DoctorLayoutComponent {
       about: 'Specialised training in sports medicine, Arthroplasty and trauma',
       speciality: 'ORTHOPAEDICS',
       areasOfExpertise: ['Sports Medicine', 'Artgroplasty', 'Arthroscopy & Trauma'],
-      expertise: 'Years of Experience: 6'
+      expertise: 'Years of Experience: 6',
+      time:'10:00-15:30'
     },
     {
       name: 'Dr. Neelam',
@@ -391,7 +426,8 @@ export class DoctorLayoutComponent {
       about: 'Dr.Neelam is graduate from KASTURBA MEDICAL COLLEGE in 2009.She did DIPLOMATE OF NATIONAL BOARD (obstetrics & gynaecology) in 2013.She also completed her post graduation in MRCOG on 2016.',
       speciality: 'OBSTETRICS & GYNECOLOGY',
       areasOfExpertise: ['High Risk Pregnancy', 'Adolescent care', 'Integrated medicine Protocols', 'Role of yoga in Women s Health care'],
-      expertise: 'Years of Experience: 9'
+      expertise: 'Years of Experience: 9',
+      time:'ARA'
     },
     {
       name: 'Dr. Ashwitha Gundmi',
@@ -400,7 +436,8 @@ export class DoctorLayoutComponent {
       speciality: 'OBSTETRICS & GYNECOLOGY',
       about: 'Dr.Ashwitha Gundmi is graduated on 2012.She also did her post graduation on 2017.',
       areasOfExpertise: ['High Risk Obstetrics', 'Protocol based management', 'Gynaecological Surgeries', '- MIS', 'Fertility Related issues', 'Family planning & Contraception'],
-      expertise: 'Years of Experience: 7'
+      expertise: 'Years of Experience: 7',
+      time:'ARA'
     },
     {
       name: 'Dr. Vinutha Udupa',
@@ -409,7 +446,8 @@ export class DoctorLayoutComponent {
       speciality: 'OBSTETRICS & GYNECOLOGY',
       about: 'Dr.Vinitha Udupa is graduate RAJIV GANDHI UNIVERSITY in 2012.Her post graduation is finished from Jawaharlal Insitute of Postgraduated Medical Education and Reasearch in 2016.',
       areasOfExpertise: ['High Risk Pregnancy', ' Medical Disorders of pregnancy', 'Preconception Counselling', 'Prenatal Aneuploidy Screening'],
-      expertise: 'Years of Experience: 7'
+      expertise: 'Years of Experience: 7',
+      time:'11:30-1:00'
     },
     {
       name: 'Dr. Anusha Mutalik Desai',
@@ -418,7 +456,8 @@ export class DoctorLayoutComponent {
       speciality: 'HOMEOPATHY',
       about: 'Worked as consultant Neurosurgeon in Brains Super specialty hospital Bengaluru (Jan 2023- June 2023)',
       areasOfExpertise: ['See all patients in Homoeopathy we will not concentrate on 1 aspect'],
-      expertise: 'Years of Experience: 7'
+      expertise: 'Years of Experience: 7',
+      time:'9:00-17:00'
     },
     {
       name: 'Dr. Ajay N',
@@ -427,7 +466,8 @@ export class DoctorLayoutComponent {
       speciality: 'GASTRO SCIENCES',
       about: 'Dr.Ajay N is graduate from B.R.AMBEDKAR MEDICAL COLLEGE in 2018.He also completed post graduation (MS in general surgery) from Adichunchanagiri institute of Medical Sciences, Mandya in 2023.',
       areasOfExpertise: [''],
-      expertise: 'Years of Experience: 2'
+      expertise: 'Years of Experience: 2',
+      time:'9:30-17:00'
     },
     {
       name: 'Dr. Varsha P',
@@ -436,7 +476,8 @@ export class DoctorLayoutComponent {
       speciality: 'LIFE STYLE MEDICINE',
       about: ' ',
       areasOfExpertise: [''],
-      expertise: 'Years of Experience: 3'
+      expertise: 'Years of Experience: 3',
+      time:'9:30-17:00'
     },
 
     {
@@ -446,7 +487,8 @@ export class DoctorLayoutComponent {
       speciality: 'AYURVEDA',
       about: 'Dr.Rohit K R is graduate from P N Panicker Souhruda Ayurveda Medical College,Kerala.He has one year experience at HOUSE SURGEON.',
       areasOfExpertise: [''],
-      expertise: 'Years of Experience: 3'
+      expertise: 'Years of Experience: 3',
+      time:'9:30-17:00'
     },
     {
       name: 'Dr. Alekhya R',
@@ -455,7 +497,8 @@ export class DoctorLayoutComponent {
       speciality: 'AYURVEDA',
       about: 'Dr.Alekhya R is graduate from INDIAN INSITUTE OF AYURVEDIC MEDICINE AND RESEARCH in 2021',
       areasOfExpertise: ['Gastric related issues','Sinusitis, Allergic rhinitis','Vatavyadi'],
-      expertise: 'Years of Experience: 2'
+      expertise: 'Years of Experience: 2',
+      time:'9:30-17:00'
     },
     {
       name: 'Dr. Narendranath A',
@@ -464,7 +507,8 @@ export class DoctorLayoutComponent {
       speciality: 'ENT SPECIALITY',
       about: 'Dr.Narendranath A is graduate from RAJAH MUTHIAH MEDICAL COLLEGE,TAMIL NADU in 2010.HEe completed his post graduation MS (ENT) from vijayanagar insititute of medical sciences,bellary in 2015.',
       areasOfExpertise: [''],
-      expertise: 'Years of Experience: 5'
+      expertise: 'Years of Experience: 5',
+      time:'ARA'
     },
     {
       name: 'Dr. Ashika Bagaria',
@@ -473,7 +517,8 @@ export class DoctorLayoutComponent {
       speciality: 'ENT SPECIALITY',
       about: 'Dr.Ashika Bagaria is graduate from Rajiv Gandhi University',
       areasOfExpertise: [''],
-      expertise: 'Years of Experience: 2'
+      expertise: 'Years of Experience: 2',
+      time:'ARA'
     },
     {
       name: 'Dr. Harshitha. R',
@@ -482,7 +527,8 @@ export class DoctorLayoutComponent {
       about: ' ',
       speciality: 'GENERAL MEDICINE',
       areasOfExpertise: ['Diabetes, dyslipidemia and other metabolic diseases','Thyroid disorders',' Hypertension','  Infectious diseases','Adult vaccination','Diabetes and life style patient education'],
-      expertise: 'Years of Experience: 3'
+      expertise: 'Years of Experience: 3',
+      time:'10:00-16:00'
     },
     {
       name: 'Dr. Bhavya',
@@ -491,7 +537,8 @@ export class DoctorLayoutComponent {
       about: ' ',
       speciality: 'GENERAL MEDICINE',
       areasOfExpertise: ['Diabetes','Diabetes Reversal','Thyroid related illness','Blood related disorders','Critical illness','Hypertension','Infectious disease'],
-      expertise: 'Years of Experience: '
+      expertise: 'Years of Experience: ',
+      time:'10:00-16:00'
     },
 
     {
@@ -501,7 +548,8 @@ export class DoctorLayoutComponent {
       about: ' ',
       speciality: 'LIFE STYLE MEDICINE',
       areasOfExpertise: [' '],
-      expertise: 'Years of Experience: '
+      expertise: 'Years of Experience: ',
+      time:'9:00-17:00'
     },
     {
       name: 'Dr. Kavyashree Kulamarva',
@@ -510,7 +558,8 @@ export class DoctorLayoutComponent {
       about: ' ',
       speciality: 'AYURVEDA',
       areasOfExpertise: [' Anxiety disorder and Depression','Child psychiatric disorders (ASD, ADHD)','Add on Ayurveda for Schizophrenia','Motor Neuron Disease','Parkinson s disease','Muscular dystrophy','Stroke rehab','Multiple Sclerosis' ,'Dementia'],
-      expertise: 'Years of Experience: '
+      expertise: 'Years of Experience: ',
+      time:'9:30-17:00'
     },
 
   ]
@@ -727,6 +776,7 @@ isPramodChinder(): boolean {
       this.loadVisibleDoctors();
     }
 
+
     // Scroll to the doctor-details div
     setTimeout(() => {
       const element = document.getElementById('doctor-details');
@@ -735,8 +785,27 @@ isPramodChinder(): boolean {
       }
     }, 100);
   }
+
+  selectDoctorAppoint(doctor: any) {
+    this.selectedDoctorAppoint = doctor;
+    this.showAppointmentForm = true;
+    setTimeout(() => {
+      const element = document.getElementById('appointment');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  }
   closeDoctorDetails(): void {
     this.selectedDoctor = null;
+  }
+  closeAppointmentForm() {
+    this.showAppointmentForm = false;
+    this.selectedDoctorAppoint = null;
+  }
+  handleBookAppointmentClick() {
+    this.selectDoctorAppoint(this.selectedDoctor);
+    this.showAppointmentForm = true;
   }
 
 }

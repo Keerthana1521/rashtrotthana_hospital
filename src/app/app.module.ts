@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { CalendarModule } from 'primeng/calendar';
 import { CascadeSelectModule } from 'primeng/cascadeselect';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -90,6 +91,7 @@ import { AyurvedhaDoctorsCarouselComponent } from './ayurvedha-doctors-carousel/
 import { AyurvedaCarouselComponent } from './ayurveda-carousel/ayurveda-carousel.component';
 import { AppointFormComponent } from './appoint-form/appoint-form.component';
 import { ReadMoreBtnComponent } from './read-more-btn/read-more-btn.component';
+import { DoctorAppointmentComponent } from './doctor-appointment/doctor-appointment.component';
 // import { HerniaComponent } from './hernia/hernia.component';
 // import { ProctologyComponent } from './proctology/proctology.component';
 
@@ -161,6 +163,7 @@ import { ReadMoreBtnComponent } from './read-more-btn/read-more-btn.component';
     AyurvedaCarouselComponent,
     AppointFormComponent,
     ReadMoreBtnComponent,
+    DoctorAppointmentComponent,
     // HerniaComponent,
     // ProctologyComponent
   ],
@@ -184,6 +187,7 @@ import { ReadMoreBtnComponent } from './read-more-btn/read-more-btn.component';
     ButtonModule,
     FormsModule,
     CascadeSelectModule,
+    CalendarModule,
     InfiniteScrollModule
 
   ],
