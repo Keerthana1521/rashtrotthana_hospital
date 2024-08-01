@@ -123,7 +123,7 @@ export class HomeComponent implements OnInit {
   }
 
   content: any = {
-    'default': 'India"s First Integrated Multi Speciality Hospital Blending Modern And Traditional Medicine For Holistic Healing',
+    'default': 'India\'s First Integrated Multi Speciality Hospital Blending Modern And Traditional Medicine For Holistic Healing',
     'yoga': 'Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India. Yoga is one of the six Āstika schools of Indian philosophical traditions.',
     'naturopathy': 'Naturopathy or naturopathic medicine is a form of alternative medicine that employs an array of pseudoscientific practices branded as "natural", "non-invasive", or promoting "self-healing".',
     'modern-medicine': 'Modern medicine, or medicine as we know it, started to emerge after the Industrial Revolution in the 18th century. At this time, there was rapid growth in economic activity in Western Europe and the Americas.',

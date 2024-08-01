@@ -30,6 +30,12 @@
     align-items: center;
     display: inline-flex;
   }
+  .fa-angle-right{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+  }
   .arrow {
     width: 10.2px;
     height: 37px;
@@ -45,5 +51,8 @@
     /* .submit-button{
       width: 139%;
     } */
+    .submit-text{
+      font-size: 15px;
+    }
   }
  

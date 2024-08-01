@@ -30,7 +30,13 @@
     align-items: center;
     display: inline-flex;
   }
-  .arrow {
+  .fa-angle-right{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+  }
+  /* .arrow {
     width: 10.2px;
     height: 37px;
     text-align: center;
@@ -40,7 +46,7 @@
     font-weight: 900;
     line-height: 37px;
     word-wrap: break-word;
-  }
+  } */
   @media only screen and (max-width: 600px){
     /* .submit-button{
       width: 139%;

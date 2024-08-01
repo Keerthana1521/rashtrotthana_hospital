@@ -1,4 +1,4 @@
-import { Component ,Input} from '@angular/core';
+import { Component ,Input,Output,EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-doctors',
@@ -11,4 +11,9 @@ export class DoctorsComponent {
   @Input() desgination: any;
   @Input() about:any;
   @Input() expertise: any;
+  @Output() viewProfile = new EventEmitter<void>();
+
+  onViewProfile() {
+    this.viewProfile.emit();
+  }
 }

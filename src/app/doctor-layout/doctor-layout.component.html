@@ -54,12 +54,13 @@
     <div class="container-doctors container-fluid">
       <ng-container *ngIf="filteredDoctors.length > 0; else noFilteredDoctors">
         <ng-container *ngFor="let doctor of filteredDoctors">
-          <div class="doctor-card" (click)="selectDoctor(doctor)">
+          <div class="doctor-card">
           <app-doctors
             [image]="doctor.image"
             [name]="doctor.name"
             [desgination]="doctor.desgination"
-            [about]="doctor.about"
+            [expertise]="doctor.expertise"
+            (viewProfile)="selectDoctor(doctor)"
           ></app-doctors>
         </div>
         </ng-container>
@@ -67,7 +68,7 @@
       <ng-template #noFilteredDoctors>No doctor Found</ng-template>
     </div>
     
-    <!-- <div class="doctor-details-overlay" *ngIf="selectedDoctor">
+    <div class="doctor-details-overlay" *ngIf="selectedDoctor">
       <div class="doctors-left">
       <div *ngFor="let doctor of visibleDoctors" (click)="selectDoctor(doctor)">
         <div class="doctor-image">
@@ -90,6 +91,9 @@
           </div>
           <div class="doctor-desgination">
             Department: {{ selectedDoctor.desgination }}
+          </div>
+          <div class="doctor-desgination">
+            {{selectedDoctor.expertise}}
           </div>
         </div>
         </div>
@@ -118,11 +122,15 @@
             </div>
           </div>
         </div>
-        <div class="book-appoint">
-          <app-read-more-btn [text]="'Book an Appointment'" [background]="'linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%)'"
-          [boxShadow]="'3px 4px 15px 0px rgba(63, 176, 206, 0.65)'"></app-read-more-btn>
+        <div [ngClass]="{'book-appoint': true, 'special-class': isPramodChinder()}">
+          <app-read-more-btn
+           [text]="'Book an Appointment'" 
+           [background]="'linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%)'"
+           [boxShadow]="'3px 4px 15px 0px rgba(63, 176, 206, 0.65)'" 
+           [iconClass]="'fa-regular fa-calendar'">
+          </app-read-more-btn>
         </div>
           </div>
          
-          </div> -->
+          </div>
            
