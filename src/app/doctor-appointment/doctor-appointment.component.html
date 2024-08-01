@@ -2,6 +2,11 @@
     <div class="card flex justify-content-center form">
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <button class="close-btn" (click)="closeDialog()">×</button>
+            <div>
+                <div class="appointment-title">
+                    Book an Appointment
+                </div>
+            </div>
           <div class="flex flex-column gap-4">
           <div class="doctor">
             <div class="doctor-name">
@@ -23,7 +28,7 @@
                 placeholder="Choose a Date"
                 [showIcon]="true" 
                 inputId="icondisplay"  
-                formControlName="date"
+                formControlName="date_appointment"
                 [disabledDays]="disabledDays">
                     <ng-template pTemplate="date" let-date>
                         <span>
@@ -31,7 +36,7 @@
                         </span>
                     </ng-template>
                 </p-calendar>
-                <div *ngIf="f['time'].touched && f['time'].invalid">
+                <div *ngIf="f['date']?.touched && f['date']?.invalid">
                     <small class="error">Date is required</small>
                   </div>
                 <br><br><br>
@@ -39,11 +44,11 @@
             <div class="time">
                 <div>
                     <i class="fa-solid fa-building-user form_icon"></i>
-                    <label for="subject">Appointment Time</label>
+                    <label for="time">Appointment Time</label>
                   </div>
-                  <p-dropdown styleClass="dropdown" [options]="availableTimes" optionLabel="name" formControlName="subject" placeholder="Choose a Time"
+                  <p-dropdown styleClass="dropdown" [options]="availableTimes" optionLabel="name" formControlName="time" placeholder="Choose a Time"
                     required></p-dropdown>
-                  <div *ngIf="f['subject'].touched && f['subject'].invalid">
+                  <div *ngIf="f['time']?.touched && f['time']?.invalid">
                     <small class="error">Time is required</small>
                   </div>
                   <br /><br /><br>
@@ -105,7 +110,7 @@
             </div>
 
             <div style="padding-top: 3rem">
-              <button type="submit" class="appoint-button" [disabled]="contactForm.invalid">
+              <button type="submit" class="appoint-button" >
                 Make an Appointment <img src="../../assets/contact-arrow.png" />
               </button>
             </div>

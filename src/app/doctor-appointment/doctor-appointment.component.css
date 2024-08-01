@@ -236,6 +236,15 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 }
+.appointment-title{
+    color: #FBCA51;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: center
+}
 @media only screen and (max-width:1030px){
     .contact-details{
         flex-direction: column;
@@ -271,7 +280,6 @@ line-height: normal;
     .date,.time{
         width:100%
     }
-
     .contact-details {
         display: flex;
         flex-direction: column;
