@@ -41,11 +41,15 @@
     font-weight: 300;
     color: #FFFFFF;
 }
+@media only screen and (max-width:1390px){
+.gm_poster{height: 64vh;}
+}
 @media only screen and (max-width:1030px){
     .container-facility{
         grid-template-columns: 33% 33% 33%;
         padding: 2rem;
     }
+    .gm_poster{height: 70vh;}
 }
 @media only screen and (max-width:900px){
     .container-facility{
@@ -64,7 +68,9 @@
         margin-top: 7rem;
         background-image: url('../../assets/modern-medicine-bg-res.png');
         background-size: cover;
+        height: 30vh;
         width: 100%;
+        background-repeat: no-repeat;
        
        
     }

@@ -28,7 +28,7 @@ export class ModernMedicineComponent {
       image: '../../assets/modern-3.png',
       title: 'Obstetrics & Gynecology',
       button_text: 'Read More',
-      route: 'Obstetrics & Gynaecology'
+      route: 'Obstetrics-and-Gynaecology'
     },
     {
       name: 'card',

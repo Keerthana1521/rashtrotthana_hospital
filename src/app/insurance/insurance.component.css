@@ -124,8 +124,9 @@ text-transform: capitalize;
 }
 .heading{
 position: relative;
-top:-130px;
+bottom:184px;
 left:6rem;
+width: 80%;
 color: #008080;
  font-size: 40px;
  font-family: Poppins;

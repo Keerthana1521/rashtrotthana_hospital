@@ -205,6 +205,11 @@
     color: #022B50;
     transition-duration: 0.5s;
 }
+@media only screen and (max-width:1390px){
+    .gm_poster{
+        height: 64vh;
+    }   
+}
 @media only screen and (max-width:1030px){
     .o_menu{
         display: none;
@@ -225,6 +230,14 @@
     }
 }
 @media only screen and (max-width:600px){
+    .gm_poster{
+        background-image: url('../../assets/modern-medicine-sub-res-bg.png');
+        background-size: cover;
+        height: 28vh;
+        background-repeat: no-repeat;
+        padding-bottom: -2px;
+        margin-top: 18vh;
+    }
     .o_container{
         width: 100%;
     }
@@ -237,7 +250,7 @@
         width: 100%;
     }
     .o_heading{
-        padding:12rem 0rem 1rem 2rem;
+        padding:3rem 0rem 1rem 2rem;
         font-size: 20px;
     }
     .o_info{

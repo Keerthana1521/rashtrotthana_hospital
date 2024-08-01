@@ -1126,6 +1126,15 @@ line-height: 28px; /* 175% */
   font-size: 24px;
   text-align: center;
 }
+.surgery-package{
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 3px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  /* width: 437px; */
+  height: 150px;
+  flex-shrink: 0;
+  cursor:pointer
+}
 @media only screen and (max-width:1390px){
   .container{
     padding: 20px 35px;
@@ -1180,7 +1189,7 @@ line-height: 28px; /* 175% */
     background-size: contain;
   }
   .surgery-package{
-    height: 150px;
+    height: 200px;
   }
 }
 @media only screen and (max-width:1030px){
@@ -1272,13 +1281,13 @@ flex-shrink: 0;
 }
 .about-us-content{
   font-size: 16px;
-}}
+}
 .ninth-container{
   padding: 2rem;
 }
 .meno{
   width: 437px;
-    height: 125px;
+    height: 150px;
 }
 .meno-content{
   font-size: 18px;
@@ -1308,9 +1317,7 @@ flex-shrink: 0;
   opacity: 0.2;
   background: #008080;
 }
-.tenth-container{
-  background-size: contain;
-}
+
 .empty{
   padding-top: 2rem;
 }
@@ -1320,6 +1327,12 @@ flex-shrink: 0;
 .button{
   left:430px;
 }
+li{
+  font-size: 14px;
+  width: 390px;
+  padding-left: 2rem;
+}}
+
 
 @media only screen and (max-width:900px){
   .bg-features img{
@@ -1412,6 +1425,8 @@ padding: 5rem 0rem 3rem 1rem;
   }
   li{
     font-size: 12px;
+    width: 347px;
+    padding-left: 2rem;
 }
 .achieve-image{
   padding-top: 9rem;
@@ -1463,7 +1478,11 @@ padding: 5rem 0rem 3rem 1rem;
   height: 600px;
 }
 .surgery-package{
+  width: 318px;
   height: 150px;
+}
+.acheive-points{
+  width: 100%;
 }
 }
 
