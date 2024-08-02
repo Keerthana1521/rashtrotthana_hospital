@@ -52,8 +52,9 @@ export class DoctorLayoutComponent {
       speciality: 'ANAESTHESIOLOGY',
       areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology'],
       expertise: 'Years of Experience: 29',
-      date:'Monday-Friday',
-      time:'10:00-17:00'
+      qualification:'MBBS,MD (ANAESTHESIOLOGY), EDIC',
+      date:'Monday-Saturday',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00'
     },
 
     {
@@ -64,8 +65,9 @@ export class DoctorLayoutComponent {
       speciality: 'DENTAL SCIENCES',
       areasOfExpertise: ["Dentist", 'Oral And MaxilloFacial Surgeon', 'Implantologist', 'Cosmetic/Aesthetic Dentist'],
       expertise: 'Years of Experience: 20',
-      time:'9:00-17:00',
-      date:'Friday'
+      qualification:'BDS,MDS',
+      time:'9:00-9:20,9:20-9:40,9:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      date:'Monday-Saturday'
     },
 
     {
@@ -82,7 +84,9 @@ export class DoctorLayoutComponent {
         'Emergency Obstetric care',
         'Vaginal Surgeries, Management of menopause related issues',],
         expertise: 'Years of Experience: 32',
-        time:'10:00-19:00'
+        qualification:'MBBS, MRCOG(UK), MRCP(I), FRCOG(UK)',
+        time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00',
+        date:'Tuesday'
     },
     {
       name: 'Dr. Shekar Patil',
@@ -92,23 +96,26 @@ export class DoctorLayoutComponent {
       speciality: 'ONCOLOGY',
       areasOfExpertise: ['All adult cancers with special interest in precision oncolgy', 'immuno-oncology'],
       expertise: 'Years of Experience: 35',
-      time:'9:00'
+      qualification:'MBBS, MD, DM',
+      time:'9:00-9:15,9:15-9:30,9:30-9:45,9:45:10:00',
+      date:'Friday'
+  
       
     },
-    {
-      name: 'Dr. Ravishankar. D',
-      image: 'assets/doctor-6.png',
-      desgination: 'Orthopedic surgeon',
-      about: 'Dr. Ravishankar D, our esteemed orthopedic surgeon at Rashtrotthana Hospital. With 38 years of experience overall and 31 years as a specialist, Dr. Ravishankar is highly skilled in his field. He completed his MBBS from Bangalore University, India, in 1985 and his DNB in Orthopedics/Orthopedic Surgery from the DNB Board, New Delhi, in 1989.As a member of the Karnataka Medical Council, Dr. Ravishankar offers a range of services including Joint Replacement Surgery, Hip Replacement, Fracture Treatment, and Joint Dislocation Treatment.Trust Dr. Ravishankar D at Rashtrotthana Hospital for top-notch orthopedic care. With decades of experience and a dedication to patient well-being, you are in the best hands for all your orthopedic needs.',
-      speciality: 'ORTHOPEDICS',
-      areasOfExpertise: ['Joint Replacement Surgery', 'Hip Replacement', 'Fracture Treatment', 'Joint Dislocation Treatment'],
-      expertise: 'Years of Experience: 38',
-      time:''
-    },
+    // {
+    //   name: 'Dr. Ravishankar. D',
+    //   image: 'assets/doctor-6.png',
+    //   desgination: 'Orthopedic surgeon',
+    //   about: 'Dr. Ravishankar D, our esteemed orthopedic surgeon at Rashtrotthana Hospital. With 38 years of experience overall and 31 years as a specialist, Dr. Ravishankar is highly skilled in his field. He completed his MBBS from Bangalore University, India, in 1985 and his DNB in Orthopedics/Orthopedic Surgery from the DNB Board, New Delhi, in 1989.As a member of the Karnataka Medical Council, Dr. Ravishankar offers a range of services including Joint Replacement Surgery, Hip Replacement, Fracture Treatment, and Joint Dislocation Treatment.Trust Dr. Ravishankar D at Rashtrotthana Hospital for top-notch orthopedic care. With decades of experience and a dedication to patient well-being, you are in the best hands for all your orthopedic needs.',
+    //   speciality: 'ORTHOPEDICS',
+    //   areasOfExpertise: ['Joint Replacement Surgery', 'Hip Replacement', 'Fracture Treatment', 'Joint Dislocation Treatment'],
+    //   expertise: 'Years of Experience: 38',
+    //   time:''
+    // },
     {
       name: 'Dr. Pramod Cinder',
       image: 'assets/doctor-26.png',
-      desgination: 'ORTHOPAEDIC ONCOSURGEON',
+      desgination: 'ORTHOPEDIC ONCOSURGEON',
       about: '',
       speciality: 'ORTHOPEDICS',
       areasOfExpertise: ['Limb salvage surgeries with Biological reconstruction',
@@ -122,7 +129,9 @@ export class DoctorLayoutComponent {
         '3D Printing - Navigation in Oncology',
         'Stem cell and regenerative therapy'],
       expertise: 'Years of Experience: 20',
-      time:'9:00-11:00'
+      qualification:'MBBS, MS(ORTHO), FHRM, FMSO',
+      time:'9:00-9:20,9:20-9:40,9:40-10:00,10:20-10:40,10:40-11:00',
+      date:'Friday'
     },
     {
       name: 'Dr. Nagaraj Rao',
@@ -132,7 +141,9 @@ export class DoctorLayoutComponent {
       speciality: 'UROLOGY',
       areasOfExpertise: ['EndoUrology', 'Uro Oncology', 'Stone Disease'],
       expertise: 'Years of Experience:25 ',
-      time:'12:00-2:00'
+      qualification:'MBBS, MS, MCH',
+      time:'12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00',
+      date:'Tuesday and Thursday'
     },
     {
       name: 'Dr. H M Krishnamurthy',
@@ -142,7 +153,9 @@ export class DoctorLayoutComponent {
       speciality: 'GENERAL MEDICINE',
       areasOfExpertise: ['Metabolic Disorders', 'Infectious Diseases', 'Geriatrics', 'Non Interventional- Respiratory Diseses', 'Diabetes- Thyroid', 'All Adult Chronic Diseases'],
         expertise: 'Years of Experience: 36',
-        time:'6:00-20:00'
+        qualification:'MBBS, MD',
+        time:'18:00-18:20,18:20-18:40,18:40-19:00,19:00-19:20,19:20-19:40,19:40-20:00',
+        date:'Monday-Saturday'
     },
     {
       name: 'Dr. Shashi Vadhanan',
@@ -152,7 +165,9 @@ export class DoctorLayoutComponent {
       about:'Dr. Shashivadhanan specializes in a wide array of neurosurgical and spinal procedures. His areas of expertise include Minimally Invasive Spine Surgery, Spinal Deformity Correction, Spinal Cord Tumors, Cerebrovascular Surgery, Neuroendoscopy, Deep Brain Stimulation, Epilepsy Surgery and Paediatric Neurosurgery. He is also skilled in minimally invasive pain interventions for spinal pain, including Facetal and Transforaminal Blocks, Vertebroplasty and Kyphoplasty.',
       areasOfExpertise: ['Minimally Invasive Spine Surgery', 'Spinal Deformity Correction', 'Spinal Cord Tumors', 'Cerebrovascular Surgery', 'Neurosurgery', 'Neuroendoscopy', 'Deep Brain Stimulation', 'Epilepsy Surgery', 'Paediatric Neurosurgery'],
       expertise: 'Years of Experience: 30+',
-      time:'12:00-02:00'
+      qualification:'MBBS, MS, DNB(GEN SURGERY), MCH, DNB(NEUROSURGERY), FRCS EDINBURGH, FICS, FIGASS(COPENHAGEN), FIMSA, MNAMS',
+      time:'12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Savinay S Kanchibail',
@@ -162,7 +177,9 @@ export class DoctorLayoutComponent {
       speciality: 'PAEDIATRICS AND NEONATOLOGY',
       areasOfExpertise: ['ALLERGY', 'NUTRITION & NEWBORN CARE'],
       expertise: 'Years of Experience: 20',
-      time:'10:00-16:00'
+      qualification:'MBBS, DCH, DNB, MRCPCH(UK), NEONATAL FELLOWSHIP(IAP)',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Shreelakshmi G',
@@ -172,7 +189,46 @@ export class DoctorLayoutComponent {
       speciality: 'OBSTETRICS & GYNECOLOGY',
       areasOfExpertise: ['High Risk Obstetrics', 'Vaginal Delivery', 'Adolescent Gynaecology', 'Women health education and empowerment', 'Management of Diabetes in pregnancy'],
       expertise: 'Years of Experience: 20',
-      time:'10:00-13:00'
+      qualification:'MMBBS, MS, MRCOG(UK)',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
+      date:'Wednesday'
+    },
+    {
+      name:'Dr. Rajeev Vijayakumar',
+      image: 'assets/doctor-4.png',
+      desgination: 'Oncologist',
+      about: 'Dr Rajeev, the very senior consultant whose expertise in Medical Oncology, Hemato Oncology, and Bone Marrow Transplant ensures that your confidence in his ...',
+      speciality: 'ONCOLOGY',
+      areasOfExpertise: ['Medical Oncology', 'Hemato- Oncology', 'Bone Marrow Transplant' ],
+      expertise: 'Years of Experience: 20',
+      qualification:'MBBS, DNB (Gen Medicine) DNB (Medical Oncology) MRCP (UK)',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+      date:'Monday and Wednesday'
+    },
+    {
+      name:'Dr. Shashidhar',
+      image: 'assets/doctor-51.png',
+      desgination: 'Anaesthesia',
+      about: ' Dr. Shashidhar, our esteemed anesthesiologist with over 20 years of dedicated experience in the field. With qualifications including MBBS and DA, Dr. Shashidhar specializes in intensive care, emergency care and anesthesiology. His expertise ensures the safe and effective management of anesthesia for various medical procedures, providing essential support in critical and emergency situations. Trust him for expert care in anesthesia at every stage of your medical journey.',
+      speciality: 'ANAESTHESIOLOGY',
+      expertise: 'Years of Experience: 20+',
+      time:'No-slot',
+      date:'Monday-Saturday',
+      qualification:'MBBS, DA',
+      areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology' ]
+    },
+
+{
+      name:'Dr. Mahesh Kulkarni',
+      image: 'assets/doctor-52.png',
+      desgination: 'Orthopaedics',
+      about: ' Dr. Mahesh Kulkarni, who has over 15 years of extensive orthopedic care experience. Specializing in joint preservation, limb preservation, deformity correction, pelviacetabular fractures, sports injuries and spine affections, Dr. Mahesh is dedicated to providing comprehensive orthopedic treatments tailored to each patient\'s needs. Whether you\'re recovering from an injury or seeking specialized care, trust him for expert orthopedic consultations and treatments.',
+      speciality: 'ORTHOPEDICS',
+      expertise: 'Years of Experience: 15+',
+      time:'18:30-18:50,18:50-19:10,19:10-19:30',
+      date:'Monday-Saturday',
+      qualification:'MBBS, DNB Ortho',
+      areasOfExpertise: ['Joint preservation', 'Limb preservation', 'Deformity correction', 'Pelviacetabular fractures', 'Sports injuries', 'Spine affections' ]
     },
 
     {
@@ -183,7 +239,9 @@ export class DoctorLayoutComponent {
       speciality: 'DENTAL SCIENCES',
       areasOfExpertise: ['General Dentistry', 'Endodontics'],
       expertise: 'Years of Experience: 16',
-      time:'10:00-16:00'
+      qualification:'BDS,PGCE,PGCOI',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+      date:'Monday-Saturday'
     },
 
     {
@@ -194,7 +252,9 @@ export class DoctorLayoutComponent {
       speciality: 'NEPHROLOGY',
       areasOfExpertise: ['General Dentistry', 'Endodontics'],
       expertise: 'Years of Experience: 14',
-      time:'10:00-23:30'
+      qualification:'MBBS, MD, DM(NEPHROLOGY)',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:40-17:00,17:00-17:20,17:20-17:40,17:40-18:00,18:00-18:20,18:20-18:40,18:40-19:00,19:00-19:20,19:20-19:40,19:40-20:00,20:00-20:20,20:20-20:40,20:40-21:00,21:00-21:20,21:20-21:40,21:40-22:00,22:00-22:20,22:20-22:40,22:40-23:00,23:00-23:15,23:15-23:30',
+      date:'Monday-Saturday'
     },
 
     {
@@ -205,7 +265,9 @@ export class DoctorLayoutComponent {
       speciality: 'OPTHALMOLOGY',
       areasOfExpertise: [''],
       expertise: 'Years of Experience: 10',
-      time:'10:00-13:00'
+      qualification:'MBBS, DO, DNB, FPR, FICO',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
+      date:'Tuesday and Friday'
     },
 
     {
@@ -216,7 +278,9 @@ export class DoctorLayoutComponent {
       speciality: 'CARDIAC SCIENCES',
       areasOfExpertise: ['Interventional cardiology', 'Heart failure', 'Preventive Cardiology'],
       expertise: 'Years of Experience: 8',
-      time:'18:00-19:00'
+      qualification:'MBBS, MD(GEN MEDICINE), DM(CARDIOLOGY)',
+      time:'18:00-18:20,18:20-18:40,18:40-19:00',
+      date:'Monday-Saturday'
     },
 
     {
@@ -227,7 +291,9 @@ export class DoctorLayoutComponent {
       speciality: 'GENERAL SURGERY',
       areasOfExpertise: ['GI surgery', 'Laproscopy', 'Onco Surgery', 'Lasers'],
       expertise: 'Years of Experience: 18',
-      time:'16:00-17:00'
+      qualification:'MBBS, MS',
+      time:'16:00-16:20,16:20-16:40,16:40-17:00',
+      date:'Monday-Saturday'
     },
 
 
@@ -239,7 +305,9 @@ export class DoctorLayoutComponent {
       speciality: 'PULMONOLOGY',
       areasOfExpertise: ['BRONCHOSCOPY', 'THORACOSCOPY', 'SLEEP MEDICINE', 'COPD, ASTHAMA', 'PNEUMONIA', 'BRONCHIECTASIS', 'ALLERGIC BRONCHITIS', 'MALIGNANCYAND ALL TYPES OF LUNG DISORDERS'],
       expertise: 'Years of Experience: 15',
-      time:'16:30-18:30'
+      qualification:'MBBS, MD PULMONOLOGY MEDICINE',
+      time:'16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:10,18:10-18:30',
+      date:'Monday-Saturday'
     },
 
     {
@@ -251,7 +319,9 @@ export class DoctorLayoutComponent {
       areasOfExpertise: ['Clinical dermatology and various procedures like skin tag removal', 'DPN removal, wart removal, corn and callosity',
         'chemical peels for acne', 'pigmentation and skin rejuvenation', 'laser for hair removal', 'acne scar and pigmentation', 'PRP for hair and face', 'Derma-roller', 'Nanopore for skin brightening', 'pigmentation and acne scar microdermabrasion'],
         expertise: 'Years of Experience: 9',
-        time:'18:00-19:00'
+        time:'18:00:18:15,18:15-18:30,18:30-18:45,18:45-19:00',
+        qualification:'MBBS,MD(DERMATOLOGY)',
+        date:'Tuesday,Thursday and Saturday'
     },
 
     {
@@ -262,19 +332,23 @@ export class DoctorLayoutComponent {
       speciality: 'GENERAL MEDICINE',
       areasOfExpertise: ['Diabetes, Diabetes Reversal', 'Thyroid related illness', 'Blood related disorders', 'critical illness', 'Hypertension', 'Infectious disease'],
       expertise: 'Years of Experience: 9',
-      time:'10:00-16:00'
+      qualification:'MBBS,MD INTERNAL MEDICINE,IDCCM',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+      date:'Monday-Saturday'
     },
 
 
     {
       name: 'Dr. Sujayendra D M',
       image: 'assets/doctor-21.png',
-      desgination: 'ORTHOPAEDICS',
+      desgination: 'ORTHOPEDICS',
       about: ' Dr.Sujayendra D.M did his MBBS and MS Orthopaedics from the prestigious Kasturba Medical College, Manipal. Being one of the few colleges with different units for Orthopaedic sub-specialities...',
-      speciality: 'ORTHOPAEDICS',
+      speciality: 'ORTHOPEDICS',
       areasOfExpertise: ['Fracture care', 'Joint replacement surgeries and Arthroscopy (keyhole) surgeries'],
       expertise: 'Years of Experience: 11',
-      time:'10:00-15:30'
+      qualification:'MBBS ,MS (ORTHO),DNB (Ortho),Diploma SICOT,Fellowship in Arthroplasty',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:20-14:40,14:40-15:00,15:00-15:20',
+      date:'Monday-Saturday'
     },
 
 
@@ -286,7 +360,9 @@ export class DoctorLayoutComponent {
       speciality: 'ENT SPECIALITY',
       areasOfExpertise: ['Micro ear surgery for hearing restoration', 'Septoplasty', 'Endoscopic sinus surgery', 'management of vocal cord and voice disorders', 'Diagnosis and treatment of Head and neck tumors', 'tracheotomy and airway surgeries', 'polytrauma management', 'snoring evaluation and management of obstructive sleep apnea', 'Tonsillectomy', 'Adenoidectomy', 'myringotomy'],
       expertise: 'Years of Experience: 7',
-      time:'ARA'
+      qualification:'MBBS, DLO, DNB(ENT)',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+      date:'Monday-Saturday'
     },
 
 
@@ -298,7 +374,9 @@ export class DoctorLayoutComponent {
       about: 'Worked as Assistant prof. in the department of urology at St. John’s Medical Collage hospital, a premier high volume territory care hospital in Bangalore.',
       areasOfExpertise: ['Urology', 'EndoUrology,Kidney Transplantation', 'Reconstructive urology', 'Laproscopic urology Uro Oncology', 'Stone Disease'],
       expertise: 'Years of Experience: 14',
-      time:'9:30-16:00'
+      qualification:'MBBS, MS(GEN. SURGERY), MCH(UROLOGY)',
+      time:'9:30-9:50,9:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10',
+      date:'Monday-Saturday'
     },
 
 
@@ -306,11 +384,13 @@ export class DoctorLayoutComponent {
       name: 'Dr. Jaidev S',
       image: 'assets/doctor-38.png',
       desgination: 'Neuro Science',
-      speciality: 'NEURO SCIENCES',
+      speciality: 'NEUROSCIENCES',
       about: 'Neurosurgeon with special skills in the management of emergency and elective cases with MCh degree from AIIMS, Bhubaneshwar and MS General surgery degree from King George Medical University, Lucknow.',
       areasOfExpertise: ['Spine surgery', 'Brain surgery', 'Treatment of Neck pain', 'Back pain', 'Stroke', 'Neuropathy'],
       expertise: 'Years of Experience: 4',
-      time:'17:00-18:00'
+      time:'17:00-17:15,17:15-17:30,17:30-17:45,17:45-18:00',
+      qualification:'MBBS, MS , MCH(NEURO SURGERY)',
+      date:'Monday-Saturday'
     },
 
     {
@@ -321,7 +401,9 @@ export class DoctorLayoutComponent {
       about: 'Neurosurgeon with special skills in the management of emergency and elective cases with MCh degree from AIIMS, Bhubaneshwar and MS General surgery degree from King George Medical University, Lucknow.',
       areasOfExpertise: [' '],
       expertise: 'Years of Experience: 5',
-      time:'9:30-11:00'
+      qualification:'MBBS, MS, FMAS, FIAGES',
+      time:'9:30-9:50,9:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr.Sameer M Halageri',
@@ -336,7 +418,9 @@ export class DoctorLayoutComponent {
         'Diabetic foot and complex wound management',
         'Cosmetic surgery', 'Burns and trauma reconstruction'],
         expertise: 'Years of Experience: 7',
-        time:'Appointment-Basis'
+        qualification:'MBBS ,MS,MCH',
+        time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+        date:'Monday-Saturday'
     },
     {
       name: 'Dr. Valli Kiran',
@@ -346,7 +430,9 @@ export class DoctorLayoutComponent {
       about: 'Dr.Valli Kiran M is graduate from MYSORE UNIVERSITY in 2001.He did DIPLOMA IN PSYCHIATRY in 20005',
       areasOfExpertise: ['Entire Spectrum of Psychological Disorders'],
       expertise: 'Years of Experience: 20',
-      time:'16:30-18:00'
+      qualification:'MBBS, DPM',
+      time:'16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:10',
+      date:'Tuesday,Thursday,Saturday'
     },
     {
       name: 'Dr.Vishnuvardhan V',
@@ -356,7 +442,9 @@ export class DoctorLayoutComponent {
       about: '',
       areasOfExpertise: [''],
       expertise: 'Years of Experience: 6',
-      time:'Oncall'
+      qualification:'BDS,MDS (ORTHODONTICS AND DENTOFACIAL ORTHOPAEDICS)',
+      time:'15:00-15:20,15:20-15:40,15:40-16:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Prakruthi',
@@ -366,7 +454,9 @@ export class DoctorLayoutComponent {
       about: 'Dr.Prakruthi is graduated from JJMMC,DAVANGERE in 2004.She completed post graduation in DGO(2018).He did training in Laproscopy from ALTIUS HOSPITAL BLORE in 2022.He also completed DNB from BANGALORE BAPTIST HOSPITAL.',
       areasOfExpertise: ['Labour ward management', 'Development of protocols', 'High risk pregnancy management', 'Fetal Scans'],
       expertise: 'Years of Experience: 16',
-      time:'10:00-14:00'
+      qualification:'MBBS, DGO, DNB, FELLOWSHIP IN MATERNAL FETAL MEDICINE',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Ravi T',
@@ -376,7 +466,9 @@ export class DoctorLayoutComponent {
       about: 'Dr. Ravi Thippeswamy Senior Medical Oncologist With 20 years of invaluable experience, Dr. Ravi Thippeswamy is a distinguished Medical Oncologist in Bangalore. He is committed to delivering comprehensive care to his patients and maintains affiliations with several hospitals throughout the city. He completed his MBBS from Jagadguru Jayadeva Murugarajendra Medical College (JJMMC) in 2004, his DNB in Medical Oncology from the National Board of Examination in 2012 and his MD in Pediatrics from the University of Mumbai in 2008.As a member of the Karnataka Medical Council, Dr. Thippeswamy specializes in various aspects of Medical Oncology, including Hemato Oncology and Pediatric Oncology. With 11 years of specialization, he brings a wealth of knowledge and expertise to his practice, ensuring the best possible outcomes for his patients.',
       areasOfExpertise: ['All adult cancers with special interest in precision oncolgy ,immuno-oncology'],
       expertise: 'Years of Experience: 14',
-      time:'9:00-11:00'
+      qualification:'MBBS, MD, DM',
+      time:'9:00-9:20,9:20-9:40,9:40-10:00,10:20-10:40,10:40-11:00',
+      date:'Friday'
     },
 
     {
@@ -387,37 +479,45 @@ export class DoctorLayoutComponent {
       speciality: 'LIFE STYLE MEDICINE',
       areasOfExpertise: [''],
       expertise: 'Years of Experience: 15',
-      time:'10:00-16:00'
+      qualification:'BNYS',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Vishwanth Sanagoudar',
       image: 'assets/doctor-29.png',
       desgination: 'PAEDIATRIC & PICU',
       about: 'Has experience of about 8 years. Experienced in treating general paediatric patients & paediatric ICU patients. Sub specialised in Paediatric ICU care.',
-      speciality: 'PAEDIATRICS & NEONATOLOGY',
+      speciality: 'PAEDIATRICS AND NEONATOLOGY',
       areasOfExpertise: ['GENERAL PAEDIATRICS', 'NEWBORN CARE', 'PAEDIATRIC EMERGENCIES & PAEDIATRIC CRITICAL CARE'],
       expertise: 'Years of Experience: 8',
-      time:'10:00-19:00'
+      qualification:'MBBS,MD,FELLOWSHIP IN PAEDIATRIC INTENSIVE CARE (IGICH)',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00,17:00-17:20,17:20-17:40,17:40-18:00,18:00-18:20,18:20-18:40,18:40-19:00,19:00-19:20,19:20-19:40,19:40-20:00',
+      date:'Monday-Saturday'
     },
     {
-      name: 'Dr.Niveditha C',
+      name: 'Dr. Niveditha C',
       image: 'assets/doctor-30.png',
       desgination: 'PAEDIATRICS & NEONATOLOGY',
       about: 'Consultation Paediatrician and Neonatologist with expertise in management of Paediatric and Neonates including extreme preterm, birth asphyxia, advanced ventilation and critical interventional procedures.',
-      speciality: 'PAEDIATRICS & NEONATOLOGY',
+      speciality: 'PAEDIATRICS AND NEONATOLOGY',
       areasOfExpertise: ['General paediatrics', 'Critical Newborn and Paediatric care', 'Paediatric Nutrition'],
       expertise: 'Years of Experience: 7',
-      time:'10:00-19:00'
+      qualification:'MBBS ,MD ,Fellowship in Neonatology (NNF)',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00,17:00-17:20,17:20-17:40,17:40-18:00,18:00-18:20,18:20-18:40,18:40-19:00,19:00-19:20,19:20-19:40,19:40-20:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Nikhil Hegde',
       image: 'assets/doctor-22.png',
-      desgination: 'ORTHOPAEDICS',
+      desgination: 'ORTHOPEDICS',
       about: 'Specialised training in sports medicine, Arthroplasty and trauma',
-      speciality: 'ORTHOPAEDICS',
+      speciality: 'ORTHOPEDICS',
       areasOfExpertise: ['Sports Medicine', 'Artgroplasty', 'Arthroscopy & Trauma'],
       expertise: 'Years of Experience: 6',
-      time:'10:00-15:30'
+      qualification:'MBBS, MS Orthopaedicss',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Neelam',
@@ -427,7 +527,9 @@ export class DoctorLayoutComponent {
       speciality: 'OBSTETRICS & GYNECOLOGY',
       areasOfExpertise: ['High Risk Pregnancy', 'Adolescent care', 'Integrated medicine Protocols', 'Role of yoga in Women s Health care'],
       expertise: 'Years of Experience: 9',
-      time:'ARA'
+      qualification:'MBBS, DNB, MRCOG(U.K)',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Ashwitha Gundmi',
@@ -437,7 +539,9 @@ export class DoctorLayoutComponent {
       about: 'Dr.Ashwitha Gundmi is graduated on 2012.She also did her post graduation on 2017.',
       areasOfExpertise: ['High Risk Obstetrics', 'Protocol based management', 'Gynaecological Surgeries', '- MIS', 'Fertility Related issues', 'Family planning & Contraception'],
       expertise: 'Years of Experience: 7',
-      time:'ARA'
+      qualification:'MBBS, MS, MRCOG(London)',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Vinutha Udupa',
@@ -447,7 +551,9 @@ export class DoctorLayoutComponent {
       about: 'Dr.Vinitha Udupa is graduate RAJIV GANDHI UNIVERSITY in 2012.Her post graduation is finished from Jawaharlal Insitute of Postgraduated Medical Education and Reasearch in 2016.',
       areasOfExpertise: ['High Risk Pregnancy', ' Medical Disorders of pregnancy', 'Preconception Counselling', 'Prenatal Aneuploidy Screening'],
       expertise: 'Years of Experience: 7',
-      time:'11:30-1:00'
+      qualification:'MBBS, MS, DNB, FNB, MRCOG(UK)',
+      time:'11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10',
+      date:'Tuesday'
     },
     {
       name: 'Dr. Anusha Mutalik Desai',
@@ -457,7 +563,9 @@ export class DoctorLayoutComponent {
       about: 'Worked as consultant Neurosurgeon in Brains Super specialty hospital Bengaluru (Jan 2023- June 2023)',
       areasOfExpertise: ['See all patients in Homoeopathy we will not concentrate on 1 aspect'],
       expertise: 'Years of Experience: 7',
-      time:'9:00-17:00'
+      qualification:'BHMS, MD(HOM)',
+      time:'9:00-9:20,9:20-9:40,9:40-10:00,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Ajay N',
@@ -466,18 +574,32 @@ export class DoctorLayoutComponent {
       speciality: 'GASTRO SCIENCES',
       about: 'Dr.Ajay N is graduate from B.R.AMBEDKAR MEDICAL COLLEGE in 2018.He also completed post graduation (MS in general surgery) from Adichunchanagiri institute of Medical Sciences, Mandya in 2023.',
       areasOfExpertise: [''],
+      qualification:'MBBS, MS.General Surgery',
       expertise: 'Years of Experience: 2',
-      time:'9:30-17:00'
+      time:'9:30-9:40,9:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Varsha P',
       image: 'assets/doctor-43.png',
       desgination: 'LIFE STYLE MEDICINE',
       speciality: 'LIFE STYLE MEDICINE',
-      about: ' ',
-      areasOfExpertise: [''],
+      qualification:'BNYS',
+      about: 'Dr. Varsha, a seasoned expert in holistic health and wellness. With qualifications including BAMS, MD, and YIC, she is not only dedicated to her practice but also passionate about sharing her knowledge, as evidenced by her three years of experience. Her specialization includes preventive care, lifestyle consultation, therapeutic yoga, and the management of lifestyle disorders such as Diabetes, hypertension, PCOD, Obesity. Her expertise extends to diet counseling based on Ayurveda principles, yoga for pregnant women making her a valuable resource in promoting healthy living. ',
+      areasOfExpertise: ['Hypothyroidism' ,
+      'DM',
+      'HTN',
+      'Gastritis' ,
+      'Haemorrhoids',
+      'Migraine',
+'      Anxiety disorders' ,
+'      Depression ',
+      'Asthma',
+      'PCOD',
+     ' Rheumatoid arthritis'],
       expertise: 'Years of Experience: 3',
-      time:'9:30-17:00'
+      time:'9:30-9:40,9:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      date:'Monday-Saturday'
     },
 
     {
@@ -488,17 +610,21 @@ export class DoctorLayoutComponent {
       about: 'Dr.Rohit K R is graduate from P N Panicker Souhruda Ayurveda Medical College,Kerala.He has one year experience at HOUSE SURGEON.',
       areasOfExpertise: [''],
       expertise: 'Years of Experience: 3',
-      time:'9:30-17:00'
+      qualification:'BAMS',
+      time:'9:30-9:40,9:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Alekhya R',
       image: 'assets/doctor-40.png',
       desgination: 'AYURVEDA',
       speciality: 'AYURVEDA',
+      qualification:'BAMS',
       about: 'Dr.Alekhya R is graduate from INDIAN INSITUTE OF AYURVEDIC MEDICINE AND RESEARCH in 2021',
       areasOfExpertise: ['Gastric related issues','Sinusitis, Allergic rhinitis','Vatavyadi'],
       expertise: 'Years of Experience: 2',
-      time:'9:30-17:00'
+      time:'9:30-9:40,9:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Narendranath A',
@@ -508,7 +634,9 @@ export class DoctorLayoutComponent {
       about: 'Dr.Narendranath A is graduate from RAJAH MUTHIAH MEDICAL COLLEGE,TAMIL NADU in 2010.HEe completed his post graduation MS (ENT) from vijayanagar insititute of medical sciences,bellary in 2015.',
       areasOfExpertise: [''],
       expertise: 'Years of Experience: 5',
-      time:'ARA'
+      qualification:'MBBS, MS(ENT)',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Ashika Bagaria',
@@ -518,7 +646,9 @@ export class DoctorLayoutComponent {
       about: 'Dr.Ashika Bagaria is graduate from Rajiv Gandhi University',
       areasOfExpertise: [''],
       expertise: 'Years of Experience: 2',
-      time:'ARA'
+      qualification:'MBBS, MS(ENT)',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Harshitha. R',
@@ -528,7 +658,9 @@ export class DoctorLayoutComponent {
       speciality: 'GENERAL MEDICINE',
       areasOfExpertise: ['Diabetes, dyslipidemia and other metabolic diseases','Thyroid disorders',' Hypertension','  Infectious diseases','Adult vaccination','Diabetes and life style patient education'],
       expertise: 'Years of Experience: 3',
-      time:'10:00-16:00'
+      qualification:'MBBS, MD',
+      time:'9:00-9:20,9:20-9:40,9:40-10:00,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Bhavya',
@@ -538,18 +670,22 @@ export class DoctorLayoutComponent {
       speciality: 'GENERAL MEDICINE',
       areasOfExpertise: ['Diabetes','Diabetes Reversal','Thyroid related illness','Blood related disorders','Critical illness','Hypertension','Infectious disease'],
       expertise: 'Years of Experience: ',
-      time:'10:00-16:00'
+      qualification:'MBBS, MD',
+      time:'9:00-9:20,9:20-9:40,9:40-10:00,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      date:'Monday-Saturday'
     },
 
     {
-      name: 'Dr. Shamantha',
+      name: 'Dr. Shamantha S',
       image: 'assets/doctor-50.png',
       desgination: 'LIFE STYLE MEDICINE',
       about: ' ',
       speciality: 'LIFE STYLE MEDICINE',
       areasOfExpertise: [' '],
-      expertise: 'Years of Experience: ',
-      time:'9:00-17:00'
+      qualification:'BAMS',
+      expertise: 'Years of Experience: 3',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+      date:'Monday-Saturday'
     },
     {
       name: 'Dr. Kavyashree Kulamarva',
@@ -557,9 +693,11 @@ export class DoctorLayoutComponent {
       desgination: 'Ayurvedic Psychiatry Consultant',
       about: ' ',
       speciality: 'AYURVEDA',
+      qualification:'MD,PDF',
       areasOfExpertise: [' Anxiety disorder and Depression','Child psychiatric disorders (ASD, ADHD)','Add on Ayurveda for Schizophrenia','Motor Neuron Disease','Parkinson s disease','Muscular dystrophy','Stroke rehab','Multiple Sclerosis' ,'Dementia'],
       expertise: 'Years of Experience: ',
-      time:'9:30-17:00'
+      time:'9:30-9:40,9:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      date:'Monday-Saturday'
     },
 
   ]
@@ -627,7 +765,7 @@ export class DoctorLayoutComponent {
             cname: 'PULMONOLOGY', code: 'GM-ON'
           },
           {
-            cname: 'OPHTHALMOLOGY', code: 'GM-ON'
+            cname: 'OPTHALMOLOGY', code: 'GM-ON'
           },
           {
             cname: 'DENTAL SCIENCES', code: 'GM-ON'
@@ -648,7 +786,7 @@ export class DoctorLayoutComponent {
             cname: 'ONCOLOGY', code: 'GM-ON'
           },
           {
-            cname: 'ANESTHESIOLOGY', code: 'GM-ON'
+            cname: 'ANAESTHESIOLOGY', code: 'GM-ON'
           },
           {
             cname: 'EMERGENCY MEDICINE', code: 'GM-ON'

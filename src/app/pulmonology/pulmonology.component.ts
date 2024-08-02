@@ -14,11 +14,7 @@ export class PulmonologyComponent {
       image:'Pulmonology.png',
       Doctors:[
         {
-          doctor_image:'Dr. KRISHNASWAMY LAKSHMAN.png',
-          doctor_name:'Dr. KRISHNASWAMY LAKSHMAN'
-        },
-        {
-          doctor_image:'Dr. Kolla Vinod.png',
+          doctor_image:'../../assets/doctor-32.png',
           doctor_name:'Dr. Kolla Vinod'
         }
       ]}];

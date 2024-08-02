@@ -14,12 +14,8 @@ export class PsychiatryComponent {
       image:'Psychiatry.png',
       Doctors:[
         {
-          doctor_image:'Dr. H N Shyla.png',
-          doctor_name:'Dr. H N Shyla'
+          doctor_image:'../../assets/doctor-27.png',
+          doctor_name:'Dr. Valli Kiran'
         },
-        {
-          doctor_image:'Dr.Geethanjali K G.png',
-          doctor_name:'Dr.Geethanjali K G<'
-        }
       ]}];
 }

@@ -2,6 +2,7 @@ import { Component , OnInit} from '@angular/core';
 import { Router, NavigationEnd, Event } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { AnalyticsService } from './analytics.service';
+import { MessageService } from 'primeng/api';
 
 declare let gtag: Function;
 @Component({
@@ -10,7 +11,7 @@ declare let gtag: Function;
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit{
-  constructor(private router: Router, private analyticsService: AnalyticsService) { } 
+  constructor(private router: Router, private analyticsService: AnalyticsService, private messageService: MessageService) { } 
   title = 'rashtrotthana_hospital';
   ngOnInit() { 
     // this.router.events.subscribe((event) => { 

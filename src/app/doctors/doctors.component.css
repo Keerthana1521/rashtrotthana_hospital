@@ -82,6 +82,13 @@ align-items: center;
 border-radius: 6px;
 border: 2px solid #FBCA51;
 }
+.yellow-button:hover{
+    background: #FBCA51;
+    .content{
+        color: #FFFFFF;
+    }
+}
+
 .content{
     color: #FBCA51;
 font-family: Inter;

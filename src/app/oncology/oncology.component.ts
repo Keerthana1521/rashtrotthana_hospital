@@ -14,12 +14,16 @@ export class OncologyComponent {
       image:'Oncology.png',
       Doctors:[
         {
-          doctor_image:'Dr. H N Shyla.png',
-          doctor_name:'Dr. H N Shyla'
+          doctor_image:'../../assets/doctor-9.png',
+          doctor_name:'Dr. Shekar Patil'
         },
         {
-          doctor_image:'Dr.Geethanjali K G.png',
-          doctor_name:'Dr.Geethanjali K G<'
+          doctor_image:'../../assets/doctor-4.png',
+          doctor_name:'Dr. Rajeev Vijayakumar'
+        },
+        {
+          doctor_image:'../../assets/doctor-23.png',
+          doctor_name:'Dr. Ravi T'
         }
       ]}];
 }

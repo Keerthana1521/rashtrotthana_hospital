@@ -1,6 +1,7 @@
 import { Component,OnInit,Input,EventEmitter,Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { MessageService } from 'primeng/api';
 
 // import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
@@ -30,7 +31,7 @@ export class DoctorAppointmentComponent implements OnInit {
   date: Date[] | undefined;
 
   selectedCity: City | undefined;
-  constructor(private fb: FormBuilder){}
+  constructor(private fb: FormBuilder, private messageService: MessageService){}
   ngOnInit() {
       this.cities = [
           { name: 'General Medicine'},
@@ -48,19 +49,61 @@ export class DoctorAppointmentComponent implements OnInit {
         date_appointment: ['', Validators.required],
       });
       if (this.selectedDoctor && this.selectedDoctor.time) {
-        this.availableTimes = [{ name: this.selectedDoctor.time }];
+        this.availableTimes = this.selectedDoctor.time.split(',').map((time: string) => ({ name: time }));
       }
       this.setDateConstraints();
+      // this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Form Submitted Successfully ' });
 }
 setDateConstraints() {
-  if (this.selectedDoctor.date === 'Monday-Friday') {
-    this.disabledDays = [0, 6]; // Disable Sunday (0) and Saturday (6)
+  if (this.selectedDoctor.date === 'Monday-Saturday') {
+    this.disabledDays = [0]; // Disable Sunday (0) and Saturday (6)
   } else if (this.selectedDoctor.date === 'Friday') {
     this.disabledDays = [0, 1, 2, 3, 4, 6]; // Disable all days except Friday (5)
-  } else {
+  
+} else if (this.selectedDoctor.date === 'Tuesday') {
+  this.disabledDays = [0, 1, 5, 3, 4, 6]; // Disable all days except Friday (5)
+} 
+else if (this.selectedDoctor.date === 'Wednesday') {
+  this.disabledDays = [0, 1, 2, 4, 5,6]; // Disable all days except Friday (5)
+} 
+else if (this.selectedDoctor.date === 'Tuesday and Friday') {
+  this.disabledDays = [0,1,3,4,6]; // Disable all days except Friday (5)
+}
+else if (this.selectedDoctor.date === 'Tuesday and Thursday') {
+  this.disabledDays = [0,1,3,5,6]; // Disable all days except Friday (5)
+}
+else if (this.selectedDoctor.date === 'Monday and Wednesday') {
+  this.disabledDays = [0,2,4,5,6]; // Disable all days except Friday (5)
+}
+else if (this.selectedDoctor.date === 'Tuesday,Thursday and Saturday') {
+  this.disabledDays = [0,1,3,4]; // Disable all days except Friday (5)
+} else {
     this.disabledDays = [];
   }
 }
+// setDateConstraints() {
+//   const availableDaysMap = {
+//     'Sunday': 0,
+//     'Monday': 1,
+//     'Tuesday': 2,
+//     'Wednesday': 3,
+//     'Thursday': 4,
+//     'Friday': 5,
+//     'Saturday': 6
+//   };
+
+//   const availableDays = this.selectedDoctor.date.split(',').map((day:string) => day.trim());
+//   const disabledDays = [];
+
+//   for (const [day, index] of Object.entries(availableDaysMap)) {
+//     if (!availableDays.includes(day)) {
+//       disabledDays.push(index);
+//     }
+//   }
+
+//   this.disabledDays = disabledDays;
+// }
+
 formatDate(date: Date): string {
   const day = date.getDate().toString().padStart(2, '0');
   const month = (date.getMonth() + 1).toString().padStart(2, '0'); // Months are zero-based
@@ -83,16 +126,17 @@ onSubmit(): void {
     };
 console.log(emailParams);
     // Send the email using EmailJS
-    emailjs.send('service_31j2bps', 'template_3y6n6nf', emailParams, 'FA6BtQ1y1R6FlGMcz')
+    emailjs.send('sservice_ft48q3q', 'template_y0gvfsq', emailParams, '5siXgoaMR-a7DGzR9')
       .then((response: EmailJSResponseStatus) => {
         console.log('SUCCESS!', response.status, response.text);
-        alert('Appointment request sent successfully.');
+        this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Form Submitted Successfully ' });
+        this.contactForm.reset();
+        this.close.emit();
       }, (error) => {
         console.log('FAILED...', error);
-        alert('Failed to send appointment request. Please try again later.');
+        // alert('Failed to send appointment request. Please try again later.');
+        this.messageService.add({ severity: 'danger', summary: 'Error', detail: 'Error ' });
       });
-
-    this.close.emit();
   }
   }
 

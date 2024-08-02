@@ -12,6 +12,9 @@
             <div class="doctor-name">
                 {{ selectedDoctor.name }}
             </div>
+            <div class="doctor-qualification">
+              {{ selectedDoctor.qualification }}
+          </div>
             <div class="doctor-designation">
                 {{ selectedDoctor.desgination }}
             </div>
@@ -110,12 +113,13 @@
             </div>
 
             <div style="padding-top: 3rem">
-              <button type="submit" class="appoint-button" >
+              <button type="submit" class="appoint-button" [disabled]="contactForm.invalid" >
                 Make an Appointment <img src="../../assets/contact-arrow.png" />
               </button>
             </div>
           </div>
-          <p-toast />
+          
         </form>
       </div>
 </div>
+<p-toast position="top-right"></p-toast>

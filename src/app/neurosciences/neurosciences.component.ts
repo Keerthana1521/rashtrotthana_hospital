@@ -14,12 +14,8 @@ export class NeurosciencesComponent {
       image:'Neurosciences.png',
       Doctors:[
         {
-          doctor_image:'Dr. H N Shyla.png',
-          doctor_name:'Dr. H N Shyla'
+          doctor_image:'../../assets/doctor-38.png',
+          doctor_name:'Dr. Jaidev S'
         },
-        {
-          doctor_image:'Dr.Geethanjali K G.png',
-          doctor_name:'Dr.Geethanjali K G<'
-        }
       ]}];
 }

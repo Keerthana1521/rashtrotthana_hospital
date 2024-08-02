@@ -14,12 +14,8 @@ export class GastrosciencesComponent {
       image:'Gastrosciences.png',
       Doctors:[
         {
-          doctor_image:'Dr. KRISHNASWAMY LAKSHMAN.png',
-          doctor_name:'Dr. KRISHNASWAMY LAKSHMAN'
-        },
-        {
-          doctor_image:'Dr. Atmaram D C.png',
-          doctor_name:'Dr. Atmaram D C'
+          doctor_image:'../../assets/doctor-28.png',
+          doctor_name:'Dr. Ajay N'
         }
       ]}];
 }

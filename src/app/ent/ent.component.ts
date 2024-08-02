@@ -14,12 +14,15 @@ export class ENTComponent {
       image:'ENT.png',
       Doctors:[
         {
-          doctor_image:'Dr. H N Shyla.png',
-          doctor_name:'Dr. H N Shyla'
+          doctor_image:'../../assets/doctor-44.png',
+          doctor_name:'Dr. Manasa N A'
         },
         {
-          doctor_image:'Dr.Geethanjali K G.png',
-          doctor_name:'Dr.Geethanjali K G<'
-        }
-      ]}];
+          doctor_image:'../../assets/doctor-35.png',
+          doctor_name:'Dr. Narendranath A'
+        },
+        {
+          doctor_image:'../../assets/doctor-34.png',
+          doctor_name:'Dr. Ashika Bagaria'
+        }      ]}];
 }

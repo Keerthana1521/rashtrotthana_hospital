@@ -14,12 +14,8 @@ export class PaediatricsComponent {
       image:'Paediatrics & Neonatology.jfif',
       Doctors:[
         {
-          doctor_image:'Dr. KRISHNASWAMY LAKSHMAN.png',
-          doctor_name:'Dr. KRISHNASWAMY LAKSHMAN'
-        },
-        {
-          doctor_image:'Dr. Atmaram D C.png',
-          doctor_name:'Dr. Atmaram D C'
+          doctor_image:'../../assets/doctor-11.png',
+          doctor_name:'Dr. Savinay S Kanchibail'
         }
       ]}];
 }

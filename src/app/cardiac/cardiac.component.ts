@@ -14,12 +14,8 @@ export class CardiacComponent {
       image:'Cardiac Sciences.png',
       Doctors:[
         {
-          doctor_image:'Dr. KRISHNASWAMY LAKSHMAN.png',
-          doctor_name:'Dr. KRISHNASWAMY LAKSHMAN'
+          doctor_image:'../../assets/doctor-37.png',
+          doctor_name:'DR. Suhas Raj S'
         },
-        {
-          doctor_image:'Dr. Atmaram D C.png',
-          doctor_name:'Dr. Atmaram D C'
-        }
       ]}];
 }

@@ -12,7 +12,7 @@ export class ModernMedicineComponent {
     {
       name: 'card',
       image: '../../assets/modern-1.png',
-      title: 'general medicine',
+      title: 'Internal medicine',
       button_text: 'Read More',
       route: 'general-medicine'
     },

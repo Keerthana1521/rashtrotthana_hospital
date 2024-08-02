@@ -13,7 +13,9 @@
     top: 22px;
     left: 4px;
 }
-
+.toast{
+    margin-top: 20vh;
+}
 .content {
     width: 400px;
     color: rgba(29, 29, 27, 0.80);
@@ -122,7 +124,7 @@ label,
     width: 100%;
     padding-top: 3rem;
     position: relative;
-    right: 4rem;
+    /* right: 4rem; */
 
 }
 
@@ -201,7 +203,10 @@ label,
     margin-top: 18vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+  backdrop-filter: blur(5px);
 }
 .appointment-time-date{
     display: flex;
@@ -243,8 +248,19 @@ font-size: 36px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-text-align: center
+text-align: center;
+text-shadow: 2px 2px 6px #fff;
 }
+.doctor-qualification{
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 1rem;
+  }
 @media only screen and (max-width:1030px){
     .contact-details{
         flex-direction: column;
