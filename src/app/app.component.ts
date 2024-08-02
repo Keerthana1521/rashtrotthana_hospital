@@ -40,7 +40,7 @@ export class AppComponent implements OnInit{
     this.meta.updateTag({ name: 'description', content: 'Rashtrotthana Hospital provides exceptional healthcare services. Visit us for quality medical treatment.' });
     this.meta.updateTag({ property: 'og:title', content: 'Rashtrotthana Hospital' });
     this.meta.updateTag({ property: 'og:description', content: 'Rashtrotthana Hospital provides exceptional healthcare services. Visit us for quality medical treatment.' });
-    this.meta.updateTag({ property: 'og:image', content: 'https://www.rashtrotthanahospital.com/logo.png' });
+    this.meta.updateTag({ property: 'og:image', content: 'assets/logo.png' });
     this.meta.updateTag({ property: 'og:url', content: 'https://www.rashtrotthanahospital.com/' });
   }
 } 
