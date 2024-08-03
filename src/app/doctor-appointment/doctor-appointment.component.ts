@@ -126,7 +126,7 @@ onSubmit(): void {
     };
 console.log(emailParams);
     // Send the email using EmailJS
-    emailjs.send('sservice_ft48q3q', 'template_y0gvfsq', emailParams, '5siXgoaMR-a7DGzR9')
+    emailjs.send('service_ft48q3q', 'template_y0gvfsq', emailParams, '5siXgoaMR-a7DGzR9')
       .then((response: EmailJSResponseStatus) => {
         console.log('SUCCESS!', response.status, response.text);
         this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Form Submitted Successfully ' });
