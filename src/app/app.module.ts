@@ -92,6 +92,8 @@ import { AyurvedaCarouselComponent } from './ayurveda-carousel/ayurveda-carousel
 import { AppointFormComponent } from './appoint-form/appoint-form.component';
 import { ReadMoreBtnComponent } from './read-more-btn/read-more-btn.component';
 import { DoctorAppointmentComponent } from './doctor-appointment/doctor-appointment.component';
+import { BlogComponent } from './blog/blog.component';
+import { BlogPostComponent } from './blog-post/blog-post.component';
 // import { HerniaComponent } from './hernia/hernia.component';
 // import { ProctologyComponent } from './proctology/proctology.component';
 
@@ -164,6 +166,8 @@ import { DoctorAppointmentComponent } from './doctor-appointment/doctor-appointm
     AppointFormComponent,
     ReadMoreBtnComponent,
     DoctorAppointmentComponent,
+    BlogComponent,
+    BlogPostComponent,
     // HerniaComponent,
     // ProctologyComponent
   ],

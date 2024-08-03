@@ -1,0 +1,39 @@
+<!-- <div *ngIf="posts.length > 0; else noPosts">
+    <div *ngFor="let post of posts">
+      <h2>{{ post.title.rendered }}</h2>
+      <div [innerHTML]="post.excerpt.rendered"></div>
+      <a [routerLink]="['/blog', post.id]">Read more</a>
+    </div>
+  </div>
+  <ng-template #noPosts>
+    <p>No blog posts available.</p>
+  </ng-template> -->
+
+
+  <div class="blog-container">
+    <h1 class="blog-title">The Blog</h1>
+  
+    <div *ngIf="featuredPost" class="featured-post">
+      <img class="featured-image" [src]="featuredPost.featured_image_url" alt="Featured Post">
+      <div class="featured-content">
+        <p class="post-date">{{ featuredPost.date | date:'mediumDate' }}</p>
+        <h2 class="post-title">{{ featuredPost.title.rendered }}</h2>
+        <p class="post-excerpt" [innerHTML]="featuredPost.excerpt.rendered"></p>
+        <a [routerLink]="['/blog', featuredPost.id]" class="read-more-button">Read More</a>
+      </div>
+    </div>
+  
+    <div class="post-grid">
+      <div class="post-card" *ngFor="let post of posts">
+        <img class="post-image" [src]="post.featured_image_url" alt="{{ post.title.rendered }}">
+        <div class="post-content">
+          <p class="post-date">{{ post.date | date:'mediumDate' }}</p>
+          <h3 class="post-title-1">{{ post.title.rendered }}</h3>
+          <p class="post-excerpt-1" [innerHTML]="post.excerpt.rendered"></p>
+          <a [routerLink]="['/blog', post.id]" class="read-more-button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

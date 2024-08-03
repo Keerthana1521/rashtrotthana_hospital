@@ -45,7 +45,7 @@ export class DoctorLayoutComponent {
   // ];
   doctors = [
     {
-      name: 'Dr.(Col)Anand Shankar',
+      name: 'Dr. (Col)Anand Shankar',
       image: 'assets/doctor-7.png',
       desgination: 'ER HEAD, ICU, ANAESTHESIA',
       about: 'Col. Dr. Anand Shankar is an anesthesiologist and intensivist and has an overall experience of 29 years. He served the Indian armed forces for a duration of 27 years....',
@@ -311,7 +311,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr.Meena H B',
+      name: 'Dr. Meena H B',
       image: 'assets/doctor-24.png',
       desgination: 'DERMATOLOGY',
       about: 'Presently working as Assistant Professor Neurosurgery at Dayanand Sagar Medical College, Kanakpura Road.',
@@ -367,7 +367,7 @@ export class DoctorLayoutComponent {
 
 
     {
-      name: 'Dr.Madhu S N',
+      name: 'Dr. Madhu S N',
       image: 'assets/doctor-17.png',
       desgination: 'UROLOGIST & ANDROLOGIST',
       speciality: 'UROLOGY',
@@ -406,11 +406,11 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr.Sameer M Halageri',
+      name: 'Dr. Sameer M Halageri',
       image: 'assets/doctor-26.png',
       desgination: 'PLASTIC SURGERY',
       speciality: 'PLASTIC SURGERY',
-      about: 'Dr, Sameer M Halageri is graduate from JAYA JAGADURU MURUGARAJENDRA MEDICAL COLLEGE in 2009.He completed his post graduation from GOVT. MEDICAL COLLEGE,NAGPUR IN 2015.',
+      about: 'Dr. Sameer M Halageri is graduate from JAYA JAGADURU MURUGARAJENDRA MEDICAL COLLEGE in 2009.He completed his post graduation from GOVT. MEDICAL COLLEGE,NAGPUR IN 2015.',
       areasOfExpertise: ['Microvascular surgery and cancer reconstruction',
         'Hand and brachial plexus surgery',
         'Breast and lymphedema surgery',
@@ -435,7 +435,7 @@ export class DoctorLayoutComponent {
       date:'Tuesday,Thursday,Saturday'
     },
     {
-      name: 'Dr.Vishnuvardhan V',
+      name: 'Dr. Vishnuvardhan V',
       image: 'assets/doctor-36.png',
       desgination: 'ORTHO DENTIST',
       speciality: 'DENTAL SCIENCES',
@@ -476,7 +476,7 @@ export class DoctorLayoutComponent {
       image: 'assets/doctor-14.png',
       desgination: 'LIFESTYLE MEDICINE/ YOGA & NATUROPATHY',
       about: 'Her 15 years of experience includes teaching BNYS students and treating thousands of clients through yoga and Naturopathy.',
-      speciality: 'LIFE STYLE MEDICINE',
+      speciality: ['YOGA SCIENCE', 'LIFE STYLE MEDICINE'],
       areasOfExpertise: [''],
       expertise: 'Years of Experience: 15',
       qualification:'BNYS',
@@ -582,9 +582,9 @@ export class DoctorLayoutComponent {
     {
       name: 'Dr. Varsha P',
       image: 'assets/doctor-43.png',
-      desgination: 'LIFE STYLE MEDICINE',
-      speciality: 'LIFE STYLE MEDICINE',
-      qualification:'BNYS',
+      desgination: 'YOGA SCIENCE',
+      speciality: 'YOGA SCIENCE',
+      qualification:'BAMS, MD, YIC',
       about: 'Dr. Varsha, a seasoned expert in holistic health and wellness. With qualifications including BAMS, MD, and YIC, she is not only dedicated to her practice but also passionate about sharing her knowledge, as evidenced by her three years of experience. Her specialization includes preventive care, lifestyle consultation, therapeutic yoga, and the management of lifestyle disorders such as Diabetes, hypertension, PCOD, Obesity. Her expertise extends to diet counseling based on Ayurveda principles, yoga for pregnant women making her a valuable resource in promoting healthy living. ',
       areasOfExpertise: ['Hypothyroidism' ,
       'DM',
@@ -798,6 +798,7 @@ export class DoctorLayoutComponent {
       { cname: 'LIFE STYLE MEDICINE', code: 'YG' },
       { cname: 'AYURVEDA', code: 'AY' },
       { cname: 'HOMEOPATHY', code: 'HO' },
+      { cname: 'YOGA SCIENCE', code: 'HO' },
 
     ];
 
@@ -886,10 +887,18 @@ isPramodChinder(): boolean {
   private normalizeName(name: string): string {
     return name.toLowerCase().replace(/^dr\.\s*/, '');
   }
+
   filterDoctors(): void {
-    const filteredBySpeciality = this.selectedSpeciality
-      ? this.doctors.filter(doctor => doctor.speciality === this.selectedSpeciality)
+    // const filteredBySpeciality = this.selectedSpeciality
+    //   ? this.doctors.filter(doctor => doctor.speciality === this.selectedSpeciality)
+    //   : this.doctors;
+    const selectedSpeciality = this.selectedSpeciality;
+    console.log(selectedSpeciality)
+    const filteredBySpeciality = selectedSpeciality
+      ? this.doctors.filter(doctor =>
+          doctor.speciality.includes(selectedSpeciality))
       : this.doctors;
+  
 
     const normalizedValue = this.nameFilter.toLowerCase();
     this.filteredDoctors = filteredBySpeciality.filter(doctor =>

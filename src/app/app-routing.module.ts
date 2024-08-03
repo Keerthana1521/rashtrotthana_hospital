@@ -49,6 +49,8 @@ import { HomeopathyComponent } from './homeopathy/homeopathy.component';
 import { NaturopathyComponent } from './naturopathy/naturopathy.component';
 import { HerniaComponent } from './hernia/hernia.component';
 import { ProctologyComponent } from './proctology/proctology.component';
+import { BlogComponent } from './blog/blog.component';
+import { BlogPostComponent } from './blog-post/blog-post.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -100,9 +102,10 @@ const routes: Routes = [
   {path:'homeopathy',component:HomeopathyComponent},
   {path:'naturopathy',component:NaturopathyComponent},
   {path:'hernia',component:HerniaComponent},
-  {path:'proctology',component:ProctologyComponent}
+  {path:'proctology',component:ProctologyComponent},
   
-  
+  { path: 'blog', component: BlogComponent },
+  { path: 'blog/:id', component: BlogPostComponent }
 
 ]; 
 
