@@ -15,7 +15,7 @@
 }
 
 .content {
-    width: 400px;
+    width: 100%;
     color: rgba(29, 29, 27, 0.80);
     font-size: 20px;
     font-family: Poppins;
@@ -178,7 +178,20 @@ label,
 
 .map-iframe {
     width: 500px;
-    height: 450px;
+    height: 350px;
+}
+.parking-map-container{
+    width: 100%;
+    height: 100%;
+}
+.parking-map{
+    width: 100%;
+    height: 350px;
+    padding:0 6rem;
+    padding-bottom: 4rem;
+}
+.parking{
+    padding-bottom: 3rem;
 }
 .contact-form-elsight{
     width: 100%;

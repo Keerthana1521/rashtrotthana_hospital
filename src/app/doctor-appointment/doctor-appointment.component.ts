@@ -77,6 +77,9 @@ else if (this.selectedDoctor.date === 'Monday and Wednesday') {
 }
 else if (this.selectedDoctor.date === 'Tuesday,Thursday and Saturday') {
   this.disabledDays = [0,1,3,4]; // Disable all days except Friday (5)
+}
+else if (this.selectedDoctor.date === 'Monday,Wednesday and Friday') {
+  this.disabledDays = [0,2,4,6]; // Disable all days except Friday (5)
 } else {
     this.disabledDays = [];
   }
@@ -126,7 +129,7 @@ onSubmit(): void {
     };
 console.log(emailParams);
     // Send the email using EmailJS
-    emailjs.send('service_ft48q3q', 'template_y0gvfsq', emailParams, '5siXgoaMR-a7DGzR9')
+    emailjs.send('service_pzzreii', 'template_5iklj2q', emailParams, 'poMF_gJiwXDRedqcn')
       .then((response: EmailJSResponseStatus) => {
         console.log('SUCCESS!', response.status, response.text);
         this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Thank you, we have received your request and will get back to you shortly to confirm the details. ' });
