@@ -134,18 +134,18 @@ export class FacilitiesComponent implements OnInit{
   hoverBoxes = [
     { image: 'assets/facility-hover-1.png' },
     { image: 'assets/facility-hover-2.png' },
-    { image: 'assets/facility-hover-13.png' },
-    { image: 'assets/facility-hover-7.png' },
-    { image: 'assets/facility-hover-10.png' },
-    { image: 'assets/facility-hover-11.png' },
-    { image: 'assets/facility-hover-6.png' },
-    { image: 'assets/facility-hover-3.png' },
     { image: 'assets/facility-hover-14.png' },
-    { image: 'assets/facility-hover-12.png' },
-    { image: 'assets/facility-hover-4.png' },
-    { image: 'assets/facility-hover-5.png' },
     { image: 'assets/facility-hover-8.png' },
+    { image: 'assets/facility-hover-11.png' },
+    { image: 'assets/facility-hover-12.png' },
+    { image: 'assets/facility-hover-7.png' },
+    { image: 'assets/facility-hover-3.png' },
+    { image: 'assets/facility-hover-4.png' },
+    { image: 'assets/facility-hover-13.png' },
+    { image: 'assets/facility-hover-5.png' },
+    { image: 'assets/facility-hover-6.png' },
     { image: 'assets/facility-hover-9.png' },
+    { image: 'assets/facility-hover-10.png' },
     
   ];
   activeHoverIndex: number | null = null;

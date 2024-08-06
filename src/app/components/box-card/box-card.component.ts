@@ -14,6 +14,7 @@ export class BoxCardComponent {
 @Input() button_text: string = '';
 @Input() key:string ='';
 @Output() buttonClick = new EventEmitter<void>();
+@Input() background: string = '#008080';
 
 constructor(){
   this.screenWidth = window.innerWidth;

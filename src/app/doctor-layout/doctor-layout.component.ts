@@ -28,7 +28,7 @@ export class DoctorLayoutComponent {
   visibleDoctors: any[] = [];
   private currentIndex: number = 0;
   private readonly batchSize: number = 8;
-  increment = 8;
+  increment = 10;
   startIndex = 0;
 
   private itemsPerPage = 8; // Number of items to show per scroll

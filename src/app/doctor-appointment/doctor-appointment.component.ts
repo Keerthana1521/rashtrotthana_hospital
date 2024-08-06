@@ -129,7 +129,7 @@ console.log(emailParams);
     emailjs.send('service_ft48q3q', 'template_y0gvfsq', emailParams, '5siXgoaMR-a7DGzR9')
       .then((response: EmailJSResponseStatus) => {
         console.log('SUCCESS!', response.status, response.text);
-        this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Form Submitted Successfully ' });
+        this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Thank you, we have received your request and will get back to you shortly to confirm the details. ' });
         this.contactForm.reset();
         this.close.emit();
       }, (error) => {
