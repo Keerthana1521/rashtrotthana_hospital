@@ -113,11 +113,11 @@ export class DoctorLayoutComponent {
     //   time:''
     // },
     {
-      name: 'Dr. Pramod Cinder',
+      name: 'Dr. Pramod S Chinder',
       image: 'assets/doctor-26.png',
       desgination: 'ORTHOPEDIC ONCOSURGEON',
       about: '',
-      speciality: 'ORTHOPEDICS',
+      speciality: 'ONCOLOGY',
       areasOfExpertise: ['Limb salvage surgeries with Biological reconstruction',
         'CATS ( Computer Assisted Tumour Surgery )',
         'Use of Fresh Frozen Allograft',
@@ -701,7 +701,7 @@ export class DoctorLayoutComponent {
     },
 
   ]
-  specialDoctors = ['Dr. Pramod Cinder', 'Dr.Meena H B', 'Dr. Shashi Vadhanan', 'Dr. Ravishankar. D'];
+  specialDoctors = ['Dr. Pramod S Chinder', 'Dr.Meena H B', 'Dr. Shashi Vadhanan', 'Dr. Ravishankar. D'];
 
   constructor(private fb: FormBuilder, public dialog: MatDialog) {
     // this.subjects = [

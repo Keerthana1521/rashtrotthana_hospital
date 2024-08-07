@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BlogServiceService {
-  private baseUrl = 'https://dspaceinterior.in/wp-json/wp/v2';
+  private baseUrl = 'https://hrproindia.in/wp-json/wp/v2';
 
   constructor(private http: HttpClient) { }
 
@@ -16,6 +16,9 @@ export class BlogServiceService {
 
   getPost(id: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/posts/${id}`);
+  }
+  getCategory(id: number): Observable<any> {
+    return this.http.get(`${this.baseUrl}/categories/${id}`);
   }
   
 }

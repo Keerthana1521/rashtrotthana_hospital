@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BlogServiceService } from '../blog-service.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-blog',
@@ -8,9 +9,11 @@ import { BlogServiceService } from '../blog-service.service';
 })
 export class BlogComponent {
   posts: any[] = [];
-  featuredPost: any;
+  post: any;
+  featuredPost: any; 
+  categories: string[] = [];
 
-  constructor(private blogService: BlogServiceService) { }
+  constructor(private blogService: BlogServiceService,private route: ActivatedRoute,) { }
 
   ngOnInit(): void {
     // this.blogService.getPosts().subscribe((data: any[]) => {
@@ -22,5 +25,6 @@ export class BlogComponent {
         this.posts = data.slice(1);
       }
     });
+    
   }
 }

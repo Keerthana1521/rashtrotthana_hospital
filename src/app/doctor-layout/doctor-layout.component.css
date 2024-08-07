@@ -350,20 +350,21 @@ line-height: normal;
   justify-content: flex-end;
   width: 100%;
   position: relative;
-  bottom: 30px;
+  top: 70px;
   right: 100px;
   /* justify-content: flex-end;
   align-items: flex-end; */
 }
 @media only screen and (max-width:1390px){
   .doctor-details{
-    height: 154vh;
+    height: 187vh;
+    margin-top: 29vh;
   }
   .doctors-left{
     display: grid;
     grid-template-columns: 50% 50%;
     margin-bottom: 6rem;
-    margin-top: 0;
+    margin-top: -70px;
     border-radius: 25px;
     cursor: pointer;
     height: 154vh;
@@ -381,6 +382,7 @@ line-height: normal;
     line-height: normal;
     padding-top: 1rem;
   }
+
 }
 @media only screen and (max-width: 1030px){
   .container-doctors {
