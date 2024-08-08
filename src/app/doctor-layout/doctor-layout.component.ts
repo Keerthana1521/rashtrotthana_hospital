@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
+import { Title, Meta } from '@angular/platform-browser'; 
 import { DoctorDetailsComponent } from '../doctor-details/doctor-details.component';
 import { MessageService } from 'primeng/api';
 import { ContactFormService } from '../contact-form.service';
@@ -114,7 +115,7 @@ export class DoctorLayoutComponent {
     // },
     {
       name: 'Dr. Pramod S Chinder',
-      image: 'assets/doctor-26.png',
+      image: 'assets/doctor-53.png',
       desgination: 'ORTHOPEDIC ONCOSURGEON',
       about: '',
       speciality: 'ONCOLOGY',
@@ -484,7 +485,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Vishwanth Sanagoudar',
+      name: 'Dr. Vishwanath Sanagoudar',
       image: 'assets/doctor-29.png',
       desgination: 'PAEDIATRIC & PICU',
       about: 'Has experience of about 8 years. Experienced in treating general paediatric patients & paediatric ICU patients. Sub specialised in Paediatric ICU care.',
@@ -703,7 +704,7 @@ export class DoctorLayoutComponent {
   ]
   specialDoctors = ['Dr. Pramod S Chinder', 'Dr.Meena H B', 'Dr. Shashi Vadhanan', 'Dr. Ravishankar. D'];
 
-  constructor(private fb: FormBuilder, public dialog: MatDialog) {
+  constructor(private fb: FormBuilder, public dialog: MatDialog,private titleService: Title, private metaService: Meta) {
     // this.subjects = [
     //   {
     //     name: 'General Medicine', code: 'GM',
@@ -729,6 +730,11 @@ export class DoctorLayoutComponent {
   // }
 
   ngOnInit() {
+    this.titleService.setTitle("Doctors List | Best Doctors in Bangalore, India | surgeons - Rashtrotthana Hospital");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana hospital consists of highly experienced doctors in India who some of the top doctors in Bangalore. Our team consists of skilled surgeons and dedicated support teams.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'doctors, best doctors, top doctors in bangalore, top doctors' });
     this.subjects = [
       {
         name: 'MODERN MEDICINE',

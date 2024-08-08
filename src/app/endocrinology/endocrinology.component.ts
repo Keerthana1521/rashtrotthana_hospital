@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
+
 
 @Component({
   selector: 'app-endocrinology',
@@ -6,5 +8,18 @@ import { Component } from '@angular/core';
   styleUrl: './endocrinology.component.css'
 })
 export class EndocrinologyComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Best Endocrinology Hospital in India: Hormonal Imbalance, Endocrinology Treatment ");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana hospital is one of the best Endocrinology hospitals in India and specializes in all types of hormonal imbalance and Endocrinology treatments, making it the best Endocrinology Hospital in India. ' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'endocrinology, diabetic hospital near me, hormonal imbalance, hormones, hormonal problems, thyroid carcinoma/tumors, Hypopituitarism, Hyperthyroidism, Hypothyroidism, Turner syndrome, Type 1 and 2 diabetes, Adrenal Gland disorders, Ambiguous genitalia, Klinefelter syndrome, Thyroid cancer issues, childhood Obesity, Pituitary disorders, Parathyroid issues, Bone and mineral issues, Lipid disorders, Prader-Willi syndrome' });
+
+  }
+
+
 
 }

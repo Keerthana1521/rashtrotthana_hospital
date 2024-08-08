@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+
 import { Facility } from '../facility.model';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
+
 
 @Component({
   selector: 'app-radiology',
@@ -7,6 +10,17 @@ import { Facility } from '../facility.model';
   styleUrl: './radiology.component.css'
 })
 export class RadiologyComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("");  
+
+  this.metaService.updateTag({ name: 'description', content: '' });
+
+  this.metaService.updateTag({ name: 'keywords', content: '' });
+
+  }
   facilites:Facility[]=[
     {
       main_heading:'Radiology Services',

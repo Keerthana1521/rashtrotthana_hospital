@@ -29,7 +29,7 @@ export class FooterComponent {
     this.router.navigate(['/']);
   }
   speciality(){
-    this.router.navigate(['/specialists']);
+    this.router.navigate(['/specialities']);
   }
   facilities(){
     this.router.navigate(['/facility']);
@@ -47,7 +47,7 @@ export class FooterComponent {
     this.router.navigate(['/']);
   }
   insurance(){
-    this.router.navigate(['/insurance']);
+    this.router.navigate(['/facility/insurance']);
   }
 }
 

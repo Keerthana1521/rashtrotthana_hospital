@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
+
 
 @Component({
   selector: 'app-pulmonology',
@@ -6,6 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './pulmonology.component.css'
 })
 export class PulmonologyComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Best Pulmonology Hospital in bangalore India ");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital is the best pulmonology hospital in India with experienced pulmonologists providing lungs care and respiratory related problems.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'pulmonology hospital near me,pulmonology, pulmonologist, breathing problems, breathing difficulty, respiratory problems, bronchial asthma, bronchial atresia, bronchiectasis, bronchiolitis, lungs, breathe' });
+
+  }
   specialities=[
     {
       main_heading:'Pulmonology',

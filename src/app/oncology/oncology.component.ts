@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
+
 
 @Component({
   selector: 'app-oncology',
@@ -6,6 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './oncology.component.css'
 })
 export class OncologyComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Medical Oncology Hospital in Bangalore | Rashtrotthana Hospital");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Find the Medical Oncology Hospital in Bangalore. Book an appointment now at Rashtrotthana Hospital.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'oncology hospital near me, cancer, cancer treatment surgery, radiation therapy, chemotherapy, immunotherapy, Medical oncologists, oncology, cancer symptoms, cancer care, hope' });
+
+  }
   specialities=[
     {
       main_heading:'Oncology',

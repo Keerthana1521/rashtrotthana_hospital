@@ -1,6 +1,8 @@
-<div>
-    <img class="cover-image" src="../../assets/Twitter Cover 1.png">
-</div>
+
+<div *ngIf="!isChildRouteActive()">
+    <div>
+        <img class="cover-image" src="../../assets/Twitter Cover 1.png">
+    </div>
 <div class="specialities">
     <div class="section-1">
         <div class="card-1">
@@ -149,5 +151,8 @@
             </div>
         </div>
     </div> -->
+    <!-- <router-outlet></router-outlet> -->
   </div>
+  </div>
+  <router-outlet></router-outlet>
   

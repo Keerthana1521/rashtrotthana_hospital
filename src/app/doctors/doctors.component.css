@@ -66,6 +66,7 @@ width: 316px;
 .doc-image{
     width: 347px;
     height: 343px;
+    border-radius: 20px;
 }
 .button{
     display: flex;

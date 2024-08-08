@@ -1,5 +1,6 @@
 import { Component,OnInit, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser'; 
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,8 @@ import { Router } from '@angular/router';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {  
-  constructor(private router: Router) {}
+  constructor(private router: Router, private titleService: Title,  
+    private metaService: Meta) {}
   @ViewChild('counterSection', { static: true }) counterSection!: ElementRef;
   stopcounters: any[] = [];
   doctors: number = 0;
@@ -18,6 +20,7 @@ export class HomeComponent implements OnInit {
   selectedSpecialty: string = '';
   selectedDepartment: string = '';
   isDepartmentDisabled: boolean = true;
+
 
   
   navigateToPage() {
@@ -183,6 +186,13 @@ ngOnInit(){
     root: null, // Use the viewport as the root
     threshold: 0.5 // Trigger when 50% of the section is visible
   };
+  this.titleService.setTitle("Best Multispeciality Hospital In Bangalore | Top Hospital in Bangalore | Rashtrotthana Hospital");  
+    
+  // Set the meta description
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital is one of the best multispeciality hospital in Bangalore. We provide world-class healthcare services & treatment at a affordable cost.' });
+
+  // Optionally set other meta tags
+  this.metaService.updateTag({ name: 'keywords', content: 'Best Multispeciality Hospital In Bangalore, Top Hospital in Bangalore, Rashtrotthana Hospital' }); 
 
   const observer = new IntersectionObserver(this.startCounter.bind(this), options);
     observer.observe(this.counterSection.nativeElement);

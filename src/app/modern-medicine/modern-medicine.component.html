@@ -1,4 +1,4 @@
-
+<div *ngIf="!isChildRouteActive()">
 <div class="gm_poster">
     <h2 class="o_heading">Modern Medicine</h2>
     <P class="o_info">Leading the way with 15+ specialties in modern medicine.</P>
@@ -14,3 +14,5 @@
     </div>
     </ng-container>
 </div>
+</div>
+<router-outlet *ngIf="isChildRouteActive()"></router-outlet>

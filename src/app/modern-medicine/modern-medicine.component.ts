@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component,OnInit } from '@angular/core';
+import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { Title, Meta } from '@angular/platform-browser'; 
 
 @Component({
   selector: 'app-modern-medicine',
@@ -7,14 +9,27 @@ import { Router } from '@angular/router';
   styleUrl: './modern-medicine.component.css'
 })
 export class ModernMedicineComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private route: ActivatedRoute, private titleService: Title, private metaService: Meta) {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.checkIfChildRouteActive();
+    });
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Rashtrotthana Hospital Medical Specialities List and Departments");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Browse through the list of specialties that Rashtrotthana Hospital provide, world-class treatment options &amp; experienced doctors in Bangalore which makes it Indias top multi-specialty hospital.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: ' general medicine, internal medicine, cardiology, nephrology, urology, dermatology, gynaecology, pulmonology' });
+  }
   box =[
     {
       name: 'card',
       image: '../../assets/modern-1.png',
       title: 'Internal medicine',
       button_text: 'Read More',
-      route: 'general-medicine'
+      route: 'internal-medicine'
     },
     {
       name: 'card',
@@ -170,16 +185,24 @@ export class ModernMedicineComponent {
   ];
   activeHoverIndex: number | null = null;
 
+    
+  private childRouteActive = false;
   onMouseOver(index: number) {
     this.activeHoverIndex = index;
   }
+  isChildRouteActive(): boolean {
+    return this.childRouteActive;
+  }
 
+  private checkIfChildRouteActive() {
+    this.childRouteActive = !!this.route.firstChild;
+  }
   onMouseOut() {
     this.activeHoverIndex = null;
   }
   onButtonClick(route?: string) {
     if (route) {
-      this.router.navigate([route]);
+      this.router.navigate([`/specialities/modern-medicine/${route}`]);
     } else {
       console.error('No route provided');
     }

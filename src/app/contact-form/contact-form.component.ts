@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
 import { MessageService } from 'primeng/api';
 import { ContactFormService } from '../contact-form.service';
+import { Title, Meta } from '@angular/platform-browser'; 
 
 interface City {
   name: string;
@@ -24,7 +25,8 @@ export class ContactFormComponent implements OnInit {
   selectedCity: City | undefined;
   constructor(private fb: FormBuilder,
     private messageService: MessageService,
-    private contactFormService: ContactFormService) {}
+    private contactFormService: ContactFormService,
+    private titleService: Title, private metaService: Meta) {}
   ngOnInit() {
       this.cities = [
           { name: 'General Medicine'},
@@ -40,6 +42,11 @@ export class ContactFormComponent implements OnInit {
         subject: ['', Validators.required],
         message: ['', Validators.required],
       });
+      this.titleService.setTitle("Rashtrotthana Hospital Contact Details, Phone Number, Address, Enquiry form");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Find all information about contact details such as Address, Phone number and Location of Rashrotthana Hospital here and enquire us by filling the form for required information.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'Contact Us,Call us, Book with us, Visit us' });
 }
 onSubmit(): void {
   if (this.contactForm.valid) {

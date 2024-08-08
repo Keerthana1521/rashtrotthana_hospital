@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-general-medicine',
@@ -21,11 +22,16 @@ export class GeneralMedicineComponent {
       ]}];
       currentSpecialty = '';
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute,private titleService: Title, private metaService: Meta) {}
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
       this.currentSpecialty = params['specialty'] || '';
     });
+    this.titleService.setTitle("Internal Medicine Hospital in Bangalore | Internal Medicine Doctor    ");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital is one of the top internal medicine hospital in Bangalore, India with experienced internal medicine doctor offer best treatments.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'diabetes, internal medicine, hypertension, general medicine' });
   }
 }

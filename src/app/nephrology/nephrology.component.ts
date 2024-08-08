@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
 
 @Component({
   selector: 'app-nephrology',
@@ -6,6 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './nephrology.component.css'
 })
 export class NephrologyComponent {
+  constructor(private titleService: Title, private metaService: Meta) {}
+  ngOnInit(): void {
+    this.titleService.setTitle("Best Kidney/Nephrology Hospital in Bangalore, India | Rashtrotthana Hospitals");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital is the best kidney Hospital in Bangalore, India with highly experienced kidney specialists/nephrologists performing surgeries and treatments' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'nephrology,kidney hospital near me,kidney, kidney pain causes, kidney stones, kidney stone symptoms' });
+  }
   specialities=[
     {
       main_heading:'Nephrology',

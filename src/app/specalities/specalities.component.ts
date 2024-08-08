@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute,Router,NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { Title, Meta } from '@angular/platform-browser'; 
 
 @Component({
   selector: 'app-specalities',
@@ -7,22 +9,44 @@ import { Router } from '@angular/router';
   styleUrl: './specalities.component.css'
 })
 export class SpecalitiesComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router,private route: ActivatedRoute,private titleService: Title, private metaService: Meta) {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.checkIfChildRouteActive();
+    });
+  }
     
+  private childRouteActive = false;
   
   modernMedicine(){
-    this.router.navigate(['/modern-medicine']);
+    this.router.navigate(['modern-medicine'], {relativeTo:this.route});
+    console.log('Modern Medicine');
   }
   yoga(){
-    this.router.navigate(['/yoga']);
+    this.router.navigate(['yoga'], {relativeTo:this.route});
   }
   ayurveda(){
-    this.router.navigate(['/ayurveda']);
+    this.router.navigate(['ayurveda'], {relativeTo:this.route});
   }
   homeopathy(){
-    this.router.navigate(['/homeopathy']);
+    this.router.navigate(['homeopathy'], {relativeTo:this.route});
   }
   naturopathy(){
-    this.router.navigate(['/naturopathy']);
+    this.router.navigate(['naturopathy'], {relativeTo:this.route});
+  }
+  isChildRouteActive(): boolean {
+    return this.childRouteActive;
+  }
+
+  private checkIfChildRouteActive() {
+    this.childRouteActive = this.route.firstChild !== null;
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Rashtrotthana Hospital Medical Specialities List and Departments");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Browse through the list of specialties that Rashtrotthana Hospital provide, world-class treatment options; experienced doctors in Bangalore which makes it Indias top multi-specialty hospital.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'specialities, modern medicine, ayurveda, lifestyle medicine, yoga, homeopathy, doctors, medical specialities' });
   }
 }

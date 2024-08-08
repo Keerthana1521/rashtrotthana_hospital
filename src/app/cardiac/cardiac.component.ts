@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
+
 
 @Component({
   selector: 'app-cardiac',
@@ -6,6 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './cardiac.component.css'
 })
 export class CardiacComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Best Heart | Cardiology Hospital in bangalore India ");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Discover world-class cardiac care at Rashtrotthana Hospital, the best heart hospital in India. Offering advanced treatments and expert cardiologists for your heart health.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'cardiology, heart hospital,cardiology hospital near me,heart hospital near me, cardiologists, heart attack, heart failure, heart pain, heart valve disease, congenital heart disease, coronary artery disease, heart rhythm disorders, disorders of heart failure, valvular disease' });
+
+  }
   specialities=[
     {
       main_heading:'Cardiac Sciences',

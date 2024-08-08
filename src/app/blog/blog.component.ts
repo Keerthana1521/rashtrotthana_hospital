@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { BlogServiceService } from '../blog-service.service';
 import { ActivatedRoute } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-blog',
@@ -13,7 +14,7 @@ export class BlogComponent {
   featuredPost: any; 
   categories: string[] = [];
 
-  constructor(private blogService: BlogServiceService,private route: ActivatedRoute,) { }
+  constructor(private blogService: BlogServiceService,private route: ActivatedRoute,private titleService: Title, private metaService: Meta) { }
 
   ngOnInit(): void {
     // this.blogService.getPosts().subscribe((data: any[]) => {
@@ -25,6 +26,11 @@ export class BlogComponent {
         this.posts = data.slice(1);
       }
     });
+    this.titleService.setTitle("Rashtrotthana Hospital Blogs | Top Medical Treatments & Procedures Blogs");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Visit the healthcare blog of Rashtrotthana Hospital and discover a world of wellness. Discover health-related topics that empower your journey towards better health, from expert advice to medical insights' });
+
+  this.metaService.updateTag({ name: 'keywords', content: ' general medicine, internal medicine, cardiology, nephrology, urology, dermatology, gynaecology, pulmonology' });
     
   }
 }

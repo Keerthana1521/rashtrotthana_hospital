@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
+
 
 @Component({
   selector: 'app-paediatrics',
@@ -6,6 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './paediatrics.component.css'
 })
 export class PaediatricsComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Best Child Hospital in Bangalore | Paediatric Hospital in Bangalore");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital is the best paediatric hospital or child speciality hospital in Bangalore with skilled paediatricians.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'best child hospital near me,paediatrician, children, kids, child\'s health, paediatrics, neonatology, baby, newborn' });
+
+  }
   specialities=[
     {
       main_heading:'Paediatrics & Neonatology',

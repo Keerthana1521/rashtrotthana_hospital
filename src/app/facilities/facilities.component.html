@@ -1,3 +1,4 @@
+<div *ngIf="!isChildRouteActive()">
 <div class="facility">
     <div class="heading">Our
         Facilities</div>
@@ -18,3 +19,5 @@
     </div>
     </ng-container>
 </div>
+</div>
+<router-outlet *ngIf="isChildRouteActive()"></router-outlet>

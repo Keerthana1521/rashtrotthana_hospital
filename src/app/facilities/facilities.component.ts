@@ -1,7 +1,9 @@
 import { Component,OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute, NavigationEnd  } from '@angular/router';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { filter } from 'rxjs/operators';
 
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-facilities',
@@ -10,10 +12,20 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 })
 export class FacilitiesComponent implements OnInit{
   constructor(private router: Router,
-    private breakpointObserver: BreakpointObserver) {}
+    private breakpointObserver: BreakpointObserver, private route: ActivatedRoute,private titleService: Title, private metaService: Meta) {}
     isMobile:boolean=false;
     ngOnInit(): void {
+      this.router.events.pipe(
+        filter(event => event instanceof NavigationEnd)
+      ).subscribe(() => {
+        this.checkIfChildRouteActive();
+      });
       this.observeLaptopSizeChanges();
+      this.titleService.setTitle("Medical Services - Rashtrotthana Hospital");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Facility | Our aim at Rashtrotthana hospital is to provide high quality, most advanced diagnostic and treatment facilities at affordable price.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'facilities, hospital facilities, emergency, emergency care, emergency & trauma, radiology, pharmacy, dialysis, physiotherapy' });
     }
     observeLaptopSizeChanges(): void {
       this.breakpointObserver.observe([Breakpoints.Large, Breakpoints.XLarge])
@@ -27,6 +39,7 @@ export class FacilitiesComponent implements OnInit{
     }
     
   
+    private childRouteActive = false;
 
   box =[
     {
@@ -151,20 +164,26 @@ export class FacilitiesComponent implements OnInit{
   activeHoverIndex: number | null = null;
 
   onMouseOver(index: number) {
-    console.log(this.isMobile)
+    // console.log(this.isMobile)
     
     this.activeHoverIndex = index;
     
     
    
   }
+  isChildRouteActive(): boolean {
+    return this.childRouteActive;
+  }
 
+  private checkIfChildRouteActive() {
+    this.childRouteActive = !!this.route.firstChild;
+  }
   onMouseOut() {
     this.activeHoverIndex = null;
   }
   onButtonClick(route?: string) {
     if (route) {
-      this.router.navigate([route]);
+      this.router.navigate([`/facility/${route}`]);
     } else {
       console.error('No route provided');
     }

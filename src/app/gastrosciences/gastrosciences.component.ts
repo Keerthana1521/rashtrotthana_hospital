@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
+
 
 @Component({
   selector: 'app-gastrosciences',
@@ -6,6 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './gastrosciences.component.css'
 })
 export class GastrosciencesComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Best Gastroenterology Hospital in bangalore India | Best liver Hospital in India");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital is the best Gastro hospital in India with experienced gastroenterologists providing digestive and stomach related problems.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'Gastroenterology stomach,gastroenterology hospital near me, stomach pain, digestion, digestive care, digestive system, gut, gut health, gut care' });
+
+  }
   specialities=[
     {
       main_heading:'Gastrosciences',
