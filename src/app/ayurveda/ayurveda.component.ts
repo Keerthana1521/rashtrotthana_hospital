@@ -9,11 +9,11 @@ import { Title, Meta } from '@angular/platform-browser';
 export class AyurvedaComponent {
   constructor(private titleService: Title, private metaService: Meta) {}
   ngOnInit(): void {
-    this.titleService.setTitle("About Rashtrotthana Hospital, R R Nagar Bangalore India");  
+    this.titleService.setTitle(" Holistic Ayurvedic Treatment - Rashtrotthana Hospital Bangalore");  
 
-  this.metaService.updateTag({ name: 'description', content: ' Rashtrotthana Hospital affiliated with Rashtrotthana Trust, we dedicate ourselves to providing exceptional healthcare services. Within our 162-bed facility, we prioritize holistic care, offering specialized treatments in Modern Medicine, Ayurveda, Homeopathy, Yoga & Naturopathy.' });
+  this.metaService.updateTag({ name: 'description', content: ' Discover holistic healing with traditional Ayurvedic treatments at Rashtrotthana Hospital, blending ancient wisdom with modern care.' });
 
-  this.metaService.updateTag({ name: 'keywords', content: 'rashtrotthana hospital, modern medicine, ayurveda, homeopathy, yoga, naturopathy, affordable healthcarae' });
+  this.metaService.updateTag({ name: 'keywords', content: 'ayurvedic treatment, natural healing, ayurveda hospital Bangalore' });
   }
 
 }

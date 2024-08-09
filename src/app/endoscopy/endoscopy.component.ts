@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+
 import { Facility } from '../facility.model';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
+
 
 @Component({
   selector: 'app-endoscopy',
@@ -7,6 +10,17 @@ import { Facility } from '../facility.model';
   styleUrl: './endoscopy.component.css'
 })
 export class EndoscopyComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Advanced Endoscopy Services in Bangalore - Rashtrotthana Hospital");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Get advanced endoscopy services at Rashtrotthana Hospital, Bangalore\'s leader in minimally invasive gastroenterology procedures.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'endoscopy services, gastroenterology, hospital Bangalore, minimally invasive procedures' });
+
+  }
   facilites:Facility[]=[
     {
       main_heading:'Endoscopy',

@@ -20,20 +20,20 @@ export class SpecalitiesComponent {
   private childRouteActive = false;
   
   modernMedicine(){
-    this.router.navigate(['modern-medicine'], {relativeTo:this.route});
+    this.router.navigate(['best-general-medicine-hospital-in-bangalore'], {relativeTo:this.route});
     console.log('Modern Medicine');
   }
   yoga(){
-    this.router.navigate(['yoga'], {relativeTo:this.route});
+    this.router.navigate(['best-doctors-bangalore'], {relativeTo:this.route});
   }
   ayurveda(){
-    this.router.navigate(['ayurveda'], {relativeTo:this.route});
+    this.router.navigate(['ayurvedic-treatment-bangalore'], {relativeTo:this.route});
   }
   homeopathy(){
-    this.router.navigate(['homeopathy'], {relativeTo:this.route});
+    this.router.navigate(['homeopathy-treatment-bangalore'], {relativeTo:this.route});
   }
   naturopathy(){
-    this.router.navigate(['naturopathy'], {relativeTo:this.route});
+    this.router.navigate(['lifestyle-medicine-bangalore'], {relativeTo:this.route});
   }
   isChildRouteActive(): boolean {
     return this.childRouteActive;

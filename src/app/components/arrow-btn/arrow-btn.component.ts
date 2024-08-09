@@ -12,6 +12,6 @@ export class ArrowBtnComponent {
   @Output() onClick = new EventEmitter<void>();
   @Input() text: string = 'View All';
   handleClick() {
-    this.router.navigate(['/doctor']);
+    this.router.navigate(['/best-doctors-bangalore']);
   }
 }

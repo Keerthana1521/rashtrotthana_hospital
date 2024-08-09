@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
 
 @Component({
   selector: 'app-physiotherapy',
@@ -6,6 +7,17 @@ import { Component } from '@angular/core';
   styleUrl: './physiotherapy.component.css'
 })
 export class PhysiotherapyComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Expert Physiotherapy & Rehabilitation - Rashtrotthana Hospital Bangalore");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital offers specialized physiotherapy and rehabilitation services to aid your recovery in Bangalore.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'physiotherapy services, rehabilitation, multispeciality hospital Bangalore' });
+
+  }
   facilites=[
     {
       main_heading:'Physiotherapy',

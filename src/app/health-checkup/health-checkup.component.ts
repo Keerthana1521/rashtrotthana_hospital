@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
 
 interface PackageDetails {
   title: string;
@@ -18,6 +20,17 @@ interface Package {
   styleUrl: './health-checkup.component.css'
 })
 export class HealthCheckupComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Comprehensive Health Check-Up Packages - Rashtrotthana Hospital");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Schedule your preventive health check-up at Rashtrotthana Hospital, Bangalore, with our comprehensive packages tailored to your needs.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'health check-up packages, preventive health care, regular check-ups Bangalore' });
+
+  }
   activeIndex: number | null = null
 
   packages: Package[] = [

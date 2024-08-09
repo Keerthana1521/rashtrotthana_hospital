@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
 
 @Component({
   selector: 'app-operation-theatre',
@@ -6,6 +7,17 @@ import { Component } from '@angular/core';
   styleUrl: './operation-theatre.component.css'
 })
 export class OperationTheatreComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Advanced Operation Theatres for Safe Surgeries - Rashtrotthana Hospital Bangalore");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Experience safe and precise surgeries at Rashtrotthana Hospital\'s state-of-the-art operation theatres in Bangalore.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'advanced operation theatre, surgical care, best hospital Bangalore, multispeciality surgery' });
+
+  }
   facilites=[
     {
       main_heading:'Operation Theatre',

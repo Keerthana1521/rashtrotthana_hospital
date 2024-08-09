@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
 import { Facility } from '../facility.model';
 
 @Component({
@@ -7,6 +8,17 @@ import { Facility } from '../facility.model';
   styleUrl: './pharmacy.component.css'
 })
 export class PharmacyComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("24/7 Pharmacy Services at Rashtrotthana Hospital Bangalore");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital offers 24-hour pharmacy services in Bangalore for all your medicinal needs, available round-the-clock.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: '24/7 pharmacy, hospital pharmacy, Bangalore pharmacy services' });
+
+  }
   facilites:Facility[]=[
     {
       main_heading:'Pharmacy',

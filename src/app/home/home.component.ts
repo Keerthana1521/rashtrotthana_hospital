@@ -25,34 +25,35 @@ export class HomeComponent implements OnInit {
   
   navigateToPage() {
     this.router.navigate(['/about-us']);
+    console.log('About Us');
   }
   donate(){
 
-    this.router.navigate(['/donation']);
+    this.router.navigate(['/donate-to-hospital-bangalore']);
   }
   emergency(){
-    this.router.navigate(['/emergency']);
+    this.router.navigate(['best-emergency-trauma-multispeciality-hospital-bangalore']);
   }
   lab(){
-    this.router.navigate(['/laboratory']);
+    this.router.navigate(['laboratory-services-bangalore']);
   }
   radiology(){
-    this.router.navigate(['/raidology']);
+    this.router.navigate(['top-diagnostics-multi-speciality-hospital-bangalore']);
   }
   pharmacy(){
-    this.router.navigate(['/pharmacy']);
+    this.router.navigate(['24-hours-pharmacy-store-bangalore']);
   }
   dialysis(){
-    this.router.navigate(['/dialysis']);
+    this.router.navigate(['best-kidney-dialysis-multispeciality-hospital-bangalore']);
   }
   tkr(){
-    this.router.navigate(['/total-knee-replacement']);
+    this.router.navigate(['/total-knee-replacement-bangalore']);
   }
   hernia(){
-    this.router.navigate(['/hernia']);
+    this.router.navigate(['/hernia-treatment-bangalore']);
   }
   proctology(){
-    this.router.navigate(['/proctology']);
+    this.router.navigate(['/proctology-services-bangalore']);
   }
   
   showContent: any = 'default';
@@ -73,7 +74,7 @@ export class HomeComponent implements OnInit {
       className: 'yoga',
       key: 'yoga',
       image: 'yoga-hover.png',
-      url: '/yoga'
+      url: 'yoga-therapy-bangalore'
     },
     {
       name: 'Naturopathy',
@@ -81,7 +82,7 @@ export class HomeComponent implements OnInit {
       className: 'naturopathy',
       key: 'naturopathy',
       image: 'naturopathy-hover.png',
-      url: '/naturopathy'
+      url: 'lifestyle-medicine-bangalore'
     },
     {
       name: 'Modern Medicine',
@@ -89,7 +90,7 @@ export class HomeComponent implements OnInit {
       className: 'modern-medicine',
       key: 'modern-medicine',
       image: 'modern-medicine-hover.png',
-      url: '/modern-medicine'
+      url: '/specialities/best-general-medicine-hospital-in-bangalore'
     },
     {
       name: 'Ayurveda',
@@ -97,7 +98,7 @@ export class HomeComponent implements OnInit {
       className: 'ayurveda',
       key: 'ayurveda',
       image: 'ayurveda-hover.png',
-      url: '/ayurveda'
+      url: 'ayurvedic-treatment-bangalore'
 
     },
     {
@@ -106,7 +107,7 @@ export class HomeComponent implements OnInit {
       className: 'homeopathy',
       key: 'homeopathy',
       image: 'Homeopaathy-hover.png',
-      url: '/homeopathy'
+      url: 'homeopathy-treatment-bangalore'
     }
   ];
   navigateTo(url: string) {

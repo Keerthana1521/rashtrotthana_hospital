@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
 
 @Component({
   selector: 'app-insurance',
@@ -6,6 +7,17 @@ import { Component } from '@angular/core';
   styleUrl: './insurance.component.css'
 })
 export class InsuranceComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle(" Comprehensive Health Insurance Plans at Rashtrotthana Hospital");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital partners with major insurance providers to offer extensive health coverage for all patients in Bangalore.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'health insurance, hospital insurance plans, insurance coverage Bangalore' });
+
+  }
 insurance:any=[
   {
     image:'../../assets/aditya-birla.png',

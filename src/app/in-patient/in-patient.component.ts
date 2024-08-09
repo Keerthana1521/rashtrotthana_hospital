@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+
 import { Facility } from '../facility.model';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
 
 @Component({
   selector: 'app-in-patient',
@@ -7,6 +9,17 @@ import { Facility } from '../facility.model';
   styleUrl: './in-patient.component.css'
 })
 export class InPatientComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Comfortable In-Patient Facilities - Rashtrotthana Hospital Bangalore");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Experience quality in-patient care with comfortable rooms and comprehensive services at Rashtrotthana Hospital, Bangalore.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'in-patient care, hospital stay, best hospital Bangalore, patient rooms' });
+
+  }
 
   facilites:Facility[]=[
     {

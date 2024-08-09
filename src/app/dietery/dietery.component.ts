@@ -1,11 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
+
 
 @Component({
   selector: 'app-dietery',
   templateUrl: './dietery.component.html',
   styleUrl: './dietery.component.css'
 })
-export class DieteryComponent {
+export class DieteryComponent {constructor(private titleService: Title, private metaService: Meta) {
+    
+}
+ngOnInit(): void {
+  this.titleService.setTitle("Expert Dietary & Clinical Nutrition Services - Rashtrotthana Hospital");  
+
+this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital provides personalized dietary and clinical nutrition services in Bangalore, tailored to support patient health and recovery.' });
+
+this.metaService.updateTag({ name: 'keywords', content: 'dietary services, clinical nutrition, healthy diet, hospital nutrition Bangalore' });
+
+}
   facilites=[
     {
       main_heading:'Dietary',

@@ -14,11 +14,11 @@ export class RadiologyComponent {
     
   }
   ngOnInit(): void {
-    this.titleService.setTitle("");  
+    this.titleService.setTitle("Comprehensive Diagnostics & Radiology Services - Rashtrotthana Hospital");  
 
-  this.metaService.updateTag({ name: 'description', content: '' });
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital provides top diagnostics and radiology services in Bangalore, ensuring accurate results and quality care.' });
 
-  this.metaService.updateTag({ name: 'keywords', content: '' });
+  this.metaService.updateTag({ name: 'keywords', content: 'diagnostic services, radiology, multispeciality hospital, best diagnostics Bangalore' });
 
   }
   facilites:Facility[]=[

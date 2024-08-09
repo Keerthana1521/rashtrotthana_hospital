@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
+
 
 @Component({
   selector: 'app-emergency-facility',
@@ -6,6 +9,17 @@ import { Component } from '@angular/core';
   styleUrl: './emergency-facility.component.css'
 })
 export class EmergencyFacilityComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Best Emergency & Trauma Care Hospital in Bangalore - Rashtrotthana");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Discover top-tier emergency and trauma care services at Rashtrotthana Hospital, Bangalore\'s leading multispeciality healthcare provider.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'emergency care, trauma center, best hospital Bangalore, 24/7 emergency services' });
+
+  }
 
 facilites=[
   {

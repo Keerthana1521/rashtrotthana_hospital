@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
 
 @Component({
   selector: 'app-laboratory',
@@ -6,6 +7,17 @@ import { Component } from '@angular/core';
   styleUrl: './laboratory.component.css'
 })
 export class LaboratoryComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Advanced Laboratory Services - Rashtrotthana Hospital Bangalore");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital\'s laboratory offers accurate and prompt diagnostic testing services in Bangalore.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'lab tests, diagnostic lab, hospital lab Bangalore, pathology services' });
+
+  }
   facilites=[
     {
       main_heading:'Laboratory Services',

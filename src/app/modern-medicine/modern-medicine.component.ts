@@ -29,42 +29,42 @@ export class ModernMedicineComponent {
       image: '../../assets/modern-1.png',
       title: 'Internal medicine',
       button_text: 'Read More',
-      route: 'internal-medicine'
+      route: 'internal-medicine-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-2.png',
       title: 'General Surgery',
       button_text: 'Read More',
-      route: 'general-surgery'
+      route: 'best-general-surgery-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-3.png',
       title: 'Obstetrics & Gynecology',
       button_text: 'Read More',
-      route: 'Obstetrics-and-Gynaecology'
+      route: 'best-obstetrics-and-gynecologist-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-4.png',
       title: 'Paediatrics & Neonatology',
       button_text: 'Read More',
-      route: 'paediatrics'
+      route: 'best-paediatric-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-5.png',
       title: 'Nephrology',
       button_text: 'Read More',
-      route: 'nephrology'
+      route: 'best-nephrology-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-6.png',
       title: 'Urology',
       button_text: 'Read More',
-      route: 'urology'
+      route: 'best-urology-hospital-in-bangalore'
 
     },
     {
@@ -72,91 +72,91 @@ export class ModernMedicineComponent {
       image: '../../assets/modern-7.png',
       title: 'Orthopedics',
       button_text: 'Read More',
-      route:'orthopedics'
+      route:'best-orthopaedics-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-8.png',
       title: 'Gastro Sciences',
       button_text: 'Read More',
-      route:'gastroscience'
+      route:'best-gastroenterology-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-9.png',
       title: 'Cardiac sciences',
       button_text: 'Read More',
-      route:'cardiacscience'
+      route:'best-cardiology-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-10.png',
       title: 'Pulmonology',
       button_text: 'Read More',
-      route:'pulmonology'
+      route:'best-pulmonology-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-11.png',
       title: 'Ophthalmology',
       button_text: 'Read More',
-      route:'ophthalmology'
+      route:'best-eye-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-12.png',
       title: 'Dental Sciences',
       button_text: 'Read More',
-      route:'dental'
+      route:'best-dental-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-13.png',
       title: 'ENT Specialty',
       button_text: 'Read More',
-      route:'ent'
+      route:'best-ent-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-14.png',
       title: 'Neurosciences',
       button_text: 'Read More',
-      route:'neuroscience'
+      route:'best-neurology-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-15.png',
       title: 'Endocrinology',
       button_text: 'Read More',
-      route:'endocrinology'
+      route:'best-endocrinology-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-16.png',
       title: 'Psychiatry',
       button_text: 'Read More',
-      route:'pshychiatry'
+      route:'best-pshychiatry-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-17.png',
       title: 'Oncology',
       button_text: 'Read More',
-      route:'oncology'
+      route:'best-oncology-hospital-in-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/modern-18.png',
       title: 'Anesthesiology',
       button_text: 'Read More',
-      route:'anesthesiology'
+      route:'best-anesthesiology-hospital-in-india'
     },
     {
       name: 'card',
       image: '../../assets/modern-19.png',
       title: 'emergency medicine',
       button_text: 'Read More',
-      route:'emergency-medicine'
+      route:'best-emergency-medicine-hospital-in-bangalore'
     }
 
     
@@ -202,7 +202,7 @@ export class ModernMedicineComponent {
   }
   onButtonClick(route?: string) {
     if (route) {
-      this.router.navigate([`/specialities/modern-medicine/${route}`]);
+      this.router.navigate([`/specialities/best-general-medicine-hospital-in-bangalore/${route}`]);
     } else {
       console.error('No route provided');
     }

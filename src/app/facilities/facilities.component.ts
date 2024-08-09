@@ -47,42 +47,42 @@ export class FacilitiesComponent implements OnInit{
       image: '../../assets/facility-1.png',
       title: 'In patient facility',
       button_text: 'Read More',
-      route: 'inpatient'
+      route: 'inpatient-facility-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/facility-2.png',
       title: 'Emergency & Trauma Care',
       button_text: 'Read More',
-      route: 'emergency'
+      route: 'best-emergency-trauma-multispeciality-hospital-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/facility-14.png',
       title: 'Insurance',
       button_text: 'Read More',
-      route:'insurance'
+      route:'health-insurance-plans-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/facility-8.png',
       title: 'Dialysis Unit',
       button_text: 'Read More',
-      route:'dialysis'
+      route:'best-kidney-dialysis-multispeciality-hospital-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/facility-11.png',
       title: 'Operation Theatre',
       button_text: 'Read More',
-      route: 'operation-theatre'
+      route: 'operation-theatre-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/facility-12.png',
       title: 'I.C.U',
       button_text: 'Read More',
-      route: 'icu'
+      route: 'best-intensive-care-unit-multispeciality-hospital-bangalore'
 
     },
     {
@@ -90,56 +90,56 @@ export class FacilitiesComponent implements OnInit{
       image: '../../assets/facility-7.png',
       title: 'Radiology Services',
       button_text: 'Read More',
-      route:'raidology'
+      route:'top-diagnostics-multi-speciality-hospital-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/facility-3.png',
       title: 'Pharmacy',
       button_text: 'Read More',
-      route:'pharmacy'
+      route:'24-hours-pharmacy-store-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/facility-4.png',
       title: 'Ambulance Services',
       button_text: 'Read More',
-      route:'abulance'
+      route:'best-ambulance-service-rashtrotthana-hospital-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/facility-13.png',
       title: 'Dietary',
       button_text: 'Read More',
-      route:'dietery'
+      route:'dietary-services-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/facility-5.png',
       title: 'Physiotherapy',
       button_text: 'Read More',
-      route:'physiotherapy'
+      route:'physiotherapy-services-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/facility-6.png',
       title: 'Laboratory Services',
       button_text: 'Read More',
-      route:'laboratory'
+      route:'laboratory-services-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/facility-9.png',
       title: 'Endoscopy',
       button_text: 'Read More',
-      route:'endoscopy'
+      route:'endoscopy-services-bangalore'
     },
     {
       name: 'card',
       image: '../../assets/facility-10.png',
       title: 'Nutrition & Dietetics',
       button_text: 'Read More',
-      route:'nutrition'
+      route:'nutrition-dietetics-services-bangalore'
     },
 
     

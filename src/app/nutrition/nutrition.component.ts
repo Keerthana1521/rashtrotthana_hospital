@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser'; 
 import { Facility } from '../facility.model';
 
 @Component({
@@ -7,6 +8,17 @@ import { Facility } from '../facility.model';
   styleUrl: './nutrition.component.css'
 })
 export class NutritionComponent {
+  constructor(private titleService: Title, private metaService: Meta) {
+    
+  }
+  ngOnInit(): void {
+    this.titleService.setTitle("Comprehensive Nutrition & Dietetics Services - Rashtrotthana Hospital");  
+
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital provides personalized nutrition and dietetic consultations for patients in Bangalore.' });
+
+  this.metaService.updateTag({ name: 'keywords', content: 'nutrition services, dietetics, patient nutrition, hospital dietitian Bangalore' });
+
+  }
   facilites:Facility[]=[
     {
       main_heading:'Nutrition & Dietetics',

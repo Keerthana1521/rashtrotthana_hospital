@@ -38,16 +38,16 @@ export class FooterComponent {
     this.router.navigate(['/doctor']);
   }
   health(){
-    this.router.navigate(['/health-checkup']);
+    this.router.navigate(['/health-check-up-packages-bangalore']);
   }
   donation(){
-    this.router.navigate(['/donation']);
+    this.router.navigate(['/donate-to-hospital-bangalore']);
   }
   blog(){
     this.router.navigate(['/']);
   }
   insurance(){
-    this.router.navigate(['/facility/insurance']);
+    this.router.navigate(['/facility/health-insurance-plans-bangalore']);
   }
 }
 
