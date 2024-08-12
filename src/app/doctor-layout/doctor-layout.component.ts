@@ -273,7 +273,7 @@ export class DoctorLayoutComponent {
 
     {
       name: 'DR. Suhas Raj S',
-      image: 'assets/doctor-37.png',
+      image: 'assets/doctor-22.png',
       desgination: 'CARDIOLOGY',
       about: 'Dr.Suhas Raj is graduate from Govt. Stanely Medical College and Hospital,Chennai in 2015. He did his post graduation (MD GENERAL MEDICINE) from KANYAKUMARI GOVT.',
       speciality: 'CARDIAC SCIENCES',
@@ -510,7 +510,7 @@ export class DoctorLayoutComponent {
     },
     {
       name: 'Dr. Nikhil Hegde',
-      image: 'assets/doctor-22.png',
+      image: 'assets/doctor-37.png',
       desgination: 'ORTHOPEDICS',
       about: 'Specialised training in sports medicine, Arthroplasty and trauma',
       speciality: 'ORTHOPEDICS',
