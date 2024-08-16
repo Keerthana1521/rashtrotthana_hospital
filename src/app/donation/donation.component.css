@@ -373,7 +373,6 @@
     line-height: 24px;
     /* 171.429% */
     letter-spacing: 2px;
-    text-transform: capitalize;
     width: 581px;
 }
 
@@ -1179,7 +1178,6 @@
         line-height: 24px;
         /* 240% */
         letter-spacing: 2px;
-        text-transform: capitalize;
     }
 
     .donate_here {
