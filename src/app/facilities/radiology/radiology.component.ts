@@ -1,5 +1,5 @@
 
-import { Facility } from '../facility.model';
+import { Facility } from '../../facility.model';
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser'; 
 

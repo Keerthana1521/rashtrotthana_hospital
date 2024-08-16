@@ -404,27 +404,6 @@ height: 40px;
 background-image: url('../../assets/Yellow\ Arrow.png');
 }
 
-/* .bg-care img {
-  width: 476px;
-  height: 153px;
-  display: block;
-  cursor: pointer;
-  /* max-width: 100%;
-  height: auto; */
-/* }
-.bg-care .secondary {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  object-fit: contain;
-  opacity: 0;
-  transition: opacity 1.5s ease;
-}
-.bg-care:hover .secondary {
-  opacity: 1;
-} */ 
 
 .bg-features {
   position: relative;
@@ -773,13 +752,7 @@ li {
 .last-li {
   padding-bottom: 5rem;
 }
-/* .ninth-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem;
-} */
+
 .specialities {
   display: flex;
   width: 50%;

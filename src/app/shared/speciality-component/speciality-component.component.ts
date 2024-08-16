@@ -1,5 +1,5 @@
 import { Component,Input } from '@angular/core';
-import { Doctors } from '../doctor.model';
+import { Doctors } from '../../doctor.model';
 @Component({
   selector: 'app-speciality-component',
   templateUrl: './speciality-component.component.html',

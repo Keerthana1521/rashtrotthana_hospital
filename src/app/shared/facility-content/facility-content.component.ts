@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { SubFacility } from '../sub-facility.model';
+import { SubFacility } from '../../sub-facility.model';
 
 @Component({
   selector: 'app-facility-content',
