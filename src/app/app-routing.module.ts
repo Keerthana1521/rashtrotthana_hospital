@@ -80,6 +80,11 @@ const routes: Routes = [
   {path:'best-obstetrics-and-gynecologist-hospital-in-bangalore',component:ObstetricsGynaecologyComponent},
   {path:'best-endocrinology-hospital-in-bangalore',component:EndocrinologyComponent},
   ]},
+  
+  {path:'yoga-therapy-bangalore',component:YogaComponent},
+  {path:'ayurvedic-treatment-bangalore',component:AyurvedaComponent},
+  {path:'homeopathy-treatment-bangalore',component:HomeopathyComponent},
+  {path:'lifestyle-medicine-bangalore',component:NaturopathyComponent},
 ]},
 
   {path:'yoga-therapy-bangalore',component:YogaComponent},

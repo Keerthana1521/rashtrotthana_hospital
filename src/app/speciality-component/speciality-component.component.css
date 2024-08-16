@@ -121,7 +121,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 30px; /* 225% */
-    text-transform: capitalize;
+    text-transform: none;
     margin: 0px 50px 10px 10px;
     font-family: "inter";
     font-weight: 500;

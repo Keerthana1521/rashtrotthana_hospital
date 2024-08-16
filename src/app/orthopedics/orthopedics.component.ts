@@ -22,7 +22,7 @@ export class OrthopedicsComponent {
   specialities=[
     {
       main_heading:'Orthopedics',
-      content:'General Medicine dept at JMRH also provides advanced medical treatment for Infectious diseases, metabolic disorders, lifestyle diseases & co-management of respiratory, gastro, cardiac, nephrology & neuro cases. For handling critical medical cases - dedicated 6 bedded Medical ICU is available & a High dependency unit (HDU) is also available for patients requiring continuous monitoring. General Medicine, also referred to as Internal Medicine, is a branch of medicine that deals with the prevention, diagnosis and the non-surgical treatments of diseases that are related to the internal organs.',
+      content:'Centre of excellence for Orthopedic treatment - The team specializes in the diagnosis and treatment of disorders of the bones, joints, ligaments, tendons, muscles and nerves.State of the art treatment in all fields of orthopedic surgery including Accident & trauma care, spine surgeries and joint replacements.Areas of expertise : Arthroscopy, Sports Medicine, Arthroscopy (Keyhole) & Joint Replacements.Higher percentage of success in Knee & Hip replacement surgeries is our strength.',
       heading:'Orthopedics',
       image:'Orthopedics.png',
       Doctors:[

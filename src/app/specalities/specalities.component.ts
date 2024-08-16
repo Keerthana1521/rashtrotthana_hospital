@@ -24,7 +24,7 @@ export class SpecalitiesComponent {
     console.log('Modern Medicine');
   }
   yoga(){
-    this.router.navigate(['best-doctors-bangalore'], {relativeTo:this.route});
+    this.router.navigate(['yoga-therapy-bangalore'], {relativeTo:this.route});
   }
   ayurveda(){
     this.router.navigate(['ayurvedic-treatment-bangalore'], {relativeTo:this.route});

@@ -75,7 +75,7 @@ export class DoctorLayoutComponent {
       name: 'Dr. Latha Venkataram',
       image: 'assets/doctor-2.png',
       desgination: 'OBSTETRICS & GYNECOLOGY',
-      about: 'Maternity Unit at JMRH & RC is run by WMN team of OBGYNs headed by Dr. Latha Venkatraman.Dr. Latha Venkatraman is a renowned OBGYN with more than 30 years of experience...',
+      about: 'Maternity Unit & RC is run by WMN team of OBGYNs headed by Dr. Latha Venkatraman.Dr. Latha Venkatraman is a renowned OBGYN with more than 30 years of experience...',
       speciality: 'OBSTETRICS & GYNECOLOGY',
       areasOfExpertise: ['Vaginal Delivery',
         'High Risk Pregnancy',
