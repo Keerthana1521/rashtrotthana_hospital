@@ -23,7 +23,7 @@ export class YogaComponent {
     {
       image : '../../assets/doctor-14.png',
       name : "Dr. Suvarnini Konale",
-      section : "BNYS",
+      section : "BAMS, M.D. (Ayurveda)",
       designation : "LIFESTYLE MEDICINE",
     }
   ]
