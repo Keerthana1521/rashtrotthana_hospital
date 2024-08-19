@@ -98,7 +98,7 @@ export class HealthCheckupComponent {
       ]
     },
     {
-      title: 'BASIC Health Check Up',
+      title: 'Basic Health Check Up',
       price: 950,
       package: [
         {

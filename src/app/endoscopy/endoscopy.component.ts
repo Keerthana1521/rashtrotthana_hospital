@@ -38,7 +38,7 @@ export class EndoscopyComponent {
         },
         {
           subHeading:'Patient-centered care and support:',
-          subContent:'At Rashtrotthana Hospital, we understand that undergoing an endoscopic procedure can be a source of anxiety for many patients. That s why our team is committed to providing compassionate care and support throughout your experience. From pre-procedure preparation to post-procedure follow-up, we prioritize your comfort and well-being every step of the way. Our goal is to ensure that you feel informed, empowered, and confident in your care decisions, allowing you to focus on your health with peace of mind.'
+          subContent:'At Rashtrotthana Hospital, we understand that undergoing an endoscopic procedure can be a source of anxiety for many patients. That is why our team is committed to providing compassionate care and support throughout your experience. From pre-procedure preparation to post-procedure follow-up, we prioritize your comfort and well-being every step of the way. Our goal is to ensure that you feel informed, empowered, and confident in your care decisions, allowing you to focus on your health with peace of mind.'
         }
       ]}];
 }

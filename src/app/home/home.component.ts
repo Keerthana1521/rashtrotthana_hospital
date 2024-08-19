@@ -127,10 +127,10 @@ export class HomeComponent implements OnInit {
   }
 
   content: any = {
-    'default': 'India\'s First Integrated Multi Speciality Hospital Blending Modern And Traditional Medicine For Holistic Healing',
+    'default': 'India\'s First Integrated Multi Speciality Hospital Blending Modern And Indian Medicine For Holistic Healing',
     'yoga': 'Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India. Yoga is one of the six Āstika schools of Indian philosophical traditions.',
     'naturopathy': 'Naturopathy or naturopathic medicine is a form of alternative medicine that employs an array of pseudoscientific practices branded as "natural", "non-invasive", or promoting "self-healing".',
-    'modern-medicine': 'Modern medicine, or medicine as we know it, started to emerge after the Industrial Revolution in the 18th century. At this time, there was rapid growth in economic activity in Western Europe and the Americas.',
+    'modern-medicine': 'Modern medicine, or medicine as we know it, started to emerge after the Industrial Revolution in the 18th century. At this time, there was rapid growth in economic activity in Modern Europe and the Americas.',
     'ayurveda': 'Ayurveda is a system of medicine with historical roots in the Indian subcontinent. Globalized and modernized practices derived from Ayurveda traditions are a type of alternative medicine.',
     'homeopathy': 'Homeopathy or homeopathy is a pseudoscientific system of alternative medicine. It was created in 1796 by Samuel Hahnemann. Its practitioners, called homeopaths, believe that a substance that causes symptoms of a disease in healthy people would cure similar symptoms in sick people.'
   };
@@ -138,7 +138,7 @@ export class HomeComponent implements OnInit {
 title:any ={
   'default': '',
   'yoga': 'Yoga',
-  'naturopathy': 'Naturopathy',
+  'naturopathy': 'Lifestyle Medicine',
   'modern-medicine': 'Modern Medicine',
   'ayurveda': 'Ayurveda',
   'homeopathy': 'Homeopathy'

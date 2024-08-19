@@ -22,7 +22,7 @@ export class PulmonologyComponent {
   specialities=[
     {
       main_heading:'Pulmonology',
-      content:'The pulmonology department is overseen by an experienced team of pulmonologists. The respiratory system, which includes the sinuses, mouth, nose, throat, voice box, diaphragm, lungs, and windpipe are the primary focus of these specialists. High-tech thoracic disorder treatment and evaluation tools such as blood tests, X-rays, CT scans, spirometry, and bronchoscopy are all available at the state-of-the-art pulmonology department. Pulmonary hygiene, biopsy, and Airway Ablation procedures are all handled by a team of highly-trained clinicians. The whole pulmonology department at JMRH is committed to delivering the best possible clinical assessments, diagnosis, and medications.',
+      content:'The pulmonology department is overseen by an experienced team of pulmonologists. The respiratory system, which includes the sinuses, mouth, nose, throat, voice box, diaphragm, lungs, and windpipe are the focus of these specialists. High-tech thoracic disorder treatment and evaluation tools such as blood tests, X-rays, CT scans, spirometry, and bronchoscopy are all available at the state-of-the-art pulmonology department. Pulmonary hygiene, biopsy, and Airway Ablation procedures are all handled by a team of highly-trained clinicians. The whole pulmonology department is committed to delivering the best possible clinical assessments, diagnosis, and medications.',
       heading:'Pulmonology',
       image:'Pulmonology.png',
       Doctors:[

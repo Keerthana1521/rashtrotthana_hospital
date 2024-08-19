@@ -24,7 +24,7 @@ export class AbulanceComponent {
     {
       main_heading:'Ambulance Services',
       heading:'Ambulance Services',
-     content:'Two Fully equipped Advanced Life Support (ALS) Ambulance available round the clock. Clinic on Wheels - Unique concept, where in fully equipped Ambulances with facility to provide Outpatient consultations, examination, sample collection & drug dispensing available for rural camp service.',
+     content:'Two Fully equipped Advanced Life Support(ALS) Ambulance available round the clock. Clinic on Wheels - Unique concept, where in fully equipped Ambulances with facility to provide Outpatient consultations, examination, sample collection & drug dispensing available for rural camp service.',
       image_1:'abulance-service-1.png',
       image_2:'abulance-service-2.png'
     }

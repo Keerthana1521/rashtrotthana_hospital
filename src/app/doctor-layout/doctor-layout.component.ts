@@ -59,7 +59,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. H N Shyla',
+      name: 'Dr. H. N. Shyla',
       image: 'assets/doctor-8.png',
       desgination: 'DENTAL SCIENCES',
       about: 'BDS, MDS - Oral & Maxillofacial Surgery Dentist, Oral And Maxillo-Facial Surgeon, Implantologist, Cosmetic/Aesthetic Dentist 22+ Years Experience Overall  (21 years as specialist)',
@@ -93,7 +93,7 @@ export class DoctorLayoutComponent {
       name: 'Dr. Shekar Patil',
       image: 'assets/doctor-9.png',
       desgination: 'SR. CONSULTANT MEDICAL ONCOLOGIST',
-      about: 'Dr. Shekar Patil is a Medical Oncologist Bangalore. He has been practising medicine for 39 years including over 25 years in medical oncology. He treats conventional and high dose chemotherapy for both solid and haematological malignancies. Dr. Patil s knowledge and expertise spans a vast area including: Intraperitoneal Chemotherapy as consolidation in advanced Ovarian Cancers Concurrent radiation and chemotherapy (BIP) in Carcinoma Cervix Bone Marrow Transplantation Oral recombinant human lactoferrin with Carboplatin Chemotherapy in Gynaecological Malignancies Treatment of Lymphomas Treatment of Acute Myeloid Leukaemia.',
+      about: 'Dr. Shekar Patil is a Medical Oncologist in Bangalore. He has been practising medicine for 39 years including over 25 years in medical oncology. He treats conventional and high dose chemotherapy for both solid and haematological malignancies. Dr. Patil s knowledge and expertise spans a vast area including: Intraperitoneal Chemotherapy as consolidation in advanced Ovarian Cancers Concurrent radiation and chemotherapy (BIP) in Carcinoma Cervix Bone Marrow Transplantation Oral recombinant human lactoferrin with Carboplatin Chemotherapy in Gynaecological Malignancies Treatment of Lymphomas Treatment of Acute Myeloid Leukaemia.',
       speciality: 'ONCOLOGY',
       areasOfExpertise: ['All adult cancers with special interest in precision oncolgy', 'immuno-oncology'],
       expertise: 'Years of Experience: 35',
@@ -114,7 +114,7 @@ export class DoctorLayoutComponent {
     //   time:''
     // },
     {
-      name: 'Dr. Pramod S Chinder',
+      name: 'Dr. Pramod S. Chinder',
       image: 'assets/doctor-53.png',
       desgination: 'ORTHOPEDIC ONCOSURGEON',
       about: '',
@@ -147,11 +147,11 @@ export class DoctorLayoutComponent {
       date:'Tuesday and Thursday'
     },
     {
-      name: 'Dr. H M Krishnamurthy',
+      name: 'Dr. H. M. Krishnamurthy',
       image: 'assets/doctor-49.png',
       desgination: 'Consultant - Internal Medicine',
-      about: 'Dr. H.M.Krishnamurthy is a Doctor in Bangalore and has an experience of 40 years in this field. Dr. H.M.Krishnamurthy practices at Various hospitals in Bangalore and He completed MBBS from Bangalore University in 1984',
-      speciality: 'GENERAL MEDICINE',
+      about: 'Dr. H.M.Krishnamurthy is a Doctor in Bangalore and has an experience of 40 years in this field. Dr. H. M. Krishnamurthy practices at Various hospitals in Bangalore and He completed MBBS from Bangalore University in 1984',
+      speciality: 'INTERNAL MEDICINE',
       areasOfExpertise: ['Metabolic Disorders', 'Infectious Diseases', 'Geriatrics', 'Non Interventional- Respiratory Diseses', 'Diabetes- Thyroid', 'All Adult Chronic Diseases'],
         expertise: 'Years of Experience: 36',
         qualification:'MBBS, MD',
@@ -161,7 +161,7 @@ export class DoctorLayoutComponent {
     {
       name: 'Dr. Shashi Vadhanan',
       image: 'assets/doctor-5.png',
-      desgination: 'GENERAL SURGERY',
+      desgination: 'GENERAL SURGEON',
       speciality: 'GENERAL SURGERY',
       about:'Dr. Shashivadhanan specializes in a wide array of neurosurgical and spinal procedures. His areas of expertise include Minimally Invasive Spine Surgery, Spinal Deformity Correction, Spinal Cord Tumors, Cerebrovascular Surgery, Neuroendoscopy, Deep Brain Stimulation, Epilepsy Surgery and Paediatric Neurosurgery. He is also skilled in minimally invasive pain interventions for spinal pain, including Facetal and Transforaminal Blocks, Vertebroplasty and Kyphoplasty.',
       areasOfExpertise: ['Minimally Invasive Spine Surgery', 'Spinal Deformity Correction', 'Spinal Cord Tumors', 'Cerebrovascular Surgery', 'Neurosurgery', 'Neuroendoscopy', 'Deep Brain Stimulation', 'Epilepsy Surgery', 'Paediatric Neurosurgery'],
@@ -171,7 +171,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Savinay S Kanchibail',
+      name: 'Dr. Savinay S. Kanchibail',
       image: 'assets/doctor-11.png',
       desgination: 'PAEDIAIATRICS & NEONATOLOGY',
       about: 'I am a senior consultant paediatrician & Neonatologist at Rashtrotthana Hospital. I have more than 20 years of experience in Paediatrician – having worked in various...',
@@ -183,7 +183,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Shreelakshmi G',
+      name: 'Dr. Shreelakshmi G.',
       image: 'assets/doctor-10.png',
       desgination: 'OBSTETRICS & GYNECOLOGY',
       about: 'Dr. Shreelakshmi G is graduated from university from mysore. She also did post graduation in M.S .OBSTETRICS AND GYNAECOLOGY (2003)',
@@ -233,7 +233,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Geethanjali K G',
+      name: 'Dr. Geethanjali K.G.',
       image: 'assets/doctor-19.png',
       desgination: 'DENTAL SCIENCES',
       about: 'Worked as full time comsultant at Sagar Hospitals, Banashankari - Bangalore.Worked as full time consultant at S.S. Hospital, SSNMC Hospital & SS Sparsh Hospital, Bangalore.',
@@ -246,10 +246,10 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Santhosh S',
+      name: 'Dr. Santhosh S.',
       image: 'assets/doctor-16.png',
       desgination: 'CONSULTANT NEPHROLOGIST & TRANSPLANT PHYSICIAN',
-      about: 'Dr.Santhosh S is graduated from AJIMS ,MANAGALORE in 2008.He finished his post graduation (MD Internal medicine) from KIMS HUBLI.',
+      about: 'Dr.Santhosh S is graduated from AJIMS ,MANAGALORE in 2008. He completed his post graduation (MD Internal medicine) from KIMS HUBLI.',
       speciality: 'NEPHROLOGY',
       areasOfExpertise: ['General Dentistry', 'Endodontics'],
       expertise: 'Years of Experience: 14',
@@ -259,9 +259,9 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Sowmya Bhat S',
+      name: 'Dr. Sowmya Bhat S.',
       image: 'assets/doctor-45.png',
-      desgination: 'OPTHALMOLOGY',
+      desgination: 'OPTHALMOLOGIST',
       about: 'Dr. Sowmya S Bhat has completed her basic Medical Education from St. John’s Medical College, Bangalore.She has received post graduate training in ophthalmology from the prestigious..',
       speciality: 'OPTHALMOLOGY',
       areasOfExpertise: [''],
@@ -272,9 +272,9 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'DR. Suhas Raj S',
+      name: 'DR. Suhas Raj S.',
       image: 'assets/doctor-22.png',
-      desgination: 'CARDIOLOGY',
+      desgination: 'CARDIOLOGIST',
       about: 'Dr.Suhas Raj is graduate from Govt. Stanely Medical College and Hospital,Chennai in 2015. He did his post graduation (MD GENERAL MEDICINE) from KANYAKUMARI GOVT.',
       speciality: 'CARDIAC SCIENCES',
       areasOfExpertise: ['Interventional cardiology', 'Heart failure', 'Preventive Cardiology'],
@@ -285,9 +285,9 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Atmaram D C',
+      name: 'Dr. Atmaram D.C.',
       image: 'assets/doctor-3.png',
-      desgination: 'SURGERY/ LAPROSCOPY/ GASTROENTEROLOGY',
+      desgination: 'SURGEON/ LAPROSCOPY/ GASTROENTEROLOGLIST',
       about: 'Presently working as Assistant Professor Neurosurgery at Dayanand Sagar Medical College, Kanakpura Road.',
       speciality: 'GENERAL SURGERY',
       areasOfExpertise: ['GI surgery', 'Laproscopy', 'Onco Surgery', 'Lasers'],
@@ -301,8 +301,8 @@ export class DoctorLayoutComponent {
     {
       name: 'Dr. Kolla Vinod',
       image: 'assets/doctor-32.png',
-      desgination: 'INTERVENTIONAL PULMONARY MEDICINE',
-      about: 'Pulmonologist with special skills in bronchoscopy , thoracoscopy,sleep studies ,did specialization from narayana medical college, with expertise in critical care.',
+      desgination: 'CONSULTANT INTERVENTIONAL PULMONARY MEDICINE',
+      about: 'Pulmonologist with special skills in bronchoscopy , thoracoscopy,sleep studies ,did specialization from Narayana medical college, with expertise in critical care.',
       speciality: 'PULMONOLOGY',
       areasOfExpertise: ['BRONCHOSCOPY', 'THORACOSCOPY', 'SLEEP MEDICINE', 'COPD, ASTHAMA', 'PNEUMONIA', 'BRONCHIECTASIS', 'ALLERGIC BRONCHITIS', 'MALIGNANCYAND ALL TYPES OF LUNG DISORDERS'],
       expertise: 'Years of Experience: 15',
@@ -312,9 +312,9 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Meena H B',
+      name: 'Dr. Meena H.B.',
       image: 'assets/doctor-24.png',
-      desgination: 'DERMATOLOGY',
+      desgination: 'DERMATOLOGIST',
       about: 'Presently working as Assistant Professor Neurosurgery at Dayanand Sagar Medical College, Kanakpura Road.',
       speciality: 'DERMATOLOGY',
       areasOfExpertise: ['Clinical dermatology and various procedures like skin tag removal', 'DPN removal, wart removal, corn and callosity',
@@ -326,11 +326,11 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Sindhu P Madanshetty',
+      name: 'Dr. Sindhu P. Madanshetty',
       image: 'assets/doctor-20.png',
       desgination: 'INTERNAL MEDICINE',
       about: ' Dr Sindhu P Madanshetty is a graduate Karnataka Institute of Medical Science,Hubli having graduated in 2014.She finished her post graduation in 2018 from Bangalore Medical College and Research Institute.',
-      speciality: 'GENERAL MEDICINE',
+      speciality: 'INTERNAL MEDICINE',
       areasOfExpertise: ['Diabetes, Diabetes Reversal', 'Thyroid related illness', 'Blood related disorders', 'critical illness', 'Hypertension', 'Infectious disease'],
       expertise: 'Years of Experience: 9',
       qualification:'MBBS,MD INTERNAL MEDICINE,IDCCM',
@@ -340,7 +340,7 @@ export class DoctorLayoutComponent {
 
 
     {
-      name: 'Dr. Sujayendra D M',
+      name: 'Dr. Sujayendra D. M.',
       image: 'assets/doctor-21.png',
       desgination: 'ORTHOPEDICS',
       about: ' Dr.Sujayendra D.M did his MBBS and MS Orthopaedics from the prestigious Kasturba Medical College, Manipal. Being one of the few colleges with different units for Orthopaedic sub-specialities...',
@@ -354,7 +354,7 @@ export class DoctorLayoutComponent {
 
 
     {
-      name: 'Dr. Manasa N A',
+      name: 'Dr. Manasa N.A.',
       image: 'assets/doctor-44.png',
       desgination: 'ENT, HEAD & NECK SURGERY',
       about: 'Dr.Manasa N A is graduate from M.S.RAMAIAH MEDICAL COLLEGE AND HOSPITAL in 2011.She completed DIPLOMA IN ORTHINOLARYNGOLOGY in 2016.Also she did secondary DNB in 2021.',
@@ -368,7 +368,7 @@ export class DoctorLayoutComponent {
 
 
     {
-      name: 'Dr. Madhu S N',
+      name: 'Dr. Madhu S.N.',
       image: 'assets/doctor-17.png',
       desgination: 'UROLOGIST & ANDROLOGIST',
       speciality: 'UROLOGY',
@@ -382,7 +382,7 @@ export class DoctorLayoutComponent {
 
 
     {
-      name: 'Dr. Jaidev S',
+      name: 'Dr. Jaidev S.',
       image: 'assets/doctor-38.png',
       desgination: 'Neuro Science',
       speciality: 'NEUROSCIENCES',
@@ -407,7 +407,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Sameer M Halageri',
+      name: 'Dr. Sameer M. Halageri',
       image: 'assets/doctor-26.png',
       desgination: 'PLASTIC SURGERY',
       speciality: 'PLASTIC SURGERY',
@@ -436,7 +436,7 @@ export class DoctorLayoutComponent {
       date:'Tuesday,Thursday,Saturday'
     },
     {
-      name: 'Dr. Vishnuvardhan V',
+      name: 'Dr. Vishnuvardhan V.',
       image: 'assets/doctor-36.png',
       desgination: 'ORTHO DENTIST',
       speciality: 'DENTAL SCIENCES',
@@ -460,7 +460,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Ravi T',
+      name: 'Dr. Ravi T.',
       image: 'assets/doctor-23.png',
       desgination: 'SR. CONSULTANT MEDICAL ONCOLOGIST',
       speciality: 'ONCOLOGY',
@@ -569,7 +569,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Ajay N',
+      name: 'Dr. Ajay N.',
       image: 'assets/doctor-28.png',
       desgination: 'GASTRO SCIENCES',
       speciality: 'GASTRO SCIENCES',
@@ -581,7 +581,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Varsha P',
+      name: 'Dr. Varsha P.',
       image: 'assets/doctor-43.png',
       desgination: 'YOGA SCIENCE',
       speciality: 'YOGA SCIENCE',
@@ -604,7 +604,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Rohith K R',
+      name: 'Dr. Rohith K. R.',
       image: 'assets/doctor-41.png',
       desgination: 'AYURVEDA',
       speciality: 'AYURVEDA',
@@ -616,7 +616,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Alekhya R',
+      name: 'Dr. Alekhya R.',
       image: 'assets/doctor-40.png',
       desgination: 'AYURVEDA',
       speciality: 'AYURVEDA',
@@ -628,7 +628,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Narendranath A',
+      name: 'Dr. Narendranath A.',
       image: 'assets/doctor-35.png',
       desgination: 'ENT',
       speciality: 'ENT SPECIALITY',
@@ -652,11 +652,11 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Harshitha. R',
+      name: 'Dr. Harshitha R.',
       image: 'assets/doctor-46.png',
       desgination: 'Consultant Internal Medicine',
       about: ' ',
-      speciality: 'GENERAL MEDICINE',
+      speciality: 'INTERNAL MEDICINE',
       areasOfExpertise: ['Diabetes, dyslipidemia and other metabolic diseases','Thyroid disorders',' Hypertension','  Infectious diseases','Adult vaccination','Diabetes and life style patient education'],
       expertise: 'Years of Experience: 3',
       qualification:'MBBS, MD',
@@ -668,7 +668,7 @@ export class DoctorLayoutComponent {
       image: 'assets/doctor-47.png',
       desgination: 'Consultant Internal Medicine',
       about: ' ',
-      speciality: 'GENERAL MEDICINE',
+      speciality: 'INTERNAL MEDICINE',
       areasOfExpertise: ['Diabetes','Diabetes Reversal','Thyroid related illness','Blood related disorders','Critical illness','Hypertension','Infectious disease'],
       expertise: 'Years of Experience: ',
       qualification:'MBBS, MD',
@@ -677,7 +677,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Shamantha S',
+      name: 'Dr. Shamantha S.',
       image: 'assets/doctor-50.png',
       desgination: 'LIFE STYLE MEDICINE',
       about: ' ',
@@ -741,7 +741,7 @@ export class DoctorLayoutComponent {
         code: 'AU',
         items: [
           {
-            cname: 'GENERAL MEDICINE', code: 'GM-ON'
+            cname: 'INTERNAL MEDICINE', code: 'GM-ON'
           },
           {
             cname: 'GENERAL SURGERY', code: 'GM-ON'

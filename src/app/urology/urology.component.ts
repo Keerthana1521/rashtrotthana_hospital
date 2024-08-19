@@ -28,7 +28,7 @@ export class UrologyComponent {
       Doctors:[
         {
           doctor_image:'Dr.Madhu S N .png',
-          doctor_name:'Dr.Madhu S N'
+          doctor_name:'Dr. Madhu S.N'
         },
         {
           doctor_image:'Dr. Nagaraj Rao.png',

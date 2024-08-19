@@ -38,6 +38,9 @@ export class SpecalitiesComponent {
   isChildRouteActive(): boolean {
     return this.childRouteActive;
   }
+  home(){
+    this.router.navigate([''], {relativeTo:this.route});
+  }
 
   private checkIfChildRouteActive() {
     this.childRouteActive = this.route.firstChild !== null;
