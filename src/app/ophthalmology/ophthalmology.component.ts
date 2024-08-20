@@ -9,7 +9,7 @@ export class OphthalmologyComponent {
   specialities=[
     {
       main_heading:'Ophthalmology',
-      content:'Ophthalmologists at JMRH offers a wide range of outpatient & surgical services for diseases related to the eye & surrounding tissues. Modern ophthalmology setup along with a qualified Optometrists are part of the well equipped team. Apart from General ophthalmology, eye surgeries like Cataract surgery & Refractive surgery are performed at affordable cost.',
+      content:'Ophthalmologists at Rashtrotthana Hospital offers a wide range of outpatient & surgical services for diseases related to the eye & surrounding tissues. Modern ophthalmology setup along with a qualified Optometrists are part of the well equipped team. Apart from General ophthalmology, eye surgeries like Cataract surgery & Refractive surgery are performed at affordable cost.',
       heading:'Ophthalmology',
       image:'Ophthalmology.png',
       Doctors:[

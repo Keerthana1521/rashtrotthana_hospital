@@ -42,7 +42,7 @@
 }
 .con_1_para{
     color: #FFF;
-    text-align: justify;
+    
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
@@ -57,7 +57,7 @@
 
 .con_2_head_txt{
     color: #008080;
-    text-align: justify;
+    
     font-family: Poppins;
     font-size: 32px;
     font-style: normal;
@@ -73,7 +73,7 @@
 }
 .con_2_para{
     color: #000;
-    text-align: justify;
+    
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -104,13 +104,13 @@
 }
 .con_3_head_txt{
     color: #008080;
-    text-align: justify;
+    
     font-family: Poppins;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: capitalize;
+    
 }
 .box_1{
     display: flex;
@@ -136,7 +136,7 @@
 }
 .box_1_head{
     color: #000;
-    text-align: justify;
+    
     font-family: Poppins;
     font-size: 32px;
     font-style: normal;
@@ -145,7 +145,7 @@
 }
 .col_1_list_item{
     color: #000;
-    text-align: justify;
+    
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -200,7 +200,7 @@
 }
 .con_4_head_txt{
     color: #000;
-    text-align: justify;
+    
     font-family: Poppins;
     font-size: 32px;
     font-style: normal;

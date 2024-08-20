@@ -47,7 +47,7 @@ color: #008080;
  text-transform: none;
  line-height: 36px;
  word-wrap: break-word;
- text-align: justify;
+ 
  position: relative;
  right: 3rem;
  padding-bottom:3rem;
@@ -120,7 +120,7 @@ color: #008080;
 }
 .side-heading{
     color: #000;
-text-align: justify;
+
 font-family: Inter;
 font-size: 16px;
 font-style: normal;

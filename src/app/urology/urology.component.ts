@@ -22,7 +22,7 @@ export class UrologyComponent {
   specialities=[
     {
       main_heading:'Urology',
-      content:'Urology is the surgical specialty that focuses on the male & female urinary tract and on the reproductive system of males. The Urology Department at JMRH is an extensive surgical department equipped to handle all types of urological issues right from basic urological diagnosis to complex procedures including laparoscopic & laser surgeries. The specialist expertise in treatment of prostate(TURP), kidney stones, cancers related to kidney & bladder, Hydrocoele, urethroplasty & etc.',
+      content:'Urology is the surgical specialty that focuses on the male & female urinary tract and on the reproductive system of males. The Urology Department at Rashtrotthana Hospital is an extensive surgical department equipped to handle all types of urological issues right from basic urological diagnosis to complex procedures including laparoscopic & laser surgeries. The specialist expertise in treatment of prostate(TURP), kidney stones, cancers related to kidney & bladder, Hydrocoele, urethroplasty & etc.',
       heading:'Urology',
       image:'Urology.png',
       Doctors:[

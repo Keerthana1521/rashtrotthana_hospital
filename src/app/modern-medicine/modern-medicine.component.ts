@@ -154,7 +154,7 @@ export class ModernMedicineComponent {
     {
       name: 'card',
       image: '../../assets/modern-19.png',
-      title: 'emergency medicine',
+      title: 'Emergency Medicine',
       button_text: 'Read More',
       route:'best-emergency-medicine-hospital-in-bangalore'
     }

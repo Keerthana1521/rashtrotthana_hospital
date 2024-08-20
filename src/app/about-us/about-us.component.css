@@ -67,7 +67,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 20px; /* 142.857% */
 letter-spacing: 0.28px;
-text-align: justify;
+
 }
 .name{
     color: #008080;
@@ -169,7 +169,7 @@ padding-bottom:1rem;
 }
 .facilities-content{
     color: #000;
-text-align: justify;
+
 font-family: Poppins;
 font-size: 14px;
 font-style: normal;
@@ -293,7 +293,7 @@ flex-shrink: 0;
     }
     .about-hospital-content{
         font-size: 12px;
-        text-align: justify;
+        
     }
     .about-heading{
         font-size: 28px;
@@ -363,7 +363,7 @@ flex-shrink: 0;
    .about-hospital-content{
     padding-top: 1rem;
     width: 150%;
-    font-size: 12px;text-align: justify;
+    font-size: 12px;
    }
    .about-heading{
     width: 170%;
@@ -391,7 +391,7 @@ flex-shrink: 0;
    .facilities-content{
     font-size: 12px;
     color: #000;
-    text-align: justify;
+    
     font-family: Poppins;
    
     font-style: normal;
@@ -401,7 +401,7 @@ flex-shrink: 0;
    .facilities-content-image{
     font-size: 10px;
     color: #000;
-    text-align: justify;
+    
     font-family: Poppins;
    
     font-style: normal;
@@ -456,7 +456,7 @@ flex-shrink: 0;
         padding: 0;
        }
        .about-hospital-content{
-        text-align: justify;
+        
        }
        .president {
         width: 82px;

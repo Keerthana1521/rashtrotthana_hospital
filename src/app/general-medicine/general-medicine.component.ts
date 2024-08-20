@@ -18,6 +18,18 @@ export class GeneralMedicineComponent {
         {
           doctor_image:'gm_doctor.png',
           doctor_name:'Dr. Sindhu P Madanshetty'
+        },
+        {
+          doctor_image:'gm_doctor.png',
+          doctor_name:'Dr. Sindhu P Madanshetty'
+        },
+        {
+          doctor_image:'gm_doctor.png',
+          doctor_name:'Dr. Sindhu P Madanshetty'
+        },
+        {
+          doctor_image:'gm_doctor.png',
+          doctor_name:'Dr. Sindhu P Madanshetty'
         }
       ]}];
       currentSpecialty = '';

@@ -163,7 +163,7 @@
 .para_txt {
     color: #000;
     width: 260px;
-    text-align: justify;
+    
     font-family: Poppins;
     font-size: 12px;
     font-style: normal;
@@ -352,20 +352,20 @@
 
 .con_3_head .con_3_head_txt {
     color: #008080;
-    text-align: justify;
+    
     font-family: Poppins;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 2px;
-    text-transform: capitalize;
+    
     width: 503px;
 }
 
 .con_3_paragraph .con_3_paragraph_txt {
     color: #000;
-    text-align: justify;
+    
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
@@ -414,7 +414,7 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 2px;
-    text-transform: capitalize;
+    
     margin-top: 100px;
     margin-bottom: 30px;
     margin-left: 40px;
@@ -422,19 +422,19 @@
 
 .content_1_box_4 .content_1_heading {
     color: #000;
-    text-align: justify;
+    
     font-family: Poppins;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
     /* 100% */
-    text-transform: capitalize;
+    
 }
 
 .content_1_box_4 .content_1_paragraph {
     color: #000;
-    text-align: justify;
+    
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
@@ -442,7 +442,7 @@
     line-height: 24px;
     /* 171.429% */
     letter-spacing: 1px;
-    text-transform: capitalize;
+    
     width: 581px;
 }
 
@@ -504,14 +504,14 @@
     font-weight: 300;
     line-height: normal;
     letter-spacing: 2px;
-    text-transform: capitalize;
+    
     width: 50%;
 }
 
 .content_con_5 .con_5_paragraph {
     width: 273px;
     color: #000;
-    text-align: justify;
+    
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -543,7 +543,7 @@
     font-weight: 300;
     line-height: normal;
     letter-spacing: 2px;
-    text-transform: capitalize;
+    
     width: 352px;
     background-color: #FBFFF5;
 }
@@ -563,7 +563,7 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 2px;
-    text-transform: capitalize;
+    
     margin-top: 80px;
     width: 1000px;
 }
@@ -591,7 +591,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    text-transform: capitalize;
+    
 }
 
 .con_5_table .table_1 .table_1_value {
@@ -603,7 +603,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    text-transform: capitalize;
+    
 }
 
 .table_1 .table_1_data_heading {
@@ -616,7 +616,7 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 2px;
-    text-transform: capitalize;
+    
     border: 2px solid #008080;
 }
 
@@ -642,7 +642,7 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.8px;
-    text-transform: capitalize;
+    
 }
 
 .con_7_contact_us {
@@ -652,7 +652,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: capitalize;
+    
     margin-top: 50px;
 }
 
@@ -680,7 +680,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    text-transform: capitalize;
+    
     margin-left: 50px;
     margin-top: 10px;
 }
@@ -907,7 +907,7 @@
         font-weight: 700;
         line-height: normal;
         letter-spacing: 2px;
-        text-transform: capitalize;
+        
     }
 
     .con_5_table .table_1 {
@@ -1148,14 +1148,14 @@
     .con_3_head .con_3_head_txt {
         width: 280px;
         color: #008080;
-        text-align: justify;
+        
         font-family: Poppins;
         font-size: 16px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         letter-spacing: 2px;
-        text-transform: capitalize;
+        
     }
 
     .con_3_paragraph {
@@ -1170,7 +1170,7 @@
     .con_3_paragraph .con_3_paragraph_txt {
         width: 100%;
         color: #000;
-        text-align: justify;
+        
         font-family: Inter;
         font-size: 10px;
         font-style: normal;
@@ -1254,7 +1254,7 @@
         font-weight: 300;
         line-height: normal;
         letter-spacing: 2px;
-        text-transform: capitalize;
+        
         width: 267px;
         border: none;
         background-color: #FBFFF5;
@@ -1284,12 +1284,12 @@
         font-weight: 300;
         line-height: normal;
         letter-spacing: 2px;
-        text-transform: capitalize;
+        
     }
 
     .content_con_5 .con_5_paragraph {
         color: #000;
-        text-align: justify;
+        
         font-family: Inter;
         font-size: 12px;
         font-style: normal;
@@ -1313,7 +1313,7 @@
         font-weight: 700;
         line-height: normal;
         letter-spacing: 2px;
-        text-transform: capitalize;
+        
     }
 
     .con_5_table .table_1 {
@@ -1362,7 +1362,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        text-transform: capitalize;
+        
         margin-top: 6%;
     }
     
@@ -1401,7 +1401,7 @@
         font-weight: 300;
         line-height: normal;
         letter-spacing: 2px;
-        text-transform: capitalize;
+        
         width: 267px;
         border: none;
         background-color: #FBFFF5;
@@ -1431,12 +1431,12 @@
         font-weight: 300;
         line-height: normal;
         letter-spacing: 2px;
-        text-transform: capitalize;
+        
     }
 
     .content_con_5 .con_5_paragraph {
         color: #000;
-        text-align: justify;
+        
         font-family: Inter;
         font-size: 12px;
         font-style: normal;

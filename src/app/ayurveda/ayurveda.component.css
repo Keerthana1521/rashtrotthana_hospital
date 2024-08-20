@@ -48,19 +48,19 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: capitalize;
+    
 }
 
 .con_1_para {
     color: #000;
-    text-align: justify;
+    
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
     /* 177.778% */
-    text-transform: capitalize;
+    
     width: 739px;
 }
 
@@ -117,12 +117,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: capitalize;
+    
 }
 
 .container_2 .con_2_para_1_txt {
     color: #848484;
-    text-align: justify;
+    
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -139,7 +139,7 @@
     font-family: Inter;
     font-size: 18px;
     color: #848484;
-    text-align: justify;
+    
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
@@ -150,7 +150,7 @@
 
 .container_2 .con_2_para_3_txt {
     color: #848484;
-    text-align: justify;
+    
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -196,7 +196,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: capitalize;
+    
 }
 
 .con_3_des {
@@ -305,7 +305,7 @@
 
 .content_head {
     color: #008080;
-    text-align: justify;
+    
     font-family: Inter;
     font-size: 32px;
     font-style: normal;
@@ -316,7 +316,7 @@
 .content_paragraph {
     width: 295px;
     color: #848484;
-    text-align: justify;
+    
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -340,7 +340,7 @@
 
 .con_4_des .con_4_des_txt {
     color: #000;
-    text-align: justify;
+    
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -388,7 +388,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: capitalize;
+    
 }
 
 /* container 6 */
@@ -437,7 +437,7 @@
     width: 90%;
     font-family: Inter;
     color: #848484;
-    text-align: justify;
+    
     line-height: 30px;
     font-size: 18px;
     padding: 5% 0 0 0;
@@ -675,7 +675,7 @@
     font-size: 16px;
     font-family: inter;
     padding: 0 10%;
-    text-align: justify;
+    
     color: #7D7D7D;
 }
 
@@ -840,19 +840,19 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        text-transform: capitalize;
+        
     }
 
     .con_1_lft_box .con_1_para {
         color: #000;
-        text-align: justify;
+        
         font-family: Inter;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 14px;
         /* 140% */
-        text-transform: capitalize;
+        
         width: 349px;
         padding: 0;
         margin-right: 0;
@@ -1005,7 +1005,7 @@
     }
 
     .content_box_1 .content_paragraph {
-        text-align: justify;
+        
         font-family: Inter;
         font-size: 10px;
         font-style: normal;
@@ -1051,7 +1051,7 @@
 
     .con_4_des .con_4_des_txt {
         color: #000;
-        text-align: justify;
+        
         font-family: Inter;
         font-size: 12px;
         font-style: normal;
@@ -1241,19 +1241,19 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        text-transform: capitalize;
+        
     }
 
     .con_1_lft_box .con_1_para {
         color: #000;
-        text-align: justify;
+        
         font-family: Inter;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 14px;
         /* 140% */
-        text-transform: capitalize;
+        
         width: 349px;
         padding: 0;
         margin-right: 0;
@@ -1399,7 +1399,7 @@
     }
 
     .content_box_1 .content_paragraph {
-        text-align: justify;
+        
         font-family: Inter;
         font-size: 10px;
         font-style: normal;
@@ -1445,7 +1445,7 @@
 
     .con_4_des .con_4_des_txt {
         color: #000;
-        text-align: justify;
+        
         font-family: Inter;
         font-size: 12px;
         font-style: normal;
@@ -1655,19 +1655,19 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        text-transform: capitalize;
+        
     }
 
     .con_1_lft_box .con_1_para {
         color: #000;
-        text-align: justify;
+        
         font-family: Inter;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 14px;
         /* 140% */
-        text-transform: capitalize;
+        
         width: 280px;
         padding: 0;
         margin-right: 8%;
@@ -1785,7 +1785,7 @@
     }
 
     .content_box_1 .content_paragraph {
-        text-align: justify;
+        
         font-family: Inter;
         font-size: 10px;
         font-style: normal;
@@ -1820,7 +1820,7 @@
 
     .con_4_des .con_4_des_txt {
         color: #000;
-        text-align: justify;
+        
         font-family: Inter;
         font-size: 12px;
         font-style: normal;

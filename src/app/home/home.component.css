@@ -529,7 +529,7 @@ background-image: url('../../assets/Yellow\ Arrow.png');
   font-weight: 400;
   width: 534px;
   word-wrap: break-word;
-  text-align: justify;
+  
 }
 .read-button {
   padding-left: 4rem;
@@ -598,7 +598,7 @@ background-image: url('../../assets/Yellow\ Arrow.png');
 li {
   width: 599px;
   color: #fff;
-  text-align: justify;
+  
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -709,7 +709,7 @@ li {
   font-weight: 400;
   width: 534px;
   word-wrap: break-word;
-  text-align: justify;
+  
 }
 .read-button {
   padding-left: 4rem;
@@ -762,7 +762,7 @@ li {
 li {
   width: 599px;
   color: #fff;
-  text-align: justify;
+  
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -1012,7 +1012,7 @@ line-height: 28px; /* 175% */
 .review {
   font-family: poppins;
   line-height: 25px;
-  text-align: justify;
+  
   font-size: 16px;
   margin-top: 20px;
   width: 100%;

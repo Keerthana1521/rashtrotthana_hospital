@@ -27,12 +27,12 @@ export class OrthopedicsComponent {
       image:'Orthopedics.png',
       Doctors:[
         {
-          doctor_image:'../../assets/doctor-6.png',
-          doctor_name:'Dr. Ravishankar. D'
+          doctor_image:'../../assets/doctor-52.png',
+          doctor_name:'Dr. Mahesh Kulkarni'
         },
         {
-          doctor_image:'../../assets/doctor-26.png',
-          doctor_name:'Dr. Pramod Cinder'
+          doctor_image:'../../assets/doctor-21.png',
+          doctor_name:'Dr. Sujayendra D. M.'
         }
       ]}];
 }

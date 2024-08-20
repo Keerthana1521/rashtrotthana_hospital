@@ -272,7 +272,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'DR. Suhas Raj S.',
+      name: 'Dr. Suhas Raj S.',
       image: 'assets/doctor-22.png',
       desgination: 'CARDIOLOGIST',
       about: 'Dr.Suhas Raj is graduate from Govt. Stanely Medical College and Hospital,Chennai in 2015. He did his post graduation (MD GENERAL MEDICINE) from KANYAKUMARI GOVT.',
@@ -670,7 +670,7 @@ export class DoctorLayoutComponent {
       about: ' ',
       speciality: 'INTERNAL MEDICINE',
       areasOfExpertise: ['Diabetes','Diabetes Reversal','Thyroid related illness','Blood related disorders','Critical illness','Hypertension','Infectious disease'],
-      expertise: 'Years of Experience: ',
+      expertise: 'Years of Experience: 7',
       qualification:'MBBS, MD',
       time:'9:00-9:20,9:20-9:40,9:40-10:00,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
       date:'Monday-Saturday'
@@ -696,7 +696,7 @@ export class DoctorLayoutComponent {
       speciality: 'AYURVEDA',
       qualification:'MD,PDF',
       areasOfExpertise: [' Anxiety disorder and Depression','Child psychiatric disorders (ASD, ADHD)','Add on Ayurveda for Schizophrenia','Motor Neuron Disease','Parkinson s disease','Muscular dystrophy','Stroke rehab','Multiple Sclerosis' ,'Dementia'],
-      expertise: 'Years of Experience: ',
+      expertise: 'Years of Experience: 3',
       time:'9:30-9:50,9:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:10',
       date:'Monday-Saturday'
     },

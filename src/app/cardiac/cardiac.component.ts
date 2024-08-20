@@ -28,7 +28,7 @@ export class CardiacComponent {
       Doctors:[
         {
           doctor_image:'../../assets/doctor-37.png',
-          doctor_name:'DR. Suhas Raj S'
+          doctor_name:'Dr. Suhas Raj S'
         },
       ]}];
 }

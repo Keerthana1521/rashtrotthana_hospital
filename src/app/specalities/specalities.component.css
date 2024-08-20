@@ -84,7 +84,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 20px; 
-    text-transform: capitalize;
+    
     display: flex;
     width: 132px;
   height: 40px;
@@ -178,7 +178,7 @@
   font-size: 16px;
   font-family: Poppins;
   font-weight: 600;
-  text-transform: capitalize;
+  
   line-height: 20px;
   word-wrap: break-word;
   width: 132px;
@@ -287,7 +287,7 @@ height: 266px;
       font-style: normal;
       font-weight: 700;
       line-height: 20px; /* 166.667% */
-      text-transform: capitalize;
+      
       display: flex;
       width: 110px;
       height: 32px;
@@ -377,7 +377,7 @@ height: 266px;
       font-style: normal;
       font-weight: 700;
       line-height: 20px; /* 166.667% */
-      text-transform: capitalize;
+      
       display: flex;
       width: 110px;
       height: 32px;
@@ -430,7 +430,7 @@ padding-left: 3rem;
     font-style: normal;
     font-weight: 700;
     line-height: 20px; /* 166.667% */
-    text-transform: capitalize;
+    
     display: flex;
     width: 110px;
     height: 32px;
