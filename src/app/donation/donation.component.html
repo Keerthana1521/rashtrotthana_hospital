@@ -5,7 +5,9 @@
             <p class="con_1_heading">"समर्पण: आशीषः" (Samarpanaḥ: aśisaḥ) - Giving is a Blessing</p>
             <p class="con_1_pararaph">“In the act of giving, we find the true essence of humanity,  For it is in selfless offering that our souls find unity. Each gift bestowed, a ripple of hope and grace, Bringing abundant blessings to every heart and place”</p>
             <div class="con_1_btns  donate_here">
-                <button class="donate_here_btn">Donate Here <i class="fa-solid fa-chevron-right"></i></button>
+                <!-- <button class="donate_here_btn">Donate Here <i class="fa-solid fa-chevron-right"></i></button> -->
+                 <app-read-more-btn [text]="'Donate Here'" [background]="'linear-gradient(90deg, #FBCA51 -22.35%, #07CCEC 118.82%)'"
+                 [boxShadow]="' 3px 4px 15px 0px rgba(63, 176, 206, 0.65)'"  [iconClass]="'fa-solid fa-angle-right'" />
               <button class="con_btn explore_more_btn_con_1" (click)="scrollToSection()">Explore More</button>
             </div>
         </div>
