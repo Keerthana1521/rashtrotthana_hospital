@@ -497,7 +497,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Niveditha C',
+      name: 'Dr. Niveditha C.',
       image: 'assets/doctor-30.png',
       desgination: 'PAEDIATRICS & NEONATOLOGY',
       about: 'Consultation Paediatrician and Neonatologist with expertise in management of Paediatric and Neonates including extreme preterm, birth asphyxia, advanced ventilation and critical interventional procedures.',

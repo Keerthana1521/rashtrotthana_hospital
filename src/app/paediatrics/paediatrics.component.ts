@@ -28,7 +28,15 @@ export class PaediatricsComponent {
       Doctors:[
         {
           doctor_image:'../../assets/doctor-11.png',
-          doctor_name:'Dr. Savinay S Kanchibail'
-        }
+          doctor_name:'Dr. Savinay S. Kanchibail'
+        },
+        {
+          doctor_image:'../../assets/doctor-29.png',
+          doctor_name:'Dr. Vishwanath Sanagoudar'
+        },
+        {
+          doctor_image:'../../assets/doctor-30.png',
+          doctor_name:'Dr. Niveditha C.'
+        }    
       ]}];
 }

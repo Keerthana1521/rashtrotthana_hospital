@@ -280,6 +280,7 @@ flex-shrink: 0;
 .doctor-image{
   width: 370px;
   height: 370px;
+  border-radius: 20px;
 }
 .doctor-section{
   display: grid;
@@ -1179,7 +1180,7 @@ right: 20px;
   .button {
     cursor:pointer;
     position: relative;
-    left: 600px;
+    left: 342px;
     width: 50%;
   }
   .empty{

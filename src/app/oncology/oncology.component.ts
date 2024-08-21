@@ -31,6 +31,10 @@ export class OncologyComponent {
           doctor_name:'Dr. Shekar Patil'
         },
         {
+          doctor_image:'../../assets/doctor-53.png',
+          doctor_name:'Dr. Pramod S. Chinder'
+        },
+        {
           doctor_image:'../../assets/doctor-4.png',
           doctor_name:'Dr. Rajeev Vijayakumar'
         },

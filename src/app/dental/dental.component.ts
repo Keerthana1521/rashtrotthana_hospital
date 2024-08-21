@@ -20,6 +20,10 @@ export class DentalComponent {
         {
           doctor_image:'Dr.Geethanjali K G.png',
           doctor_name:'Dr. Geethanjali K. G.'
+        },
+        {
+          doctor_image:'../../assets/doctor-36.png',
+          doctor_name:'Dr. Vishnuvardhan V..'
         }
       ]}];
 }

@@ -41,7 +41,7 @@ padding-bottom: 3rem ;
 .content{
     color: #000;
     text-align: center;
-    font-family: Poppins;
+    font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -61,7 +61,7 @@ padding-bottom: 3rem ;
 }
 .president-content{
     color: #000;
-font-family: Poppins;
+font-family: Inter;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -115,7 +115,7 @@ padding-bottom: 35px;
 }
 .about-hospital-content{
     color: #000;
-font-family: Poppins;
+font-family: Inter;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -134,7 +134,7 @@ font-weight: 700;
 line-height: normal;
 color: #FFF;
 text-align: center;
-font-family: Poppins;
+font-family: Inter;
 }
 .vision-heading{
 font-size: 36px;
@@ -148,7 +148,7 @@ font-size: 24px;
     padding-top: 2rem;
     color: #FFF;
 text-align: center;
-font-family: Poppins;
+font-family: Inter;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -392,7 +392,7 @@ flex-shrink: 0;
     font-size: 12px;
     color: #000;
     
-    font-family: Poppins;
+    font-family: Inter;
    
     font-style: normal;
     font-weight: 400;
@@ -402,7 +402,7 @@ flex-shrink: 0;
     font-size: 10px;
     color: #000;
     
-    font-family: Poppins;
+    font-family: Inter;
    
     font-style: normal;
     font-weight: 400;

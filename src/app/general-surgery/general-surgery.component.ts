@@ -13,10 +13,17 @@ export class GeneralSurgeryComponent {
       heading:'General Surgery',
       image:'general_surgery.jfif',
       Doctors:[
-       
         {
-          doctor_image:'Dr. Atmaram D C.png',
-          doctor_name:'Dr. Atmaram D C'
-        }
+          doctor_image:'../../assets/doctor-5.png',
+          doctor_name:'Dr. Shashi Vadhanan'
+        },
+        {
+          doctor_image:'../../assets/doctor-3.png',
+          doctor_name:'Dr. Atmaram D.C.'
+        },
+        {
+          doctor_image:'../../assets/doctor-25.png',
+          doctor_name:'Dr. Nishanth Lakshmikanth'
+        }    
       ]}];
 }

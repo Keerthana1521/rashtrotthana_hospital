@@ -1,7 +1,8 @@
 .root_container {
     padding: 0;
     margin: 0;
-    background-color: #FBFFF5;
+    background-color: #fbfff4;
+    line-height: 36px;
 }
 
 /* container 1 */
