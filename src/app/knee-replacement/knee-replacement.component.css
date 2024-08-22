@@ -195,6 +195,52 @@
     font-size: 26px;
   }
 
+  .doctor_heading{
+    margin: 80px 0;
+    font-size: 30px;
+    font-family: poppins;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.doctors_flex{
+    display: flex;
+    gap: 100px;
+    justify-content: center ;
+}
+
+.doc_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 40px 0;
+    box-shadow: -25px 25px 0 rgb(218, 218, 218);
+    width: 250px;
+    background-color: #ffffff;
+}
+
+.doc_1 img {
+    width: 250px;
+    height: 250px;
+    height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.doc_name {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.section, .designation, .department {
+    color: #0392CE;
+    font-family: Inter, sans-serif;
+}
+
   .youtube{
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -217,6 +263,9 @@
   iframe{
     width: 100%;
   }
+
+  
+
 @media only screen and (max-width:1380px){
   .first-container{
     width: 101%;
@@ -302,6 +351,59 @@
   width: 349px;
   height: 294px;
 }
+.doc_name {
+  font-size: 16px;
+}
+.doctors_flex{
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
+
+.doc_1 {
+  width: 160px;
+}
+
+.doc_1 img {
+  width: 160px;
+  height: 160px;
+}
+
+.doc_name {
+  font-size: 12px;
+}
+
+.section, .designation, .department {
+  font-size: 10px;
+}
+}
+@media (max-width: 500px){
+
+  .doc_name {
+      font-size: 16px;
+  }
+  .doctors_flex{
+      flex-direction: column;
+      gap: 0;
+      align-items: center;
+  }
+
+  .doc_1 {
+      width: 160px;
+  }
+
+  .doc_1 img {
+      width: 160px;
+      height: 160px;
+  }
+
+  .doc_name {
+      font-size: 12px;
+  }
+
+  .section, .designation, .department {
+      font-size: 10px;
+  }
 }
 @media only screen and (max-width: 430px) {
   .first-container {
@@ -425,6 +527,11 @@ line-height: 140.6%; /* 19.684px */
     position: relative;
     bottom: 70px;
     left: 0rem;
+  }
+
+  .youtube{
+    display: flex;
+    flex-direction: column;
   }
 }
 @media only screen and (max-width:380px){
