@@ -26,4 +26,24 @@ export class KneeReplacementComponent implements OnInit {
   contactus(){
     this.router.navigate(['/contact-us-bangalore']);
   }
+
+
+
+  doctors =[
+    {
+      image : 'assets/doctor-52.png',
+      name : 'Dr. Mahesh Kulkarni',
+      designation : 'Orthopaedics',
+    },
+    {
+      image : 'assets/doctor-21.png',
+      name : 'Dr. Sujayendra D. M',
+      designation : 'Orthopaedics',
+    },{
+      image : 'assets/doctor-37.png',
+      name : 'Dr. Nikhil Hegde',
+      designation : 'Orthopaedics',
+    }
+  ]
+
 }
