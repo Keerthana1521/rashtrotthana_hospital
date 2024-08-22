@@ -526,7 +526,7 @@ background-image: url('../../assets/Yellow\ Arrow.png');
   padding-left: 4rem;
   color: #222222;
   font-size: 18px;
-  font-family: Poppins;
+  font-family: inter;
   font-weight: 400;
   width: 534px;
   word-wrap: break-word;
@@ -540,7 +540,7 @@ background-image: url('../../assets/Yellow\ Arrow.png');
   padding-top: 2rem;
   color: black;
   font-size: 12px;
-  font-family: Poppins;
+  font-family: inter;
   font-weight: 500;
   line-height: 26px;
   word-wrap: break-word;
@@ -599,8 +599,7 @@ background-image: url('../../assets/Yellow\ Arrow.png');
 li {
   width: 599px;
   color: #fff;
-  
-  font-family: Poppins;
+  font-family: inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1332,6 +1331,7 @@ li{
   font-size: 14px;
   width: 390px;
   padding-left: 2rem;
+  font-family: inter;
 }}
 
 

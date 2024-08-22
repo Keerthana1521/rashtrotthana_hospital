@@ -19,7 +19,7 @@ export class GeneralSurgeryComponent {
         },
         {
           doctor_image:'../../assets/doctor-3.png',
-          doctor_name:'Dr. Atmaram D.C.'
+          doctor_name:'Dr. Atmaram D. C'
         },
         {
           doctor_image:'../../assets/doctor-25.png',

@@ -37,7 +37,7 @@ margin-top: 2rem;
   }
   .image{
     box-shadow: -34px 41px 3px rgba(34, 34, 34, 0.20);
-    border-radius:25px ;
+    border-radius:25px;
   }
   .area-of-interest{
     display: flex;
@@ -46,14 +46,14 @@ margin-top: 2rem;
   }
   .doctor-details-content{
     color: #E9EAF8;
-font-family: Poppins;
-font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-padding-bottom: 1rem;
-position: relative;
-top: 7px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 1rem;
+    position: relative;
+    top: 7px;
   }
   .section-2{
     padding-left: 6rem;

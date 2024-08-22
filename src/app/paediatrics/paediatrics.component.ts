@@ -36,7 +36,7 @@ export class PaediatricsComponent {
         },
         {
           doctor_image:'../../assets/doctor-30.png',
-          doctor_name:'Dr. Niveditha C.'
+          doctor_name:'Dr. Niveditha C'
         }    
       ]}];
 }

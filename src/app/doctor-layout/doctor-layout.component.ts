@@ -163,7 +163,7 @@ export class DoctorLayoutComponent {
       image: 'assets/doctor-5.png',
       desgination: 'GENERAL SURGEON',
       speciality: 'GENERAL SURGERY',
-      about:'Dr. Shashivadhanan specializes in a wide array of neurosurgical and spinal procedures. His areas of expertise include Minimally Invasive Spine Surgery, Spinal Deformity Correction, Spinal Cord Tumors, Cerebrovascular Surgery, Neuroendoscopy, Deep Brain Stimulation, Epilepsy Surgery and Paediatric Neurosurgery. He is also skilled in minimally invasive pain interventions for spinal pain, including Facetal and Transforaminal Blocks, Vertebroplasty and Kyphoplasty.',
+      about:'Dr. Shashi Vadhanan specializes in a wide array of neurosurgical and spinal procedures. His areas of expertise include Minimally Invasive Spine Surgery, Spinal Deformity Correction, Spinal Cord Tumors, Cerebrovascular Surgery, Neuroendoscopy, Deep Brain Stimulation, Epilepsy Surgery and Paediatric Neurosurgery. He is also skilled in minimally invasive pain interventions for spinal pain, including Facetal and Transforaminal Blocks, Vertebroplasty and Kyphoplasty.',
       areasOfExpertise: ['Minimally Invasive Spine Surgery', 'Spinal Deformity Correction', 'Spinal Cord Tumors', 'Cerebrovascular Surgery', 'Neurosurgery', 'Neuroendoscopy', 'Deep Brain Stimulation', 'Epilepsy Surgery', 'Paediatric Neurosurgery'],
       expertise: 'Years of Experience: 30+',
       qualification:'MBBS, MS, DNB(GEN SURGERY), MCH, DNB(NEUROSURGERY), FRCS EDINBURGH, FICS, FIGASS(COPENHAGEN), FIMSA, MNAMS',
@@ -183,7 +183,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Shreelakshmi G.',
+      name: 'Dr. Shreelakshmi G',
       image: 'assets/doctor-10.png',
       desgination: 'OBSTETRICS & GYNECOLOGY',
       about: 'Dr. Shreelakshmi G is graduated from university from mysore. She also did post graduation in M.S .OBSTETRICS AND GYNAECOLOGY (2003)',
@@ -233,7 +233,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Geethanjali K.G.',
+      name: 'Dr. Geethanjali K. G',
       image: 'assets/doctor-19.png',
       desgination: 'DENTAL SCIENCES',
       about: 'Worked as full time comsultant at Sagar Hospitals, Banashankari - Bangalore.Worked as full time consultant at S.S. Hospital, SSNMC Hospital & SS Sparsh Hospital, Bangalore.',
@@ -246,7 +246,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Santhosh S.',
+      name: 'Dr. Santhosh S',
       image: 'assets/doctor-16.png',
       desgination: 'CONSULTANT NEPHROLOGIST & TRANSPLANT PHYSICIAN',
       about: 'Dr.Santhosh S is graduated from AJIMS ,MANAGALORE in 2008. He completed his post graduation (MD Internal medicine) from KIMS HUBLI.',
@@ -259,7 +259,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Sowmya Bhat S.',
+      name: 'Dr. Sowmya Bhat S',
       image: 'assets/doctor-45.png',
       desgination: 'OPTHALMOLOGIST',
       about: 'Dr. Sowmya S Bhat has completed her basic Medical Education from St. John’s Medical College, Bangalore.She has received post graduate training in ophthalmology from the prestigious..',
@@ -272,7 +272,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Suhas Raj S.',
+      name: 'Dr. Suhas Raj S',
       image: 'assets/doctor-22.png',
       desgination: 'CARDIOLOGIST',
       about: 'Dr.Suhas Raj is graduate from Govt. Stanely Medical College and Hospital,Chennai in 2015. He did his post graduation (MD GENERAL MEDICINE) from KANYAKUMARI GOVT.',
@@ -285,7 +285,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Atmaram D.C.',
+      name: 'Dr. Atmaram D. C',
       image: 'assets/doctor-3.png',
       desgination: 'SURGEON/ LAPROSCOPY/ GASTROENTEROLOGLIST',
       about: 'Presently working as Assistant Professor Neurosurgery at Dayanand Sagar Medical College, Kanakpura Road.',
@@ -312,7 +312,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Meena H.B.',
+      name: 'Dr. Meena H. B',
       image: 'assets/doctor-24.png',
       desgination: 'DERMATOLOGIST',
       about: 'Presently working as Assistant Professor Neurosurgery at Dayanand Sagar Medical College, Kanakpura Road.',
@@ -340,7 +340,7 @@ export class DoctorLayoutComponent {
 
 
     {
-      name: 'Dr. Sujayendra D. M.',
+      name: 'Dr. Sujayendra D. M',
       image: 'assets/doctor-21.png',
       desgination: 'ORTHOPEDICS',
       about: ' Dr.Sujayendra D.M did his MBBS and MS Orthopaedics from the prestigious Kasturba Medical College, Manipal. Being one of the few colleges with different units for Orthopaedic sub-specialities...',
@@ -354,7 +354,7 @@ export class DoctorLayoutComponent {
 
 
     {
-      name: 'Dr. Manasa N.A.',
+      name: 'Dr. Manasa N. A',
       image: 'assets/doctor-44.png',
       desgination: 'ENT, HEAD & NECK SURGERY',
       about: 'Dr.Manasa N A is graduate from M.S.RAMAIAH MEDICAL COLLEGE AND HOSPITAL in 2011.She completed DIPLOMA IN ORTHINOLARYNGOLOGY in 2016.Also she did secondary DNB in 2021.',
@@ -368,7 +368,7 @@ export class DoctorLayoutComponent {
 
 
     {
-      name: 'Dr. Madhu S.N.',
+      name: 'Dr. Madhu S. N',
       image: 'assets/doctor-17.png',
       desgination: 'UROLOGIST & ANDROLOGIST',
       speciality: 'UROLOGY',
@@ -382,7 +382,7 @@ export class DoctorLayoutComponent {
 
 
     {
-      name: 'Dr. Jaidev S.',
+      name: 'Dr. Jaidev S',
       image: 'assets/doctor-38.png',
       desgination: 'Neuro Science',
       speciality: 'NEUROSCIENCES',
@@ -436,7 +436,7 @@ export class DoctorLayoutComponent {
       date:'Tuesday,Thursday,Saturday'
     },
     {
-      name: 'Dr. Vishnuvardhan V.',
+      name: 'Dr. Vishnuvardhan V',
       image: 'assets/doctor-36.png',
       desgination: 'ORTHO DENTIST',
       speciality: 'DENTAL SCIENCES',
@@ -460,7 +460,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Ravi T.',
+      name: 'Dr. Ravi T',
       image: 'assets/doctor-23.png',
       desgination: 'SR. CONSULTANT MEDICAL ONCOLOGIST',
       speciality: 'ONCOLOGY',
@@ -497,7 +497,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Niveditha C.',
+      name: 'Dr. Niveditha C',
       image: 'assets/doctor-30.png',
       desgination: 'PAEDIATRICS & NEONATOLOGY',
       about: 'Consultation Paediatrician and Neonatologist with expertise in management of Paediatric and Neonates including extreme preterm, birth asphyxia, advanced ventilation and critical interventional procedures.',
@@ -569,7 +569,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Ajay N.',
+      name: 'Dr. Ajay N',
       image: 'assets/doctor-28.png',
       desgination: 'GASTRO SCIENCES',
       speciality: 'GASTRO SCIENCES',
@@ -581,7 +581,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Varsha P.',
+      name: 'Dr. Varsha P',
       image: 'assets/doctor-43.png',
       desgination: 'YOGA SCIENCE',
       speciality: 'YOGA SCIENCE',
@@ -604,7 +604,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Rohith K. R.',
+      name: 'Dr. Rohith K. R',
       image: 'assets/doctor-41.png',
       desgination: 'AYURVEDA',
       speciality: 'AYURVEDA',
@@ -616,7 +616,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Alekhya R.',
+      name: 'Dr. Alekhya R',
       image: 'assets/doctor-40.png',
       desgination: 'AYURVEDA',
       speciality: 'AYURVEDA',
@@ -628,7 +628,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Narendranath A.',
+      name: 'Dr. Narendranath A',
       image: 'assets/doctor-35.png',
       desgination: 'ENT',
       speciality: 'ENT SPECIALITY',
@@ -652,7 +652,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Harshitha R.',
+      name: 'Dr. Harshitha R',
       image: 'assets/doctor-46.png',
       desgination: 'Consultant Internal Medicine',
       about: ' ',
@@ -677,7 +677,7 @@ export class DoctorLayoutComponent {
     },
 
     {
-      name: 'Dr. Shamantha S.',
+      name: 'Dr. Shamantha S',
       image: 'assets/doctor-50.png',
       desgination: 'LIFE STYLE MEDICINE',
       about: ' ',
@@ -702,7 +702,7 @@ export class DoctorLayoutComponent {
     },
 
   ]
-  specialDoctors = ['Dr. Pramod S Chinder', 'Dr.Meena H B', 'Dr. Shashi Vadhanan', 'Dr. Ravishankar. D'];
+  specialDoctors = ['Dr. Pramod S. Chinder', 'Dr.Meena H. B', 'Dr. Shashi Vadhanan', 'Dr. Ravishankar. D'];
 
   constructor(private fb: FormBuilder, public dialog: MatDialog,private titleService: Title, private metaService: Meta) {
     // this.subjects = [
