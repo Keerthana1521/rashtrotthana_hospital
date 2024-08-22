@@ -132,7 +132,9 @@
 .navbar_icon .fa-brands{
   font-size: 22px;
 }
-
+button{
+  border: none;
+}
 
 
 #navbar {

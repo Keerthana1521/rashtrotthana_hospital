@@ -1547,6 +1547,7 @@ padding: 5rem 0rem 3rem 1rem;
 .text-container{
 
   margin-bottom: 30px;
+  top: 25px;
 }
 .bg-features:hover .secondary {
   opacity: 0;
@@ -1554,7 +1555,7 @@ padding: 5rem 0rem 3rem 1rem;
 .bg-features:hover .primary{
   opacity: 1;
 }
-.icons{
+/* .icons{
   display: grid;
   grid-template-columns: 51% 25%;
   gap: 47px;
@@ -1580,6 +1581,33 @@ padding: 5rem 0rem 3rem 1rem;
   }
   .homeopathy{
     margin-top:0;
+  } */
+  .icons{
+    margin-right: 113px;
+    gap:44px;
+  }
+  .icon img{
+width:109px;
+height:149px
+  }
+  .modern-medicine{
+    margin-bottom: 0;
+    bottom: 110px;
+    left: 13px;
+  }
+  .naturopathy{
+    margin-bottom: 0;
+    right: 47px;
+    bottom: 110px;
+  }
+  .bg-features{
+    width: 0;
+    height:0;
+  }
+  .ayurveda{
+    margin-bottom: 0;
+    left: 76px;
+    bottom: 110px;
   }
   .sheild{
     margin-top: 0;
@@ -1587,9 +1615,34 @@ padding: 5rem 0rem 3rem 1rem;
     height: 90px;
   }
   .icon img {
-    width: 90px;
-    height: 110px;
+    width: 123px;
+    height: 143px;
     margin-bottom: 0px;
+  }
+  .yoga{
+    position: relative;
+    top: 271px;
+    left:98px;
+  }
+  .homeopathy{
+    position: relative;
+    top: 271px;
+    right: 62px;
+  }
+  .bg-features .secondary{
+    opacity: 1;
+  }
+  .bg-features .primary{
+    opacity: 0;
+  }
+  .bg-features:hover .secondary{
+    opacity: 1;
+  }
+  .bg-features:hover .primary{
+    opacity: 0;
+  }
+  .icon img .secondary{
+    /* height: 147px; */
   }
 form{
     width: 100%;
@@ -1871,6 +1924,26 @@ li{
 .meno{
   width: 205%;
 }
+.icons{
+  gap:30px
+}
+.icon img{
+  width: 95px;
+  height:110px
+    }
+    .icon{
+margin-right:17px;
+    }
+  .homeopathy{
+    right:25px;
+  }
+  .yoga{
+    left:52px;
+  }
+  .text-container{
+    top: 16px;
+  }
+
 .surgery-package{
   height: 150px;
 }
@@ -1886,6 +1959,25 @@ li{
   .about-us-content,.about-image-content{
     width: 280px;
   }
+  .icon img{
+    width: 95px;
+    height:110px
+      }
+      .icons{
+        gap:30px
+      }
+      .icon{
+        margin-right:17px;
+        /* top:16px; */
+              }
+  
+
+    .homeopathy{
+      right:25px;
+    }
+    .yoga{
+      left:52px;
+    }
   .read-button{
     padding-left: 3rem;
     padding-top: 2rem;
