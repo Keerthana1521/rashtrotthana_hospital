@@ -27,9 +27,12 @@ export class BlogPostComponent {
   //     console.error('No ID provided in route.');
   //   }
   // }
-  const id = +this.route.snapshot.paramMap.get('id')!;
-    this.blogService.getPost(id).subscribe(async (data: any) => {
-      this.post = data;
+  // const id = +this.route.snapshot.paramMap.get('id')!;
+  //   this.blogService.getPost(id).subscribe(async (data: any) => {
+  //     this.post = data;
+  const slug = this.route.snapshot.paramMap.get('slug')!;
+  this.blogService.getPostBySlug(slug).subscribe(async (data: any) => {
+    this.post = data[0];
 
       // Fetch categories
       const categoryPromises = this.post.categories.map((categoryId: number) =>

@@ -15,15 +15,22 @@ export class BlogComponent {
   categories: string[] = [];
 
   constructor(private blogService: BlogServiceService,private route: ActivatedRoute,private titleService: Title, private metaService: Meta) { }
-
+  generateSlug(title: string): string {
+    return title.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '');
+  }
   ngOnInit(): void {
     // this.blogService.getPosts().subscribe((data: any[]) => {
     //   this.posts = data;
     // });
+    
     this.blogService.getPosts().subscribe((data: any[]) => {
       if (data.length > 0) {
         this.featuredPost = data[0];
-        this.posts = data.slice(1);
+        this.featuredPost.slug = this.generateSlug(this.featuredPost.title.rendered);
+        this.posts = data.slice(1).map(post => {
+          post.slug = this.generateSlug(post.title.rendered);
+          return post;
+        });
       }
     });
     this.titleService.setTitle("Rashtrotthana Hospital Blogs | Top Medical Treatments & Procedures Blogs");  

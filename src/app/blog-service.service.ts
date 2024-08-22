@@ -14,11 +14,15 @@ export class BlogServiceService {
     return this.http.get(`${this.baseUrl}/posts?per_page=20`);
   }
 
-  getPost(id: number): Observable<any> {
-    return this.http.get(`${this.baseUrl}/posts/${id}`);
+  // getPost(id: number): Observable<any> {
+  //   return this.http.get(`${this.baseUrl}/posts/${id}`);
+  // }
+  getPostBySlug(slug: string): Observable<any> {
+    return this.http.get(`${this.baseUrl}/posts?slug=${slug}`);
   }
   getCategory(id: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/categories/${id}`);
   }
+
   
 }

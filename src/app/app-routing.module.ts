@@ -126,7 +126,7 @@ children: [
   {path:'proctology-services-bangalore',component:ProctologyComponent},
   
   { path: 'blog', component: BlogComponent },
-  { path: 'blog/:id', component: BlogPostComponent }
+  { path: 'blog/:slug', component: BlogPostComponent }
 
 ]; 
 
