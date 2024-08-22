@@ -15,7 +15,7 @@ export class ENTComponent {
       Doctors:[
         {
           doctor_image:'../../assets/doctor-44.png',
-          doctor_name:'Dr. Manasa N A'
+          doctor_name:'Dr. Manasa N. A'
         },
         {
           doctor_image:'../../assets/doctor-35.png',

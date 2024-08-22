@@ -169,8 +169,7 @@ padding-bottom:1rem;
 }
 .facilities-content{
     color: #000;
-
-font-family: Poppins;
+font-family: inter;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -208,7 +207,7 @@ flex-shrink: 0;
 .facilities-content-image{
     font-size: 14px;
     color: #000;
-    font-family: Poppins;
+    font-family: inter;
     width: 75%;
     font-style: normal;
     font-weight: 400;

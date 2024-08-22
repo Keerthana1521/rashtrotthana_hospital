@@ -164,6 +164,10 @@ ul {
   background-clip: text;
 }
 
+.fa-linkedin{
+  color: #0077B5;
+}
+
 .navbar_icon .fa-brands{
   font-size: 22px;
 }

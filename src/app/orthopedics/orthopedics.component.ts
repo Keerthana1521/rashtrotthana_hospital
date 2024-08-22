@@ -32,7 +32,7 @@ export class OrthopedicsComponent {
         },
         {
           doctor_image:'../../assets/doctor-21.png',
-          doctor_name:'Dr. Sujayendra D. M.'
+          doctor_name:'Dr. Sujayendra D. M'
         },{
         
         doctor_image:'../../assets/doctor-37.png',

@@ -90,6 +90,9 @@ export class NavbarComponent {
     else if (type == 'instagram') {
       window.open('https://www.instagram.com/rashtrotthanahospital/?fbclid=IwZXh0bgNhZW0CMTEAAR2QboDfEwBQxDe7jIHuAmE-Syn3Y6kRp1NQS6KX71uMpbFO7H-JVHbfYBw_aem_akYFom-c4Mism2XS8h6G-w', '_blank');
     }
+    else if (type == 'linkedin') {
+      window.open('https://www.linkedin.com/company/89777981/admin/dashboard/', '_blank');
+    }
   }
   isIframeVisible: boolean = false;
 
