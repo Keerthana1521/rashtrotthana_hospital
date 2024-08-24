@@ -24,6 +24,7 @@
     "@emailjs/browser": "^4.4.1",
     "@ng-bootstrap/ng-bootstrap": "^16.0.0-rc.2",
     "@popperjs/core": "^2.11.8",
+    "angular-gtag": "^1.0.4",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",

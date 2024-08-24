@@ -94,8 +94,11 @@ import { ReadMoreBtnComponent } from './read-more-btn/read-more-btn.component';
 import { DoctorAppointmentComponent } from './doctor-appointment/doctor-appointment.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
+// import { PopUpFormDonateComponent } from './pop-up-form-donate/pop-up-form-donate.component';
 // import { HerniaComponent } from './hernia/hernia.component';
 // import { ProctologyComponent } from './proctology/proctology.component';
+
+import { GtagModule } from 'angular-gtag';
 
 
 @NgModule({
@@ -168,6 +171,7 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
     DoctorAppointmentComponent,
     BlogComponent,
     BlogPostComponent,
+    // PopUpFormDonateComponent,
     // HerniaComponent,
     // ProctologyComponent
   ],
@@ -192,7 +196,8 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
     FormsModule,
     CascadeSelectModule,
     CalendarModule,
-    InfiniteScrollModule
+    InfiniteScrollModule,
+  
 
   ],
   providers: [

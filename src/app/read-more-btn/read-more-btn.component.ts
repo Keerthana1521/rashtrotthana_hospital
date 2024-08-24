@@ -8,6 +8,8 @@ import { Component,Input,Output,EventEmitter } from '@angular/core';
 export class ReadMoreBtnComponent {
 
   @Output() click = new EventEmitter<void>();
+
+
   @Input() text: string = 'Read More';
   @Input() iconClass: string = 'fa fa-angle-right'; 
   @Input() background: string = 'linear-gradient(90deg, #022b50 0%, #279797 100%)';
