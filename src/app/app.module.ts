@@ -94,7 +94,8 @@ import { ReadMoreBtnComponent } from './read-more-btn/read-more-btn.component';
 import { DoctorAppointmentComponent } from './doctor-appointment/doctor-appointment.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
-// import { HerniaComponent } from './hernia/hernia.component';
+import { HerniaComponent } from './hernia/hernia.component';
+import { ResearchComponent } from './research/research.component';
 // import { ProctologyComponent } from './proctology/proctology.component';
 
 
@@ -168,7 +169,8 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
     DoctorAppointmentComponent,
     BlogComponent,
     BlogPostComponent,
-    // HerniaComponent,
+    HerniaComponent,
+    ResearchComponent,
     // ProctologyComponent
   ],
   imports: [

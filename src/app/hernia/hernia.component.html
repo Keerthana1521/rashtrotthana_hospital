@@ -193,4 +193,23 @@
         <p class="con_6_para_2">At Rashtrotthana Hospital, we prioritize patient care and use the latest medical techniques to ensure the best possible outcomes. If you suspect you have a hernia or have been diagnosed with one, contact us today to schedule a consultation. Our expert team is here to guide you through every step of your treatment and recovery.</p>
      </div>
 </div>  
+
+<!-- doctor details -->
+<div class="heading">
+    <p class="doctor_heading">MEET OUR MEDICAL TEAM</p>
 </div>
+
+<div class="doc_container">
+    <div class="doctors_flex">
+      <div class="doc_details" *ngFor="let slide of doctors; let i = index" [ngClass]="{ active: i === 0 }">
+        <div class="doc_1">
+          <img [src]="slide.image" alt="{{ slide.name }}" />
+          <p class="doc_name">{{ slide.name }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+

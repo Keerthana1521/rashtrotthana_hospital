@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser'; 
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-hernia',
@@ -18,5 +19,29 @@ export class HerniaComponent {
   this.metaService.updateTag({ name: 'keywords', content: 'hernia surgery, hernia treatment, best hospital for hernia Bangalore' });
 
   }
+
+  doctors =[
+    {
+      image: 'assets/doctor-5.png',
+      name: 'Dr. Shashi Vadhanan',
+    },
+    {
+      image: 'assets/doctor-3.png',
+      name: 'Dr. Atmaram D. C',
+    },
+    {
+      image: 'assets/doctor-25.png',
+      name: 'Dr. Nishanth Lakshmikanth',
+    }
+  ]
+
+  // doctors =[
+  //   {
+  //     image : '../../assets/doctor-14.png',
+  //     name : "Dr. Suvarnini Konale",
+  //     section : "BAMS, M.D. (Ayurveda)",
+  //     designation : "LIFESTYLE MEDICINE",
+  //   }
+  // ]
 
 }
