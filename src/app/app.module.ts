@@ -94,7 +94,7 @@ import { ReadMoreBtnComponent } from './read-more-btn/read-more-btn.component';
 import { DoctorAppointmentComponent } from './doctor-appointment/doctor-appointment.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
-import { PopUpFormDonateComponent } from './pop-up-form-donate/pop-up-form-donate.component';
+// import { PopUpFormDonateComponent } from './pop-up-form-donate/pop-up-form-donate.component';
 import { AdvisoryCarouselComponent } from './advisory-carousel/advisory-carousel.component';
 import { AdvisoryBoardMembersComponent } from './advisory-board-members/advisory-board-members.component';
 import { CommitteeCarouselComponent } from './committee-carousel/committee-carousel.component';
@@ -174,7 +174,7 @@ import { CommitteeCarouselComponent } from './committee-carousel/committee-carou
     BlogPostComponent,
     // HerniaComponent,
     // ProctologyComponent
-    PopUpFormDonateComponent,
+    // PopUpFormDonateComponent,
     AdvisoryCarouselComponent,
     AdvisoryBoardMembersComponent,
     CommitteeCarouselComponent
