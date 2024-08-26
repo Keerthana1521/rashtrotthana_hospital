@@ -95,6 +95,9 @@ import { DoctorAppointmentComponent } from './doctor-appointment/doctor-appointm
 import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { PopUpFormDonateComponent } from './pop-up-form-donate/pop-up-form-donate.component';
+import { AdvisoryCarouselComponent } from './advisory-carousel/advisory-carousel.component';
+import { AdvisoryBoardMembersComponent } from './advisory-board-members/advisory-board-members.component';
+import { CommitteeCarouselComponent } from './committee-carousel/committee-carousel.component';
 // import { HerniaComponent } from './hernia/hernia.component';
 // import { ProctologyComponent } from './proctology/proctology.component';
 
@@ -171,7 +174,10 @@ import { PopUpFormDonateComponent } from './pop-up-form-donate/pop-up-form-donat
     BlogPostComponent,
     // HerniaComponent,
     // ProctologyComponent
-    PopUpFormDonateComponent
+    PopUpFormDonateComponent,
+    AdvisoryCarouselComponent,
+    AdvisoryBoardMembersComponent,
+    CommitteeCarouselComponent
   ],
   imports: [
     BrowserModule,
