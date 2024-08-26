@@ -98,7 +98,10 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
 // import { HerniaComponent } from './hernia/hernia.component';
 // import { ProctologyComponent } from './proctology/proctology.component';
 
-import { GtagModule } from 'angular-gtag';
+// import { GtagModule } from 'angular-gtag';
+import { AdvisoryCarouselComponent } from './advisory-carousel/advisory-carousel.component';
+import { AdvisoryBoardMembersComponent } from './advisory-board-members/advisory-board-members.component';
+import { CommitteeCarouselComponent } from './committee-carousel/committee-carousel.component';
 
 
 @NgModule({
@@ -171,6 +174,9 @@ import { GtagModule } from 'angular-gtag';
     DoctorAppointmentComponent,
     BlogComponent,
     BlogPostComponent,
+    AdvisoryCarouselComponent,
+    AdvisoryBoardMembersComponent,
+    CommitteeCarouselComponent,
     // PopUpFormDonateComponent,
     // HerniaComponent,
     // ProctologyComponent

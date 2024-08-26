@@ -159,11 +159,11 @@ export class DoctorLayoutComponent {
         date:'Monday-Saturday'
     },
     {
-      name: 'Dr. Shashi Vadhanan',
+      name: 'Brig (Dr) S. Shashivadhanan',
       image: 'assets/doctor-5.png',
-      desgination: 'GENERAL SURGEON',
-      speciality: 'GENERAL SURGERY',
-      about:'Dr. Shashi Vadhanan specializes in a wide array of neurosurgical and spinal procedures. His areas of expertise include Minimally Invasive Spine Surgery, Spinal Deformity Correction, Spinal Cord Tumors, Cerebrovascular Surgery, Neuroendoscopy, Deep Brain Stimulation, Epilepsy Surgery and Paediatric Neurosurgery. He is also skilled in minimally invasive pain interventions for spinal pain, including Facetal and Transforaminal Blocks, Vertebroplasty and Kyphoplasty.',
+      desgination: 'Neuro Science',
+      speciality: 'NEUROSCIENCES',
+      about:'Brig (Dr) S. Shashivadhanan specializes in a wide array of neurosurgical and spinal procedures. His areas of expertise include Minimally Invasive Spine Surgery, Spinal Deformity Correction, Spinal Cord Tumors, Cerebrovascular Surgery, Neuroendoscopy, Deep Brain Stimulation, Epilepsy Surgery and Paediatric Neurosurgery. He is also skilled in minimally invasive pain interventions for spinal pain, including Facetal and Transforaminal Blocks, Vertebroplasty and Kyphoplasty.',
       areasOfExpertise: ['Minimally Invasive Spine Surgery', 'Spinal Deformity Correction', 'Spinal Cord Tumors', 'Cerebrovascular Surgery', 'Neurosurgery', 'Neuroendoscopy', 'Deep Brain Stimulation', 'Epilepsy Surgery', 'Paediatric Neurosurgery'],
       expertise: 'Years of Experience: 30+',
       qualification:'MBBS, MS, DNB(GEN SURGERY), MCH, DNB(NEUROSURGERY), FRCS EDINBURGH, FICS, FIGASS(COPENHAGEN), FIMSA, MNAMS',
@@ -702,7 +702,7 @@ export class DoctorLayoutComponent {
     },
 
   ]
-  specialDoctors = ['Dr. Pramod S. Chinder', 'Dr.Meena H. B', 'Dr. Shashi Vadhanan', 'Dr. Ravishankar. D'];
+  specialDoctors = ['Dr. Pramod S. Chinder', 'Dr.Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D'];
 
   constructor(private fb: FormBuilder, public dialog: MatDialog,private titleService: Title, private metaService: Meta) {
     // this.subjects = [
