@@ -379,9 +379,7 @@
         flex-direction: column;
         align-items: center;
     }
-    /* .advisory{
-        padding-left: 13rem;
-    } */
+
 }
 
 @media (max-width : 800px){
