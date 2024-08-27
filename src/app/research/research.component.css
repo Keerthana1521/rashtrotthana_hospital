@@ -257,7 +257,12 @@
 /* container 5 */
 
 .container_5 {
-    padding: 5% 10%;
+    padding: 5% 7.5%;
+}
+
+.container_5_5list_item::marker{
+    color: #008080;
+    font-size: 20px;
 }
 
 .container_5_5list_item{
@@ -309,6 +314,22 @@
 }
 
 @media (max-width : 1290px) {
+
+    /* container 2 */
+
+    .conatainer_2{
+        margin-top: 50px;
+    }
+
+    .container_2_heading{
+        font-size: 28px;
+    }
+
+    .container_2_para{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
     /* container 3 */
 
     .anime{
@@ -319,6 +340,10 @@
     .box_content{
         width: 450px;
         height: 250px;
+    }
+
+    .container_3_heading{
+        margin-top : 80px
     }
 
     .box_heading{
@@ -336,6 +361,7 @@
     .box_1{
         width: 450px;
         height: 250px;
+        margin-top: 50px;
     }
 
     .box_1:hover .anime_color_1{
@@ -378,6 +404,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 0px;
     }
 
 }
@@ -455,6 +482,7 @@
 
     .container_3_heading{
         font-size: 30px;
+        margin: 80px 0 0 0;
     }
 
     .box_heading{
@@ -566,6 +594,7 @@
 
     .container_2_heading{
         font-size: 18px;
+        margin: 30px 0 20px 0;
     }
 
     .container_2_para{
@@ -581,13 +610,14 @@
     
 
     .box_1{
-        width : 290px;
-        height: 250px;
+        width : 300px;
+        height: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 20px;
         border-radius: 20px;
+        padding-top: 20%;
     }
 
     .box{
@@ -625,6 +655,7 @@
 
     .container_3_heading{
         font-size: 24px;
+        margin-top: 80px;
     }
 
     .box_heading{
@@ -633,6 +664,7 @@
 
     .box_para{
         font-size: 12px;
+        line-height: 24px;
     }
 
     /* container 4 */
