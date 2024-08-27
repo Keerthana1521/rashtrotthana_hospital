@@ -288,6 +288,22 @@
 }
 
 @media (max-width : 1290px) {
+
+    /* container 2 */
+
+    .conatainer_2{
+        margin-top: 50px;
+    }
+
+    .container_2_heading{
+        font-size: 28px;
+    }
+
+    .container_2_para{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
     /* container 3 */
 
     .anime{
@@ -298,6 +314,10 @@
     .box_content{
         width: 450px;
         height: 250px;
+    }
+
+    .container_3_heading{
+        margin-top : 80px
     }
 
     .box_heading{
@@ -315,6 +335,7 @@
     .box_1{
         width: 450px;
         height: 250px;
+        margin-top: 50px;
     }
 
     .box_1:hover .anime_color_1{
@@ -357,7 +378,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 0px;
     }
+
 }
 
 @media (max-width : 800px){
