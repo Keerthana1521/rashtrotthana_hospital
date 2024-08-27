@@ -257,7 +257,12 @@
 /* container 5 */
 
 .container_5 {
-    padding: 5% 10%;
+    padding: 5% 7.5%;
+}
+
+.container_5_5list_item::marker{
+    color: #008080;
+    font-size: 20px;
 }
 
 .container_5_5list_item{
@@ -423,6 +428,7 @@
 
     .container_3_heading{
         font-size: 30px;
+        margin: 80px 0 0 0;
     }
 
     .box_heading{
@@ -530,6 +536,7 @@
 
     .container_2_heading{
         font-size: 18px;
+        margin: 30px 0 20px 0;
     }
 
     .container_2_para{
@@ -545,13 +552,14 @@
     
 
     .box_1{
-        width : 290px;
-        height: 250px;
+        width : 300px;
+        height: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 20px;
         border-radius: 20px;
+        padding-top: 20%;
     }
 
     .box{
@@ -589,6 +597,7 @@
 
     .container_3_heading{
         font-size: 24px;
+        margin-top: 80px;
     }
 
     .box_heading{
@@ -597,6 +606,7 @@
 
     .box_para{
         font-size: 12px;
+        line-height: 24px;
     }
 
     /* container 4 */
