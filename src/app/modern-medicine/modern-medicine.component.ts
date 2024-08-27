@@ -202,7 +202,7 @@ export class ModernMedicineComponent {
   }
   onButtonClick(route?: string) {
     if (route) {
-      this.router.navigate([`/specialities/best-general-medicine-hospital-in-bangalore/${route}`]);
+      this.router.navigate([`/specialities//${route}`]);
     } else {
       console.error('No route provided');
     }

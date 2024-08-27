@@ -60,8 +60,8 @@ const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'specialities', component: SpecalitiesComponent,
   children: [
-    {path:'best-general-medicine-hospital-in-bangalore', component:ModernMedicineComponent,
-  children: [
+    {path:'best-general-medicine-hospital-in-bangalore', component:ModernMedicineComponent},
+
   {path:'internal-medicine-hospital-in-bangalore',component:GeneralMedicineComponent},
   {path:'best-general-surgery-hospital-in-bangalore',component:GeneralSurgeryComponent},
   {path:'best-paediatric-hospital-in-bangalore',component:PaediatricsComponent},
@@ -82,7 +82,7 @@ const routes: Routes = [
   {path:'best-anesthesiology-hospital-in-india',component:AnesthesiologyComponent},
   {path:'best-obstetrics-and-gynecologist-hospital-in-bangalore',component:ObstetricsGynaecologyComponent},
   {path:'best-endocrinology-hospital-in-bangalore',component:EndocrinologyComponent},
-  ]},
+
   
   {path:'yoga-therapy-bangalore',component:YogaComponent},
   {path:'ayurvedic-treatment-bangalore',component:AyurvedaComponent},
