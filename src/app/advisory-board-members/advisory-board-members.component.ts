@@ -23,7 +23,7 @@ export class AdvisoryBoardMembersComponent {
     {photo:'../../assets/rc-member-2.png',name:'Dr. Shivarama Varambally',about:'Professor of Psychiatry National Institute of Mental Health and Neurosciences, Bengaluru',speciality:'Yoga and Psychiatry'},
     {photo:'../../assets/rc-member-3.png',name:'Dr. S R Narahari',about:'Director, Institute of Applied Dermatology, Kasaragod',speciality:'Modern Dermatology Ayurveda and Yoga'},
     {photo:'../../assets/rc-member-4.png',name:'Dr. B N Gangadhar',about:'Former Director, NIMHANS Chairman, National Medical Commission, New Delhi',speciality:'Psychiatry, Yoga, Ayurveda'},
-    {photo:'../../assets/rc-member-5.png',name:'Dr. S Srikanta',about:' Medical Director and Distinguished Consultant Endocrinology Diabetes',speciality:'Internal Medicine, Endocrinology, Diabetes, Yoga, Ayurveda'},
+    {photo:'../../assets/rc-member-5.jpeg',name:'Dr. S Srikanta',about:' Medical Director and Distinguished Consultant Endocrinology Diabetes',speciality:'Internal Medicine, Endocrinology, Diabetes, Yoga, Ayurveda'},
     {photo:'../../assets/rc-member-6.png',name:'Dr. B Ravishankar',about:'Former Head, Pharmacology Laboratory, IPGT & RA, Gujarat, Former Director, SDM Research Centre , Currently an advisor to various Research institutes including CCRAS',speciality:'Modern Pharmacology, Ayurveda research'},
     {photo:'../../assets/rc-member-7.png',name:'Dr. Vaibhavi Joshipura',about:'Dental surgeon & Periodontist',speciality:'Integration of Ayurveda in Dentistry'},
     {photo:'../../assets/rc-member-8.png',name:'Dr. S N Omkar',about:' Chief Research Scientist Department of Aerospace Engineering Indian Institute of Science',speciality:'Yoga Research, Engineer'},

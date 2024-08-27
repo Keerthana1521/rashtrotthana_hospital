@@ -95,10 +95,10 @@ import { DoctorAppointmentComponent } from './doctor-appointment/doctor-appointm
 import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 // import { PopUpFormDonateComponent } from './pop-up-form-donate/pop-up-form-donate.component';
-// import { HerniaComponent } from './hernia/hernia.component';
+import { HerniaComponent } from './hernia/hernia.component';
 import { ResearchComponent } from './research/research.component';
 import { EthicCommitteeComponent } from './ethic-committee/ethic-committee.component';
-import { ResearchCarouselComponent } from './research-carousel/research-carousel.component';
+// import { ResearchCarouselComponent } from './research-carousel/research-carousel.component';
 // import { ProctologyComponent } from './proctology/proctology.component';
 
 // import { GtagModule } from 'angular-gtag';
@@ -183,10 +183,10 @@ import { PopupFormDonationComponent } from './popup-form-donation/popup-form-don
     CommitteeCarouselComponent,
     PopupFormDonationComponent,
     // PopUpFormDonateComponent,
-    // HerniaComponent,
+    HerniaComponent,
     ResearchComponent,
     EthicCommitteeComponent,
-    ResearchCarouselComponent,
+    // ResearchCarouselComponent,
     // ProctologyComponent
   ],
   imports: [

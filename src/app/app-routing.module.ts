@@ -52,6 +52,8 @@ import { ProctologyComponent } from './proctology/proctology.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { AdvisoryBoardMembersComponent } from './advisory-board-members/advisory-board-members.component';
+import { ResearchComponent } from './research/research.component';
+import { EthicCommitteeComponent } from './ethic-committee/ethic-committee.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -86,13 +88,15 @@ const routes: Routes = [
   {path:'ayurvedic-treatment-bangalore',component:AyurvedaComponent},
   {path:'homeopathy-treatment-bangalore',component:HomeopathyComponent},
   {path:'lifestyle-medicine-bangalore',component:NaturopathyComponent},
-  {path: 'advisory-board', component: AdvisoryBoardMembersComponent},
+  {path: 'research-center', component: ResearchComponent},
 ]},
 
   {path:'yoga-therapy-bangalore',component:YogaComponent},
   {path:'ayurvedic-treatment-bangalore',component:AyurvedaComponent},
   {path:'homeopathy-treatment-bangalore',component:HomeopathyComponent},
   {path:'lifestyle-medicine-bangalore',component:NaturopathyComponent},
+  {path:'advisory-board-members',component:AdvisoryBoardMembersComponent},
+  {path:'ethical-committee',component:EthicCommitteeComponent},
 
 
   { path: 'facility', component: FacilitiesComponent,

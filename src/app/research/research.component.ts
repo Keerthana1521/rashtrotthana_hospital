@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-research',
@@ -6,7 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './research.component.css'
 })
 export class ResearchComponent {
-  
+  constructor(private router: Router, private titleService: Title,  
+    private metaService: Meta) {}
   specialFeatures = [
     {
       title : "Experienced and GCP-Trained Team: ",
@@ -45,4 +48,17 @@ export class ResearchComponent {
       description : "We collaborate with sister institutes to conduct comprehensive in vitro and in vivo trials, enhancing the scope and impact of our research."
     },
   ]
+  navigateToPage(page:string) {
+    this.router.navigate([`/${page}`]);
+    console.log(`Navigating to ${page}`);
+
+  }
+
+  ngOnInit(): void {
+    this.titleService.setTitle("Rashtrotthana Hospital Research Centre | Clinical Research Bangalore");  
+
+    this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital Research Centre is a state-of-the-art facility that conducts clinical research in Bangalore, India, with a focus on traditional and modern medicine.' });
+
+    this.metaService.updateTag({ name: 'keywords', content: 'clinical research, research centre, research facility, research activities, research team, research investigators, research library, research lab' });
+  }
 }

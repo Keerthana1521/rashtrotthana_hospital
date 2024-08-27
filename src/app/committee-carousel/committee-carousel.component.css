@@ -1,22 +1,17 @@
-carousel-container {
+.carousel-container {
     perspective: 1000px;
     text-align: center;
   }
-
-  .carousel-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-
+  
   .carousel {
-    width: 402px;
-    height: 641px;
+    width: 70%;
+    height: 450px;
     margin: 0 auto;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 1s;
   }
-
+  
   .carousel-item {
     position: absolute;
     width: 100%;
@@ -29,86 +24,84 @@ carousel-container {
     transition: transform 1s, opacity 1s;
     opacity: 0.5;
     filter: blur(5px);
-    pointer-events: none; /* Makes sure the non-active items are not clickable */
+    pointer-events: none;
   }
-
+  
   .carousel-item.left, .carousel-item.right {
     transform: translateX(-250px) scale(0.8);
     z-index: 1;
   }
-
+  
   .carousel-item.right {
     transform: translateX(250px) scale(0.8);
     z-index: 1;
   }
-
+  
   .carousel-item.active {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0) scale(1);
     z-index: 2;
-    pointer-events: auto; /* Allows interaction with the active item */
+    pointer-events: auto;
   }
-
-  .group-child {
-    position: absolute;
-    top: 23.22px;
-    left: 0px;
-    border-radius: 10px;
-    background-color: rgba(34, 34, 34, 0.2);
-    width: 282.3px;
-    height: 336.8px;
-}
-.group-item {
-    position: absolute;
-    top: 0px;
-    left: 27.66px;
+  
+  .group-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .member_1 {
+    width: 400px;
+    height: auto;
+    background: #008080;
     border-radius: 20px;
-    width: 282.3px;
-    height: 338.2px;
-    object-fit: cover;
-}
-.rectangle-parent {
-    position: absolute;
-    top: 50px;
-    left: 46px;
-    width: 310px;
-    height: 360px;
-}
-.dr-b-r {
-    margin: 0;
-}
-.dr-b-r-container {
-    position: absolute;
-    top: 450px;
-    left: calc(50% - 167px);
-    line-height: 33px;
-}
-.chair-person {
-    position: absolute;
-    top: 562px;
-    left: calc(50% - 76px);
-    font-size: 24px;
-}
-.group-parent {
-    width: 100%;
-    position: relative;
-    box-shadow: 0px 0px 60px #fff;
-    backdrop-filter: blur(60px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .member_1 img {
+    width: 282.339px;
+    height: 338.227px;
+    box-shadow: -20px 20px 0 rgba(34, 34, 34, 0.20);    
     border-radius: 20px;
-    background-color: rgba(0, 128, 128, 1.48);
-    border: 4px solid #fff;
-    box-sizing: border-box;
-    height: 641px;
-    overflow: hidden;
+  }
+  
+  .member_name {
+    margin-top: 40px;
+    color: #FFF;
     text-align: center;
-    font-size: 30px;
-    color: #fff;
-    font-family: Inter;
-}
-
-
-
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .member_qualification {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .member_role {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 40px 0 50px 0;
+  }
+  
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -119,330 +112,67 @@ carousel-container {
     border: none;
     color: #333;
   }
-
+  
   .prev {
     left: -50px;
   }
-
+  
   .next {
     right: -50px;
   }
-
-  .image_3{
-      height: 269px;
-      border-radius: 25px 25px 0 0;
-      width: 260px;
-  }
-  .cancel-icon {
-      position: absolute;
-      top: 24px;
-      left: 811px;
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-  }
-  .popup {
-      position: fixed;
-      top: 13vh;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(217, 217, 217, 0.5);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /* .popup-content {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      position: relative;
-    } */
-  /* .group-child {
-      position: absolute;
-      top: 23.22px;
-      left: 0px;
-      border-radius: 10px;
-      background-color: rgba(34, 34, 34, 0.2);
-      width: 282.3px;
-      height: 336.8px;
-  }
-  .group-item {
-      position: absolute;
-      top: 0px;
-      left: 27.66px;
-      border-radius: 20px;
-      width: 282.3px;
-      height: 338.2px;
-      object-fit: cover;
-  }
-  .rectangle-parent {
-      position: absolute;
-      top: 45px;
-      left: 45px;
-      width: 310px;
-      height: 360px;
-  }
-  .dr-shivarama-varambally1 {
-      line-height: 35px;
-  }
-  .dr-shivarama-varambally {
-      margin: 0;
-      font-size: 32px;
-  }
-  .professor-of-psychiatry {
-      margin: 0;
-      line-height: 37px;
-      font-weight: 400;
-      margin-top: 1rem;
-  }
-  .dr-shivarama-varambally-container1 {
-      width: 100%;
-  }
-  .dr-shivarama-varambally-container {
-      position: absolute;
-      top: 65px;
-      left: 385px;
-      display: flex;
-      align-items: center;
-      width: 401px;
-  }
-  .group-parent {
-      width: 900px;
-      position: relative;
-      box-shadow: 0px 0px 60px #fff;
-      backdrop-filter: blur(20px);
-      border-radius: 20px;
-      background-color: rgba(0, 128, 128, 1.48);
-      border: 4px solid #fff;
-      box-sizing: border-box;
-      height: 450px;
-      overflow: hidden;
-      text-align: left;
-      font-size: 16px;
-      color: #fff;
-      font-family: Inter;
-  }
   
-  @media screen and (max-width:1030px){
-  
-     .group-item{
-      width: 186px;
-      height: 250px;
-     }
-   .group-child{
-      width: 186px;
-      height: 248px;
-   }
-   .dr-shivarama-varambally-container{
-    left: 294px;
-   }
-   .carousel{
-    width: 93%;
-    height: 370px;
-   }
-  
-  }
-  
-  @media screen and (max-width: 768px) {
+  /* Responsive View for Mobile and Tablet */
+  @media (max-width: 1024px) {
     .carousel {
       width: 100%;
+      height: auto;
     }
   
-    .group-parent {
-      max-width: 95%;
+    .carousel-item {
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateX(0) scale(0.9);
+      z-index: 1;
+      display: none;
     }
   
-    .group-item{
-      width: 186px;
-      height: 250px;
-     }
-   .group-child{
-      width: 186px;
-      height: 248px;
-   }
+    .carousel-item.active {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0) scale(1);
+      z-index: 2;
+      display: block;
+    }
+  
+    .carousel-item.left, .carousel-item.right {
+      display: none;
+    }
   
     .prev, .next {
-      font-size: 18px;
-      left: -30px;
-      right: -30px;
+      display: none;
     }
   
-      .group-parent{
-          width: 700px;
-      }
-      .dr-shivarama-varambally-container{
-          width: 300px;
-      }
-      .dr-shivarama-varambally{
-          font-size: 26px;
-      }
-      .cancel-icon {
-          position: absolute;
-          top: 24px;
-          left: 642px;
-          width: 24px;
-          height: 24px;
-          cursor: pointer;
-      }
-      .professor-of-psychiatry{
-          line-height: 33px;
-      font-weight: 300;
-      margin-top: 1rem;
-      }
-      .group-parent{
-          font-size: 19px;
-      }
-  }
-  @media screen and (max-width:430px){
-      .diagonal-photo-grid .photo{
-          width: 95px;
-          height: 104px;
-      }
-      .flower_2{
-          right: -102px;
-      bottom: -168px;
-      }
-      .diagonal-photo-grid{
-          gap:0;
-          margin-left: 8rem;
-          margin-bottom: 2rem;
-          margin-top: 3rem;
-          width: 156px;
-          grid-template-columns: repeat(3, 82px);
-          grid-template-rows: repeat(4, 80px);
-      }
-      .advisory-board-members{
-          grid-template-columns: 100%;
-      }
-      .lorem-ipsum-dolor{
-          left: 112px;
-          font-size: 8px;
-          top:263px;
-          width: 262px;
-      }
-      .advisory-board-members-container{
-          right: 3rem;
-          font-size: 24px;
-          top: 75px;
-      }
-      .frame-child{
-          left: 330px;
-          top: 48px;
-          width: 40px;
-          height: 20px;
-      }
-      .frame-item{
-          width: 255px;
-          top:240px
-      }
-      .advisory-board-members-parent{
-          height:410px
-      }
-      .advisory{
-          margin-top: 1.5rem;
-      }
-     .dr-shivarama-varambally-container{
-      top: 272px;
-      left: 47px;
-      text-align: center;
-     }
-     .group-parent{
-       width:370px;
-       height:500px
-     }
-     .group-item{
-      width: 182px;
-      height: 206px;
-     }
-   .group-child{
-      width: 182px;
-      height: 204px;
-   }
-   .dr-shivarama-varambally{
+    .member_1 {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .member_1 img {
+      width: 200px;
+      height: 240px;
+    }
+  
+    .member_name {
       font-size: 20px;
-   }
-   .professor-of-psychiatry{
+    }
+  
+    .member_qualification {
       font-size: 14px;
-      line-height: 26px;
-      font-weight: 300;
-      margin-top: 0.5rem;
-   }
-   .popup{
-      top: 10vh;
-   }
-   .rectangle-parent{
-      left: 71px;
-   }
-   .cancel-icon{
-      left: 329px;
-   }
-   .advisory-board-member-info{
-      bottom: 15px;
-      position: relative;
-      height: 56px;}
-   .image_3{
-      height: 255px;
-   }
-   .image_1{
-      height: 128px;
-      width: 97%;
-   }
-   .image_2{
-      width: 38px;
-      height: 44px;
-   }
-   .diagonal-photo-grid .photo:nth-child(2) {
-      margin-top: 6rem;
-    }
-    .diagonal-photo-grid .photo:nth-child(5) {
-      margin-top: 6rem;
-    }
-    .diagonal-photo-grid .photo:nth-child(8) {
-      margin-top: 6rem;
     }
   
-  }
-  @media screen and (max-width:380px){
-  
-      .image_3{
-          width: 228px;
-      }
-      .advisory-board-member-info{
-          width: 228px;
-          font-size: 16px;
-      }
-      .dr-shivarama-varambally-container{
-          top: 288px;
-      }
-  }
-  @media screen and (max-width:365px){
-      .advisory-board-members-container{
-          right: 2rem;
-      }
-  }
-  @media screen and (max-width:325px){
-      
-  
-      .group-parent{
-          width: 312px;
-      }
-      .rectangle-parent{
-          left: 44px;
-      }
-      .dr-shivarama-varambally-container{
-          left: 8px;
-          width: 290px;
-          top: 284px;
-      }
-      .professor-of-psychiatry{
-          font-size: 12px;
-      }
-      .cancel-icon{
-          left: 273px;
-      }
-  
+    .member_role {
+      font-size: 18px;
+      padding: 30px 0;
+    }
   }
   
-   */

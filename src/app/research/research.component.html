@@ -150,5 +150,26 @@
         </ul>
     </div>
   </div>
-
+  <div>
+    <div class="container_6_heading">SCIENTIFIC ADVISORY BOARD MEMBERS</div>
+    <div class="advisory">
+      <app-advisory-carousel></app-advisory-carousel>
+    </div>
+    <br>
+    <br>
+    <div class="button">
+      <app-read-more-btn [text]="'View All'" (click)="navigateToPage('advisory-board-members')"></app-read-more-btn>
+    </div>
+  </div>
+  <div>
+    <div class="container_6_heading">ETHICS COMMITTEE MEMBERS</div>
+    <div class="commitee">
+      <app-committee-carousel></app-committee-carousel>
+    </div>
+    <br>
+    <br>
+    <div class="button">
+      <app-read-more-btn [text]="'View All'" (click)="navigateToPage('ethical-committee')"></app-read-more-btn>
+    </div>
+  </div>
 </div>

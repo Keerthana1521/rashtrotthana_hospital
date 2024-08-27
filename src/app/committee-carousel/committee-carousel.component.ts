@@ -9,83 +9,146 @@ export class CommitteeCarouselComponent {
   members = [
     {
       image : "../../assets/member_1.png",
-      name : "Dr. B R RAMAKRISHNA",
+      name : "Dr. B. R RAMAKRISHNA",
       qualification : "BAMS, MD, PhD",
-      role : "Chair Person"
+      designation : "Pro-Chancellor",
+      address : "Swami Vivekananda Yoga Anusandhana Samsthana Bengaluru, Karnataka 560105,",
+      role : "Former Vice President,",
+      roleDesv : "Central Council for Indian Medicine",
+      description : "Designation/ role of member in Ethics Committee : Chairperson",
+      role_2 : "Chair Person" 
     },
     {
       image : "../../assets/member_2.png",
       name : "Dr. Swarnarekha Bhat",
       qualification : "MBBS (MD PAEDIATRICS)",
-      role : "Member Secretary"
+      designation : "Chairperson,",
+      address : "Clinical Audit Committee, Jayadev Memorial Rashtrotthana Hospital and Research Centre, 5th Stage, Rajarajeshwari Nagar, Bengaluru 560098",
+      role : "",
+      roleDesv : "",
+      description : "Designation/ role of member in Ethics Committee : Member Secretary ",
+      role_2 : "Member Secretary" 
     },
     {
       image : "../../assets/member_3.png",
-      name : "Dr. T. N SATHYAPRAHA",
+      name : "Dr. T. N Sathyaprabha",
       qualification : "MBBS MD PhD",
-      role : "Basic Medical Scientist"
+      designation : "Professor,",
+      address : "Dept of Neurophysiology, National Institute of Mental Health and Neurosciences (NIMHANS)",
+      role : "",
+      roleDesv : "",
+      description : "Designation/ role of member in Ethics Committee : Basic Medical Scientist",
+      role_2 : "Member Secretary"
     },
     {
       image : "../../assets/member_4.png",
-      name : "Dr BHAGYA VENKANNA RAO",
+      name : "Dr. Bhagya Venkanna Rao",
       qualification : "PhD",
-      role : "Basic Medical Scientist"
+      designation : "Associate Professor,",
+      address : "KLE College of Pharmacy, KLE University, Bengaluru 560021",
+      role : "",
+      roleDesv : "",
+      description : "Designation/ role of member in Ethics Committee : Basic Medical Scientist",
+      role_2 : "Basic Medical Scientist "
     },
     {
       image : "../../assets/member_5.png",
-      name : "Dr. NEETINAKUM AR PATIL",
+      name : "Dr. Neetina Kumar Patil",
       qualification : "BAMS, PhD",
-      role : "Clinician"
+      designation : "Associate Professor,",
+      address : "(Yoga Therapy & Ayurveda Consultant)",
+      role : "",
+      roleDesv : "Centre for Integrative Medicine & Research (CIMR) Manipal Academy Of Higher Education",
+      description : "Designation/ role of member in Ethics Committee : Clinician",
+      role_2 : "Clinician"
     },
     {
       image : "../../assets/member_6.png",
-      name : "Dr. SHREELAKSHMI G",
+      name : "Dr. Shreelakshmi G",
       qualification : "MBBS MD",
-      role : "Clinician "
+      designation : "Consultant, ",
+      address : "Obstetrics and Gynaecology, ",
+      role : "",
+      roleDesv : "Jayadev Memorial Rashtrotthana Hospital & Research Centre,5th Stage, Rajarajeshwari Nagar Bengaluru 560098",
+      description : "Designation/ role of member in Ethics Committee : Clinician",
+      role_2 : "Clinician"
     },
     {
       image : "../../assets/member_7.png",
-      name : "Dr. SUCHITHRA S PATIL",
+      name : "Dr. Suchithra S Patil",
       qualification : "BAMS MD PhD",
-      role : "Clinician"
+      designation : "Assistant Professor, ",
+      address : "Swami Vivekananda Yoga Anusandhana Samsthana Bengaluru, Karnataka 560105",
+      role : "",
+      roleDesv : "",
+      description : "Designation/ role of member in Ethics Committee : Clinician",
+      role_2 : "Clinician"
     },
     {
       image : "../../assets/member_8.png",
-      name : "Mr. JAGDISHA SHARMA",
+      name : "Mr. Jagdisha Sharma",
       qualification : "",
-      role : "Social Scientist"
+      designation : "",
+      address : "Social activist and Writer",
+      role : "",
+      roleDesv : "",
+      description : "Designation/ role of member in Ethics Committee : Social Scientist",
+      role_2 : "Social Scientist"
     },
     {
       image : "../../assets/member_9.png",
-      name : "Mr. SUBRAHMANY A BHARATI KONALE",
+      name : "Mr. Subrahmanya Bharati Konale",
       qualification : "",
-      role : "Social Scientist"
+      designation : "",
+      address : "Chair Man, BISKUROM Foundation",
+      role : "",
+      roleDesv : "",
+      description : "Designation/ role of member in Ethics Committee : Social Scientist ",
+      role_2 : "Social Scientist"
     },
     {
       image : "../../assets/member_11.png",
-      name : "Adv. VISHWAJITH K",
+      name : "Adv. Vishwajith K",
       qualification : "",
-      role : "Legal Expert"
+      designation : "",
+      address : "Advocate",
+      role : "",
+      roleDesv : "",
+      description : "Designation/ role of member in Ethics Committee : Legal Expert ",
+      role_2 : "Legal Expert"
     },
     {
       image : "../../assets/member_10.png",
-      name : "Mr. DURGANNA D",
-      qualification : "",
-      role : "Lay Person"
+      name : "Mr. Durganna D",
+      designation : "",
+      address : "Rt. Teacher",
+      role : "",
+      roleDesv : "",
+      description : "Designation/ role of member in Ethics Committee : Lay Person ",
+      role_2 : "Lay Person"
     },
     {
       image : "../../assets/member_12.png",
-      name : "Dr. SHUBHA MADHUSUDHA",
+      name : "Dr. Shubha Madhusudhan",
       qualification : "",
-      role : "Member"
+      designation : "Director, ",
+      address : "Manasvi Dynamics Pvt Ltd",
+      role : "",
+      roleDesv : "",
+      description : "Designation/ role of member in Ethics Committee : Member ",
+      role_2 : "Member"
     },
     {
       image : "../../assets/member_13.png",
-      name : "Dr. VINODKUMAR T. G NAIR",
-      qualification : " BAMS",
-      role : "Member"
+      name : "Dr. Vinodkumar T. G Nair",
+      qualification : "BAMS",
+      designation : "Senior Scientist ",
+      address : "Jawaharlal Nehru Tropical Botanic Garden and Research Institute Karimancode, Palode, Kerala 695562",
+      role : "",
+      roleDesv : "Former Member, Board of Governors,CCIM, GOI",
+      description : "Designation/ role of member in Ethics Committee : Member"
     }
-  ]
+]
 
 
   currentIndex = 0;
