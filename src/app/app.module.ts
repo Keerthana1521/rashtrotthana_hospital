@@ -102,6 +102,7 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
 import { AdvisoryCarouselComponent } from './advisory-carousel/advisory-carousel.component';
 import { AdvisoryBoardMembersComponent } from './advisory-board-members/advisory-board-members.component';
 import { CommitteeCarouselComponent } from './committee-carousel/committee-carousel.component';
+import { PopupFormDonationComponent } from './popup-form-donation/popup-form-donation.component';
 
 
 @NgModule({
@@ -177,6 +178,7 @@ import { CommitteeCarouselComponent } from './committee-carousel/committee-carou
     AdvisoryCarouselComponent,
     AdvisoryBoardMembersComponent,
     CommitteeCarouselComponent,
+    PopupFormDonationComponent,
     // PopUpFormDonateComponent,
     // HerniaComponent,
     // ProctologyComponent

@@ -51,6 +51,7 @@ import { HerniaComponent } from './hernia/hernia.component';
 import { ProctologyComponent } from './proctology/proctology.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
+import { AdvisoryBoardMembersComponent } from './advisory-board-members/advisory-board-members.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -126,9 +127,11 @@ children: [
   {path:'proctology-services-bangalore',component:ProctologyComponent},
   
   { path: 'blog', component: BlogComponent },
-  { path: 'blog/:slug', component: BlogPostComponent }
-
+  { path: 'blog/:slug', component: BlogPostComponent },
+ 
+  {path: 'advisory-board', component: AdvisoryBoardMembersComponent},
 ]; 
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes,{ anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled', useHash: false })],

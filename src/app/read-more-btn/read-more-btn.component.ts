@@ -14,7 +14,12 @@ export class ReadMoreBtnComponent {
   @Input() iconClass: string = 'fa fa-angle-right'; 
   @Input() background: string = 'linear-gradient(90deg, #022b50 0%, #279797 100%)';
   @Input() boxShadow: string = '3px 4px 15px rgba(63, 176, 206, 0.65)';
+  @Input() disabled: boolean = false; // Add this line
+
   onClick() {
-    this.click.emit();
+    // this.click.emit();
+    if (!this.disabled) {
+      this.click.emit();
+    }
   }
 }

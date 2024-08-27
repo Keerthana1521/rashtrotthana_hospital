@@ -19,7 +19,14 @@
     border: 2px solid #279797;
     transition-duration: 0.5s;
     } */
-  
+    .submit-button.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    
+    .submit-button[disabled] {
+      pointer-events: none;
+    }
   .submit-text {
     color: white;
     font-size: 16px;
