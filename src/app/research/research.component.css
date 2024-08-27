@@ -1,0 +1,400 @@
+.container_1{
+    height: 88vh;
+    width: 100%;
+    background-image: url('../../assets/research_page_bg.png');
+    background-size: cover;
+    margin-top: 12vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 3% 3%;
+}
+
+.container_1_content{
+    width: 832px;
+    height: 358px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(27.299999237060547px);
+    padding: 3%;
+}
+
+.con_1_heading{
+    display: flex;
+    align-items: center;
+}
+
+.con_1_heading img{
+    width: 70px;
+    height: 70px;
+    margin-right: 2%;
+}
+
+.con_1_heading_txt, .container_2_heading{
+    color: #008080;
+    text-shadow: 3px 4px 10px rgba(255, 255, 255, 0.25);
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.content_para, .container_2_para, .container_4_para{
+    color: #000;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    margin-top: 2%;
+}
+
+/* container 2 */
+
+.conatainer_2{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 60vh;
+}
+
+.container_2_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_2_image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.container_2_content{
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* conatiner 3 */
+
+.container_3_heading{
+    color: #008080;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.row_1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5%;
+}
+
+.anime{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.anime_color_1{
+    background-color: #FFF59A;
+}
+
+.anime_color_2{
+    background-color: #9AFFC8;
+}
+
+.anime_color_3{
+    background-color: #FFB6B6;
+}
+
+.anime_color_4{
+    background-color: #73ABFF;
+}
+
+.anime_color_5{
+    background-color: #9AF9FF;
+}
+
+.anime_color_6{
+    background-color: #FFBC6D;
+}
+
+.box_content{
+    padding: 0 5%;
+    position: relative;
+    bottom: 40px
+}
+
+.box_heading{
+    color: #008080;
+    font-family: Poppins;
+    text-align: justify;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.box_para{
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* container 4 */
+
+.container_4{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 5%;
+}
+
+.container_4_heading, .container_5_heading{
+    color: #008080;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 5%;
+}
+
+.container_4_content{
+    padding: 5%;
+}
+
+.container_4_image img{
+    width: 510px;
+    height: 410px;
+}
+
+/* container 5 */
+
+.container_5 {
+    padding: 5% 10%;
+}
+
+.container_5_5list_item{
+    padding: 10px 0;
+}
+
+.list_title{
+    color: #008080;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px; 
+}
+
+.description{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+@media (max-width : 800px){
+
+    /* container 1 */
+
+    .container_1{
+        padding:2%;
+    }
+    
+    .con_1_heading img{
+        width: 32px;
+        height: 32px;
+    }
+    
+    .con_1_heading_txt{
+        font-size: 24px;
+    }
+
+    .content_para{
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 3%;
+    }
+
+    /* container 2 */
+
+    .conatainer_2{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .container_2_heading{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .container_2_para{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .container_2_image img{
+        width: 350px;
+        height: 350px;
+    }
+
+    /* container 3 */
+
+    .container_3 {
+        height: 100%;
+        margin-top: 5%;
+    }
+
+    .row_1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_3_heading{
+        font-size: 30px;
+    }
+
+    .box_heading{
+       font-size: 20px;
+    }
+
+    .box_para{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .anime{
+        width: 40px;
+        height: 40px;
+    }
+
+    /* container 4 */
+
+    .container_4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_4_heading{
+        font-size: 24px;
+    }
+
+    .container_4_para{
+        font-size: 18px;
+    }
+
+    .container_4_image img{
+        width: 290px;
+        height: auto;
+    }
+
+    /* conatiner 5 */
+
+    .container_5{
+        padding: 5%;
+    }
+
+    .container_5_heading{
+        font-size: 32px;
+    }
+
+    .list_title{
+        font-size: 18px;
+    }
+    
+    .description{
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width : 480px){
+
+    /* container 1 */
+    .con_1_heading_txt{
+        font-size: 16px;
+    }
+
+    .content_para{
+        font-size: 12px;
+        line-height: 26px;
+    }
+
+    /* container 2 */
+
+    .container_2_heading{
+        font-size: 18px;
+    }
+
+    .container_2_para{
+        font-size: 12px;
+    }
+
+    .container_2_image img{
+        width: 320px;
+        height: 320px;
+    }
+
+    /* container 3 */
+
+    .container_3_heading{
+        font-size: 24px;
+    }
+
+    .box_heading{
+        font-size: 16px;
+    }
+
+    .box_para{
+        font-size: 12px;
+    }
+
+    /* container 4 */
+
+    .container_4_heading{
+        font-size: 24px;
+    }
+
+    .container_4_para{
+        font-size: 12px;
+    }
+
+    /* container 5 */
+
+    .container_5_heading{
+        font-size: 20px;
+    }
+
+    .list_title{
+        font-size: 14px;
+    }
+
+    .description{
+        font-size: 14px;
+    }
+
+}
