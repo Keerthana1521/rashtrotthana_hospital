@@ -86,12 +86,14 @@ const routes: Routes = [
   {path:'ayurvedic-treatment-bangalore',component:AyurvedaComponent},
   {path:'homeopathy-treatment-bangalore',component:HomeopathyComponent},
   {path:'lifestyle-medicine-bangalore',component:NaturopathyComponent},
+  {path: 'advisory-board', component: AdvisoryBoardMembersComponent},
 ]},
 
   {path:'yoga-therapy-bangalore',component:YogaComponent},
   {path:'ayurvedic-treatment-bangalore',component:AyurvedaComponent},
   {path:'homeopathy-treatment-bangalore',component:HomeopathyComponent},
   {path:'lifestyle-medicine-bangalore',component:NaturopathyComponent},
+
 
   { path: 'facility', component: FacilitiesComponent,
 children: [
@@ -129,7 +131,6 @@ children: [
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:slug', component: BlogPostComponent },
  
-  {path: 'advisory-board', component: AdvisoryBoardMembersComponent},
 ]; 
 
 
