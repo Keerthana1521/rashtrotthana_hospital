@@ -134,6 +134,7 @@ children: [
   
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:slug', component: BlogPostComponent },
+  {path:'**',redirectTo:''}
  
 ]; 
 
