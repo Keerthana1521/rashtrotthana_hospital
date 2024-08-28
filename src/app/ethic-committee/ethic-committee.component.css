@@ -122,10 +122,13 @@
 .pop_up{
     padding: 0 10%;
     position: fixed;
-    top: 150px;
     display: flex;
+    top: 150px;
     justify-content: center;
+    /* align-items: center; */
     width: 100%;
+    z-index: 1;
+    /* height: 100vh; */
 }
 
 .popUp_box{
@@ -202,6 +205,31 @@
     border-radius: 50%;
 }
 
+@media (max-width : 1500px){
+    .pop_up{
+        top: 130px;
+    }
+
+    .pop_up_image img{
+        width: 242.339px;
+        height: 298.227px;
+        box-shadow: -20px 20px 0 rgba(34, 34, 34, 0.20);  
+        border-radius: 20px;
+    }
+
+    .pop_up_member_name{
+        font-size : 30px
+    }
+
+    .qualification, .role{
+        font-size: 28px;
+    }
+
+    .designation, .address, .role_des{
+        font-size: 20px;
+    }
+}
+
 @media (max-width : 1200px){
     .container_1_heading{
         font-size: 48px;
@@ -237,6 +265,29 @@
 
     .member_role{
         font-size: 18px;
+    }
+
+    .pop_up{
+        top: 130px;
+    }
+
+    .pop_up_image img{
+        width: 242.339px;
+        height: 298.227px;
+        box-shadow: -20px 20px 0 rgba(34, 34, 34, 0.20);  
+        border-radius: 20px;
+    }
+
+    .pop_up_member_name{
+        font-size : 30px
+    }
+
+    .qualification, .role{
+        font-size: 28px;
+    }
+
+    .designation, .address, .role_des{
+        font-size: 20px;
     }
 }
 
@@ -293,7 +344,11 @@
     }
 
     .content{
+        display: flex;
         flex-direction: column;
+        overflow-x: scroll;
+        align-items: center;
+        text-align: center;
     }
 
     .pop_up{
@@ -329,6 +384,7 @@
         font-size: 16px;
         margin-top: 10px;
         line-height: 20px;
+        text-align: center;
     }
 }
 
