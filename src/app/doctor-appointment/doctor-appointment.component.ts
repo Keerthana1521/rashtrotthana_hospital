@@ -76,36 +76,64 @@ else if (this.selectedDoctor.date === 'Monday and Wednesday') {
   this.disabledDays = [0,2,4,5,6]; // Disable all days except Friday (5)
 }
 else if (this.selectedDoctor.date === 'Tuesday,Thursday and Saturday') {
-  this.disabledDays = [0,1,3,4]; // Disable all days except Friday (5)
+  this.disabledDays = [0,1,3,5]; // Disable all days except Friday (5)
 }
 else if (this.selectedDoctor.date === 'Monday,Wednesday and Friday') {
   this.disabledDays = [0,2,4,6]; // Disable all days except Friday (5)
-} else {
+}
+else if (this.selectedDoctor.date === 'Monday,Wednesday,Friday and Saturday') {
+  this.disabledDays = [0,2,4]; // Disable all days except Friday (5)
+}
+else if (this.selectedDoctor.date === 'Monday,Wednesday,Thursday and Friday') {
+  this.disabledDays = [0,2,6]; // Disable all days except Friday (5)
+}
+else {
     this.disabledDays = [];
   }
 }
-// setDateConstraints() {
-//   const availableDaysMap = {
-//     'Sunday': 0,
-//     'Monday': 1,
-//     'Tuesday': 2,
-//     'Wednesday': 3,
-//     'Thursday': 4,
-//     'Friday': 5,
-//     'Saturday': 6
-//   };
+onDateChange(event: any) {
+  const selectedDate = new Date(event);
+  const dayOfWeek = selectedDate.getDay();
 
-//   const availableDays = this.selectedDoctor.date.split(',').map((day:string) => day.trim());
-//   const disabledDays = [];
-
-//   for (const [day, index] of Object.entries(availableDaysMap)) {
-//     if (!availableDays.includes(day)) {
-//       disabledDays.push(index);
-//     }
-//   }
-
-//   this.disabledDays = disabledDays;
-// }
+  if (this.selectedDoctor.name === 'Dr. Ashika Bagaria' && dayOfWeek === 2) { // Check if Tuesday
+    this.availableTimes = [
+      { name: '10:00 - 10:20' },
+      { name: '10:20 - 10:40' },
+      { name: '10:40 - 11:00' },
+      { name: '11:00 - 11:20' },
+      { name: '11:20 - 11:40' },
+      { name: '11:40 - 12:00' },
+      { name: '12:00 - 12:20' },
+      { name: '12:20 - 12:40' },
+      { name: '12:40 - 13:00' },
+      { name: '13:00 - 13:20' },
+      { name: '13:20 - 13:40' },
+      { name: '13:40 - 14:00' },
+      { name: '14:00 - 14:20' },
+      { name: '14:20 - 14:40' },
+      { name: '14:40 - 15:00' },
+      { name: '15:00 - 15:20' },
+      { name: '15:20 - 15:40' },
+      { name: '15:40 - 16:00' }
+    ];
+  } else {
+    // Use default available times or set based on the selected doctor
+    this.availableTimes = this.selectedDoctor.time.split(',').map((time: string) => ({ name: time }));
+  }
+  if (this.selectedDoctor.name === 'Dr. Manasa N. A' && dayOfWeek === 6) { // Check if Tuesday
+    this.availableTimes = [
+      { name: '13:30-13:50' },
+      { name: '13:50-14:10' },
+      { name: '14:10-14:30' },
+      { name: '14:30-14:50' },
+      { name: '14:50-15:10' },
+      { name: '15:10-15:30' }
+    ];
+  } else {
+    // Use default available times or set based on the selected doctor
+    this.availableTimes = this.selectedDoctor.time.split(',').map((time: string) => ({ name: time }));
+  }
+}
 
 formatDate(date: Date): string {
   const day = date.getDate().toString().padStart(2, '0');

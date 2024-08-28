@@ -58,7 +58,7 @@
   background-color: rgba(0, 128, 128, 1.48);
   border: 4px solid #fff;
   box-sizing: border-box;
-  height: 450px;
+  height: 490px;
   overflow: hidden;
   text-align: left;
   font-size: 16px;
@@ -119,8 +119,15 @@
 .professor-of-psychiatry {
   margin: 0;
   line-height: 37px;
-  font-weight: 400;
+  font-weight: 600;
   margin-top: 1rem;
+  font-size: 24px;
+}
+.professor-of-psychiatry_1 {
+margin: 0;
+line-height: 37px;
+font-weight: 400;
+font-size: 18px;
 }
 
 /* Navigation Buttons */
@@ -164,7 +171,7 @@
 
   .group-parent {
     width: 800px;
-    height: 400px;
+    height: 490px;
   }
 
   .rectangle-parent {
@@ -182,6 +189,7 @@
   .dr-shivarama-varambally-container {
     left: 282px;
     width: 350px;
+    top:41px;
   }
 
   .dr-shivarama-varambally {
@@ -193,6 +201,12 @@
     font-size: 20px;
     left: -30px;
     right: -30px;
+  }
+  .professor-of-psychiatry{
+    font-size: 20px;
+  }
+  .professor-of-psychiatry_1{
+    font-size: 16px;
   }
 }
 
@@ -230,7 +244,7 @@
 
   .group-parent {
     width: 700px;
-    height: 380px;
+    height: 410px;
   }
 
   .rectangle-parent {
@@ -254,8 +268,12 @@
     font-size: 24px;
   }
 
-  .professor-of-psychiatry {
+  .professor-of-psychiatry{
     font-size: 16px;
+    margin-top: 0.5rem;
+  }
+  .professor-of-psychiatry_1{
+    font-size: 12px;
   }
   .group-parent{
     width: 700px;
@@ -319,6 +337,16 @@ margin-top: 1rem;
   .professor-of-psychiatry {
     font-size: 14px;
   }
+  .professor-of-psychiatry{
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    margin-top: 0.5rem;
+ }
+ .professor-of-psychiatry_1{
+  font-size: 13px;
+  line-height: 30px;
+ }
 }
 
 @media screen and (max-width:430px){

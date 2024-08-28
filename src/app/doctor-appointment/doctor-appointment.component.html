@@ -32,7 +32,8 @@
                 [showIcon]="true" 
                 inputId="icondisplay"  
                 formControlName="date_appointment"
-                [disabledDays]="disabledDays">
+                [disabledDays]="disabledDays"
+                (onSelect)="onDateChange($event)">
                     <ng-template pTemplate="date" let-date>
                         <span>
                             {{ date.day }}

@@ -34,7 +34,7 @@
     <div>
         <div class="container_2">
             <div class="advisory-board-members">
-                <div class="advisory-board-member" *ngFor="let member of members" (click)="showPopup(member)">
+                <div class="advisory-board-member" *ngFor="let member of boardMembers" (click)="showPopup(member)">
                     <div class="advisory-board-member-photo">
                         <img class="image_3" [src]="member.photo" [alt]="member.name"  />
                     </div>
@@ -59,7 +59,10 @@
             <p class="dr-shivarama-varambally">
             <b class="dr-shivarama-varambally1">{{selectedMember.name}}</b>
             </p>
-            <p class="professor-of-psychiatry">{{selectedMember.about}}</p>
+            <b><p class="professor-of-psychiatry">{{selectedMember.designation}}</p></b>
+            <p class="professor-of-psychiatry_1">{{selectedMember.department}}</p>
+            <b><p class="professor-of-psychiatry">{{selectedMember.role}}</p></b>
+            <p class="professor-of-psychiatry_1">{{selectedMember.place}}</p>
             <p class="professor-of-psychiatry">Specialty: {{selectedMember.speciality}}</p>
             </span>
             </div>   

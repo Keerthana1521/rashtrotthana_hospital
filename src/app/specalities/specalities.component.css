@@ -171,7 +171,8 @@
 }
 .button-1 {
   padding-left: 3rem;
-  padding-top:0rem
+  padding-top:0rem;
+  cursor:pointer
  }
 .show-more {
   color: black;

@@ -362,8 +362,8 @@ export class DoctorLayoutComponent {
       areasOfExpertise: ['Micro ear surgery for hearing restoration', 'Septoplasty', 'Endoscopic sinus surgery', 'management of vocal cord and voice disorders', 'Diagnosis and treatment of Head and neck tumors', 'tracheotomy and airway surgeries', 'polytrauma management', 'snoring evaluation and management of obstructive sleep apnea', 'Tonsillectomy', 'Adenoidectomy', 'myringotomy'],
       expertise: 'Years of Experience: 7',
       qualification:'MBBS, DLO, DNB(ENT)',
-      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
-      date:'Monday-Saturday'
+      time:'10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30',
+      date:'Monday,Wednesday,Friday and Saturday'
     },
 
 
@@ -636,8 +636,8 @@ export class DoctorLayoutComponent {
       areasOfExpertise: [''],
       expertise: 'Years of Experience: 5',
       qualification:'MBBS, MS(ENT)',
-      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
-      date:'Monday-Saturday'
+      time:'13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
+      date:'Monday,Wednesday,Thursday and Friday'
     },
     {
       name: 'Dr. Ashika Bagaria',
@@ -648,8 +648,8 @@ export class DoctorLayoutComponent {
       areasOfExpertise: [''],
       expertise: 'Years of Experience: 2',
       qualification:'MBBS, MS(ENT)',
-      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
-      date:'Monday-Saturday'
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00',
+      date:'Tuesday,Thursday and Saturday'
     },
     {
       name: 'Dr. Harshitha R',

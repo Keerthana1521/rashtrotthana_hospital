@@ -39,7 +39,7 @@ export class SpecalitiesComponent {
     return this.childRouteActive;
   }
   home(){
-    this.router.navigate([''], {relativeTo:this.route});
+    this.router.navigate(['research-center'], {relativeTo:this.route});
     console.log('clicked')
   }
 
