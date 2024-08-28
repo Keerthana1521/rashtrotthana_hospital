@@ -121,8 +121,8 @@ export class EthicCommitteeComponent {
       {
         image : "../../assets/member_2.png",
         name : "Dr. Swarnarekha Bhat",
-        qualification : "MBBS (MD PAEDIATRICS)",
-        designation : "Chairperson,",
+        qualification : "MBBS, MD (PAEDIATRICS)",
+        designation : "Chair Person",
         address : "Clinical Audit Committee, Jayadev Memorial Rashtrotthana Hospital and Research Centre, 5th Stage, Rajarajeshwari Nagar, Bengaluru 560098",
         role : "",
         roleDesv : "",
@@ -132,19 +132,19 @@ export class EthicCommitteeComponent {
       {
         image : "../../assets/member_3.png",
         name : "Dr. T. N Sathyaprabha",
-        qualification : "MBBS MD PhD",
-        designation : "Professor,",
+        qualification : "MBBS, MD, PhD",
+        designation : "Professor",
         address : "Dept of Neurophysiology, National Institute of Mental Health and Neurosciences (NIMHANS)",
         role : "",
         roleDesv : "",
         description : "Designation/ role of member in Ethics Committee : Basic Medical Scientist",
-        role_2 : "Member Secretary"
+        role_2 : "Basic Medical Scientist "
       },
       {
         image : "../../assets/member_4.png",
         name : "Dr. Bhagya Venkanna Rao",
         qualification : "PhD",
-        designation : "Associate Professor,",
+        designation : "Associate Professor",
         address : "KLE College of Pharmacy, KLE University, Bengaluru 560021",
         role : "",
         roleDesv : "",
@@ -155,7 +155,7 @@ export class EthicCommitteeComponent {
         image : "../../assets/member_5.png",
         name : "Dr. Neetina Kumar Patil",
         qualification : "BAMS, PhD",
-        designation : "Associate Professor,",
+        designation : "Associate Professor",
         address : "(Yoga Therapy & Ayurveda Consultant)",
         role : "",
         roleDesv : "Centre for Integrative Medicine & Research (CIMR) Manipal Academy Of Higher Education",
@@ -165,9 +165,9 @@ export class EthicCommitteeComponent {
       {
         image : "../../assets/member_6.png",
         name : "Dr. Shreelakshmi G",
-        qualification : "MBBS MD",
-        designation : "Consultant, ",
-        address : "Obstetrics and Gynaecology, ",
+        qualification : "MBBS, MD",
+        designation : "Consultant",
+        address : "Obstetrics and Gynaecology",
         role : "",
         roleDesv : "Jayadev Memorial Rashtrotthana Hospital & Research Centre,5th Stage, Rajarajeshwari Nagar Bengaluru 560098",
         description : "Designation/ role of member in Ethics Committee : Clinician",
@@ -176,8 +176,8 @@ export class EthicCommitteeComponent {
       {
         image : "../../assets/member_7.png",
         name : "Dr. Suchithra S Patil",
-        qualification : "BAMS MD PhD",
-        designation : "Assistant Professor, ",
+        qualification : "BAMS, MD, PhD",
+        designation : "Assistant Professor",
         address : "Swami Vivekananda Yoga Anusandhana Samsthana Bengaluru, Karnataka 560105",
         role : "",
         roleDesv : "",
@@ -188,8 +188,8 @@ export class EthicCommitteeComponent {
         image : "../../assets/member_8.png",
         name : "Mr. Jagdisha Sharma",
         qualification : "",
-        designation : "",
-        address : "Social activist and Writer",
+        designation : "Social activist and Writer",
+        address : "",
         role : "",
         roleDesv : "",
         description : "Designation/ role of member in Ethics Committee : Social Scientist",
@@ -199,8 +199,8 @@ export class EthicCommitteeComponent {
         image : "../../assets/member_9.png",
         name : "Mr. Subrahmanya Bharati Konale",
         qualification : "",
-        designation : "",
-        address : "Chair Man, BISKUROM Foundation",
+        designation : "Chair Man",
+        address : "BISKUROM Foundation",
         role : "",
         roleDesv : "",
         description : "Designation/ role of member in Ethics Committee : Social Scientist ",
@@ -210,8 +210,8 @@ export class EthicCommitteeComponent {
         image : "../../assets/member_11.png",
         name : "Adv. Vishwajith K",
         qualification : "",
-        designation : "",
-        address : "Advocate",
+        designation : "Advocate",
+        address : "",
         role : "",
         roleDesv : "",
         description : "Designation/ role of member in Ethics Committee : Legal Expert ",
@@ -220,8 +220,8 @@ export class EthicCommitteeComponent {
       {
         image : "../../assets/member_10.png",
         name : "Mr. Durganna D",
-        designation : "",
-        address : "Rt. Teacher",
+        designation : "Rt. Teacher",
+        address : "",
         role : "",
         roleDesv : "",
         description : "Designation/ role of member in Ethics Committee : Lay Person ",
@@ -230,8 +230,8 @@ export class EthicCommitteeComponent {
       {
         image : "../../assets/member_12.png",
         name : "Dr. Shubha Madhusudhan",
-        qualification : "",
-        designation : "Director, ",
+        qualification : "Director",
+        designation : "",
         address : "Manasvi Dynamics Pvt Ltd",
         role : "",
         roleDesv : "",
@@ -260,7 +260,7 @@ export class EthicCommitteeComponent {
       role : "",
       roleDesv : "Former Senior Research Fellow CCRAS",
       description : "Designation/ role of member in Ethics Committee : Research Officer ",
-      role_2 : "Research team"
+      role_2 : "Research Officer"
     },
     {
       image : "../../assets/member_16.png",
@@ -270,19 +270,19 @@ export class EthicCommitteeComponent {
       address : "Former Senior Research fellow National ayurveda Research Institute for Panchakarma",
       role : "",
       roleDesv : "Former Research Fellow, Dept. of  Ethno medicine, JNTBGRI",
-      description : "Designation/ role of member in Ethics Committee : Research Officer ",
-      role_2 : "Research team"
+      description : "",
+      role_2 : "Research Officer"
     },
     {
       image : "../../assets/member_14.png",
       name : "Dr. Rohith K. R",
       qualification : "BAMS",
-      designation : "",
+      designation : "Research Co-ordinator",
       address : "",
       role : "",
       roleDesv : "",
-      description : "Designation/ role of member in Ethics Committee : ",
-      role_2 : "Research team"
+      description : "",
+      role_2 : "Research Co-ordinator"
     }
   ]
 
