@@ -5,7 +5,7 @@
 .container_1{
     height: 80vh;
     display: flex;
-    margin-top: 150px;
+    margin-top: 120px;
     justify-content: center;
     align-items: center;
     background: #F6F6F6;
@@ -206,6 +206,11 @@
 }
 
 @media (max-width : 1500px){
+
+    .container_1_image img{
+        width: 400px;
+        height: auto;
+    }
     .pop_up{
         top: 130px;
     }
@@ -229,6 +234,8 @@
         font-size: 20px;
     }
 }
+
+
 
 @media (max-width : 1200px){
     .container_1_heading{

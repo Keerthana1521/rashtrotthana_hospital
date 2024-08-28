@@ -313,6 +313,78 @@
     height: 500px; 
 }
 
+@media (max-width : 1450px){
+    .anime{
+        width: 500px;
+        height: 250px;
+    }
+
+    .box_content{
+        width: 500px;
+        height: 250px;
+    }
+
+    .container_3_heading{
+        margin-top : 80px
+    }
+
+    .box_heading{
+        font-size: 20px;
+    }
+
+    .box_para{
+        font-size: 14px;
+    }
+
+    .box_content{
+        margin-top: -220px
+    }
+
+    .box_1{
+        width: 500px;
+        height: 250px;
+        margin-top: 50px;
+    }
+
+    .box_1:hover .anime_color_1{
+        height: 230px;
+        width: 500px;
+        border-radius: 20px;
+    }
+    
+    .box_1:hover .anime_color_2{
+        height: 230px;
+        width: 500px;
+        border-radius: 20px;
+    }
+    
+    .box_1:hover .anime_color_3{
+        height: 230px;
+        width: 500px;
+        border-radius: 20px;
+    }
+    
+    .box_1:hover .anime_color_4{
+        height: 200px;
+        width: 500px;
+        border-radius: 20px;
+    }
+    
+    .box_1:hover .anime_color_5{
+        height: 230px;
+        width: 500px;
+        border-radius: 20px;
+    }
+    
+    .box_1:hover .anime_color_6{
+        height: 230px;
+        width: 500px;
+        border-radius: 20px;
+    }
+}
+
+
+
 @media (max-width : 1290px) {
 
     /* container 2 */
