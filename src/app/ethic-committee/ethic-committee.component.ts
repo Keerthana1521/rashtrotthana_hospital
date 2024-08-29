@@ -6,105 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './ethic-committee.component.css'
 })
 export class EthicCommitteeComponent {
-    // members = [
-    //   {
-    //     image : "../../assets/member_1.png",
-    //     name : "Dr. B R RAMAKRISHNA",
-    //     qualification : "BAMS, MD, PhD",
-    //     role : "Chair Person"
-    //   },
-    //   {
-    //     image : "../../assets/member_2.png",
-    //     name : "Dr. Swarnarekha Bhat",
-    //     qualification : "MBBS (MD PAEDIATRICS)",
-    //     role : "Member Secretary"
-    //   },
-    //   {
-    //     image : "../../assets/member_3.png",
-    //     name : "Dr. T. N SATHYAPRAHA",
-    //     qualification : "MBBS MD PhD",
-    //     role : "Basic Medical Scientist"
-    //   },
-    //   {
-    //     image : "../../assets/member_4.png",
-    //     name : "Dr BHAGYA VENKANNA RAO",
-    //     qualification : "PhD",
-    //     role : "Basic Medical Scientist"
-    //   },
-    //   {
-    //     image : "../../assets/member_5.png",
-    //     name : "Dr. NEETINAKUM AR PATIL",
-    //     qualification : "BAMS, PhD",
-    //     role : "Clinician"
-    //   },
-    //   {
-    //     image : "../../assets/member_6.png",
-    //     name : "Dr. SHREELAKSHMI G",
-    //     qualification : "MBBS MD",
-    //     role : "Clinician "
-    //   },
-    //   {
-    //     image : "../../assets/member_7.png",
-    //     name : "Dr. SUCHITHRA S PATIL",
-    //     qualification : "BAMS MD PhD",
-    //     role : "Clinician"
-    //   },
-    //   {
-    //     image : "../../assets/member_8.png",
-    //     name : "Mr. JAGDISHA SHARMA",
-    //     qualification : "",
-    //     role : "Social Scientist"
-    //   },
-    //   {
-    //     image : "../../assets/member_9.png",
-    //     name : "Mr. SUBRAHMANY A BHARATI KONALE",
-    //     qualification : "",
-    //     role : "Social Scientist"
-    //   },
-    //   {
-    //     image : "../../assets/member_11.png",
-    //     name : "Adv. VISHWAJITH K",
-    //     qualification : "",
-    //     role : "Legal Expert"
-    //   },
-    //   {
-    //     image : "../../assets/member_10.png",
-    //     name : "Mr. DURGANNA D",
-    //     qualification : "",
-    //     role : "Lay Person"
-    //   },
-    //   {
-    //     image : "../../assets/member_12.png",
-    //     name : "Dr. SHUBHA MADHUSUDHA",
-    //     qualification : "",
-    //     role : "Member"
-    //   },
-    //   {
-    //     image : "../../assets/member_13.png",
-    //     name : "Dr. VINODKUMAR T. G NAIR",
-    //     qualification : " BAMS",
-    //     role : "Member"
-    //   }
-    // ]
-
-
-  // Team = [
-  //   {
-  //     image : "../../assets/member_15.png",
-  //     name : "Dr. Kavyashree Kulamarva",
-  //     team : "Research team"
-  //   },
-  //   {
-  //     image : "../../assets/member_16.png",
-  //     name : "Dr. Sooraj Mohan R",
-  //     team : "Research team"
-  //   },
-  //   {
-  //     image : "../../assets/member_14.png",
-  //     name : "Dr. Rohith K R",
-  //     team : "Research team"
-  //   }
-  // ]
 
   members = [
       {
@@ -112,22 +13,33 @@ export class EthicCommitteeComponent {
         name : "Dr. B. R RAMAKRISHNA",
         qualification : "BAMS, MD, PhD",
         designation : "Pro-Chancellor",
-        address : "Swami Vivekananda Yoga Anusandhana Samsthana Bengaluru, Karnataka 560105,",
-        role : "Former Vice President,",
-        roleDesv : "Central Council for Indian Medicine",
+        address : "Swami Vivekananda Yoga Anusandhana Samsthana Bengaluru, Karnataka 560105",
+        role : "Former Vice President",
+        roleDesv : "Central Council for Indian Medicine, Government of India",
         description : "Designation/ role of member in Ethics Committee : Chairperson",
         role_2 : "Chair Person" 
       },
       {
         image : "../../assets/member_2.png",
         name : "Dr. Swarnarekha Bhat",
-        qualification : "MBBS, MD (PAEDIATRICS)",
+        qualification : "MBBS, MD",
         designation : "Chair Person",
         address : "Clinical Audit Committee, Jayadev Memorial Rashtrotthana Hospital and Research Centre, 5th Stage, Rajarajeshwari Nagar, Bengaluru 560098",
         role : "",
         roleDesv : "",
         description : "Designation/ role of member in Ethics Committee : Member Secretary ",
         role_2 : "Member Secretary" 
+      },
+      {
+        image : "../../assets/member_13.png",
+        name : "Dr. Vinodkumar T. G Nair",
+        qualification : "BAMS",
+        designation : "Senior Scientist and Managing Editor,",
+        designation_2 : "Journal of Traditional & Folk Practices",
+        address : "Ethnomedicine & Ethnopharmacology Department of Jawaharlal Nehru Tropical Botanic Garden & Research Institute, Palode, Thiruvananthapuram, Kerala, India",
+        role : "",
+        roleDesv : "Former Member, Board of Governors, Central Council for Indian Medicine, Government of India",
+        description : "Designation/ role of member in Ethics Committee : Member"
       },
       {
         image : "../../assets/member_3.png",
@@ -169,7 +81,7 @@ export class EthicCommitteeComponent {
         designation : "Consultant",
         address : "Obstetrics and Gynaecology",
         role : "",
-        roleDesv : "Jayadev Memorial Rashtrotthana Hospital & Research Centre,5th Stage, Rajarajeshwari Nagar Bengaluru 560098",
+        roleDesv : "Jayadev Memorial Rashtrotthana Hospital & Research Centre, 5th Stage, Rajarajeshwari Nagar Bengaluru 560098",
         description : "Designation/ role of member in Ethics Committee : Clinician",
         role_2 : "Clinician"
       },
@@ -185,6 +97,17 @@ export class EthicCommitteeComponent {
         role_2 : "Clinician"
       },
       {
+        image : "../../assets/member_12.png",
+        name : "Dr. Shubha Madhusudhan",
+        qualification : "Director",
+        designation : "",
+        address : "Manasvi Dynamics Pvt Ltd",
+        role : "",
+        roleDesv : "",
+        description : "Designation/ role of member in Ethics Committee : Member ",
+        role_2 : "Member"
+      },
+      {
         image : "../../assets/member_8.png",
         name : "Mr. Jagdisha Sharma",
         qualification : "",
@@ -193,17 +116,6 @@ export class EthicCommitteeComponent {
         role : "",
         roleDesv : "",
         description : "Designation/ role of member in Ethics Committee : Social Scientist",
-        role_2 : "Social Scientist"
-      },
-      {
-        image : "../../assets/member_9.png",
-        name : "Mr. Subrahmanya Bharati Konale",
-        qualification : "",
-        designation : "Chair Man",
-        address : "BISKUROM Foundation",
-        role : "",
-        roleDesv : "",
-        description : "Designation/ role of member in Ethics Committee : Social Scientist ",
         role_2 : "Social Scientist"
       },
       {
@@ -218,6 +130,17 @@ export class EthicCommitteeComponent {
         role_2 : "Legal Expert"
       },
       {
+        image : "../../assets/member_9.png",
+        name : "Mr. Subrahmanya Bharati Konale",
+        qualification : "",
+        designation : "Chair Man",
+        address : "BISKUROM Foundation",
+        role : "",
+        roleDesv : "",
+        description : "Designation/ role of member in Ethics Committee : Social Scientist ",
+        role_2 : "Social Scientist"
+      },
+      {
         image : "../../assets/member_10.png",
         name : "Mr. Durganna D",
         designation : "Rt. Teacher",
@@ -227,27 +150,6 @@ export class EthicCommitteeComponent {
         description : "Designation/ role of member in Ethics Committee : Lay Person ",
         role_2 : "Lay Person"
       },
-      {
-        image : "../../assets/member_12.png",
-        name : "Dr. Shubha Madhusudhan",
-        qualification : "Director",
-        designation : "",
-        address : "Manasvi Dynamics Pvt Ltd",
-        role : "",
-        roleDesv : "",
-        description : "Designation/ role of member in Ethics Committee : Member ",
-        role_2 : "Member"
-      },
-      {
-        image : "../../assets/member_13.png",
-        name : "Dr. Vinodkumar T. G Nair",
-        qualification : "BAMS",
-        designation : "Senior Scientist ",
-        address : "Jawaharlal Nehru Tropical Botanic Garden and Research Institute Karimancode, Palode, Kerala 695562",
-        role : "",
-        roleDesv : "Former Member, Board of Governors,CCIM, GOI",
-        description : "Designation/ role of member in Ethics Committee : Member"
-      }
   ]
 
   researchTeam = [
@@ -259,7 +161,7 @@ export class EthicCommitteeComponent {
       address : "Former S.R NIMHANS, Bengaluru",
       role : "",
       roleDesv : "Former Senior Research Fellow CCRAS",
-      description : "Designation/ role of member in Ethics Committee : Research Officer ",
+      description : "",
       role_2 : "Research Officer"
     },
     {
@@ -295,10 +197,6 @@ export class EthicCommitteeComponent {
   closeInfo(){
     this.selectedPopUp =null;
   }
-
-  
-
-  
 
 }
 
