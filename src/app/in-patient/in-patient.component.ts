@@ -25,8 +25,8 @@ export class InPatientComponent {
     {
       main_heading:'In-patient facility',
       heading:'In-patient facility',
-      image_1:'inpatient-facility-service-1.png',
-      image_2:'inpatient-facility-service-2.png',
+      image_1:'',
+      image_2:'',
       subFacilities:[
         {subHeading:'Comfort and Care at Rashtrotthana Hospital:', subContent:'At Rashtrotthana Hospital, we understand that your comfort and well-being are paramount during your stay with us. Our in-patient facilities are designed to provide you with a serene and welcoming environment conducive to healing and recovery. We thoughtfully furnish each private room with modern amenities to ensure your comfort throughout your stay. From cozy bedding to personalized care, we strive to create a home-like atmosphere where you can focus on your health with peace of mind.'}
         ,{

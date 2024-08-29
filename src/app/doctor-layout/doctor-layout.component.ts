@@ -782,9 +782,9 @@ export class DoctorLayoutComponent {
           {
             cname: 'NEUROSCIENCES', code: 'GM-ON'
           },
-          {
-            cname: 'ENDOCRINOLOGY', code: 'GM-ON'
-          },
+          // {
+          //   cname: 'ENDOCRINOLOGY', code: 'GM-ON'
+          // },
           {
             cname: 'PSYCHIATRY', code: 'GM-ON'
           },
