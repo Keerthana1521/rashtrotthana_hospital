@@ -243,6 +243,9 @@
     .designation, .address, .role_des{
         font-size: 20px;
     }
+    .designation_2{
+        font-size: 20px;
+    }
 }
 
 
@@ -304,6 +307,9 @@
     }
 
     .designation, .address, .role_des{
+        font-size: 20px;
+    }
+    .designation_2{
         font-size: 20px;
     }
 }
@@ -390,6 +396,9 @@
     .designation, .role{
         font-size: 18px;
         margin-top: 10px;
+    }
+    .designation_2{
+        font-size: 18px;
     }
 
     .address, .role_des{
@@ -490,8 +499,11 @@
     }
 
     .designation, .role{
-        font-size: 18px;
+        font-size: 14px;
         margin-top: 10px;
+    }
+    .designation_2{
+        font-size: 14px;
     }
 
     .address, .role_des{
