@@ -172,4 +172,45 @@
       <app-read-more-btn [text]="'View All'" (click)="navigateToPage('ethical-committee')"></app-read-more-btn>
     </div>
   </div>
+
+
+  <div class="con_3_heading">
+    <div class="reserach_heading">Research team</div>
+</div>
+
+<div class="container_2_main">
+    <div class="container_6" *ngFor="let card of researchTeam" (click)="popUpInfo(card)">
+        <div class="member_1">
+            <img src = {{card.image}} alt="">
+            <div class="member_name">{{card.name}}</div>
+            <div class="member_role">{{card.role_2}}</div>
+        </div>
+    </div>
+</div>
+
+
+<!-- pop up -->
+
+<div *ngIf="selectedPopUp" class="pop_up">
+  <div class="popUp_box">
+      <div class="close_icon" (click)="closeInfo()">
+          <i class="fa-solid fa-x"></i>
+      </div>
+      <div class="content">
+          <div class="pop_up_image">
+              <img [src]=selectedPopUp.image alt="">
+          </div>
+          <div class="pop_info">
+              <div class="pop_up_member_name">{{selectedPopUp.name}}</div>
+              <div class="qualification">{{selectedPopUp.qualification}}</div>
+              <div class="designation">{{selectedPopUp.designation}}</div>
+              <div class="designation_2">{{selectedPopUp.designation_2}}</div>
+              <div class="address">{{selectedPopUp.address}}</div>
+              <div class="role">{{selectedPopUp.role}}</div>
+              <div class="role_des">{{selectedPopUp.roleDesv}}</div>
+          </div>
+      </div>
+      <div class="poUp_description">{{selectedPopUp.description}}</div>
+  </div>
+</div>
 </div>

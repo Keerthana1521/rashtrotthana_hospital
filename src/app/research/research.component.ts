@@ -47,7 +47,46 @@ export class ResearchComponent {
       title : "Collaborative Trials: ",
       description : "We collaborate with sister institutes to conduct comprehensive in vitro and in vivo trials, enhancing the scope and impact of our research."
     },
+
+    
   ]
+
+  researchTeam = [
+    {
+      image : "../../assets/member_15.png",
+      name : "Dr. Kavyashree Kulamarva",
+      qualification : "BAMS, MD",
+      designation : "Research Officer",
+      address : "Former S.R NIMHANS, Bengaluru",
+      role : "",
+      roleDesv : "Former Senior Research Fellow CCRAS",
+      description : "",
+      role_2 : "Research Officer"
+    },
+    {
+      image : "../../assets/member_16.png",
+      name : "Dr. Sooraj Mohan R",
+      qualification : "BAMS",
+      designation : "Research Officer",
+      address : "Former Senior Research fellow National ayurveda Research Institute for Panchakarma",
+      role : "",
+      roleDesv : "Former Research Fellow, Dept. of  Ethno medicine, JNTBGRI",
+      description : "",
+      role_2 : "Research Officer"
+    },
+    {
+      image : "../../assets/member_14.png",
+      name : "Dr. Rohith K. R",
+      qualification : "BAMS",
+      designation : "Research Co-ordinator",
+      address : "",
+      role : "",
+      roleDesv : "",
+      description : "",
+      role_2 : "Research Co-ordinator"
+    }
+  ]
+
   navigateToPage(page:string) {
     this.router.navigate([`/${page}`]);
     console.log(`Navigating to ${page}`);
@@ -60,5 +99,15 @@ export class ResearchComponent {
     this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital Research Centre is a state-of-the-art facility that conducts clinical research in Bangalore, India, with a focus on traditional and modern medicine.' });
 
     this.metaService.updateTag({ name: 'keywords', content: 'clinical research, research centre, research facility, research activities, research team, research investigators, research library, research lab' });
+  }
+
+  selectedPopUp:any = null
+
+  popUpInfo(team : any){
+      this.selectedPopUp =team;
+  }
+
+  closeInfo(){
+    this.selectedPopUp =null;
   }
 }
