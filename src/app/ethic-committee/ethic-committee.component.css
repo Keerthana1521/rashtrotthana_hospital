@@ -221,6 +221,7 @@
         width: 400px;
         height: auto;
     }
+
     .pop_up{
         top: 130px;
     }
@@ -243,9 +244,18 @@
     .designation, .address, .role_des{
         font-size: 20px;
     }
+
     .designation_2{
         font-size: 20px;
     }
+
+    .poUp_description{
+        font-size: 18px;
+        margin-top: 10px;
+        line-height: 20px;
+    }
+
+
 }
 
 
