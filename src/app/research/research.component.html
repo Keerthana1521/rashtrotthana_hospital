@@ -151,7 +151,7 @@
     </div>
   </div>
   <div>
-    <div class="container_6_heading">SCIENTIFIC ADVISORY BOARD MEMBERS</div>
+    <!-- <div class="container_6_heading">SCIENTIFIC ADVISORY BOARD MEMBERS</div>
     <div class="advisory">
       <app-advisory-carousel></app-advisory-carousel>
     </div>
@@ -162,8 +162,8 @@
     </div>
   </div>
   <div>
-    <div class="container_6_heading">ETHICS COMMITTEE MEMBERS</div>
-    <div class="commitee">
+    <div class="container_6_heading">ETHICS COMMITTEE MEMBERS</div> -->
+    <!-- <div class="commitee">
       <app-committee-carousel></app-committee-carousel>
     </div>
     <br>
@@ -171,7 +171,24 @@
     <div class="button">
       <app-read-more-btn [text]="'View All'" (click)="navigateToPage('ethical-committee')"></app-read-more-btn>
     </div>
+  </div> -->
+
+  <div class="container_6_heading">SCIENTIFIC ADVISORY BOARD MEMBERS</div>
+
+  <div class="board_members_container">
+    <app-advisory-board-members />
   </div>
+
+  <div class="container_6_heading">ETHICS COMMITTEE MEMBERS</div>
+
+  <div class="ethics_committe_container">
+    <app-ethic-committee />
+  </div>
+
+
+
+
+
 
 
   <div class="con_3_heading">
