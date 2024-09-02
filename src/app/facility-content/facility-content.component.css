@@ -62,6 +62,7 @@ color: #008080;
 .image{
     width: 400px;
     height: 400px;
+    border-radius: 25px;
 }
 .o_menu{
     width: 100%;

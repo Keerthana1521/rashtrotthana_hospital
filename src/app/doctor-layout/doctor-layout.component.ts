@@ -50,7 +50,7 @@ export class DoctorLayoutComponent {
       image: 'assets/doctor-7.png',
       desgination: 'ER HEAD, ICU, ANAESTHESIA',
       about: 'Col. Dr. Anand Shankar is an anesthesiologist and intensivist and has an overall experience of 29 years. He served the Indian armed forces for a duration of 27 years....',
-      speciality: 'ANAESTHESIOLOGY',
+      speciality: ['ANAESTHESIOLOGY', 'EMERGENCY MEDICINE'],
       areasOfExpertise: ['Intensive Care', 'Emergency Care', 'Anesthesiology'],
       expertise: 'Years of Experience: 29',
       qualification:'MBBS,MD (ANAESTHESIOLOGY), EDIC',
@@ -577,7 +577,7 @@ export class DoctorLayoutComponent {
       areasOfExpertise: [''],
       qualification:'MBBS, MS.General Surgery',
       expertise: 'Years of Experience: 2',
-      time:'9:30-9:40,9:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      time:'9:30-9:50,9:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
       date:'Monday-Saturday'
     },
     {
@@ -599,7 +599,7 @@ export class DoctorLayoutComponent {
       'PCOD',
      ' Rheumatoid arthritis'],
       expertise: 'Years of Experience: 3',
-      time:'9:30-9:40,9:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      time:'9:30-9:50,9:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
       date:'Monday-Saturday'
     },
 
@@ -612,7 +612,7 @@ export class DoctorLayoutComponent {
       areasOfExpertise: [''],
       expertise: 'Years of Experience: 3',
       qualification:'BAMS',
-      time:'9:30-9:40,9:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      time:'9:30-9:50,9:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
       date:'Monday-Saturday'
     },
     {
@@ -624,7 +624,7 @@ export class DoctorLayoutComponent {
       about: 'Dr.Alekhya R is graduate from INDIAN INSITUTE OF AYURVEDIC MEDICINE AND RESEARCH in 2021',
       areasOfExpertise: ['Gastric related issues','Sinusitis, Allergic rhinitis','Vatavyadi'],
       expertise: 'Years of Experience: 2',
-      time:'9:30-9:40,9:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      time:'9:30-9:50,9:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
       date:'Monday-Saturday'
     },
     {
@@ -678,7 +678,7 @@ export class DoctorLayoutComponent {
 
     {
       name: 'Dr. Shamantha S',
-      image: 'assets/doctor-50.png',
+      image: 'assets/doctor-54.png',
       desgination: 'LIFE STYLE MEDICINE',
       about: ' ',
       speciality: 'LIFE STYLE MEDICINE',
@@ -822,31 +822,9 @@ export class DoctorLayoutComponent {
     if (element.scrollHeight - element.scrollTop === element.clientHeight) {
       // this.loadMoreDoctors();
     }
-    // if (this.currentIndex < this.doctors.length) {
-    //   this.loadMoreDoctors();
-    // }
-    // this.startIndex += this.increment;
-    // this.loadVisibleDoctors();
+
   }
-//   loadVisibleDoctors() {
 
-//     this.visibleDoctors = this.doctors.slice(this.startIndex, this.startIndex + this.increment);
-//     if(this.startIndex == 41){
-//       this.visibleDoctors = this.doctors.slice(this.startIndex,41)
-//     }
-
-//  }
-// loadVisibleDoctors() {
-//   if (this.startIndex >= 41) {
-//     If startIndex is 41 or more, load exactly 8 more doctors without reducing
-//     const remainingDoctors = this.doctors.slice(this.startIndex, this.startIndex + 8);
-//     this.visibleDoctors = [...this.visibleDoctors, ...remainingDoctors];
-//     this.startIndex += remainingDoctors.length;
-//   } else {
-//     Regular batch loading
-//     this.visibleDoctors = this.doctors.slice(this.startIndex, this.startIndex + this.increment);
-//   }
-// }
 loadVisibleDoctors() {
   this.visibleDoctors = this.doctors.slice(this.startIndex, this.startIndex + this.increment);
 }
@@ -854,26 +832,6 @@ isPramodChinder(): boolean {
   return this.selectedDoctor && this.specialDoctors.includes(this.selectedDoctor.name);
 }
 
-
-
-  
-  // loadMoreDoctors() {
-  //   const nextPage = this.currentPage + 1;
-  //   const startIndex = nextPage * this.itemsPerPage;
-  //   const endIndex = startIndex + this.itemsPerPage;
-  //   const newDoctors = this.doctors.slice(startIndex, endIndex);
-
-  //   this.visibleDoctors = [...this.visibleDoctors, ...newDoctors];
-  //   this.currentPage = nextPage;
-  // }
-
-  // onScroll() {
-  // if (this.currentIndex < this.doctors.length) {
-  //   this.loadMoreDoctors();
-  // }
-  // this.startIndex += this.increment;
-  // this.loadVisibleDoctors();
-  // }
   onSubjectChange(event: any) {
     //   console.log('Selected Subject:', event);
     //   this.selectedSubject = event;
@@ -895,9 +853,6 @@ isPramodChinder(): boolean {
   }
 
   filterDoctors(): void {
-    // const filteredBySpeciality = this.selectedSpeciality
-    //   ? this.doctors.filter(doctor => doctor.speciality === this.selectedSpeciality)
-    //   : this.doctors;
     const selectedSpeciality = this.selectedSpeciality;
     console.log(selectedSpeciality)
     const filteredBySpeciality = selectedSpeciality
@@ -912,15 +867,6 @@ isPramodChinder(): boolean {
     );
   }
 
-  // selectDoctor(doctor: any): void {
-  // this.selectedDoctor = doctor;
-  // this.selectedDoctor = doctor;
-  // const doctorIndex = this.doctors.indexOf(doctor);
-  // if (doctorIndex !== -1) {
-  //   this.startIndex = doctorIndex;
-  //   this.loadVisibleDoctors();
-  // }
-  // }
   selectDoctor(doctor: any) {
     this.selectedDoctor = doctor;
     const doctorIndex = this.doctors.indexOf(doctor);

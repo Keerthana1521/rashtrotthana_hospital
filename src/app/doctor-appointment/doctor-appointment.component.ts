@@ -21,6 +21,7 @@ export class DoctorAppointmentComponent implements OnInit {
   @Output() close = new EventEmitter<void>();
   availableTimes: { name: string }[] = [];
   disabledDays: number[] = [];
+  minDate: Date = new Date();
   contactForm:any = FormGroup;
   subjects = [
     { name: '10:00 - 11:00' },
