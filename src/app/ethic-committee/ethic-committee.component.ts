@@ -99,8 +99,8 @@ export class EthicCommitteeComponent {
       {
         image : "../../assets/member_12.png",
         name : "Dr. Shubha Madhusudhan",
-        qualification : "Director",
-        designation : "",
+        qualification : "",
+        designation : "Director",
         address : "Manasvi Dynamics Pvt Ltd",
         role : "",
         roleDesv : "",
