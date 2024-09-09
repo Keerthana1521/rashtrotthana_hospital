@@ -32,7 +32,7 @@ export class NaturopathyComponent {
       designation : "LIFESTYLE MEDICINE",
     },
     {
-      image : '../../assets/dummy.png',
+      image : 'assets/doctor-54.png',
       name : "Dr. Shamantha",
       section : "BAMS",
       designation : "LIFESTYLE MEDICINE",
