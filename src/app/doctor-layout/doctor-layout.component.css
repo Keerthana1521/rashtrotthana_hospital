@@ -135,7 +135,7 @@ input {
 .doctor-desgination {
   color: #1e0b9b;
   font-family: Poppins;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -146,7 +146,7 @@ input {
   color: #fff;
   text-align: center;
   font-family: Poppins;
-  font-size: 19px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -192,7 +192,6 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
-
 }
 .doctor-details-content {
   color: #e9eaf8;
