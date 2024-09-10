@@ -34,13 +34,13 @@ export class EthicCommitteeComponent {
         image : "../../assets/member_13.png",
         name : "Dr. Vinodkumar T. G Nair",
         qualification : "BAMS",
-        designation : "Senior Scientist and Managing Editor,",
-        designation_2 : "Journal of Traditional & Folk Practices",
-        address : "Ethnomedicine & Ethnopharmacology Department of Jawaharlal Nehru Tropical Botanic Garden & Research Institute, Palode, Thiruvananthapuram, Kerala, India",
+        designation : "Senior Scientist,",
+        designation_2 : "",
+        address : "Jawaharlal Nehru Tropical Botanic Garden & Research Institute, Karimancode, Palode, Kerala-695562.",
         role : "Member",
         roleDesv : "Former Member, Board of Governors, Central Council for Indian Medicine, Government of India",
         description : "Designation/ role of member in Ethics Committee : Member",
-        role_2 : "Member Secretary"
+        role_2 : "Member"
       },
       {
         image : "../../assets/member_3.png",
@@ -159,7 +159,7 @@ export class EthicCommitteeComponent {
       name : "Dr. Kavyashree Kulamarva",
       qualification : "BAMS, MD",
       designation : "Research Officer",
-      address : "Former S.R NIMHANS, Bengaluru",
+      address : "Former Senior Resident NIMHANS, Bengaluru",
       role : "",
       roleDesv : "Former Senior Resident Fellow CCRAS",
       description : "",
@@ -172,7 +172,7 @@ export class EthicCommitteeComponent {
       designation : "Research Officer",
       address : "Former Senior Research Fellow National ayurveda Research Institute for Panchakarma",
       role : "",
-      roleDesv : "Former Research Fellow, Dept. of  Ethno medicine, JNTBGRI",
+      roleDesv : "Former Research Fellow, Dept. of Ethno medicine, JNTBGRI",
       description : "",
       role_2 : "Research Officer"
     },

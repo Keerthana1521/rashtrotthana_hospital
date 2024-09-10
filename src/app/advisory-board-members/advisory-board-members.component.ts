@@ -32,7 +32,7 @@ export class AdvisoryBoardMembersComponent {
     {
         name : "Dr. H. S Subramanya",
         photo: '../../assets/rc-member-1.png',
-        designation : "HOD and Professor",
+        designation : "Professor and Head",
         department : "Dept. of Biosciences, Chanakya University",
         role : "Former Director",
         place : "Institute of Bioinformatics and Biotechnology, Bengaluru",
@@ -50,7 +50,7 @@ export class AdvisoryBoardMembersComponent {
     {
         name : "Dr. Kishore Kumar Ramakrishna",
         photo: '../../assets/rc-member-9.png',
-        designation : "Professor and Head of Ayurveda",
+        designation : "Professor and Head",
         department : "Department of Integrative Medicine",
         role : "",
         place : "National Institute of Mental Health and Neurosciences",
@@ -69,7 +69,7 @@ export class AdvisoryBoardMembersComponent {
         name : "Dr. B Ravishankar",
         photo: '../../assets/rc-member-6.png',
         designation : "Former Head",
-        department : "Pharmacology Laboratory, IPGT & RA, Gujarat,",
+        department : "Pharmacology Laboratory, IPGT & RA, Gujarat",
         role : "Former Director",
         place : "SDM Research Centre , Currently an advisor to various Research institutes including CCRAS",
         speciality : "Modern Pharmacology, Ayurveda research"
