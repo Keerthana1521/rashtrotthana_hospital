@@ -34,12 +34,13 @@ export class EthicCommitteeComponent {
         image : "../../assets/member_13.png",
         name : "Dr. Vinodkumar T. G Nair",
         qualification : "BAMS",
-        designation : "Senior Scientist and Managing Editor,",
-        designation_2 : "Journal of Traditional & Folk Practices",
-        address : "Ethnomedicine & Ethnopharmacology Department of Jawaharlal Nehru Tropical Botanic Garden & Research Institute, Palode, Thiruvananthapuram, Kerala, India",
-        role : "",
+        designation : "Senior Scientist,",
+        designation_2 : "",
+        address : "Jawaharlal Nehru Tropical Botanic Garden & Research Institute, Karimancode, Palode, Kerala-695562.",
+        role : "Member",
         roleDesv : "Former Member, Board of Governors, Central Council for Indian Medicine, Government of India",
-        description : "Designation/ role of member in Ethics Committee : Member"
+        description : "Designation/ role of member in Ethics Committee : Member",
+        role_2 : "Member"
       },
       {
         image : "../../assets/member_3.png",
@@ -50,12 +51,12 @@ export class EthicCommitteeComponent {
         role : "",
         roleDesv : "",
         description : "Designation/ role of member in Ethics Committee : Basic Medical Scientist",
-        role_2 : "Basic Medical Scientist "
+        role_2 : "Basic Medical Scientist"
       },
       {
         image : "../../assets/member_4.png",
-        name : "Dr. Bhagya Venkanna Rao",
-        qualification : "PhD",
+        name : "Dr. Bhagya V Rao",
+        qualification : "Msc, PhD",
         designation : "Associate Professor",
         address : "KLE College of Pharmacy, KLE University, Bengaluru 560021",
         role : "",
@@ -158,9 +159,9 @@ export class EthicCommitteeComponent {
       name : "Dr. Kavyashree Kulamarva",
       qualification : "BAMS, MD",
       designation : "Research Officer",
-      address : "Former S.R NIMHANS, Bengaluru",
+      address : "Former Senior Resident NIMHANS, Bengaluru",
       role : "",
-      roleDesv : "Former Senior Research Fellow CCRAS",
+      roleDesv : "Former Senior Resident Fellow CCRAS",
       description : "",
       role_2 : "Research Officer"
     },
@@ -169,9 +170,9 @@ export class EthicCommitteeComponent {
       name : "Dr. Sooraj Mohan R",
       qualification : "BAMS",
       designation : "Research Officer",
-      address : "Former Senior Research fellow National ayurveda Research Institute for Panchakarma",
+      address : "Former Senior Research Fellow National ayurveda Research Institute for Panchakarma",
       role : "",
-      roleDesv : "Former Research Fellow, Dept. of  Ethno medicine, JNTBGRI",
+      roleDesv : "Former Research Fellow, Dept. of Ethno medicine, JNTBGRI",
       description : "",
       role_2 : "Research Officer"
     },
@@ -199,4 +200,3 @@ export class EthicCommitteeComponent {
   }
 
 }
-
