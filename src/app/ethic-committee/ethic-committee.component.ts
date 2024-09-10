@@ -149,7 +149,7 @@ export class EthicCommitteeComponent {
         role : "",
         roleDesv : "",
         description : "Designation/ role of member in Ethics Committee : Lay Person ",
-        role_2 : "member"
+        role_2 : "Lay Person"
       },
   ]
 
@@ -200,4 +200,3 @@ export class EthicCommitteeComponent {
   }
 
 }
-
