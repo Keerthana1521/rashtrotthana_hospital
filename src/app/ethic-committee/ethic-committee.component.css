@@ -145,6 +145,7 @@
     display: grid;
     grid-template-columns: 30% 70%;
     gap: 30px;
+    padding-bottom: 10px;
 }
 
 .pop_up_image img{
