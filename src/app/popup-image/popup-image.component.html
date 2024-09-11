@@ -1,6 +1,7 @@
 <div class="popup-overlay" *ngIf="showPopup">
     <div class="popup-content">
+        <span class="close-icon" (click)="closePopup()">&times;</span>
       <img src="../../assets/pop-up-image.jpeg" alt="Popup Image" />
-      <button (click)="closePopup()">Close</button>
+     
     </div>
   </div>
