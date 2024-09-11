@@ -22,7 +22,7 @@ export class EthicCommitteeComponent {
       {
         image : "../../assets/member_2.png",
         name : "Dr. Swarnarekha Bhat",
-        qualification : "MBBS, MD",
+        qualification : "MBBS, MD (PAEDIATRICS)",
         designation : "Chair Person",
         address : "Clinical Audit Committee, Jayadev Memorial Rashtrotthana Hospital and Research Centre, 5th Stage, Rajarajeshwari Nagar, Bengaluru 560098",
         role : "",
@@ -34,10 +34,10 @@ export class EthicCommitteeComponent {
         image : "../../assets/member_13.png",
         name : "Dr. Vinodkumar T. G Nair",
         qualification : "BAMS",
-        designation : "Senior Scientist,",
+        designation : "Senior Scientist",
         designation_2 : "",
         address : "Jawaharlal Nehru Tropical Botanic Garden & Research Institute, Karimancode, Palode, Kerala-695562.",
-        role : "Member",
+        role : "",
         roleDesv : "Former Member, Board of Governors, Central Council for Indian Medicine, Government of India",
         description : "Designation/ role of member in Ethics Committee : Member",
         role_2 : "Member"
