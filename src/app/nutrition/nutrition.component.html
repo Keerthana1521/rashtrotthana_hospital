@@ -1,5 +1,138 @@
-<ng-container *ngFor="let facility of facilites">
-    <app-facility-content [image_1]="facility.image_1" [image_2]="facility.image_2"
-        [main_heading]="facility.main_heading" [heading]="facility.heading"
-        [subFacilities]="facility.subFacilities"></app-facility-content>
-</ng-container>
+<div class="main-container">
+    <div style="margin-top:17vh" >
+        <img class="banner-image" src="../../assets/facilities-bg.png">
+    </div>
+    <div class="heading">
+        Dietician
+    </div>
+    <div class="facility">
+        <div class="facility-content">
+            <div class="heading-container">Dietician</div>
+            <div class="content-container">
+                <div class="content">
+                    The dietetic department at Jayadev Memorial Rashtrotthana Hospital provides high quality food & nutrition service in more than a professional way, by giving personalized attention to each particular need and expectation of each patient.
+                </div>
+                <div class="content">
+                    Our dieticians are highly professional and experienced to establish nutritional needs and to recommend appropriate nutritional treatment for both inpatient & outpatients and to manage their disease and optimize their health.
+                </div>
+                <div class="side-heading">
+                    Services:
+                </div>
+                <div>
+                    <ul>
+                    <li>Nutritional assessment and screening of both inpatients and outpatients.</li>
+                    <li>Re-assessment of patients at defined intervals.</li>
+                    <li>Coordinate with doctors and other healthcare professionals in providing medical and nutritional support to patients.</li>
+                    <li>Planning and monitoring the diets of in and out patients with respect to their health status.</li>
+                    <li>Diet counseling and education of patients.</li>
+                </ul>
+                </div>
+            </div>
+            <div class="Meet_Medical_Team">
+                <!-- heading -->
+                <h2 classs="mmt_heading">Meet Our Medical Team</h2>
+                <!-- doctor image and name -->
+                <div class="doc_common_box">                        
+                    <div class="doc_details">
+                        <img src="../../assets/doctor-55.png" alt="">   <!-- doctor image -->
+                        <p class="doc_name">Ms. Archana Karthick</p>
+                    </div>
+                    <div class="doc_details">
+                        <img src="../../assets/doctor-56.png" alt="">   <!-- doctor image -->
+                        <p class="doc_name">Ms. Dharanika Devaraj</p>
+                    </div>
+                    </div>
+                <!-- view all button -->
+                <div class="view_all_btn_box">
+                    <app-arrow-btn></app-arrow-btn>
+                </div>
+          
+        </div>
+        </div>
+    <div>
+        <div class="o_menu">
+            <!-- menu heading -->
+            <div class="gm_m_heading">
+                <span class="more_specs">More Facilities</span>
+            </div>
+            <!-- menu contents -->
+            <div class="menu_contents">
+                <div class="op_names">
+                    <!-- general medicine -->
+                    <div class="menu_list_box" routerLink="/facility/health-insurance-plans-bangalore" routerLinkActive="active">
+                        <p class="menu_list general_medicine">Insurance</p>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <!-- general Surgery -->
+                    <div class="menu_list_box"routerLink="/facility/best-emergency-trauma-multispeciality-hospital-bangalore" routerLinkActive="active">
+                        <p class="menu_list general_Surgery">Emergency & Trauma Care</p>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <!-- Obstetrics & Gynaecology -->
+                    <div class="menu_list_box"routerLink="/facility/inpatient-facility-bangalore" routerLinkActive="active">
+                        <p class="menu_list Obstetrics_Gynaecology">In-patient facility</p>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <!-- Paediatrics & Neonatology -->
+                    <div class="menu_list_box" routerLink="/facility/best-kidney-dialysis-multispeciality-hospital-bangalore" routerLinkActive="active">
+                        <p class="menu_list Paediatrics_Neonatology">Dialysis Unit</p>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <!-- Nephrology -->
+                    <div class="menu_list_box" routerLink="/facility/operation-theatre-bangalore" routerLinkActive="active" >
+                        <p class="menu_list Nephrology">Operation Theatre</p>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <!-- Urology -->
+                    <div class="menu_list_box" routerLink="/facility/best-intensive-care-unit-multispeciality-hospital-bangalore" routerLinkActive="active">
+                        <p class="menu_list Urology">ICU</p>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <!-- Orthopedics -->
+                    <div class="menu_list_box" routerLink="/facility/top-diagnostics-multi-speciality-hospital-bangalore" routerLinkActive="active">
+                        <p class="menu_list Orthopedics">Radiology Services</p>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <!-- Gastrosciences -->
+                    <!-- Cardiac Sciences -->
+                    <div class="menu_list_box" routerLink="/facility/24-hours-pharmacy-store-bangalore" routerLinkActive="active">
+                        <p class="menu_list Cardiac_Sciences">Pharmacy</p>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <!-- Pulmonology -->
+                    <div class="menu_list_box" routerLink="/facility/best-ambulance-service-rashtrotthana-hospital-bangalore" routerLinkActive="active">
+                        <p class="menu_list Pulmonology">Ambulance Services</p>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <!-- Ophthalmology -->
+                    <div class="menu_list_box" routerLink="/facility/dietary-services-bangalore" routerLinkActive="active">
+                        <p class="menu_list Ophthalmology">Dietary</p>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <!-- Dental Sciences -->
+                    <div class="menu_list_box" routerLink="/facility/physiotherapy-services-bangalore" routerLinkActive="active">
+                        <p class="menu_list Dental_Sciences">Physiotherapy</p>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <!-- ENT -->
+                    <div class="menu_list_box" routerLink="/facility/laboratory-services-bangalore" routerLinkActive="active">
+                        <p class="menu_list ENT">Laboratory Services</p>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <!-- Neurosciences -->
+                    <div class="menu_list_box" routerLink="/facility/endoscopy-services-bangalore" routerLinkActive="active">
+                        <p class="menu_list Neurosciences">Endoscopy</p>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                    <!-- Endocrinology -->
+                    <div class="menu_list_box" routerLink="/facility/nutrition-dietetics-services-bangalore" routerLinkActive="active">
+                        <p class="menu_list Endocrinology">Dietician</p>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+ 

@@ -137,7 +137,7 @@ export class FacilitiesComponent implements OnInit{
     {
       name: 'card',
       image: '../../assets/facility-10.png',
-      title: 'Nutrition & Dietetics',
+      title: 'Dietician',
       button_text: 'Read More',
       route:'nutrition-dietetics-services-bangalore'
     },
