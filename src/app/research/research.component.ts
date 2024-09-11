@@ -57,7 +57,7 @@ export class ResearchComponent {
       name : "Dr. Kavyashree Kulamarva",
       qualification : "BAMS, MD",
       designation : "Research Officer",
-      address : "Former S.R NIMHANS, Bengaluru",
+      address : "Former Senior Resident, NIMHANS, Bengaluru",
       role : "",
       roleDesv : "Former Senior Resident Fellow CCRAS",
       description : "",
