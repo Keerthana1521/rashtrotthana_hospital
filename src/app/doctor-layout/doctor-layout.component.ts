@@ -703,7 +703,7 @@ export class DoctorLayoutComponent {
       areasOfExpertise: ['Prenatal and Post-natal Nutrition','Paediatric and geriatric nutrition','Enteral nutrition ','Diabetic management'],
       expertise: 'Years of Experience: 16',
       qualification:'M.Sc. in Food and Nutrition ,B.sc in Nutrition and Dietetics ',
-      time:'12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
+      time:'12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:30',
       date:'Monday-Saturday'
     },
 
