@@ -51,7 +51,7 @@
                     <i class="fa-solid fa-building-user form_icon"></i>
                     <label for="time">Appointment Time</label>
                   </div>
-                  <p-dropdown styleClass="dropdown" [options]="availableTimes" optionLabel="name" formControlName="time" placeholder="Choose a Time"
+                  <p-dropdown styleClass="dropdown" [options]="availableTimes" optionLabel="name" formControlName="time" placeholder="Choose a Time"[disabled]="availableTimes.length === 0"
                     required></p-dropdown>
                   <div *ngIf="f['time']?.touched && f['time']?.invalid">
                     <small class="error">Time is required</small>
