@@ -296,8 +296,6 @@ export class DoctorLayoutComponent {
       time:'16:00-16:20,16:20-16:40,16:40-17:00',
       date:'Monday-Saturday'
     },
-
-
     {
       name: 'Dr. Kolla Vinod',
       image: 'assets/doctor-32.png',
@@ -310,7 +308,6 @@ export class DoctorLayoutComponent {
       time:'16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:10,18:10-18:30',
       date:'Monday-Saturday'
     },
-
     {
       name: 'Dr. Meena H. B',
       image: 'assets/doctor-24.png',
