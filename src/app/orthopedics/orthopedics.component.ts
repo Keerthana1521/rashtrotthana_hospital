@@ -28,15 +28,18 @@ export class OrthopedicsComponent {
       Doctors:[
         {
           doctor_image:'../../assets/doctor-52.png',
-          doctor_name:'Dr. Mahesh Kulkarni'
+          doctor_name:'Dr. Mahesh Kulkarni',
+          experience : "15+"
         },
         {
           doctor_image:'../../assets/doctor-21.png',
-          doctor_name:'Dr. Sujayendra D. M'
+          doctor_name:'Dr. Sujayendra D. M',
+          experience : "11"
         },{
         
         doctor_image:'../../assets/doctor-37.png',
-        doctor_name:'Dr. Nikhil Hegde'
+        doctor_name:'Dr. Nikhil Hegde',
+        experience : "6"
       }
       ]}];
 }

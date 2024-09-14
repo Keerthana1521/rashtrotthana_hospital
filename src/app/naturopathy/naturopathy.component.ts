@@ -24,19 +24,21 @@ export class NaturopathyComponent {
       name : "Dr. Suvarnini Konale",
       section : "BNYS",
       designation : "LIFESTYLE MEDICINE",
+      experience : "15"
     },
     {
       image : '../../assets/doctor-43.png',
       name : "Dr. Varsha P",
       section : "BAMS, MD(Ayu),YIC",
       designation : "LIFESTYLE MEDICINE",
+      experience : "4"
     },
     {
       image : 'assets/doctor-54.png',
       name : "Dr. Shamantha",
       section : "BAMS",
       designation : "LIFESTYLE MEDICINE",
-      Department : "Agnivesha Institute Of Ayurveda"
+      experience : "3"
     }
   ]
 }

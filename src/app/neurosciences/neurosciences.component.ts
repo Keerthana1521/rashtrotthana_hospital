@@ -15,7 +15,13 @@ export class NeurosciencesComponent {
       Doctors:[
         {
           doctor_image:'../../assets/doctor-38.png',
-          doctor_name:'Dr. Jaidev S'
+          doctor_name:'Dr. Jaidev S',
+          experience : "4"
+        },
+        {
+          doctor_image:'../../assets/doctor-5.png',
+          doctor_name:'Brig (Dr) S. Shashivadhanan',
+          experience : "30+"
         },
       ]}];
 }

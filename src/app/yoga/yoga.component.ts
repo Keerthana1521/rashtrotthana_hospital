@@ -25,6 +25,7 @@ export class YogaComponent {
       name : "Dr. Suvarnini Konale",
       section : "BAMS, M.D. (Ayurveda)",
       designation : "LIFESTYLE MEDICINE",
+      experience : "15"
     }
   ]
 }

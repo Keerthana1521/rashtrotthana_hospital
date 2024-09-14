@@ -28,11 +28,13 @@ export class UrologyComponent {
       Doctors:[
         {
           doctor_image:'Dr.Madhu S N .png',
-          doctor_name:'Dr. Madhu S. N'
+          doctor_name:'Dr. Madhu S. N',
+          experience : "14"
         },
         {
           doctor_image:'Dr. Nagaraj Rao.png',
-          doctor_name:'Dr. Nagaraj Rao'
+          doctor_name:'Dr. Nagaraj Rao',
+          experience : "25"
         }
       ]}];
 }

@@ -15,15 +15,18 @@ export class GeneralSurgeryComponent {
       Doctors:[
         {
           doctor_image:'../../assets/doctor-5.png',
-          doctor_name:'Dr. Shashi Vadhanan'
+          doctor_name:'Dr. Shashi Vadhanan',
+          experience : " 20+"
         },
         {
           doctor_image:'../../assets/doctor-3.png',
-          doctor_name:'Dr. Atmaram D. C'
+          doctor_name:'Dr. Atmaram D. C',
+          experience : "18"
         },
         {
           doctor_image:'../../assets/doctor-25.png',
-          doctor_name:'Dr. Nishanth Lakshmikanth'
+          doctor_name:'Dr. Nishanth Lakshmikanth',
+          experience : "5"
         }    
       ]}];
 }

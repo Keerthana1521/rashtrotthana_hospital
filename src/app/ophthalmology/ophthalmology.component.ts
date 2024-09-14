@@ -15,7 +15,8 @@ export class OphthalmologyComponent {
       Doctors:[
         {
           doctor_image:'../../assets/doctor-45.png',
-          doctor_name:'Dr. Sowmya Bhat S'
+          doctor_name:'Dr. Sowmya Bhat S',
+          experience : "10"
         }
       ]}];
 }

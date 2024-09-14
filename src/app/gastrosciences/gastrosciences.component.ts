@@ -28,7 +28,8 @@ export class GastrosciencesComponent {
       Doctors:[
         {
           doctor_image:'../../assets/doctor-28.png',
-          doctor_name:'Dr. Ajay N'
+          doctor_name:'Dr. Ajay N',
+          experience : "2"
         }
       ]}];
 }

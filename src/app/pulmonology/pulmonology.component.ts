@@ -28,7 +28,8 @@ export class PulmonologyComponent {
       Doctors:[
         {
           doctor_image:'../../assets/doctor-32.png',
-          doctor_name:'Dr. Kolla Vinod'
+          doctor_name:'Dr. Kolla Vinod',
+          experience : "15"
         }
       ]}];
 }

@@ -25,6 +25,7 @@ export class HomeopathyComponent {
       name : "Dr. Anusha Mutalik Desai",
       section : "BHMS, MD(HOM)",
       designation : "HOMEOPATHY",
+      experience : "8"
     }
   ]
 
