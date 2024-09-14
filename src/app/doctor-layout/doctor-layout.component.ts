@@ -706,6 +706,18 @@ export class DoctorLayoutComponent {
       time:'12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:30',
       date:'Monday-Saturday'
     },
+    {
+      name: 'Dr. Gopal Das C M',
+      image: 'assets/doctor-57.png',
+      desgination: 'Consultant Psychiatrist',
+      about: 'Dr. Gopal Das C M is a distinguished Consultant Psychiatrist with extensive experience in treating a wide range of mental health conditions. His expertise includes managing stress, anxiety, depression, severe mental disorders, and addiction issues. Specializing in child and adolescent psychiatry, he also addresses psychiatric concerns in the elderly. Dr. Das employs advanced treatments like ECT, TMS and TDCS, alongside psychotherapies and lifestyle medicine. Dedicated to enhancing mental well-being, he offers comprehensive care tailored to individual needs.',
+      speciality: 'PSYCHIATRY',
+      areasOfExpertise: ['Stress and lifestyle induced psychological distress and disorders','Common mental illnesses like Anxiety and depression','Severe mental disorders like Schizophrenia and psychotic disorders, bipolar disorders, OCD, personality disorders, dissociative disorders etc.','Addictive disorders like smoking/tobacco addiction, alcohol use disorders and other drug addictions, behavioral addictions like Internet, gaming and smartphone or technology addiction, Pathological  gambling and others','Mental health issues arising in the course of various medical disorders/psychosomatic disorders ','Child and adolescent behavioral and psychological problems including ADHD etc','Psychiatric disorders in elderly like cognitive impairment/dementia etc.','Comprehensive evaluation and treatment for suicidal tendencies and self harm behaviors ','Sleep disorders due to psychological causes and primary insomnia.',' Relationship issues, marital and sexual disorders',' Consultations for Positive mental health and Well being'],
+      expertise: 'Years of Experience: 11',
+      qualification:'MD Psychiatry, MBBS',
+      time:'6:00-6:30,6:30-7:00,7:00-7:30',
+      date:'Monday-Saturday'
+    }
 
 
 
