@@ -30,3 +30,11 @@ body {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.exp{
+    font-size: 12px;
+    color:#000;
+    font-family: inter;
+    font-weight: 600;
+}

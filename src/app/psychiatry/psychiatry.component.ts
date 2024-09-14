@@ -28,7 +28,8 @@ export class PsychiatryComponent {
       Doctors:[
         {
           doctor_image:'../../assets/doctor-27.png',
-          doctor_name:'Dr. Valli Kiran'
+          doctor_name:'Dr. Valli Kiran',
+          experience : "20"
         },
       ]}];
 }

@@ -132,6 +132,7 @@
                     <div class="doc_details" *ngFor="let doctor of doctor">
                         <img [src]="'../../assets/images/' + doctor.doctor_image"alt="">   <!-- doctor image -->
                         <p class="doc_name">{{doctor.doctor_name}}</p>
+                        <p class="exp">Years of Experience: {{doctor.experience}}</p>
                     </div>
                 </div>
                 <!-- view all button -->

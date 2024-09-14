@@ -24,7 +24,8 @@ export class NephrologyComponent {
       Doctors:[
         {
           doctor_image:'../../assets/doctor-16.png',
-          doctor_name:'Dr. Santhosh S'
+          doctor_name:'Dr. Santhosh S',
+          experience : "14"
         }
       ]}];
 }

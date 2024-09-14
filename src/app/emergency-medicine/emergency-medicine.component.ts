@@ -16,7 +16,8 @@ export class EmergencyMedicineComponent {
       Doctors:[
         {
           doctor_image:'',
-          doctor_name:''
+          doctor_name:'',
+          experience : ''
         }
         // {
         //   doctor_image:'Dr.Geethanjali K G.png',
