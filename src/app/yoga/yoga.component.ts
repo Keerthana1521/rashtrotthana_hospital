@@ -23,9 +23,16 @@ export class YogaComponent {
     {
       image : '../../assets/doctor-14.png',
       name : "Dr. Suvarnini Konale",
-      section : "BAMS, M.D. (Ayurveda)",
+      section : "BNYS",
       designation : "LIFESTYLE MEDICINE",
       experience : "15"
-    }
+    },
+    {
+      image : '../../assets/doctor-43.png',
+      name : "Dr. Varsha P",
+      section : "BAMS, MD(Ayu),YIC",
+      designation : "LIFESTYLE MEDICINE",
+      experience : "4"
+    },
   ]
 }
