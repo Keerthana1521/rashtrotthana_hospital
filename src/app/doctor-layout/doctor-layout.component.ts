@@ -228,7 +228,7 @@ export class DoctorLayoutComponent {
       expertise: 'Years of Experience: 15+',
       time:'18:30-18:50,18:50-19:10,19:10-19:30',
       date:'Monday-Saturday',
-      qualification:'MBBS, DNB Ortho',
+      qualification:'MS Ortho, DNB Ortho,Fellowship in Arthroplasty/ Arthoscopy/ Spine surgery/  Complex trauma',
       areasOfExpertise: ['Joint preservation', 'Limb preservation', 'Deformity correction', 'Pelviacetabular fractures', 'Sports injuries', 'Spine affections' ]
     },
 
@@ -449,7 +449,7 @@ export class DoctorLayoutComponent {
       image: 'assets/doctor-12.png',
       desgination: 'OBSTETRICS & GYNECOLOGY',
       speciality: 'OBSTETRICS & GYNECOLOGY',
-      about: 'Dr. Prakruthi is graduated from JJMMC,DAVANGERE in 2004. She completed post graduation in DGO(2018). He did training in Laproscopy from ALTIUS HOSPITAL BLORE in 2022. He also completed DNB from BANGALORE BAPTIST HOSPITAL.',
+      about: 'Dr. Prakruthi is a dedicated obstetrician and gynecologist committed to enhancing patient safety and care quality in both normal and high-risk pregnancies. With a strong focus on labor ward management, fetal medicine and academic excellence, she strives to promote exceptional standards in maternity services.She has made significant contributions to the field through her research, including publications on recurrent fetal hydrops and the successful management of Guillain-Barre syndrome in pregnancy. Her work emphasizes the importance of genetic testing and innovative treatment strategies, and has been featured in prominent medical journals.Dr. Prakruthi has also presented her findings at national conferences, highlighting her commitment to advancing obstetric care and improving patient safety. Known for her strong interpersonal and communication skills, she fosters trusting relationships with her patients and colleagues, ensuring a supportive environment for all those in her care.',
       areasOfExpertise: ['Labour ward management', 'Development of protocols', 'High risk pregnancy management', 'Fetal Scans'],
       expertise: 'Years of Experience: 16',
       qualification:'MBBS, DGO, DNB, FELLOWSHIP IN MATERNAL FETAL MEDICINE',
@@ -518,13 +518,13 @@ export class DoctorLayoutComponent {
       date:'Monday,Wednesday and Friday'
     },
     {
-      name: 'Dr. Neelam',
+      name: 'Dr. Neelam Saraswat',
       image: 'assets/doctor-13.png',
       desgination: 'OBSTETRICS & GYNECOLOGY',
-      about: 'Dr. Neelam is graduate from KASTURBA MEDICAL COLLEGE in 2009. She did DIPLOMATE OF NATIONAL BOARD (obstetrics & gynaecology) in 2013. She also completed her post graduation in MRCOG on 2016. She has overall 9 year experience . She got first prize award in free paper session category (Title: LAPROSCOPIC HYSTERECTOMY vs VAGINAL HYSTERECTOMY for being pathology)',
+      about: 'A skilled obstetrician and gynaecologist.MBBS from KMC, Mangalore and DNB from railway hospital kolkata. She  cleared MRCOG (london) and also worked in NHS  (U.K) briefly..she believes that all women should be cared with highest quality of medical care and should be supported all through out their journey...a keen yoga practitioner herself she would also like to explore field of yoga to help women especially pregnant women. She believes training future generation with evidence based protocols and practices is going to have significant impact in coming years.',
       speciality: 'OBSTETRICS & GYNECOLOGY',
       areasOfExpertise: ['High Risk Pregnancy', 'Adolescent care', 'Integrated medicine Protocols', 'Role of yoga in Women s Health care'],
-      expertise: 'Years of Experience: 9',
+      expertise: 'Years of Experience: 10',
       qualification:'MBBS, DNB, MRCOG(U.K)',
       time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
       date:'Monday-Saturday'
@@ -570,10 +570,10 @@ export class DoctorLayoutComponent {
       image: 'assets/doctor-28.png',
       desgination: 'GASTRO SCIENCES',
       speciality: 'GASTRO SCIENCES',
-      about: 'Dr. Ajay N is graduate from B.R.AMBEDKAR MEDICAL COLLEGE in 2018. He also completed post graduation (MS in general surgery) from Adichunchanagiri institute of Medical Sciences, Mandya in 2023.',
-      areasOfExpertise: [''],
-      qualification:'MBBS, MS, General Surgery',
-      expertise: 'Years of Experience: 2',
+      about: 'Dr. Ajay N is a dedicated surgeon specializing in gastrosciences, known for their expertise and compassionate care. With years of experience, Dr. Ajay N has mastered advanced surgical techniques, focusing on gastrointestinal disorders and innovative treatment approaches. Their commitment to patient outcomes is evident in their meticulous attention to detail and ability to foster trust with patients and families. Outside the operating room, Dr. Ajay N participates in community outreach programs, promoting awareness of gastrointestinal health. Dr. Ajay N continues to make significant impacts in the lives of those they serve.',
+      areasOfExpertise: ['Laparoscopic surgery', 'Proctology', 'General Surgery'],
+      qualification:'MBBS, MS(General Surgery)',
+      expertise: 'Years of Experience: 4',
       time:'9:30-9:50,9:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
       date:'Monday-Saturday'
     },

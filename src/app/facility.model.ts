@@ -7,4 +7,5 @@
     main_heading: string;
     heading: string;
     subFacilities: SubFacility[];
+    bg_image:any;
   }

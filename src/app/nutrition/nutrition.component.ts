@@ -39,6 +39,7 @@ export class NutritionComponent {
         subContent:'At Rashtrotthana Hospital, we believe that education and support are essential components of successful nutrition management. Our Nutrition & Dietetics facility offers educational resources and ongoing support to help you make lasting changes to your diet and lifestyle. We provide you with the knowledge and skills you need to adopt healthier habits and maintain them for life. By empowering you to take control of your nutritional health, we strive to make a positive impact on your overall well-being and quality of life.'
         }
       ],
+      bg_image:'dietician-bg.png'
     
     }
     ];

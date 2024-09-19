@@ -24,7 +24,8 @@ export class OperationTheatreComponent {
       heading:'Operation Theatre',
       content:'State of the Art Modular OT 5 Major & 1 Minor OT - fully equipped meeting requirements for all Major Surgeries working round the clock. Certified & experienced OT staff.',
       image_1:'operation-theatre-1.png',
-      image_2:'operation-theatre-2.png'
+      image_2:'operation-theatre-2.png',
+       bg_image:'facilities-bg.png'
     }
   ];
 }

@@ -27,6 +27,7 @@ export class InPatientComponent {
       heading:'In-patient facility',
       image_1:'inpatient-facility-service-1.jpeg',
       image_2:'inpatient-facility-service-2.jpeg',
+       bg_image:'in-patient-bg.png',
       subFacilities:[
         {subHeading:'Comfort and Care at Rashtrotthana Hospital:', subContent:'At Rashtrotthana Hospital, we understand that your comfort and well-being are paramount during your stay with us. Our in-patient facilities are designed to provide you with a serene and welcoming environment conducive to healing and recovery. We thoughtfully furnish each private room with modern amenities to ensure your comfort throughout your stay. From cozy bedding to personalized care, we strive to create a home-like atmosphere where you can focus on your health with peace of mind.'}
         ,{
@@ -37,7 +38,8 @@ export class InPatientComponent {
           subHeading:'Advanced Medical Technology for Comprehensive Care:',
           subContent:'Rashtrotthana Hospital supports comprehensive and advanced care with its state-of-the-art medical technology and dedicated staff. Our in-patient facilities feature advanced monitoring systems and medical equipment to ensure accurate diagnosis and effective treatment. From cutting-edge surgical suites to specialized medical units, we have the resources and expertise to address a wide range of healthcare needs. We are committed to providing you with the highest quality of care, utilizing the latest advancements in medical technology to promote your health and well-being.'
         }
-    ]
+    ],
+   
     }
   ];
  

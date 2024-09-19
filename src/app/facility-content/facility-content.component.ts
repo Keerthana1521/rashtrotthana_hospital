@@ -12,4 +12,5 @@ export class FacilityContentComponent {
   @Input() main_heading: string ='';
   @Input() heading: string = '';
   @Input() subFacilities?: SubFacility[];
+  @Input() bg_image:any;
 }

@@ -34,5 +34,6 @@ export class PharmacyComponent {
         subContent:'Experience personalized care and convenience with Rashtrotthana Hospital s pharmacy services. Our dedicated team is here to assist you in selecting the right medications and answering any questions you may have. For added convenience, we offer home delivery within a 5-kilometer radius, ensuring that you have access to essential medications without leaving the comfort of your home. Plus, enjoy an additional 10% discount on drugs delivered to your doorstep.'
       },
 
-    ]}];
+    ],
+      bg_image:'pharmacy-bg.png'}];
 }

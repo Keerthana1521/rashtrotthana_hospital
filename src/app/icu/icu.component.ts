@@ -26,7 +26,8 @@ export class IcuComponent {
       heading:'I.C.U',
       content:'30+ Bedded ICU unit - Well Equipped to handle all types of medical emergencies. Medical ICU, Surgical ICU, Pediatric ICU, Neonatal ICU & Cardiac ICU available for focused critical care round the clock. Qualified & Experienced Intensivist provided cover at all times.',
       image_1:'icu-facility-service-1.jpeg',
-      image_2:'icu-facility-service-2.jpeg'
+      image_2:'icu-facility-service-2.jpeg',
+       bg_image:'icu-bg.png'
     }
   ];
 }

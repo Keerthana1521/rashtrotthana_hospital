@@ -37,7 +37,8 @@ export class RadiologyComponent {
           subHeading:'Patient-Focused Approach and Timely Results:',
           subContent:'At Rashtrotthana Hospital, we prioritize patient satisfaction and well-being. We have designed our radiology services with your comfort and convenience in mind. From scheduling appointments to delivering prompt results, we ensure a seamless experience for our patients. With our patient-focused approach and commitment to excellence, you can rely on us for accurate diagnostics and personalized care.'
         }
-    ]
+    ],
+    bg_image:'radiology-bg.png'
     }
   ];
 }
