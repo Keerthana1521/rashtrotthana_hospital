@@ -53,7 +53,7 @@
 
 .con_1_para {
     color: #000;
-    
+    text-align: justify;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -122,7 +122,7 @@
 
 .container_2 .con_2_para_1_txt {
     color: #848484;
-    
+    text-align: justify;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -316,7 +316,7 @@
 .content_paragraph {
     width: 295px;
     color: #848484;
-    
+    text-align: justify;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -437,7 +437,7 @@
     width: 90%;
     font-family: Inter;
     color: #848484;
-    
+    text-align: justify;
     line-height: 30px;
     font-size: 18px;
     padding: 5% 0 0 0;

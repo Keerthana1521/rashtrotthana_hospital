@@ -207,7 +207,7 @@
 
 .con_4_para{
     color: #000;
-    
+    text-align: justify;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -215,7 +215,7 @@
     line-height: 140.6%; /* 25.308px */
 }
 
-.con_4_list_1 .list_2_items{
+ .list_2_items{
     color: #000;
     font-family: Inter;
     font-size: 18px;
@@ -231,6 +231,7 @@
     display: grid;
     grid-template-columns: 40% 60%;
     margin: 100px;
+    margin-bottom: 0;
 }
 
 .con_5_img{
@@ -277,6 +278,7 @@
 }
 .con_5_para{
     font-size: 18px;
+    text-align: justify;
     
 }
 

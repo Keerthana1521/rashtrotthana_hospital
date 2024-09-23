@@ -47,6 +47,7 @@
     border-top-left-radius: 10px;
     padding: 20px;
     font-family: "poppins";
+    text-transform: capitalize;
 }
 
 .menu_n_content{
@@ -125,6 +126,7 @@
     margin: 0px 50px 10px 10px;
     font-family: "inter";
     font-weight: 500;
+    text-align: justify;
 }
 .gm_o_image{
     width: 300px;

@@ -47,6 +47,7 @@ color: #008080;
  text-transform: none;
  line-height: 36px;
  word-wrap: break-word;
+ text-align: justify;
  
  position: relative;
  right: 3rem;
@@ -104,6 +105,7 @@ color: #008080;
     border-top-left-radius: 10px;
     padding: 20px;
     font-family: "poppins";
+    text-transform: capitalize;
 }
 .arrow{
     position: relative;

@@ -530,7 +530,7 @@ background-image: url('../../assets/Yellow\ Arrow.png');
   font-weight: 400;
   width: 534px;
   word-wrap: break-word;
-  
+  text-align: justify;
 }
 .read-button {
   padding-left: 4rem;
