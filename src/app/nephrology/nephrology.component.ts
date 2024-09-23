@@ -18,7 +18,7 @@ export class NephrologyComponent {
   specialities=[
     {
       main_heading:'Nephrology',
-      content:'Department of Nephrology is a well established treatment center for all kidney related ailments. Availability of a certified renal transplant physician has given rise to standard & safe treatment protocols. Quality Dialysis at affordable cost - 8 Bedded dialysis unit is set up in a clean & hygienic environment catering to dialysis patients across all days of the week. Discounted blood investigation packages (Renal Profile) available for focused approach. Nephrology concerns the diagnosis and treatment of kidneydiseases, including electrolyte disturbances and hypertension, and the care of those requiring renal replacement therapy,including dialysis and renal transplant patients.',
+      content:'Department of Nephrology is a well established treatment center for all kidney related ailments. Availability of a certified renal transplant physician has given rise to standard & safe treatment protocols. Quality Dialysis at affordable cost - 8 Bedded dialysis unit is set up in a clean & hygienic environment catering to dialysis patients across all days of the week. Discounted blood investigation packages (Renal Profile) available for focused approach. Nephrology concerns the diagnosis and treatment of kidneydiseases, including electrolyte disturbances and hypertension, and the care of those requiring renal replacement therapy, including dialysis and renal transplant patients.',
       heading:'Nephrology',
       image:'Nephrology.png',
       Doctors:[

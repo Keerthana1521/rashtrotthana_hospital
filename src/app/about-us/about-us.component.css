@@ -47,6 +47,7 @@ padding-bottom: 3rem ;
     font-weight: 400;
     line-height: normal;
     width: 525px; 
+    text-align: justify;
 }
 .president-img{
     display: flex;
