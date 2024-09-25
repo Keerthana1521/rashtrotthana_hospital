@@ -290,7 +290,7 @@ export class DoctorLayoutComponent {
       desgination: 'SURGEON/ LAPROSCOPY/ GASTROENTEROLOGLIST',
       about: 'A dedicated surgeon with 18 years of experience specializing in laparoscopy, proctologist, gastroenterology, and oncology. My medical journey began at MS Ramaiah Medical College in Bangalore, where I developed a strong foundation in surgical techniques and patient care. Over the years, I have honed my skills in minimally invasive procedures, which allow for quicker recoveries and reduced patient discomfort.I strongly believe in the existence of divinity, which inspires my approach to medicine. The immense trust my patients place in me is a driving force behind my commitment to serve them better every day. I am passionate about providing compassionate care and fostering trusting relationships with those I treat.',
       speciality: 'GENERAL SURGERY',
-      areasOfExpertise: ['GI surgery', 'Laproscopy', 'Onco Surgery', 'Lasers'],
+      areasOfExpertise: ['Laparoscopy', 'Gastroenterology' ,'Oncology' ,'Proctology'],
       expertise: 'Years of Experience: 18',
       qualification:'MBBS, MS',
       time:'16:00-16:20,16:20-16:40,16:40-17:00',
@@ -714,7 +714,32 @@ export class DoctorLayoutComponent {
       qualification:'MD Psychiatry, MBBS',
       time:'18:00-18:30,18:30-19:00,19:00-19:30',
       date:'Monday-Saturday'
-    }
+    },
+    {
+      name: 'Dr. Nishitha A',
+      image: 'assets/doctor-58.png',
+      desgination: 'Radiologist',
+      about: 'Dr. Nishitha A is a recent addition to our  dedicated team of radiologists with a special interest in  women\'s imaging . She graduated summa cum laude in her  M.D Radio-Diagnosis(2023) examinations. Dr. Nishitha has completed her Senior Residency at BGS GIMS Hospital, and is currently,  pursuing a fellowship in Fetal Medicine at ADI Advanced Care for Fetal Studies, Bangalore . Dr. Nishitha has  numerous paper presentations at State, national and international conferences to her credit with a Gold medal for the best paper in KCACON-2013 . Outside of her professional work, she is a trained Carnatic vocalist and Bharatanatyam dancer, reflecting her diverse talents and interests.',
+      speciality: 'RADIOLOGY',
+      areasOfExpertise: ['Women\'s Imaging'],
+      expertise: 'Years of Experience: 1+',
+      qualification:'MBBS, MD',
+      time:'16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:00',
+      date:'Monday-Thursday'
+
+    },
+    {
+      name: 'Dr. Nagesh R',
+      image: 'assets/doctor-59.png',
+      desgination: 'Radiologist',
+      about: 'Dr. Nagesh R is an accomplished radiology consultant in jaydev rashtrotthana Hospital, with over a decade of experience in the field. He holds a medical degree in MBBS, DMRD, and DNB, and he is going to be a Fellow of the Royal College of Radiologists (FRCR), a highly esteemed qualification in the field of radiology. He is an active member of the Indian Radiology and Imaging Association.Dr. Nagesh R is an expert in general radiology and has a special interest in cardiovascular imaging, as well as performing USG and CT-guided interventions. He is highly skilled in interpreting medical images and diagnosing a wide range of medical conditions, from the most common to the most complex.',
+      speciality: 'RADIOLOGY',
+      areasOfExpertise: ['Radiology'],
+      expertise: 'Years of Experience: 10',
+      qualification:'MBBS, DMRD, DNB, FRCR',
+      time:'9:30-9:50,9:50-10:10,10:10-10:30,10:30-10:50,10:50-11:00',
+      date:'Monday-Friday'
+    },
 
 
 
