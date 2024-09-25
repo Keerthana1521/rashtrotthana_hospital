@@ -712,7 +712,7 @@ export class DoctorLayoutComponent {
       areasOfExpertise: ['Stress and lifestyle induced psychological distress and disorders','Common mental illnesses like Anxiety and depression','Severe mental disorders like Schizophrenia and psychotic disorders, bipolar disorders, OCD, personality disorders, dissociative disorders etc.','Addictive disorders like smoking/tobacco addiction, alcohol use disorders and other drug addictions, behavioral addictions like Internet, gaming and smartphone or technology addiction, Pathological  gambling and others','Mental health issues arising in the course of various medical disorders/psychosomatic disorders ','Child and adolescent behavioral and psychological problems including ADHD etc','Psychiatric disorders in elderly like cognitive impairment/dementia etc.','Comprehensive evaluation and treatment for suicidal tendencies and self harm behaviors ','Sleep disorders due to psychological causes and primary insomnia.',' Relationship issues, marital and sexual disorders',' Consultations for Positive mental health and Well being'],
       expertise: 'Years of Experience: 11',
       qualification:'MD Psychiatry, MBBS',
-      time:'6:00-6:30,6:30-7:00,7:00-7:30',
+      time:'18:00-18:30,18:30-19:00,19:00-19:30',
       date:'Monday-Saturday'
     }
 
