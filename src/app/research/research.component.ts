@@ -59,7 +59,7 @@ export class ResearchComponent {
       designation : "Research Officer",
       address : "Former Senior Resident, NIMHANS, Bengaluru",
       role : "",
-      roleDesv : "Former Senior Resident Fellow CCRAS",
+      roleDesv : "Former Senior Research Fellow CCRAS",
       description : "",
       role_2 : "Research Officer"
     },
@@ -68,7 +68,7 @@ export class ResearchComponent {
       name : "Dr. Sooraj Mohan R",
       qualification : "BAMS",
       designation : "Research Officer",
-      address : "Former Senior Research fellow National ayurveda Research Institute for Panchakarma",
+      address : "Former Senior Research fellow, National ayurveda Research Institute for Panchakarma",
       role : "",
       roleDesv : "Former Research Fellow, Dept. of  Ethno medicine, JNTBGRI",
       description : "",

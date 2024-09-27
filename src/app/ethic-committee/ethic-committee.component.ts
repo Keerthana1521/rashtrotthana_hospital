@@ -56,7 +56,7 @@ export class EthicCommitteeComponent {
       {
         image : "../../assets/member_4.png",
         name : "Dr. Bhagya V Rao",
-        qualification : "Msc, PhD",
+        qualification : "B Pharm, M Pharm, PhD",
         designation : "Associate Professor",
         address : "KLE College of Pharmacy, KLE University, Bengaluru 560021",
         role : "",
@@ -136,7 +136,7 @@ export class EthicCommitteeComponent {
         qualification : "",
         designation : "Chair Man",
         address : "BISKUROM Foundation",
-        role : "",
+        role : "Social Activist",
         roleDesv : "",
         description : "Designation/ role of member in Ethics Committee : Social Scientist ",
         role_2 : "Social Scientist"
@@ -161,7 +161,7 @@ export class EthicCommitteeComponent {
       designation : "Research Officer",
       address : "Former Senior Resident NIMHANS, Bengaluru",
       role : "",
-      roleDesv : "Former Senior Resident Fellow CCRAS",
+      roleDesv : "Former Senior Research Fellow CCRAS",
       description : "",
       role_2 : "Research Officer"
     },
