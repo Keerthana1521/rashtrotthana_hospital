@@ -24,9 +24,9 @@ export class AdvisoryBoardMembersComponent {
         name : "Dr. B. N Gangadhar",
         photo: '../../assets/rc-member-4.png',
         designation : "Chairman",
-        department : "National Medical Commission, New Delhi",
+        department : "National Medical Commission (Government of India)",
         role : " Former Director",
-        place : "NIMHANS",
+        place : "National Institute of Mental Health and Neuro Sciences",
         speciality : "Psychiatry, Yoga, Ayurveda"
     },
     {
@@ -60,9 +60,9 @@ export class AdvisoryBoardMembersComponent {
         name : "Dr. Girish Tillu",
         photo: '../../assets/rc-member-10.png',
         designation : "Assistant Professor",
-        department : "Department of Health Sciences Savitribai Phule Pune University ",
+        department : "Department of Health Sciences, Savitribai Phule Pune University ",
         role : "Principal Investigator",
-        place : "AYUSH Center of Excellence",
+        place : "AYUSH Centre of Excellence",
         speciality : "Ayurveda, Complementary and Integrative Health"
     },  
     {
@@ -96,7 +96,7 @@ export class AdvisoryBoardMembersComponent {
         name : "Dr. S Srikanta",
         photo: '../../assets/rc-member-5.jpeg',
         designation : "Medical Director and Consultant",
-        department : "Samatvam Endocrinology Diabetes Center",
+        department : "Samatvam Endocrinology Diabetes Centre",
         role : "",
         place : "",
         speciality : "Internal Medicine, Endocrinology, Diabetes, Yoga, Ayurveda"
