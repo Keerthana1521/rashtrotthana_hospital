@@ -1,0 +1,100 @@
+<div class="maternity_container">
+    <!-- container 1 -->
+    <div class="container_1">
+        <div class="banner_heading">Experience Joyful Birthing</div>
+        <div class="banner_description">Get Safe, Respectful and Supportive Pregnancy Care</div>
+        <button class="banner_button">Contact Us</button>
+    </div>
+    <!-- container 2 -->
+     <div class="container_2">
+        <div class="container_2_box">
+            <div class="container_2_heading_1">Comprehensive Maternity Care at Rashtrotthana Hospital</div>
+            <div class="container_2_para">Comprehensive Maternity Care at Rashtrotthana Hospital<br/>At Rashtrotthana Hospital, we offer high- quality maternity services with a <b>75% Success Rate in Normal Deliveries.</b> Our team of experienced doctors is dedicated to ensuring safe and effective care for both mothers and babies throughout pregnancy, delivery and postnatal.</div>
+            <div class="container_2_para">In addition to exceptional medical care, we offer <b>Holistic Yoga Programs for Expecting and New Mothers.</b> Our specialized <b>Antenatal & Postnatal Yoga</b> sessions are designed to empower your body and mind through every stage of pregnancy and postnatal care. Whether you're preparing for birth or focusing on postnatal wellness, our programs support you in staying healthy, flexible and relaxed.</div>
+            <div class="container_2_para">Experience the journey of motherhood with confidence and care at Rashtrotthana Hospital, where your comfort and health are our top priorities.</div>
+        </div>
+        <div class="container_2_box">
+            <div class="container_2_heading_1">Mathruswasthyam Lokaswasthyam</div>
+            <div class="container_2_para">At Rashtrotthana Hospital, we stand out for our holistic approach to maternity care, combining cutting-edge medical practices with personalized, compassionate attention. Our team of renowned specialists, including obstetricians, yoga practitioners, and Ayurvedic experts, ensures that every aspect of your pregnancy journey is covered - from high-risk pregnancies to postnatal recovery. We prioritize both physical and emotional well-being through our integrated services, such as antenatal yoga and Ayurvedic postnatal care, offering mothers and babies a nurturing environment throughout their experience. With round-the-clock care, state-of-the-art facilities, and a commitment to patient-centered service, we provide exceptional care that supports both the health of the mother and the development of the child.</div>
+        </div>
+    </div>
+    <!-- container 3 -->
+     <div class="container_3">
+        <div class="container_3_heading">Our Expertise in Maternity Care Includes:</div>
+        <div class="container_3_contents">
+            <div class="container_3_lists">
+                <ul class="expertise_lists">
+                    <li class="expertise_list_item">Vaginal Delivery</li>
+                    <li class="expertise_list_item">High-Risk Pregnancy Management</li>
+                    <li class="expertise_list_item">Diabetes & Pregnancy</li>
+                    <li class="expertise_list_item">Medical Disorders in Pregnancy</li>
+                    <li class="expertise_list_item">Recurrent Pregnancy Loss Treatment</li>
+                    <li class="expertise_list_item">Emergency Obstetric Care</li>
+                    <li class="expertise_list_item">Vaginal Surgeries</li>
+                </ul>
+            </div>
+            <div class="container_3_image">
+                <img src="../../assets/Maternity/Maternity_container_3_image.png" alt="">
+            </div>
+        </div>
+        <div class="container_3_description">We understand the importance of personalized attention during pregnancy, and our team of highly qualified doctors is dedicated to providing the best care throughout this journey.</div>
+     </div>
+     <!-- container 4 -->
+      <div class="container_4">
+        <div class="container_4_heading">Integrated Maternity Packages</div>
+        <div class="container_4_para">Starting from the 3rd month of pregnancy, our Integrated Maternity Care Packages offer a comprehensive approach to maternal health, ensuring you receive complete support for a healthy pregnancy and postpartum recovery.</div>
+        <ul class="container_4_lists">
+            <li class="container_4_list_items">
+                <b>Yoga for Expecting Mothers: </b>Tailored sessions to improve digestion, mood, flexibility, and reduce pregnancy-related discomforts like stress and anxiety.
+            </li>
+            <li class="container_4_list_items">
+                <b>Post-Delivery Home Care Package (Ayurvedic Treatment): </b>A specialized postpartum care package designed to help you recover fully and regain your strength after delivery.
+            </li>
+        </ul>
+        <div class="container_4_description">Antenatal and postnatal yoga offer numerous benefits for both expecting and new mothers. Antenatal yoga helps improve physical strength and flexibility, which can ease common pregnancy discomforts such as back pain, swelling and fatigue. It also promotes relaxation, which may help reduce stress and anxiety during pregnancy. Regular practice can enhance breath control, which is beneficial during labor. Postnatal yoga focuses on recovery, helping to restore core strength, improve posture and support mental well-being after childbirth. It also aids in managing stress and improving energy levels, which are essential during the postnatal period. Additionally, both antenatal and postnatal yoga can foster a sense of community, allowing mothers to connect and share experiences with others going through similar stages of motherhood.</div>
+      </div>
+      <!-- container 5 -->
+      <div class="container_5">
+        <img src="../../assets/Maternity/container_5_image_1.png" alt="">
+        <img src="../../assets/Maternity/container_5_image_2.png" alt="">
+        <img src="../../assets/Maternity/container_5_image_3.png" alt="">
+      </div>
+      <!-- conatainer 6 -->
+       <div class="container_6">
+        <img src="../../assets/Maternity/container_6_poster.png" alt="">
+        <div class="container_6_poster">Join our expert-guided sessions, tailored to support physical and emotional well-being throughout your motherhood journey.</div>
+       </div>
+       <!-- doctor details -->
+
+       <div class="heading">
+        <p class="doctor_heading">MEET OUR MEDICAL TEAM</p>
+    </div>
+
+       <div class="doc_container">
+        <div class="doctors_flex">
+          <div class="doc_details" *ngFor="let slide of doctors; let i = index" [ngClass]="{ active: i === 0 }">
+            <div class="doc_1">
+              <img [src]="slide.image" alt="{{ slide.name }}" />
+              <p class="doc_name">{{ slide.name }}</p>
+              <p class="doc_Exp">{{ slide.experience }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="doc_container">
+        <div class="doctors_flex">
+          <div class="doc_details" *ngFor="let slide of doctors2; let i = index" [ngClass]="{ active: i === 0 }">
+            <div class="doc_1">
+              <img [src]="slide.image" alt="{{ slide.name }}" />
+              <p class="doc_name">{{ slide.name }}</p>
+              <p class="doc_Exp">{{ slide.experience }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- view all button -->
+       <div class="view_all_btn_box">
+            <app-arrow-btn></app-arrow-btn>
+        </div>
+      
+</div>
