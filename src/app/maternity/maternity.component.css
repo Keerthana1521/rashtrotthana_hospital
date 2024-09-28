@@ -3,7 +3,7 @@
 }
 
 .container_1{
-    margin-top: 130px;
+    margin-top: 120px;
     background-image: url('../../assets/Maternity/maternity_banner.png');
     background-size: cover;
     height: 81vh;
@@ -360,6 +360,7 @@ margin-top: 20px;
         background-image: url('../../assets/Maternity/Maternity_mobile_bg.png');
         background-size: cover;
         height: 60vh;
+        margin-top: 110px;
     }
 
     .banner_heading{
