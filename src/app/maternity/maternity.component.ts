@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-maternity',
@@ -6,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './maternity.component.css'
 })
 export class MaternityComponent {
+  constructor(private router: Router) { 
+
+  }
+  contact(){
+    this.router.navigate(['/contact-us-bangalore']);
+  }
     doctors = [
       {
         image : "assets/doctor-2.png",
