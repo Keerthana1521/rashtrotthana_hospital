@@ -54,6 +54,7 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
 import { AdvisoryBoardMembersComponent } from './advisory-board-members/advisory-board-members.component';
 import { ResearchComponent } from './research/research.component';
 import { EthicCommitteeComponent } from './ethic-committee/ethic-committee.component';
+import { MaternityComponent } from './maternity/maternity.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -131,6 +132,7 @@ children: [
   {path:'total-knee-replacement-bangalore',component:KneeReplacementComponent},
   {path:'hernia-treatment-bangalore',component:HerniaComponent},
   {path:'proctology-services-bangalore',component:ProctologyComponent},
+  {path:'maternity-care', component:MaternityComponent},
   
   { path: 'blog', component: BlogComponent },
   { path: 'blog/:slug', component: BlogPostComponent },
