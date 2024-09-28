@@ -107,6 +107,7 @@ import { AdvisoryBoardMembersComponent } from './advisory-board-members/advisory
 import { CommitteeCarouselComponent } from './committee-carousel/committee-carousel.component';
 import { PopupFormDonationComponent } from './popup-form-donation/popup-form-donation.component';
 import { PopupImageComponent } from './popup-image/popup-image.component';
+import { MaternityComponent } from './maternity/maternity.component';
 
 
 @NgModule({
@@ -188,6 +189,7 @@ import { PopupImageComponent } from './popup-image/popup-image.component';
     ResearchComponent,
     EthicCommitteeComponent,
     PopupImageComponent,
+    MaternityComponent,
     // ResearchCarouselComponent,
     // ProctologyComponent
   ],
