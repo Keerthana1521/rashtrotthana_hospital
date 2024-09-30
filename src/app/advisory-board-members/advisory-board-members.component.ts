@@ -32,8 +32,8 @@ export class AdvisoryBoardMembersComponent {
     {
         name : "Dr. H. S Subramanya",
         photo: '../../assets/rc-member-1.png',
-        designation : "Professor and Head",
-        department : "School of Biosciences, Chanakya University",
+        designation : "Dean",
+        department : "School of Biosciences Chanakya university Bengaluru",
         role : "Former Director",
         place : "Institute of Bioinformatics and Biotechnology, Bengaluru",
         speciality : "Bioinformatics and Biotechnology"

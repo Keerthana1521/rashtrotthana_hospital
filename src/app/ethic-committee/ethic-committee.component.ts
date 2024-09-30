@@ -100,11 +100,11 @@ export class EthicCommitteeComponent {
       {
         image : "../../assets/member_12.png",
         name : "Dr. Shubha Madhusudhan",
-        qualification : "",
-        designation : "Director",
-        address : "Manasvi Dynamics Pvt Ltd",
-        role : "",
-        roleDesv : "",
+        qualification : "PhD in Psychology",
+        designation : "Senior Clinical Psychologist",
+        address : "",
+        role : "Director",
+        roleDesv : "Manasvi Counselling Centre in Banashankari, Bangalore.",
         description : "Designation/ role of member in Ethics Committee : Member ",
         role_2 : "Member"
       },
