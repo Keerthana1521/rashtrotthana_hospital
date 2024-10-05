@@ -1139,6 +1139,11 @@ right: 20px;
   text-decoration: none;
   color:#000
 }
+.meno-content-2{
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 32px;
+}
 @media only screen and (max-width:1390px){
   .container{
     padding: 20px 35px;
@@ -1901,9 +1906,13 @@ top:0;
   width: 100%;
   height: 650px;
 }
-.surgery-package{
+.surgery-package, .maternity-package{
   height: 150px;
 }
+.meno-content-2{
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 28px;}
 }
 @media only screen and (max-width:380px){
 .card{
