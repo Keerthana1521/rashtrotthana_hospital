@@ -101,7 +101,7 @@ export class EthicCommitteeComponent {
         image : "../../assets/member_12.png",
         name : "Dr. Shubha Madhusudhan",
         qualification : "PhD in Psychology",
-        designation : "Senior Clinical Psychologist",
+        designation : "Senior Clinical Psychologist and Director",
         address : "",
         role : "Director",
         roleDesv : "Manasvi Counselling Centre in Banashankari, Bangalore.",

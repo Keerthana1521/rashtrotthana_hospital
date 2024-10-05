@@ -24,7 +24,7 @@ export class AdvisoryBoardMembersComponent {
         name : "Dr. B. N Gangadhar",
         photo: '../../assets/rc-member-4.png',
         designation : "Chairman",
-        department : "National Medical Commission (Government of India)",
+        department : "National Medical Commission, Government of India",
         role : " Former Director",
         place : "National Institute of Mental Health and Neuro Sciences",
         speciality : "Psychiatry, Yoga, Ayurveda"

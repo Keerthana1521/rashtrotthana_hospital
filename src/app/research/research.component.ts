@@ -59,7 +59,7 @@ export class ResearchComponent {
       designation : "Research Officer",
       address : "Former Senior Resident, NIMHANS, Bengaluru",
       role : "",
-      roleDesv : "Former Senior Research Fellow CCRAS",
+      roleDesv : "Former Senior Research Fellow, CCRAS",
       description : "",
       role_2 : "Research Officer"
     },
