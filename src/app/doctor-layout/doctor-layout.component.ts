@@ -163,7 +163,7 @@ export class DoctorLayoutComponent {
       image: 'assets/doctor-5.png',
       desgination: 'Professor & Consultant Neurosurgery',
       speciality: 'NEUROSCIENCES',
-      about:'Professor Dr (Brig) Shashivadhanan, a senior consultant Neurospine Surgeon with more than 30 years’ experience in Health Care with expertise in Neuro and spine surgery. His main field of interest is minimally invasive interventions for pain management.  Neurotrauma includes spinal cord injury. Carried out research in studying role stem cells in spinal cord injury.  Currently working on Minimally invasive spine surgery, Dynamic Lumbar fusion & Spinal deformity correction surgery. Special interest in Blast Induced Neurotrauma and in carrying out minimally invasive Pain interventions in treatment of back pain (Transforaminal block, Facetal block, percutaneous vertebral augmentation procedures i.e. vertebroplasty and kyphoplasty). Also working on Artificial Intelligence in futuristic medicine, Robotic in spine Surgery and Neuroethics. He has been actively involved in surgery, teaching and research',
+      about:'Professor Dr (Brig) Shashivadhanan, a senior consultant Neurospine Surgeon with more than 30 years’ experience in Health Care with expertise in Neuro and spine surgery. His main field of interest is minimally invasive interventions for pain management.  Neurotrauma includes spinal cord injury. Carried out research in studying role stem cells in spinal cord injury.  Currently working on Minimally invasive spine surgery, Dynamic Lumbar fusion & Spinal deformity correction surgery. ',
       areasOfExpertise: ['Minimally Invasive Spine Surgery','Neurotrauma & Spinal Trauma' ,'Spinal Deformity Correction', 'Spinal Cord Tumors', 'Cerebrovascular Surgery', 'Neurosurgery', 'Neuroendoscopy', 'Deep Brain Stimulation', 'Epilepsy Surgery', 'Paediatric Neurosurgery','Functional Neurosurgery (Deep Brain stimulation)',' Gamma Knife Radiosurgery',' Neuro Rehabilitation' ],
       expertise: 'Years of Experience: 30+',
       qualification:'MBBS, MS, DNB(GEN SURGERY), MCH, DNB(NEUROSURGERY), FRCS EDINBURGH, FICS, FIGASS(COPENHAGEN), FIMSA, MNAMS',
@@ -744,7 +744,7 @@ export class DoctorLayoutComponent {
       name: 'Dr. Sapna S',
       image: 'assets/doctor-60.jpg',
       desgination: 'AYURVEDA',
-      about: 'Dr. Sapna S. is an experienced Ayurvedic professional with over 20 years of teaching and practice in Ayurveda, specializing in Rasashastra, Bhaishajya Kalpana, and Panchakarma therapies. She holds an MD from SDM College, Udupi, along with additional qualifications such as a Postgraduate Diploma in Yoga and a Diploma in Medical Astrology. Dr. Sapna has been instrumental in shaping Ayurvedic education, working at renowned institutions including Sushruta Ayurvedic Medical College and Kalabahairaveshwara Ayurvedic Medical College in Bangalore, and most recently, as a professor at Sanskriti Ayurvedic Medical College, Mathura.',
+      about: 'Dr. Sapna S. is an experienced Ayurvedic professional with over 20 years of teaching and practice in Ayurveda, specializing in Rasashastra, Bhaishajya Kalpana, and Panchakarma therapies. She holds an MD from SDM College, Udupi, along with additional qualifications such as a Postgraduate Diploma in Yoga and a Diploma in Medical Astrology. Dr. Sapna has been instrumental in shaping Ayurvedic education, working at renowned institutions including Sushruta Ayurvedic Medical College and Kalabahairaveshwara Ayurvedic Medical College in Bangalore, and most recently, as a professor at Sanskriti Ayurvedic Medical College, Mathura.Her 20-year career includes 17 years in Bangalore and 3 years at Sanskriti Ayurvedic College, where she has dedicated herself to making Ayurvedic knowledge engaging and accessible for students. With 10 years of experience in Medical Astrology, she uniquely integrates these techniques into her practice. Dr. Sapna has rendered outstanding results, particularly in the treatment of infertility and remains deeply committed to her guiding philosophy, “Live and Give Ayurveda,” promoting wellness and holistic healing throughout her career.',
       speciality: 'AYURVEDA',
       areasOfExpertise: ['Rasa Shastra and Bhaishajya Kalpana','Cancer therapy in Ayurveda','Medical Astrology (Daiva Vyapashraya Chikitsa)', 'Chronic skin diseases','Infertility cases','Geriatric care','PCOD','Obesity','Hypothyroidism'],
       expertise: 'Years of Experience: 20',
@@ -767,7 +767,7 @@ export class DoctorLayoutComponent {
 
 
   ]
-  specialDoctors = ['Dr. Pramod S. Chinder', 'Dr.Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S'];
+  specialDoctors = ['Dr. Pramod S. Chinder', 'Dr. Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S'];
 
   constructor(private fb: FormBuilder, public dialog: MatDialog,private titleService: Title, private metaService: Meta) {
     // this.subjects = [

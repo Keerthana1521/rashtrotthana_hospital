@@ -568,7 +568,7 @@ ul{
     align-items: flex-end;
     justify-content: center;
     bottom: 0;
-    height: 90vh;
+    height: 92vh;
   }
   .container-doctors {
     grid-template-columns: 100%;
@@ -635,7 +635,7 @@ ul{
   }
   .doctor-details{
     width: 90%;
-    height: 250%;
+    height: 260%;
     padding: 2rem;
     margin-top: 60rem;
   }
