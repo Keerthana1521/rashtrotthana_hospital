@@ -740,6 +740,29 @@ export class DoctorLayoutComponent {
       time:'9:30-9:50,9:50-10:10,10:10-10:30,10:30-10:50,10:50-11:00',
       date:'Monday-Friday'
     },
+    {
+      name: 'Dr. Sapna S',
+      image: 'assets/doctor-60.jpg',
+      desgination: 'AYURVEDA',
+      about: 'Dr. Sapna S. is an experienced Ayurvedic professional with over 20 years of teaching and practice in Ayurveda, specializing in Rasashastra, Bhaishajya Kalpana, and Panchakarma therapies. She holds an MD from SDM College, Udupi, along with additional qualifications such as a Postgraduate Diploma in Yoga and a Diploma in Medical Astrology. Dr. Sapna has been instrumental in shaping Ayurvedic education, working at renowned institutions including Sushruta Ayurvedic Medical College and Kalabahairaveshwara Ayurvedic Medical College in Bangalore, and most recently, as a professor at Sanskriti Ayurvedic Medical College, Mathura.',
+      speciality: 'AYURVEDA',
+      areasOfExpertise: ['Rasa Shastra and Bhaishajya Kalpana','Cancer therapy in Ayurveda','Medical Astrology (Daiva Vyapashraya Chikitsa)', 'Chronic skin diseases','Infertility cases','Geriatric care','PCOD','Obesity','Hypothyroidism'],
+      expertise: 'Years of Experience: 20',
+      qualification:'MD (Ayu) in Rasa Shastra and Bhaishajya Kalpana from SDM College, Udupi PG Dip (Yoga) Diploma in Medical Astrology',
+      time:'9:00-9:20,9:20-9:40,9:40-10:00,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      date:'Monday-Saturday'
+    },
+    {
+      name: 'Dr. H. S Venkatesh',
+      image: 'assets/doctor-61.jpg',
+      desgination: 'AYURVEDA',
+      about: 'Dr. H. S Venkatesh is the founder and chief physician of the foundation. After graduating from Bangalore University and earning a BAMS degree from Taranath Govt. Ayurvedic Medical College in Bellary in 1985, he has spent over 25 years practicing Ayurveda. Dr. Venkatesh has conducted extensive research, particularly focusing on thyroid disorders, and his work has demonstrated the efficacy of Ayurvedic treatments for conditions like thyroid imbalance and arthritis. He has been awarded fellowships and titles for his contributions, including "Ayurveda Chikitsa Praveena" and "Vaidya Bhaskara." He is also a respected educator, columnist and speaker on Ayurveda, regularly engaging with Ayurvedic colleges, medical journals and media outlets.',
+      speciality: 'AYURVEDA',
+      areasOfExpertise: ['Ayurveda Endocrinology','Thyroid Disorders','Arthritis','Ayurvedic Treatment and Research'],
+      expertise: 'Years of Experience: 25',
+      qualification:'BSc, BAMS, FAHO, FAGE',
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
+      date:'Wednesday and Friday'}
 
 
 

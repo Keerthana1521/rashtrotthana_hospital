@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser'; 
 
 @Component({
   selector: 'app-maternity',
@@ -7,8 +8,12 @@ import { Router } from '@angular/router';
   styleUrl: './maternity.component.css'
 })
 export class MaternityComponent {
-  constructor(private router: Router) { 
+  constructor(private router: Router,private titleService: Title, private metaService: Meta) { 
+    this.titleService.setTitle("Comprehensive Maternity Care | Rashtrotthana Hospital");  
 
+    this.metaService.updateTag({ name: 'description', content: 'Trusted maternity care with advanced prenatal services, labor support and postpartum care for mother and baby safety.' });
+  
+    this.metaService.updateTag({ name: 'keywords', content: 'Maternity care, prenatal care, delivery services, postnatal care, maternity hospital, Rashtrotthana Hospital, yoga benefits, pregnancy care' });
   }
   contact(){
     this.router.navigate(['/contact-us-bangalore']);

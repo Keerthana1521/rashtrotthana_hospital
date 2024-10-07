@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { image } from 'html2canvas/dist/types/css/types/image';
 
 @Component({
   selector: 'app-ayurvedha-doctors-carousel',
@@ -23,6 +24,24 @@ export class AyurvedhaDoctorsCarouselComponent {
       designation : "Resident Medical Officer",
       Department : "Agnivesha Institute Of Ayurveda",
       experience : "2"
-    }
+    },
+
+    {
+      image: '../../assets/doctor-60.jpg',
+      name: "Dr. Sapna S",
+      section: "MD (Ayu) in Rasa Shastra and Bhaishajya Kalpana, PG Dip (Yoga) Diploma in Medical Astrology",
+      designation: "Ayurveda Specialist",
+      Department: "Agnivesha Institute Of Ayurveda",
+      experience: "20"
+
+    },
+    {
+      image: '../../assets/doctor-61.jpg',
+      name: "Dr. H. S Venkatesh",
+      section: "BSc, BAMS, FAHO, FAGE",
+      designation: "Ayurveda Specialist",
+      Department: "Agnivesha Institute Of Ayurveda",
+      experience: "25"
+    },
   ]
 }
