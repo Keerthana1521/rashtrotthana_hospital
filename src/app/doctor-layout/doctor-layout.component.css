@@ -350,7 +350,7 @@ line-height: normal;
   justify-content: flex-end;
   width: 100%;
   position: relative;
-  top: 70px;
+  top: 4px;
   right: 100px;
   /* justify-content: flex-end;
   align-items: flex-end; */
@@ -631,6 +631,7 @@ ul{
   .doctor-image-overlay{
     width: 170px;
     height: 190px;
+    border-radius: 12px;
   }
   .doctor-details{
     width: 90%;
