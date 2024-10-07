@@ -767,7 +767,7 @@ export class DoctorLayoutComponent {
 
 
   ]
-  specialDoctors = ['Dr. Pramod S. Chinder', 'Dr.Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D'];
+  specialDoctors = ['Dr. Pramod S. Chinder', 'Dr.Meena H. B', 'Brig (Dr) S. Shashivadhanan', 'Dr. Ravishankar. D', 'Dr. Sapna S'];
 
   constructor(private fb: FormBuilder, public dialog: MatDialog,private titleService: Title, private metaService: Meta) {
     // this.subjects = [
