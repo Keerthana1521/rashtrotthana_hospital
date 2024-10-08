@@ -103,7 +103,7 @@ export class EthicCommitteeComponent {
         qualification : "PhD in Psychology",
         designation : "Senior Clinical Psychologist and Director",
         address : "",
-        role : "Director",
+        role : "",
         roleDesv : "Manasvi Counselling Centre in Banashankari, Bangalore.",
         description : "Designation/ role of member in Ethics Committee : Member ",
         role_2 : "Member"

@@ -26,6 +26,15 @@ export class AyurvedhaDoctorsCarouselComponent {
       experience : "2"
     },
 
+
+    {
+      image: '../../assets/doctor-61.jpg',
+      name: "Dr. H. S Venkatesh",
+      section: "BSc, BAMS, FAHO, FAGE",
+      designation: "Ayurveda Specialist",
+      Department: "Agnivesha Institute Of Ayurveda",
+      experience: "25"
+    },
     {
       image: '../../assets/doctor-60.jpg',
       name: "Dr. Sapna S",
@@ -34,14 +43,6 @@ export class AyurvedhaDoctorsCarouselComponent {
       Department: "Agnivesha Institute Of Ayurveda",
       experience: "20"
 
-    },
-    {
-      image: '../../assets/doctor-61.jpg',
-      name: "Dr. H. S Venkatesh",
-      section: "BSc, BAMS, FAHO, FAGE",
-      designation: "Ayurveda Specialist",
-      Department: "Agnivesha Institute Of Ayurveda",
-      experience: "25"
     },
   ]
 }
