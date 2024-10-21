@@ -187,10 +187,10 @@ ngOnInit(){
     root: null, // Use the viewport as the root
     threshold: 0.5 // Trigger when 50% of the section is visible
   };
-  this.titleService.setTitle("Best Multispeciality Hospital In Bangalore | Top Hospital in Bangalore | Rashtrotthana Hospital");  
+  this.titleService.setTitle("Best Multispeciality Hospital In Bangalore");  
     
   // Set the meta description
-  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital is one of the best multispeciality hospital in Bangalore. We provide world-class healthcare services & treatment at a affordable cost.' });
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital - Best multispeciality hospital in Bangalore offering world-class healthcare and treatments at affordable costs.' });
 
   // Optionally set other meta tags
   this.metaService.updateTag({ name: 'keywords', content: 'Best Multispeciality Hospital In Bangalore, Top Hospital in Bangalore, Rashtrotthana Hospital' }); 
