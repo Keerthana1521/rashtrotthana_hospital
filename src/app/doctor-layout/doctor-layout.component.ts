@@ -182,18 +182,18 @@ export class DoctorLayoutComponent {
       time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
       date:'Monday-Saturday'
     },
-    {
-      name: 'Dr. Shreelakshmi G',
-      image: 'assets/doctor-10.png',
-      desgination: 'OBSTETRICS & GYNECOLOGY',
-      about: 'Dr. Shreelakshmi G is graduated from university from mysore. She also did post graduation in M. S OBSTETRICS AND GYNAECOLOGY (2003)',
-      speciality: 'OBSTETRICS & GYNECOLOGY',
-      areasOfExpertise: ['High Risk Obstetrics', 'Vaginal Delivery', 'Adolescent Gynaecology', 'Women health education and empowerment', 'Management of Diabetes in pregnancy'],
-      expertise: 'Years of Experience: 20',
-      qualification:'MMBBS, MS, MRCOG(UK)',
-      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
-      date:'Wednesday'
-    },
+    // {
+    //   name: 'Dr. Shreelakshmi G',
+    //   image: 'assets/doctor-10.png',
+    //   desgination: 'OBSTETRICS & GYNECOLOGY',
+    //   about: 'Dr. Shreelakshmi G is graduated from university from mysore. She also did post graduation in M. S OBSTETRICS AND GYNAECOLOGY (2003)',
+    //   speciality: 'OBSTETRICS & GYNECOLOGY',
+    //   areasOfExpertise: ['High Risk Obstetrics', 'Vaginal Delivery', 'Adolescent Gynaecology', 'Women health education and empowerment', 'Management of Diabetes in pregnancy'],
+    //   expertise: 'Years of Experience: 20',
+    //   qualification:'MMBBS, MS, MRCOG(UK)',
+    //   time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
+    //   date:'Wednesday'
+    // },
     {
       name:'Dr. Rajeev Vijayakumar',
       image: 'assets/doctor-4.png',
@@ -400,12 +400,12 @@ export class DoctorLayoutComponent {
       areasOfExpertise: [' Laparoscopic & Robotic surgery','Laser proctology '],
       expertise: 'Years of Experience: 9',
       qualification:'MBBS, MS, FMAS, FIAGES,FARIS',
-      time:'9:30-9:50,9:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10',
+      time:'09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10',
       date:'Monday-Saturday'
     },
     {
       name: 'Dr. Sameer M. Halageri',
-      image: 'assets/doctor-26.png',
+      image: 'assets/doctor-59.png',
       desgination: 'Plastic and Reconstructive Surgery',
       speciality: 'PLASTIC SURGERY',
       about: ' Dr. Sameer M Halageri is a highly skilled Consultant Plastic Surgeon with extensive experience in aesthetic and reconstructive surgeries. Dedicated to providing the highest standards of patient care, he specializes in various advanced procedures aimed at enhancing both form and function. With a strong commitment to continuous learning and innovation in his field, Dr. Halageri is known for his meticulous approach and compassionate patient care. His practice integrates the latest techniques and technologies to deliver exceptional results tailored to individual needs.',
@@ -420,18 +420,18 @@ export class DoctorLayoutComponent {
         time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
         date:'Monday-Saturday'
     },
-    {
-      name: 'Dr. Valli Kiran',
-      image: 'assets/doctor-27.png',
-      desgination: 'PSYCHIATRY',
-      speciality: 'PSYCHIATRY',
-      about: 'Dr. Valli Kiran M is graduate from MYSORE UNIVERSITY in 2001. He did DIPLOMA IN PSYCHIATRY in 2005',
-      areasOfExpertise: ['Entire Spectrum of Psychological Disorders'],
-      expertise: 'Years of Experience: 20',
-      qualification:'MBBS, DPM',
-      time:'16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:10',
-      date:'Tuesday,Thursday,Saturday'
-    },
+    // {
+    //   name: 'Dr. Valli Kiran',
+    //   image: 'assets/doctor-27.png',
+    //   desgination: 'PSYCHIATRY',
+    //   speciality: 'PSYCHIATRY',
+    //   about: 'Dr. Valli Kiran M is graduate from MYSORE UNIVERSITY in 2001. He did DIPLOMA IN PSYCHIATRY in 2005',
+    //   areasOfExpertise: ['Entire Spectrum of Psychological Disorders'],
+    //   expertise: 'Years of Experience: 20',
+    //   qualification:'MBBS, DPM',
+    //   time:'16:30-16:50,16:50-17:10,17:10-17:30,17:30-17:50,17:50-18:10',
+    //   date:'Tuesday,Thursday,Saturday'
+    // },
     {
       name: 'Dr. Vishnuvardhan V',
       image: 'assets/doctor-36.png',
@@ -651,8 +651,8 @@ export class DoctorLayoutComponent {
       areasOfExpertise: ['Diabetes, dyslipidemia and other metabolic diseases','Thyroid disorders',' Hypertension','  Infectious diseases','Adult vaccination','Diabetes and life style patient education'],
       expertise: 'Years of Experience: 3',
       qualification:'MBBS, MD',
-      time:'9:00-9:20,9:20-9:40,9:40-10:00,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
-      date:'Monday-Saturday'
+      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
+      date:'Sunday'
     },
     {
       name: 'Dr. Bhavya',
@@ -663,7 +663,7 @@ export class DoctorLayoutComponent {
       areasOfExpertise: ['Diabetes','Diabetes Reversal','Thyroid related illness','Blood related disorders','Critical illness','Hypertension','Infectious disease'],
       expertise: 'Years of Experience: 7',
       qualification:'MBBS, MD',
-      time:'9:00-9:20,9:20-9:40,9:40-10:00,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
+      time:'9:00-9:20,9:20-9:40,9:40-10:00,10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00,14:00-14:20,14:20-14:40,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00,16:00-16:20,16:20-16:40,16:40-17:00',
       date:'Monday-Saturday'
     },
 
@@ -730,7 +730,7 @@ export class DoctorLayoutComponent {
     },
     {
       name: 'Dr. Nagesh R',
-      image: 'assets/doctor-59.png',
+      image: 'assets/doctor-26.png',
       desgination: 'Radiologist',
       about: 'Dr. Nagesh R is an accomplished radiology consultant in jaydev rashtrotthana Hospital, with over a decade of experience in the field. He holds a medical degree in MBBS, DMRD, and DNB, and he is going to be a Fellow of the Royal College of Radiologists (FRCR), a highly esteemed qualification in the field of radiology. He is an active member of the Indian Radiology and Imaging Association.Dr. Nagesh R is an expert in general radiology and has a special interest in cardiovascular imaging, as well as performing USG and CT-guided interventions. He is highly skilled in interpreting medical images and diagnosing a wide range of medical conditions, from the most common to the most complex.',
       speciality: 'RADIOLOGY',

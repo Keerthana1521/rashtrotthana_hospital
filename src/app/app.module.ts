@@ -108,6 +108,7 @@ import { CommitteeCarouselComponent } from './committee-carousel/committee-carou
 import { PopupFormDonationComponent } from './popup-form-donation/popup-form-donation.component';
 import { PopupImageComponent } from './popup-image/popup-image.component';
 import { MaternityComponent } from './maternity/maternity.component';
+import { HttpClient } from '@angular/common/http';
 
 
 @NgModule({
