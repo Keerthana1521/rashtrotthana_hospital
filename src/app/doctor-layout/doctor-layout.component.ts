@@ -753,7 +753,7 @@ export class DoctorLayoutComponent {
       date:'Monday-Saturday'
     },
     {
-      name: 'Dr. H. S Venkatesh',
+      name: 'Dr. Venkatesh H. S',
       image: 'assets/doctor-61.jpg',
       desgination: 'AYURVEDA',
       about: 'Dr. H. S Venkatesh is the founder and chief physician of the foundation. After graduating from Bangalore University and earning a BAMS degree from Taranath Govt. Ayurvedic Medical College in Bellary in 1985, he has spent over 25 years practicing Ayurveda. Dr. Venkatesh has conducted extensive research, particularly focusing on thyroid disorders, and his work has demonstrated the efficacy of Ayurvedic treatments for conditions like thyroid imbalance and arthritis. He has been awarded fellowships and titles for his contributions, including "Ayurveda Chikitsa Praveena" and "Vaidya Bhaskara." He is also a respected educator, columnist and speaker on Ayurveda, regularly engaging with Ayurvedic colleges, medical journals and media outlets.',
@@ -762,7 +762,18 @@ export class DoctorLayoutComponent {
       expertise: 'Years of Experience: 25',
       qualification:'BSc, BAMS, FAHO, FAGE',
       time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00',
-      date:'Wednesday and Friday'}
+      date:'Wednesday and Friday'},
+      {
+        name: 'Dr. Sunil Kumar C',
+        image: 'assets/doctor-62.png',
+        desgination: 'ENT, Head and Neck',
+        about: 'Dr. G. V Giri graduated with an MBBS from JN Medical College, Belgaum and completed his MD in Internal Medicine from JJM Medical College, Davangere. He further specialized with a DM in Medical Oncology from Kidwai Cancer Institute. With 10 years of experience as an oncologist in the public sector, he is also a published author in national and international journals.',
+        speciality: 'ENT SPECIALITY',
+        areasOfExpertise: ['Breast Cancer','Gastrointestinal Cancer','Genito-Urinary Cancer','Head and Neck Cancer','Lung Cancer'],
+        expertise: 'Years of Experience: 10+',
+        qualification:' MS ENT, DHM, IFAAM',
+        time:'18:30-18:50,18:50-19:10,19:10-19:30',
+        date:'Tuesday,Thursday and Saturday'}
 
 
 

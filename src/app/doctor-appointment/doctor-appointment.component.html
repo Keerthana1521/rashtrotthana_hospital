@@ -19,8 +19,8 @@
                 {{ selectedDoctor.desgination }}
             </div>
           </div><br><br>
-            <div class="appointment-time-date">
-                <div class="date">
+            <div class="appointment-time-date" >
+                <div class="date" style="flex: 1;">
                 <div>
                     <i class="fa-solid fa-building-user form_icon"></i>
                     <label for="subject">Appointment Date</label><br>
@@ -46,7 +46,7 @@
                   </div>
                 <br><br><br>
             </div>
-            <div class="time">
+            <div class="time" style="flex: 1; ">
                 <div>
                     <i class="fa-solid fa-building-user form_icon"></i>
                     <label for="time">Appointment Time</label>
@@ -59,7 +59,8 @@
                   <br /><br /><br>
                 </div>
             </div>
-            <div class="contact-form-field">
+            <!-- <br><br><br> -->
+            <!-- <div class="contact-form-field">
               <i class="fa-solid fa-user form_icon"></i>
               <label for="username">Patient Name</label>
             </div>
@@ -71,7 +72,37 @@
                 long</small>
               <small class="error" *ngIf="f['name'].errors?.['pattern']">Name can only contain letters</small>
             </div>
-            <br /><br /><br>
+            <br /><br /><br> -->
+            <div class="name" style="">
+              <div style="width: 100%;">
+                <div >
+                  <i class="fa-solid fa-user form_icon"></i>
+                  <label for="firstName">First Name</label>
+                </div>
+                <input type="text" class="input" pInputText id="firstName" formControlName="firstName" placeholder="First Name" required />
+                <div *ngIf="f['firstName'].touched && f['firstName'].invalid">
+                  <small class="error" *ngIf="f['firstName'].errors?.['required']">First name is required</small>
+                  <small class="error" *ngIf="f['firstName'].errors?.['minlength']">First name must be at least 2 characters long</small>
+                  <small class="error" *ngIf="f['firstName'].errors?.['pattern']">First name can only contain letters</small>
+                </div>
+              </div>
+
+              <div style="width: 100%;">
+                <div>
+                  <i class="fa-solid fa-user form_icon"></i>
+                  <label for="lastName">Last Name</label>
+                </div>
+                <input type="text" class="input" pInputText id="lastName" formControlName="lastName" placeholder="Last Name" required />
+                <div *ngIf="f['lastName'].touched && f['lastName'].invalid">
+                  <small class="error" *ngIf="f['lastName'].errors?.['required']">Last name is required</small>
+                  <small class="error" *ngIf="f['lastName'].errors?.['minlength']">Last name must be at least 2 characters long</small>
+                  <small class="error" *ngIf="f['lastName'].errors?.['pattern']">Last name can only contain letters</small>
+                </div>
+              </div>
+              </div>
+
+
+            
 
             <div>
               <i class="fa-solid fa-envelope form_icon"></i>
@@ -90,7 +121,7 @@
               <label for="contactNumber">Patient Contact Number</label>
             </div>
             <input type="text" class="input" pInputText id="contactNumber" formControlName="contactNumber"
-              placeholder="Contact Number" required />
+              placeholder="910000000000" required />
             <div *ngIf="f['contactNumber'].touched && f['contactNumber'].invalid">
               <small class="error" *ngIf="f['contactNumber'].errors?.['required']">Contact Number is required</small>
               <small class="error" *ngIf="f['contactNumber'].errors?.['pattern']">Contact Number must be digits

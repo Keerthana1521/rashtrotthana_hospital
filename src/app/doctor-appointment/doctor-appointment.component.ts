@@ -4,8 +4,8 @@ import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/fo
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import { MessageService } from 'primeng/api';
 import { HttpClient } from '@angular/common/http';
-import { timeout } from 'rxjs/operators';
-import { retry } from 'rxjs/operators';
+import { throwError } from 'rxjs';
+import { catchError, timeout, retry } from 'rxjs/operators';
 
  interface City {
    name: string;
@@ -44,7 +44,8 @@ export class DoctorAppointmentComponent implements OnInit {
       { name: 'Paris' }
     ];
     this.contactForm = this.fb.group({
-      name: ['', Validators.required],
+      firstName: ['', [Validators.required, Validators.minLength(2), Validators.pattern(/^[a-zA-Z]+$/)]],
+      lastName: ['', [Validators.required, Validators.minLength(1), Validators.pattern(/^[a-zA-Z]+$/)]],
       email: ['', [Validators.required, Validators.email]],
       contactNumber: ['', Validators.required],
       time: ['', Validators.required],
@@ -282,6 +283,10 @@ export class DoctorAppointmentComponent implements OnInit {
 //     if (this.contactForm.valid) {
 //       const dateObj = this.contactForm.value.date_appointment;
 //       const appointmentDate = dateObj ? this.formatDate(new Date(dateObj)) : '';
+//       const firstName = this.contactForm.value.firstName;
+//       const lastName = this.contactForm.value.lastName;
+//       // Combine first and last names
+//       const patientName = `${firstName} ${lastName}`;
   
 //       // Fetch the doctor ID by name
 //   this.http.get<any[]>('http://localhost:3000/api/doctors')
@@ -307,7 +312,7 @@ export class DoctorAppointmentComponent implements OnInit {
 
 //           // Prepare appointment data
 //           const appointmentData = {
-//             patientName: this.contactForm.value.name,
+//             patientName: patientName,
 //             phoneNumber: this.contactForm.value.contactNumber,
 //             email: this.contactForm.value.email,
 //             doctorName: this.selectedDoctor.name,
@@ -317,16 +322,12 @@ export class DoctorAppointmentComponent implements OnInit {
 //             requestVia: 'Website',
 //             status: 'pending',
 //             smsSent: false,
-//             // emailSent: false,
+//             emailSent: false,
 //             doctorId: doctorId,
 //           };
 
 //           // Make the POST request to create the appointment
 //           this.http.post<any>('http://localhost:3000/api/appointments', appointmentData)
-//           .pipe((
-//             timeout(20000), // Set a reasonable timeout
-//     retry(2) // Retry the request twice in case of failure
-//           ))
 //             .subscribe({
 //               next: (appointmentResult) => {
 //                 console.log('Appointment successfully created:', appointmentResult);
@@ -342,27 +343,27 @@ export class DoctorAppointmentComponent implements OnInit {
 //                 this.contactForm.reset();
 //                 this.closeDialog();
 
-//                 // Optionally send an email here after appointment is created
-//                 const emailRequest = {
-//                   to: this.contactForm.value.email,
-//                   status: 'received',
-//                   appointmentDetails: appointmentResult,
-//                 };
-                
-//                 this.http.post('http://localhost:3000/api/email/send-email', emailRequest)
-//                   .subscribe({
-//                     next: (emailResponse) => {
-//                       console.log('Email sent successfully:', emailResponse);
-//                     },
-//                     error: (emailError) => {
-//                       console.error('Error sending email:', emailError);
-//                     },
-//                   });
 //               },
 //               error: (appointmentError) => {
 //                 console.error('Error creating appointment:', appointmentError);
 //               }
 //             });
+//              // Optionally send an email here after appointment is created
+//              const emailRequest = {
+//               to: this.contactForm.value.email,
+//               status: 'received',
+//               appointmentDetails: appointmentData,
+//             };
+            
+//             this.http.post('http://localhost:3000/api/email/send-email', emailRequest)
+//               .subscribe({
+//                 next: (emailResponse) => {
+//                   console.log('Email sent successfully:', emailResponse);
+//                 },
+//                 error: (emailError) => {
+//                   console.error('Error sending email:', emailError);
+//                 },
+//               });
 //         },
 //         error: (doctorError) => {
 //           console.error('Error fetching doctors:', doctorError);
@@ -387,10 +388,14 @@ onSubmit(): void {
   if (this.contactForm.valid) {
     const dateObj = this.contactForm.value.date_appointment;
     const appointmentDate = dateObj ? this.formatDate(new Date(dateObj)) : '';
+    const firstName = this.contactForm.value.firstName;
+          const lastName = this.contactForm.value.lastName;
+          // Combine first and last names
+          const patientName = `${firstName} ${lastName}`;
     const emailParams = {
       doctorName: this.selectedDoctor.name,
       doctorDesignation: this.selectedDoctor.desgination,
-      patientName: this.contactForm.value.name,
+      patientName: patientName,
       patientEmail: this.contactForm.value.email,
       patientContact: this.contactForm.value.contactNumber,
       appointmentTime: this.contactForm.value.time.name,

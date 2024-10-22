@@ -261,6 +261,13 @@ text-shadow: 2px 2px 6px #fff;
     line-height: normal;
     padding-top: 1rem;
   }
+  .name{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
 @media only screen and (max-width:1030px){
     .contact-details{
         flex-direction: column;
