@@ -478,7 +478,9 @@ getUnavailableDates(doctorId: number): Observable<{ date: string }[]> {
             emailSent: false,
             doctorId: doctorId,
           };
-
+                // Reset the form and close dialog after the appointment has been successfully saved
+                this.contactForm.reset();
+                this.closeDialog();
           // Make the POST request to create the appointment
           this.http.post<any>(`${this.apiUrl}/appointments`, appointmentData)
             .subscribe({
@@ -492,9 +494,7 @@ getUnavailableDates(doctorId: number): Observable<{ date: string }[]> {
                   detail: 'Thank you, we have received your request and will get back to you shortly.',
                 });
 
-                // Reset the form and close dialog after the appointment has been successfully saved
-                this.contactForm.reset();
-                this.closeDialog();
+
 
               },
               error: (appointmentError) => {
