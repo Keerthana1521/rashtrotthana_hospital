@@ -472,9 +472,9 @@ export class DoctorLayoutComponent {
     {
       name: 'Dr. Suvarnini Konale',
       image: 'assets/doctor-14.png',
-      desgination: 'LIFESTYLE MEDICINE/ YOGA & NATUROPATHY',
+      desgination: 'LIFESTYLE/ YOGA & NATUROPATHY',
       about: 'Her 15 years of experience includes teaching BNYS students and treating thousands of clients through yoga and Naturopathy. She has worked in different hospitals, and online fitness firms as a Yoga, Naturopathy, and Lifestyle consultant. People from a wide range of socio-economic status and professions, across all age groups, have benefitted from her advice. She follows a holistic approach of lifestyle management and therapy through the principles of Yoga & Naturpathy.',
-      speciality: ['YOGA SCIENCE', 'LIFE STYLE MEDICINE'],
+      speciality: ['YOGA SCIENCE', 'LIFESTYLE MEDICINE'],
       areasOfExpertise: [''],
       expertise: 'Years of Experience: 15',
       qualification:'BNYS',
@@ -580,8 +580,8 @@ export class DoctorLayoutComponent {
     {
       name: 'Dr. Varsha P',
       image: 'assets/doctor-43.png',
-      desgination: 'LIFESTYLE MEDICINE',
-      speciality: 'LIFESTYLE MEDICINE',
+      desgination: 'LIFESTYLE',
+      speciality: 'LIFESTYLE',
       qualification:'BAMS, MD, YIC',
       about: "As a dedicated Ayurveda doctor with four years of experience as a Lifestyle Consultant, I specialise in Integrating traditional Ayurvedic principles with modern wellness practices. My qualifications include a Bachelor of Ayurvedic Medicine and Surgery (BAMS), a Master's Degree in Ayurveda (MD), and certification as a Yoga Instructor (YIC). I offer personalised lifestyle and wellness consultations, focusing on holistic approaches to health that emphasise diet, lifestyle modifications, and natural therapies. My goal is to empower individuals to achieve balance and well-being through tailored Ayurvedic solutions and mindful living. Passionate about promoting sustainable health practices, I'm committed to help lead healthier lives by aligning their daily habits with their unique constitutional needs.",
       areasOfExpertise: [
@@ -670,9 +670,9 @@ export class DoctorLayoutComponent {
     {
       name: 'Dr. Shamantha S',
       image: 'assets/doctor-54.png',
-      desgination: 'LIFE STYLE MEDICINE',
+      desgination: 'LIFESTYLE MEDICINE',
       about: ' ',
-      speciality: 'LIFE STYLE MEDICINE',
+      speciality: 'LIFESTYLE MEDICINE',
       areasOfExpertise: [' '],
       qualification:'BAMS',
       expertise: 'Years of Experience: 3',
@@ -707,7 +707,7 @@ export class DoctorLayoutComponent {
       name: 'Dr. Gopal Das C M',
       image: 'assets/doctor-57.png',
       desgination: 'Consultant Psychiatrist',
-      about: 'Dr. Gopal Das C M is a distinguished Consultant Psychiatrist with extensive experience in treating a wide range of mental health conditions. His expertise includes managing stress, anxiety, depression, severe mental disorders, and addiction issues. Specializing in child and adolescent psychiatry, he also addresses psychiatric concerns in the elderly. Dr. Das employs advanced treatments like ECT, TMS and TDCS, alongside psychotherapies and lifestyle medicine. Dedicated to enhancing mental well-being, he offers comprehensive care tailored to individual needs.',
+      about: 'Dr. Gopal Das C M is a distinguished Consultant Psychiatrist with extensive experience in treating a wide range of mental health conditions. His expertise includes managing stress, anxiety, depression, severe mental disorders, and addiction issues. Specializing in child and adolescent psychiatry, he also addresses psychiatric concerns in the elderly. Dr. Das employs advanced treatments like ECT, TMS and TDCS, alongside psychotherapies and lifestyle. Dedicated to enhancing mental well-being, he offers comprehensive care tailored to individual needs.',
       speciality: 'PSYCHIATRY',
       areasOfExpertise: ['Stress and lifestyle induced psychological distress and disorders','Common mental illnesses like Anxiety and depression','Severe mental disorders like Schizophrenia and psychotic disorders, bipolar disorders, OCD, personality disorders, dissociative disorders etc.','Addictive disorders like smoking/tobacco addiction, alcohol use disorders and other drug addictions, behavioral addictions like Internet, gaming and smartphone or technology addiction, Pathological  gambling and others','Mental health issues arising in the course of various medical disorders/psychosomatic disorders ','Child and adolescent behavioral and psychological problems including ADHD etc','Psychiatric disorders in elderly like cognitive impairment/dementia etc.','Comprehensive evaluation and treatment for suicidal tendencies and self harm behaviors ','Sleep disorders due to psychological causes and primary insomnia.',' Relationship issues, marital and sexual disorders',' Consultations for Positive mental health and Well being'],
       expertise: 'Years of Experience: 11',
@@ -880,7 +880,7 @@ export class DoctorLayoutComponent {
 
         ]
       },
-      { cname: 'LIFE STYLE MEDICINE', code: 'YG' },
+      { cname: 'LIFESTYLE MEDICINE', code: 'YG' },
       { cname: 'AYURVEDA', code: 'AY' },
       { cname: 'HOMEOPATHY', code: 'HO' },
       { cname: 'YOGA SCIENCE', code: 'HO' },

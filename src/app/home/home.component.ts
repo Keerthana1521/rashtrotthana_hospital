@@ -138,7 +138,7 @@ export class HomeComponent implements OnInit {
 title:any ={
   'default': '',
   'yoga': 'Yoga',
-  'naturopathy': 'Lifestyle Medicine',
+  'naturopathy': 'Lifestyle',
   'modern-medicine': 'Modern Medicine',
   'ayurveda': 'Ayurveda',
   'homeopathy': 'Homeopathy'

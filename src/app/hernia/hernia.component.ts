@@ -40,7 +40,7 @@ export class HerniaComponent {
   //     image : '../../assets/doctor-14.png',
   //     name : "Dr. Suvarnini Konale",
   //     section : "BAMS, M.D. (Ayurveda)",
-  //     designation : "LIFESTYLE MEDICINE",
+  //     designation : "LIFESTYLE",
   //   }
   // ]
 

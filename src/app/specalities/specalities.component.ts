@@ -51,6 +51,6 @@ export class SpecalitiesComponent {
 
   this.metaService.updateTag({ name: 'description', content: 'Browse through the list of specialties that Rashtrotthana Hospital provide, world-class treatment options; experienced doctors in Bangalore which makes it Indias top multi-specialty hospital.' });
 
-  this.metaService.updateTag({ name: 'keywords', content: 'specialities, modern medicine, ayurveda, lifestyle medicine, yoga, homeopathy, doctors, medical specialities' });
+  this.metaService.updateTag({ name: 'keywords', content: 'specialities, modern medicine, ayurveda, lifestyle, yoga, homeopathy, doctors, medical specialities' });
   }
 }
