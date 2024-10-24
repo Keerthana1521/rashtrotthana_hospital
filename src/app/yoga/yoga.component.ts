@@ -24,14 +24,14 @@ export class YogaComponent {
       image : '../../assets/doctor-14.png',
       name : "Dr. Suvarnini Konale",
       section : "BNYS",
-      designation : "LIFESTYLE MEDICINE",
+      designation : "LIFESTYLE",
       experience : "15"
     },
     {
       image : '../../assets/doctor-43.png',
       name : "Dr. Varsha P",
       section : "BAMS, MD(Ayu),YIC",
-      designation : "LIFESTYLE MEDICINE",
+      designation : "LIFESTYLE",
       experience : "4"
     },
   ]

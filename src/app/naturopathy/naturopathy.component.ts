@@ -11,11 +11,11 @@ export class NaturopathyComponent {
     
   }
   ngOnInit(): void {
-    this.titleService.setTitle("Comprehensive Lifestyle Medicine - Rashtrotthana Hospital Bangalore");  
+    this.titleService.setTitle("Comprehensive Lifestyle - Rashtrotthana Hospital Bangalore");  
 
-  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital offers expert lifestyle medicine services in Bangalore, focusing on preventive care through healthy lifestyle changes.' });
+  this.metaService.updateTag({ name: 'description', content: 'Rashtrotthana Hospital offers expert lifestyle services in Bangalore, focusing on preventive care through healthy lifestyle changes.' });
 
-  this.metaService.updateTag({ name: 'keywords', content: 'lifestyle medicine, preventive care, holistic health, lifestyle changes Bangalore' });
+  this.metaService.updateTag({ name: 'keywords', content: 'lifestyle, preventive care, holistic health, lifestyle changes Bangalore' });
 
   }
   doctors =[
@@ -23,21 +23,21 @@ export class NaturopathyComponent {
       image : '../../assets/doctor-14.png',
       name : "Dr. Suvarnini Konale",
       section : "BNYS",
-      designation : "LIFESTYLE MEDICINE",
+      designation : "LIFESTYLE",
       experience : "15"
     },
     {
       image : '../../assets/doctor-43.png',
       name : "Dr. Varsha P",
       section : "BAMS, MD(Ayu),YIC",
-      designation : "LIFESTYLE MEDICINE",
+      designation : "LIFESTYLE",
       experience : "4"
     },
     {
       image : 'assets/doctor-54.png',
       name : "Dr. Shamantha",
       section : "BAMS",
-      designation : "LIFESTYLE MEDICINE",
+      designation : "LIFESTYLE",
       experience : "3"
     }
   ]
