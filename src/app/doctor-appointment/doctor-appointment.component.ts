@@ -469,7 +469,9 @@ getUnavailableDates(doctorId: number): Observable<{ date: string }[]> {
             phoneNumber: this.contactForm.value.contactNumber,
             email: this.contactForm.value.email,
             doctorName: this.selectedDoctor.name,
-            department: this.selectedDoctor.speciality, // Assuming `speciality` is the department
+            department: Array.isArray(this.selectedDoctor.speciality)
+            ? this.selectedDoctor.speciality.join(', ')
+            : this.selectedDoctor.speciality, // Convert array to string if necessary, // Assuming `speciality` is the department
             date: appointmentDate,
             time: this.contactForm.value.time.name,
             requestVia: 'Website',
