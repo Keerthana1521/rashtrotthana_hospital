@@ -6,6 +6,8 @@ import { MessageService } from 'primeng/api';
 import { HttpClient } from '@angular/common/http';
 import { throwError } from 'rxjs';
 import { catchError, timeout, retry } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
  interface City {
    name: string;
@@ -31,6 +33,7 @@ export class DoctorAppointmentComponent implements OnInit {
   cities: City[] | undefined;
   date: Date[] | undefined;
   selectedCity: City | undefined;
+  apiUrl:string = 'https://backend-812956739285.us-east4.run.app/api'
 
   constructor(private fb: FormBuilder, private messageService: MessageService, private http: HttpClient) {}
 
@@ -88,47 +91,196 @@ export class DoctorAppointmentComponent implements OnInit {
       this.disabledDays = [];
     }
   }
+ // Fetch doctor ID by name
+ getDoctorIdByName(doctorName: string): Observable<number | null> {
+  return this.http.get<any[]>(`${this.apiUrl}/doctors`).pipe(
+    map((doctors) => {
+      if (!Array.isArray(doctors)) {
+        throw new Error('Invalid response format');
+      }
+      const doctor = doctors.find((doc) => doc?.name?.toLowerCase() === doctorName.toLowerCase());
+      return doctor ? doctor.id : null;
+    })
+  );
+}
+getBookedSlots(doctorId: number, date: string): Observable<string[]> {
+  const bookedSlotsUrl = `${this.apiUrl}/doctors/booked-slots?doctorId=${doctorId}&date=${date}`;
+  return this.http.get<string[]>(bookedSlotsUrl);
+}
+getUnavailableDates(doctorId: number): Observable<{ date: string }[]> {
+  return this.http.get<{ date: string }[]>(`${this.apiUrl}/doctors/unavailable-dates?doctorId=${doctorId}`);
+}
+  // onDateChange(event: any) {
+  //   const selectedDate = new Date(event);
+  //   const dayOfWeek = selectedDate.getDay();
+
+  //   if (this.selectedDoctor.name === 'Dr. Ashika Bagaria' && dayOfWeek === 2) {
+  //     this.availableTimes = this.filterPastTimes([
+  //       { name: '10:00 - 10:20' },
+  //       { name: '10:20 - 10:40' },
+  //       { name: '10:40 - 11:00' },
+  //       { name: '11:00 - 11:20' },
+  //       { name: '11:20 - 11:40' },
+  //       { name: '11:40 - 12:00' },
+  //       { name: '12:00 - 12:20' },
+  //       { name: '12:20 - 12:40' },
+  //       { name: '12:40 - 13:00' },
+  //       { name: '13:00 - 13:20' },
+  //       { name: '13:20 - 13:40' },
+  //       { name: '13:40 - 14:00' },
+  //       { name: '14:00 - 14:20' },
+  //       { name: '14:20 - 14:40' },
+  //       { name: '14:40 - 15:00' },
+  //       { name: '15:00 - 15:20' },
+  //       { name: '15:20 - 15:40' },
+  //       { name: '15:40 - 16:00' }
+  //     ], selectedDate);
+  //   } else if (this.selectedDoctor.name === 'Dr. Manasa N. A' && dayOfWeek === 6) {
+  //     this.availableTimes = this.filterPastTimes([
+  //       { name: '13:30-13:50' },
+  //       { name: '13:50-14:10' },
+  //       { name: '14:10-14:30' },
+  //       { name: '14:30-14:50' },
+  //       { name: '14:50-15:10' },
+  //       { name: '15:10-15:30' }
+  //     ], selectedDate);
+  //   } else {
+  //     this.availableTimes = this.filterPastTimes(
+  //       this.selectedDoctor.time.split(',').map((time: string) => ({ name: time })),
+  //       selectedDate
+  //     );
+  //   }
+  // }
 
   onDateChange(event: any) {
     const selectedDate = new Date(event);
-    const dayOfWeek = selectedDate.getDay();
+    const formattedDate = this.formatDate(selectedDate);
 
-    if (this.selectedDoctor.name === 'Dr. Ashika Bagaria' && dayOfWeek === 2) {
-      this.availableTimes = this.filterPastTimes([
-        { name: '10:00 - 10:20' },
-        { name: '10:20 - 10:40' },
-        { name: '10:40 - 11:00' },
-        { name: '11:00 - 11:20' },
-        { name: '11:20 - 11:40' },
-        { name: '11:40 - 12:00' },
-        { name: '12:00 - 12:20' },
-        { name: '12:20 - 12:40' },
-        { name: '12:40 - 13:00' },
-        { name: '13:00 - 13:20' },
-        { name: '13:20 - 13:40' },
-        { name: '13:40 - 14:00' },
-        { name: '14:00 - 14:20' },
-        { name: '14:20 - 14:40' },
-        { name: '14:40 - 15:00' },
-        { name: '15:00 - 15:20' },
-        { name: '15:20 - 15:40' },
-        { name: '15:40 - 16:00' }
-      ], selectedDate);
-    } else if (this.selectedDoctor.name === 'Dr. Manasa N. A' && dayOfWeek === 6) {
-      this.availableTimes = this.filterPastTimes([
-        { name: '13:30-13:50' },
-        { name: '13:50-14:10' },
-        { name: '14:10-14:30' },
-        { name: '14:30-14:50' },
-        { name: '14:50-15:10' },
-        { name: '15:10-15:30' }
-      ], selectedDate);
-    } else {
-      this.availableTimes = this.filterPastTimes(
-        this.selectedDoctor.time.split(',').map((time: string) => ({ name: time })),
-        selectedDate
-      );
+    // Fetch the doctor ID by name
+    // this.getDoctorIdByName(this.selectedDoctor.name).subscribe({
+    //   next: (doctorId) => {
+    //     if (doctorId) {
+    //       this.getUnavailableDates(doctorId).subscribe({
+    //         next: (unavailableDates) => {
+    //           const unavailableDatesList = unavailableDates.map((entry) => entry.date);
+
+    //           // Check if the selected date is in the unavailable dates list
+    //           if (unavailableDatesList.includes(formattedDate)) {
+    //             this.messageService.add({
+    //               severity: 'warn',
+    //               summary: 'Doctor Unavailable',
+    //               detail: 'The doctor is not available on the selected date. Please choose another date.',
+    //             });
+    //             this.availableTimes = []; // Clear available times since the doctor is unavailable
+    //             return;
+    //           }
+    //         }
+    //       // Fetch the booked slots using the doctor ID and selected date
+    //       this.getBookedSlots(doctorId, formattedDate).subscribe({
+    //         next: (bookedSlots) => {
+    //           this.filterAvailableTimes(bookedSlots, selectedDate);
+    //         },
+    //         error: (error) => {
+    //           console.error('Error fetching booked slots:', error);
+    //           this.messageService.add({ severity: 'error', summary: 'Error', detail: 'Failed to fetch booked slots.' });
+    //         },
+    //       });
+    //     } else {
+    //       console.warn('Doctor not found');
+    //       this.messageService.add({
+    //         severity: 'warn',
+    //         summary: 'Doctor Not Found',
+    //         detail: 'The selected doctor could not be found. Please select a valid doctor.',
+    //       });
+    //     }
+    //   },
+    //   error: (error) => {
+    //     console.error('Error fetching doctor ID:', error);
+    //     this.messageService.add({
+    //       severity: 'error',
+    //       summary: 'Error',
+    //       detail: 'Failed to fetch doctor information. Please try again later.',
+    //     });
+    //   },
+    // });
+    this.getDoctorIdByName(this.selectedDoctor.name).subscribe({
+      next: (doctorId) => {
+        if (doctorId) {
+          // Fetch unavailable dates using the doctor ID
+          this.getUnavailableDates(doctorId).subscribe({
+            next: (unavailableDates) => {
+              const unavailableDatesList = unavailableDates.map((entry) => {
+                return this.formatDate(new Date(entry.date));
+              });
+
+              // Check if the selected date is in the unavailable dates list
+              if (unavailableDatesList.includes(formattedDate)) {
+                this.messageService.add({
+                  severity: 'warn',
+                  summary: 'Doctor Unavailable',
+                  detail: 'The doctor is not available on the selected date. Please choose another date.',
+                });
+                this.availableTimes = []; // Clear available times since the doctor is unavailable
+                return;
+              }
+
+              // If the doctor is available on the selected date, fetch booked slots
+              this.getBookedSlots(doctorId, formattedDate).subscribe({
+                next: (bookedSlots) => {
+                  this.filterAvailableTimes(bookedSlots, selectedDate);
+                },
+                error: (error) => {
+                  console.error('Error fetching booked slots:', error);
+                  this.messageService.add({
+                    severity: 'error',
+                    summary: 'Error',
+                    detail: 'Failed to fetch booked slots.',
+                  });
+                },
+              });
+            },
+            error: (error) => {
+              console.error('Error fetching unavailable dates:', error);
+              this.messageService.add({
+                severity: 'error',
+                summary: 'Error',
+                detail: 'Failed to fetch unavailable dates. Please try again later.',
+              });
+            },
+          });
+        } else {
+          console.warn('Doctor not found');
+          this.messageService.add({
+            severity: 'warn',
+            summary: 'Doctor Not Found',
+            detail: 'The selected doctor could not be found. Please select a valid doctor.',
+          });
+        }
+      },
+      error: (error) => {
+        console.error('Error fetching doctor ID:', error);
+        this.messageService.add({
+          severity: 'error',
+          summary: 'Error',
+          detail: 'Failed to fetch doctor information. Please try again later.',
+        });
+      },
+    });
+  
+
+  }
+  filterAvailableTimes(bookedSlots: string[], selectedDate: Date) {
+    let allTimes = this.selectedDoctor.time.split(',').map((time: string) => ({ name: time }));
+
+    if (selectedDate.toDateString() === new Date().toDateString()) {
+      // Filter past times if the date is today
+      allTimes = this.filterPastTimes(allTimes, selectedDate);
     }
+
+    // Filter out the booked times
+    this.availableTimes = allTimes.filter(
+      (timeObj:any) => !bookedSlots.includes(timeObj.name)
+    );
   }
 
   filterPastTimes(times: { name: string }[], selectedDate: Date): { name: string }[] {
@@ -160,7 +312,7 @@ export class DoctorAppointmentComponent implements OnInit {
   //     const appointmentDate = dateObj ? this.formatDate(new Date(dateObj)) : '';
     
   //     function getDoctorIdByName(doctorName: any, callback: any) {
-  //       fetch('http://localhost:3000/api/doctors', {
+  //       fetch('${this.apiUrl}/doctors', {
   //         method: 'GET',
   //         headers: {
   //           'Content-Type': 'application/json',
@@ -225,7 +377,7 @@ export class DoctorAppointmentComponent implements OnInit {
   //         console.log('Appointment Data:', appointmentData);
     
   //         // Now make the POST request to create the appointment
-  //         fetch('http://localhost:3000/api/appointments', {
+  //         fetch('${this.apiUrl}/appointments', {
   //           method: 'POST',
   //           headers: {
   //             'Content-Type': 'application/json',
@@ -248,14 +400,14 @@ export class DoctorAppointmentComponent implements OnInit {
   //             appointmentDetails: appointmentData,
   //           };
 
-  //           return this.http.post('http://localhost:3000/api/email/send', emailRequest).toPromise();
+  //           return this.http.post('${this.apiUrl}/email/send', emailRequest).toPromise();
   //         })
   //         .then((emailResponse) => {
   //           console.log('Email sent successfully:', emailResponse);
 
         
   //             // Send the WhatsApp message after the appointment is successfully created
-  //             return this.http.post('http://localhost:3000/api/whatsapp/send', appointmentData).toPromise();
+  //             return this.http.post('${this.apiUrl}/whatsapp/send', appointmentData).toPromise();
   //           })
   //           .then((whatsappResponse) => {
   //             console.log('WhatsApp message sent:', whatsappResponse);
@@ -279,150 +431,170 @@ export class DoctorAppointmentComponent implements OnInit {
   //   }
     
   // }
-//   onSubmit(): void {
-//     if (this.contactForm.valid) {
-//       const dateObj = this.contactForm.value.date_appointment;
-//       const appointmentDate = dateObj ? this.formatDate(new Date(dateObj)) : '';
-//       const firstName = this.contactForm.value.firstName;
-//       const lastName = this.contactForm.value.lastName;
-//       // Combine first and last names
-//       const patientName = `${firstName} ${lastName}`;
+  onSubmit(): void {
+    if (this.contactForm.valid) {
+      const dateObj = this.contactForm.value.date_appointment;
+      const appointmentDate = dateObj ? this.formatDate(new Date(dateObj)) : '';
+      const firstName = this.contactForm.value.firstName;
+      const lastName = this.contactForm.value.lastName;
+      // Combine first and last names
+      const patientName = `${firstName} ${lastName}`;
   
-//       // Fetch the doctor ID by name
-//   this.http.get<any[]>('http://localhost:3000/api/doctors')
-//       .subscribe({
-//         next: (doctors) => {
-//           if (!Array.isArray(doctors)) {
-//             throw new Error('Invalid response format');
-//           }
+      // Fetch the doctor ID by name
+  this.http.get<any[]>(`${this.apiUrl}/doctors`)
+      .subscribe({
+        next: (doctors) => {
+          if (!Array.isArray(doctors)) {
+            throw new Error('Invalid response format');
+          }
 
-//           const doctor = doctors.find((doc) => {
-//             if (doc && doc.name) {
-//               return doc.name.toLowerCase() === this.selectedDoctor.name.toLowerCase();
-//             }
-//             return false;
-//           });
+          const doctor = doctors.find((doc) => {
+            if (doc && doc.name) {
+              return doc.name.toLowerCase() === this.selectedDoctor.name.toLowerCase();
+            }
+            return false;
+          });
 
-//           if (!doctor) {
-//             console.warn('Doctor not found');
-//             throw new Error('Doctor not found');
-//           }
+          if (!doctor) {
+            console.warn('Doctor not found');
+            throw new Error('Doctor not found');
+          }
 
-//           const doctorId = doctor.id;
+          const doctorId = doctor.id;
+          const doctorNumber = doctor.phoneNumber;
 
-//           // Prepare appointment data
-//           const appointmentData = {
-//             patientName: patientName,
-//             phoneNumber: this.contactForm.value.contactNumber,
-//             email: this.contactForm.value.email,
-//             doctorName: this.selectedDoctor.name,
-//             department: this.selectedDoctor.speciality, // Assuming `speciality` is the department
-//             date: appointmentDate,
-//             time: this.contactForm.value.time.name,
-//             requestVia: 'Website',
-//             status: 'pending',
-//             smsSent: false,
-//             emailSent: false,
-//             doctorId: doctorId,
-//           };
+          // Prepare appointment data
+          const appointmentData = {
+            patientName: patientName,
+            phoneNumber: this.contactForm.value.contactNumber,
+            email: this.contactForm.value.email,
+            doctorName: this.selectedDoctor.name,
+            department: this.selectedDoctor.speciality, // Assuming `speciality` is the department
+            date: appointmentDate,
+            time: this.contactForm.value.time.name,
+            requestVia: 'Website',
+            status: 'pending',
+            smsSent: false,
+            emailSent: false,
+            doctorId: doctorId,
+          };
 
-//           // Make the POST request to create the appointment
-//           this.http.post<any>('http://localhost:3000/api/appointments', appointmentData)
-//             .subscribe({
-//               next: (appointmentResult) => {
-//                 console.log('Appointment successfully created:', appointmentResult);
+          // Make the POST request to create the appointment
+          this.http.post<any>(`${this.apiUrl}/appointments`, appointmentData)
+            .subscribe({
+              next: (appointmentResult) => {
+                console.log('Appointment successfully created:', appointmentResult);
 
-//                 // Show success message to the user
-//                 this.messageService.add({
-//                   severity: 'success',
-//                   summary: 'Success',
-//                   detail: 'Thank you, we have received your request and will get back to you shortly.',
-//                 });
+                // Show success message to the user
+                this.messageService.add({
+                  severity: 'success',
+                  summary: 'Success',
+                  detail: 'Thank you, we have received your request and will get back to you shortly.',
+                });
 
-//                 // Reset the form and close dialog after the appointment has been successfully saved
-//                 this.contactForm.reset();
-//                 this.closeDialog();
+                // Reset the form and close dialog after the appointment has been successfully saved
+                this.contactForm.reset();
+                this.closeDialog();
 
-//               },
-//               error: (appointmentError) => {
-//                 console.error('Error creating appointment:', appointmentError);
-//               }
-//             });
-//              // Optionally send an email here after appointment is created
-//              const emailRequest = {
-//               to: this.contactForm.value.email,
-//               status: 'received',
-//               appointmentDetails: appointmentData,
-//             };
+              },
+              error: (appointmentError) => {
+                console.error('Error creating appointment:', appointmentError);
+              }
+            });
+
+            const appointmentDetails ={
+              patientName: patientName,
+              doctorName: this.selectedDoctor.name,
+              date: appointmentDate,
+              time: this.contactForm.value.time.name,
+              doctorPhoneNumber: doctorNumber,
+              patientPhoneNumber: this.contactForm.value.contactNumber,
+              status: 'received'
+            }
+            this.http.post(`${this.apiUrl}/whatsapp/send`, appointmentDetails)
+            .subscribe({
+              next: (whatsappResponse) => {
+                console.log('WhatsApp message sent:', whatsappResponse);
+              },
+              error: (whatsappError) => {
+                console.error('Error sending WhatsApp message:', whatsappError);
+              },
+            });
+             // Optionally send an email here after appointment is created
+             const emailRequest = {
+              to: this.contactForm.value.email,
+              status: 'received',
+              appointmentDetails: appointmentData,
+            };
             
-//             this.http.post('http://localhost:3000/api/email/send-email', emailRequest)
-//               .subscribe({
-//                 next: (emailResponse) => {
-//                   console.log('Email sent successfully:', emailResponse);
-//                 },
-//                 error: (emailError) => {
-//                   console.error('Error sending email:', emailError);
-//                 },
-//               });
-//         },
-//         error: (doctorError) => {
-//           console.error('Error fetching doctors:', doctorError);
-//         }
-//       });
-//   }
-  
-
-
-
-  
-// }
-
-// get f(): { [key: string]: AbstractControl } {
-//   return this.contactForm.controls;
-// }
-// closeDialog(): void {
-//   this.close.emit();
-// }
-
-onSubmit(): void {
-  if (this.contactForm.valid) {
-    const dateObj = this.contactForm.value.date_appointment;
-    const appointmentDate = dateObj ? this.formatDate(new Date(dateObj)) : '';
-    const firstName = this.contactForm.value.firstName;
-          const lastName = this.contactForm.value.lastName;
-          // Combine first and last names
-          const patientName = `${firstName} ${lastName}`;
-    const emailParams = {
-      doctorName: this.selectedDoctor.name,
-      doctorDesignation: this.selectedDoctor.desgination,
-      patientName: patientName,
-      patientEmail: this.contactForm.value.email,
-      patientContact: this.contactForm.value.contactNumber,
-      appointmentTime: this.contactForm.value.time.name,
-      appointmentDate: appointmentDate,
-      message: this.contactForm.value.message
-    };
-    console.log(emailParams);
-
-    // Send email using EmailJS
-    emailjs.send('service_pzzreii', 'template_5iklj2q', emailParams, 'poMF_gJiwXDRedqcn')
-      .then((response: EmailJSResponseStatus) => {
-        console.log('SUCCESS!', response.status, response.text);
-        this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Thank you, we have received your request and will get back to you shortly.' });
-        this.contactForm.reset();
-        this.close.emit();
-      }, (error) => {
-        console.log('FAILED...', error);
-        this.messageService.add({ severity: 'danger', summary: 'Error', detail: 'Failed to send appointment request. Please try again later.' });
+            this.http.post(`${this.apiUrl}/email/send-email`, emailRequest)
+              .subscribe({
+                next: (emailResponse) => {
+                  console.log('Email sent successfully:', emailResponse);
+                },
+                error: (emailError) => {
+                  console.error('Error sending email:', emailError);
+                },
+              });
+        },
+        error: (doctorError) => {
+          console.error('Error fetching doctors:', doctorError);
+        }
       });
   }
+  
+
+
+
+  
 }
 
 get f(): { [key: string]: AbstractControl } {
   return this.contactForm.controls;
 }
-
 closeDialog(): void {
   this.close.emit();
 }
+
+// onSubmit(): void {
+//   if (this.contactForm.valid) {
+//     const dateObj = this.contactForm.value.date_appointment;
+//     const appointmentDate = dateObj ? this.formatDate(new Date(dateObj)) : '';
+//     const firstName = this.contactForm.value.firstName;
+//           const lastName = this.contactForm.value.lastName;
+//           // Combine first and last names
+//           const patientName = `${firstName} ${lastName}`;
+//     const emailParams = {
+//       doctorName: this.selectedDoctor.name,
+//       doctorDesignation: this.selectedDoctor.desgination,
+//       patientName: patientName,
+//       patientEmail: this.contactForm.value.email,
+//       patientContact: this.contactForm.value.contactNumber,
+//       appointmentTime: this.contactForm.value.time.name,
+//       appointmentDate: appointmentDate,
+//       message: this.contactForm.value.message
+//     };
+//     console.log(emailParams);
+
+//     // Send email using EmailJS
+//     emailjs.send('service_pzzreii', 'template_5iklj2q', emailParams, 'poMF_gJiwXDRedqcn')
+//       .then((response: EmailJSResponseStatus) => {
+//         console.log('SUCCESS!', response.status, response.text);
+//         this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Thank you, we have received your request and will get back to you shortly.' });
+//         this.contactForm.reset();
+//         this.close.emit();
+//       }, (error) => {
+//         console.log('FAILED...', error);
+//         this.messageService.add({ severity: 'danger', summary: 'Error', detail: 'Failed to send appointment request. Please try again later.' });
+//       });
+//   }
+// }
+
+// get f(): { [key: string]: AbstractControl } {
+//   return this.contactForm.controls;
+// }
+
+// closeDialog(): void {
+//   this.close.emit();
+// }
 }
