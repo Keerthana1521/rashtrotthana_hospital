@@ -121,7 +121,7 @@
               <label for="contactNumber">Patient Contact Number</label>
             </div>
             <input type="text" class="input" pInputText id="contactNumber" formControlName="contactNumber"
-              placeholder="910000000000" required />
+              placeholder="Enter the 10 digit number" required minlength="10" maxlength="10" />
             <div *ngIf="f['contactNumber'].touched && f['contactNumber'].invalid">
               <small class="error" *ngIf="f['contactNumber'].errors?.['required']">Contact Number is required</small>
               <small class="error" *ngIf="f['contactNumber'].errors?.['pattern']">Contact Number must be digits
@@ -129,7 +129,7 @@
               <small class="error" *ngIf="f['contactNumber'].errors?.['minlength']">Contact Number must be at least 10
                 digits long</small>
               <small class="error" *ngIf="f['contactNumber'].errors?.['maxlength']">Contact Number must be no more than
-                15 digits long</small>
+                10 digits long</small>
             </div>
             <br /><br /><br>
 
