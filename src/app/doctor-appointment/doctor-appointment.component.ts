@@ -34,6 +34,7 @@ export class DoctorAppointmentComponent implements OnInit {
   date: Date[] | undefined;
   selectedCity: City | undefined;
   apiUrl:string = 'https://backend-812956739285.us-east4.run.app/api'
+  // apiUrl:string = 'http://localhost:3000/api'
 
   constructor(private fb: FormBuilder, private messageService: MessageService, private http: HttpClient) {}
 
@@ -50,7 +51,7 @@ export class DoctorAppointmentComponent implements OnInit {
       firstName: ['', [Validators.required, Validators.minLength(2), Validators.pattern(/^[a-zA-Z]+$/)]],
       lastName: ['', [Validators.required, Validators.minLength(1), Validators.pattern(/^[a-zA-Z]+$/)]],
       email: ['', [Validators.required, Validators.email]],
-      contactNumber: ['', Validators.required],
+      contactNumber:  ['', [Validators.required, Validators.pattern(/^[0-9]{10}$/)]],
       time: ['', Validators.required],
       message: ['', Validators.required],
       date_appointment: ['', Validators.required],
