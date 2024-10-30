@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
-import { Title, Meta } from '@angular/platform-browser'; 
+import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
 import { DoctorDetailsComponent } from '../doctor-details/doctor-details.component';
 import { MessageService } from 'primeng/api';
 import { ContactFormService } from '../contact-form.service';

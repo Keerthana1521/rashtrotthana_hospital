@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser';  
+import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser';  
 import { Router } from '@angular/router';
 
 @Component({

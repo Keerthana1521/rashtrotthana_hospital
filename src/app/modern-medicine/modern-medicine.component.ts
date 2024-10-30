@@ -1,7 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { Router,ActivatedRoute,NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
-import { Title, Meta } from '@angular/platform-browser'; 
+import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
 
 @Component({
   selector: 'app-modern-medicine',

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser'; 
+import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
 
 @Component({
   selector: 'app-yoga',
@@ -7,7 +7,7 @@ import { Title, Meta } from '@angular/platform-browser';
   styleUrl: './yoga.component.css'
 })
 export class YogaComponent {
-  constructor(private titleService: Title, private metaService: Meta) {
+  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {
     
   }
   ngOnInit(): void {

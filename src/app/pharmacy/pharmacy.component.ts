@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser'; 
+import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
 import { Facility } from '../facility.model';
 
 @Component({
@@ -8,9 +8,13 @@ import { Facility } from '../facility.model';
   styleUrl: './pharmacy.component.css'
 })
 export class PharmacyComponent {
-  constructor(private titleService: Title, private metaService: Meta) {
+  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {
     
   }
+  sanitizedContent: SafeHtml ='';
+  sanitizedContent1: SafeHtml = '';
+  sanitizedContent2: SafeHtml = '';
+  facilities:Facility[] = [];
   ngOnInit(): void {
     this.titleService.setTitle("24/7 Pharmacy Services at Rashtrotthana Hospital Bangalore");  
 
@@ -18,8 +22,8 @@ export class PharmacyComponent {
 
   this.metaService.updateTag({ name: 'keywords', content: '24/7 pharmacy, hospital pharmacy, Bangalore pharmacy services' });
 
-  }
-  facilites:Facility[]=[
+  
+  this.facilities=[
     {
       main_heading:'Pharmacy',
       heading:'Pharmacy',
@@ -27,7 +31,7 @@ export class PharmacyComponent {
       image_2:'patient-service-2.png',
       subFacilities:[{
         subHeading:'Convenient Pharmacy Solutions at Rashtrotthana Hospital:',
-        subContent:'Discover convenience and reliability with our 24X7 Pharmacy services at Rashtrotthana Hospital. Our pharmacy is committed to providing FDA-approved medications and prioritizes GMP-certified drugs to ensure your safety and well-being. With a focus on accessibility and affordability, we offer a 10% discount on outpatient drug prescriptions and vaccinations, making quality healthcare more accessible to all.'
+        subContent:`Discover convenience and reliability with our 24X7 <a href="https://en.wikipedia.org/wiki/Pharmacy">Pharmacy</a> services at Rashtrotthana Hospital. Our pharmacy is committed to providing FDA-approved medications and prioritizes GMP-certified drugs to ensure your safety and well-being. With a focus on accessibility and affordability, we offer a 10% discount on outpatient drug prescriptions and vaccinations, making quality healthcare more accessible to all.`
       },
       {
         subHeading:'Personalized Care and Home Delivery Options:',
@@ -35,5 +39,12 @@ export class PharmacyComponent {
       },
 
     ],
-      bg_image:'pharmacy-bg.png'}];
+      bg_image:'pharmacy-bg.png'
+    }
+    ];
+    this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.facilities[0].subFacilities[0].subContent);
+  this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.facilities[0].subFacilities[1].subContent);
+  this.sanitizedContent2 = this.sanitizer.bypassSecurityTrustHtml(this.facilities[0].subFacilities[2].subContent);
+}
+
 }

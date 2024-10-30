@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser';
+import { Title, Meta,DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-anesthesiology',
@@ -7,7 +7,7 @@ import { Title, Meta } from '@angular/platform-browser';
   styleUrl: './anesthesiology.component.css'
 })
 export class AnesthesiologyComponent {
-  constructor(private titleService: Title, private metaService: Meta) {
+  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {
     
   }
   ngOnInit(): void {

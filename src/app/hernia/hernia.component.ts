@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser'; 
+import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
 import { CommonModule } from '@angular/common'; 
 
 @Component({
@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './hernia.component.css'
 })
 export class HerniaComponent {
-  constructor(private titleService: Title, private metaService: Meta) {
+  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {
     
   }
   ngOnInit(): void {

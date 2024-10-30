@@ -121,8 +121,8 @@
             <!-- paragraph and image -->
             <div class="con_n_img">
                 <div>
-                    <p class="gm_content">{{content}}</p>
-                    <p class="gm_content">{{content_1}}</p>
+                    <p  class="gm_content" [innerHTML]="content"></p>
+                    <p class="gm_content" [innerHTML]="content_1"></p>
                 </div>
                 <img [src]="'../../assets/images/' + image" [alt]="alt" class="gm_o_image">
             </div>

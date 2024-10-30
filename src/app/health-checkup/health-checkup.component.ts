@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser'; 
+import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
 
 interface PackageDetails {
   title: string;
@@ -21,7 +21,7 @@ interface Package {
   styleUrl: './health-checkup.component.css'
 })
 export class HealthCheckupComponent {
-  constructor(private titleService: Title, private metaService: Meta) {
+  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {
     
   }
   ngOnInit(): void {

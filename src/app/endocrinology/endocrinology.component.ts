@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser'; 
+import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
 
 
 @Component({
@@ -8,9 +8,12 @@ import { Title, Meta } from '@angular/platform-browser';
   styleUrl: './endocrinology.component.css'
 })
 export class EndocrinologyComponent {
-  constructor(private titleService: Title, private metaService: Meta) {
+  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {
     
   }
+  sanitizedContent: SafeHtml ='';
+  sanitizedContent1: SafeHtml = '';
+  specialities:any[] = [];
   ngOnInit(): void {
     this.titleService.setTitle("Best Endocrinology Hospital in India: Hormonal Imbalance, Endocrinology Treatment ");  
 

@@ -1,7 +1,7 @@
 
 import { Facility } from '../facility.model';
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser'; 
+import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
 
 @Component({
   selector: 'app-in-patient',
@@ -9,7 +9,13 @@ import { Title, Meta } from '@angular/platform-browser';
   styleUrl: './in-patient.component.css'
 })
 export class InPatientComponent {
-  constructor(private titleService: Title, private metaService: Meta) {
+    
+  sanitizedContent: SafeHtml = '';
+  sanitizedContent1: SafeHtml = '';
+  sanitizedContent2: SafeHtml = '';
+  facilities:Facility[] = [];
+  constructor(private titleService: Title, private metaService: Meta, 
+    private sanitizer: DomSanitizer ) {
     
   }
   ngOnInit(): void {
@@ -19,9 +25,7 @@ export class InPatientComponent {
 
   this.metaService.updateTag({ name: 'keywords', content: 'in-patient care, hospital stay, best hospital Bangalore, patient rooms' });
 
-  }
-
-  facilites:Facility[]=[
+  this.facilities=[
     {
       main_heading:'In-patient facility',
       heading:'In-patient facility',
@@ -29,7 +33,8 @@ export class InPatientComponent {
       image_2:'inpatient-facility-service-2.jpeg',
        bg_image:'in-patient-bg.png',
       subFacilities:[
-        {subHeading:'Comfort and Care at Rashtrotthana Hospital:', subContent:'At Rashtrotthana Hospital, we understand that your comfort and well-being are paramount during your stay with us. Our in-patient facilities are designed to provide you with a serene and welcoming environment conducive to healing and recovery. We thoughtfully furnish each private room with modern amenities to ensure your comfort throughout your stay. From cozy bedding to personalized care, we strive to create a home-like atmosphere where you can focus on your health with peace of mind.'}
+        {subHeading:'Comfort and Care at Rashtrotthana Hospital:', 
+          subContent:`At Rashtrotthana Hospital, we understand that your comfort and well-being are paramount during your stay with us. Our <a href="https://en.wikipedia.org/wiki/Inpatient_care">in-patient facilities</a> are designed to provide you with a serene and welcoming environment conducive to healing and recovery. We thoughtfully furnish each private room with modern amenities to ensure your comfort throughout your stay. From cozy bedding to personalized care, we strive to create a home-like atmosphere where you can focus on your health with peace of mind.`}
         ,{
           subHeading:'Personalized Attention from Our Dedicated Staff:',
           subContent:'Our team of compassionate healthcare professionals is committed to providing personalized attention to every patient. From skilled nurses to attentive support staff, we are here to cater to your individual needs and preferences. Whether you require assistance with daily tasks or have specific medical requirements, our dedicated team is available around the clock to ensure your comfort and well-being. At Rashtrotthana Hospital, you can rest assured that you will receive the highest standard of care in a supportive and nurturing environment.'
@@ -42,6 +47,9 @@ export class InPatientComponent {
    
     }
   ];
+  this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.facilities[0].subFacilities[0].subContent);
+    this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.facilities[0].subFacilities[1].subContent);
+    this.sanitizedContent2 = this.sanitizer.bypassSecurityTrustHtml(this.facilities[0].subFacilities[2].subContent);
  
-  
+}
 }

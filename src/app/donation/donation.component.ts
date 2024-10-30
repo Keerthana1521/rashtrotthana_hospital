@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 import * as AOS from 'aos';
 
-import { Title, Meta } from '@angular/platform-browser'; 
+import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
 @Component({
   selector: 'app-donation',
   templateUrl: './donation.component.html',

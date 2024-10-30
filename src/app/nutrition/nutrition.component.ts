@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser'; 
+import { Title, Meta,DomSanitizer,SafeHtml } from '@angular/platform-browser'; 
 import { Facility } from '../facility.model';
+import { SubFacility } from '../sub-facility.model';
 
 @Component({
   selector: 'app-nutrition',
@@ -8,9 +9,11 @@ import { Facility } from '../facility.model';
   styleUrl: './nutrition.component.css'
 })
 export class NutritionComponent {
-  constructor(private titleService: Title, private metaService: Meta) {
+  constructor(private titleService: Title, private metaService: Meta, private sanitizer: DomSanitizer) {
     
   }
+  sanitizedSubFacilities: SubFacility[] = [];
+
   ngOnInit(): void {
     this.titleService.setTitle("Comprehensive Nutrition & Dietetics Services - Rashtrotthana Hospital");  
 
@@ -18,8 +21,9 @@ export class NutritionComponent {
 
   this.metaService.updateTag({ name: 'keywords', content: 'nutrition services, dietetics, patient nutrition, hospital dietitian Bangalore' });
 
+  this.sanitizeSubFacilitiesContent();
   }
-  facilites:Facility[]=[
+  facilities=[
     {
       main_heading:'Nutrition & Dietetics',
       heading:'Nutrition & Dietetics',
@@ -36,11 +40,22 @@ export class NutritionComponent {
         },
         {
           subHeading:'Education and support empower healthier lifestyles.',
-        subContent:'At Rashtrotthana Hospital, we believe that education and support are essential components of successful nutrition management. Our Nutrition & Dietetics facility offers educational resources and ongoing support to help you make lasting changes to your diet and lifestyle. We provide you with the knowledge and skills you need to adopt healthier habits and maintain them for life. By empowering you to take control of your nutritional health, we strive to make a positive impact on your overall well-being and quality of life.'
+        subContent:`At Rashtrotthana Hospital, we believe that education and support are essential components of successful nutrition management. Our Nutrition & <a href="https://en.wikipedia.org/wiki/Dietitian">Dietetics</a> facility offers educational resources and ongoing support to help you make lasting changes to your diet and lifestyle. We provide you with the knowledge and skills you need to adopt healthier habits and maintain them for life. By empowering you to take control of your nutritional health, we strive to make a positive impact on your overall well-being and quality of life.`
         }
       ],
       bg_image:'dietician-bg.png'
     
     }
     ];
+    sanitizeSubFacilitiesContent(): void {
+      console.log(this.facilities[0].subFacilities);
+      // Sanitize each subContent for rendering safely with links
+      this.sanitizedSubFacilities = this.facilities[0].subFacilities.map(subFacility => {
+        console.log(subFacility.subContent);
+        return {
+          ...subFacility,
+          subContent: this.sanitizer.bypassSecurityTrustHtml(subFacility.subContent) as string
+        };
+      });
+    }
 }

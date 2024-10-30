@@ -1,4 +1,5 @@
 import { Component ,Input} from '@angular/core';
+import { SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-features-content',
@@ -10,7 +11,8 @@ export class FeaturesContentComponent {
 @Input() image_1: string =''; 
 @Input() main_heading: string ='';
 @Input() heading: string = '';
-@Input() content:string ='';
-@Input() content_1:string ='';
+// @Input() content:string ='';
+@Input() content: SafeHtml = ''; // Change type to SafeHtml
+@Input() content_1: SafeHtml = ''; // Change type to SafeHtml
 @Input() bg_image:any;
 }

@@ -8,11 +8,9 @@
 <div class="facility">
     <div class="facility-content">
         <div class="heading-container">{{heading}}</div>
-        <div class="content-container">
-            {{content}}
+        <div class="content-container" [innerHTML]="content">
         </div>
-        <div class="content-container">
-            {{content_1}}
+        <div class="content-container" [innerHTML]="content_1">
         </div>
         <div class="image-container">
             <img class="image" [src]="'../../assets/' + image_1" >
