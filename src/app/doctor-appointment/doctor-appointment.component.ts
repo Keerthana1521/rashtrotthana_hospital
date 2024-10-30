@@ -33,8 +33,8 @@ export class DoctorAppointmentComponent implements OnInit {
   cities: City[] | undefined;
   date: Date[] | undefined;
   selectedCity: City | undefined;
-  apiUrl:string = 'https://backend-812956739285.us-east4.run.app/api'
-  // apiUrl:string = 'http://localhost:3000/api'
+  // apiUrl:string = 'https://backend-812956739285.us-east4.run.app/api'
+  apiUrl:string = 'http://localhost:3000/api'
 
   constructor(private fb: FormBuilder, private messageService: MessageService, private http: HttpClient) {}
 
@@ -156,54 +156,6 @@ getUnavailableDates(doctorId: number): Observable<{ date: string }[]> {
   onDateChange(event: any) {
     const selectedDate = new Date(event);
     const formattedDate = this.formatDate(selectedDate);
-
-    // Fetch the doctor ID by name
-    // this.getDoctorIdByName(this.selectedDoctor.name).subscribe({
-    //   next: (doctorId) => {
-    //     if (doctorId) {
-    //       this.getUnavailableDates(doctorId).subscribe({
-    //         next: (unavailableDates) => {
-    //           const unavailableDatesList = unavailableDates.map((entry) => entry.date);
-
-    //           // Check if the selected date is in the unavailable dates list
-    //           if (unavailableDatesList.includes(formattedDate)) {
-    //             this.messageService.add({
-    //               severity: 'warn',
-    //               summary: 'Doctor Unavailable',
-    //               detail: 'The doctor is not available on the selected date. Please choose another date.',
-    //             });
-    //             this.availableTimes = []; // Clear available times since the doctor is unavailable
-    //             return;
-    //           }
-    //         }
-    //       // Fetch the booked slots using the doctor ID and selected date
-    //       this.getBookedSlots(doctorId, formattedDate).subscribe({
-    //         next: (bookedSlots) => {
-    //           this.filterAvailableTimes(bookedSlots, selectedDate);
-    //         },
-    //         error: (error) => {
-    //           console.error('Error fetching booked slots:', error);
-    //           this.messageService.add({ severity: 'error', summary: 'Error', detail: 'Failed to fetch booked slots.' });
-    //         },
-    //       });
-    //     } else {
-    //       console.warn('Doctor not found');
-    //       this.messageService.add({
-    //         severity: 'warn',
-    //         summary: 'Doctor Not Found',
-    //         detail: 'The selected doctor could not be found. Please select a valid doctor.',
-    //       });
-    //     }
-    //   },
-    //   error: (error) => {
-    //     console.error('Error fetching doctor ID:', error);
-    //     this.messageService.add({
-    //       severity: 'error',
-    //       summary: 'Error',
-    //       detail: 'Failed to fetch doctor information. Please try again later.',
-    //     });
-    //   },
-    // });
     this.getDoctorIdByName(this.selectedDoctor.name).subscribe({
       next: (doctorId) => {
         if (doctorId) {
@@ -438,6 +390,7 @@ getUnavailableDates(doctorId: number): Observable<{ date: string }[]> {
       const appointmentDate = dateObj ? this.formatDate(new Date(dateObj)) : '';
       const firstName = this.contactForm.value.firstName;
       const lastName = this.contactForm.value.lastName;
+      this.contactForm.value.contactNumber.startsWith('91') ? this.contactForm.value.contactNumber : '91' + this.contactForm.value.contactNumber;
       // Combine first and last names
       const patientName = `${firstName} ${lastName}`;
   
@@ -465,6 +418,7 @@ getUnavailableDates(doctorId: number): Observable<{ date: string }[]> {
           const doctorNumber = doctor.phoneNumber;
 
           // Prepare appointment data
+          console.log('contact', this.contactForm.value);
           const appointmentData = {
             patientName: patientName,
             phoneNumber: this.contactForm.value.contactNumber,
@@ -484,6 +438,11 @@ getUnavailableDates(doctorId: number): Observable<{ date: string }[]> {
                 // Reset the form and close dialog after the appointment has been successfully saved
                 this.contactForm.reset();
                 this.closeDialog();
+                this.messageService.add({
+                  severity: 'success',
+                  summary: 'Success',
+                  detail: 'Thank you, we have received your request and will get back to you shortly.',
+                });
           // Make the POST request to create the appointment
           this.http.post<any>(`${this.apiUrl}/appointments`, appointmentData)
             .subscribe({
@@ -491,14 +450,7 @@ getUnavailableDates(doctorId: number): Observable<{ date: string }[]> {
                 console.log('Appointment successfully created:', appointmentResult);
 
                 // Show success message to the user
-                this.messageService.add({
-                  severity: 'success',
-                  summary: 'Success',
-                  detail: 'Thank you, we have received your request and will get back to you shortly.',
-                });
-
-
-
+      
               },
               error: (appointmentError) => {
                 console.error('Error creating appointment:', appointmentError);
@@ -506,14 +458,18 @@ getUnavailableDates(doctorId: number): Observable<{ date: string }[]> {
             });
 
             const appointmentDetails ={
-              patientName: patientName,
-              doctorName: this.selectedDoctor.name,
-              date: appointmentDate,
-              time: this.contactForm.value.time.name,
-              doctorPhoneNumber: doctorNumber,
-              patientPhoneNumber: this.contactForm.value.contactNumber,
+              // patientName: patientName,
+              // doctorName: this.selectedDoctor ? this.selectedDoctor.name : '',
+              // date: appointmentDate,
+              // time: this.contactForm.value.time?.name,
+              // doctorPhoneNumber: doctorNumber,
+              // patientPhoneNumber: this.contactForm.value.contactNumber,
+              ...appointmentData,
+              patientPhoneNumber:'91'+ appointmentData.phoneNumber,
+              doctorPhoneNumber:doctorNumber,
               status: 'received'
             }
+            console.log("appointmentDetails",appointmentDetails)
             this.http.post(`${this.apiUrl}/whatsapp/send`, appointmentDetails)
             .subscribe({
               next: (whatsappResponse) => {
@@ -525,10 +481,11 @@ getUnavailableDates(doctorId: number): Observable<{ date: string }[]> {
             });
              // Optionally send an email here after appointment is created
              const emailRequest = {
-              to: this.contactForm.value.email,
+              to: appointmentData.email,
               status: 'received',
               appointmentDetails: appointmentData,
             };
+            console.log('Email Request:', emailRequest);
             
             this.http.post(`${this.apiUrl}/email/send-email`, emailRequest)
               .subscribe({
