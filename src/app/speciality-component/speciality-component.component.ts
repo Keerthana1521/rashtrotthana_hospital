@@ -10,6 +10,7 @@ export class SpecialityComponentComponent {
 @Input()heading:string='';
 @Input()content:string='';
 @Input()content_1:string='';
+@Input()alt:string='';
 @Input()doctor?:Doctors[];
 @Input()image:string='';
 @Input() activeSpecialty: string = '';

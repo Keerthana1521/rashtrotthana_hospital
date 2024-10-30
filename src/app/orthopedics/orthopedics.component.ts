@@ -26,6 +26,7 @@ export class OrthopedicsComponent {
       content_1:'With a strong emphasis on quality, Rashtrotthana Hospital has become a trusted centre for knee and hip replacement surgeries, achieving consistently high success rates. Our Accident & Trauma Care Unit is available 24/7, ensuring immediate, high-quality care for critical injuries. We offer a full range of services tailored to meet individual needs, from preoperative evaluations to comprehensive post-surgery rehabilitation. Whether it’s restoring mobility, alleviating pain, or enhancing quality of life, our Orthopedics Department is committed to delivering compassionate and high-standard orthopaedic care in Bangalore.',
       heading:'Orthopedics',
       image:'Orthopedics.png',
+      alt:'Orthopedics',
       Doctors:[
         {
           doctor_image:'../../assets/doctor-52.png',

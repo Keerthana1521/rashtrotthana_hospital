@@ -13,6 +13,7 @@ export class OphthalmologyComponent {
       content_1:'Refractive surgery options are also available, allowing patients to correct issues like myopia and hyperopia effectively. Furthermore, we prioritize preventive care, offering routine eye exams and screenings to detect early signs of eye disease, helping patients maintain their vision health over the long term.In addition to surgical services, Rashtrotthana Hospital’s Ophthalmology Department offers support for paediatric and geriatric eye care, understanding that different age groups require specialized approaches. Our dedicated optometrists provide corrective solutions like prescription glasses and contact lenses to meet everyday visual needs. With a patient-centered approach, the department aims to provide accessible, affordable, and high-quality eye care to all members of the community, making Rashtrotthana Hospital a trusted destination for complete vision care in Bangalore',
       heading:'Ophthalmology',
       image:'Ophthalmology.png',
+      alt:'Ophthalmology',
       Doctors:[
         {
           doctor_image:'../../assets/doctor-45.png',
