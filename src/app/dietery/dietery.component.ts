@@ -22,7 +22,8 @@ this.metaService.updateTag({ name: 'keywords', content: 'dietary services, clini
     {
       main_heading:'Dietary',
       heading:'Dietary',
-     content:'At Rashtrotthana Hospital, our canteen serves up a variety of tasty and nutritious meals for patients, visitors, and staff. We focus on quality ingredients and hygienic preparation to ensure everyone can enjoy a satisfying meal. Whether you are in for a quick bite or a hearty meal, our canteen is here to provide you with convenient and delicious options throughout your time at the hospital.',
+     content:'At Rashtrotthana Hospital, we prioritize nutritious, hygienic and flavorful meals through our dedicated canteen services. Prepared using high-quality ingredients, our menu caters to patients, visitors and staff, offering a range of wholesome options that support recovery and wellness. Our expert dietary team ensures balanced meal choices for specific dietary needs, all designed to meet hospital-grade standards of health and safety.',
+     content_1:'Whether for a quick snack or a substantial meal, our canteen provides convenient, tasty options throughout the day, enhancing the hospital experience with accessible, satisfying and nourishing food choices.',
       image_1:'dietery-service-1.png',
       image_2:'dietery-service-2.png',
        bg_image:'dietery-bg.png'

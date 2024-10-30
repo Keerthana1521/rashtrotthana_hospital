@@ -11,5 +11,6 @@ export class FeaturesContentComponent {
 @Input() main_heading: string ='';
 @Input() heading: string = '';
 @Input() content:string ='';
+@Input() content_1:string ='';
 @Input() bg_image:any;
 }

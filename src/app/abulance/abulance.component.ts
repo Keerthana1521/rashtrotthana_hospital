@@ -24,7 +24,8 @@ export class AbulanceComponent {
     {
       main_heading:'Ambulance Services',
       heading:'Ambulance Services',
-     content:'Two Fully equipped Advanced Life Support(ALS) Ambulance available round the clock. Clinic on Wheels - Unique concept, where in fully equipped Ambulances with facility to provide Outpatient consultations, examination, sample collection & drug dispensing available for rural camp service.',
+     content:'Rashtrotthana Hospital provides 24/7 ambulance services with two fully equipped Advanced Life Support (ALS) ambulances to respond promptly to critical emergencies across Bangalore. Each ALS ambulance is equipped with advanced life-saving equipment, including cardiac monitors, oxygen support, and defibrillators, ensuring thorough pre-hospital care. Trained medical professionals accompany each ambulance, delivering safe and reliable transport to patients in need.',
+     content_1:'Additionally, our Clinic on Wheels is a mobile healthcare solution that brings essential medical services to rural communities. Equipped for outpatient consultations, health examinations, sample collection and medication dispensing, this innovative initiative expands high-quality healthcare accessibility in underserved areas. Through this program, Rashtrotthana Hospital enhances proactive health management, ensuring that even remote areas benefit from comprehensive healthcare support. Both our ALS ambulance and Clinic on Wheels services demonstrate Rashtrotthana Hospital’s commitment to accessible, community-focused care across all regions.',
       image_1:'abulance-service-3.jpeg',
       image_2:'abulance-service-2.jpg',
        bg_image:'ambulance-bg.png'

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser'; 
+import { content } from 'html2canvas/dist/types/css/property-descriptors/content';
 
 @Component({
   selector: 'app-laboratory',
@@ -22,7 +23,8 @@ export class LaboratoryComponent {
     {
       main_heading:'Laboratory Services',
       heading:'Laboratory Services',
-     content:'Discover excellence in diagnostic precision at Rashtrotthana Hospitals Laboratory Services. Equipped with state-of-the-art technology and staffed by experienced technicians, our laboratory ensures accurate and timely results to guide informed healthcare decisions. From routine blood tests to specialized diagnostics encompassing hematology, biochemistry, microbiology, and immunology, we cover a wide spectrum of medical needs. Our patient-centric approach empowers individuals with personalized testing options, fostering a holistic approach to healthcare delivery. Trusted by medical professionals, our laboratory services are a cornerstone of precise diagnostics, enabling patients to embark on their health journey with confidence and control',
+     content:'Rashtrotthana Hospital’s Laboratory Services are committed to providing high-quality, precise diagnostics to support patient care and enable informed healthcare decisions. Equipped with cutting-edge technology and staffed by skilled technicians, our laboratory delivers accurate, timely results that serve as a foundation for effective treatment. From routine blood tests to specialized diagnostics in haematology, biochemistry, microbiology and immunology, our lab covers a wide range of testing needs with a focus on reliability and accuracy.',
+     content_1:'Our patient-centered approach ensures personalized service, allowing individuals to choose from a variety of diagnostic tests based on their health requirements. Rashtrotthana Hospital’s laboratory team works closely with medical professionals to provide diagnostic support that enhances treatment outcomes. Our lab services are a trusted component of healthcare at Rashtrotthana, empowering patients with the knowledge and confidence to make well-informed decisions about their health journey.',
       image_1:'lab-service-1.png',
       image_2:'lab-service-2.png',
        bg_image:'lab-bg.png'
