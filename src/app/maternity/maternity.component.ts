@@ -25,11 +25,6 @@ export class MaternityComponent {
         experience : "Years of Experience: 32"
       },
       {
-        image : "assets/doctor-10.png",
-        name : "Dr. Shreelakshmi G",
-        experience : "Years of Experience: 20"
-      },
-      {
         image : "assets/doctor-12.png",
         name : "Dr. Prakruthi",
         experience : "Years of Experience: 16"

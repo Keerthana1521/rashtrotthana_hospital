@@ -63,17 +63,6 @@ export class CommitteeCarouselComponent {
       role_2 : "Clinician"
     },
     {
-      image : "../../assets/member_6.png",
-      name : "Dr. Shreelakshmi G",
-      qualification : "MBBS MD",
-      designation : "Consultant, ",
-      address : "Obstetrics and Gynaecology, ",
-      role : "",
-      roleDesv : "Jayadev Memorial Rashtrotthana Hospital & Research Centre,5th Stage, Rajarajeshwari Nagar Bengaluru 560098",
-      description : "Designation/ role of member in Ethics Committee : Clinician",
-      role_2 : "Clinician"
-    },
-    {
       image : "../../assets/member_7.png",
       name : "Dr. Suchithra S Patil",
       qualification : "BAMS MD PhD",
