@@ -33,8 +33,8 @@ export class DoctorAppointmentComponent implements OnInit {
   cities: City[] | undefined;
   date: Date[] | undefined;
   selectedCity: City | undefined;
-  // apiUrl:string = 'https://backend-812956739285.us-east4.run.app/api'
-  apiUrl:string = 'http://localhost:3000/api'
+  apiUrl:string = 'https://backend-812956739285.us-east4.run.app/api'
+  // apiUrl:string = 'http://localhost:3000/api'
 
   constructor(private fb: FormBuilder, private messageService: MessageService, private http: HttpClient) {}
 
