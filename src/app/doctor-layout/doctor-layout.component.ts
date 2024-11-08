@@ -606,18 +606,18 @@ export class DoctorLayoutComponent {
       time:'09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
       date:'Monday-Saturday'
     },
-    {
-      name: 'Dr. Alekhya R',
-      image: 'assets/doctor-40.png',
-      desgination: 'AYURVEDA',
-      speciality: 'AYURVEDA',
-      qualification:'BAMS',
-      about: 'Dr. Alekhya R is graduate from INDIAN INSITUTE OF AYURVEDIC MEDICINE AND RESEARCH in 2021',
-      areasOfExpertise: ['Gastric related issues','Sinusitis, Allergic rhinitis','Vatavyadi'],
-      expertise: 'Years of Experience: 2',
-      time:'09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
-      date:'Monday-Saturday'
-    },
+    // {
+    //   name: 'Dr. Alekhya R',
+    //   image: 'assets/doctor-40.png',
+    //   desgination: 'AYURVEDA',
+    //   speciality: 'AYURVEDA',
+    //   qualification:'BAMS',
+    //   about: 'Dr. Alekhya R is graduate from INDIAN INSITUTE OF AYURVEDIC MEDICINE AND RESEARCH in 2021',
+    //   areasOfExpertise: ['Gastric related issues','Sinusitis, Allergic rhinitis','Vatavyadi'],
+    //   expertise: 'Years of Experience: 2',
+    //   time:'09:30-09:50,09:50-10:10,10:10-10:30,10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30,15:30-15:50,15:50-16:10,16:10-16:30,16:30-16:50,16:50-17:00',
+    //   date:'Monday-Saturday'
+    // },
     {
       name: 'Dr. Narendranath A',
       image: 'assets/doctor-35.png',
@@ -630,18 +630,18 @@ export class DoctorLayoutComponent {
       time:'13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
       date:'Monday,Wednesday,Thursday and Friday'
     },
-    {
-      name: 'Dr. Ashika Bagaria',
-      image: 'assets/doctor-34.png',
-      desgination: 'ENT and head and neck',
-      speciality: 'ENT SPECIALITY',
-      about: 'Dr Ashika Bagaria has completed her MBBS from Rajarajeshwari medical college and Hospital in 2019 and then pursued her MS in Otolarhinoyngology from Kempegowda Institute of Medical Sciences. She also has a specialised expertise in diagnosing and managing conditions related to vertigo and balance disorder which is crucial for comprehensive ENT care.',
-      areasOfExpertise: ['Vertigo related disorders', 'Septoplasty', 'fess', 'tympanolasty', 'tracheostomy', 'Adenoidectomy', 'tonsillectomy'],
-      expertise: 'Years of Experience: 4',
-      qualification:'MBBS, MS(ENT)',
-      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00',
-      date:'Tuesday,Thursday and Saturday'
-    },
+    // {
+    //   name: 'Dr. Ashika Bagaria',
+    //   image: 'assets/doctor-34.png',
+    //   desgination: 'ENT and head and neck',
+    //   speciality: 'ENT SPECIALITY',
+    //   about: 'Dr Ashika Bagaria has completed her MBBS from Rajarajeshwari medical college and Hospital in 2019 and then pursued her MS in Otolarhinoyngology from Kempegowda Institute of Medical Sciences. She also has a specialised expertise in diagnosing and managing conditions related to vertigo and balance disorder which is crucial for comprehensive ENT care.',
+    //   areasOfExpertise: ['Vertigo related disorders', 'Septoplasty', 'fess', 'tympanolasty', 'tracheostomy', 'Adenoidectomy', 'tonsillectomy'],
+    //   expertise: 'Years of Experience: 4',
+    //   qualification:'MBBS, MS(ENT)',
+    //   time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00',
+    //   date:'Tuesday,Thursday and Saturday'
+    // },
     {
       name: 'Dr. Harshitha R',
       image: 'assets/doctor-46.png',

@@ -17,14 +17,14 @@ export class AyurvedhaDoctorsCarouselComponent {
       experience : "3"
     },
 
-    {
-      image : '../../assets/Ayurveda-doctors/Dr.Alekhya.png',
-      name : "Dr. Alekhya R",
-      section : "BAMS",
-      designation : "Resident Medical Officer",
-      Department : "Agnivesha Institute Of Ayurveda",
-      experience : "2"
-    },
+    // {
+    //   image : '../../assets/Ayurveda-doctors/Dr.Alekhya.png',
+    //   name : "Dr. Alekhya R",
+    //   section : "BAMS",
+    //   designation : "Resident Medical Officer",
+    //   Department : "Agnivesha Institute Of Ayurveda",
+    //   experience : "2"
+    // },
 
 
     {

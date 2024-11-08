@@ -35,11 +35,12 @@ export class ENTComponent {
             doctor_name:'Dr. Narendranath A',
             experience : "10"
           },
-          {
-            doctor_image:'../../assets/doctor-34.png',
-            doctor_name:'Dr. Ashika Bagaria',
-            experience : "2"
-          }      ]}];
+          // {
+          //   doctor_image:'../../assets/doctor-34.png',
+          //   doctor_name:'Dr. Ashika Bagaria',
+          //   experience : "2"
+          // }      
+        ]}];
         this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content);
           this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.specialities[0].content_1);
   }
