@@ -345,7 +345,7 @@ export class DoctorLayoutComponent {
       areasOfExpertise: ['Fracture care', 'Joint replacement surgeries and Arthroscopy (keyhole) surgeries'],
       expertise: 'Years of Experience: 9+',
       qualification:'MBBS, MS (ORTHO), DNB (Ortho), Diploma SICOT, Fellowship in Arthroplasty',
-      time:'10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30,14:30-14:50,14:50-15:10,15:10-15:30',
+      time:'10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10,14:10-14:30',
       date:'Tuesday,Thursday and Saturday'
     },
 
@@ -453,8 +453,8 @@ export class DoctorLayoutComponent {
       areasOfExpertise: ['Labour ward management', 'Development of protocols', 'High risk pregnancy management', 'Fetal Scans'],
       expertise: 'Years of Experience: 16',
       qualification:'MBBS, DGO, DNB, FELLOWSHIP IN MATERNAL FETAL MEDICINE',
-      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00',
-      date:'Monday-Saturday'
+      time:'10:30-10:50,10:50-11:10,11:10-11:30,11:30-11:50,11:50-12:10,12:10-12:30,12:30-12:50,12:50-13:10,13:10-13:30,13:30-13:50,13:50-14:10',
+      date:'Saturday'
     },
     {
       name: 'Dr. Ravi T',

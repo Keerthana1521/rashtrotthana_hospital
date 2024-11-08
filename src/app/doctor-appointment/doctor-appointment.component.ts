@@ -33,8 +33,8 @@ export class DoctorAppointmentComponent implements OnInit {
   cities: City[] | undefined;
   date: Date[] | undefined;
   selectedCity: City | undefined;
-  // apiUrl:string = 'https://backend-812956739285.us-east4.run.app/api'
-  apiUrl:string = 'http://localhost:3000/api'
+  apiUrl:string = 'https://backend-812956739285.us-east4.run.app/api'
+  // apiUrl:string = 'http://localhost:3000/api'
 
   constructor(private fb: FormBuilder, private messageService: MessageService, private http: HttpClient) {}
 
@@ -88,6 +88,12 @@ export class DoctorAppointmentComponent implements OnInit {
     else if (this.selectedDoctor.date === 'Sunday'){
       this.disabledDays = [1,2,3,4,5,6];
     } 
+    else if(this.selectedDoctor.date === 'Saturday'){
+      this.disabledDays = [0,1,2,3,4,5];
+    }
+    else if(this.selectedDoctor.date === 'Tuesday,Thursday and Saturday'){
+      this.disabledDays = [0,1,3,5];
+    }
     else {
       this.disabledDays = [];
     }
