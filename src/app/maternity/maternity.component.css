@@ -1,8 +1,8 @@
-.maternity_container{
+.maternity_container {
     background: #FBFFF4;
 }
 
-.container_1{
+.container_1 {
     margin-top: 120px;
     background-image: url('../../assets/Maternity/maternity_banner.png');
     background-size: cover;
@@ -14,7 +14,7 @@
     padding: 0 0 4% 7%;
 }
 
-.banner_heading{
+.banner_heading {
     color: #FFF;
     font-family: Poppins;
     font-size: 60px;
@@ -23,7 +23,7 @@
     line-height: normal;
 }
 
-.banner_description{
+.banner_description {
     color: #FFF;
     font-family: Poppins;
     font-size: 24px;
@@ -32,7 +32,7 @@
     line-height: normal;
 }
 
-.banner_button{
+.banner_button {
     width: 187px;
     height: 52px;
     padding: 18px 42px 18px 42px;
@@ -45,16 +45,17 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 16px; /* 80% */
+    line-height: 16px;
+    /* 80% */
 }
 
 /* container 2 */
 
-.container_2_box{
+.container_2_box {
     padding: 0 7%;
 }
 
-.container_2_heading_1{
+.container_2_heading_1 {
     color: #008080;
     text-align: center;
     font-family: Poppins;
@@ -65,30 +66,30 @@
     margin: 50px 0 10px 0;
 }
 
-.container_2_para{
-color: #000;
-text-align: center;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-top: 20px;
+.container_2_para {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
 }
 
 /* container 3 */
 
-.container_3{
-    padding:8%;
+.container_3 {
+    padding: 8%;
 }
 
-.container_3_contents{
+.container_3_contents {
     display: grid;
     grid-template-columns: 40% 60%;
     margin-top: 30px;
 }
 
-.container_3_heading{
+.container_3_heading {
     color: #FBCA51;
     font-family: Poppins;
     font-size: 36px;
@@ -97,14 +98,14 @@ margin-top: 20px;
     line-height: normal;
 }
 
-.expertise_lists{
+.expertise_lists {
     display: flex;
     gap: 20px;
     flex-direction: column;
     justify-content: center;
 }
 
-.expertise_list_item{
+.expertise_list_item {
     color: #000;
     font-family: Inter;
     font-size: 20px;
@@ -113,18 +114,18 @@ margin-top: 20px;
     line-height: normal;
 }
 
-.container_3_image{
+.container_3_image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container_3_image img{
+.container_3_image img {
     width: 654px;
     height: 344px;
 }
 
-.container_3_description{
+.container_3_description {
     color: #000;
     text-align: center;
     font-family: Inter;
@@ -137,12 +138,12 @@ margin-top: 20px;
 
 /* container 4 */
 
-.container_4{
+.container_4 {
     text-align: center;
     padding: 0 10%;
 }
 
-.container_4_heading{
+.container_4_heading {
     color: #008078;
     font-family: Poppins;
     font-size: 32px;
@@ -151,7 +152,7 @@ margin-top: 20px;
     line-height: normal;
 }
 
-.container_4_para{
+.container_4_para {
     color: #000;
     font-family: Inter;
     font-size: 18px;
@@ -161,21 +162,21 @@ margin-top: 20px;
     margin-top: 30px;
 }
 
-.container_4_lists{
+.container_4_lists {
     padding: 0 10%;
 }
 
-.container_4_list_items{
+.container_4_list_items {
     color: #000;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 28px; 
+    line-height: 28px;
     margin-top: 30px;
 }
 
-.container_4_description{
+.container_4_description {
     color: #000;
     font-family: Inter;
     font-size: 16px;
@@ -187,21 +188,21 @@ margin-top: 20px;
 
 /* container 5 */
 
-.container_5{
+.container_5 {
     margin-top: 70px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.container_5 img{
+.container_5 img {
     width: 400px;
     height: 250px;
 }
 
 /* container 6 */
 
-.container_6{
+.container_6 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,12 +210,12 @@ margin-top: 20px;
     margin-top: 50px;
 }
 
-.container_6 img{
+.container_6 img {
     width: 1120px;
     height: 607px;
 }
 
-.container_6_poster{
+.container_6_poster {
     color: #000;
     text-align: center;
     font-family: Inter;
@@ -226,7 +227,7 @@ margin-top: 20px;
 
 /* doctors details */
 
-.doctor_heading{
+.doctor_heading {
     margin: 80px 0;
     font-size: 30px;
     font-family: poppins;
@@ -234,10 +235,10 @@ margin-top: 20px;
     text-align: center;
 }
 
-.doctors_flex{
+.doctors_flex {
     display: flex;
     gap: 100px;
-    justify-content: center ;
+    justify-content: center;
 }
 
 .doc_1 {
@@ -266,86 +267,109 @@ margin-top: 20px;
     font-weight: 700;
 }
 
-.section, .designation, .department {
+.section,
+.designation,
+.department {
     color: #0392CE;
     font-family: Inter, sans-serif;
 }
 
-.doc_Exp{
-    font-family: "inter";   
+.doc_Exp {
+    font-family: "inter";
     font-size: 14px;
     font-weight: 400;
 }
 
-.view_all_btn_box{
+.view_all_btn_box {
     display: flex;
     justify-content: center;
     padding: 50px 0;
 }
 
-@media(max-width : 1100px){
+.testimonials {
+    margin-top: 50px;
+}
 
-    .container_2_heading_1{
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: Poppins;
+}
+
+.youtube {
+    padding: 0;
+}
+
+.youtube iframe {
+    width: 100%;
+    height: 400px;
+}
+
+@media(max-width : 1100px) {
+
+    .container_2_heading_1 {
         font-size: 30px;
     }
 
-    .container_3_image img{
+    .container_3_image img {
         width: 454px;
         height: auto;
     }
 
-    .expertise_list_item{
+    .expertise_list_item {
         font-size: 16px;
     }
 
-    .container_5 img{
+    .container_5 img {
         width: 300px;
         height: auto;
     }
 
-    .container_6 img{
+    .container_6 img {
         width: 900px;
         height: auto;
     }
 }
 
-@media(max-width : 800px){
+@media(max-width : 800px) {
 
-    .banner_heading{
+    .banner_heading {
         font-size: 50px;
     }
 
-    .container_3_heading{
+    .container_3_heading {
         font-size: 28px;
         text-align: center;
     }
 
-    .container_3_contents{
+    .container_3_contents {
         display: flex;
         justify-content: center;
         gap: 30px;
     }
 
-    .expertise_list_item{
+    .expertise_list_item {
         font-size: 14px;
     }
 
-    .container_3_image img{
+    .container_3_image img {
         width: 300px;
         height: auto;
     }
 
-    .container_5 img{
+    .container_5 img {
         width: 210px;
         height: auto;
     }
 
-    .container_6 img{
+    .container_6 img {
         width: 680px;
         height: auto;
     }
 
-    .doctors_flex{
+    .doctors_flex {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -354,24 +378,24 @@ margin-top: 20px;
     }
 }
 
-@media(max-width : 480px){
+@media(max-width : 480px) {
 
-    .container_1{
+    .container_1 {
         background-image: url('../../assets/Maternity/Maternity_mobile_bg.png');
         background-size: cover;
         height: 60vh;
         margin-top: 110px;
     }
 
-    .banner_heading{
+    .banner_heading {
         font-size: 20px;
     }
 
-    .banner_description{
+    .banner_description {
         font-size: 12px;
     }
 
-    .banner_button{
+    .banner_button {
         border-radius: 30px;
         padding: 0;
         width: 157px;
@@ -379,11 +403,11 @@ margin-top: 20px;
         font-size: 16px;
     }
 
-    .container_2_heading_1{
+    .container_2_heading_1 {
         font-size: 20px;
     }
 
-    .container_2_para{
+    .container_2_para {
         font-size: 12px;
     }
 
@@ -391,31 +415,37 @@ margin-top: 20px;
         flex-direction: column;
     }
 
-    .container_3_heading, .container_4_heading{
+    .container_3_heading,
+    .container_4_heading {
         font-size: 20px;
     }
 
-    .expertise_list_item, .container_3_description, .container_4_para, .container_4_list_items, .container_6_poster, .container_4_description{
+    .expertise_list_item,
+    .container_3_description,
+    .container_4_para,
+    .container_4_list_items,
+    .container_6_poster,
+    .container_4_description {
         font-size: 12px;
     }
 
-    .container_5{
+    .container_5 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .container_5 img{
+    .container_5 img {
         width: 290px;
     }
 
-    .container_6 img{
+    .container_6 img {
         width: 315px;
         height: auto;
     }
 
-    .doctor_heading{
+    .doctor_heading {
         font-size: 20px;
     }
 
