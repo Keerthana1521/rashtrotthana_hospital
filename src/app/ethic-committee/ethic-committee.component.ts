@@ -110,7 +110,7 @@ export class EthicCommitteeComponent {
       },
       {
         image : "../../assets/member_8.png",
-        name : "Mr. Jagdisha Sharma",
+        name : "Dr. Jagdisha Sharma",
         qualification : "",
         designation : "Social activist and Writer",
         address : "",
@@ -132,7 +132,7 @@ export class EthicCommitteeComponent {
       },
       {
         image : "../../assets/member_9.png",
-        name : "Mr. Subrahmanya Bharati Konale",
+        name : "Dr. Subrahmanya Bharati Konale",
         qualification : "",
         designation : "Chair Man",
         address : "BISKUROM Foundation",
