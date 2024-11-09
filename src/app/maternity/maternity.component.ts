@@ -59,4 +59,8 @@ export class MaternityComponent {
       "Provides care for diabetes and medical disorders in pregnancy",
       "Offers treatment for recurrent pregnancy loss"
     ]
+
+    contactus(){
+      this.router.navigate(['/contact-us-bangalore']);
+    }
 }
