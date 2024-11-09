@@ -58,7 +58,7 @@ export class DoctorAppointmentComponent implements OnInit {
       date_appointment: ['', Validators.required],
     });
     if (this.selectedDoctor && this.selectedDoctor.time) {
-      this.availableTimes = this.selectedDoctor.time.split(',').map((time: string) => ({ name: time }));
+      // this.availableTimes = this.selectedDoctor.time.split(',').map((time: string) => ({ name: time }));
     }
     this.setDateConstraints();
   }
@@ -120,6 +120,10 @@ getUnavailableDates(doctorId: number): Observable<{ date: string }[]> {
 }
 getUnavailableSlots(doctorId: number): Observable<{ [date: string]: string[] }> {
   return this.http.get<{ [date: string]: string[] }>(`${this.apiUrl}/doctors/${doctorId}/unavailableSlots`);
+}
+getAvailableSlots(doctorId: number, date: string): Observable<any> {
+  const availabilityUrl = `${this.apiUrl}/doctors/availability?doctorId=${doctorId}&date=${date}`;
+  return this.http.get<any>(availabilityUrl);
 }
 
   // onDateChange(event: any) {
@@ -189,6 +193,11 @@ getUnavailableSlots(doctorId: number): Observable<{ [date: string]: string[] }> 
     this.getDoctorIdByName(this.selectedDoctor.name).subscribe({
       next: (doctorId) => {
         if (doctorId) {
+          this.getAvailableSlots(doctorId, formattedDate).subscribe({
+            next: (availableSlots) => {
+              this.availableTimes = availableSlots.map((time: string) => ({ name: time }));
+            }
+          });
           // Fetch unavailable dates using the doctor ID
           this.getUnavailableDates(doctorId).subscribe({
             next: (unavailableDates) => {
