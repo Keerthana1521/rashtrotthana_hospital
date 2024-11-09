@@ -47,4 +47,16 @@ export class MaternityComponent {
         experience : "Years of Experience: 8"
       }
     ]
+
+    doc_expertise = [
+      "30+ years of experience",
+      "50k+ successful deliveries",
+      "80% success rate on Normal Delivery",
+      "Skilled in vaginal surgeries",
+      "Specializes in safe and normal (vaginal) deliveries",
+      "Focused on menopause management and related health issues",
+      "Expertise in managing high-risk pregnancies",
+      "Provides care for diabetes and medical disorders in pregnancy",
+      "Offers treatment for recurrent pregnancy loss"
+    ]
 }

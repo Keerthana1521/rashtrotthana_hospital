@@ -34,7 +34,13 @@ export class LaboratoryComponent {
        bg_image:'lab-bg.png'
     }
   ];
+  
   // Sanitizing the content for safe HTML rendering
   this.sanitizedContent = this.sanitizer.bypassSecurityTrustHtml(this.facilities[0].content);
   this.sanitizedContent1 = this.sanitizer.bypassSecurityTrustHtml(this.facilities[0].content_1);
-}}
+
+
+
+}
+
+}
