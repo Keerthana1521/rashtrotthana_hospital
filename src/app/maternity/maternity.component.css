@@ -4,49 +4,205 @@
 
 .container_1 {
     margin-top: 120px;
-    background-image: url('../../assets/Maternity/maternity_banner.png');
+    background-image: url('../../assets/maternity_new_bg.jpg');
     background-size: cover;
     height: 81vh;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: start;
     gap: 10px;
     padding: 0 0 4% 7%;
 }
 
-.banner_heading {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.container_1_content_box{
+    width: 879px;
+    border-radius: 20px;
+    margin-top: 100px;
 }
 
-.banner_description {
+.topbox{
+    border-radius: 20px 20px 0px 0px;
+    background: #216977;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.discount_tag img{
+    width: 132px;
+    height: 142px;
+    transform: rotate(-7deg);
+    flex-shrink: 0;
+}
+
+.container_1_heading{
     color: #FFF;
+    font-family: Inter;
+    text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.heading_des{
+    color: #FBCA51;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.28px;
+    text-align: center;
+}
+
+.container_1_heading_points{
+    border-radius: 0px 0px 20px 20px;
+    border: 2px solid #216977;
+    background: #FFF;
+}
+
+.container_1_list_item{
+    color: #216977;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.container_1_btn{
+  height: 52px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: #008078;
+  border: none;
+  margin-top: 50px;
+  border: 2px solid #FBCA51;
+  margin-left: 23%;
+}
+
+/* page content */
+
+.page_content{
+    padding: 2% 10% 5% 10%;
+}
+
+.pc_heading{
+    color: #008080;
+    text-align: center;
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-top: 30px;
+    padding: 0 5%;
 }
 
-.banner_button {
-    width: 187px;
-    height: 52px;
-    padding: 18px 42px 18px 42px;
-    border-radius: 16px;
-    border: 2px solid #FBCA51;
-    background: #FFF;
-    margin-top: 30px;
-    color: #585858;
+.pc_para{
+    color: #000;
+    text-align: center;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+.pc_description{
+    color: #5BC198;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 16px;
-    /* 80% */
+    line-height: normal;
+    margin-top: 30px;
+}
+
+
+/* doc profile */
+
+.m_doc_profile{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.dp_left{
+    width: 85%;
+}
+
+.dp_right{
+    width: 25%;
+}
+
+.bg_image img{
+    width: 100%;
+    height: 500px;
+}
+
+.con2_contents{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: -500px;
+    margin-left: 10%;
+}
+
+.dp_right img{
+    width: 500px;
+    height: auto;
+    position: relative;
+    right: 100px;
+}
+
+.m_doc_name{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.doc_desig{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.expertise_points_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.expertise_points{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 /* container 2 */
@@ -309,6 +465,67 @@
 
 @media(max-width : 1100px) {
 
+    .container_1{
+        background-position: center center;
+    }
+
+    .container_1_content_box{
+        width: 550px;
+    }
+
+    .container_1_heading{
+        font-size: 34px;
+    }
+
+    .heading_des{
+        font-size: 24px;
+    }
+
+    .discount_tag img{
+        width: 100px;
+        height: auto;
+    }
+
+    .container_1_list_item{
+        font-size: 16px;
+    }
+
+    .container_1_btn{
+        margin-left: 18%;
+    }
+
+    .m_doc_profile{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .dp_left{
+        width: 100%;
+    }
+
+    .dp_right{
+        width: 100%;
+    }
+
+    .con2_contents{
+        width: 100%;
+        margin-left: 0;
+        padding-left: 10%;
+    }
+
+    .dp_right{
+        display: flex;
+        justify-content: center;
+    }
+
+    .dp_right img{
+        width: 400px;
+        height: auto;
+        right: 0;
+    }
+
+    /* constainer 2 */
+
     .container_2_heading_1 {
         font-size: 30px;
     }
@@ -335,9 +552,47 @@
 
 @media(max-width : 800px) {
 
-    .banner_heading {
-        font-size: 50px;
+    .container_1{
+        background-image: url('../../assets/maternity_new_bg_tab.jpg');
+        height: 100vh;
     }
+
+    .container_1_content_box{
+        margin-top: 80px;
+    }
+
+    .container_1_btn{
+        margin-left: 0;
+    }
+
+    /* page contents */
+
+    .pc_heading, .pc_description{
+        font-size: 24px;
+    }
+
+    .pc_para{
+        font-size: 18px;
+    }
+
+    /* doc profile */
+    
+    .con2_contents{
+        padding-left: 1%;
+    }
+
+    .m_doc_name{
+        font-size: 34px;
+    }
+
+    .doc_desig{
+        font-size: 20px
+    }
+
+    .expertise_points{
+        font-size: 16px;
+    }
+
 
     .container_3_heading {
         font-size: 28px;
@@ -381,26 +636,100 @@
 @media(max-width : 480px) {
 
     .container_1 {
-        background-image: url('../../assets/Maternity/Maternity_mobile_bg.png');
-        background-size: cover;
-        height: 60vh;
-        margin-top: 110px;
-    }
-
-    .banner_heading {
-        font-size: 20px;
-    }
-
-    .banner_description {
-        font-size: 12px;
-    }
-
-    .banner_button {
-        border-radius: 30px;
+        margin-top: 120px;
+        background-image: url('../../assets/maternity_new_bg_mobile.jpg');
+        height: 98vh;
         padding: 0;
-        width: 157px;
-        height: 52px;
+        align-items : center;
+        background-position: right;
+    }
+    
+    .container_1_content_box{
+        width: 98%;
+        border-radius: 20px;
+        margin-top: 40px;
+    }
+    
+    .topbox{
+        display: flex;
+        align-items: left;
+        justify-content: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .discount_tag img{
+        width: 70px;
+        height: auto;
+    }
+    
+    .container_1_heading{
+        font-size: 30px;
+        margin-top: 5px;
+    }
+    
+    .heading_des{
+        font-size: 18px;
+    }
+    
+    .container_1_list_item{
+        font-size: 14px;
+    }
+
+    .discount_tag{
+        display: flex;
+        justify-content: right;
+        width: 100%;
+    }
+
+    .discount_tag img{
+        position: relative;
+        margin-top: -40px;
+        right: 10px;
+    }
+    /* page content */
+
+    .pc_heading, .pc_description{
+        font-size: 18px;
+    }
+
+    .pc_para{
+        font-size: 14px;
+    }
+
+    /* doc profile */
+
+    .m_doc_profile{
+        gap: 30px;
+    }
+
+    .m_doc_name{
+        font-size: 24px;
+    }
+
+    .doc_desig{
         font-size: 16px;
+        width: 300px;
+    }
+
+    .dp_right img{
+        width: 250px;
+        height: auto;
+    }
+
+    .expertise_points{
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .container_1_btn{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .button_container{
+        display: flex;
+        justify-content: left;
     }
 
     .container_2_heading_1 {
@@ -447,6 +776,30 @@
 
     .doctor_heading {
         font-size: 20px;
+    }
+
+}
+
+@media(max-width : 380px) {
+
+    .expertise_points{
+        width: 290px;
+    }
+
+}
+
+@media(max-width : 340px) {
+
+    .expertise_points{
+        width: 230px;
+    }
+
+    .container_1_heading{
+        font-size: 26px;
+    }
+
+    .heading_des{
+        text-align: left;
     }
 
 }

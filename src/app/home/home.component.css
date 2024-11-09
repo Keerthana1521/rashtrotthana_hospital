@@ -1651,7 +1651,7 @@ height:149px
     opacity: 0;
   }
   .icon img .secondary{
-    /* height: 147px; */
+    /* height: 147px; */ 
   }
 form{
     width: 100%;
@@ -1677,7 +1677,6 @@ form{
     padding: 2rem;
   }
   .card-header{
- 
     border-bottom: none;
     color: #008080;
     font-size: 20px;
@@ -1881,6 +1880,7 @@ width: 228px;
 .statement{
   font-size: 16px;
 }
+
 .button{
   width: 50%;
   left: 113px;
@@ -1895,7 +1895,7 @@ li{
   padding-left: 6rem;
   padding-top: 2rem;
   position: relative;
-  top: 638px;
+  top: 756px;
   width: 170%;
 }
 .surgery{
