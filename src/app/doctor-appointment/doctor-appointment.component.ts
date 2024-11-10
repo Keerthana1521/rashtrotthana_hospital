@@ -33,14 +33,15 @@ export class DoctorAppointmentComponent implements OnInit {
   cities: City[] | undefined;
   date: Date[] | undefined;
   selectedCity: City | undefined;
-  apiUrl:string = 'https://backend-812956739285.us-east4.run.app/api'
+  // apiUrl:string = 'https://backend-812956739285.us-east4.run.app/api'
   unavailableSlotsForDate: any[] = [];
   // apiUrl:string = 'http://localhost:3000/api'
+  apiUrl:string= 'https://rashtrotthana-backend-812956739285.us-east4.run.app/api'
 
   constructor(private fb: FormBuilder, private messageService: MessageService, private http: HttpClient) {}
 
   ngOnInit() {
-    console.log('selected doctor',this.selectedDoctor)
+    // console.log('selected doctor',this.selectedDoctor)
     this.cities = [
       { name: 'General Medicine' },
       { name: 'Rome' },
@@ -244,7 +245,7 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
           this.getUnavailableSlots(doctorId).subscribe({
             next:(unavailableSlots: { [date: string]: string[] }) => {
               this.unavailableSlotsForDate = unavailableSlots[date] || [];
-              console.log('Unavailable slots:', unavailableSlots);
+              // console.log('Unavailable slots:', unavailableSlots);
             },
             error: (error) => {
               console.error('Error fetching unavailable slots:', error);
@@ -443,8 +444,33 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
       this.contactForm.value.contactNumber.startsWith('91') ? this.contactForm.value.contactNumber : '91' + this.contactForm.value.contactNumber;
       // Combine first and last names
       const patientName = `${firstName} ${lastName}`;
-  
+      const emailParams = {
+        doctorName: this.selectedDoctor.name,
+        doctorDesignation: this.selectedDoctor.desgination,
+        patientName: patientName,
+        patientEmail: this.contactForm.value.email,
+        patientContact: this.contactForm.value.contactNumber,
+        appointmentTime: this.contactForm.value.time.name,
+        appointmentDate: appointmentDate,
+        message: this.contactForm.value.message
+      };
+      const emailRequest = {
+        to: 'frontoffice@rashtrotthanahospital.com',
+        status: 'frontoffice',
+        appointmentDetails: emailParams,
+      };
+
       // Fetch the doctor ID by name
+      this.http.post(`${this.apiUrl}/email/send-email`, emailRequest)
+              .subscribe({
+                next: (emailResponse) => {
+                  console.log('Email sent successfully:', emailResponse);
+                },
+                error: (emailError) => {
+                  console.error('Error sending email:', emailError);
+                },
+              });
+
   this.http.get<any[]>(`${this.apiUrl}/doctors`)
       .subscribe({
         next: (doctors) => {
@@ -468,7 +494,7 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
           const doctorNumber = doctor.phoneNumber;
 
           // Prepare appointment data
-          console.log('contact', this.contactForm.value);
+          // console.log('contact', this.contactForm.value);
           const appointmentData = {
             patientName: patientName,
             phoneNumber: this.contactForm.value.contactNumber,
@@ -519,7 +545,7 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
               doctorPhoneNumber:doctorNumber,
               status: 'received'
             }
-            console.log("appointmentDetails",appointmentDetails)
+            // console.log("appointmentDetails",appointmentDetails)
             this.http.post(`${this.apiUrl}/whatsapp/send`, appointmentDetails)
             .subscribe({
               next: (whatsappResponse) => {

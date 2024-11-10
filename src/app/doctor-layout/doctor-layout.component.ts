@@ -580,8 +580,8 @@ export class DoctorLayoutComponent {
     {
       name: 'Dr. Varsha P',
       image: 'assets/doctor-43.png',
-      desgination: 'LIFESTYLE',
-      speciality: 'LIFESTYLE',
+      desgination: 'LIFESTYLE MEDICINE',
+      speciality: 'LIFESTYLE MEDICINE',
       qualification:'BAMS, MD, YIC',
       about: "As a dedicated Ayurveda doctor with four years of experience as a Lifestyle Consultant, I specialise in Integrating traditional Ayurvedic principles with modern wellness practices. My qualifications include a Bachelor of Ayurvedic Medicine and Surgery (BAMS), a Master's Degree in Ayurveda (MD) and certification as a Yoga Instructor (YIC). I offer personalised lifestyle and wellness consultations, focusing on holistic approaches to health that emphasise diet, lifestyle modifications and natural therapies. My goal is to empower individuals to achieve balance and well-being through tailored Ayurvedic solutions and mindful living. Passionate about promoting sustainable health practices, I'm committed to help lead healthier lives by aligning their daily habits with their unique constitutional needs.",
       areasOfExpertise: [
@@ -875,6 +875,12 @@ export class DoctorLayoutComponent {
           },
           {
             cname: 'NUTRITION & DIETETICS', code: 'GM-ON'
+          },
+          {
+            cname: 'RADIOLOGY', code: 'GM-ON'
+          },
+          {
+            cname: 'DERMATOLOGY', code: 'GM-ON'
           }
 
 
