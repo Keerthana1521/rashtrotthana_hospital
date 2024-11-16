@@ -31,11 +31,6 @@ export class PaediatricsComponent {
       image:'Paediatrics & Neonatology.jfif',
       Doctors:[
         {
-          doctor_image:'../../assets/doctor-11.png',
-          doctor_name:'Dr. Savinay S. Kanchibail',
-          experience : "20"
-        },
-        {
           doctor_image:'../../assets/doctor-29.png',
           doctor_name:'Dr. Vishwanath Sanagoudar',
           experience : "8"
