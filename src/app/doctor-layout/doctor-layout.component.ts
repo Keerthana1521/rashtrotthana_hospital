@@ -170,18 +170,18 @@ export class DoctorLayoutComponent {
       time:'12:00-12:20,12:20-12:40,12:40-13:00,13:00-13:20,13:20-13:40,13:40-14:00',
       date:'Monday-Saturday'
     },
-    {
-      name: 'Dr. Savinay S. Kanchibail',
-      image: 'assets/doctor-11.png',
-      desgination: 'PAEDIAIATRICS & NEONATOLOGY',
-      about: 'Dr. Savinay S. Kanchibail is a senior consultant paediatrician and neonatologist with over 20 years of experience in paediatrics and 10 years in neonatology. His expertise spans general paediatrics, where he has effectively managed outpatient departments (OPD) and inpatient admissions, having gained significant experience working in Oman and various medical centers. He is also proficient in managing pediatric emergencies, ensuring critical care when needed. In neonatology, He has worked in level 3 neonatal units in tertiary hospitals across India, the UK and other locations. His extensive experience includes independently managing complex cases in the Neonatal Intensive Care Unit (NICU), demonstrating his expertise in handling critically ill newborns.',
-      speciality: 'PAEDIATRICS AND NEONATOLOGY',
-      areasOfExpertise: ['General Paediatrics including allergy and asthma from newborns to adults (including adolescents)', 'Paediatric Emergencies (Respiratory and Gastointestinal emergencies)', 'NICU (Level 2 and Level 3 tier) Expertise (extreme preterm, Preterm Nutrition)', 'Nutrition', 'Immunisations', 'Excellent communications skills with children and parents'],
-      expertise: 'Years of Experience: 20',
-      qualification:'MBBS, DCH, DNB/MD, MRCPCH(UK)',
-      time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
-      date:'Monday-Saturday'
-    },
+    // {
+    //   name: 'Dr. Savinay S. Kanchibail',
+    //   image: 'assets/doctor-11.png',
+    //   desgination: 'PAEDIAIATRICS & NEONATOLOGY',
+    //   about: 'Dr. Savinay S. Kanchibail is a senior consultant paediatrician and neonatologist with over 20 years of experience in paediatrics and 10 years in neonatology. His expertise spans general paediatrics, where he has effectively managed outpatient departments (OPD) and inpatient admissions, having gained significant experience working in Oman and various medical centers. He is also proficient in managing pediatric emergencies, ensuring critical care when needed. In neonatology, He has worked in level 3 neonatal units in tertiary hospitals across India, the UK and other locations. His extensive experience includes independently managing complex cases in the Neonatal Intensive Care Unit (NICU), demonstrating his expertise in handling critically ill newborns.',
+    //   speciality: 'PAEDIATRICS AND NEONATOLOGY',
+    //   areasOfExpertise: ['General Paediatrics including allergy and asthma from newborns to adults (including adolescents)', 'Paediatric Emergencies (Respiratory and Gastointestinal emergencies)', 'NICU (Level 2 and Level 3 tier) Expertise (extreme preterm, Preterm Nutrition)', 'Nutrition', 'Immunisations', 'Excellent communications skills with children and parents'],
+    //   expertise: 'Years of Experience: 20',
+    //   qualification:'MBBS, DCH, DNB/MD, MRCPCH(UK)',
+    //   time:'10:00-10:20,10:20-10:40,10:40-11:00,11:00-11:20,11:20-11:40,11:40-12:00,12:00-12:20,12:20-12:40,12:40-13:00,14:40-15:00,15:00-15:20,15:20-15:40,15:40-16:00',
+    //   date:'Monday-Saturday'
+    // },
     // {
     //   name: 'Dr. Shreelakshmi G',
     //   image: 'assets/doctor-10.png',

@@ -109,6 +109,7 @@ import { PopupFormDonationComponent } from './popup-form-donation/popup-form-don
 import { PopupImageComponent } from './popup-image/popup-image.component';
 import { MaternityComponent } from './maternity/maternity.component';
 import { HttpClient } from '@angular/common/http';
+import { ChatbotComponent } from './chatbot/chatbot.component';
 
 
 @NgModule({
@@ -191,6 +192,7 @@ import { HttpClient } from '@angular/common/http';
     EthicCommitteeComponent,
     PopupImageComponent,
     MaternityComponent,
+    ChatbotComponent,
     // ResearchCarouselComponent,
     // ProctologyComponent
   ],

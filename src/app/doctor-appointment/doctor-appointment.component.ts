@@ -21,8 +21,10 @@ export class DoctorAppointmentComponent implements OnInit {
   @Input() selectedDoctor: any;
   @Output() close = new EventEmitter<void>();
   availableTimes: { name: string }[] = [];
+  slots: {name:string}[] = []; 
   disabledDays: number[] = [];
   minDate: Date = new Date();
+  clicked:boolean = true;
   contactForm:any = FormGroup;
   doctorid:any;
   subjects = [
@@ -33,10 +35,10 @@ export class DoctorAppointmentComponent implements OnInit {
   cities: City[] | undefined;
   date: Date[] | undefined;
   selectedCity: City | undefined;
-  // apiUrl:string = 'https://backend-812956739285.us-east4.run.app/api'
+  apiUrl:string = 'https://backend-812956739285.us-east4.run.app/api'
   unavailableSlotsForDate: any[] = [];
   // apiUrl:string = 'http://localhost:3000/api'
-  apiUrl:string= 'https://rashtrotthana-backend-812956739285.us-east4.run.app/api'
+  // apiUrl:string= 'https://rashtrotthana-backend-812956739285.us-east4.run.app/api'
 
   constructor(private fb: FormBuilder, private messageService: MessageService, private http: HttpClient) {}
 
@@ -187,6 +189,27 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
   //     );
   //   }
   // }
+  generateTimeSlots(startTime: string, endTime: string, slotDuration: number) : { name: string }[] {
+
+    let slots: { name: string }[] = [];
+    let current = new Date(`1970-01-01T${startTime}`);
+    const end = new Date(`1970-01-01T${endTime}`);
+
+
+    while (current < end) {
+      const slotStart = current.toTimeString().substring(0, 5);
+      current = new Date(current.getTime() + slotDuration * 60000);
+
+      if (current <= end) {
+        const slotEnd = current.toTimeString().substring(0, 5);
+        slots.push({ name: `${slotStart}-${slotEnd}` });
+
+      }
+    }
+    console.log(slots)
+
+    return slots;
+  }
 
   onDateChange(event: any) {
     const selectedDate = new Date(event);
@@ -195,10 +218,24 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
       next: (doctorId) => {
         if (doctorId) {
           this.getAvailableSlots(doctorId, formattedDate).subscribe({
-            next: (availableSlots) => {
-              this.availableTimes = availableSlots.map((time: string) => ({ name: time }));
+            
+            next: (availability) => {
+              console.log('Available slots:', availability);
+              // this.availableTimes = availableSlots.map((time: string) => ({ name: time }));
+              if (availability && availability.availableFrom) {
+                        const [start, end] = availability.availableFrom.split('-');
+                        const slotDuration = availability.slotDuration;
+                        this.availableTimes = this.generateTimeSlots(start, end, slotDuration);
+              
+                        // Remove any already booked slots for that day
+                      
+                      } else {
+                        this.availableTimes = [];
+                      }
+  
             }
           });
+          
           // Fetch unavailable dates using the doctor ID
           this.getUnavailableDates(doctorId).subscribe({
             next: (unavailableDates) => {
@@ -273,17 +310,18 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
 
   }
   filterAvailableTimes(bookedSlots: string[], selectedDate: Date) {
-    let allTimes = this.selectedDoctor.time.split(',').map((time: string) => ({ name: time }));
+    // let allTimes = this.selectedDoctor.time.split(',').map((time: string) => ({ name: time }));
 
     if (selectedDate.toDateString() === new Date().toDateString()) {
       // Filter past times if the date is today
-      allTimes = this.filterPastTimes(allTimes, selectedDate);
+      this.availableTimes = this.filterPastTimes(this.availableTimes, selectedDate);
     }
-
+    // console.log('All times:', allTimes);
     // Filter out the booked times
-    this.availableTimes = allTimes.filter(
+    this.availableTimes = this.availableTimes.filter(
       (timeObj:any) => ((!bookedSlots.includes(timeObj.name) && !this.unavailableSlotsForDate.includes(timeObj.name)))
     );
+    console.log('Available times:', this.availableTimes);
 
   }
 
@@ -437,6 +475,7 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
   // }
   onSubmit(): void {
     if (this.contactForm.valid) {
+      this.clicked = false;
       const dateObj = this.contactForm.value.date_appointment;
       const appointmentDate = dateObj ? this.formatDate(new Date(dateObj)) : '';
       const firstName = this.contactForm.value.firstName;
@@ -505,7 +544,7 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
             : this.selectedDoctor.speciality, // Convert array to string if necessary, // Assuming `speciality` is the department
             date: appointmentDate,
             time: this.contactForm.value.time.name,
-            requestVia: 'Website',
+            requestVia: 'Online',
             status: 'pending',
             smsSent: false,
             emailSent: false,
@@ -555,13 +594,15 @@ getAvailableSlots(doctorId: number, date: string): Observable<any> {
                 console.error('Error sending WhatsApp message:', whatsappError);
               },
             });
-             // Optionally send an email here after appointment is created
-             const emailRequest = {
-              to: appointmentData.email,
-              status: 'received',
-              appointmentDetails: appointmentData,
-            };
-            console.log('Email Request:', emailRequest);
+            this.http.post(`${this.apiUrl}/sms/send-sms`, appointmentDetails)
+            .subscribe({
+              next: (smsResponse) => {
+                console.log('SMS message sent:');
+              },
+              error: (whatsappError) => {
+                console.error('Error sending WhatsApp message:', whatsappError);
+              },
+            });
             
             this.http.post(`${this.apiUrl}/email/send-email`, emailRequest)
               .subscribe({
