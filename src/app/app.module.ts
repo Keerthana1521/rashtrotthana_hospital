@@ -109,6 +109,12 @@ import { PopupFormDonationComponent } from './popup-form-donation/popup-form-don
 import { PopupImageComponent } from './popup-image/popup-image.component';
 import { MaternityComponent } from './maternity/maternity.component';
 import { HttpClient } from '@angular/common/http';
+import { ChatbotComponent } from './chatbot/chatbot.component';
+
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @NgModule({
@@ -191,6 +197,7 @@ import { HttpClient } from '@angular/common/http';
     EthicCommitteeComponent,
     PopupImageComponent,
     MaternityComponent,
+    ChatbotComponent,
     // ResearchCarouselComponent,
     // ProctologyComponent
   ],
@@ -216,8 +223,10 @@ import { HttpClient } from '@angular/common/http';
     CascadeSelectModule,
     CalendarModule,
     InfiniteScrollModule,
-  
-
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [
     MessageService,

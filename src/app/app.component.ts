@@ -43,5 +43,10 @@ export class AppComponent implements OnInit{
     this.meta.updateTag({ property: 'og:image', content: 'https://www.rashtrotthanahospital.com/assets/logo.png' });
     this.meta.updateTag({ property: 'og:url', content: 'https://www.rashtrotthanahospital.com/' });
   }
+  closeChatBot: boolean = true; // Initially opened
+  toggleChatBot() {
+    this.closeChatBot = !this.closeChatBot; // Toggle the visibility state\
+    console.log(this.closeChatBot)
+  }
 } 
 
